@@ -1,0 +1,69 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 75,
+  "handle": "@ton_compte",
+  "audio": { "music": "heat.wav", "voice": false, "voiceDir": "voice" },
+
+  "rateCPerMin": 10,
+  "startC": 22,
+  "clockStart": "14:00:00",
+  "curve": [
+    { "t": 0,  "c": 22 },
+    { "t": 15, "c": 82 },
+    { "t": 26, "c": 172 },
+    { "t": 36, "c": 342 },
+    { "t": 47, "c": 532 },
+    { "t": 57, "c": 842 },
+    { "t": 64, "c": 1100 },
+    { "t": 75, "c": 1100 }
+  ],
+  "captionMinSec": 2.2,
+  "captionMaxSec": 5.5,
+
+  "title": "Et si la température montait de {10 °C} chaque minute ?",
+  "titleEnd": 5,
+  "outro": { "t": 72, "text": "Heureusement, ce n'est qu'un {what if}." },
+
+  "scenes": [
+    { "id": "plaza",  "from": 0,  "to": 9.6 },
+    { "id": "cctv",   "from": 9,  "to": 20.6 },
+    { "id": "park",   "from": 20, "to": 30.6 },
+    { "id": "drone",  "from": 30, "to": 40.6 },
+    { "id": "street", "from": 40, "to": 52.6 },
+    { "id": "metal",  "from": 52, "to": 57.6 },
+    { "id": "aerial", "from": 57, "to": 75 }
+  ],
+  "fadeSec": 0.6,
+
+  "grade": [
+    { "c": 22,   "skyTop": "#3f8fe0", "skyBottom": "#cfe9fb", "fog": "#d4e8f5", "fogFar": 260, "sun": "#fff2a0", "sunSize": 14, "light": "#fff6e0", "tint": "#ffffff", "tintA": 0 },
+    { "c": 45,   "skyTop": "#5a9bd0", "skyBottom": "#e9ecc0", "fog": "#e6e8b8", "fogFar": 220, "sun": "#fff08a", "sunSize": 16, "light": "#fff2c8", "tint": "#f4f0a0", "tintA": 0.08 },
+    { "c": 90,   "skyTop": "#8fae78", "skyBottom": "#ece49a", "fog": "#dcd98e", "fogFar": 170, "sun": "#ffe066", "sunSize": 19, "light": "#fff0a8", "tint": "#d8e070", "tintA": 0.16 },
+    { "c": 172,  "skyTop": "#c06a2c", "skyBottom": "#f6aa5c", "fog": "#eb9e58", "fogFar": 130, "sun": "#ffc15a", "sunSize": 24, "light": "#ffc890", "tint": "#ff9a40", "tintA": 0.2 },
+    { "c": 342,  "skyTop": "#4a1a12", "skyBottom": "#b8421f", "fog": "#6a2818", "fogFar": 110, "sun": "#ff6a2a", "sunSize": 32, "light": "#ff9a68", "tint": "#c03010", "tintA": 0.22 },
+    { "c": 600,  "skyTop": "#280a08", "skyBottom": "#9a2410", "fog": "#4a140c", "fogFar": 100, "sun": "#ff4a1a", "sunSize": 40, "light": "#ff7a48", "tint": "#a01808", "tintA": 0.26 },
+    { "c": 842,  "skyTop": "#3a0806", "skyBottom": "#ff4a12", "fog": "#a02a10", "fogFar": 110, "sun": "#ff5a20", "sunSize": 44, "light": "#ff8a50", "tint": "#ff3a10", "tintA": 0.24 },
+    { "c": 1100, "skyTop": "#4a0a04", "skyBottom": "#ff7a20", "fog": "#d8461a", "fogFar": 120, "sun": "#ff9a40", "sunSize": 46, "light": "#ffa060", "tint": "#ff5a18", "tintA": 0.26 }
+  ],
+
+  "beats": [
+    { "atC": 22,   "state": "APRÈS-MIDI AGRÉABLE" },
+    { "atC": 32,   "state": "CHALEUR D'ÉTÉ",           "caption": "Une journée d'été ordinaire." },
+    { "atC": 40,   "state": "TROP CHAUD",              "caption": "Au-dessus de 40 °C, ton corps commence à {surchauffer}." },
+    { "atC": 57,   "state": "AU-DELÀ DE TOUT RECORD",  "caption": "Au-delà de {56,7 °C}, l'air le plus chaud jamais mesuré." },
+    { "atC": 72,   "state": "BRÛLURES AU CONTACT",     "caption": "Les moteurs surchauffent. L'asphalte {ramollit}." },
+    { "atC": 90,   "state": "À PEINE SURVIVABLE",      "caption": "À 90 °C, tu ne tiendrais que quelques {minutes}." },
+    { "atC": 100,  "state": "L'EAU BOUT",              "caption": "À 100 °C, l'eau {bout}." },
+    { "atC": 172,  "state": "TORRIDE",                 "caption": "Les bassins sont à sec. L'herbe devient de la {paille}." },
+    { "atC": 230,  "state": "LE PAPIER S'ENFLAMME",    "caption": "Vers 230 °C, le papier {s'enflamme}." },
+    { "atC": 300,  "state": "LE PLOMB FOND",           "caption": "Le bois suit vers 300 °C. La ville commence à {brûler}." },
+    { "atC": 442,  "state": "LES FENÊTRES ÉCLATENT",   "caption": "Les vitres éclatent sous la chaleur." },
+    { "atC": 550,  "state": "L'ACIER FAIBLIT",         "caption": "À 550 °C, l'acier perd la {moitié} de sa résistance." },
+    { "atC": 660,  "state": "L'ALUMINIUM FOND",        "caption": "L'aluminium {fond} à 660 °C." },
+    { "atC": 842,  "state": "LE VERRE S'AFFAISSE",     "caption": "Tout rougeoie. Même le verre {s'affaisse}." },
+    { "atC": 1000, "state": "LA ROCHE FOND",           "caption": "Au-delà de 1 000 °C, la roche commence à {fondre}." },
+    { "atC": 1100, "state": "LA ROCHE FOND",           "caption": "En moins de deux heures, le sol devient de la {lave}." }
+  ]
+}

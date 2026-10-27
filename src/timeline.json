@@ -1,0 +1,70 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 46,
+  "handle": "@ton_compte",
+  "audio": { "music": "ambience.wav", "voice": false },
+  "hole": {
+    "massKg": 5.972e24,
+    "startDistanceM": 50,
+    "appearsAt": 7,
+    "slowFactor": 1000000,
+    "personKg": 75
+  },
+  "scenes": [
+    { "id": "park",  "from": 0,  "to": 27.6 },
+    { "id": "earth", "from": 27, "to": 37.2 },
+    { "id": "scale", "from": 37, "to": 42.2 },
+    { "id": "end",   "from": 42, "to": 46 }
+  ],
+  "sky": [
+    { "t": 0,    "top": "#5f8fd0", "bottom": "#cfe2f3" },
+    { "t": 15,   "top": "#5a7fb5", "bottom": "#cbb9a0" },
+    { "t": 19,   "top": "#3b2f4a", "bottom": "#e0833f" },
+    { "t": 23,   "top": "#25101c", "bottom": "#ff5a1f" },
+    { "t": 26.7, "top": "#150810", "bottom": "#ffb070" }
+  ],
+  "flash": [
+    { "t": 24.6, "a": 0 },
+    { "t": 26.7, "a": 1 },
+    { "t": 27.3, "a": 1 },
+    { "t": 28.6, "a": 0 }
+  ],
+  "earth": [
+    { "t": 27,   "camDist": 4.6, "spin": 0,    "hotspot": 1.0, "fire": 0 },
+    { "t": 31,   "camDist": 3.6, "spin": 0.35, "hotspot": 1.6, "fire": 0 },
+    { "t": 33,   "camDist": 3.0, "spin": 0.5,  "hotspot": 2.2, "fire": 0.5 },
+    { "t": 36,   "camDist": 2.6, "spin": 0.8,  "hotspot": 2.6, "fire": 1 },
+    { "t": 37.2, "camDist": 2.5, "spin": 0.9,  "hotspot": 2.6, "fire": 1 }
+  ],
+  "beats": [
+    { "t": 0,    "end": 4,    "title": "Et si un trou noir de la taille d'une pièce apparaissait à côté de toi ?" },
+    { "t": 4,    "end": 7,    "label": "UN APRÈS-MIDI NORMAL", "field": "LIEU", "big": "CENTRAL PARK", "sub": "NEW YORK · SHEEP MEADOW",
+      "caption": "Un après-midi ensoleillé à Central Park.", "right": "none" },
+    { "t": 7,    "end": 10.5, "label": "QUELQUE CHOSE APPARAÎT", "field": "DIAMÈTRE", "big": {"compute": "diameter"}, "sub": "À PEU PRÈS UNE PIÈCE",
+      "caption": "C'est un trou noir de 1,8 centimètre.", "right": "elapsed" },
+    { "t": 10.5, "end": 14,   "label": "QUELQUE CHOSE APPARAÎT", "field": "MASSE", "big": {"compute": "mass"}, "sub": "AUTANT QUE TOUTE LA TERRE",
+      "caption": "Il pèse autant que la Terre entière.", "right": "elapsed" },
+    { "t": 14,   "end": 17.5, "label": "TOUT EST ATTIRÉ", "field": {"compute": "pullField"}, "big": {"compute": "pull"}, "sub": {"compute": "weightSub"},
+      "caption": "Chaque brin d'herbe se penche vers lui.", "right": "elapsed" },
+    { "t": 17.5, "end": 20,   "label": "L'AIR TOMBE", "field": "DISTANCE AU TROU NOIR", "big": {"compute": "distance"}, "sub": "TU TOMBES DÉJÀ",
+      "caption": "L'air lui-même commence à tomber.", "right": "fall" },
+    { "t": 20,   "end": 22.5, "label": "PLUS BRILLANT QUE LE SOLEIL", "field": "DISTANCE AU TROU NOIR", "big": {"compute": "distance"}, "sub": "TU TOMBES DÉJÀ",
+      "caption": "Maintenant, il brille plus fort que le Soleil.", "right": "fall" },
+    { "t": 22.5, "end": 25,   "label": "PLUS BRILLANT QUE LE SOLEIL", "field": "DISTANCE AU TROU NOIR", "big": {"compute": "distance"}, "sub": "TU TOMBES DÉJÀ",
+      "caption": "Les arbres, les gens, le sol. Tout bouge.", "right": "fall" },
+    { "t": 25,   "end": 27.6, "label": "L'HORIZON DES ÉVÉNEMENTS", "field": "TU ES", "big": "ICI",
+      "caption": "Puis tout devient blanc.", "right": "none" },
+
+    { "t": 28.4, "end": 32.5, "label": "VU DE L'ESPACE", "field": "LUMINOSITÉ", "big": "1/10 DU SOLEIL", "sub": "ÉMISE PAR UN TROU PLUS PETIT QU'UNE PIÈCE",
+      "caption": "Depuis l'espace, New York est un second soleil.", "right": "none", "verify": true },
+    { "t": 32.5, "end": 37.2, "label": "LA SUITE", "field": "TERRE DÉTRUITE EN", "big": "ENVIRON 70 JOURS", "sub": "CHAUFFÉE PAR SA PROPRE LUMIÈRE",
+      "caption": "Cette lumière suffit à faire bouillir la planète.", "right": "none", "verify": true },
+
+    { "t": 37.4, "end": 40,   "label": "POUR L'ÉCHELLE", "field": "LE SOLEIL EN TROU NOIR", "big": {"compute": "sunDiameter"}, "sub": "MÊME MASSE, MÊME ATTRACTION",
+      "caption": "Si le Soleil en devenait un, il ferait 6 km de large.", "right": "none" },
+    { "t": 40,   "end": 42.2, "label": "POUR L'ÉCHELLE", "field": "LE SOLEIL EN TROU NOIR", "big": {"compute": "sunDiameter"}, "sub": "MÊME MASSE, MÊME ATTRACTION",
+      "caption": "Et la Terre continuerait de tourner pareil.", "right": "none" }
+  ]
+}

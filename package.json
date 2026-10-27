@@ -1,0 +1,38 @@
+{
+  "name": "whatif-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render WhatIf out/whatif.mp4 --codec=h264",
+    "still": "remotion still WhatIf out/frame.png --frame=300",
+    "ambience": "node scripts/make-ambience.mjs",
+    "voice": "node scripts/make-voice.mjs",
+    "typecheck": "tsc --noEmit",
+    "predev": "node scripts/make-ambience.mjs --if-missing",
+    "prerender": "node scripts/make-ambience.mjs --if-missing",
+    "render:nature": "remotion render NatureReprend out/nature.mp4 --codec=h264",
+    "still:nature": "remotion still NatureReprend out/nature-frame.png --frame=600",
+    "ambience:nature": "node scripts/make-nature-ambience.mjs",
+    "prerender:nature": "node scripts/make-nature-ambience.mjs --if-missing",
+    "render:heat": "remotion render Chaleur out/chaleur.mp4 --codec=h264",
+    "still:heat": "remotion still Chaleur out/chaleur-frame.png --frame=1200",
+    "ambience:heat": "node scripts/make-heat-ambience.mjs",
+    "prerender:heat": "node scripts/make-heat-ambience.mjs --if-missing",
+    "voice:heat": "node scripts/make-voice.mjs src/heat/timeline.json"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.539",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/three": "^0.186.0",
+    "typescript": "^5.6.0"
+  }
+}
