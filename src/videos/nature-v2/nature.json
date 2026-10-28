@@ -1,0 +1,618 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 50,
+  "handle": "@ton_compte",
+  "startYear": 2026,
+  "humans": 8200000000,
+  "audio": {
+    "music": "nature2.wav",
+    "voice": false,
+    "voiceDir": "voice-nature-v2"
+  },
+  "scenes": [
+    {
+      "id": "paris",
+      "from": 0,
+      "to": 45.2
+    },
+    {
+      "id": "end",
+      "from": 45,
+      "to": 50
+    }
+  ],
+  "days": [
+    {
+      "t": 11.5,
+      "d": 0
+    },
+    {
+      "t": 15.5,
+      "d": 2
+    },
+    {
+      "t": 20.5,
+      "d": 365
+    },
+    {
+      "t": 26.5,
+      "d": 3652
+    },
+    {
+      "t": 32.5,
+      "d": 18262
+    },
+    {
+      "t": 38.5,
+      "d": 36525
+    },
+    {
+      "t": 44.5,
+      "d": 109575
+    }
+  ],
+  "sky": [
+    {
+      "t": 0,
+      "top": "#4f8fd6",
+      "bottom": "#d8ecf7"
+    },
+    {
+      "t": 3.5,
+      "top": "#4f8fd6",
+      "bottom": "#d8ecf7"
+    },
+    {
+      "t": 6,
+      "top": "#4a5d9a",
+      "bottom": "#f2b27a"
+    },
+    {
+      "t": 8.5,
+      "top": "#3e2a63",
+      "bottom": "#f58a48"
+    },
+    {
+      "t": 10.5,
+      "top": "#2c2556",
+      "bottom": "#c9654e"
+    },
+    {
+      "t": 11.5,
+      "top": "#141a33",
+      "bottom": "#5a4a5e"
+    },
+    {
+      "t": 13.5,
+      "top": "#0c1024",
+      "bottom": "#3b3346"
+    },
+    {
+      "t": 15.2,
+      "top": "#03050c",
+      "bottom": "#0b0e18"
+    },
+    {
+      "t": 16.6,
+      "top": "#3a4f7d",
+      "bottom": "#f0b38a"
+    },
+    {
+      "t": 18.2,
+      "top": "#4f8fd6",
+      "bottom": "#d8ecf7"
+    },
+    {
+      "t": 27.4,
+      "top": "#4f8fd6",
+      "bottom": "#d8ecf7"
+    },
+    {
+      "t": 28.4,
+      "top": "#4a525d",
+      "bottom": "#8f979d"
+    },
+    {
+      "t": 31.8,
+      "top": "#4a525d",
+      "bottom": "#8f979d"
+    },
+    {
+      "t": 33,
+      "top": "#4f8fd6",
+      "bottom": "#d8ecf7"
+    },
+    {
+      "t": 34,
+      "top": "#4f8fd6",
+      "bottom": "#d8ecf7"
+    },
+    {
+      "t": 44.5,
+      "top": "#5a86c4",
+      "bottom": "#ffd49a"
+    }
+  ],
+  "world": [
+    {
+      "t": 0,
+      "lights": 0,
+      "sun": 1,
+      "stars": 0,
+      "grass": 0,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0,
+      "island": 0
+    },
+    {
+      "t": 4,
+      "lights": 0,
+      "sun": 1,
+      "stars": 0,
+      "grass": 0,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0,
+      "island": 0
+    },
+    {
+      "t": 6.5,
+      "lights": 0.25,
+      "sun": 0.75,
+      "stars": 0,
+      "grass": 0,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0,
+      "island": 0
+    },
+    {
+      "t": 8.5,
+      "lights": 1,
+      "sun": 0.5,
+      "stars": 0,
+      "grass": 0,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0,
+      "island": 0
+    },
+    {
+      "t": 11.5,
+      "lights": 1,
+      "sun": 0.2,
+      "stars": 0.2,
+      "grass": 0,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0,
+      "island": 0
+    },
+    {
+      "t": 13.2,
+      "lights": 1,
+      "sun": 0.08,
+      "stars": 0.4,
+      "grass": 0,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0,
+      "island": 0
+    },
+    {
+      "t": 15.2,
+      "lights": 0,
+      "sun": 0.03,
+      "stars": 1,
+      "grass": 0,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0,
+      "island": 0
+    },
+    {
+      "t": 16.5,
+      "lights": 0,
+      "sun": 0.5,
+      "stars": 0.2,
+      "grass": 0.05,
+      "ivy": 0,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0.1,
+      "island": 0
+    },
+    {
+      "t": 18,
+      "lights": 0,
+      "sun": 0.95,
+      "stars": 0,
+      "grass": 0.4,
+      "ivy": 0.02,
+      "trees": 0,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0,
+      "tower": 0,
+      "birds": 0.2,
+      "island": 0
+    },
+    {
+      "t": 20.5,
+      "lights": 0,
+      "sun": 1,
+      "stars": 0,
+      "grass": 1,
+      "ivy": 0.08,
+      "trees": 0.04,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0.05,
+      "tower": 0,
+      "birds": 0.3,
+      "island": 0
+    },
+    {
+      "t": 26.5,
+      "lights": 0,
+      "sun": 1,
+      "stars": 0,
+      "grass": 1,
+      "ivy": 0.55,
+      "trees": 0.3,
+      "collapse": 0,
+      "bridge": 0,
+      "rust": 0.25,
+      "tower": 0,
+      "birds": 0.5,
+      "island": 0.3
+    },
+    {
+      "t": 32.5,
+      "lights": 0,
+      "sun": 1,
+      "stars": 0,
+      "grass": 1,
+      "ivy": 0.8,
+      "trees": 0.5,
+      "collapse": 0.65,
+      "bridge": 0,
+      "rust": 0.55,
+      "tower": 0,
+      "birds": 0.6,
+      "island": 0.6
+    },
+    {
+      "t": 35.5,
+      "lights": 0,
+      "sun": 1,
+      "stars": 0,
+      "grass": 1,
+      "ivy": 0.85,
+      "trees": 0.6,
+      "collapse": 0.75,
+      "bridge": 0,
+      "rust": 0.8,
+      "tower": 0,
+      "birds": 0.7,
+      "island": 0.7
+    },
+    {
+      "t": 37.5,
+      "lights": 0,
+      "sun": 1,
+      "stars": 0,
+      "grass": 1,
+      "ivy": 0.88,
+      "trees": 0.65,
+      "collapse": 0.8,
+      "bridge": 1,
+      "rust": 0.9,
+      "tower": 0,
+      "birds": 0.75,
+      "island": 0.75
+    },
+    {
+      "t": 44.5,
+      "lights": 0,
+      "sun": 0.8,
+      "stars": 0,
+      "grass": 1,
+      "ivy": 1,
+      "trees": 1,
+      "collapse": 1,
+      "bridge": 1,
+      "rust": 1,
+      "tower": 1,
+      "birds": 1,
+      "island": 1
+    }
+  ],
+  "camera": [
+    {
+      "t": 0,
+      "x": 16,
+      "y": 64,
+      "z": 118,
+      "tx": -2,
+      "ty": 2,
+      "tz": -120
+    },
+    {
+      "t": 6,
+      "x": 11,
+      "y": 46,
+      "z": 90,
+      "tx": -1,
+      "ty": 5,
+      "tz": -105
+    },
+    {
+      "t": 11.5,
+      "x": 6.5,
+      "y": 23,
+      "z": 60,
+      "tx": 0,
+      "ty": 9,
+      "tz": -75
+    },
+    {
+      "t": 15,
+      "x": 5,
+      "y": 12.5,
+      "z": 41,
+      "tx": 0,
+      "ty": 9,
+      "tz": -60
+    },
+    {
+      "t": 21,
+      "x": 2.5,
+      "y": 6.5,
+      "z": 31,
+      "tx": -1,
+      "ty": 6,
+      "tz": -60
+    },
+    {
+      "t": 32,
+      "x": -2,
+      "y": 8.5,
+      "z": 17,
+      "tx": -1,
+      "ty": 9,
+      "tz": -70
+    },
+    {
+      "t": 45.2,
+      "x": -3,
+      "y": 10,
+      "z": 6,
+      "tx": -2,
+      "ty": 13,
+      "tz": -80
+    }
+  ],
+  "beats": [
+    {
+      "t": 0,
+      "end": 4.5,
+      "title": "Et si l'humanité disparaissait demain ?"
+    },
+    {
+      "t": 4.5,
+      "end": 8.6,
+      "label": "JOUR 0",
+      "field": "LIEU",
+      "big": "PARIS",
+      "sub": "BORDS DE SEINE",
+      "caption": "Un soir comme les autres à Paris.",
+      "right": "humans"
+    },
+    {
+      "t": 8.6,
+      "end": 12,
+      "label": "JOUR 0",
+      "field": "LIEU",
+      "big": "PARIS",
+      "sub": "LA VILLE EST ALLUMÉE, MAIS VIDE",
+      "caption": "Puis, d'un coup, plus personne.",
+      "right": "humans"
+    },
+    {
+      "t": 12,
+      "end": 16,
+      "label": "LES LUMIÈRES S'ÉTEIGNENT",
+      "field": "TEMPS SANS HUMAINS",
+      "big": {
+        "compute": "elapsed"
+      },
+      "sub": "LES CENTRALES S'ARRÊTENT, FAUTE DE PERSONNEL",
+      "caption": "Sans personne aux commandes, le réseau électrique lâche.",
+      "right": "year",
+      "verify": true
+    },
+    {
+      "t": 16,
+      "end": 21,
+      "label": "L'HERBE REVIENT",
+      "field": "TEMPS SANS HUMAINS",
+      "big": {
+        "compute": "elapsed"
+      },
+      "sub": "LES QUAIS VERDISSENT",
+      "caption": "En un an, l'herbe perce le bitume.",
+      "right": "year"
+    },
+    {
+      "t": 21,
+      "end": 27,
+      "label": "LA FORÊT AVANCE",
+      "field": "TEMPS SANS HUMAINS",
+      "big": {
+        "compute": "elapsed"
+      },
+      "sub": "LE LIERRE ENVAHIT LES FAÇADES",
+      "caption": "En dix ans, les arbres envahissent les rues.",
+      "right": "year"
+    },
+    {
+      "t": 27,
+      "end": 33,
+      "label": "LES TOITS CÈDENT",
+      "field": "TEMPS SANS HUMAINS",
+      "big": {
+        "compute": "elapsed"
+      },
+      "sub": "LA PLUIE S'INFILTRE PARTOUT",
+      "caption": "Sans entretien, l'eau s'infiltre et les toits s'effondrent.",
+      "right": "year",
+      "verify": true
+    },
+    {
+      "t": 33,
+      "end": 39,
+      "label": "LE PONT TOMBE",
+      "field": "TEMPS SANS HUMAINS",
+      "big": {
+        "compute": "elapsed"
+      },
+      "sub": "L'ACIER ROUILLE SANS PEINTURE",
+      "caption": "Rongé par la rouille, le pont finit dans la Seine.",
+      "right": "year",
+      "verify": true
+    },
+    {
+      "t": 39,
+      "end": 45.2,
+      "label": "LA NATURE A GAGNÉ",
+      "field": "TEMPS SANS HUMAINS",
+      "big": {
+        "compute": "elapsed"
+      },
+      "sub": "LA TOUR A PERDU SON SOMMET",
+      "caption": "Trois siècles plus tard, Paris est redevenu une forêt.",
+      "right": "year",
+      "verify": true
+    }
+  ],
+  "rain": [
+    {
+      "t": 4,
+      "v": 0
+    },
+    {
+      "t": 27.6,
+      "v": 0
+    },
+    {
+      "t": 28.6,
+      "v": 1
+    },
+    {
+      "t": 31.6,
+      "v": 1
+    },
+    {
+      "t": 32.6,
+      "v": 0
+    }
+  ],
+  "thunder": [
+    29.6,
+    31.1
+  ],
+  "seasons": {
+    "from": 16,
+    "to": 44.5,
+    "maxRate": 0.45,
+    "amp": 0.85
+  },
+  "fauna": {
+    "foxes": [
+      16.6,
+      21.4
+    ],
+    "boars": [
+      21.6,
+      27.8
+    ],
+    "ducks": [
+      17,
+      45.2
+    ],
+    "deer": [
+      38,
+      45.2
+    ]
+  },
+  "vanish": 8.6,
+  "sunElev": [
+    {
+      "t": 0,
+      "v": 0.6
+    },
+    {
+      "t": 4,
+      "v": 0.45
+    },
+    {
+      "t": 8.5,
+      "v": 0.06
+    },
+    {
+      "t": 11.5,
+      "v": 0
+    },
+    {
+      "t": 16,
+      "v": 0.2
+    },
+    {
+      "t": 45,
+      "v": 0.17
+    }
+  ],
+  "traffic": {
+    "people": 640,
+    "cars": 44,
+    "carSpeed": 11,
+    "walkSpeed": 1.3,
+    "brakeSec": 1.6,
+    "fadeSec": 0.7
+  }
+}

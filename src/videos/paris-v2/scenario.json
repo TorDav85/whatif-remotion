@@ -1,0 +1,47 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 46,
+  "handle": "@ton_compte",
+  "location": {"city": "PARIS", "name": "CHAMP-DE-MARS", "landmark": "TOUR EIFFEL"},
+  "audio": {"music": "ambience-paris-v2.wav", "voice": false, "voiceDir": "voice-paris-v2"},
+  "hole": {"massKg": 5.972e24, "startDistanceM": 50, "appearsAt": 7, "slowFactor": 2000000, "personKg": 75},
+  "camera": {"startZ": 26, "height": 3.4, "targetY": 8, "fov": 58},
+  "layout": {"holeY": 1.4, "towerZ": -170, "towerHeight": 76, "buildingX": 39, "treeX": 19, "lawnWidth": 24},
+  "effects": {
+    "pull": {"from": 12, "to": 22},
+    "suction": {"from": 21, "to": 38},
+    "glow": {"from": 19, "to": 39},
+    "debris": {"from": 27, "to": 38},
+    "towerBend": {"from": 30, "to": 39}
+  },
+  "sky": [
+    {"t": 0, "top": "#527fb5", "bottom": "#d7e7ef"},
+    {"t": 18, "top": "#506384", "bottom": "#d9bd91"},
+    {"t": 28, "top": "#35273c", "bottom": "#e59551"},
+    {"t": 36, "top": "#180f22", "bottom": "#fd7d3e"},
+    {"t": 42, "top": "#110c1c", "bottom": "#f4bc80"}
+  ],
+  "flash": [{"t": 0, "a": 0}, {"t": 38, "a": 0}, {"t": 40.5, "a": 1}, {"t": 41.2, "a": 1}, {"t": 42, "a": 0}],
+  "outro": {
+    "t": 42,
+    "title": "Et si tout commençait ici ?",
+    "text": "PARIS · CHAMP-DE-MARS",
+    "note": "FICTION VISUELLE · EFFETS AMPLIFIÉS\nCALCULS NEWTONIENS APPROXIMATIFS",
+    "question": "Tu étais à 50 mètres."
+  },
+  "beats": [
+    {"t": 0, "end": 4, "title": "Et si un trou noir de la taille d'une pièce apparaissait à Paris ?"},
+    {"t": 4, "end": 7, "label": "UN APRÈS-MIDI À PARIS", "field": "LIEU", "big": "CHAMP-DE-MARS", "sub": "AU PIED DE LA TOUR EIFFEL", "caption": "Paris. Le Champ-de-Mars. Un après-midi ordinaire.", "right": "none"},
+    {"t": 7, "end": 10.5, "label": "QUELQUE CHOSE APPARAÎT", "field": "DIAMÈTRE", "big": {"compute": "diameter"}, "sub": "À PEU PRÈS UNE PIÈCE", "caption": "À cinquante mètres, un point noir apparaît.", "right": "elapsed"},
+    {"t": 10.5, "end": 14, "label": "MINUSCULE. MAIS IMMENSE.", "field": "MASSE", "big": {"compute": "mass"}, "sub": "AUTANT QUE TOUTE LA TERRE", "caption": "Il est minuscule. Mais sa masse est celle de la Terre.", "right": "elapsed"},
+    {"t": 14, "end": 18, "label": "L'ATTRACTION EST COLOSSALE", "field": {"compute": "pullField"}, "big": {"compute": "pull"}, "sub": {"compute": "weightSub"}, "caption": "Même à cette distance, son attraction est colossale.", "right": "none"},
+    {"t": 18, "end": 22, "label": "LA PELOUSE SE COURBE", "field": "TOUJOURS AU MÊME ENDROIT", "big": "CHAMP-DE-MARS", "sub": "CHAQUE BRIN D'HERBE POINTE VERS LUI", "caption": "La pelouse se couche vers ce point noir.", "right": "elapsed"},
+    {"t": 22, "end": 26, "label": "L'AIR EST ATTIRÉ", "field": "DISTANCE AU TROU NOIR", "big": {"compute": "distance"}, "sub": "LE MÊME PARC. LE MÊME POINT NOIR.", "caption": "L'air et la poussière convergent à leur tour.", "right": "fall"},
+    {"t": 26, "end": 30, "label": "PLUS RIEN NE TIENT", "field": "AUTOUR DE TOI", "big": "TOUT SE SOULÈVE", "sub": "BANCS · ARBRES · GRAVIER", "caption": "Les bancs s'arrachent. Les arbres se soulèvent.", "right": "none"},
+    {"t": 30, "end": 34, "label": "PARIS SE DÉFORME", "field": "À L'HORIZON", "big": "LA TOUR VACILLE", "sub": "LE POINT NOIR RESTE AU CENTRE", "caption": "Derrière lui, même la tour Eiffel se déforme.", "right": "none"},
+    {"t": 34, "end": 38, "label": "LA MATIÈRE S'ÉCHAUFFE", "field": "TOUJOURS AU CHAMP-DE-MARS", "big": "UNE LUEUR AVEUGLANTE", "sub": "LA MATIÈRE ATTIRÉE S'ÉCHAUFFE", "caption": "La matière attirée s'échauffe. La lumière envahit le parc.", "right": "none"},
+    {"t": 38, "end": 42, "label": "LE DERNIER INSTANT", "field": "PARIS", "big": "TOUT DEVIENT BLANC", "sub": "QUELQUES MICROSECONDES ONT PASSÉ", "caption": "Tu n'as pas quitté Paris. Tout devient blanc.", "right": "none"}
+  ]
+}

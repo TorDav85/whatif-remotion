@@ -1,0 +1,444 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 70,
+  "handle": "#WHATIF",
+  "audio": {
+    "music": "ambience-paris-tiktok70.wav",
+    "voice": false,
+    "voiceDir": "voice-paris-tiktok70"
+  },
+  "hole": {
+    "massKg": 5.972e+24,
+    "startDistanceM": 100,
+    "appearsAt": 0.35,
+    "slowFactor": 4000000,
+    "personKg": 75,
+    "height": 12,
+    "z": -24
+  },
+  "hero": {
+    "x": -28,
+    "z": -1,
+    "driveUntil": 1.6,
+    "absorbFrom": 1.8,
+    "absorbTo": 5.8,
+    "impactAt": 5.8
+  },
+  "city": {
+    "cars": 140,
+    "people": 44,
+    "blocks": 8,
+    "rows": 26,
+    "streetPitch": 34,
+    "seed": 304
+  },
+  "camera": [
+    {
+      "t": 0.0,
+      "x": -18,
+      "y": 33,
+      "z": 66,
+      "tx": -16,
+      "ty": 8,
+      "tz": -40
+    },
+    {
+      "t": 2.262,
+      "x": -10,
+      "y": 29,
+      "z": 52,
+      "tx": -12,
+      "ty": 9,
+      "tz": -30
+    },
+    {
+      "t": 5.8,
+      "x": 2,
+      "y": 26,
+      "z": 44,
+      "tx": 0,
+      "ty": 12,
+      "tz": -24
+    },
+    {
+      "t": 9.3,
+      "x": 9,
+      "y": 35,
+      "z": 76,
+      "tx": 0,
+      "ty": 10,
+      "tz": -58
+    },
+    {
+      "t": 17.5,
+      "x": 18,
+      "y": 52,
+      "z": 108,
+      "tx": 0,
+      "ty": 10,
+      "tz": -70
+    },
+    {
+      "t": 21.0,
+      "x": 55,
+      "y": 140,
+      "z": 205,
+      "tx": 0,
+      "ty": 8,
+      "tz": -65
+    },
+    {
+      "t": 24.0,
+      "x": 80,
+      "y": 450,
+      "z": 270,
+      "tx": 0,
+      "ty": 0,
+      "tz": -80
+    },
+    {
+      "t": 28.0,
+      "x": 0,
+      "y": 2200,
+      "z": -24,
+      "tx": 0,
+      "ty": 0,
+      "tz": -24
+    }
+  ],
+  "shots": [
+    {
+      "id": "city",
+      "from": 0,
+      "to": 28,
+      "label": "PARIS",
+      "detail": "PARIS · SCÉNARIO FICTIF · TEMPS DILATÉ",
+      "chapter": "ET SI UN TROU NOIR APPARAISSAIT ?"
+    },
+    {
+      "id": "country",
+      "from": 27,
+      "to": 37,
+      "label": "FRANCE",
+      "detail": "LE POINT LUMINEUX RESTE PARIS",
+      "chapter": "GARDE LE POINT EN VUE"
+    },
+    {
+      "id": "earth",
+      "from": 36,
+      "to": 46,
+      "label": "LA TERRE",
+      "detail": "TU ÉTAIS JUSTE ICI",
+      "chapter": "CHANGE D'ÉCHELLE"
+    },
+    {
+      "id": "solar",
+      "from": 45,
+      "to": 58,
+      "label": "SYSTÈME SOLAIRE",
+      "detail": "8 PLANÈTES · LA TERRE ET SA LUNE",
+      "chapter": "AUTOUR DE NOTRE ÉTOILE"
+    },
+    {
+      "id": "galaxy",
+      "from": 57,
+      "to": 70,
+      "label": "LA VOIE LACTÉE",
+      "detail": "REPÈRE DORÉ · SYSTÈME SOLAIRE",
+      "chapter": "ENCORE PLUS LOIN"
+    }
+  ],
+  "effects": {
+    "pullFrom": 2.262,
+    "absorbFrom": 7.709,
+    "absorbTo": 19.6,
+    "cityFrom": 18.2,
+    "cityTo": 27.2
+  },
+  "timing": {
+    "grassFrom": 3.8,
+    "grassTo": 15.45,
+    "treesFrom": 8.505,
+    "treesTo": 18.9,
+    "peopleFrom": 9.3,
+    "peopleTo": 18.9,
+    "benchesFrom": 7.709,
+    "benchesTo": 17.5,
+    "towerFrom": 17.5,
+    "towerTo": 24.8,
+    "beaconFrom": 21.0,
+    "beaconTo": 24.0
+  },
+  "zoom": {
+    "countryDuration": 9,
+    "planetDuration": 9,
+    "galaxyDuration": 11
+  },
+  "geography": {
+    "parisLon": 2.3522,
+    "parisLat": 48.8566
+  },
+  "sky": [
+    {
+      "t": 0.0,
+      "top": "#70838f",
+      "bottom": "#b3bdc1"
+    },
+    {
+      "t": 6.914,
+      "top": "#667b89",
+      "bottom": "#a1aeb5"
+    },
+    {
+      "t": 17.5,
+      "top": "#3c5364",
+      "bottom": "#7b8d97"
+    },
+    {
+      "t": 24.0,
+      "top": "#192e40",
+      "bottom": "#4d6472"
+    },
+    {
+      "t": 28.0,
+      "top": "#0a1728",
+      "bottom": "#1e3449"
+    }
+  ],
+  "outro": {
+    "t": 65,
+    "title": "Tu l’avais vue venir ?",
+    "text": "Regarde encore la voiture rouge.",
+    "note": "FICTION VISUELLE · ÉCHELLES ET ABSORPTION STYLISÉES"
+  },
+  "beats": [
+    {
+      "t": 0,
+      "end": 2.4,
+      "title": "Cette voiture a {6 secondes}.",
+      "voice": "Cette voiture a six secondes."
+    },
+    {
+      "t": 2.4,
+      "end": 5.8,
+      "caption": "Un {trou noir}. En plein Paris.",
+      "voice": "Et si un trou noir apparaissait à Paris ?"
+    },
+    {
+      "t": 5.8,
+      "end": 7.7,
+      "caption": "{Trop tard}.",
+      "voice": "Trop tard."
+    },
+    {
+      "t": 7.7,
+      "end": 10.5,
+      "caption": "Le piège ? {Sa masse}.",
+      "voice": "Le piège ? Sa masse."
+    },
+    {
+      "t": 10.5,
+      "end": 14,
+      "caption": "La {masse de la Terre}. En un point.",
+      "voice": "Imagine la masse de la Terre en un point."
+    },
+    {
+      "t": 14,
+      "end": 17.5,
+      "caption": "La route se vide. {Tout bascule}.",
+      "voice": "La route se vide. Tout bascule."
+    },
+    {
+      "t": 17.5,
+      "end": 21,
+      "caption": "Même {la tour Eiffel}.",
+      "voice": "Même la tour Eiffel ne tient plus."
+    },
+    {
+      "t": 21,
+      "end": 24,
+      "caption": "Regarde {où nous sommes}.",
+      "voice": "Mais regarde où nous sommes."
+    },
+    {
+      "t": 24,
+      "end": 28,
+      "caption": "Ce point… c’est encore {Paris}.",
+      "voice": "Ce point, c’est encore Paris."
+    },
+    {
+      "t": 28,
+      "end": 32,
+      "caption": "À cette échelle, {une ville disparaît}.",
+      "voice": "À cette échelle, une ville disparaît de notre vue."
+    },
+    {
+      "t": 32,
+      "end": 36,
+      "caption": "Et si on reculait {encore} ?",
+      "voice": "Et si on reculait encore ?"
+    },
+    {
+      "t": 36,
+      "end": 40.5,
+      "caption": "{La Terre}. Notre point de départ.",
+      "voice": "La Terre. Notre planète, vue depuis l’espace."
+    },
+    {
+      "t": 40.5,
+      "end": 45,
+      "caption": "Il avalerait {tout l’Univers} ?",
+      "voice": "Alors, ce trou noir finirait par avaler tout l’Univers ?"
+    },
+    {
+      "t": 45,
+      "end": 49,
+      "caption": "Non. {Pas un aspirateur cosmique}.",
+      "voice": "Non. Un trou noir n’est pas un aspirateur cosmique."
+    },
+    {
+      "t": 49,
+      "end": 53.5,
+      "caption": "De loin : {même masse, même attraction}.",
+      "voice": "De loin, il attire comme tout objet de même masse."
+    },
+    {
+      "t": 53.5,
+      "end": 57,
+      "caption": "Huit planètes. {Un même Soleil}.",
+      "voice": "Huit planètes. Un même Soleil."
+    },
+    {
+      "t": 57,
+      "end": 61,
+      "caption": "Puis {la Voie lactée}.",
+      "voice": "Puis, la Voie lactée. Notre galaxie."
+    },
+    {
+      "t": 61,
+      "end": 65,
+      "caption": "Notre système solaire tient {dans ce point}.",
+      "voice": "Notre système solaire tient maintenant dans ce point."
+    },
+    {
+      "t": 65,
+      "end": 68.5,
+      "caption": "Alors… {regarde encore cette voiture}.",
+      "voice": "Alors, regarde encore cette voiture."
+    },
+    {
+      "t": 68.5,
+      "end": 70,
+      "title": "Cette voiture a {6 secondes}.",
+      "voice": ""
+    }
+  ],
+  "reference": "https://whiteout.plgb.chatgpt.site/",
+  "solar": {
+    "source": "https://github.com/daehli/planet_simulation",
+    "duration": 12,
+    "sunRadius": 4.2,
+    "moonRadius": 0.22,
+    "moonOrbit": 2.5,
+    "planets": [
+      {
+        "id": "mercury",
+        "name": "MERCURE",
+        "radius": 0.65,
+        "orbit": 7,
+        "angle": 4.9,
+        "speed": 0.1,
+        "tilt": 0.01,
+        "inclination": 7.005
+      },
+      {
+        "id": "venus",
+        "name": "VÉNUS",
+        "radius": 0.95,
+        "orbit": 11,
+        "angle": 3.2,
+        "speed": 0.07,
+        "tilt": 177.3,
+        "inclination": 3.39
+      },
+      {
+        "id": "earth",
+        "name": "TERRE",
+        "radius": 1,
+        "orbit": 16,
+        "angle": 0,
+        "speed": 0.05,
+        "tilt": 23.439281,
+        "inclination": 0
+      },
+      {
+        "id": "mars",
+        "name": "MARS",
+        "radius": 0.8,
+        "orbit": 22,
+        "angle": 2.7,
+        "speed": 0.04,
+        "tilt": 25.19,
+        "inclination": 1.8506
+      },
+      {
+        "id": "jupiter",
+        "name": "JUPITER",
+        "radius": 3.6,
+        "orbit": 32,
+        "angle": -0.8,
+        "speed": 0.023,
+        "tilt": 3.13,
+        "inclination": 1.304
+      },
+      {
+        "id": "saturn",
+        "name": "SATURNE",
+        "radius": 3.1,
+        "orbit": 43,
+        "angle": 1.8,
+        "speed": 0.017,
+        "tilt": 26.73,
+        "inclination": 2.4845
+      },
+      {
+        "id": "uranus",
+        "name": "URANUS",
+        "radius": 2.4,
+        "orbit": 55,
+        "angle": 4.2,
+        "speed": 0.012,
+        "tilt": 97.77,
+        "inclination": 0.7725
+      },
+      {
+        "id": "neptune",
+        "name": "NEPTUNE",
+        "radius": 2.3,
+        "orbit": 67,
+        "angle": 0.25,
+        "speed": 0.009,
+        "tilt": 28.32,
+        "inclination": 1.7692
+      }
+    ]
+  },
+  "artDirection": {
+    "name": "WHITEOUT / PARIS",
+    "snow": true,
+    "palette": "cold blue-grey, charcoal, warm lamps, red hero car",
+    "source": "Visual study of Whiteout; original geometry, shaders and sound."
+  },
+  "loop": {
+    "from": 68.5,
+    "fadeTo": 69.1
+  },
+  "educationalSources": [
+    {
+      "url": "https://science.nasa.gov/universe/black-holes/",
+      "claim": "De loin, attraction comparable à celle de tout objet de même masse : pas un aspirateur cosmique."
+    }
+  ]
+}

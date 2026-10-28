@@ -1,0 +1,92 @@
+{
+  "source": "https://github.com/daehli/planet_simulation",
+  "author": "Daehli Nadeau-Otis",
+  "commit": "7f5fe2348ec534b38d4399542fe09318361d64d6",
+  "description": "Textures référencées par planet.js et scene.js ; modèle réimplémenté pour Remotion.",
+  "files": [
+    {
+      "name": "earthmap.png",
+      "path": "images/earthmap.png",
+      "sha": "afde02440f3c1974e30495068d490f363f10274c",
+      "size": 598635,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/earthmap.png"
+    },
+    {
+      "name": "jupitermap.png",
+      "path": "images/jupitermap.png",
+      "sha": "d0a8543820bf57bd28fe84c405cd4494b13c1d4c",
+      "size": 744873,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/jupitermap.png"
+    },
+    {
+      "name": "marsmap.png",
+      "path": "images/marsmap.png",
+      "sha": "6fd37714ab31ca5e7ec80fce6724a337fb7644ee",
+      "size": 803900,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/marsmap.png"
+    },
+    {
+      "name": "mercurymap.png",
+      "path": "images/mercurymap.png",
+      "sha": "9c5872933bd4bf3f9fa8bb780da4e7a2cf021d79",
+      "size": 1218762,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/mercurymap.png"
+    },
+    {
+      "name": "moonmap.png",
+      "path": "images/moonmap.png",
+      "sha": "d627b087e05fa6cdc1b56cdc216bca5b416ef6bf",
+      "size": 34062,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/moonmap.png"
+    },
+    {
+      "name": "neptunemap.png",
+      "path": "images/neptunemap.png",
+      "sha": "10dae0c597550bfe44b59c323bdb46b0a0f9d39a",
+      "size": 157495,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/neptunemap.png"
+    },
+    {
+      "name": "saturnmap.png",
+      "path": "images/saturnmap.png",
+      "sha": "aed13c35a02f30ae9cc129ad3d77a27234e8c99a",
+      "size": 358446,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/saturnmap.png"
+    },
+    {
+      "name": "saturnringmap.png",
+      "path": "images/saturnringmap.png",
+      "sha": "917808cc697bd3df090e429694e736e9eb19f9a6",
+      "size": 2174,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/saturnringmap.png"
+    },
+    {
+      "name": "sunmap.png",
+      "path": "images/sunmap.png",
+      "sha": "7b952bd3255b49df7dead75826c9ae764cd0bf40",
+      "size": 566639,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/sunmap.png"
+    },
+    {
+      "name": "uranusmap.png",
+      "path": "images/uranusmap.png",
+      "sha": "a8e0d662af9364e08767980f3d108a8771bac0e6",
+      "size": 23557,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/uranusmap.png"
+    },
+    {
+      "name": "uranusringmap.png",
+      "path": "images/uranusringmap.png",
+      "sha": "3d0ded644fdb3f189ca0130774763fc40e4fa5d2",
+      "size": 1386,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/uranusringmap.png"
+    },
+    {
+      "name": "venusmap.png",
+      "path": "images/venusmap.png",
+      "sha": "e8074a768c32fdb138be8db8f65509db2684b54a",
+      "size": 894678,
+      "url": "https://raw.githubusercontent.com/daehli/planet_simulation/7f5fe2348ec534b38d4399542fe09318361d64d6/images/venusmap.png"
+    }
+  ]
+}

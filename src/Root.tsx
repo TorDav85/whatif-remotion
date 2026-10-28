@@ -1,37 +1,19 @@
 import React from 'react';
-import {Composition} from 'remotion';
-import {WhatIf} from './WhatIf';
-import {Nature} from './nature/Nature';
-import {Heat} from './heat/Heat';
-import {DURATION_FRAMES, T} from './world';
-import {DURATION_FRAMES as NATURE_FRAMES, N} from './nature/time';
-import {DURATION_FRAMES as HEAT_FRAMES, H} from './heat/curve';
+import {Composition, Folder} from 'remotion';
+import {videos} from './videos/registry';
+import {SHOWCASE_FPS, SHOWCASE_FRAMES, Showcase} from './assets/Showcase';
+import {INTERIOR_FRAMES, InteriorShowcase} from './assets/interior/InteriorShowcase';
+import {CITY_FRAMES, CityShowcase} from './assets/city/CityShowcase';
 
 export const Root: React.FC = () => (
   <>
-    <Composition
-      id="WhatIf"
-      component={WhatIf}
-      durationInFrames={DURATION_FRAMES}
-      fps={T.fps}
-      width={T.width}
-      height={T.height}
-    />
-    <Composition
-      id="NatureReprend"
-      component={Nature}
-      durationInFrames={NATURE_FRAMES}
-      fps={N.fps}
-      width={N.width}
-      height={N.height}
-    />
-    <Composition
-      id="Chaleur"
-      component={Heat}
-      durationInFrames={HEAT_FRAMES}
-      fps={H.fps}
-      width={H.width}
-      height={H.height}
-    />
+    <Folder name="Videos">
+      {videos.map((video) => <Composition key={video.id} {...video} />)}
+    </Folder>
+    <Folder name="Bibliotheque">
+      <Composition id="AssetsVille" component={CityShowcase} durationInFrames={CITY_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
+      <Composition id="Assets" component={Showcase} durationInFrames={SHOWCASE_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
+      <Composition id="AssetsInterieur" component={InteriorShowcase} durationInFrames={INTERIOR_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
+    </Folder>
   </>
 );
