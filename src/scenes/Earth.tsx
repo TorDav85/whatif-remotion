@@ -30,13 +30,16 @@ const fbm = (x: number, y: number, o = 0) =>
 const HU = (-74 + 180) / 360;
 const HV = (90 - 40.7) / 180;
 
-export const hotspotVector = () => {
-  const theta = HV * Math.PI;
-  const phi = HU * Math.PI * 2;
+/** Point de la carte (u, v) → vecteur unitaire. Par défaut New York ; on peut passer un autre lieu. */
+export const lonLatUV = (lon: number, lat: number) => ({hu: (lon + 180) / 360, hv: (90 - lat) / 180});
+
+export const hotspotVector = (hu = HU, hv = HV) => {
+  const theta = hv * Math.PI;
+  const phi = hu * Math.PI * 2;
   return new THREE.Vector3(-Math.cos(phi) * Math.sin(theta), Math.cos(theta), Math.sin(phi) * Math.sin(theta));
 };
 
-export const useEarthTextures = () =>
+export const useEarthTextures = (hu = HU, hv = HV) =>
   useMemo(() => {
     const W = 512;
     const H = 256;
@@ -65,7 +68,7 @@ export const useEarthTextures = () =>
         const v = y / H;
         // bruit raccordé en u = 0 / 1 (sinon couture verticale sur le globe)
         let n = fbm(u, v) * (1 - u) + fbm(u - 1, v) * u;
-        n += 0.35 * Math.exp(-((u - HU) ** 2 * 60 + (v - HV) ** 2 * 200));
+        n += 0.35 * Math.exp(-((u - hu) ** 2 * 60 + (v - hv) ** 2 * 200));
         let col: number[];
         const cap = 0.05 + 0.05 * (fbm(u, 0.5, 11) * (1 - u) + fbm(u - 1, 0.5, 11) * u);
         if (v < cap || v > 1 - cap) col = ice;
@@ -84,11 +87,11 @@ export const useEarthTextures = () =>
     const clouds = new THREE.CanvasTexture(cCloud);
     map.colorSpace = clouds.colorSpace = THREE.SRGBColorSpace;
     return {map, clouds};
-  }, []);
+  }, [hu, hv]);
 
-export const EarthGlobe: React.FC<{fire?: number; spin?: number}> = ({fire = 0, spin = 0}) => {
-  const {map, clouds} = useEarthTextures();
-  const hp = useMemo(() => hotspotVector(), []);
+export const EarthGlobe: React.FC<{fire?: number; spin?: number; hu?: number; hv?: number}> = ({fire = 0, spin = 0, hu = HU, hv = HV}) => {
+  const {map, clouds} = useEarthTextures(hu, hv);
+  const hp = useMemo(() => hotspotVector(hu, hv), [hu, hv]);
   const yaw = Math.atan2(-hp.x, hp.z);
   return (
     <group rotation={[0.55, 0, 0]}>
