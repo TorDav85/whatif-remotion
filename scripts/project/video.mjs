@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
 import {temperatureTimeline} from '../../src/core/temperature.mjs';
@@ -51,10 +52,28 @@ function run(script, args = []) {
   if (result.status !== 0) throw new Error(`Échec de ${script} (${result.status})`);
 }
 
-function ambience(item) {
+const validate = (target) => run('scripts/check/validate-scenarios.mjs', target ? [target] : []);
+
+// Cache des ambiances par empreinte : régénère si le scénario ou le générateur a changé,
+// au lieu de conserver le WAV dès qu'il existe (--if-missing).
+const hashPath = path.join(root, '.cache/ambience-hashes.json');
+const readHashes = () => { try { return read(hashPath); } catch { return {}; } };
+
+function ambience(item, {force = false} = {}) {
   const config = read(item.config);
   inside(`public/${config.audio.music}`, path.join(root, 'public'));
-  run(item.ambience, [item.config, '--if-missing']);
+  const fingerprint = crypto.createHash('sha1')
+    .update(fs.readFileSync(inside(item.config)))
+    .update(fs.readFileSync(inside(item.ambience)))
+    .digest('hex');
+  const hashes = readHashes();
+  const output = path.join('public', config.audio.music);
+  if (!force && hashes[item.slug] === fingerprint && fs.existsSync(output)) return;
+  run(item.ambience, [item.config]);
+  hashes[item.slug] = fingerprint;
+  fs.mkdirSync(path.dirname(hashPath), {recursive: true});
+  fs.writeFileSync(hashPath, JSON.stringify(hashes, null, 2) + '\n');
+  console.log(`Ambiance régénérée pour ${item.slug} (scénario ou générateur modifié).`);
 }
 
 function copyVideo(item) {
@@ -84,7 +103,9 @@ try {
   if (command === 'list') {
     for (const item of catalog) console.log(`${item.slug.padEnd(15)} ${item.title}\n                ${item.config}`);
   } else if (command === 'sync') sync();
+  else if (command === 'validate') validate(slug);
   else if (command === 'prepare') {
+    validate();
     sync();
     for (const item of catalog) ambience(item);
   }
@@ -115,6 +136,7 @@ try {
       }
     }
     else if (['ambience', 'still', 'render'].includes(command)) {
+      if (command !== 'ambience') validate(item.slug); // échouer avant le rendu si le scénario est invalide
       sync(); ambience(item);
       if (command !== 'ambience') {
         const output = command === 'still' ? `out/${item.slug}-frame.png` : item.output;
@@ -123,7 +145,7 @@ try {
           ? ['still', item.id, output, `--frame=${item.frame}`]
           : ['render', item.id, output, '--codec=h264']);
       }
-    } else throw new Error('Commandes disponibles : list, sync, prepare, copy, voice, voice-plan, ambience, still, render.');
+    } else throw new Error('Commandes disponibles : list, sync, validate, prepare, copy, voice, voice-plan, ambience, still, render.');
   }
 } catch (error) {
   console.error(error.message);

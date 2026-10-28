@@ -11,12 +11,19 @@ import {EndCard} from './ui/EndCard';
 import {DURATION_FRAMES, FPS, T, sampleNum} from './world';
 
 const SCENES: Record<string, React.FC<{from: number}>> = {park: Park, earth: Earth, scale: Scale};
+const OVERLAYS = new Set(['end']);
+
+// Audit 1.03-test2 : échouer clairement plutôt qu'ignorer silencieusement une scène du JSON.
+const unknownScenes = T.scenes.filter((s) => !SCENES[s.id] && !OVERLAYS.has(s.id));
+if (unknownScenes.length > 0) {
+  throw new Error(`timeline.json : scènes inconnues — ${unknownScenes.map((s) => s.id).join(', ')}`);
+}
 
 export const WhatIf: React.FC = () => {
   const frame = useCurrentFrame();
   const {width, height} = useVideoConfig();
   const t = frame / FPS;
-  const flash = sampleNum(T.flash as any, t, 'a');
+  const flash = sampleNum(T.flash, t, 'a');
 
   return (
     <AbsoluteFill style={{background: '#000'}}>

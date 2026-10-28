@@ -1,18 +1,19 @@
 /** Animation déterministe, indépendante des scénarios. */
-type KF = {t: number} & Record<string, any>;
+type KF = {t: number};
 
-export const sampleNum = (keys: KF[], t: number, field: string): number => {
-  if (t <= keys[0].t) return keys[0][field];
+export const sampleNum = <K extends KF>(keys: readonly K[], t: number, field: string): number => {
+  const at = (k: K): number => (k as unknown as Record<string, number>)[field];
+  if (t <= keys[0].t) return at(keys[0]);
   for (let i = 0; i < keys.length - 1; i++) {
     const a = keys[i];
     const b = keys[i + 1];
     if (t <= b.t) {
       const f = (t - a.t) / (b.t - a.t);
       const e = f * f * (3 - 2 * f); // smoothstep
-      return a[field] + (b[field] - a[field]) * e;
+      return at(a) + (at(b) - at(a)) * e;
     }
   }
-  return keys[keys.length - 1][field];
+  return at(keys[keys.length - 1]);
 };
 
 export const clamp01 = (x: number) => Math.max(0, Math.min(1, x));
