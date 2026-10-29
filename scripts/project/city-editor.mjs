@@ -8,23 +8,26 @@ import * as esbuild from 'esbuild';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const outDir = path.join(root, '.cache', 'city-editor');
-const layouts = path.join(root, 'public', 'city-layouts');
+// CITY_LAYOUTS_DIR and CITY_EDITOR_NO_BUILD let the tests run the API in isolation.
+const layouts = path.resolve(process.env.CITY_LAYOUTS_DIR ?? path.join(root, 'public', 'city-layouts'));
 const port = Number(process.env.PORT ?? 5199);
 const NAME = /^[a-z0-9][a-z0-9-]{0,47}$/;
 
 await fs.mkdir(layouts, {recursive: true});
-const ctx = await esbuild.context({
-  entryPoints: [path.join(root, 'src/editor/main.tsx')],
-  outfile: path.join(outDir, 'editor.js'),
-  bundle: true,
-  format: 'esm',
-  jsx: 'automatic',
-  sourcemap: true,
-  target: 'es2020',
-  define: {'process.env.NODE_ENV': '"development"'},
-  logLevel: 'info',
-});
-await ctx.watch();
+if (!process.env.CITY_EDITOR_NO_BUILD) {
+  const ctx = await esbuild.context({
+    entryPoints: [path.join(root, 'src/editor/main.tsx')],
+    outfile: path.join(outDir, 'editor.js'),
+    bundle: true,
+    format: 'esm',
+    jsx: 'automatic',
+    sourcemap: true,
+    target: 'es2020',
+    define: {'process.env.NODE_ENV': '"development"'},
+    logLevel: 'info',
+  });
+  await ctx.watch();
+}
 
 const send = (res, code, body, type = 'text/plain; charset=utf-8') => {
   res.writeHead(code, {'Content-Type': type, 'Cache-Control': 'no-store'});
@@ -46,7 +49,12 @@ const server = http.createServer(async (req, res) => {
     }
     const match = url.pathname.match(/^\/api\/layouts\/([^/]+)$/);
     if (match) {
-      const name = decodeURIComponent(match[1]);
+      let name;
+      try {
+        name = decodeURIComponent(match[1]);
+      } catch {
+        return send(res, 400, 'Nom invalide');
+      }
       if (!NAME.test(name)) return send(res, 400, 'Nom invalide');
       const file = path.join(layouts, `${name}.json`);
       if (req.method === 'GET') return send(res, 200, await fs.readFile(file), 'application/json');
@@ -56,8 +64,13 @@ const server = http.createServer(async (req, res) => {
           body += chunk;
           if (body.length > 20_000_000) return send(res, 413, 'Fichier trop gros');
         }
-        const layout = JSON.parse(body);
-        if (!Array.isArray(layout.items)) return send(res, 400, 'Format invalide');
+        let layout;
+        try {
+          layout = JSON.parse(body);
+        } catch {
+          return send(res, 400, 'JSON invalide');
+        }
+        if (!layout || !Array.isArray(layout.items)) return send(res, 400, 'Format invalide');
         await fs.writeFile(file, JSON.stringify({...layout, name, version: 1}, null, 1) + '\n', 'utf8');
         return send(res, 200, 'ok');
       }

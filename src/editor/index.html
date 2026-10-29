@@ -80,6 +80,17 @@
     border: 1px solid rgba(246,224,94,.8); box-shadow: 0 0 0 9999px rgba(10,11,14,.55); pointer-events: none; }
   .frame916 span { position: absolute; top: 8px; left: 8px; color: var(--gold); font-size: 12px; text-shadow: 0 1px 4px #000; }
   .view { overflow: hidden; }
+  .fade { position: absolute; inset: 0; background: #000; pointer-events: none; }
+  .timeline { position: relative; height: 46px; margin-bottom: 4px; }
+  .timeline .clip { position: absolute; top: 0; height: 20px; background: #2f3542; border: 1px solid var(--line); border-radius: 4px;
+    font-size: 11px; color: var(--muted); display: flex; align-items: center; justify-content: center; overflow: hidden; box-sizing: border-box; }
+  .timeline .clip.current { background: #4a4428; border-color: var(--gold); color: var(--gold); }
+  .timeline .clip.warn { border-color: #f0b46a; }
+  .timeline input[type=range] { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; accent-color: var(--gold); }
+  .ok { color: #8fd19e; margin: 6px 0 0; }
+  .warn { margin: 6px 0 0; }
+  .small-text { font-size: 12px; margin: 3px 0 0; }
+  .field.check.inline { margin: 0; }
   .loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: Georgia, serif;
     color: var(--gold); font-size: 18px; background: var(--bg); pointer-events: none; }
 </style>

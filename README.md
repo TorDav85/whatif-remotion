@@ -161,10 +161,34 @@ npm run city        # → http://127.0.0.1:5199
 
 - **Générer** un quartier à partir d'une graine : îlots haussmanniens, magasins, îlots modernes, squares, la Seine
   avec quais, ponts, péniches et bateaux-mouches, tours de bureaux et tour Eiffel à l'horizon.
-- **Caméra réalisateur** (onglet Caméra) : 9 mouvements (vue d'ensemble 3/4, orbite, plongée, travelling, grue,
-  piéton, contre-plongée, révélation, survol), « Capturer cette vue », cadre 9:16, lecture de la séquence.
-  Les plans sont enregistrés avec la ville et filmés tels quels par `CityLayoutPreview`.
-  Le guide de cadrage est dans le skill [camera-realisateur](.claude/skills/camera-realisateur/SKILL.md).
+- **Caméra réalisateur** (onglet Caméra) : 14 mouvements (vue d'ensemble, orbite, plongée, travelling,
+  travelling latéral, grue, tilt, panoramique, piéton, caméra épaule, contre-plongée, effet Vertigo, révélation,
+  survol), cadrés devant la façade du sujet. « Capturer cette vue », cadre 9:16, trajectoires dans la scène,
+  barre de montage à faire glisser, transitions coupe / fondu noir, tremblé épaule, vitesses, raccord.
+- **Vérifier le cadrage** : 25 rayons dans le cadre 9:16 détectent un premier plan bouché (arbre, voiture,
+  potelet…), une caméra dans un objet ou sous le sol. **Recadrer** décale le plan le long de la façade jusqu'à
+  trouver un passage dégagé (fait automatiquement à l'ajout d'un mouvement).
+- Les plans sont enregistrés avec la ville et filmés tels quels par `CityLayoutPreview` (exemple complet :
+  `public/city-layouts/demo-realisateur.json`, les 14 mouvements).
+
+### Vérifier et tester
+
+```powershell
+npm test                                          # typage + tests + validation des scénarios
+npm run stills -- CityLayoutPreview --shots       # une image par plan + planche dans out/stills/
+```
+
+`tests/*.test.ts` : caméra (continuité, coupes, orbite, fondus, tremblé, 14 mouvements), générateur
+(reproductible, aucun immeuble qui en chevauche un autre, trottoirs, chaussée), catalogue, serveur de l'éditeur.
+
+### Skills Claude du projet
+
+| Skill | Pour |
+| --- | --- |
+| [camera-realisateur](.claude/skills/camera-realisateur/SKILL.md) | découper et cadrer les plans en 9:16 |
+| [verification-rendu](.claude/skills/verification-rendu/SKILL.md) | tests, images clés, son, contrôle du MP4 |
+| [editeur-ville](.claude/skills/editeur-ville/SKILL.md) | ajouter un asset, faire évoluer le générateur ou l'éditeur |
+| [voix-xtts](.claude/skills/voix-xtts/SKILL.md) | voix off XTTS, vérification par transcription, ambiance |
 - **Catalogue** des 85 assets par catégorie, avec aperçu 3D qui tourne : cliquer puis cliquer dans la scène pour poser.
 - **Déplacer** à la souris (clic pour sélectionner, puis glisser), **tourner** (R, Q/E), modifier les réglages
   (étages, largeur, couleurs, modèle…), dupliquer, supprimer, annuler (Ctrl+Z). Rues et trottoirs sont verrouillés

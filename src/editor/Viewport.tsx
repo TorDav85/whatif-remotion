@@ -4,29 +4,37 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 import {ASSET_BY_TYPE, type CityLayout, type LayoutItem} from '../assets/city/registry';
 import {CityEnvironment} from '../assets/city/LayoutScene';
-import {sampleShots, shotsDuration, type Shot, type View} from '../assets/city/camera';
+import {sampleShots, shotsDuration, trajectory, viewAt, type Shot, type View} from '../assets/city/camera';
 
-export const GROUND_TYPES = new Set(['road', 'intersection', 'sidewalk', 'grass', 'plaza', 'water', 'crosswalk', 'road-segment']);
-const SLAB_TOP: Record<string, number> = {sidewalk: 0.15, grass: 0.2, plaza: 0.18};
+export type ShotIssue = {shot: number; when: string; message: string};
 
-/** Height of the walkable surface at (x, z): on a sidewalk slab, lawn or plaza, objects sit on top. */
-export const surfaceY = (items: LayoutItem[], x: number, z: number, ignore?: string) => {
-  let y = 0;
-  for (const it of items) {
-    const top = SLAB_TOP[it.type];
-    if (top === undefined || it.id === ignore) continue;
-    const w = Number(it.props.width ?? 20);
-    const d = Number(it.props.depth ?? 20);
-    const dx = x - it.x;
-    const dz = z - it.z;
-    const c = Math.cos(-it.ry);
-    const s = Math.sin(-it.ry);
-    const lx = dx * c + dz * s;
-    const lz = -dx * s + dz * c;
-    if (Math.abs(lx) <= w / 2 && Math.abs(lz) <= d / 2) y = Math.max(y, top);
-  }
-  return y;
+/** Line through a shot's camera path, with start (green) and end (red) markers. */
+const ShotPath: React.FC<{shot: Shot; current: boolean}> = ({shot, current}) => {
+  const line = useMemo(() => {
+    const geo = new THREE.BufferGeometry().setFromPoints(trajectory(shot).map((p) => new THREE.Vector3(...p)));
+    return new THREE.Line(geo, new THREE.LineBasicMaterial({color: current ? '#F6E05E' : '#7fb0d8', depthTest: false, transparent: true}));
+  }, [shot, current]);
+  const aim = useMemo(() => {
+    const end = viewAt(shot, 1);
+    const geo = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(...end.pos), new THREE.Vector3(...end.target)]);
+    return new THREE.Line(geo, new THREE.LineDashedMaterial({color: '#e8e2d2', dashSize: 1, gapSize: 1, depthTest: false, transparent: true, opacity: 0.6}));
+  }, [shot]);
+  useLayoutEffect(() => { aim.computeLineDistances(); }, [aim]);
+  const s = shot.from.pos;
+  const e = shot.to.pos;
+  return (
+    <group renderOrder={10}>
+      <primitive object={line} />
+      <primitive object={aim} />
+      <mesh position={s}><sphereGeometry args={[0.6, 10, 8]} /><meshBasicMaterial color="#5fcf80" depthTest={false} /></mesh>
+      <mesh position={e}><sphereGeometry args={[0.6, 10, 8]} /><meshBasicMaterial color="#e0604f" depthTest={false} /></mesh>
+    </group>
+  );
 };
+
+import {GROUND_TYPES, surfaceY} from './geometry';
+
+export {GROUND_TYPES, surfaceY};
 
 type Box = {size: [number, number, number]; center: [number, number, number]};
 
@@ -79,11 +87,12 @@ const EditableItem: React.FC<ItemProps> = React.memo(({item, lit, selected, inte
   const edges = useMemo(() => (box ? new THREE.EdgesGeometry(new THREE.BoxGeometry(...box.size)) : null), [box]);
   if (!def) return null;
   return (
-    <group ref={group} position={[item.x, item.y, item.z]} rotation={[0, item.ry, 0]}>
+    <group ref={group} position={[item.x, item.y, item.z]} rotation={[0, item.ry, 0]} userData={{itemId: item.id}}>
       <group ref={visual}>{def.render(props)}</group>
       {box && interactive && (
         <mesh
           position={box.center}
+          userData={{proxy: true}}
           onPointerDown={(e) => onDown(item.id, e)}
           onPointerMove={(e) => onMove(item.id, e)}
           onPointerUp={(e) => onUp(item.id, e)}
@@ -129,8 +138,12 @@ export type ViewportApi = {
   focus: (x: number, z: number, dist?: number) => void;
   getView: () => View;
   setView: (view: View) => void;
-  play: (shots: Shot[], onTick: (t: number, index: number) => void, onEnd: () => void) => void;
+  /** show the camera of a sequence at time t (timeline scrubbing); returns the dip-to-black amount */
+  preview: (shots: Shot[], t: number) => number;
+  play: (shots: Shot[], onTick: (t: number, index: number, fade: number) => void, onEnd: () => void) => void;
   stop: () => void;
+  /** look for obstacles stuck to the lens, cameras inside objects or under the ground */
+  checkShots: (shots: Shot[]) => ShotIssue[];
 };
 
 const r3 = (v: THREE.Vector3): [number, number, number] => [Math.round(v.x * 100) / 100, Math.round(v.y * 100) / 100, Math.round(v.z * 100) / 100];
@@ -147,7 +160,12 @@ type ViewportProps = {
   onDrag: (id: string, x: number, z: number, y: number) => void;
   onPlace: (type: string, x: number, z: number, y: number) => void;
   onReady?: () => void;
+  /** shot trajectories to draw (camera tab) */
+  paths?: Shot[];
+  currentShot?: number | null;
 };
+
+const WHEN = ['début', 'milieu', 'fin'];
 
 const Scene = forwardRef<ViewportApi, ViewportProps>((p, ref) => {
   const controls = useRef<OrbitControls>(null);
@@ -158,7 +176,87 @@ const Scene = forwardRef<ViewportApi, ViewportProps>((p, ref) => {
   const snap = (v: number) => (p.snap > 0 ? Math.round(v / p.snap) * p.snap : v);
   const lit = p.night ? 1 : 0;
   const camera = useThree((s) => s.camera) as THREE.PerspectiveCamera;
-  const playing = useRef<{shots: Shot[]; t0: number; onTick: (t: number, i: number) => void; onEnd: () => void} | null>(null);
+  const playing = useRef<{shots: Shot[]; t0: number; onTick: (t: number, i: number, fade: number) => void; onEnd: () => void} | null>(null);
+  const items = useRef<THREE.Group>(null);
+
+  const checkShots = (list: Shot[]): ShotIssue[] => {
+    const issues: ShotIssue[] = [];
+    const root = items.current;
+    if (!root) return issues;
+    const meshes: THREE.Object3D[] = [];
+    const proxies: {id: string; box: THREE.Box3}[] = [];
+    const boxOf = new Map<string, THREE.Box3>();
+    const itemOf = (o: THREE.Object3D | null): string | undefined => {
+      for (let n = o; n; n = n.parent) if (n.userData.itemId) return n.userData.itemId;
+      return undefined;
+    };
+    root.updateWorldMatrix(true, true);
+    root.traverse((o) => {
+      if (!(o as THREE.Mesh).isMesh) return;
+      if (o.userData.proxy) {
+        const b = new THREE.Box3().setFromObject(o);
+        const id = itemOf(o) ?? '';
+        proxies.push({id, box: b});
+        if (id) boxOf.set(id, b);
+      } else meshes.push(o);
+    });
+    const typeOf = new Map(p.layout.items.map((it) => [it.id, it.type]));
+    const ray = new THREE.Raycaster();
+    const cam = new THREE.PerspectiveCamera(50, 9 / 16, 0.05, 2000);
+    const grid = [-0.8, -0.4, 0, 0.4, 0.8];
+    list.forEach((s, i) => {
+      [0, 0.5, 1].forEach((k, w) => {
+        const view = viewAt(s, k);
+        const pos = new THREE.Vector3(...view.pos);
+        const target = new THREE.Vector3(...view.target);
+        const dist = pos.distanceTo(target);
+        if (pos.y < 0.3) issues.push({shot: i, when: WHEN[w], message: 'caméra sous le niveau du sol'});
+        // Proxy boxes of flat ground pieces are thin: only count volumes taller than 1 m.
+        const inside = proxies.find(({box}) => box.max.y - box.min.y > 1 && box.containsPoint(pos));
+        if (inside) {
+          const type = typeOf.get(inside.id) ?? '';
+          issues.push({shot: i, when: WHEN[w], message: `caméra à l’intérieur de « ${ASSET_BY_TYPE[type]?.label ?? 'un objet'} »`});
+          return;
+        }
+        // The filmed subject and the ground are never obstacles.
+        const blocker = (hits: THREE.Intersection[]) => hits.find((h) => {
+          const id = itemOf(h.object) ?? '';
+          if (GROUND_TYPES.has(typeOf.get(id) ?? '')) return false;
+          const box = boxOf.get(id);
+          return !box || !box.clone().expandByScalar(0.5).containsPoint(target);
+        });
+        // Rays across the whole vertical 9:16 frame: a close object covering a big share of it blocks the shot.
+        cam.fov = view.fov;
+        cam.position.copy(pos);
+        cam.lookAt(target);
+        cam.updateMatrixWorld();
+        cam.updateProjectionMatrix();
+        // Foreground = up to 10 m, or 80 % of the way to the subject for close shots.
+        ray.far = Math.min(10, dist * 0.8);
+        const counts = new Map<string, number>();
+        let blocked = 0;
+        for (const u of grid) for (const vv of grid) {
+          ray.setFromCamera(new THREE.Vector2(u, vv), cam);
+          const hit = blocker(ray.intersectObjects(meshes, false));
+          if (!hit) continue;
+          blocked++;
+          const type = typeOf.get(itemOf(hit.object) ?? '') ?? 'objet';
+          counts.set(type, (counts.get(type) ?? 0) + 1);
+        }
+        const share = blocked / (grid.length * grid.length);
+        if (share >= 0.2) {
+          const top = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
+          issues.push({shot: i, when: WHEN[w], message: `premier plan bouché à ${Math.round(share * 100)} % (${ASSET_BY_TYPE[top]?.label ?? top})`});
+          return;
+        }
+        ray.set(pos, target.clone().sub(pos).normalize());
+        ray.far = Math.min(12, dist * 0.4);
+        const hit = blocker(ray.intersectObjects(meshes, false));
+        if (hit) issues.push({shot: i, when: WHEN[w], message: `obstacle à ${hit.distance.toFixed(1)} m au centre de l’image`});
+      });
+    });
+    return issues;
+  };
 
   const apply = (view: View) => {
     camera.position.set(...view.pos);
@@ -180,7 +278,7 @@ const Scene = forwardRef<ViewportApi, ViewportProps>((p, ref) => {
     const total = shotsDuration(pl.shots);
     const view = sampleShots(pl.shots, Math.min(t, total - 0.001));
     apply(view);
-    pl.onTick(Math.min(t, total), view.index);
+    pl.onTick(Math.min(t, total), view.index, view.fade);
     if (t >= total) {
       playing.current = null;
       if (controls.current) controls.current.enabled = true;
@@ -198,6 +296,13 @@ const Scene = forwardRef<ViewportApi, ViewportProps>((p, ref) => {
     },
     getView: () => ({pos: r3(camera.position), target: r3(controls.current?.target ?? new THREE.Vector3()), fov: Math.round(camera.fov)}),
     setView: apply,
+    preview: (shots, t) => {
+      if (!shots.length) return 0;
+      const view = sampleShots(shots, t);
+      apply(view);
+      return view.fade;
+    },
+    checkShots,
     play: (shots, onTick, onEnd) => {
       if (!shots.length) return;
       if (controls.current) controls.current.enabled = false;
@@ -269,11 +374,14 @@ const Scene = forwardRef<ViewportApi, ViewportProps>((p, ref) => {
         <planeGeometry args={[2000, 2000]} />
         <meshBasicMaterial transparent opacity={0} depthWrite={false} />
       </mesh>
-      {p.layout.items.map((it) => (
-        <EditableItem key={it.id} item={it} lit={lit} selected={it.id === p.selectedId}
-          interactive={!p.placing && !(p.groundLocked && GROUND_TYPES.has(it.type))}
-          onDown={onDown} onMove={onMove} onUp={onUp} />
-      ))}
+      <group ref={items}>
+        {p.layout.items.map((it) => (
+          <EditableItem key={it.id} item={it} lit={lit} selected={it.id === p.selectedId}
+            interactive={!p.placing && !(p.groundLocked && GROUND_TYPES.has(it.type))}
+            onDown={onDown} onMove={onMove} onUp={onUp} />
+        ))}
+      </group>
+      {p.paths?.map((s, i) => <ShotPath key={s.id} shot={s} current={i === p.currentShot} />)}
       {p.placing && ghost && ASSET_BY_TYPE[p.placing] && (
         <group position={ghost}>
           {ASSET_BY_TYPE[p.placing].render({...ASSET_BY_TYPE[p.placing].defaults, lit})}

@@ -1,0 +1,8282 @@
+{
+ "version": 1,
+ "name": "demo-realisateur",
+ "sky": "jour",
+ "items": [
+  {
+   "id": "intersection-0",
+   "type": "intersection",
+   "x": -84,
+   "y": 0,
+   "z": -50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-1",
+   "type": "intersection",
+   "x": -84,
+   "y": 0,
+   "z": 0,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-2",
+   "type": "intersection",
+   "x": -84,
+   "y": 0,
+   "z": 50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-3",
+   "type": "intersection",
+   "x": -28,
+   "y": 0,
+   "z": -50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-4",
+   "type": "intersection",
+   "x": -28,
+   "y": 0,
+   "z": 0,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-5",
+   "type": "intersection",
+   "x": -28,
+   "y": 0,
+   "z": 50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-6",
+   "type": "intersection",
+   "x": 28,
+   "y": 0,
+   "z": -50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-7",
+   "type": "intersection",
+   "x": 28,
+   "y": 0,
+   "z": 0,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-8",
+   "type": "intersection",
+   "x": 28,
+   "y": 0,
+   "z": 50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-9",
+   "type": "intersection",
+   "x": 84,
+   "y": 0,
+   "z": -50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-10",
+   "type": "intersection",
+   "x": 84,
+   "y": 0,
+   "z": 0,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "intersection-11",
+   "type": "intersection",
+   "x": 84,
+   "y": 0,
+   "z": 50,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "depth": 10
+   }
+  },
+  {
+   "id": "road-12",
+   "type": "road",
+   "x": -84,
+   "y": 0,
+   "z": -25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-13",
+   "type": "road",
+   "x": -84,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-14",
+   "type": "road",
+   "x": -28,
+   "y": 0,
+   "z": -25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-15",
+   "type": "road",
+   "x": -28,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-16",
+   "type": "road",
+   "x": 28,
+   "y": 0,
+   "z": -25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-17",
+   "type": "road",
+   "x": 28,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-18",
+   "type": "road",
+   "x": 84,
+   "y": 0,
+   "z": -25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-19",
+   "type": "road",
+   "x": 84,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 10,
+    "length": 40
+   }
+  },
+  {
+   "id": "road-20",
+   "type": "road",
+   "x": -56,
+   "y": 0,
+   "z": -50,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-21",
+   "type": "road",
+   "x": 0,
+   "y": 0,
+   "z": -50,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-22",
+   "type": "road",
+   "x": 56,
+   "y": 0,
+   "z": -50,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-23",
+   "type": "road",
+   "x": -56,
+   "y": 0,
+   "z": 0,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-24",
+   "type": "road",
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-25",
+   "type": "road",
+   "x": 56,
+   "y": 0,
+   "z": 0,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-26",
+   "type": "road",
+   "x": -56,
+   "y": 0,
+   "z": 50,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-27",
+   "type": "road",
+   "x": 0,
+   "y": 0,
+   "z": 50,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "road-28",
+   "type": "road",
+   "x": 56,
+   "y": 0,
+   "z": 50,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 46
+   }
+  },
+  {
+   "id": "car-29",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": -42,
+   "ry": 3.142,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-30",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": -35.462,
+   "ry": 3.142,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-31",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": -28.651,
+   "ry": 3.142,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-32",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": -22.007,
+   "ry": 3.142,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-33",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": -15.552,
+   "ry": 3.142,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-34",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": -9.88,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-35",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": -35.658,
+   "ry": 0,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-36",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": -23.327,
+   "ry": 0,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-37",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": -16.892,
+   "ry": 0,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-38",
+   "type": "car",
+   "x": -82.4,
+   "y": 0,
+   "z": -27.158,
+   "ry": 0,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-39",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": 8,
+   "ry": 3.142,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-40",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": 14.899,
+   "ry": 3.142,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "utilitaire"
+   }
+  },
+  {
+   "id": "car-41",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": 20.691,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-42",
+   "type": "car",
+   "x": -88.1,
+   "y": 0,
+   "z": 39.765,
+   "ry": 3.142,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-43",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": 8,
+   "ry": 0,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "utilitaire"
+   }
+  },
+  {
+   "id": "car-44",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": 14.208,
+   "ry": 0,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-45",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": 20.829,
+   "ry": 0,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-46",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": 34.248,
+   "ry": 0,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-47",
+   "type": "car",
+   "x": -79.9,
+   "y": 0,
+   "z": 40.824,
+   "ry": 0,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-48",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": -23.789,
+   "ry": 3.142,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-49",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": -17.718,
+   "ry": 3.142,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-50",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": -42,
+   "ry": 0,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-51",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": -35.368,
+   "ry": 0,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-52",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": -29.475,
+   "ry": 0,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-53",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": -16.879,
+   "ry": 0,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-54",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": -9.888,
+   "ry": 0,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-55",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": 8,
+   "ry": 3.142,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-56",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": 14.158,
+   "ry": 3.142,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-57",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": 20.613,
+   "ry": 3.142,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-58",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": 26.631,
+   "ry": 3.142,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-59",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": 33.204,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-60",
+   "type": "car",
+   "x": -32.1,
+   "y": 0,
+   "z": 39.613,
+   "ry": 3.142,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-61",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": 14.215,
+   "ry": 0,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-62",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": 21.067,
+   "ry": 0,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-63",
+   "type": "car",
+   "x": -23.9,
+   "y": 0,
+   "z": 27.798,
+   "ry": 0,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "utilitaire"
+   }
+  },
+  {
+   "id": "car-64",
+   "type": "car",
+   "x": -26.4,
+   "y": 0,
+   "z": 21.693,
+   "ry": 0,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-65",
+   "type": "car",
+   "x": 23.9,
+   "y": 0,
+   "z": -21.734,
+   "ry": 3.142,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-66",
+   "type": "car",
+   "x": 23.9,
+   "y": 0,
+   "z": -15.18,
+   "ry": 3.142,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-67",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": -42,
+   "ry": 0,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-68",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": -28.552,
+   "ry": 0,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-69",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": -22.757,
+   "ry": 0,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-70",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": -9.455,
+   "ry": 0,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-71",
+   "type": "car",
+   "x": 23.9,
+   "y": 0,
+   "z": 8,
+   "ry": 3.142,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-72",
+   "type": "car",
+   "x": 23.9,
+   "y": 0,
+   "z": 14.306,
+   "ry": 3.142,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-73",
+   "type": "car",
+   "x": 23.9,
+   "y": 0,
+   "z": 20.519,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "utilitaire"
+   }
+  },
+  {
+   "id": "car-74",
+   "type": "car",
+   "x": 23.9,
+   "y": 0,
+   "z": 32.418,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-75",
+   "type": "car",
+   "x": 23.9,
+   "y": 0,
+   "z": 38.098,
+   "ry": 3.142,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-76",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": 8,
+   "ry": 0,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-77",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": 27.232,
+   "ry": 0,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-78",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": 33.2,
+   "ry": 0,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "utilitaire"
+   }
+  },
+  {
+   "id": "car-79",
+   "type": "car",
+   "x": 32.1,
+   "y": 0,
+   "z": 38.831,
+   "ry": 0,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-80",
+   "type": "car",
+   "x": 29.6,
+   "y": 0,
+   "z": 29.443,
+   "ry": 0,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-81",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": -42,
+   "ry": 3.142,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-82",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": -35.441,
+   "ry": 3.142,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-83",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": -28.791,
+   "ry": 3.142,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-84",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": -15.164,
+   "ry": 3.142,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-85",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": -8.353,
+   "ry": 3.142,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-86",
+   "type": "car",
+   "x": 88.1,
+   "y": 0,
+   "z": -42,
+   "ry": 0,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-87",
+   "type": "car",
+   "x": 88.1,
+   "y": 0,
+   "z": -28.967,
+   "ry": 0,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-88",
+   "type": "car",
+   "x": 88.1,
+   "y": 0,
+   "z": -22.686,
+   "ry": 0,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-89",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": 8,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-90",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": 14.545,
+   "ry": 3.142,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-91",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": 21.15,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-92",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": 26.919,
+   "ry": 3.142,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-93",
+   "type": "car",
+   "x": 79.9,
+   "y": 0,
+   "z": 33.476,
+   "ry": 3.142,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-94",
+   "type": "car",
+   "x": 88.1,
+   "y": 0,
+   "z": 14.843,
+   "ry": 0,
+   "props": {
+    "color": "#b8322a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-95",
+   "type": "car",
+   "x": 88.1,
+   "y": 0,
+   "z": 20.779,
+   "ry": 0,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-96",
+   "type": "car",
+   "x": 88.1,
+   "y": 0,
+   "z": 27.106,
+   "ry": 0,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-97",
+   "type": "car",
+   "x": 88.1,
+   "y": 0,
+   "z": 39.434,
+   "ry": 0,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-98",
+   "type": "car",
+   "x": -76,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-99",
+   "type": "car",
+   "x": -69.491,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-100",
+   "type": "car",
+   "x": -63.365,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-101",
+   "type": "car",
+   "x": -57.572,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-102",
+   "type": "car",
+   "x": -38.617,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-103",
+   "type": "car",
+   "x": -70.062,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-104",
+   "type": "car",
+   "x": -63.685,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-105",
+   "type": "car",
+   "x": -57.041,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-106",
+   "type": "car",
+   "x": -51.044,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-107",
+   "type": "car",
+   "x": -44.378,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-108",
+   "type": "car",
+   "x": -38.523,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-109",
+   "type": "car",
+   "x": -20,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-110",
+   "type": "car",
+   "x": -14.104,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-111",
+   "type": "car",
+   "x": -7.825,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-112",
+   "type": "car",
+   "x": -1.064,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-113",
+   "type": "car",
+   "x": 5.603,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-114",
+   "type": "car",
+   "x": 11.902,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-115",
+   "type": "car",
+   "x": 18.098,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-116",
+   "type": "car",
+   "x": -20,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-117",
+   "type": "car",
+   "x": -7.804,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-118",
+   "type": "car",
+   "x": -1.486,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-119",
+   "type": "car",
+   "x": 9.742,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-120",
+   "type": "car",
+   "x": 36,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-121",
+   "type": "car",
+   "x": 41.664,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-122",
+   "type": "car",
+   "x": 66.889,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-123",
+   "type": "car",
+   "x": 72.576,
+   "y": 0,
+   "z": -54.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-124",
+   "type": "car",
+   "x": 36,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-125",
+   "type": "car",
+   "x": 62.695,
+   "y": 0,
+   "z": -45.9,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-126",
+   "type": "car",
+   "x": -63.247,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-127",
+   "type": "car",
+   "x": -56.632,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-128",
+   "type": "car",
+   "x": -50.163,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-129",
+   "type": "car",
+   "x": -37.354,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-130",
+   "type": "car",
+   "x": -76,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-131",
+   "type": "car",
+   "x": -63.382,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-132",
+   "type": "car",
+   "x": -56.388,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-133",
+   "type": "car",
+   "x": -43.679,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-134",
+   "type": "car",
+   "x": -37.255,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-135",
+   "type": "car",
+   "x": -13.607,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-136",
+   "type": "car",
+   "x": -6.926,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-137",
+   "type": "car",
+   "x": -0.053,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-138",
+   "type": "car",
+   "x": 12.115,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-139",
+   "type": "car",
+   "x": 18.199,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-140",
+   "type": "car",
+   "x": -20,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-141",
+   "type": "car",
+   "x": -13.588,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-142",
+   "type": "car",
+   "x": -7.161,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-143",
+   "type": "car",
+   "x": -0.536,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-144",
+   "type": "car",
+   "x": 5.668,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-145",
+   "type": "car",
+   "x": 19.209,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-146",
+   "type": "car",
+   "x": 36,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-147",
+   "type": "car",
+   "x": 42.976,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-148",
+   "type": "car",
+   "x": 49.488,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-149",
+   "type": "car",
+   "x": 56.437,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-150",
+   "type": "car",
+   "x": 62.754,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-151",
+   "type": "car",
+   "x": 69.676,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-152",
+   "type": "car",
+   "x": 75.786,
+   "y": 0,
+   "z": -4.1,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-153",
+   "type": "car",
+   "x": 36,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-154",
+   "type": "car",
+   "x": 48.643,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-155",
+   "type": "car",
+   "x": 55.168,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-156",
+   "type": "car",
+   "x": 66.91,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-157",
+   "type": "car",
+   "x": 73.419,
+   "y": 0,
+   "z": 4.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-158",
+   "type": "car",
+   "x": -76,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-159",
+   "type": "car",
+   "x": -70.01,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-160",
+   "type": "car",
+   "x": -63.547,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-161",
+   "type": "car",
+   "x": -57.668,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#d9b46a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-162",
+   "type": "car",
+   "x": -50.734,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-163",
+   "type": "car",
+   "x": -37.361,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-164",
+   "type": "car",
+   "x": -76,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-165",
+   "type": "car",
+   "x": -69.2,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-166",
+   "type": "car",
+   "x": -56.426,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-167",
+   "type": "car",
+   "x": -49.588,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#2b5a8a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-168",
+   "type": "car",
+   "x": -37.094,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-169",
+   "type": "car",
+   "x": -20,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#9aa3ab",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-170",
+   "type": "car",
+   "x": -14.066,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-171",
+   "type": "car",
+   "x": -7.446,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-172",
+   "type": "car",
+   "x": -1.536,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-173",
+   "type": "car",
+   "x": 4.132,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-174",
+   "type": "car",
+   "x": 10.47,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-175",
+   "type": "car",
+   "x": 17.086,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-176",
+   "type": "car",
+   "x": -20,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-177",
+   "type": "car",
+   "x": -13.218,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-178",
+   "type": "car",
+   "x": -1.152,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#3f6b4a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-179",
+   "type": "car",
+   "x": 16.853,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-180",
+   "type": "car",
+   "x": 36,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#e8e2d2",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-181",
+   "type": "car",
+   "x": 48.295,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-182",
+   "type": "car",
+   "x": 68.668,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#8a6a2a",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "car-183",
+   "type": "car",
+   "x": 75.42,
+   "y": 0,
+   "z": 45.9,
+   "ry": 1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-184",
+   "type": "car",
+   "x": 41.917,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-185",
+   "type": "car",
+   "x": 48.457,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#b8322a",
+    "variant": "citadine"
+   }
+  },
+  {
+   "id": "car-186",
+   "type": "car",
+   "x": 66.558,
+   "y": 0,
+   "z": 54.1,
+   "ry": -1.571,
+   "props": {
+    "color": "#1d1d1f",
+    "variant": "berline"
+   }
+  },
+  {
+   "id": "traffic-light-187",
+   "type": "traffic-light",
+   "x": -22.4,
+   "y": 0.15,
+   "z": 5.6,
+   "ry": 3.142,
+   "props": {
+    "state": "green"
+   }
+  },
+  {
+   "id": "traffic-light-188",
+   "type": "traffic-light",
+   "x": -33.6,
+   "y": 0.15,
+   "z": -5.6,
+   "ry": 0,
+   "props": {
+    "state": "red"
+   }
+  },
+  {
+   "id": "traffic-light-189",
+   "type": "traffic-light",
+   "x": 33.6,
+   "y": 0.15,
+   "z": 5.6,
+   "ry": 3.142,
+   "props": {
+    "state": "green"
+   }
+  },
+  {
+   "id": "traffic-light-190",
+   "type": "traffic-light",
+   "x": 22.4,
+   "y": 0.15,
+   "z": -5.6,
+   "ry": 0,
+   "props": {
+    "state": "red"
+   }
+  },
+  {
+   "id": "sidewalk-191",
+   "type": "sidewalk",
+   "x": -56,
+   "y": 0,
+   "z": -25,
+   "ry": 0,
+   "props": {
+    "width": 46,
+    "depth": 40
+   }
+  },
+  {
+   "id": "haussmann-192",
+   "type": "haussmann",
+   "x": -69.854,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 12.243,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#d6c6a6",
+    "awning": "#3a6a4a",
+    "seed": 951
+   }
+  },
+  {
+   "id": "haussmann-193",
+   "type": "haussmann",
+   "x": -58.18,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 11.004,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e4d6bb",
+    "awning": "#3a6a4a",
+    "seed": 282
+   }
+  },
+  {
+   "id": "haussmann-194",
+   "type": "haussmann",
+   "x": -44.326,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 16.603,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#e8d5b7",
+    "awning": "#8a6a2a",
+    "seed": 600
+   }
+  },
+  {
+   "id": "haussmann-195",
+   "type": "haussmann",
+   "x": -75.7,
+   "y": 0.15,
+   "z": -36,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 4,
+    "stone": "#d6c6a6",
+    "awning": null,
+    "seed": 951
+   }
+  },
+  {
+   "id": "haussmann-196",
+   "type": "haussmann",
+   "x": -36.3,
+   "y": 0.15,
+   "z": -36,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 4,
+    "stone": "#e8d5b7",
+    "awning": null,
+    "seed": 600
+   }
+  },
+  {
+   "id": "haussmann-197",
+   "type": "haussmann",
+   "x": -68.575,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 14.801,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e8d5b7",
+    "awning": "#5a3a5a",
+    "seed": 417
+   }
+  },
+  {
+   "id": "shop-198",
+   "type": "shop",
+   "x": -53.956,
+   "y": 0.15,
+   "z": -12.5,
+   "ry": 3.142,
+   "props": {
+    "kind": "librairie",
+    "width": 14.337,
+    "depth": 9,
+    "floors": 4,
+    "stone": "#e4d6bb"
+   }
+  },
+  {
+   "id": "haussmann-199",
+   "type": "haussmann",
+   "x": -41.381,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 10.713,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e4d6bb",
+    "awning": "#2b5a8a",
+    "seed": 606
+   }
+  },
+  {
+   "id": "haussmann-200",
+   "type": "haussmann",
+   "x": -75.7,
+   "y": 0.15,
+   "z": -14,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 7,
+    "stone": "#e8d5b7",
+    "awning": null,
+    "seed": 417
+   }
+  },
+  {
+   "id": "haussmann-201",
+   "type": "haussmann",
+   "x": -36.3,
+   "y": 0.15,
+   "z": -14,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 7,
+    "stone": "#e4d6bb",
+    "awning": null,
+    "seed": 606
+   }
+  },
+  {
+   "id": "haussmann-202",
+   "type": "haussmann",
+   "x": -70,
+   "y": 0.15,
+   "z": -25,
+   "ry": 1.571,
+   "props": {
+    "width": 9.95,
+    "depth": 12,
+    "floors": 6,
+    "stone": "#dccfb3",
+    "awning": "#3a6a4a",
+    "seed": 429
+   }
+  },
+  {
+   "id": "haussmann-203",
+   "type": "haussmann",
+   "x": -42,
+   "y": 0.15,
+   "z": -25,
+   "ry": -1.571,
+   "props": {
+    "width": 9.95,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#e8d5b7",
+    "awning": "#5a3a5a",
+    "seed": 877
+   }
+  },
+  {
+   "id": "tree-204",
+   "type": "tree",
+   "x": -72,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.883712187968195,
+    "seed": 485,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-205",
+   "type": "tree",
+   "x": -63,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.3174858730286365,
+    "seed": 458,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-206",
+   "type": "tree",
+   "x": -54,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.5202494073659185,
+    "seed": 194,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-207",
+   "type": "tree",
+   "x": -45,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.937655596435071,
+    "seed": 432,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-208",
+   "type": "street-lamp",
+   "x": -67.5,
+   "y": 0.15,
+   "z": -44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-209",
+   "type": "street-lamp",
+   "x": -49.5,
+   "y": 0.15,
+   "z": -44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-210",
+   "type": "bench",
+   "x": -51.131,
+   "y": 0.15,
+   "z": -43.2,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-211",
+   "type": "trash-bin",
+   "x": -47.631,
+   "y": 0.15,
+   "z": -44.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "hydrant-212",
+   "type": "hydrant",
+   "x": -73.8,
+   "y": 0.15,
+   "z": -44.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-213",
+   "type": "bollard",
+   "x": -78.4,
+   "y": 0.15,
+   "z": -44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-214",
+   "type": "bollard",
+   "x": -33.6,
+   "y": 0.15,
+   "z": -44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-215",
+   "type": "person",
+   "x": -65.164,
+   "y": 0.15,
+   "z": -42.912,
+   "ry": -1.571,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 2.231
+   }
+  },
+  {
+   "id": "person-216",
+   "type": "person",
+   "x": -37.71,
+   "y": 0.15,
+   "z": -43.689,
+   "ry": -1.571,
+   "props": {
+    "preset": 4,
+    "pose": "marche",
+    "phase": 1.864
+   }
+  },
+  {
+   "id": "tree-217",
+   "type": "tree",
+   "x": -72,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.414252851717174,
+    "seed": 367,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-218",
+   "type": "tree",
+   "x": -63,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.365716263651848,
+    "seed": 29,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-219",
+   "type": "tree",
+   "x": -54,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.3243428170681,
+    "seed": 257,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-220",
+   "type": "tree",
+   "x": -45,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.838007107377052,
+    "seed": 89,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-221",
+   "type": "street-lamp",
+   "x": -67.5,
+   "y": 0.15,
+   "z": -5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-222",
+   "type": "street-lamp",
+   "x": -49.5,
+   "y": 0.15,
+   "z": -5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-223",
+   "type": "bench",
+   "x": -55.406,
+   "y": 0.15,
+   "z": -6.8,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-224",
+   "type": "trash-bin",
+   "x": -51.906,
+   "y": 0.15,
+   "z": -5.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-225",
+   "type": "bollard",
+   "x": -78.4,
+   "y": 0.15,
+   "z": -5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-226",
+   "type": "bollard",
+   "x": -33.6,
+   "y": 0.15,
+   "z": -5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-227",
+   "type": "person",
+   "x": -52.35,
+   "y": 0.15,
+   "z": -6.741,
+   "ry": -1.571,
+   "props": {
+    "preset": 5,
+    "pose": "marche",
+    "phase": 4.183
+   }
+  },
+  {
+   "id": "person-228",
+   "type": "person",
+   "x": -56.742,
+   "y": 0.15,
+   "z": -6.862,
+   "ry": -1.571,
+   "props": {
+    "preset": 5,
+    "pose": "debout",
+    "phase": 2.581
+   }
+  },
+  {
+   "id": "tree-229",
+   "type": "tree",
+   "x": -78.1,
+   "y": 0.15,
+   "z": -38,
+   "ry": 0,
+   "props": {
+    "height": 5.528925839066505,
+    "seed": 291,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-230",
+   "type": "tree",
+   "x": -78.1,
+   "y": 0.15,
+   "z": -29,
+   "ry": 0,
+   "props": {
+    "height": 5.483477467112244,
+    "seed": 189,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-231",
+   "type": "tree",
+   "x": -78.1,
+   "y": 0.15,
+   "z": -20,
+   "ry": 0,
+   "props": {
+    "height": 5.832617271319032,
+    "seed": 559,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-232",
+   "type": "street-lamp",
+   "x": -78.55,
+   "y": 0.15,
+   "z": -33.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-233",
+   "type": "street-lamp",
+   "x": -78.55,
+   "y": 0.15,
+   "z": -15.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bus-shelter-234",
+   "type": "bus-shelter",
+   "x": -77.2,
+   "y": 0.15,
+   "z": -21.223,
+   "ry": 1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-235",
+   "type": "trash-bin",
+   "x": -78.4,
+   "y": 0.15,
+   "z": -17.723,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "cafe-236",
+   "type": "cafe",
+   "x": -76.4,
+   "y": 0.15,
+   "z": -18.2,
+   "ry": 0,
+   "props": {
+    "color": "#8a322b"
+   }
+  },
+  {
+   "id": "person-237",
+   "type": "person",
+   "x": -77.346,
+   "y": 0.15,
+   "z": -12.928,
+   "ry": 0,
+   "props": {
+    "preset": 3,
+    "pose": "debout",
+    "phase": 0.815
+   }
+  },
+  {
+   "id": "person-238",
+   "type": "person",
+   "x": -77.497,
+   "y": 0.15,
+   "z": -17.284,
+   "ry": 0,
+   "props": {
+    "preset": 1,
+    "pose": "marche",
+    "phase": 6.085
+   }
+  },
+  {
+   "id": "tree-239",
+   "type": "tree",
+   "x": -33.9,
+   "y": 0.15,
+   "z": -38,
+   "ry": 0,
+   "props": {
+    "height": 5.585093025118113,
+    "seed": 716,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-240",
+   "type": "tree",
+   "x": -33.9,
+   "y": 0.15,
+   "z": -29,
+   "ry": 0,
+   "props": {
+    "height": 5.848477975279093,
+    "seed": 265,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-241",
+   "type": "tree",
+   "x": -33.9,
+   "y": 0.15,
+   "z": -20,
+   "ry": 0,
+   "props": {
+    "height": 5.4920185798779135,
+    "seed": 255,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "street-lamp-242",
+   "type": "street-lamp",
+   "x": -33.45,
+   "y": 0.15,
+   "z": -33.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-243",
+   "type": "street-lamp",
+   "x": -33.45,
+   "y": 0.15,
+   "z": -15.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bus-shelter-244",
+   "type": "bus-shelter",
+   "x": -34.8,
+   "y": 0.15,
+   "z": -22.727,
+   "ry": -1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-245",
+   "type": "trash-bin",
+   "x": -33.6,
+   "y": 0.15,
+   "z": -19.227,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "cafe-246",
+   "type": "cafe",
+   "x": -35.6,
+   "y": 0.15,
+   "z": -18.2,
+   "ry": 0,
+   "props": {
+    "color": "#8a322b"
+   }
+  },
+  {
+   "id": "person-247",
+   "type": "person",
+   "x": -35.344,
+   "y": 0.15,
+   "z": -21.046,
+   "ry": 0,
+   "props": {
+    "preset": 5,
+    "pose": "marche",
+    "phase": 3.939
+   }
+  },
+  {
+   "id": "person-248",
+   "type": "person",
+   "x": -35.122,
+   "y": 0.15,
+   "z": -20.711,
+   "ry": 3.142,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 5.144
+   }
+  },
+  {
+   "id": "sidewalk-249",
+   "type": "sidewalk",
+   "x": -56,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 46,
+    "depth": 40
+   }
+  },
+  {
+   "id": "grass-250",
+   "type": "grass",
+   "x": -56,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 40,
+    "depth": 34
+   }
+  },
+  {
+   "id": "plaza-251",
+   "type": "plaza",
+   "x": -56,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 40,
+    "depth": 4
+   }
+  },
+  {
+   "id": "plaza-252",
+   "type": "plaza",
+   "x": -56,
+   "y": 0,
+   "z": 25,
+   "ry": 1.571,
+   "props": {
+    "width": 34,
+    "depth": 4
+   }
+  },
+  {
+   "id": "fountain-253",
+   "type": "fountain",
+   "x": -56,
+   "y": 0.19,
+   "z": 25,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-254",
+   "type": "tree",
+   "x": -42.737,
+   "y": 0.2,
+   "z": 29.766,
+   "ry": 0,
+   "props": {
+    "height": 7.189630388747901,
+    "seed": 717,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-255",
+   "type": "tree",
+   "x": -50.587,
+   "y": 0.2,
+   "z": 36.342,
+   "ry": 0,
+   "props": {
+    "height": 5.607028165250085,
+    "seed": 118,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-256",
+   "type": "tree",
+   "x": -61.608,
+   "y": 0.2,
+   "z": 36.274,
+   "ry": 0,
+   "props": {
+    "height": 5.980419220868498,
+    "seed": 566,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-257",
+   "type": "tree",
+   "x": -69.344,
+   "y": 0.2,
+   "z": 29.601,
+   "ry": 0,
+   "props": {
+    "height": 6.023933806573041,
+    "seed": 366,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-258",
+   "type": "tree",
+   "x": -69.263,
+   "y": 0.2,
+   "z": 20.234,
+   "ry": 0,
+   "props": {
+    "height": 5.111011223634705,
+    "seed": 287,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-259",
+   "type": "tree",
+   "x": -61.413,
+   "y": 0.2,
+   "z": 13.658,
+   "ry": 0,
+   "props": {
+    "height": 7.401287153479643,
+    "seed": 567,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-260",
+   "type": "tree",
+   "x": -50.392,
+   "y": 0.2,
+   "z": 13.726,
+   "ry": 0,
+   "props": {
+    "height": 5.490924044861458,
+    "seed": 85,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-261",
+   "type": "tree",
+   "x": -42.656,
+   "y": 0.2,
+   "z": 20.399,
+   "ry": 0,
+   "props": {
+    "height": 5.715362337068655,
+    "seed": 287,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "bench-262",
+   "type": "bench",
+   "x": -61,
+   "y": 0.19,
+   "z": 28.2,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-263",
+   "type": "bench",
+   "x": -61,
+   "y": 0.19,
+   "z": 21.8,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "hedge-264",
+   "type": "hedge",
+   "x": -75,
+   "y": 0.18,
+   "z": 25,
+   "ry": 1.571,
+   "props": {
+    "width": 26
+   }
+  },
+  {
+   "id": "bench-265",
+   "type": "bench",
+   "x": -51,
+   "y": 0.19,
+   "z": 28.2,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-266",
+   "type": "bench",
+   "x": -51,
+   "y": 0.19,
+   "z": 21.8,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "hedge-267",
+   "type": "hedge",
+   "x": -37,
+   "y": 0.18,
+   "z": 25,
+   "ry": 1.571,
+   "props": {
+    "width": 26
+   }
+  },
+  {
+   "id": "picnic-268",
+   "type": "picnic",
+   "x": -44,
+   "y": 0.2,
+   "z": 15.48,
+   "ry": 0.3,
+   "props": {}
+  },
+  {
+   "id": "tree-269",
+   "type": "tree",
+   "x": -72,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.72912634704262,
+    "seed": 246,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-270",
+   "type": "tree",
+   "x": -63,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.3659950802102685,
+    "seed": 225,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-271",
+   "type": "tree",
+   "x": -54,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.990605642087758,
+    "seed": 641,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-272",
+   "type": "tree",
+   "x": -45,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.803108290210367,
+    "seed": 174,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-273",
+   "type": "street-lamp",
+   "x": -67.5,
+   "y": 0.15,
+   "z": 5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-274",
+   "type": "street-lamp",
+   "x": -49.5,
+   "y": 0.15,
+   "z": 5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-275",
+   "type": "bench",
+   "x": -56.47,
+   "y": 0.15,
+   "z": 6.8,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-276",
+   "type": "trash-bin",
+   "x": -52.97,
+   "y": 0.15,
+   "z": 5.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-277",
+   "type": "bollard",
+   "x": -78.4,
+   "y": 0.15,
+   "z": 5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-278",
+   "type": "bollard",
+   "x": -33.6,
+   "y": 0.15,
+   "z": 5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-279",
+   "type": "person",
+   "x": -56.433,
+   "y": 0.15,
+   "z": 7.056,
+   "ry": 1.571,
+   "props": {
+    "preset": 3,
+    "pose": "debout",
+    "phase": 4.294
+   }
+  },
+  {
+   "id": "person-280",
+   "type": "person",
+   "x": -43.582,
+   "y": 0.15,
+   "z": 7.312,
+   "ry": 1.571,
+   "props": {
+    "preset": 1,
+    "pose": "debout",
+    "phase": 5.486
+   }
+  },
+  {
+   "id": "tree-281",
+   "type": "tree",
+   "x": -72,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.279764861986041,
+    "seed": 530,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-282",
+   "type": "tree",
+   "x": -63,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.422778757661582,
+    "seed": 29,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-283",
+   "type": "tree",
+   "x": -54,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.255997528135777,
+    "seed": 791,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-284",
+   "type": "tree",
+   "x": -45,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.388511976413429,
+    "seed": 619,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-285",
+   "type": "street-lamp",
+   "x": -67.5,
+   "y": 0.15,
+   "z": 44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-286",
+   "type": "street-lamp",
+   "x": -49.5,
+   "y": 0.15,
+   "z": 44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-287",
+   "type": "bench",
+   "x": -55.687,
+   "y": 0.15,
+   "z": 43.2,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-288",
+   "type": "trash-bin",
+   "x": -52.187,
+   "y": 0.15,
+   "z": 44.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "hydrant-289",
+   "type": "hydrant",
+   "x": -73.8,
+   "y": 0.15,
+   "z": 44.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-290",
+   "type": "bollard",
+   "x": -78.4,
+   "y": 0.15,
+   "z": 44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-291",
+   "type": "bollard",
+   "x": -33.6,
+   "y": 0.15,
+   "z": 44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-292",
+   "type": "person",
+   "x": -69.174,
+   "y": 0.15,
+   "z": 43.796,
+   "ry": -1.571,
+   "props": {
+    "preset": 4,
+    "pose": "marche",
+    "phase": 0.508
+   }
+  },
+  {
+   "id": "person-293",
+   "type": "person",
+   "x": -65.114,
+   "y": 0.15,
+   "z": 43.373,
+   "ry": -1.571,
+   "props": {
+    "preset": 2,
+    "pose": "debout",
+    "phase": 1.796
+   }
+  },
+  {
+   "id": "tree-294",
+   "type": "tree",
+   "x": -78.1,
+   "y": 0.15,
+   "z": 12,
+   "ry": 0,
+   "props": {
+    "height": 5.698512183316052,
+    "seed": 729,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-295",
+   "type": "tree",
+   "x": -78.1,
+   "y": 0.15,
+   "z": 21,
+   "ry": 0,
+   "props": {
+    "height": 5.971273208782077,
+    "seed": 493,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-296",
+   "type": "tree",
+   "x": -78.1,
+   "y": 0.15,
+   "z": 30,
+   "ry": 0,
+   "props": {
+    "height": 5.929509557038546,
+    "seed": 702,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-297",
+   "type": "street-lamp",
+   "x": -78.55,
+   "y": 0.15,
+   "z": 16.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-298",
+   "type": "street-lamp",
+   "x": -78.55,
+   "y": 0.15,
+   "z": 34.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-299",
+   "type": "bench",
+   "x": -77.2,
+   "y": 0.15,
+   "z": 23.603,
+   "ry": 1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-300",
+   "type": "trash-bin",
+   "x": -78.4,
+   "y": 0.15,
+   "z": 27.103,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-301",
+   "type": "person",
+   "x": -76.68,
+   "y": 0.15,
+   "z": 25.222,
+   "ry": 0,
+   "props": {
+    "preset": 5,
+    "pose": "marche",
+    "phase": 4.541
+   }
+  },
+  {
+   "id": "person-302",
+   "type": "person",
+   "x": -77.363,
+   "y": 0.15,
+   "z": 41.244,
+   "ry": 3.142,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 3.241
+   }
+  },
+  {
+   "id": "tree-303",
+   "type": "tree",
+   "x": -33.9,
+   "y": 0.15,
+   "z": 12,
+   "ry": 0,
+   "props": {
+    "height": 5.7079596336930996,
+    "seed": 998,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-304",
+   "type": "tree",
+   "x": -33.9,
+   "y": 0.15,
+   "z": 21,
+   "ry": 0,
+   "props": {
+    "height": 5.798639659956097,
+    "seed": 811,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-305",
+   "type": "tree",
+   "x": -33.9,
+   "y": 0.15,
+   "z": 30,
+   "ry": 0,
+   "props": {
+    "height": 5.842820335924626,
+    "seed": 858,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-306",
+   "type": "street-lamp",
+   "x": -33.45,
+   "y": 0.15,
+   "z": 16.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-307",
+   "type": "street-lamp",
+   "x": -33.45,
+   "y": 0.15,
+   "z": 34.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-308",
+   "type": "bench",
+   "x": -34.8,
+   "y": 0.15,
+   "z": 29.13,
+   "ry": -1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-309",
+   "type": "trash-bin",
+   "x": -33.6,
+   "y": 0.15,
+   "z": 32.63,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-310",
+   "type": "person",
+   "x": -34.863,
+   "y": 0.15,
+   "z": 9.423,
+   "ry": 0,
+   "props": {
+    "preset": 4,
+    "pose": "debout",
+    "phase": 4.249
+   }
+  },
+  {
+   "id": "person-311",
+   "type": "person",
+   "x": -35.602,
+   "y": 0.15,
+   "z": 15.523,
+   "ry": 0,
+   "props": {
+    "preset": 0,
+    "pose": "debout",
+    "phase": 1.191
+   }
+  },
+  {
+   "id": "sidewalk-312",
+   "type": "sidewalk",
+   "x": 0,
+   "y": 0,
+   "z": -25,
+   "ry": 0,
+   "props": {
+    "width": 46,
+    "depth": 40
+   }
+  },
+  {
+   "id": "haussmann-313",
+   "type": "haussmann",
+   "x": -11.96,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 16.03,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e8d5b7",
+    "awning": "#2b5a8a",
+    "seed": 332
+   }
+  },
+  {
+   "id": "haussmann-314",
+   "type": "haussmann",
+   "x": 2.081,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 11.953,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#d6c6a6",
+    "awning": "#5a3a5a",
+    "seed": 801
+   }
+  },
+  {
+   "id": "haussmann-315",
+   "type": "haussmann",
+   "x": 14.041,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 11.867,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e8d5b7",
+    "awning": null,
+    "seed": 245
+   }
+  },
+  {
+   "id": "haussmann-316",
+   "type": "haussmann",
+   "x": -19.7,
+   "y": 0.15,
+   "z": -36,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 7,
+    "stone": "#e8d5b7",
+    "awning": null,
+    "seed": 332
+   }
+  },
+  {
+   "id": "haussmann-317",
+   "type": "haussmann",
+   "x": 19.7,
+   "y": 0.15,
+   "z": -36,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 7,
+    "stone": "#e8d5b7",
+    "awning": null,
+    "seed": 245
+   }
+  },
+  {
+   "id": "haussmann-318",
+   "type": "haussmann",
+   "x": -13.481,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 12.989,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e4d6bb",
+    "awning": "#8a6a2a",
+    "seed": 821
+   }
+  },
+  {
+   "id": "haussmann-319",
+   "type": "haussmann",
+   "x": 0.122,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 14.116,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#d6c6a6",
+    "awning": null,
+    "seed": 184
+   }
+  },
+  {
+   "id": "haussmann-320",
+   "type": "haussmann",
+   "x": 13.602,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 12.745,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#dccfb3",
+    "awning": null,
+    "seed": 400
+   }
+  },
+  {
+   "id": "haussmann-321",
+   "type": "haussmann",
+   "x": -19.7,
+   "y": 0.15,
+   "z": -14,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 7,
+    "stone": "#e4d6bb",
+    "awning": null,
+    "seed": 821
+   }
+  },
+  {
+   "id": "haussmann-322",
+   "type": "haussmann",
+   "x": 19.7,
+   "y": 0.15,
+   "z": -14,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 4,
+    "stone": "#dccfb3",
+    "awning": null,
+    "seed": 400
+   }
+  },
+  {
+   "id": "shop-323",
+   "type": "shop",
+   "x": -15.5,
+   "y": 0.15,
+   "z": -25,
+   "ry": 1.571,
+   "props": {
+    "kind": "epicerie",
+    "width": 9.95,
+    "depth": 9,
+    "floors": 1,
+    "stone": "#e6d9bf"
+   }
+  },
+  {
+   "id": "haussmann-324",
+   "type": "haussmann",
+   "x": 14,
+   "y": 0.15,
+   "z": -25,
+   "ry": -1.571,
+   "props": {
+    "width": 9.95,
+    "depth": 12,
+    "floors": 6,
+    "stone": "#e6d9bf",
+    "awning": "#a8322b",
+    "seed": 35
+   }
+  },
+  {
+   "id": "tree-325",
+   "type": "tree",
+   "x": -16,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.3552620390430095,
+    "seed": 242,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-326",
+   "type": "tree",
+   "x": -7,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.919610049948097,
+    "seed": 396,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-327",
+   "type": "tree",
+   "x": 2,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.466348106972873,
+    "seed": 505,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-328",
+   "type": "tree",
+   "x": 11,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.410154229216277,
+    "seed": 687,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "street-lamp-329",
+   "type": "street-lamp",
+   "x": -11.5,
+   "y": 0.15,
+   "z": -44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-330",
+   "type": "street-lamp",
+   "x": 6.5,
+   "y": 0.15,
+   "z": -44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bus-shelter-331",
+   "type": "bus-shelter",
+   "x": -0.23,
+   "y": 0.15,
+   "z": -43.2,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-332",
+   "type": "trash-bin",
+   "x": 3.27,
+   "y": 0.15,
+   "z": -44.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-333",
+   "type": "bollard",
+   "x": -22.4,
+   "y": 0.15,
+   "z": -44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-334",
+   "type": "bollard",
+   "x": 22.4,
+   "y": 0.15,
+   "z": -44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-335",
+   "type": "person",
+   "x": 15.794,
+   "y": 0.15,
+   "z": -42.881,
+   "ry": -1.571,
+   "props": {
+    "preset": 0,
+    "pose": "debout",
+    "phase": 3.453
+   }
+  },
+  {
+   "id": "person-336",
+   "type": "person",
+   "x": 19.055,
+   "y": 0.15,
+   "z": -43.213,
+   "ry": 1.571,
+   "props": {
+    "preset": 1,
+    "pose": "marche",
+    "phase": 2.534
+   }
+  },
+  {
+   "id": "tree-337",
+   "type": "tree",
+   "x": -16,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.471818217448891,
+    "seed": 522,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-338",
+   "type": "tree",
+   "x": -7,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.256213312596083,
+    "seed": 494,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-339",
+   "type": "tree",
+   "x": 2,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.306619669124484,
+    "seed": 23,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-340",
+   "type": "tree",
+   "x": 11,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.380406452529132,
+    "seed": 433,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-341",
+   "type": "street-lamp",
+   "x": -11.5,
+   "y": 0.15,
+   "z": -5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-342",
+   "type": "street-lamp",
+   "x": 6.5,
+   "y": 0.15,
+   "z": -5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-343",
+   "type": "bench",
+   "x": 4.535,
+   "y": 0.15,
+   "z": -6.8,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-344",
+   "type": "trash-bin",
+   "x": 8.035,
+   "y": 0.15,
+   "z": -5.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-345",
+   "type": "bollard",
+   "x": -22.4,
+   "y": 0.15,
+   "z": -5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-346",
+   "type": "bollard",
+   "x": 22.4,
+   "y": 0.15,
+   "z": -5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-347",
+   "type": "person",
+   "x": -11.239,
+   "y": 0.15,
+   "z": -7.851,
+   "ry": 1.571,
+   "props": {
+    "preset": 4,
+    "pose": "marche",
+    "phase": 3.235
+   }
+  },
+  {
+   "id": "person-348",
+   "type": "person",
+   "x": 4.518,
+   "y": 0.15,
+   "z": -6.817,
+   "ry": -1.571,
+   "props": {
+    "preset": 3,
+    "pose": "debout",
+    "phase": 3.08
+   }
+  },
+  {
+   "id": "tree-349",
+   "type": "tree",
+   "x": -22.1,
+   "y": 0.15,
+   "z": -38,
+   "ry": 0,
+   "props": {
+    "height": 5.381571019627154,
+    "seed": 370,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-350",
+   "type": "tree",
+   "x": -22.1,
+   "y": 0.15,
+   "z": -29,
+   "ry": 0,
+   "props": {
+    "height": 5.308366845734418,
+    "seed": 495,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-351",
+   "type": "tree",
+   "x": -22.1,
+   "y": 0.15,
+   "z": -20,
+   "ry": 0,
+   "props": {
+    "height": 5.391160483844579,
+    "seed": 364,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "street-lamp-352",
+   "type": "street-lamp",
+   "x": -22.55,
+   "y": 0.15,
+   "z": -33.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-353",
+   "type": "street-lamp",
+   "x": -22.55,
+   "y": 0.15,
+   "z": -15.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bus-shelter-354",
+   "type": "bus-shelter",
+   "x": -21.2,
+   "y": 0.15,
+   "z": -27.623,
+   "ry": 1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-355",
+   "type": "trash-bin",
+   "x": -22.4,
+   "y": 0.15,
+   "z": -24.123,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-356",
+   "type": "person",
+   "x": -20.608,
+   "y": 0.15,
+   "z": -13.979,
+   "ry": 0,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 0.794
+   }
+  },
+  {
+   "id": "person-357",
+   "type": "person",
+   "x": -20.312,
+   "y": 0.15,
+   "z": -35.686,
+   "ry": 0,
+   "props": {
+    "preset": 3,
+    "pose": "marche",
+    "phase": 4.83
+   }
+  },
+  {
+   "id": "tree-358",
+   "type": "tree",
+   "x": 22.1,
+   "y": 0.15,
+   "z": -38,
+   "ry": 0,
+   "props": {
+    "height": 5.657338116876781,
+    "seed": 493,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-359",
+   "type": "tree",
+   "x": 22.1,
+   "y": 0.15,
+   "z": -29,
+   "ry": 0,
+   "props": {
+    "height": 5.697549131698906,
+    "seed": 388,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-360",
+   "type": "tree",
+   "x": 22.1,
+   "y": 0.15,
+   "z": -20,
+   "ry": 0,
+   "props": {
+    "height": 5.7501709926873446,
+    "seed": 927,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-361",
+   "type": "street-lamp",
+   "x": 22.55,
+   "y": 0.15,
+   "z": -33.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-362",
+   "type": "street-lamp",
+   "x": 22.55,
+   "y": 0.15,
+   "z": -15.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bus-shelter-363",
+   "type": "bus-shelter",
+   "x": 21.2,
+   "y": 0.15,
+   "z": -22.253,
+   "ry": -1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-364",
+   "type": "trash-bin",
+   "x": 22.4,
+   "y": 0.15,
+   "z": -18.753,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "cafe-365",
+   "type": "cafe",
+   "x": 20.4,
+   "y": 0.15,
+   "z": -18.2,
+   "ry": 0,
+   "props": {
+    "color": "#bb704f"
+   }
+  },
+  {
+   "id": "person-366",
+   "type": "person",
+   "x": 20.159,
+   "y": 0.15,
+   "z": -37.849,
+   "ry": 3.142,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 1.822
+   }
+  },
+  {
+   "id": "person-367",
+   "type": "person",
+   "x": 20.227,
+   "y": 0.15,
+   "z": -21.421,
+   "ry": 0,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 5.499
+   }
+  },
+  {
+   "id": "sidewalk-368",
+   "type": "sidewalk",
+   "x": 0,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 46,
+    "depth": 40
+   }
+  },
+  {
+   "id": "haussmann-369",
+   "type": "haussmann",
+   "x": -14.924,
+   "y": 0.15,
+   "z": 14,
+   "ry": 0,
+   "props": {
+    "width": 10.103,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#e4d6bb",
+    "awning": "#a8322b",
+    "seed": 426
+   }
+  },
+  {
+   "id": "haussmann-370",
+   "type": "haussmann",
+   "x": -3.043,
+   "y": 0.15,
+   "z": 14,
+   "ry": 0,
+   "props": {
+    "width": 13.559,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#d6c6a6",
+    "awning": "#5a3a5a",
+    "seed": 57
+   }
+  },
+  {
+   "id": "haussmann-371",
+   "type": "haussmann",
+   "x": 11.881,
+   "y": 0.15,
+   "z": 14,
+   "ry": 0,
+   "props": {
+    "width": 16.188,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e6d9bf",
+    "awning": "#5a3a5a",
+    "seed": 331
+   }
+  },
+  {
+   "id": "haussmann-372",
+   "type": "haussmann",
+   "x": -19.7,
+   "y": 0.15,
+   "z": 14,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 4,
+    "stone": "#e4d6bb",
+    "awning": null,
+    "seed": 426
+   }
+  },
+  {
+   "id": "haussmann-373",
+   "type": "haussmann",
+   "x": 19.7,
+   "y": 0.15,
+   "z": 14,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 7,
+    "stone": "#e6d9bf",
+    "awning": null,
+    "seed": 331
+   }
+  },
+  {
+   "id": "haussmann-374",
+   "type": "haussmann",
+   "x": -13.909,
+   "y": 0.15,
+   "z": 36,
+   "ry": 3.142,
+   "props": {
+    "width": 12.132,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e6d9bf",
+    "awning": "#2b5a8a",
+    "seed": 103
+   }
+  },
+  {
+   "id": "shop-375",
+   "type": "shop",
+   "x": -0.765,
+   "y": 0.15,
+   "z": 37.5,
+   "ry": 3.142,
+   "props": {
+    "kind": "boutique",
+    "width": 14.054,
+    "depth": 9,
+    "floors": 2,
+    "stone": "#dccfb3"
+   }
+  },
+  {
+   "id": "haussmann-376",
+   "type": "haussmann",
+   "x": 13.143,
+   "y": 0.15,
+   "z": 36,
+   "ry": 3.142,
+   "props": {
+    "width": 13.663,
+    "depth": 12,
+    "floors": 6,
+    "stone": "#d6c6a6",
+    "awning": "#5a3a5a",
+    "seed": 738
+   }
+  },
+  {
+   "id": "haussmann-377",
+   "type": "haussmann",
+   "x": -19.7,
+   "y": 0.15,
+   "z": 36,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 7,
+    "stone": "#e6d9bf",
+    "awning": null,
+    "seed": 103
+   }
+  },
+  {
+   "id": "haussmann-378",
+   "type": "haussmann",
+   "x": 19.7,
+   "y": 0.15,
+   "z": 36,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 6,
+    "stone": "#d6c6a6",
+    "awning": null,
+    "seed": 738
+   }
+  },
+  {
+   "id": "shop-379",
+   "type": "shop",
+   "x": -15.5,
+   "y": 0.15,
+   "z": 25,
+   "ry": 1.571,
+   "props": {
+    "kind": "boulangerie",
+    "width": 9.95,
+    "depth": 9,
+    "floors": 1,
+    "stone": "#e8d5b7"
+   }
+  },
+  {
+   "id": "shop-380",
+   "type": "shop",
+   "x": 15.5,
+   "y": 0.15,
+   "z": 25,
+   "ry": -1.571,
+   "props": {
+    "kind": "fleuriste",
+    "width": 9.95,
+    "depth": 9,
+    "floors": 1,
+    "stone": "#dccfb3"
+   }
+  },
+  {
+   "id": "tree-381",
+   "type": "tree",
+   "x": -16,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.560930078662932,
+    "seed": 96,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-382",
+   "type": "tree",
+   "x": -7,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.970293056219816,
+    "seed": 479,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-383",
+   "type": "tree",
+   "x": 2,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.500739622861147,
+    "seed": 85,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-384",
+   "type": "tree",
+   "x": 11,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.660334943979978,
+    "seed": 84,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "street-lamp-385",
+   "type": "street-lamp",
+   "x": -11.5,
+   "y": 0.15,
+   "z": 5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-386",
+   "type": "street-lamp",
+   "x": 6.5,
+   "y": 0.15,
+   "z": 5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-387",
+   "type": "bench",
+   "x": -5.045,
+   "y": 0.15,
+   "z": 6.8,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-388",
+   "type": "trash-bin",
+   "x": -1.545,
+   "y": 0.15,
+   "z": 5.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "hydrant-389",
+   "type": "hydrant",
+   "x": -17.8,
+   "y": 0.15,
+   "z": 5.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-390",
+   "type": "bollard",
+   "x": -22.4,
+   "y": 0.15,
+   "z": 5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-391",
+   "type": "bollard",
+   "x": 22.4,
+   "y": 0.15,
+   "z": 5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-392",
+   "type": "person",
+   "x": 8.666,
+   "y": 0.15,
+   "z": 6.889,
+   "ry": 1.571,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 0.732
+   }
+  },
+  {
+   "id": "person-393",
+   "type": "person",
+   "x": -13.407,
+   "y": 0.15,
+   "z": 6.998,
+   "ry": -1.571,
+   "props": {
+    "preset": 2,
+    "pose": "debout",
+    "phase": 0.638
+   }
+  },
+  {
+   "id": "tree-394",
+   "type": "tree",
+   "x": -16,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.973569981940091,
+    "seed": 582,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-395",
+   "type": "tree",
+   "x": -7,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.569863052666188,
+    "seed": 420,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-396",
+   "type": "tree",
+   "x": 2,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.281895845569671,
+    "seed": 796,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-397",
+   "type": "tree",
+   "x": 11,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.3437438769266015,
+    "seed": 913,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-398",
+   "type": "street-lamp",
+   "x": -11.5,
+   "y": 0.15,
+   "z": 44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-399",
+   "type": "street-lamp",
+   "x": 6.5,
+   "y": 0.15,
+   "z": 44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-400",
+   "type": "bench",
+   "x": 1.292,
+   "y": 0.15,
+   "z": 43.2,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-401",
+   "type": "trash-bin",
+   "x": 4.792,
+   "y": 0.15,
+   "z": 44.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-402",
+   "type": "bollard",
+   "x": -22.4,
+   "y": 0.15,
+   "z": 44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-403",
+   "type": "bollard",
+   "x": 22.4,
+   "y": 0.15,
+   "z": 44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-404",
+   "type": "person",
+   "x": -11.485,
+   "y": 0.15,
+   "z": 43.467,
+   "ry": -1.571,
+   "props": {
+    "preset": 5,
+    "pose": "marche",
+    "phase": 5.9
+   }
+  },
+  {
+   "id": "person-405",
+   "type": "person",
+   "x": -12.868,
+   "y": 0.15,
+   "z": 42.17,
+   "ry": 1.571,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 2.278
+   }
+  },
+  {
+   "id": "tree-406",
+   "type": "tree",
+   "x": -22.1,
+   "y": 0.15,
+   "z": 12,
+   "ry": 0,
+   "props": {
+    "height": 5.608286353945732,
+    "seed": 972,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-407",
+   "type": "tree",
+   "x": -22.1,
+   "y": 0.15,
+   "z": 21,
+   "ry": 0,
+   "props": {
+    "height": 5.562340407446027,
+    "seed": 43,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-408",
+   "type": "tree",
+   "x": -22.1,
+   "y": 0.15,
+   "z": 30,
+   "ry": 0,
+   "props": {
+    "height": 5.275294044986367,
+    "seed": 799,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-409",
+   "type": "street-lamp",
+   "x": -22.55,
+   "y": 0.15,
+   "z": 16.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-410",
+   "type": "street-lamp",
+   "x": -22.55,
+   "y": 0.15,
+   "z": 34.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bus-shelter-411",
+   "type": "bus-shelter",
+   "x": -21.2,
+   "y": 0.15,
+   "z": 20.2,
+   "ry": 1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-412",
+   "type": "trash-bin",
+   "x": -22.4,
+   "y": 0.15,
+   "z": 23.7,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "cafe-413",
+   "type": "cafe",
+   "x": -20.4,
+   "y": 0.15,
+   "z": 31.8,
+   "ry": 0,
+   "props": {
+    "color": "#3f6b4a"
+   }
+  },
+  {
+   "id": "person-414",
+   "type": "person",
+   "x": -20.484,
+   "y": 0.15,
+   "z": 30.196,
+   "ry": 3.142,
+   "props": {
+    "preset": 1,
+    "pose": "marche",
+    "phase": 2.704
+   }
+  },
+  {
+   "id": "person-415",
+   "type": "person",
+   "x": -20.056,
+   "y": 0.15,
+   "z": 25.402,
+   "ry": 3.142,
+   "props": {
+    "preset": 3,
+    "pose": "debout",
+    "phase": 2.833
+   }
+  },
+  {
+   "id": "tree-416",
+   "type": "tree",
+   "x": 22.1,
+   "y": 0.15,
+   "z": 12,
+   "ry": 0,
+   "props": {
+    "height": 5.326119716465473,
+    "seed": 882,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-417",
+   "type": "tree",
+   "x": 22.1,
+   "y": 0.15,
+   "z": 21,
+   "ry": 0,
+   "props": {
+    "height": 5.654688465408981,
+    "seed": 953,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-418",
+   "type": "tree",
+   "x": 22.1,
+   "y": 0.15,
+   "z": 30,
+   "ry": 0,
+   "props": {
+    "height": 5.339187002182007,
+    "seed": 721,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-419",
+   "type": "street-lamp",
+   "x": 22.55,
+   "y": 0.15,
+   "z": 16.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-420",
+   "type": "street-lamp",
+   "x": 22.55,
+   "y": 0.15,
+   "z": 34.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-421",
+   "type": "bench",
+   "x": 21.2,
+   "y": 0.15,
+   "z": 20.912,
+   "ry": -1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-422",
+   "type": "trash-bin",
+   "x": 22.4,
+   "y": 0.15,
+   "z": 24.412,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-423",
+   "type": "person",
+   "x": 20.068,
+   "y": 0.15,
+   "z": 41.838,
+   "ry": 3.142,
+   "props": {
+    "preset": 1,
+    "pose": "marche",
+    "phase": 2.839
+   }
+  },
+  {
+   "id": "person-424",
+   "type": "person",
+   "x": 21.295,
+   "y": 0.15,
+   "z": 16.523,
+   "ry": 0,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 0.851
+   }
+  },
+  {
+   "id": "sidewalk-425",
+   "type": "sidewalk",
+   "x": 56,
+   "y": 0,
+   "z": -25,
+   "ry": 0,
+   "props": {
+    "width": 46,
+    "depth": 40
+   }
+  },
+  {
+   "id": "haussmann-426",
+   "type": "haussmann",
+   "x": 41.549,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 11.047,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#dccfb3",
+    "awning": "#5a3a5a",
+    "seed": 936
+   }
+  },
+  {
+   "id": "haussmann-427",
+   "type": "haussmann",
+   "x": 52.984,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 11.723,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#dccfb3",
+    "awning": "#8a6a2a",
+    "seed": 50
+   }
+  },
+  {
+   "id": "haussmann-428",
+   "type": "haussmann",
+   "x": 67.435,
+   "y": 0.15,
+   "z": -36,
+   "ry": 0,
+   "props": {
+    "width": 17.079,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#e4d6bb",
+    "awning": null,
+    "seed": 778
+   }
+  },
+  {
+   "id": "haussmann-429",
+   "type": "haussmann",
+   "x": 36.3,
+   "y": 0.15,
+   "z": -36,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 5,
+    "stone": "#dccfb3",
+    "awning": null,
+    "seed": 936
+   }
+  },
+  {
+   "id": "haussmann-430",
+   "type": "haussmann",
+   "x": 75.7,
+   "y": 0.15,
+   "z": -36,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 5,
+    "stone": "#e4d6bb",
+    "awning": null,
+    "seed": 778
+   }
+  },
+  {
+   "id": "haussmann-431",
+   "type": "haussmann",
+   "x": 43.496,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 14.941,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#dccfb3",
+    "awning": null,
+    "seed": 185
+   }
+  },
+  {
+   "id": "haussmann-432",
+   "type": "haussmann",
+   "x": 57.643,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 13.254,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e4d6bb",
+    "awning": "#3a6a4a",
+    "seed": 874
+   }
+  },
+  {
+   "id": "haussmann-433",
+   "type": "haussmann",
+   "x": 70.148,
+   "y": 0.15,
+   "z": -14,
+   "ry": 3.142,
+   "props": {
+    "width": 11.655,
+    "depth": 12,
+    "floors": 6,
+    "stone": "#e6d9bf",
+    "awning": "#a8322b",
+    "seed": 810
+   }
+  },
+  {
+   "id": "haussmann-434",
+   "type": "haussmann",
+   "x": 36.3,
+   "y": 0.15,
+   "z": -14,
+   "ry": 1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 5,
+    "stone": "#dccfb3",
+    "awning": null,
+    "seed": 185
+   }
+  },
+  {
+   "id": "haussmann-435",
+   "type": "haussmann",
+   "x": 75.7,
+   "y": 0.15,
+   "z": -14,
+   "ry": -1.571,
+   "props": {
+    "width": 11.9,
+    "depth": 0.6,
+    "floors": 6,
+    "stone": "#e6d9bf",
+    "awning": null,
+    "seed": 810
+   }
+  },
+  {
+   "id": "shop-436",
+   "type": "shop",
+   "x": 40.5,
+   "y": 0.15,
+   "z": -25,
+   "ry": 1.571,
+   "props": {
+    "kind": "fleuriste",
+    "width": 9.95,
+    "depth": 9,
+    "floors": 4,
+    "stone": "#e6d9bf"
+   }
+  },
+  {
+   "id": "haussmann-437",
+   "type": "haussmann",
+   "x": 70,
+   "y": 0.15,
+   "z": -25,
+   "ry": -1.571,
+   "props": {
+    "width": 9.95,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#e4d6bb",
+    "awning": "#3a6a4a",
+    "seed": 130
+   }
+  },
+  {
+   "id": "tree-438",
+   "type": "tree",
+   "x": 40,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.3500404091551905,
+    "seed": 197,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-439",
+   "type": "tree",
+   "x": 49,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.9733835294842725,
+    "seed": 259,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-440",
+   "type": "tree",
+   "x": 58,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.781631963141263,
+    "seed": 208,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-441",
+   "type": "tree",
+   "x": 67,
+   "y": 0.15,
+   "z": -44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.621152355521917,
+    "seed": 696,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "street-lamp-442",
+   "type": "street-lamp",
+   "x": 44.5,
+   "y": 0.15,
+   "z": -44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-443",
+   "type": "street-lamp",
+   "x": 62.5,
+   "y": 0.15,
+   "z": -44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-444",
+   "type": "bench",
+   "x": 60.698,
+   "y": 0.15,
+   "z": -43.2,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-445",
+   "type": "trash-bin",
+   "x": 64.198,
+   "y": 0.15,
+   "z": -44.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "hydrant-446",
+   "type": "hydrant",
+   "x": 38.2,
+   "y": 0.15,
+   "z": -44.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-447",
+   "type": "bollard",
+   "x": 33.6,
+   "y": 0.15,
+   "z": -44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-448",
+   "type": "bollard",
+   "x": 78.4,
+   "y": 0.15,
+   "z": -44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-449",
+   "type": "person",
+   "x": 62.125,
+   "y": 0.15,
+   "z": -43.666,
+   "ry": 1.571,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 4.359
+   }
+  },
+  {
+   "id": "person-450",
+   "type": "person",
+   "x": 50.867,
+   "y": 0.15,
+   "z": -42.452,
+   "ry": 1.571,
+   "props": {
+    "preset": 1,
+    "pose": "debout",
+    "phase": 5.239
+   }
+  },
+  {
+   "id": "tree-451",
+   "type": "tree",
+   "x": 40,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.457252989523113,
+    "seed": 303,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-452",
+   "type": "tree",
+   "x": 49,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.567246938496829,
+    "seed": 346,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-453",
+   "type": "tree",
+   "x": 58,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.6978160891681915,
+    "seed": 601,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-454",
+   "type": "tree",
+   "x": 67,
+   "y": 0.15,
+   "z": -5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.769459777139128,
+    "seed": 21,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "street-lamp-455",
+   "type": "street-lamp",
+   "x": 44.5,
+   "y": 0.15,
+   "z": -5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-456",
+   "type": "street-lamp",
+   "x": 62.5,
+   "y": 0.15,
+   "z": -5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-457",
+   "type": "bench",
+   "x": 55.741,
+   "y": 0.15,
+   "z": -6.8,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-458",
+   "type": "trash-bin",
+   "x": 59.241,
+   "y": 0.15,
+   "z": -5.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "hydrant-459",
+   "type": "hydrant",
+   "x": 38.2,
+   "y": 0.15,
+   "z": -5.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-460",
+   "type": "bollard",
+   "x": 33.6,
+   "y": 0.15,
+   "z": -5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-461",
+   "type": "bollard",
+   "x": 78.4,
+   "y": 0.15,
+   "z": -5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-462",
+   "type": "person",
+   "x": 60.167,
+   "y": 0.15,
+   "z": -7.59,
+   "ry": -1.571,
+   "props": {
+    "preset": 3,
+    "pose": "marche",
+    "phase": 1.183
+   }
+  },
+  {
+   "id": "person-463",
+   "type": "person",
+   "x": 36.268,
+   "y": 0.15,
+   "z": -7.514,
+   "ry": 1.571,
+   "props": {
+    "preset": 5,
+    "pose": "marche",
+    "phase": 3.23
+   }
+  },
+  {
+   "id": "tree-464",
+   "type": "tree",
+   "x": 33.9,
+   "y": 0.15,
+   "z": -38,
+   "ry": 0,
+   "props": {
+    "height": 5.202477430924773,
+    "seed": 895,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-465",
+   "type": "tree",
+   "x": 33.9,
+   "y": 0.15,
+   "z": -29,
+   "ry": 0,
+   "props": {
+    "height": 5.362557474151254,
+    "seed": 73,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-466",
+   "type": "tree",
+   "x": 33.9,
+   "y": 0.15,
+   "z": -20,
+   "ry": 0,
+   "props": {
+    "height": 5.531230688281357,
+    "seed": 154,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-467",
+   "type": "street-lamp",
+   "x": 33.45,
+   "y": 0.15,
+   "z": -33.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-468",
+   "type": "street-lamp",
+   "x": 33.45,
+   "y": 0.15,
+   "z": -15.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-469",
+   "type": "bench",
+   "x": 34.8,
+   "y": 0.15,
+   "z": -26.112,
+   "ry": 1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-470",
+   "type": "trash-bin",
+   "x": 33.6,
+   "y": 0.15,
+   "z": -22.612,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "hydrant-471",
+   "type": "hydrant",
+   "x": 33.5,
+   "y": 0.15,
+   "z": -39.8,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-472",
+   "type": "person",
+   "x": 34.262,
+   "y": 0.15,
+   "z": -11.504,
+   "ry": 3.142,
+   "props": {
+    "preset": 2,
+    "pose": "debout",
+    "phase": 4.755
+   }
+  },
+  {
+   "id": "person-473",
+   "type": "person",
+   "x": 35.103,
+   "y": 0.15,
+   "z": -10.193,
+   "ry": 3.142,
+   "props": {
+    "preset": 1,
+    "pose": "marche",
+    "phase": 6.137
+   }
+  },
+  {
+   "id": "tree-474",
+   "type": "tree",
+   "x": 78.1,
+   "y": 0.15,
+   "z": -38,
+   "ry": 0,
+   "props": {
+    "height": 5.779930041916669,
+    "seed": 235,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-475",
+   "type": "tree",
+   "x": 78.1,
+   "y": 0.15,
+   "z": -29,
+   "ry": 0,
+   "props": {
+    "height": 5.912095673196018,
+    "seed": 504,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-476",
+   "type": "tree",
+   "x": 78.1,
+   "y": 0.15,
+   "z": -20,
+   "ry": 0,
+   "props": {
+    "height": 5.434091920405627,
+    "seed": 95,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-477",
+   "type": "street-lamp",
+   "x": 78.55,
+   "y": 0.15,
+   "z": -33.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-478",
+   "type": "street-lamp",
+   "x": 78.55,
+   "y": 0.15,
+   "z": -15.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-479",
+   "type": "bench",
+   "x": 77.2,
+   "y": 0.15,
+   "z": -20.264,
+   "ry": -1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-480",
+   "type": "trash-bin",
+   "x": 78.4,
+   "y": 0.15,
+   "z": -16.764,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "cafe-481",
+   "type": "cafe",
+   "x": 76.4,
+   "y": 0.15,
+   "z": -18.2,
+   "ry": 0,
+   "props": {
+    "color": "#8a322b"
+   }
+  },
+  {
+   "id": "person-482",
+   "type": "person",
+   "x": 77.549,
+   "y": 0.15,
+   "z": -18.928,
+   "ry": 3.142,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 1.066
+   }
+  },
+  {
+   "id": "person-483",
+   "type": "person",
+   "x": 77.647,
+   "y": 0.15,
+   "z": -38.428,
+   "ry": 0,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 5.086
+   }
+  },
+  {
+   "id": "sidewalk-484",
+   "type": "sidewalk",
+   "x": 56,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 46,
+    "depth": 40
+   }
+  },
+  {
+   "id": "grass-485",
+   "type": "grass",
+   "x": 56,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 40,
+    "depth": 34
+   }
+  },
+  {
+   "id": "plaza-486",
+   "type": "plaza",
+   "x": 56,
+   "y": 0,
+   "z": 25,
+   "ry": 0,
+   "props": {
+    "width": 40,
+    "depth": 4
+   }
+  },
+  {
+   "id": "plaza-487",
+   "type": "plaza",
+   "x": 56,
+   "y": 0,
+   "z": 25,
+   "ry": 1.571,
+   "props": {
+    "width": 34,
+    "depth": 4
+   }
+  },
+  {
+   "id": "fountain-488",
+   "type": "fountain",
+   "x": 56,
+   "y": 0.19,
+   "z": 25,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-489",
+   "type": "tree",
+   "x": 69.263,
+   "y": 0.2,
+   "z": 29.766,
+   "ry": 0,
+   "props": {
+    "height": 6.596288097789511,
+    "seed": 28,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-490",
+   "type": "tree",
+   "x": 61.413,
+   "y": 0.2,
+   "z": 36.342,
+   "ry": 0,
+   "props": {
+    "height": 7.3182378185447305,
+    "seed": 43,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-491",
+   "type": "tree",
+   "x": 50.392,
+   "y": 0.2,
+   "z": 36.274,
+   "ry": 0,
+   "props": {
+    "height": 5.600536760175601,
+    "seed": 250,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-492",
+   "type": "tree",
+   "x": 42.656,
+   "y": 0.2,
+   "z": 29.601,
+   "ry": 0,
+   "props": {
+    "height": 6.3822032121242955,
+    "seed": 549,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-493",
+   "type": "tree",
+   "x": 42.737,
+   "y": 0.2,
+   "z": 20.234,
+   "ry": 0,
+   "props": {
+    "height": 6.675808022264391,
+    "seed": 686,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-494",
+   "type": "tree",
+   "x": 50.587,
+   "y": 0.2,
+   "z": 13.658,
+   "ry": 0,
+   "props": {
+    "height": 6.550472162198275,
+    "seed": 468,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-495",
+   "type": "tree",
+   "x": 61.608,
+   "y": 0.2,
+   "z": 13.726,
+   "ry": 0,
+   "props": {
+    "height": 6.576210194034502,
+    "seed": 947,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-496",
+   "type": "tree",
+   "x": 69.344,
+   "y": 0.2,
+   "z": 20.399,
+   "ry": 0,
+   "props": {
+    "height": 5.122459340491332,
+    "seed": 918,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "bench-497",
+   "type": "bench",
+   "x": 51,
+   "y": 0.19,
+   "z": 28.2,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-498",
+   "type": "bench",
+   "x": 51,
+   "y": 0.19,
+   "z": 21.8,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "hedge-499",
+   "type": "hedge",
+   "x": 37,
+   "y": 0.18,
+   "z": 25,
+   "ry": 1.571,
+   "props": {
+    "width": 26
+   }
+  },
+  {
+   "id": "bench-500",
+   "type": "bench",
+   "x": 61,
+   "y": 0.19,
+   "z": 28.2,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-501",
+   "type": "bench",
+   "x": 61,
+   "y": 0.19,
+   "z": 21.8,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "hedge-502",
+   "type": "hedge",
+   "x": 75,
+   "y": 0.18,
+   "z": 25,
+   "ry": 1.571,
+   "props": {
+    "width": 26
+   }
+  },
+  {
+   "id": "picnic-503",
+   "type": "picnic",
+   "x": 68,
+   "y": 0.2,
+   "z": 15.48,
+   "ry": 0.3,
+   "props": {}
+  },
+  {
+   "id": "tree-504",
+   "type": "tree",
+   "x": 40,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.386164880357683,
+    "seed": 55,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-505",
+   "type": "tree",
+   "x": 49,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.73476629126817,
+    "seed": 486,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-506",
+   "type": "tree",
+   "x": 58,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.254488490894437,
+    "seed": 831,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-507",
+   "type": "tree",
+   "x": 67,
+   "y": 0.15,
+   "z": 5.9,
+   "ry": 0,
+   "props": {
+    "height": 5.309265215136111,
+    "seed": 942,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "street-lamp-508",
+   "type": "street-lamp",
+   "x": 44.5,
+   "y": 0.15,
+   "z": 5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-509",
+   "type": "street-lamp",
+   "x": 62.5,
+   "y": 0.15,
+   "z": 5.45,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-510",
+   "type": "bench",
+   "x": 58.183,
+   "y": 0.15,
+   "z": 6.8,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-511",
+   "type": "trash-bin",
+   "x": 61.683,
+   "y": 0.15,
+   "z": 5.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-512",
+   "type": "bollard",
+   "x": 33.6,
+   "y": 0.15,
+   "z": 5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-513",
+   "type": "bollard",
+   "x": 78.4,
+   "y": 0.15,
+   "z": 5.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-514",
+   "type": "person",
+   "x": 52.767,
+   "y": 0.15,
+   "z": 6.247,
+   "ry": 1.571,
+   "props": {
+    "preset": 4,
+    "pose": "debout",
+    "phase": 4.269
+   }
+  },
+  {
+   "id": "person-515",
+   "type": "person",
+   "x": 65.043,
+   "y": 0.15,
+   "z": 7.396,
+   "ry": 1.571,
+   "props": {
+    "preset": 5,
+    "pose": "marche",
+    "phase": 5.117
+   }
+  },
+  {
+   "id": "tree-516",
+   "type": "tree",
+   "x": 40,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.8075094107538465,
+    "seed": 243,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-517",
+   "type": "tree",
+   "x": 49,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.663562089204788,
+    "seed": 32,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-518",
+   "type": "tree",
+   "x": 58,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.710185939073563,
+    "seed": 898,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-519",
+   "type": "tree",
+   "x": 67,
+   "y": 0.15,
+   "z": 44.1,
+   "ry": 0,
+   "props": {
+    "height": 5.645653038099408,
+    "seed": 320,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-520",
+   "type": "street-lamp",
+   "x": 44.5,
+   "y": 0.15,
+   "z": 44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-521",
+   "type": "street-lamp",
+   "x": 62.5,
+   "y": 0.15,
+   "z": 44.55,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-522",
+   "type": "bench",
+   "x": 50.838,
+   "y": 0.15,
+   "z": 43.2,
+   "ry": 3.142,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-523",
+   "type": "trash-bin",
+   "x": 54.338,
+   "y": 0.15,
+   "z": 44.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-524",
+   "type": "bollard",
+   "x": 33.6,
+   "y": 0.15,
+   "z": 44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bollard-525",
+   "type": "bollard",
+   "x": 78.4,
+   "y": 0.15,
+   "z": 44.6,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-526",
+   "type": "person",
+   "x": 39.872,
+   "y": 0.15,
+   "z": 43.572,
+   "ry": 1.571,
+   "props": {
+    "preset": 4,
+    "pose": "debout",
+    "phase": 1.077
+   }
+  },
+  {
+   "id": "person-527",
+   "type": "person",
+   "x": 65.9,
+   "y": 0.15,
+   "z": 43,
+   "ry": 1.571,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 4.167
+   }
+  },
+  {
+   "id": "tree-528",
+   "type": "tree",
+   "x": 33.9,
+   "y": 0.15,
+   "z": 12,
+   "ry": 0,
+   "props": {
+    "height": 5.777555589936674,
+    "seed": 139,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-529",
+   "type": "tree",
+   "x": 33.9,
+   "y": 0.15,
+   "z": 21,
+   "ry": 0,
+   "props": {
+    "height": 5.846019753441215,
+    "seed": 133,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-530",
+   "type": "tree",
+   "x": 33.9,
+   "y": 0.15,
+   "z": 30,
+   "ry": 0,
+   "props": {
+    "height": 5.237264130450785,
+    "seed": 417,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "street-lamp-531",
+   "type": "street-lamp",
+   "x": 33.45,
+   "y": 0.15,
+   "z": 16.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-532",
+   "type": "street-lamp",
+   "x": 33.45,
+   "y": 0.15,
+   "z": 34.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-533",
+   "type": "bench",
+   "x": 34.8,
+   "y": 0.15,
+   "z": 26.025,
+   "ry": 1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-534",
+   "type": "trash-bin",
+   "x": 33.6,
+   "y": 0.15,
+   "z": 29.525,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-535",
+   "type": "person",
+   "x": 34.939,
+   "y": 0.15,
+   "z": 24.441,
+   "ry": 3.142,
+   "props": {
+    "preset": 2,
+    "pose": "marche",
+    "phase": 3.781
+   }
+  },
+  {
+   "id": "person-536",
+   "type": "person",
+   "x": 35.174,
+   "y": 0.15,
+   "z": 34.979,
+   "ry": 3.142,
+   "props": {
+    "preset": 3,
+    "pose": "debout",
+    "phase": 5.54
+   }
+  },
+  {
+   "id": "tree-537",
+   "type": "tree",
+   "x": 78.1,
+   "y": 0.15,
+   "z": 12,
+   "ry": 0,
+   "props": {
+    "height": 5.922892657667399,
+    "seed": 37,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-538",
+   "type": "tree",
+   "x": 78.1,
+   "y": 0.15,
+   "z": 21,
+   "ry": 0,
+   "props": {
+    "height": 5.956417904235423,
+    "seed": 438,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-539",
+   "type": "tree",
+   "x": 78.1,
+   "y": 0.15,
+   "z": 30,
+   "ry": 0,
+   "props": {
+    "height": 5.562815071456135,
+    "seed": 275,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "street-lamp-540",
+   "type": "street-lamp",
+   "x": 78.55,
+   "y": 0.15,
+   "z": 16.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-541",
+   "type": "street-lamp",
+   "x": 78.55,
+   "y": 0.15,
+   "z": 34.5,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "bench-542",
+   "type": "bench",
+   "x": 77.2,
+   "y": 0.15,
+   "z": 23.381,
+   "ry": -1.571,
+   "props": {}
+  },
+  {
+   "id": "trash-bin-543",
+   "type": "trash-bin",
+   "x": 78.4,
+   "y": 0.15,
+   "z": 26.881,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-544",
+   "type": "person",
+   "x": 76.339,
+   "y": 0.15,
+   "z": 16.975,
+   "ry": 3.142,
+   "props": {
+    "preset": 1,
+    "pose": "marche",
+    "phase": 2.043
+   }
+  },
+  {
+   "id": "person-545",
+   "type": "person",
+   "x": 76.688,
+   "y": 0.15,
+   "z": 30.924,
+   "ry": 3.142,
+   "props": {
+    "preset": 2,
+    "pose": "debout",
+    "phase": 2.294
+   }
+  },
+  {
+   "id": "sidewalk-546",
+   "type": "sidewalk",
+   "x": 0,
+   "y": 0,
+   "z": -59,
+   "ry": 0,
+   "props": {
+    "width": 238,
+    "depth": 8
+   }
+  },
+  {
+   "id": "sidewalk-547",
+   "type": "sidewalk",
+   "x": 0,
+   "y": 0,
+   "z": -111,
+   "ry": 0,
+   "props": {
+    "width": 238,
+    "depth": 8
+   }
+  },
+  {
+   "id": "water-548",
+   "type": "water",
+   "x": 0,
+   "y": 0,
+   "z": -85,
+   "ry": 0,
+   "props": {
+    "width": 578,
+    "depth": 44
+   }
+  },
+  {
+   "id": "road-549",
+   "type": "road",
+   "x": 0,
+   "y": 0,
+   "z": -120,
+   "ry": 1.571,
+   "props": {
+    "width": 10,
+    "length": 238
+   }
+  },
+  {
+   "id": "tree-550",
+   "type": "tree",
+   "x": -115,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.637382181826979,
+    "seed": 748,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-551",
+   "type": "tree",
+   "x": -110,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.983578245621175,
+    "seed": 876,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-552",
+   "type": "tree",
+   "x": -104,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.146662113256752,
+    "seed": 900,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-553",
+   "type": "tree",
+   "x": -99,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.32805483136326,
+    "seed": 819,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "bench-554",
+   "type": "bench",
+   "x": -98.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-555",
+   "type": "tree",
+   "x": -93,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.918319416232407,
+    "seed": 388,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-556",
+   "type": "tree",
+   "x": -88,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.72679341910407,
+    "seed": 114,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "bench-557",
+   "type": "bench",
+   "x": -87.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-558",
+   "type": "tree",
+   "x": -82,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.099220326170325,
+    "seed": 752,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-559",
+   "type": "tree",
+   "x": -77,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.811407978646457,
+    "seed": 496,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-560",
+   "type": "tree",
+   "x": -71,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.649211029522121,
+    "seed": 934,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-561",
+   "type": "tree",
+   "x": -66,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.524635604582727,
+    "seed": 816,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "bench-562",
+   "type": "bench",
+   "x": -65.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-563",
+   "type": "tree",
+   "x": -60,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.452221939805895,
+    "seed": 644,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-564",
+   "type": "tree",
+   "x": -55,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.928114676848054,
+    "seed": 176,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-565",
+   "type": "tree",
+   "x": -49,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.406619851011783,
+    "seed": 965,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-566",
+   "type": "tree",
+   "x": -44,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.500372334383428,
+    "seed": 48,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "bench-567",
+   "type": "bench",
+   "x": -43.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-568",
+   "type": "tree",
+   "x": -38,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.479689411818981,
+    "seed": 876,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-569",
+   "type": "tree",
+   "x": -33,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.763178868219256,
+    "seed": 865,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "bench-570",
+   "type": "bench",
+   "x": -32.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-571",
+   "type": "tree",
+   "x": -27,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.367444217670709,
+    "seed": 782,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-572",
+   "type": "tree",
+   "x": -22,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.110908992122859,
+    "seed": 552,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "bench-573",
+   "type": "bench",
+   "x": -21.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-574",
+   "type": "tree",
+   "x": -16,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.524633874651045,
+    "seed": 410,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-575",
+   "type": "tree",
+   "x": -11,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.48121364414692,
+    "seed": 822,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "bench-576",
+   "type": "bench",
+   "x": -10.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-577",
+   "type": "tree",
+   "x": -5,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.051413519773632,
+    "seed": 624,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-578",
+   "type": "tree",
+   "x": 0,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.10999994026497,
+    "seed": 95,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-579",
+   "type": "tree",
+   "x": 6,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.633817724883556,
+    "seed": 175,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-580",
+   "type": "tree",
+   "x": 11,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.214929465670139,
+    "seed": 898,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "bench-581",
+   "type": "bench",
+   "x": 11.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-582",
+   "type": "tree",
+   "x": 17,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.38789331400767,
+    "seed": 468,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-583",
+   "type": "tree",
+   "x": 22,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.742281906772405,
+    "seed": 113,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "bench-584",
+   "type": "bench",
+   "x": 22.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-585",
+   "type": "tree",
+   "x": 28,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.692708217538893,
+    "seed": 194,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-586",
+   "type": "tree",
+   "x": 33,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.665450835134834,
+    "seed": 490,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "bench-587",
+   "type": "bench",
+   "x": 33.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-588",
+   "type": "tree",
+   "x": 39,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.554787169676274,
+    "seed": 667,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-589",
+   "type": "tree",
+   "x": 44,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.896962868981063,
+    "seed": 135,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-590",
+   "type": "tree",
+   "x": 50,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.880633134860545,
+    "seed": 117,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-591",
+   "type": "tree",
+   "x": 55,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.65595285454765,
+    "seed": 241,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "tree-592",
+   "type": "tree",
+   "x": 61,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.3346201563254,
+    "seed": 146,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-593",
+   "type": "tree",
+   "x": 66,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.506116347387433,
+    "seed": 720,
+    "foliage": "#6a8d55"
+   }
+  },
+  {
+   "id": "bench-594",
+   "type": "bench",
+   "x": 66.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "tree-595",
+   "type": "tree",
+   "x": 72,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.712421863805503,
+    "seed": 359,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-596",
+   "type": "tree",
+   "x": 77,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.270067702047527,
+    "seed": 821,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-597",
+   "type": "tree",
+   "x": 83,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.254402770660818,
+    "seed": 291,
+    "foliage": "#567a46"
+   }
+  },
+  {
+   "id": "tree-598",
+   "type": "tree",
+   "x": 88,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 8.135406514629722,
+    "seed": 715,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-599",
+   "type": "tree",
+   "x": 94,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 7.668306068517268,
+    "seed": 269,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-600",
+   "type": "tree",
+   "x": 99,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.735759288072586,
+    "seed": 181,
+    "foliage": "#608451"
+   }
+  },
+  {
+   "id": "tree-601",
+   "type": "tree",
+   "x": 105,
+   "y": 0.15,
+   "z": -61.6,
+   "ry": 0,
+   "props": {
+    "height": 8.507847820408642,
+    "seed": 300,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "tree-602",
+   "type": "tree",
+   "x": 110,
+   "y": 0.15,
+   "z": -108.4,
+   "ry": 0,
+   "props": {
+    "height": 7.357744910288602,
+    "seed": 439,
+    "foliage": "#4f7240"
+   }
+  },
+  {
+   "id": "bench-603",
+   "type": "bench",
+   "x": 110.5,
+   "y": 0.15,
+   "z": -60.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-604",
+   "type": "street-lamp",
+   "x": -109,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-605",
+   "type": "street-lamp",
+   "x": -87,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-606",
+   "type": "street-lamp",
+   "x": -65,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-607",
+   "type": "street-lamp",
+   "x": -43,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-608",
+   "type": "street-lamp",
+   "x": -21,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-609",
+   "type": "street-lamp",
+   "x": 1,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-610",
+   "type": "street-lamp",
+   "x": 23,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-611",
+   "type": "street-lamp",
+   "x": 45,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-612",
+   "type": "street-lamp",
+   "x": 67,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-613",
+   "type": "street-lamp",
+   "x": 89,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "street-lamp-614",
+   "type": "street-lamp",
+   "x": 111,
+   "y": 0.15,
+   "z": -62.4,
+   "ry": 0,
+   "props": {}
+  },
+  {
+   "id": "person-615",
+   "type": "person",
+   "x": 23.51,
+   "y": 0.15,
+   "z": -58.5,
+   "ry": 1.571,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 4.05
+   }
+  },
+  {
+   "id": "person-616",
+   "type": "person",
+   "x": 19.653,
+   "y": 0.15,
+   "z": -57.582,
+   "ry": 1.571,
+   "props": {
+    "preset": 5,
+    "pose": "marche",
+    "phase": 5.677
+   }
+  },
+  {
+   "id": "person-617",
+   "type": "person",
+   "x": -48.872,
+   "y": 0.15,
+   "z": -56.573,
+   "ry": -1.571,
+   "props": {
+    "preset": 1,
+    "pose": "marche",
+    "phase": 1.441
+   }
+  },
+  {
+   "id": "person-618",
+   "type": "person",
+   "x": -74.416,
+   "y": 0.15,
+   "z": -56.568,
+   "ry": -1.571,
+   "props": {
+    "preset": 0,
+    "pose": "marche",
+    "phase": 4.325
+   }
+  },
+  {
+   "id": "person-619",
+   "type": "person",
+   "x": -9.073,
+   "y": 0.15,
+   "z": -59.289,
+   "ry": 1.571,
+   "props": {
+    "preset": 3,
+    "pose": "marche",
+    "phase": 1.154
+   }
+  },
+  {
+   "id": "sidewalk-620",
+   "type": "sidewalk",
+   "x": 0,
+   "y": 0,
+   "z": -132.5,
+   "ry": 0,
+   "props": {
+    "width": 238,
+    "depth": 15
+   }
+  },
+  {
+   "id": "haussmann-621",
+   "type": "haussmann",
+   "x": -109.852,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 14.247,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e4d6bb",
+    "awning": "#5a3a5a",
+    "seed": 932
+   }
+  },
+  {
+   "id": "haussmann-622",
+   "type": "haussmann",
+   "x": -95.387,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 14.582,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#dccfb3",
+    "awning": "#2b5a8a",
+    "seed": 620
+   }
+  },
+  {
+   "id": "haussmann-623",
+   "type": "haussmann",
+   "x": -81.978,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 12.135,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#dccfb3",
+    "awning": "#a8322b",
+    "seed": 246
+   }
+  },
+  {
+   "id": "haussmann-624",
+   "type": "haussmann",
+   "x": -69.55,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 12.622,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#e8d5b7",
+    "awning": null,
+    "seed": 48
+   }
+  },
+  {
+   "id": "haussmann-625",
+   "type": "haussmann",
+   "x": -57.268,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 11.842,
+    "depth": 12,
+    "floors": 6,
+    "stone": "#e4d6bb",
+    "awning": "#a8322b",
+    "seed": 648
+   }
+  },
+  {
+   "id": "haussmann-626",
+   "type": "haussmann",
+   "x": -46.228,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 10.138,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#dccfb3",
+    "awning": "#a8322b",
+    "seed": 703
+   }
+  },
+  {
+   "id": "haussmann-627",
+   "type": "haussmann",
+   "x": -36.037,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 10.143,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#dccfb3",
+    "awning": null,
+    "seed": 973
+   }
+  },
+  {
+   "id": "haussmann-628",
+   "type": "haussmann",
+   "x": -24.923,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 11.985,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#dccfb3",
+    "awning": "#2b5a8a",
+    "seed": 878
+   }
+  },
+  {
+   "id": "haussmann-629",
+   "type": "haussmann",
+   "x": -14.03,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 9.703,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#e6d9bf",
+    "awning": "#5a3a5a",
+    "seed": 551
+   }
+  },
+  {
+   "id": "haussmann-630",
+   "type": "haussmann",
+   "x": -2.7,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 12.857,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#e6d9bf",
+    "awning": "#8a6a2a",
+    "seed": 988
+   }
+  },
+  {
+   "id": "haussmann-631",
+   "type": "haussmann",
+   "x": 10.094,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 12.63,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#dccfb3",
+    "awning": "#8a6a2a",
+    "seed": 732
+   }
+  },
+  {
+   "id": "haussmann-632",
+   "type": "haussmann",
+   "x": 21.118,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 9.317,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#e4d6bb",
+    "awning": "#a8322b",
+    "seed": 144
+   }
+  },
+  {
+   "id": "haussmann-633",
+   "type": "haussmann",
+   "x": 32.516,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 13.38,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#dccfb3",
+    "awning": null,
+    "seed": 385
+   }
+  },
+  {
+   "id": "haussmann-634",
+   "type": "haussmann",
+   "x": 44.817,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 11.121,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#e8d5b7",
+    "awning": "#a8322b",
+    "seed": 438
+   }
+  },
+  {
+   "id": "haussmann-635",
+   "type": "haussmann",
+   "x": 55.401,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 9.947,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#d6c6a6",
+    "awning": "#8a6a2a",
+    "seed": 22
+   }
+  },
+  {
+   "id": "haussmann-636",
+   "type": "haussmann",
+   "x": 67.875,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 14.902,
+    "depth": 12,
+    "floors": 6,
+    "stone": "#dccfb3",
+    "awning": "#2b5a8a",
+    "seed": 135
+   }
+  },
+  {
+   "id": "haussmann-637",
+   "type": "haussmann",
+   "x": 80.387,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 10.021,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#dccfb3",
+    "awning": "#5a3a5a",
+    "seed": 990
+   }
+  },
+  {
+   "id": "haussmann-638",
+   "type": "haussmann",
+   "x": 90.763,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 10.633,
+    "depth": 12,
+    "floors": 5,
+    "stone": "#d6c6a6",
+    "awning": "#a8322b",
+    "seed": 745
+   }
+  },
+  {
+   "id": "haussmann-639",
+   "type": "haussmann",
+   "x": 101.115,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 9.971,
+    "depth": 12,
+    "floors": 4,
+    "stone": "#d6c6a6",
+    "awning": "#3a6a4a",
+    "seed": 154
+   }
+  },
+  {
+   "id": "haussmann-640",
+   "type": "haussmann",
+   "x": 111.563,
+   "y": 0.15,
+   "z": -134,
+   "ry": 3.142,
+   "props": {
+    "width": 10.824,
+    "depth": 12,
+    "floors": 7,
+    "stone": "#dccfb3",
+    "awning": "#3a6a4a",
+    "seed": 883
+   }
+  },
+  {
+   "id": "bridge-641",
+   "type": "bridge",
+   "x": -28,
+   "y": 0,
+   "z": -89,
+   "ry": 0,
+   "props": {
+    "length": 52,
+    "width": 16,
+    "arches": 3
+   }
+  },
+  {
+   "id": "bridge-642",
+   "type": "bridge",
+   "x": 84,
+   "y": 0,
+   "z": -89,
+   "ry": 0,
+   "props": {
+    "length": 52,
+    "width": 16,
+    "arches": 3
+   }
+  },
+  {
+   "id": "barge-643",
+   "type": "barge",
+   "x": 68.014,
+   "y": -0.6,
+   "z": -67,
+   "ry": 1.571,
+   "props": {
+    "length": 26
+   }
+  },
+  {
+   "id": "barge-644",
+   "type": "barge",
+   "x": 44.101,
+   "y": -0.6,
+   "z": -67,
+   "ry": 1.571,
+   "props": {
+    "length": 26
+   }
+  },
+  {
+   "id": "barge-645",
+   "type": "barge",
+   "x": 20.899,
+   "y": -0.6,
+   "z": -67,
+   "ry": 1.571,
+   "props": {
+    "length": 26
+   }
+  },
+  {
+   "id": "tour-boat-646",
+   "type": "tour-boat",
+   "x": -29.353,
+   "y": -0.6,
+   "z": -91,
+   "ry": -1.571,
+   "props": {}
+  },
+  {
+   "id": "tower-647",
+   "type": "tower",
+   "x": -34.304,
+   "y": 0,
+   "z": -216.299,
+   "ry": 0,
+   "props": {
+    "height": 87,
+    "width": 24,
+    "depth": 27,
+    "style": "bandes",
+    "color": "#6f8aa8"
+   }
+  },
+  {
+   "id": "tower-648",
+   "type": "tower",
+   "x": 2.65,
+   "y": 0,
+   "z": -252.786,
+   "ry": 0,
+   "props": {
+    "height": 173,
+    "width": 26,
+    "depth": 21,
+    "style": "bandes",
+    "color": "#8aa0a8"
+   }
+  },
+  {
+   "id": "tower-649",
+   "type": "tower",
+   "x": 32.77,
+   "y": 0,
+   "z": -229.657,
+   "ry": 0,
+   "props": {
+    "height": 83,
+    "width": 21,
+    "depth": 19,
+    "style": "verre",
+    "color": "#6f8aa8"
+   }
+  },
+  {
+   "id": "eiffel-650",
+   "type": "eiffel",
+   "x": -139,
+   "y": 0,
+   "z": -185,
+   "ry": 0.3,
+   "props": {
+    "height": 110
+   }
+  }
+ ],
+ "camera": {
+  "shots": [
+   {
+    "id": "plan-mvu4iduhqy9g",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Vue d'ensemble",
+    "duration": 4,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "pos": [
+      179.5319,
+      135.93779999999998,
+      175.28484999999995
+     ],
+     "target": [
+      -1.7184999999999988,
+      0,
+      -39.95
+     ],
+     "fov": 50
+    },
+    "to": {
+     "pos": [
+      152.34434,
+      113.2815,
+      141.30040000000002
+     ],
+     "target": [
+      -1.7184999999999988,
+      0,
+      -39.95
+     ],
+     "fov": 48
+    }
+   },
+   {
+    "id": "plan-mvu4if970wt1",
+    "transition": "fondu",
+    "shake": 0,
+    "name": "Orbite",
+    "duration": 6,
+    "path": "orbite",
+    "ease": "doux",
+    "from": {
+     "pos": [
+      115.3625,
+      79.29704999999998,
+      77.2815
+     ],
+     "target": [
+      2.081,
+      6.24,
+      -36
+     ],
+     "fov": 50
+    },
+    "to": {
+     "pos": [
+      -122.52865,
+      67.96889999999999,
+      65.95335
+     ],
+     "target": [
+      2.081,
+      6.24,
+      -36
+     ],
+     "fov": 50
+    }
+   },
+   {
+    "id": "plan-mvu4igqi6tti",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Plongée",
+    "duration": 4,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "pos": [
+      -1.7184999999999988,
+      294.5319,
+      -12.762440000000005
+     ],
+     "target": [
+      -1.7184999999999988,
+      0,
+      -39.95
+     ],
+     "fov": 50
+    },
+    "to": {
+     "pos": [
+      -1.7184999999999988,
+      215.23484999999997,
+      -19.559330000000006
+     ],
+     "target": [
+      -1.7184999999999988,
+      0,
+      -39.95
+     ],
+     "fov": 50
+    }
+   },
+   {
+    "id": "plan-mvu4ihvys2nk",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Travelling",
+    "duration": 5,
+    "path": "ligne",
+    "ease": "lineaire",
+    "from": {
+     "pos": [
+      26.4,
+      1.8,
+      -6
+     ],
+     "target": [
+      27,
+      3,
+      -56
+     ],
+     "fov": 60
+    },
+    "to": {
+     "pos": [
+      26.4,
+      1.8,
+      -46
+     ],
+     "target": [
+      27,
+      3,
+      -96
+     ],
+     "fov": 60
+    }
+   },
+   {
+    "id": "plan-mvu4ij1t6meb",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Travelling latéral",
+    "duration": 5,
+    "path": "ligne",
+    "ease": "lineaire",
+    "from": {
+     "fov": 55,
+     "pos": [
+      -11.919,
+      2.2,
+      -51
+     ],
+     "target": [
+      -11.919,
+      3.5,
+      -42
+     ]
+    },
+    "to": {
+     "fov": 55,
+     "pos": [
+      12.081,
+      2.2,
+      -51
+     ],
+     "target": [
+      12.081,
+      3.5,
+      -42
+     ]
+    }
+   },
+   {
+    "id": "plan-mvu4ikna8xb7",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Grue",
+    "duration": 5,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "fov": 55,
+     "pos": [
+      0.08099999999999996,
+      2,
+      -51
+     ],
+     "target": [
+      0.08099999999999996,
+      10.4,
+      -36
+     ]
+    },
+    "to": {
+     "fov": 50,
+     "pos": [
+      0.08099999999999996,
+      50.8,
+      -76
+     ],
+     "target": [
+      0.08099999999999996,
+      8.32,
+      -36
+     ]
+    }
+   },
+   {
+    "id": "plan-mvu4im7p7lj3",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Tilt",
+    "duration": 4,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "fov": 55,
+     "pos": [
+      2.0906933233440794,
+      1.6,
+      -56.43667062022292
+     ],
+     "target": [
+      0.09069332334407965,
+      1.5,
+      -36.19667062022292
+     ]
+    },
+    "to": {
+     "fov": 55,
+     "pos": [
+      2.0906933233440794,
+      1.6,
+      -56.43667062022292
+     ],
+     "target": [
+      0.09069332334407965,
+      19.759999999999998,
+      -36.19667062022292
+     ]
+    }
+   },
+   {
+    "id": "plan-mvu4intjdf8t",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Panoramique",
+    "duration": 5,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "pos": [
+      2.081,
+      42,
+      -137.95335
+     ],
+     "target": [
+      -133.8568,
+      6,
+      9.312600000000003
+     ],
+     "fov": 52
+    },
+    "to": {
+     "pos": [
+      2.081,
+      42,
+      -137.95335
+     ],
+     "target": [
+      138.01879999999997,
+      6,
+      9.312600000000003
+     ],
+     "fov": 52
+    }
+   },
+   {
+    "id": "plan-mvu4ioz2uwea",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Piéton",
+    "duration": 4,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "fov": 58,
+     "pos": [
+      0.1008512391600429,
+      1.65,
+      -56.398014876084
+     ],
+     "target": [
+      -1.8991487608399567,
+      7.279999999999999,
+      -36.398014876084
+     ]
+    },
+    "to": {
+     "fov": 56,
+     "pos": [
+      -0.39914876083995665,
+      1.65,
+      -51.398014876084
+     ],
+     "target": [
+      -1.8991487608399567,
+      8.32,
+      -36.398014876084
+     ]
+    }
+   },
+   {
+    "id": "plan-mvu4iqvz8b9t",
+    "transition": "coupe",
+    "shake": 0.6,
+    "name": "Épaule",
+    "duration": 4,
+    "path": "ligne",
+    "ease": "lineaire",
+    "from": {
+     "fov": 60,
+     "pos": [
+      7.053787847664287,
+      1.6,
+      -53.671202025389285
+     ],
+     "target": [
+      4.053787847664288,
+      6.24,
+      -35.671202025389285
+     ]
+    },
+    "to": {
+     "fov": 60,
+     "pos": [
+      6.053787847664287,
+      1.6,
+      -49.671202025389285
+     ],
+     "target": [
+      4.053787847664288,
+      6.24,
+      -35.671202025389285
+     ]
+    }
+   },
+   {
+    "id": "plan-mvu4isl41lkc",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Contre-plongée",
+    "duration": 4,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "fov": 60,
+     "pos": [
+      5.568767469347238,
+      0.6,
+      -49.279136947850304
+     ],
+     "target": [
+      4.068767469347238,
+      18.720000000000002,
+      -35.779136947850304
+     ]
+    },
+    "to": {
+     "fov": 64,
+     "pos": [
+      5.068767469347238,
+      0.5,
+      -48.779136947850304
+     ],
+     "target": [
+      4.068767469347238,
+      20.8,
+      -35.779136947850304
+     ]
+    }
+   },
+   {
+    "id": "plan-mvu4iu65fpj9",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Vertigo",
+    "duration": 4,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "fov": 24,
+     "pos": [
+      -9.919,
+      3.5999999999999996,
+      -66
+     ],
+     "target": [
+      -9.919,
+      3.5999999999999996,
+      -36
+     ]
+    },
+    "to": {
+     "fov": 52,
+     "pos": [
+      -9.919,
+      3.5999999999999996,
+      -49
+     ],
+     "target": [
+      -9.919,
+      3.5999999999999996,
+      -36
+     ]
+    }
+   },
+   {
+    "id": "plan-mvu4iy12x5oq",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Révélation",
+    "duration": 5,
+    "path": "ligne",
+    "ease": "doux",
+    "from": {
+     "pos": [
+      3.081,
+      13.48,
+      -45
+     ],
+     "target": [
+      2.081,
+      12.48,
+      -36
+     ],
+     "fov": 45
+    },
+    "to": {
+     "pos": [
+      81.37804999999999,
+      101.95335,
+      -160.60965
+     ],
+     "target": [
+      2.081,
+      0,
+      -36
+     ],
+     "fov": 52
+    }
+   },
+   {
+    "id": "plan-mvu4iz6j5l8k",
+    "transition": "coupe",
+    "shake": 0,
+    "name": "Survol",
+    "duration": 5,
+    "path": "ligne",
+    "ease": "lineaire",
+    "from": {
+     "pos": [
+      -24.3748,
+      52,
+      129.97224999999997
+     ],
+     "target": [
+      -1.7184999999999988,
+      14,
+      -28.621850000000002
+     ],
+     "fov": 58
+    },
+    "to": {
+     "pos": [
+      20.937800000000003,
+      46,
+      -73.93445
+     ],
+     "target": [
+      -1.7184999999999988,
+      8,
+      -232.52855
+     ],
+     "fov": 58
+    }
+   }
+  ]
+ }
+}

@@ -1,9 +1,10 @@
 import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {ASSET_BY_TYPE, type CityLayout, type LayoutItem} from '../assets/city/registry';
 import {generateCity, type GenOptions} from '../assets/city/generator';
-import {Preview, Viewport, type ViewportApi} from './Viewport';
-import {CameraPanel, Catalog, GeneratorPanel, Inspector, Section} from './panels';
-import {PRESETS, type PresetContext, type Shot} from '../assets/city/camera';
+import {Preview, Viewport, type ShotIssue, type ViewportApi} from './Viewport';
+import {Catalog, GeneratorPanel, Inspector, Section} from './panels';
+import {CameraPanel} from './CameraPanel';
+import {PRESETS, shiftShot, type PresetContext, type Shot} from '../assets/city/camera';
 import {layoutBounds} from '../assets/city/LayoutScene';
 
 /** Rough height and radius of an object, used to frame director presets. */
@@ -15,8 +16,12 @@ const focusOf = (it: LayoutItem): PresetContext['focus'] => {
     : it.type === 'modern-block' ? 3.5 + (p.floors ?? 8) * 2.9
     : it.type === 'tower' || it.type === 'eiffel' || it.type === 'building-a' || it.type === 'building-b' ? Number(p.height ?? 40)
     : it.type === 'bridge' ? 4 : 3;
-  return {x: it.x, z: it.z, h, r: Math.max(1, r)};
+  // Every asset faces local -z: its front points along (-sin ry, -cos ry).
+  const fd = p.depth !== undefined ? Number(p.depth) / 2 : Math.max(1, r);
+  return {x: it.x, z: it.z, h, r: Math.max(1, r), dx: -Math.sin(it.ry), dz: -Math.cos(it.ry), fd};
 };
+
+const SUBJECTS = new Set(['haussmann', 'shop', 'tower', 'modern-block', 'building-a', 'building-b', 'house', 'kiosk']);
 
 const NAME_RE = /^[a-z0-9][a-z0-9-]{0,47}$/;
 const newId = (type: string) => `${type}-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
@@ -59,6 +64,9 @@ export const App: React.FC = () => {
   const [playTime, setPlayTime] = useState(0);
   const [currentShot, setCurrentShot] = useState<number | null>(null);
   const [ready, setReady] = useState(false);
+  const [showPaths, setShowPaths] = useState(true);
+  const [issues, setIssues] = useState<ShotIssue[] | null>(null);
+  const [fade, setFade] = useState(0);
   const [, setTick] = useState(0);
   const history = useRef<{past: CityLayout[]; future: CityLayout[]}>({past: [], future: []});
   const layoutRef = useRef(layout);
@@ -108,10 +116,17 @@ export const App: React.FC = () => {
   }, [layout]);
 
   const shots = layout.camera?.shots ?? [];
-  const setShots = (next: Shot[]) => commit((l) => ({...l, camera: {shots: next}}));
+  const setShots = (next: Shot[]) => {
+    commit((l) => ({...l, camera: {shots: next}}));
+    setIssues(null);
+  };
   const presetContext = (): PresetContext => {
     const b = layoutBounds(layout);
-    const focus = selected ? focusOf(selected) : {x: b.cx, z: b.cz, h: 20, r: 10};
+    // Without a selection, frame the building nearest to the centre (never the inside of a block).
+    const subject = selected ?? layout.items
+      .filter((i) => SUBJECTS.has(i.type) && Number(i.props.depth ?? 12) > 1)
+      .sort((a, c) => Math.hypot(a.x - b.cx, a.z - b.cz) - Math.hypot(c.x - b.cx, c.z - b.cz))[0];
+    const focus = subject ? focusOf(subject) : {x: b.cx, z: b.cz, h: 20, r: 10};
     const roads = layout.items.filter((i) => i.type === 'road' && Math.abs(Math.sin(i.ry)) < 0.1);
     const road = roads.sort((a, c) => Math.hypot(a.x - focus.x, a.z - focus.z) - Math.hypot(c.x - focus.x, c.z - focus.z))[0];
     return {cx: b.cx, cz: b.cz, size: b.size, focus, street: road ? {x: road.x, z: focus.z} : {x: focus.x, z: focus.z}};
@@ -119,14 +134,41 @@ export const App: React.FC = () => {
   const play = (list: Shot[], offset = 0) => {
     if (!list.length) return;
     setPlaying(true);
-    viewport.current?.play(list, (t, i) => { setPlayTime(t); setCurrentShot(i + offset); }, () => { setPlaying(false); setCurrentShot(null); });
+    viewport.current?.play(list, (t, i, f) => { setPlayTime(t); setCurrentShot(i + offset); setFade(f); },
+      () => { setPlaying(false); setCurrentShot(null); setFade(0); });
+  };
+  /** Slide a blocked shot sideways (perpendicular to the view) until nothing stands in front of the lens. */
+  const reframe = (shot: Shot): {shot: Shot; offset: number; clean: boolean} => {
+    const api = viewport.current;
+    // Scene not mounted yet: keep the shot as is rather than report a false verdict.
+    if (!api || !ready) return {shot, offset: 0, clean: true};
+    const dx = shot.from.target[0] - shot.from.pos[0];
+    const dz = shot.from.target[2] - shot.from.pos[2];
+    const l = Math.hypot(dx, dz) || 1;
+    const side = [-dz / l, dx / l];
+    // Street trees stand every 9 m: 2 m steps up to 14 m on each side always cross a gap.
+    const offsets = [0, ...[2, 4, 6, 8, 10, 12, 14].flatMap((d) => [d, -d])];
+    for (const offset of offsets) {
+      const moved = offset ? shiftShot(shot, side[0] * offset, side[1] * offset) : shot;
+      if (!api.checkShots([moved]).length) return {shot: moved, offset, clean: true};
+    }
+    return {shot, offset: 0, clean: false};
   };
   const addPreset = (key: string) => {
     const preset = PRESETS.find((p) => p.key === key);
     if (!preset) return;
-    const shot: Shot = {id: newId('plan'), ...preset.make(presetContext())};
-    setShots([...shots, shot]);
-    play([shot], shots.length);
+    const r = reframe({id: newId('plan'), ...preset.make(presetContext())});
+    setShots([...shots, r.shot]);
+    if (r.offset) flash(`« ${r.shot.name} » recadré de ${Math.abs(r.offset)} m pour éviter un obstacle`);
+    else if (!r.clean) flash(`« ${r.shot.name} » : obstacle impossible à éviter automatiquement, ajuste le plan`);
+    play([r.shot], shots.length);
+  };
+  const reframeShot = (i: number) => {
+    const r = reframe(shots[i]);
+    if (r.offset) {
+      setShots(shots.map((s, j) => (j === i ? r.shot : s)));
+      flash(`Plan recadré de ${Math.abs(r.offset)} m`);
+    } else flash(r.clean ? 'Ce plan est déjà dégagé' : 'Aucun décalage jusqu’à 14 m ne dégage ce plan');
   };
 
   useEffect(() => {
@@ -261,7 +303,9 @@ export const App: React.FC = () => {
           onSelect={setSelectedId}
           onDragStart={() => { history.current.past.push(layoutRef.current); history.current.future = []; setTick((t) => t + 1); }}
           onDrag={(id, x, z, y) => updateItem(id, {x, z, y}, false)}
-          onPlace={place} onReady={() => setReady(true)} />
+          onPlace={place} onReady={() => setReady(true)}
+          paths={tab === 'camera' && showPaths && !playing ? shots : undefined} currentShot={currentShot} />
+        {fade > 0 && <div className="fade" style={{opacity: fade}} />}
         {!ready && <div className="loading">Construction de la ville…</div>}
         {placing && (
           <div className="banner">Clique dans la scène pour poser « {ASSET_BY_TYPE[placing]?.label} » · Maj+clic pour en poser plusieurs · Échap pour annuler</div>
@@ -304,12 +348,30 @@ export const App: React.FC = () => {
           </>
         )}
         {tab === 'camera' && (
-          <CameraPanel shots={shots} current={currentShot} playing={playing} time={playTime} frame={frame}
-            focusLabel={selected ? `« ${ASSET_BY_TYPE[selected.type]?.label ?? selected.type} »` : 'le centre de la ville (sélectionne un objet pour cadrer dessus)'}
-            onFrame={setFrame} onShots={setShots} onPreset={addPreset}
-            onCapture={() => viewport.current!.getView()} onGo={(v) => viewport.current?.setView(v)}
+          <CameraPanel shots={shots} current={currentShot} playing={playing} time={playTime} frame={frame} paths={showPaths} issues={issues}
+            focusLabel={selected ? `« ${ASSET_BY_TYPE[selected.type]?.label ?? selected.type} »` : 'l’immeuble le plus central (sélectionne un objet pour choisir le sujet)'}
+            onFrame={setFrame} onPaths={setShowPaths} onShots={setShots} onPreset={addPreset} onReframe={reframeShot}
+            onCapture={() => viewport.current!.getView()} onGo={(v) => { viewport.current?.setView(v); setFade(0); }}
             onPlay={(i) => (i === null ? play(shots) : play([shots[i]], i))}
-            onStop={() => { viewport.current?.stop(); setPlaying(false); setCurrentShot(null); }} />
+            onStop={() => { viewport.current?.stop(); setPlaying(false); setCurrentShot(null); setFade(0); }}
+            onScrub={(t) => {
+              viewport.current?.stop();
+              setPlaying(false);
+              setPlayTime(t);
+              setFade(viewport.current?.preview(shots, t) ?? 0);
+              let i = 0;
+              for (let acc = 0; i < shots.length - 1 && t >= acc + shots[i].duration; i++) acc += shots[i].duration;
+              setCurrentShot(i);
+            }}
+            onCheck={() => {
+              if (!viewport.current || !ready) {
+                flash('La scène 3D n’est pas encore prête : réessaie dans un instant');
+                return;
+              }
+              const found = viewport.current.checkShots(shots);
+              setIssues(found);
+              flash(found.length ? `${found.length} problème(s) de cadrage` : 'Cadrage vérifié : rien à signaler');
+            }} />
         )}
       </aside>
     </div>

@@ -60,11 +60,13 @@ export const CityLayoutPreview: React.FC<{layout: string}> = ({layout: name}) =>
   let pos: V3;
   let target: V3;
   let fov = t < 6 ? 50 : 60;
+  let fade = 0;
   if (shots.length) {
     const view = sampleShots(shots, t);
     pos = view.pos;
     target = view.target;
     fov = view.fov;
+    fade = view.fade;
   } else if (t < 6) {
     const a = 0.6 + smooth(0, 6, t) * 1.1;
     const r = b.size * 0.95;
@@ -83,6 +85,7 @@ export const CityLayoutPreview: React.FC<{layout: string}> = ({layout: name}) =>
         <CameraRig position={pos} target={target} fov={fov} />
         <LayoutScene layout={layout} />
       </ThreeCanvas>
+      {fade > 0 && <AbsoluteFill style={{background: '#000', opacity: fade}} />}
       <div style={{position: 'absolute', top: 90, left: 0, right: 0, textAlign: 'center', fontFamily: SERIF, color: '#F6E05E',
         fontSize: 34, letterSpacing: '0.2em', textShadow: '0 2px 12px rgba(0,0,0,0.6)'}}>
         {layout.name.toUpperCase()} · {layout.items.length} OBJETS
