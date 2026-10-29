@@ -1,0 +1,20 @@
+{
+  "title": "La meilleure place au soleil",
+  "beats": [
+    {"id":"hook","text":"Et si la température baissait de dix degrés chaque minute ?","caption":"−10 °C chaque minute ?"},
+    {"id":"normal","text":"À vingt degrés, Marc prend son café en terrasse.","caption":"Le café de Marc."},
+    {"id":"sunny","text":"Même table, même chaise rouge. La meilleure place au soleil.","caption":"La meilleure place au soleil."},
+    {"id":"chill","text":"Une minute plus tard, dix degrés. Il rabat ses manches. Pas question de bouger.","caption":"Pas question de bouger."},
+    {"id":"jacket","text":"À zéro, le serveur lui apporte une veste.","caption":"Une veste, ça suffit."},
+    {"id":"coffee","text":"Marc commande un deuxième café.","caption":"Un deuxième café."},
+    {"id":"guests","text":"Moins dix. Les autres clients rentrent.","caption":"Les autres rentrent."},
+    {"id":"blanket","text":"Lui réclame une couverture.","caption":"Encore une couverture."},
+    {"id":"frost","text":"Moins vingt. Le givre gagne la table.","caption":"Le givre gagne la table."},
+    {"id":"shadow","text":"Marc rapproche sa chaise du dernier rayon de soleil… qui vient de disparaître.","caption":"Le dernier rayon…"},
+    {"id":"offer","text":"À moins trente, le serveur lui montre une table à l'intérieur.","caption":"Une table à l’intérieur ?"},
+    {"id":"rise","text":"Cette fois, Marc se lève.","caption":"Cette fois…"},
+    {"id":"inside","text":"On le retrouve derrière la vitre, emmitouflé, les mains autour d'un café chaud.","caption":"Enfin au chaud."},
+    {"id":"chair","text":"Dehors, sa chaise rouge porte un bonnet et une écharpe.","caption":""},
+    {"id":"punchline","text":"Même à moins trente, Marc a réservé sa place.","caption":""}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "duration": 85,
+  "beats": [
+    {"id": "hook", "slot": [0.3, 2.9], "text": "Et si Internet disparaissait... maintenant ?"},
+    {"id": "seed", "slot": [3.0, 7.4], "seed": 21111, "text": "Regarde ton temps d'écran. Garde ce chiffre en tête."},
+    {"id": "glitch", "slot": [9.4, 14.6], "text": "Un par un, les écrans s'éteignent."},
+    {"id": "alone", "slot": [16.0, 23.6], "text": "Seuls. Pour la première fois depuis vingt ans."},
+    {"id": "doors", "slot": [26.5, 33.5], "text": "Puis les portes s'ouvrent. Et quelque chose d'étrange se produit."},
+    {"id": "questions", "slot": [41.0, 46.5], "text": "On se pose enfin les vraies questions."},
+    {"id": "found", "slot": [56.0, 62.0], "text": "Sans Google... on s'est retrouvés."},
+    {"id": "back", "slot": [70.8, 74.9], "text": "Et si ça revenait... tu ferais quoi différemment ?"},
+    {"id": "loop", "slot": [75.2, 80.6], "text": "Alors, c'était combien, ton temps d'écran ? Dis-le en commentaire."}
+  ]
+}

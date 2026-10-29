@@ -1,0 +1,179 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 65.9,
+  "voice": "morpheus",
+  "voiceReferenceSha256": "5dcf76201bfd8dadb309c35a032a3682a21d3dee98a1b015a315a635c4dfbb69",
+  "pace": 1,
+  "lead": 0.45,
+  "ambience": "paris-polar/ambience.wav",
+  "provisional": false,
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Paris perdait dix degrés chaque minute ?",
+      "caption": "−10 °C chaque minute ?",
+      "pause": 0.15,
+      "start": 0.45,
+      "duration": 2.7460833333333334,
+      "end": 3.19608,
+      "audio": "paris-polar/hook.wav",
+      "sha256": "2e06153b05b873323419ec19600df51e9704e2d8b0d513fc81ef30d5e6a22d7c"
+    },
+    {
+      "id": "normal",
+      "text": "Au Trocadéro, Léa pose devant la tour Eiffel.",
+      "caption": "Une photo à Paris.",
+      "pause": 0.15,
+      "start": 3.34608,
+      "duration": 3.5294166666666666,
+      "end": 6.8755,
+      "audio": "paris-polar/normal.wav",
+      "sha256": "9c7c2ff8973665b664b0a860b16221d2d66bfc5e62789b448ebd74777d7ff867"
+    },
+    {
+      "id": "basket",
+      "text": "À côté, leur vélo porte un panier rouge.",
+      "caption": "",
+      "pause": 0.35,
+      "start": 7.0255,
+      "duration": 2.928541666666667,
+      "end": 9.95404,
+      "audio": "paris-polar/basket.wav",
+      "sha256": "e740dfec1baeedf776d4cfe94b8e6625ec44882e364e5d87e08ee2faa2fb831b"
+    },
+    {
+      "id": "chill",
+      "text": "Une minute plus tard, dix degrés. Léa remonte son col.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 10.30404,
+      "duration": 4.279583333333333,
+      "end": 14.58362,
+      "audio": "paris-polar/chill.wav",
+      "sha256": "6dcd27fbe50c1a20f4686c0ffcaeb65e58aa2ac9401f33bde899823ec1e6f58f"
+    },
+    {
+      "id": "wind",
+      "text": "À zéro, le vent se lève. La photo est terminée.",
+      "caption": "Le vent se lève.",
+      "pause": 0.15,
+      "start": 14.73362,
+      "duration": 4.480125,
+      "end": 19.21375,
+      "audio": "paris-polar/wind.wav",
+      "sha256": "786188152e584911ea68592238acd1a77de220ecafe1d670d40de5cc419a71cb"
+    },
+    {
+      "id": "snow",
+      "text": "À moins dix, la neige tombe. Le sol se couvre de glace.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 19.36375,
+      "duration": 4.606166666666667,
+      "end": 23.96992,
+      "audio": "paris-polar/snow.wav",
+      "sha256": "ef68a73ed0b3691b8157944f938901d92f76de7a1b51ae2207e7f1863e94768f"
+    },
+    {
+      "id": "bike",
+      "text": "La roue glisse. Son père abandonne le vélo. Ils avancent à pied.",
+      "caption": "Ils avancent à pied.",
+      "pause": 0.25,
+      "start": 24.11992,
+      "duration": 6.041833333333333,
+      "end": 30.16175,
+      "audio": "paris-polar/bike.wav",
+      "sha256": "026d4be9d5d56b399035eff30544570ee45c5f4508a2dfaa0a876c438f666efe"
+    },
+    {
+      "id": "traffic",
+      "text": "À moins vingt, les voitures s'immobilisent. Les passants fuient vers le métro.",
+      "caption": "Paris se bloque.",
+      "pause": 0.15,
+      "start": 30.41175,
+      "duration": 4.529708333333334,
+      "end": 34.94146,
+      "audio": "paris-polar/traffic.wav",
+      "sha256": "c4681ee371aab9ce54b2febaede5a11413334995fffacd6c1d69f14f9476e876"
+    },
+    {
+      "id": "rescue",
+      "text": "Léa manque une marche. Son père la retient et la porte dans l'escalier.",
+      "caption": "",
+      "pause": 0.25,
+      "start": 35.09146,
+      "duration": 4.86725,
+      "end": 39.95871,
+      "audio": "paris-polar/rescue.wav",
+      "sha256": "77ac9b5235322e974d1aaeb207d3bb5e5d969543f466287d0bd16499204e8016"
+    },
+    {
+      "id": "deep",
+      "text": "Six minutes après la photo, moins quarante.",
+      "caption": "6 MINUTES · −40 °C",
+      "pause": 0.2,
+      "start": 40.20871,
+      "duration": 3.279541666666667,
+      "end": 43.48825,
+      "audio": "paris-polar/deep.wav",
+      "sha256": "d733704eae57859a0d35f2d24a163ce4b33d2c1cb9c3901511587a43e84cfb03"
+    },
+    {
+      "id": "return",
+      "text": "On retrouve le même point de vue.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 43.68825,
+      "duration": 1.714875,
+      "end": 45.40313,
+      "audio": "paris-polar/return.wav",
+      "sha256": "bfe06d6487e1d9284e09b8f0b7a6e086d63ce579d8a74975e4f4fb085d9ba023"
+    },
+    {
+      "id": "silence",
+      "text": "Les fontaines se taisent. La place a disparu sous le blanc.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 45.55313,
+      "duration": 3.1711666666666667,
+      "end": 48.72429,
+      "audio": "paris-polar/silence.wav",
+      "sha256": "243a5cb222e0ee313bb0dc37bafc85f1fc9ecd71cc01b57ca197537cca2d2018"
+    },
+    {
+      "id": "basketend",
+      "text": "Seul le panier rouge du vélo dépasse encore.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 48.87429,
+      "duration": 3.281791666666667,
+      "end": 52.15608,
+      "audio": "paris-polar/basketend.wav",
+      "sha256": "912588702a0f6b58f2e1265e782c0d8f096c7f1b42f257cd1b1e273b3281a84c"
+    },
+    {
+      "id": "tower",
+      "text": "Derrière, la tour Eiffel s'efface dans la tempête.",
+      "caption": "",
+      "pause": 0.3,
+      "start": 52.30608,
+      "duration": 2.5860416666666666,
+      "end": 54.89213,
+      "audio": "paris-polar/tower.wav",
+      "sha256": "2a543fcc4e43aab4a1a4d4f1d7eccfe636e8e1e1f6af1059f74382b6817022f8"
+    },
+    {
+      "id": "cta",
+      "text": "Si cette vidéo t'a plu, mets un pouce bleu, abonne-toi et propose ta prochaine idée de vidéo en commentaire.",
+      "caption": "J’aime · Abonne-toi · Propose ton idée de vidéo",
+      "pause": 0,
+      "start": 55.19212,
+      "duration": 7.698791666666667,
+      "end": 62.89092,
+      "audio": "paris-polar/cta.wav",
+      "sha256": "7605d1902b7d2b34a051f8bca46646f4ae4997c9767bc28e72942dd76b3d3863"
+    }
+  ]
+}

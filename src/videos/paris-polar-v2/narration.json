@@ -1,0 +1,20 @@
+{
+  "title": "Marc face au froid",
+  "beats": [
+    {"id":"hook","text":"Et si Paris perdait dix degrés chaque minute ?","caption":"−10 °C chaque minute ?","pause":0.15},
+    {"id":"normal","text":"Au Trocadéro, Marc prend une photo devant la tour Eiffel.","caption":"Marc à Paris.","pause":0.15},
+    {"id":"intro","text":"Une simple promenade.","caption":"","pause":0.15},
+    {"id":"cta","text":"Laisse un like, abonne-toi et propose ta prochaine idée de vidéo en commentaire.","caption":"","pause":0.2,"startAt":10},
+    {"id":"chill","text":"Une minute plus tard, dix degrés. Marc remonte son col.","caption":"","pause":0.15},
+    {"id":"wind","text":"À zéro, le vent se lève. La photo est terminée.","caption":"Le vent se lève.","pause":0.15},
+    {"id":"snow","text":"À moins dix, la neige tombe. Le sol se couvre de glace.","caption":"","pause":0.15},
+    {"id":"slip","text":"Marc glisse sur les pavés. Il se rattrape à la balustrade.","caption":"Le sol devient une patinoire.","pause":0.2},
+    {"id":"traffic","text":"À moins vingt, les voitures s'immobilisent. Les passants fuient vers le métro.","caption":"Paris se bloque.","pause":0.15},
+    {"id":"escape","text":"Marc atteint le métro et descend les marches couvertes de neige.","caption":"Marc se réfugie sous terre.","pause":0.2},
+    {"id":"deep","text":"Six minutes après sa photo, moins quarante.","caption":"6 MINUTES · −40 °C","pause":0.2},
+    {"id":"return","text":"On retrouve le même point de vue.","caption":"","pause":0.15},
+    {"id":"silence","text":"Les fontaines se taisent. La place a disparu sous le blanc.","caption":"","pause":0.15},
+    {"id":"buried","text":"La neige a englouti les marches et la balustrade.","caption":"","pause":0.15},
+    {"id":"tower","text":"Derrière, la tour Eiffel s'efface dans la tempête.","caption":"","pause":0.3}
+  ]
+}

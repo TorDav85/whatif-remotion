@@ -2,6 +2,15 @@ node_modules
 .venv/
 .cache/
 voice-samples/
+public/audio-first/*
+!public/audio-first/bridge-demo/
+# Generated voice-over and ambience: rebuild with the npm voice:* scripts
+public/bus-cold/
+public/cafe-cold/
+public/cafe-cold-v2/
+public/paris-polar/
+public/paris-polar-v2/
+public/internet-off/
 __pycache__/
 public/reference.wav
 public/reference.json

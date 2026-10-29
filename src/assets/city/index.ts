@@ -7,3 +7,5 @@ export {Bicycle, Scooter, TrafficLight, TrafficSign, Crosswalk, RoadBarrier} fro
 export type {BicycleProps, TrafficLightProps} from './Mobility';
 export {CafeTerrace, MarketStall, Kiosk, ConstructionCrane, TrafficCone, FireHydrant} from './CityLife';
 export type {CraneProps} from './CityLife';
+export {CityBase} from './CityBase';
+export type {CityBaseProps} from './CityBase';

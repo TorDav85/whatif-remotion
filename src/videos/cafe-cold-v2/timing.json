@@ -1,0 +1,164 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 63.0,
+  "voice": "morpheus",
+  "voiceReferenceSha256": "5dcf76201bfd8dadb309c35a032a3682a21d3dee98a1b015a315a635c4dfbb69",
+  "pace": 1,
+  "lead": 0.45,
+  "ambience": "cafe-cold-v2/ambience.wav",
+  "provisional": false,
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si la température baissait de dix degrés chaque minute ?",
+      "caption": "−10 °C chaque minute ?",
+      "start": 0.45,
+      "duration": 2.6521666666666666,
+      "end": 3.10217,
+      "audio": "cafe-cold-v2/hook.wav",
+      "sha256": "1fc6aeb414f1968fcd0b911cae48db9f2ca92511190cdbeec873397c3e5fd030"
+    },
+    {
+      "id": "normal",
+      "text": "À vingt degrés, Marc prend son café en terrasse.",
+      "caption": "Le café de Marc.",
+      "start": 3.40217,
+      "duration": 3.0181666666666667,
+      "end": 6.42033,
+      "audio": "cafe-cold-v2/normal.wav",
+      "sha256": "008e8e91e73c7ca86ce89be603e84dcabcc35099702aefeac15d0490a6d45527"
+    },
+    {
+      "id": "sunny",
+      "text": "Même table, même chaise rouge. La meilleure place au soleil.",
+      "caption": "La meilleure place au soleil.",
+      "start": 6.82033,
+      "duration": 4.243,
+      "end": 11.06333,
+      "audio": "cafe-cold-v2/sunny.wav",
+      "sha256": "979e338dddf97a822dfc716227e9b63a90db5c9c1c574c1796dea1e4a76df8b8"
+    },
+    {
+      "id": "chill",
+      "text": "Une minute plus tard, dix degrés. Il rabat ses manches. Pas question de bouger.",
+      "caption": "Pas question de bouger.",
+      "start": 11.71333,
+      "duration": 5.019041666666666,
+      "end": 16.73238,
+      "audio": "cafe-cold-v2/chill.wav",
+      "sha256": "4a265a2eeeae017a63b27fae7e187937d3f74d267cb506299f12692edfb2990e"
+    },
+    {
+      "id": "jacket",
+      "text": "À zéro, le serveur lui apporte une veste.",
+      "caption": "Une veste, ça suffit.",
+      "start": 17.08237,
+      "duration": 2.870041666666667,
+      "end": 19.95242,
+      "audio": "cafe-cold-v2/jacket.wav",
+      "sha256": "f3b85e795777143daf308accc815c12c22338120cd1065572ad011a9cd6193c3"
+    },
+    {
+      "id": "coffee",
+      "text": "Marc commande un deuxième café.",
+      "caption": "Un deuxième café.",
+      "start": 20.55242,
+      "duration": 3.2175,
+      "end": 23.76992,
+      "audio": "cafe-cold-v2/coffee.wav",
+      "sha256": "7f9a4d393772f95145444143e2f323abf8766129aac6342d4cc4f28abd553592"
+    },
+    {
+      "id": "guests",
+      "text": "Moins dix. Les autres clients rentrent.",
+      "caption": "Les autres rentrent.",
+      "start": 24.11992,
+      "duration": 2.543041666666667,
+      "end": 26.66296,
+      "audio": "cafe-cold-v2/guests.wav",
+      "sha256": "658961461e65c5821c1f031a18a3330a5d760fee28852caf7d5eb41a18ce6a36"
+    },
+    {
+      "id": "blanket",
+      "text": "Lui réclame une couverture.",
+      "caption": "Encore une couverture.",
+      "start": 27.36296,
+      "duration": 1.2056666666666667,
+      "end": 28.56862,
+      "audio": "cafe-cold-v2/blanket.wav",
+      "sha256": "825a28635ec530a182e4d35c2eee6820c681d81876d0a83237b8584f14dbafae"
+    },
+    {
+      "id": "frost",
+      "text": "Moins vingt. Le givre gagne la table.",
+      "caption": "Le givre gagne la table.",
+      "start": 29.31862,
+      "duration": 2.720666666666667,
+      "end": 32.03929,
+      "audio": "cafe-cold-v2/frost.wav",
+      "sha256": "b5d437b298ad1860e3eaf235c6267e4030149fe938d96c07478cdf7a851fc8b5"
+    },
+    {
+      "id": "shadow",
+      "text": "Marc rapproche sa chaise du dernier rayon de soleil… qui vient de disparaître.",
+      "caption": "Le dernier rayon…",
+      "start": 32.63929,
+      "duration": 4.73975,
+      "end": 37.37904,
+      "audio": "cafe-cold-v2/shadow.wav",
+      "sha256": "d09ec9d584b764312819a1da35a16da0d1bfb1da7a0ab42a9029c23acd4d3123"
+    },
+    {
+      "id": "offer",
+      "text": "À moins trente, le serveur lui montre une table à l'intérieur.",
+      "caption": "Une table à l’intérieur ?",
+      "start": 37.87904,
+      "duration": 3.650541666666667,
+      "end": 41.52958,
+      "audio": "cafe-cold-v2/offer.wav",
+      "sha256": "958859f8010aef49b34cf8a3598f2080c25c1c223e59af86a293ae64121bc1b8"
+    },
+    {
+      "id": "rise",
+      "text": "Cette fois, Marc se lève.",
+      "caption": "Cette fois…",
+      "start": 42.02958,
+      "duration": 1.8160416666666668,
+      "end": 43.84562,
+      "audio": "cafe-cold-v2/rise.wav",
+      "sha256": "01f07c9e15cd8ffb17cfe3372b60e109098baa61b3836911eadb09c00915f143"
+    },
+    {
+      "id": "inside",
+      "text": "On le retrouve derrière la vitre, emmitouflé, les mains autour d'un café chaud.",
+      "caption": "Enfin au chaud.",
+      "start": 44.94562,
+      "duration": 6.523458333333333,
+      "end": 51.46908,
+      "audio": "cafe-cold-v2/inside.wav",
+      "sha256": "c998de7bf4aa56655efba547d1cd9a0995805cf7466698d6903a07b9da3446f9"
+    },
+    {
+      "id": "chair",
+      "text": "Dehors, sa chaise rouge porte un bonnet et une écharpe.",
+      "caption": "",
+      "start": 52.11908,
+      "duration": 4.059708333333333,
+      "end": 56.17879,
+      "audio": "cafe-cold-v2/chair.wav",
+      "sha256": "68d3230fedca6027d51fec7bbe059ef5eff6e8d0b9a76dd4c2ba969dea6b6c67"
+    },
+    {
+      "id": "punchline",
+      "text": "Même à moins trente, Marc a réservé sa place.",
+      "caption": "",
+      "start": 56.77879,
+      "duration": 3.2103333333333333,
+      "end": 59.98913,
+      "audio": "cafe-cold-v2/punchline.wav",
+      "sha256": "0dff2a8fe6ab60a73fa968f470a68b48427bc1288f89cf439e75e5a63e2f42b8"
+    }
+  ]
+}

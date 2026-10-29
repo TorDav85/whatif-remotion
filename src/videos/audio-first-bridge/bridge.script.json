@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "bridge-demo",
+  "scene": "bridge",
+  "title": "LE TEMPS FAIT SON ŒUVRE",
+  "handle": "#WHATIF",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "voice": {
+    "preset": "Ana Florence",
+    "language": "fr",
+    "seed": 103
+  },
+  "pauseBetween": 0.45,
+  "endPadding": 0.6,
+  "beats": [
+    {
+      "id": "metal",
+      "text": "Sans entretien, le métal se fragilise."
+    },
+    {
+      "id": "bridge",
+      "text": "Puis le pont finit par céder."
+    }
+  ],
+  "events": [
+    {
+      "id": "metal-weakening",
+      "type": "metalWeakening",
+      "anchor": {
+        "id": "metal-anchor",
+        "text": "se fragilise",
+        "beatId": "metal",
+        "occurrence": 1,
+        "edge": "end"
+      },
+      "offset": 0.1,
+      "duration": 1.6
+    },
+    {
+      "id": "camera-prepare",
+      "type": "cameraMove",
+      "anchor": {
+        "id": "camera-anchor",
+        "text": "céder",
+        "beatId": "bridge",
+        "occurrence": 1,
+        "edge": "start"
+      },
+      "offset": -1.1,
+      "duration": 1.1
+    },
+    {
+      "id": "bridge-collapse",
+      "type": "bridgeCollapse",
+      "anchor": {
+        "id": "collapse-anchor",
+        "text": "céder",
+        "beatId": "bridge",
+        "occurrence": 1,
+        "edge": "end"
+      },
+      "offset": 0.2,
+      "duration": 2.6
+    }
+  ],
+  "editorials": [
+    {
+      "id": "metal-title",
+      "title": "LA STRUCTURE S’AFFAIBLIT",
+      "anchor": {
+        "id": "title-anchor",
+        "text": "fragilise",
+        "beatId": "metal",
+        "edge": "start"
+      },
+      "offset": 0.1,
+      "duration": 1.8
+    }
+  ],
+  "conclusion": {
+    "id": "conclusion",
+    "title": "L’ENTRETIEN CHANGE TOUT",
+    "text": "Le temps fragilise. L’entretien protège.",
+    "anchor": {
+      "id": "conclusion-anchor",
+      "text": "céder",
+      "beatId": "bridge",
+      "edge": "end"
+    },
+    "offset": 2.9,
+    "duration": 2.3
+  },
+  "subtitles": {
+    "maxWords": 4
+  },
+  "mix": {
+    "voiceVolume": 0.95,
+    "ambienceVolume": 0.18,
+    "speechDuck": 0.25,
+    "impactVolume": 0.2
+  }
+}

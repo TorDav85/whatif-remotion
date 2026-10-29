@@ -1,0 +1,17 @@
+{
+  "hook":{"seed":15100},
+  "normal":{"seed":22101,"settings":{"split_sentences":true,"temperature":0.55}},
+  "intro":{"seed":22102,"settings":{"split_sentences":true,"temperature":0.55}},
+  "cta":{"seed":22103,"settings":{"temperature":0.55,"split_sentences":true}},
+  "chill":{"seed":22104,"settings":{"split_sentences":true,"temperature":0.55}},
+  "wind":{"seed":17104,"settings":{"temperature":0.55,"repetition_penalty":2.0,"split_sentences":true}},
+  "snow":{"seed":17105,"settings":{"temperature":0.55,"repetition_penalty":2.0,"split_sentences":true}},
+  "slip":{"seed":22107,"settings":{"split_sentences":true,"temperature":0.55}},
+  "traffic":{"seed":16107,"settings":{"split_sentences":true,"temperature":0.55,"repetition_penalty":3.0}},
+  "escape":{"seed":22109,"settings":{"split_sentences":true,"temperature":0.55}},
+  "deep":{"seed":22110,"settings":{"split_sentences":true,"temperature":0.55}},
+  "return":{"seed":15110},
+  "silence":{"seed":15111,"settings":{"split_sentences":true}},
+  "buried":{"seed":22113,"settings":{"split_sentences":true,"temperature":0.55}},
+  "tower":{"seed":15113}
+}

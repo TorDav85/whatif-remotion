@@ -25,6 +25,15 @@ chaîne vocale par profils. `main` ne doit être mis à jour qu'après validatio
 - Échec explicite sur scène inconnue dans `WhatIf.tsx` (plus de filtrage silencieux).
 - `sampleNum` générique : suppression du `as any`.
 
+### Ajouté le 29/10/2026 (validation locale et nouvelle vidéo)
+
+- Validation locale exécutée : `npm run validate`, `typecheck` et `test:project` passent
+  (4 avertissements `"verify": true` restants, voir P2.8).
+- Dossier déplacé vérifié : chemins relatifs, XTTS chargé depuis `.cache/` sur GPU.
+- Nouvelle vidéo `InternetOffV1` avec voix vérifiée par transcription (Whisper) et
+  ambiance mesurée par phase (plus de nappe de bruit continue).
+- Audio généré exclu de Git (`public/<slug>/`), reconstruit par `npm run voice:*`.
+
 ## 3. P0 — À faire en premier (validation locale)
 
 1. Cloner la branche `1.03-test2` dans un dossier neuf, puis :
@@ -85,7 +94,21 @@ chaîne vocale par profils. `main` ne doit être mis à jour qu'après validatio
 14. Protéger `main` : fusion uniquement par pull request après passage des contrôles,
     puis publier `1.03-test2` (ou sa successeure) comme nouvelle `main` quand P0 est validé.
 
-## 8. Ordre recommandé
+## 8. Constats issus d'InternetOffV1
+
+15. Remonter `Actor` (visage, téléphone, poses) et le système `SHOTS`/`CUTS` dans
+    `src/shared/`. Vérification : une deuxième vidéo les importe sans copier de code.
+16. Inscrire `internet-off` dans `catalog.json`. Vérification : `npm run video -- still internet-off`
+    et `npm run validate` le couvrent.
+17. Bulles de dialogue ancrées sur les têtes (projection caméra → écran).
+    Vérification : à chaque image, la bulle reste au-dessus du personnage qui parle.
+18. Cadrage du plan à 72 s (tête coupée en haut). Vérification : planche des plans relue sans coupe.
+19. Whisper sur GPU : CTranslate2 ne trouve pas `cublas64_12.dll` ; la vérification tourne
+    sur CPU. Vérification : `faster-whisper` en `device='cuda'` sans erreur.
+20. Recréer le `.venv` après déplacement du dossier (`pip.exe` pointe sur l'ancien chemin).
+    Vérification : `.\.venv\Scripts\pip.exe --version` fonctionne.
+
+## 9. Ordre recommandé
 
 P0 (validation locale) → P1.4 (dépendances) → P1.6 (voix) → P2.8 (contenu) → P3/P4.
 Ne pas créer de nouvelle variante graphique avant la fin du P0 : chaque nouvelle base

@@ -1,0 +1,212 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 67.03333333333333,
+  "voice": "morpheus",
+  "voiceReferenceSha256": "5dcf76201bfd8dadb309c35a032a3682a21d3dee98a1b015a315a635c4dfbb69",
+  "pace": 1,
+  "lead": 0.45,
+  "ambience": "bus-cold/ambience.wav",
+  "provisional": false,
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si la température baissait de dix degrés chaque minute ?",
+      "caption": "−10 °C chaque minute ?",
+      "pause": 0.2,
+      "start": 0.45,
+      "duration": 2.6521666666666666,
+      "end": 3.10217,
+      "audio": "bus-cold/hook.wav",
+      "sha256": "1fc6aeb414f1968fcd0b911cae48db9f2ca92511190cdbeec873397c3e5fd030"
+    },
+    {
+      "id": "normal",
+      "text": "À vingt degrés, Maya attend son bus, son sac jaune sur les genoux.",
+      "caption": "Une attente ordinaire.",
+      "pause": 0.2,
+      "start": 3.30217,
+      "duration": 4.687458333333334,
+      "end": 7.98963,
+      "audio": "bus-cold/normal.wav",
+      "sha256": "2b9cff9db5d5be2b4cd2b6029c1bc8f256dce8a5a77e3822d4f80f71a37c91ec"
+    },
+    {
+      "id": "elder",
+      "text": "Un vieil homme approche tranquillement.",
+      "caption": "",
+      "pause": 0.2,
+      "start": 8.18963,
+      "duration": 2.398375,
+      "end": 10.588,
+      "audio": "bus-cold/elder.wav",
+      "sha256": "528c8e981f7705e1dc5db61d5d55b0762c5f33afca759196f3acb7dc5afd90dc"
+    },
+    {
+      "id": "chill",
+      "text": "Une minute plus tard, dix degrés. Elle ferme sa veste.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 10.788,
+      "duration": 3.0941666666666667,
+      "end": 13.88217,
+      "audio": "bus-cold/chill.wav",
+      "sha256": "8c353ed67cde2318d2c6a09e135fb79d3a5ada0f9e3bf5988bc6b7021f011b04"
+    },
+    {
+      "id": "scarf",
+      "text": "À zéro, elle enroule son écharpe.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 14.03217,
+      "duration": 2.482375,
+      "end": 16.51454,
+      "audio": "bus-cold/scarf.wav",
+      "sha256": "a88903e3763d843680357bf45e75a2d10f60a6fe0d9317cbd7a757dd2a961575"
+    },
+    {
+      "id": "arrival",
+      "text": "Le bus arrive enfin au bout de la rue.",
+      "caption": "Enfin, le bus.",
+      "pause": 0.2,
+      "start": 16.66454,
+      "duration": 2.541375,
+      "end": 19.20592,
+      "audio": "bus-cold/arrival.wav",
+      "sha256": "7de598640be5225fdaa5d7a4717398e0a7742cdf87d7fff45c23640f4d4fd299"
+    },
+    {
+      "id": "ice",
+      "text": "Moins dix. Sur la chaussée encore mouillée, le gel commence à s'étendre.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 19.40592,
+      "duration": 4.482958333333333,
+      "end": 23.88888,
+      "audio": "bus-cold/ice.wav",
+      "sha256": "e7456f58675fcbc02e25aa96ee9e200aaebd92c5f243cbb2f1db1f5eed488037"
+    },
+    {
+      "id": "stop",
+      "text": "Le conducteur ralentit et s'arrête quelques mètres avant l'abribus.",
+      "caption": "Quelques mètres avant l’arrêt.",
+      "pause": 0.2,
+      "start": 24.03888,
+      "duration": 2.830125,
+      "end": 26.869,
+      "audio": "bus-cold/stop.wav",
+      "sha256": "a04de44b0f08060137cc545f0feb2c18cc5af94b0d934e13995603c876002452"
+    },
+    {
+      "id": "door",
+      "text": "Maya rejoint la porte ouverte.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 27.069,
+      "duration": 2.3164166666666666,
+      "end": 29.38542,
+      "audio": "bus-cold/door.wav",
+      "sha256": "c4ac1c1c97a708a13b68a1a9acf3cfcd62d5427b3d8f60bcba6f770d41e14122"
+    },
+    {
+      "id": "cane",
+      "text": "Derrière elle, une canne dérape.",
+      "caption": "",
+      "pause": 0.45,
+      "start": 29.53542,
+      "duration": 2.668416666666667,
+      "end": 32.20383,
+      "audio": "bus-cold/cane.wav",
+      "sha256": "37c9e18c6d95d97a46663e4c91aa76865db639022266c5f7feccf384e60e4a95"
+    },
+    {
+      "id": "grip",
+      "text": "Le vieil homme s'agrippe au banc. Entre lui et le bus, le trottoir brille.",
+      "caption": "",
+      "pause": 0.2,
+      "start": 32.65383,
+      "duration": 4.720625,
+      "end": 37.37446,
+      "audio": "bus-cold/grip.wav",
+      "sha256": "daa0e34c571c2925af19a684f2a47a483deeb84d39206bf6825fc53a4757a9ba"
+    },
+    {
+      "id": "choice",
+      "text": "Maya regarde les sièges à l'intérieur… puis fait demi-tour.",
+      "caption": "",
+      "pause": 0.25,
+      "start": 37.57446,
+      "duration": 4.871708333333333,
+      "end": 42.44617,
+      "audio": "bus-cold/choice.wav",
+      "sha256": "7265f8a117ff112264c1cbd10c88cf40634cf703cb7cdd9da4e9672abd5b46b7"
+    },
+    {
+      "id": "help",
+      "text": "Maya lui offre son bras. Ensemble, ils avancent à petits pas.",
+      "caption": "À petits pas.",
+      "pause": 0.25,
+      "start": 42.69617,
+      "duration": 4.274708333333334,
+      "end": 46.97088,
+      "audio": "bus-cold/help.wav",
+      "sha256": "4dc725f1053dd2626ad53f20e0b3f9b8a84144a9b20edee589c5e46117e2dae2"
+    },
+    {
+      "id": "driver",
+      "text": "Le conducteur attend.",
+      "caption": "Il attend.",
+      "pause": 0.4,
+      "start": 47.22088,
+      "duration": 1.4310416666666668,
+      "end": 48.65192,
+      "audio": "bus-cold/driver.wav",
+      "sha256": "438785e559d4b421631cae807c62b10856834637e8f84241cdd45177d71e6f5f"
+    },
+    {
+      "id": "outside",
+      "text": "Dehors, la température continue de tomber.",
+      "caption": "",
+      "pause": 0.2,
+      "start": 49.05192,
+      "duration": 3.000375,
+      "end": 52.05229,
+      "audio": "bus-cold/outside.wav",
+      "sha256": "38b5922acf35757c3c494af1b7274ebf0aa5f41d531092e508c08d1e100fc7b4"
+    },
+    {
+      "id": "inside",
+      "text": "Derrière la vitre embuée, on retrouve le sac jaune, posé entre leurs pieds.",
+      "caption": "",
+      "pause": 0.25,
+      "start": 52.25229,
+      "duration": 5.241708333333333,
+      "end": 57.494,
+      "audio": "bus-cold/inside.wav",
+      "sha256": "73b9ed5d03eb0d42eb46ae294434567238d2520382ee9a950f41e638d3527d55"
+    },
+    {
+      "id": "still",
+      "text": "Le bus n'a pas encore redémarré.",
+      "caption": "",
+      "pause": 0.3,
+      "start": 57.744,
+      "duration": 2.523083333333333,
+      "end": 60.26708,
+      "audio": "bus-cold/still.wav",
+      "sha256": "aa0dfe1a66a6c85002f68db7ff924ed2f60f51806799fd57222e2268b8b6b235"
+    },
+    {
+      "id": "shared",
+      "text": "Sur la banquette, ils partagent maintenant la même écharpe.",
+      "caption": "",
+      "pause": 0,
+      "start": 60.56708,
+      "duration": 3.435375,
+      "end": 64.00246,
+      "audio": "bus-cold/shared.wav",
+      "sha256": "94779c504c295c0546c5203237e2f04e59fde73f5ac4ea6066d1664edf0bf37f"
+    }
+  ]
+}

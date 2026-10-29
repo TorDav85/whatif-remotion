@@ -1,0 +1,61 @@
+{
+  "wind": {
+    "seed": 17104,
+    "settings": {
+      "temperature": 0.55,
+      "repetition_penalty": 2.0,
+      "split_sentences": true
+    }
+  },
+  "bike": {
+    "seed": 17106,
+    "settings": {
+      "temperature": 0.55,
+      "repetition_penalty": 2.0,
+      "split_sentences": true
+    }
+  },
+  "rescue": {
+    "seed": 15108,
+    "settings": {
+      "split_sentences": true
+    }
+  },
+  "silence": {
+    "seed": 15111,
+    "settings": {
+      "split_sentences": true
+    }
+  },
+  "cta": {
+    "seed": 20114,
+    "settings": {
+      "temperature": 0.55,
+      "repetition_penalty": 2.0
+    }
+  },
+  "basket": {
+    "seed": 17102,
+    "settings": {
+      "temperature": 0.55,
+      "repetition_penalty": 2.0,
+      "split_sentences": false
+    }
+  },
+  "snow": {
+    "seed": 17105,
+    "settings": {
+      "temperature": 0.55,
+      "repetition_penalty": 2.0,
+      "split_sentences": true
+    }
+  },
+  "traffic": {
+    "seed": 16107,
+    "settings": {
+      "split_sentences": true,
+      "temperature": 0.55,
+      "repetition_penalty": 3.0
+    }
+  }
+}
