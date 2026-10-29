@@ -57,7 +57,7 @@ export const Building: React.FC<BuildingProps> = ({
         c === Math.floor(cols / 2) ? (
           <Block key={c} p={[colX(c), 1.9, front - 0.13]} s={[1.9, 3.6, 0.06]} c="#3a2a22" />
         ) : (
-          <Block key={c} p={[colX(c), 1.85, front - 0.13]} s={[(width / cols) * 0.78, 2.9, 0.06]} c={PAL.glass} e={PAL.glassLit} ei={lit * 0.9} />
+          <Block key={c} p={[colX(c), 1.85, front - 0.13]} s={[(width / cols) * 0.78, 2.9, 0.06]} c={lit > 0.3 ? PAL.glass : '#6a7c8c'} e={PAL.glassLit} ei={lit * 0.9} />
         ),
       )}
       {awning && (

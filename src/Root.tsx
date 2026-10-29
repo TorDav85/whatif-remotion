@@ -4,6 +4,7 @@ import {videos} from './videos/registry';
 import {SHOWCASE_FPS, SHOWCASE_FRAMES, Showcase} from './assets/Showcase';
 import {INTERIOR_FRAMES, InteriorShowcase} from './assets/interior/InteriorShowcase';
 import {CITY_FRAMES, CityShowcase} from './assets/city/CityShowcase';
+import {CITY_PREVIEW_FRAMES, CityBasePreview} from './assets/city/CityBasePreview';
 import {AudioFirstBridge} from './videos/audio-first-bridge/AudioFirstBridge';
 import compiledAudioFirst from './videos/audio-first-bridge/compiled-timeline.json';
 import {readTimeline, timelineMetadata} from './videos/audio-first-bridge/timeline/runtime.mjs';
@@ -38,7 +39,8 @@ export const Root: React.FC = () => (
       {videos.map((video) => <Composition key={video.id} {...video} />)}
     </Folder>
     <Folder name="Bibliotheque">
-      <Composition id="AssetsVille" component={CityShowcase} durationInFrames={CITY_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
+      <Composition id="CityBasePreview" component={CityBasePreview} durationInFrames={CITY_PREVIEW_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="AssetsVille"component={CityShowcase} durationInFrames={CITY_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
       <Composition id="Assets" component={Showcase} durationInFrames={SHOWCASE_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
       <Composition id="AssetsInterieur" component={InteriorShowcase} durationInFrames={INTERIOR_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
     </Folder>

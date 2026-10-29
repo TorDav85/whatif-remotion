@@ -89,7 +89,7 @@ export const Actor: React.FC<ActorProps> = ({
             <Block key={`c${s}`} p={[s * (0.05 + grin * 0.012), -0.055, -0.127]} s={[0.018, 0.018, 0.01]} c={MOUTH} />
           ))}
           {look.hairStyle !== 'chauve' && <Block p={[0, 0.15, 0.01]} s={[0.27, 0.07, 0.27]} c={look.hair} />}
-          {look.hairStyle !== 'chauve' && <Block p={[0, 0.06, 0.11]} s={[0.27, 0.16, 0.06]} c={look.hair} />}
+          {look.hairStyle !== 'chauve' && <Block p={[0, 0.06, 0.11]} s={[0.262, 0.16, 0.06]} c={look.hair} />}
           {look.hairStyle === 'long' && <Block p={[0, -0.08, 0.11]} s={[0.28, 0.4, 0.08]} c={look.hair} />}
         </group>
       </group>
