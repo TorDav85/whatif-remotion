@@ -153,6 +153,28 @@ Exports dans `out/` (non versionné).
 
 ![Collection Ville & extérieur 1.02](docs/previews/assets-ville-1.02.png)
 
+### Éditeur de ville (HTML)
+
+```powershell
+npm run city        # → http://127.0.0.1:5199
+```
+
+- **Générer** un quartier à partir d'une graine : îlots haussmanniens, magasins, îlots modernes, squares, la Seine
+  avec quais, ponts, péniches et bateaux-mouches, tours de bureaux et tour Eiffel à l'horizon.
+- **Caméra réalisateur** (onglet Caméra) : 9 mouvements (vue d'ensemble 3/4, orbite, plongée, travelling, grue,
+  piéton, contre-plongée, révélation, survol), « Capturer cette vue », cadre 9:16, lecture de la séquence.
+  Les plans sont enregistrés avec la ville et filmés tels quels par `CityLayoutPreview`.
+  Le guide de cadrage est dans le skill [camera-realisateur](.claude/skills/camera-realisateur/SKILL.md).
+- **Catalogue** des 85 assets par catégorie, avec aperçu 3D qui tourne : cliquer puis cliquer dans la scène pour poser.
+- **Déplacer** à la souris (clic pour sélectionner, puis glisser), **tourner** (R, Q/E), modifier les réglages
+  (étages, largeur, couleurs, modèle…), dupliquer, supprimer, annuler (Ctrl+Z). Rues et trottoirs sont verrouillés
+  par défaut (bouton **Sol**).
+- **Enregistrer** écrit `public/city-layouts/<nom>.json`. Dans Remotion : composition `CityLayoutPreview`
+  (prop `layout: "<nom>"`), ou dans une vidéo `useCityLayout('<nom>')` + `<LayoutScene layout={…} />`.
+
+Le registre commun ([registry.tsx](src/assets/city/registry.tsx)) garantit le même rendu dans l'éditeur et dans la vidéo :
+un nouvel asset ajouté au registre apparaît automatiquement dans le catalogue.
+
 ## 8. Où chercher
 
 | Besoin | Dossier ou guide |

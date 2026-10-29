@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Éditeur de ville — What if</title>
+<style>
+  :root {
+    --bg: #15171c; --panel: #1d2027; --panel2: #252933; --line: #323743; --text: #e9e4da; --muted: #8f97a6;
+    --gold: #F6E05E; --accent: #c9a24a; --danger: #d0564a;
+    font: 13px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body, #root { margin: 0; height: 100%; background: var(--bg); color: var(--text); }
+  .app { display: grid; grid-template-columns: 280px 1fr 320px; grid-template-rows: auto 1fr; height: 100%; }
+  .topbar { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 8px 12px;
+    background: var(--panel); border-bottom: 1px solid var(--line); }
+  .brand { font-family: Georgia, serif; color: var(--gold); font-size: 15px; margin-right: 6px; letter-spacing: .02em; }
+  .sep { width: 1px; height: 22px; background: var(--line); margin: 0 4px; }
+  button, .button, select, input { font: inherit; color: var(--text); }
+  button, .button, select { background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+  button:hover, .button:hover { border-color: #4a5160; }
+  button:disabled { opacity: .4; cursor: default; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #1a1508; font-weight: 600; }
+  button.danger { color: #ffb4ab; border-color: #5a2b28; }
+  button.on { border-color: var(--gold); color: var(--gold); }
+  button.ghost { background: transparent; }
+  button.small { padding: 2px 7px; font-size: 12px; }
+  input.name { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; width: 150px; }
+  .muted { color: var(--muted); font-size: 12px; }
+  aside { background: var(--panel); overflow-y: auto; min-height: 0; }
+  .left { border-right: 1px solid var(--line); display: flex; flex-direction: column; }
+  .right { border-left: 1px solid var(--line); }
+  .preview { position: relative; height: 200px; flex: none; border-bottom: 1px solid var(--line); }
+  .preview-label { position: absolute; left: 10px; bottom: 8px; font-family: Georgia, serif; color: #2b2a26; font-size: 14px; }
+  .catalog { padding: 8px; overflow-y: auto; }
+  .search { width: 100%; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; margin-bottom: 8px; }
+  .cat-title { width: 100%; display: flex; justify-content: space-between; background: transparent; border: 0; padding: 7px 4px;
+    font-weight: 600; color: var(--text); border-radius: 4px; }
+  .asset { width: 100%; display: flex; justify-content: space-between; align-items: center; background: transparent; border: 1px solid transparent;
+    padding: 5px 8px 5px 18px; border-radius: 5px; text-align: left; }
+  .asset:hover { background: var(--panel2); }
+  .asset.active { border-color: var(--gold); color: var(--gold); }
+  .plus { color: var(--muted); }
+  .badge { background: #3a3f4b; border-radius: 9px; padding: 0 7px; font-size: 11px; color: var(--muted); }
+  .view { position: relative; min-width: 0; min-height: 0; }
+  .banner, .toast { position: absolute; left: 50%; transform: translateX(-50%); background: rgba(20,22,27,.88); border: 1px solid var(--line);
+    padding: 7px 14px; border-radius: 8px; pointer-events: none; white-space: nowrap; }
+  .banner { top: 12px; color: var(--gold); }
+  .toast { bottom: 14px; }
+  .help { position: absolute; right: 14px; top: 14px; max-width: 460px; background: rgba(20,22,27,.94); border: 1px solid var(--line);
+    border-radius: 10px; padding: 12px 16px; }
+  .help h3 { margin: 0 0 6px; font-family: Georgia, serif; color: var(--gold); }
+  .help p { margin: 5px 0; }
+  .section { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .section header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .section h3 { margin: 0; font-family: Georgia, serif; font-weight: normal; color: var(--gold); font-size: 16px; }
+  .hint { color: var(--muted); margin: 0 0 10px; }
+  .warn { color: #f0b46a; }
+  .field { display: block; margin: 8px 0; }
+  .field > span { display: block; color: var(--muted); font-size: 12px; margin-bottom: 3px; }
+  .field.check { display: flex; gap: 8px; align-items: center; }
+  .field.check > span { margin: 0; color: var(--text); font-size: 13px; }
+  .row { display: flex; gap: 6px; align-items: center; }
+  .row input[type=range] { flex: 1; accent-color: var(--accent); }
+  .num { width: 64px; background: var(--bg); border: 1px solid var(--line); border-radius: 5px; padding: 3px 5px; }
+  .num.wide { width: 100%; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .buttons { margin-top: 12px; flex-wrap: wrap; }
+  select { padding: 4px 6px; }
+  input[type=color] { width: 44px; height: 26px; border: 1px solid var(--line); border-radius: 5px; background: none; padding: 0; }
+  code { background: var(--bg); padding: 1px 4px; border-radius: 4px; }
+  .tabs { display: flex; gap: 4px; padding: 8px 10px 0; position: sticky; top: 0; background: var(--panel); z-index: 1; border-bottom: 1px solid var(--line); }
+  .tabs button { flex: 1; border-radius: 6px 6px 0 0; border-bottom: 0; }
+  .presets { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .presets button { text-align: left; font-size: 12px; padding: 7px 8px; }
+  .shot.current { background: #2a2c22; box-shadow: inset 3px 0 0 var(--gold); }
+  .shot .name.grow { flex: 1; width: auto; }
+  .frame916 { position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); aspect-ratio: 9 / 16; max-width: 100%;
+    border: 1px solid rgba(246,224,94,.8); box-shadow: 0 0 0 9999px rgba(10,11,14,.55); pointer-events: none; }
+  .frame916 span { position: absolute; top: 8px; left: 8px; color: var(--gold); font-size: 12px; text-shadow: 0 1px 4px #000; }
+  .view { overflow: hidden; }
+  .loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: Georgia, serif;
+    color: var(--gold); font-size: 18px; background: var(--bg); pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/editor.js"></script>
+</body>
+</html>
