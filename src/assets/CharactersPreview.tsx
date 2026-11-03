@@ -8,8 +8,8 @@ import {Tree} from './city/Park';
 import {CityEnvironment} from './city/LayoutScene';
 import {CameraRig} from '../shared/three/common';
 import {Marc} from '../shared/characters/Marc';
-import {ArticulatedPerson} from '../videos/bus-cold/BusCold';
-import {Actor} from '../videos/internet-off/Actor';
+import {ArticulatedPerson} from '../shared/characters/ArticulatedPerson';
+import {Actor} from '../shared/characters/Actor';
 
 const LABELS = ['LES PASSANTS', 'MARC', 'LES PERSONNAGES DU BUS', 'EXPRESSIONS & ACCESSOIRES', 'MARCHE & POSES'];
 export const CHARACTERS_FRAMES = LABELS.length * 120;

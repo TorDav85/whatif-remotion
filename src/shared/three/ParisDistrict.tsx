@@ -9,7 +9,7 @@ import {Bench, Bollard, TrashBin, BusShelter} from '../../assets/city/Street';
 import {Tree, Hedge, Planter} from '../../assets/city/Park';
 import {Kiosk, CafeTerrace} from '../../assets/city/CityLife';
 import {TrafficLight, TrafficSign, Crosswalk} from '../../assets/city/Mobility';
-import {BatchedScenery} from '../../shared/three/BatchedScenery';
+import {BatchedScenery} from './BatchedScenery';
 import {smooth} from '../../core/animation';
 
 type V3=[number,number,number];

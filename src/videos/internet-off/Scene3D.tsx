@@ -7,7 +7,7 @@ import {Car} from '../../assets/Car';
 import {Tree, Bench, StreetLamp, TrashBin, Crosswalk} from '../../assets/city';
 import {CameraRig} from '../../shared/three/common';
 import {SkyDome} from '../../shared/three/SkyDome';
-import {Actor, faceTo, type Look} from './Actor';
+import {Actor, faceTo, type Look} from '../../shared/characters/Actor';
 
 type V3 = [number, number, number];
 type V2 = [number, number];
@@ -73,7 +73,17 @@ export const SHOTS: Shot[] = [
 ];
 export const CUTS = SHOTS.slice(1).map((s) => s.from);
 
-const shotAt = (t: number) => {
+/** Top of each dialogue speaker's head (world, metres), for the speech bubbles. Seated ≈ 1.5 m, standing ≈ 2.0 m. */
+export const SPEAKERS: Record<string, V3> = {
+  // Bench at [5.6, 0.16, -12], turned 90°: local x → world -z.
+  benchLeft: [5.62, 1.66, -11.4],
+  benchRight: [5.62, 1.66, -12.6],
+  // Marc at the campfire, first stump (angle 0.3 around FIRE, radius 1.7).
+  fireMarc: [FIRE[0] + 1.7 * Math.sin(0.3), 1.5, FIRE[2] + 1.7 * Math.cos(0.3)],
+  laughLeft: [-6.2, 2.0, -6],
+};
+
+export const shotAt = (t: number) => {
   let i = SHOTS.length - 1;
   while (i > 0 && t < SHOTS[i].from) i--;
   const s = SHOTS[i];

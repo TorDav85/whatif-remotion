@@ -5,7 +5,8 @@ import {clamp01, smooth} from '../../core/animation';
 import {Block, Cyl} from '../../assets/kit';
 import {Marc} from '../../shared/characters/Marc';
 import {BossChair, ScreenRoom, useScreenTextures} from '../marc-salaire-2/Scene3D';
-import {Oven} from '../marc-four/Scene3D';
+import {Oven} from '../../shared/sets/Oven';
+import {cutsOf, shotAt as shotAtOf, type Shot as ShotOf} from '../../shared/three/shots';
 
 type V3 = [number, number, number];
 const V = (x: number, y: number, z: number) => new THREE.Vector3(x, y, z);
@@ -87,7 +88,7 @@ const Rig: React.FC<{pos: THREE.Vector3; target: THREE.Vector3; fov: number}> = 
 };
 
 type View = {pos: THREE.Vector3; target: THREE.Vector3; fov: number};
-type Shot = {from: number; view: (t: number, k: number) => View};
+type Shot = ShotOf<View>;
 export const SHOTS: Shot[] = [
   // Recap: the chair, Marc from behind.
   {from: 0, view: (t, k) => ({pos: V(mix(0.6, 0.4, k), 1.6, mix(-4.0, -3.6, k)), target: V(0, 1.3, 1.6), fov: 50})},
@@ -114,14 +115,9 @@ export const SHOTS: Shot[] = [
   // Moral: Julien alone with his pizza.
   {from: 63.6, view: (t, k) => ({pos: V(mix(-0.9, -0.6, k), 1.55, mix(-1.2, -0.8, k)), target: V(0.6, 1.2, 1.4), fov: 50})},
 ];
-export const CUTS = SHOTS.slice(1).map((s) => s.from);
+export const CUTS = cutsOf(SHOTS);
 
-const shotAt = (t: number): View => {
-  let i = SHOTS.length - 1;
-  while (i > 0 && t < SHOTS[i].from) i--;
-  const end = i + 1 < SHOTS.length ? SHOTS[i + 1].from : DURATION;
-  return SHOTS[i].view(t, smooth(SHOTS[i].from, end, t));
-};
+const shotAt = (t: number): View => shotAtOf(SHOTS, t, DURATION);
 
 // ---------- Scene ----------
 export const Scene3D: React.FC<{t: number}> = ({t}) => {

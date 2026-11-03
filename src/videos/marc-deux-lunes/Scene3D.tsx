@@ -9,6 +9,7 @@ import {useGlowTexture} from '../../shared/three/common';
 import {SkyDome} from '../../shared/three/SkyDome';
 import {EarthGlobe} from '../../shared/three/EarthGlobe';
 import {Marc} from '../../shared/characters/Marc';
+import {cutsOf, shotAt as shotAtOf, type Shot as ShotOf} from '../../shared/three/shots';
 
 type V3 = [number, number, number];
 const V = (x: number, y: number, z: number) => new THREE.Vector3(x, y, z);
@@ -551,7 +552,7 @@ const Rig: React.FC<{pos: THREE.Vector3; target: THREE.Vector3; fov: number; nea
 };
 
 type View = {pos: THREE.Vector3; target: THREE.Vector3; fov: number; shake?: number};
-type Shot = {from: number; view: (t: number, k: number) => View};
+type Shot = ShotOf<View>;
 const skyTarget = (cam: THREE.Vector3, dir: V3, d = 40) => V(cam.x + dir[0] * d, cam.y + dir[1] * d, cam.z + dir[2] * d);
 const MOONS_MID = nrm(MOON1_DIR[0] + MOON2_DIR[0], MOON1_DIR[1] + MOON2_DIR[1], MOON1_DIR[2] + MOON2_DIR[2]);
 
@@ -608,14 +609,9 @@ export const SHOTS: Shot[] = [
     return {pos, target: V(-4.0, 14 + 4 * k, -30), fov: 58};
   }},
 ];
-export const CUTS = SHOTS.slice(1).map((s) => s.from);
+export const CUTS = cutsOf(SHOTS);
 
-const shotAt = (t: number): View => {
-  let i = SHOTS.length - 1;
-  while (i > 0 && t < SHOTS[i].from) i--;
-  const end = i + 1 < SHOTS.length ? SHOTS[i + 1].from : DURATION;
-  return SHOTS[i].view(t, smooth(SHOTS[i].from, end, t));
-};
+const shotAt = (t: number): View => shotAtOf(SHOTS, t, DURATION);
 
 // ---------- Scene ----------
 const Street: React.FC<{t: number; view: View}> = ({t, view}) => {

@@ -8,6 +8,7 @@ import {
   UpperCabinet, InteriorWindow, WallClock, Radiator,
 } from '../../assets/interior';
 import {Marc} from '../../shared/characters/Marc';
+import {cutsOf, shotAt as shotAtOf, type Shot as ShotOf} from '../../shared/three/shots';
 
 type V3 = [number, number, number];
 const V = (x: number, y: number, z: number) => new THREE.Vector3(x, y, z);
@@ -216,7 +217,7 @@ const Rig: React.FC<{pos: THREE.Vector3; target: THREE.Vector3; fov: number; rol
 };
 
 type View = {pos: THREE.Vector3; target: THREE.Vector3; fov: number; roll?: number};
-type Shot = {from: number; view: (t: number, k: number) => View};
+type Shot = ShotOf<View>;
 const at = (p: V3, x: number, y: number, z: number) => V(p[0] + x, p[1] + y, p[2] + z);
 
 export const SHOTS: Shot[] = [
@@ -258,12 +259,7 @@ export const SHOTS: Shot[] = [
 ];
 export const CUTS = SHOTS.slice(1).map((s) => s.from).filter((c) => c !== 61.8);
 
-const shotAt = (t: number): View => {
-  let i = SHOTS.length - 1;
-  while (i > 0 && t < SHOTS[i].from) i--;
-  const end = i + 1 < SHOTS.length ? SHOTS[i + 1].from : DURATION;
-  return SHOTS[i].view(t, smooth(SHOTS[i].from, end, t));
-};
+const shotAt = (t: number): View => shotAtOf(SHOTS, t, DURATION);
 
 /** 0 = fresh, 1 = day 5 (drives light, colours and the picture grade). */
 export const dryAt = (t: number) => clamp01(dayFloat(t) / 5);

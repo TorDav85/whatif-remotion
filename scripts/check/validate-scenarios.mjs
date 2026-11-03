@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const catalog = JSON.parse(fs.readFileSync(path.join(root, 'src/videos/catalog.json'), 'utf8'));
@@ -14,6 +15,26 @@ let warnings = 0;
 const err = (slug, msg) => { errors++; console.error(`  x ${slug} · ${msg}`); };
 const warn = (slug, msg) => { warnings++; console.warn(`  ! ${slug} · ${msg}`); };
 const num = (v) => Number.isFinite(v);
+
+/** Duration of a PCM WAV from its header (fmt byte rate and data size), or null if unreadable. */
+const wavSeconds = (file) => {
+  try {
+    const b = fs.readFileSync(file);
+    if (b.toString('ascii', 0, 4) !== 'RIFF' || b.toString('ascii', 8, 12) !== 'WAVE') return null;
+    let byteRate = 0;
+    for (let o = 12; o + 8 <= b.length;) {
+      const id = b.toString('ascii', o, o + 4);
+      const size = b.readUInt32LE(o + 4);
+      if (id === 'fmt ') byteRate = b.readUInt32LE(o + 16);
+      if (id === 'data') return byteRate ? size / byteRate : null;
+      o += 8 + size + (size % 2);
+    }
+  } catch {}
+  return null;
+};
+/** Generated audio may be excluded from Git (see .gitignore): absent there is a warning, not an error. */
+const ignored = (file) => spawnSync('git', ['check-ignore', '-q', file], {cwd: root}).status === 0;
+const TOLERANCE = 0.05;
 
 for (const item of catalog) {
   if (only && item.slug !== only) continue;
@@ -79,6 +100,12 @@ for (const item of catalog) {
         if (slot > 0 && text.length / slot > 25) {
           warn(slug, `beat ${i} : ${text.length} caractères en ${slot.toFixed(1)} s — phrase probablement trop longue`);
         }
+        if (audio.voice && audio.voiceDir) {
+          const wav = path.join('public', audio.voiceDir, `beat-${i}.wav`);
+          const seconds = wavSeconds(path.join(root, wav));
+          if (seconds === null) (ignored(wav) ? warn : err)(slug, `voix activée mais ${wav} absent ou illisible`);
+          else if (seconds > slot + TOLERANCE) err(slug, `beat ${i} : voix de ${seconds.toFixed(2)} s pour un créneau de ${slot.toFixed(2)} s (coupée au rendu)`);
+        }
       }
     });
   }
@@ -92,6 +119,35 @@ for (const item of catalog) {
   // Affirmations marquées à vérifier avant publication
   const verify = JSON.stringify(config).match(/"verify"\s*:\s*true/g);
   if (verify) warn(slug, `${verify.length} affirmation(s) "verify": true à contrôler avant publication`);
+}
+
+// Vidéos à narration fixe (narration.json + voice.json : série Marc, bus, café, polar…) :
+// chaque piste doit exister et tenir dans son créneau sans chevaucher la suivante.
+for (const dir of fs.readdirSync(path.join(root, 'src/videos'))) {
+  if (only && dir !== only) continue;
+  const base = path.join(root, 'src/videos', dir);
+  const narrationFile = path.join(base, 'narration.json');
+  const voiceFile = path.join(base, 'voice.json');
+  if (!fs.existsSync(narrationFile) || !fs.existsSync(voiceFile)) continue;
+  const narration = JSON.parse(fs.readFileSync(narrationFile, 'utf8'));
+  const voice = JSON.parse(fs.readFileSync(voiceFile, 'utf8'));
+  const slots = Object.fromEntries((narration.beats ?? []).filter((b) => Array.isArray(b.slot)).map((b) => [b.id, b.slot]));
+  const files = [voice.ambience, ...(voice.beats ?? []).map((b) => b.audio)].filter(Boolean);
+  const missing = files.filter((f) => wavSeconds(path.join(root, 'public', f)) === null);
+  for (const f of missing) (ignored(path.join('public', f)) ? warn : err)(dir, `audio absent ou illisible : public/${f} (npm run voice:${dir})`);
+  (voice.beats ?? []).forEach((b, i) => {
+    const seconds = wavSeconds(path.join(root, 'public', b.audio));
+    if (seconds === null) return;
+    const slot = slots[b.id];
+    if (slot && b.start + seconds > slot[1] + TOLERANCE) err(dir, `${b.id} : ${seconds.toFixed(2)} s dépasse son créneau (${slot[0]}–${slot[1]} s)`);
+    const next = voice.beats[i + 1];
+    if (next && b.start + seconds > next.start + TOLERANCE) err(dir, `${b.id} : chevauche ${next.id}`);
+    if (slot && Math.abs(slot[0] - b.start) > TOLERANCE) warn(dir, `${b.id} : départ ${b.start} s ≠ créneau ${slot[0]} s (voice.json à régénérer ?)`);
+  });
+  if (narration.duration && voice.ambience) {
+    const amb = wavSeconds(path.join(root, 'public', voice.ambience));
+    if (amb !== null && amb + TOLERANCE < narration.duration) warn(dir, `ambiance de ${amb.toFixed(1)} s pour une vidéo de ${narration.duration} s`);
+  }
 }
 
 if (errors === 0) console.log(`Validation OK${only ? ` (${only})` : ''} — ${warnings} avertissement(s).`);

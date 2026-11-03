@@ -6,51 +6,15 @@ import {CameraRig, sampleColor, useGlowTexture, useRingTexture} from '../../shar
 import {SkyDome} from '../../shared/three/SkyDome';
 import {useScenario} from '../whatif/Scenario';
 import {rng, smooth} from '../../core/animation';
-import {Bld, BOX, CUBE, ICO, Inst, makeWindows, Windows} from '../heat/kit';
+import {Bld, BOX, CUBE, ICO, Inst, makeWindows, Windows} from '../../shared/three/instanced';
 import P from './scenario.json';
 import {Person} from '../../assets/Person';
+import {EiffelLowPoly} from '../../assets/EiffelLowPoly';
 
 const ROOF = new THREE.CylinderGeometry(0.55, Math.SQRT1_2, 1, 4).rotateY(Math.PI / 4).translate(0, 0.5, 0);
 const BLADE = new THREE.ConeGeometry(0.06, 0.65, 3).translate(0, 0.325, 0);
 const HOLE_Z = P.camera.startZ - P.hole.startDistanceM;
 const effect = (name: keyof typeof P.effects, t: number) => smooth(P.effects[name].from, P.effects[name].to, t);
-
-const Beam: React.FC<{a: [number, number, number]; b: [number, number, number]; width: number; color: THREE.Color}> = ({a, b, width, color}) => {
-  const {pos, q, length} = useMemo(() => {
-    const start = new THREE.Vector3(...a);
-    const end = new THREE.Vector3(...b);
-    const dir = end.clone().sub(start);
-    return {pos: start.add(end).multiplyScalar(0.5), length: dir.length(), q: new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir.normalize())};
-  }, [a.join(','), b.join(',')]);
-  return <mesh position={pos} quaternion={q}><boxGeometry args={[width, length, width]} /><meshStandardMaterial color={color} metalness={0.45} roughness={0.6} /></mesh>;
-};
-
-/** Silhouette stylisée : quatre pieds évasés, deux plateformes et croisillons. */
-export const Eiffel: React.FC<{bend: number; glow: number}> = ({bend, glow}) => {
-  const color = new THREE.Color('#74604c').lerp(new THREE.Color('#d28b58'), glow * 0.6);
-  const levels = [[0, 12], [22, 6], [43, 3.2], [68, 0.6]] as const;
-  return (
-    <group position={[0, 0, P.layout.towerZ]} scale={P.layout.towerHeight / 76}>
-      <group rotation={[bend * 0.13, 0, -bend * 0.06]}>
-        {[-1, 1].flatMap((sx) => [-1, 1].flatMap((sz) => levels.slice(0, -1).map(([y, r], i) => {
-          const [ny, nr] = levels[i + 1];
-          return <Beam key={`${sx}:${sz}:${i}`} a={[sx * r, y, sz * r]} b={[sx * nr, ny, sz * nr]} width={i === 0 ? 1.1 : 0.65} color={color} />;
-        })))}
-        {[22, 43].map((y, i) => <mesh key={y} position={[0, y, 0]}><boxGeometry args={[i ? 8 : 15, 1.1, i ? 8 : 15]} /><meshStandardMaterial color={color} /></mesh>)}
-        {levels.slice(0, -1).flatMap(([y, r], i) => {
-          const [ny, nr] = levels[i + 1];
-          return [-1, 1].flatMap((sign) => [false, true].flatMap((swap) => [false, true].map((cross) => {
-            const a: [number, number, number] = [cross ? -r : r, y + 2, sign * r];
-            const b: [number, number, number] = [cross ? nr : -nr, ny - 1, sign * nr];
-            return <Beam key={`${i}:${sign}:${swap}:${cross}`} a={swap ? [a[2], a[1], a[0]] : a} b={swap ? [b[2], b[1], b[0]] : b} width={0.22} color={color} />;
-          })));
-        })}
-        {[-1, 1].map((s) => <mesh key={s} position={[0, 6, s * 9]}><torusGeometry args={[8, 0.4, 5, 20, Math.PI]} /><meshStandardMaterial color={color} /></mesh>)}
-        <Beam a={[0, 67, 0]} b={[0, 76, 0]} width={0.4} color={color} />
-      </group>
-    </group>
-  );
-};
 
 export const ParisBlackHole: React.FC = () => {
   const t = useCurrentFrame() / P.fps;
@@ -128,7 +92,7 @@ export const ParisBlackHole: React.FC = () => {
         c.set('#536174');
       }} />
       <Windows list={city.windows} c={22} t={t} />
-      <Eiffel bend={effect('towerBend', t)} glow={glowK} />
+      <EiffelLowPoly z={P.layout.towerZ} height={P.layout.towerHeight} bend={effect('towerBend', t)} glow={glowK} />
 
       {trees.map((tr, i) => {
         const k = suction * (0.2 + 0.18 * (i % 3));

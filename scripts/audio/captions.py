@@ -75,9 +75,10 @@ def main():
     args = parser.parse_args()
     folder = ROOT / 'src/videos' / args.slug
     voice = json.loads((folder / 'voice.json').read_text(encoding='utf-8'))
-    from faster_whisper import WhisperModel
-    model = WhisperModel(args.model, device='cpu', compute_type='int8', cpu_threads=min(8, os.cpu_count() or 1),
-                         download_root=str(ROOT / '.cache/audio-first/whisper'))
+    sys.path.insert(0, str(ROOT / 'scripts/audio'))
+    from whisper_device import load_whisper
+    model, device = load_whisper(args.model, ROOT / '.cache/audio-first/whisper')
+    print(f'Whisper {args.model} sur {device}', flush=True)
     words_out, segments = [], []
     for beat in voice['beats']:
         segs, _ = model.transcribe(str(ROOT / 'public' / beat['audio']), language='fr', beam_size=5, temperature=0,

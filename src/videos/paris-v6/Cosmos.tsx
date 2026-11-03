@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import {CameraRig, useGlowTexture} from '../../shared/three/common';
 import {rng, smooth} from '../../core/animation';
 import P from './scenario.json';
-import land from '../paris-v3/land.json';
+import land from '../../assets/data/world-land.json';
 import {ColdWater} from './Winter';
 import {EARTH_TEXTURES, usePlanetTextures} from './PlanetTextures';
 

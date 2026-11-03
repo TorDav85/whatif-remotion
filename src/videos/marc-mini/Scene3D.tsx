@@ -5,6 +5,7 @@ import {clamp01, smooth} from '../../core/animation';
 import {Ball, Block, seeded} from '../../assets/kit';
 import {CityBase} from '../../assets/city/CityBase';
 import {Marc} from '../../shared/characters/Marc';
+import {cutsOf, shotAt as shotAtOf, type Shot as ShotOf} from '../../shared/three/shots';
 
 type V3 = [number, number, number];
 const V = (x: number, y: number, z: number) => new THREE.Vector3(x, y, z);
@@ -333,7 +334,7 @@ const Atoms: React.FC = () => {
 
 // ---------- Shots ----------
 type View = {pos: THREE.Vector3; target: THREE.Vector3; fov: number};
-type Shot = {from: number; view: (t: number, k: number) => View};
+type Shot = ShotOf<View>;
 
 const cityFrame = (t: number): Frame => {
   const m = cityMarc(t);
@@ -390,14 +391,9 @@ export const SHOTS: Shot[] = [
   // Minute 33: standing on atoms, the camera backs off.
   {from: 75.4, view: (t, k) => ({pos: rel(MICRO, -0.9, mix(0.7, 0.95, k), mix(2.1, 2.7, k)), target: rel(MICRO, 0, 0.4, 0), fov: 52})},
 ];
-export const CUTS = SHOTS.slice(1).map((s) => s.from);
+export const CUTS = cutsOf(SHOTS);
 
-const shotAt = (t: number): View => {
-  let i = SHOTS.length - 1;
-  while (i > 0 && t < SHOTS[i].from) i--;
-  const end = i + 1 < SHOTS.length ? SHOTS[i + 1].from : DURATION;
-  return SHOTS[i].view(t, smooth(SHOTS[i].from, end, t));
-};
+const shotAt = (t: number): View => shotAtOf(SHOTS, t, DURATION);
 
 // ---------- Scene ----------
 export const Scene3D: React.FC<{t: number}> = ({t}) => {

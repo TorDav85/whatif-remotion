@@ -231,7 +231,7 @@
       "sub": "ÉMISE PAR UN TROU PLUS PETIT QU'UNE PIÈCE",
       "caption": "Depuis l'espace, New York est un second soleil.",
       "right": "none",
-      "verify": true
+      "source": "Calcul : luminosité d'Eddington L = 1,26×10³¹ W × (M/M☉) ; Terre = 3,0×10⁻⁶ M☉ → 3,8×10²⁵ W ≈ 0,1 L☉ (L☉ = 3,83×10²⁶ W)."
     },
     {
       "t": 32.5,
@@ -242,7 +242,7 @@
       "sub": "CHAUFFÉE PAR SA PROPRE LUMIÈRE",
       "caption": "Cette lumière suffit à faire bouillir la planète.",
       "right": "none",
-      "verify": true
+      "source": "Calcul : énergie de liaison gravitationnelle de la Terre 2,24×10³² J ÷ 3,8×10²⁵ W ≈ 5,9×10⁶ s ≈ 68 jours (si toute la lumière est absorbée) ; la vaporisation demande moins."
     },
     {
       "t": 37.4,

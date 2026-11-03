@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import {CameraRig, useGlowTexture} from '../../shared/three/common';
 import {rng, smooth} from '../../core/animation';
 import P from './scenario.json';
-import land from './land.json';
+import land from '../../assets/data/world-land.json';
 
 const lonScale = Math.cos(P.geography.parisLat * Math.PI / 180);
 const xy = (coord: number[]) => new THREE.Vector2((coord[0] - P.geography.parisLon) * lonScale, coord[1] - P.geography.parisLat);

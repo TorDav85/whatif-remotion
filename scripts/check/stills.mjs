@@ -11,6 +11,8 @@ import {renderStill, selectComposition} from '@remotion/renderer';
 import {shotFrames} from './shot-frames.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+// WebGL backend: 'angle' locally, REMOTION_GL=swangle on machines without GPU (CI).
+const GL = process.env.REMOTION_GL ?? 'angle';
 const args = process.argv.slice(2);
 const id = args.find((a) => !a.startsWith('--'));
 // PowerShell drops the `--` separator, so npm keeps flags like --shots as its own config:
@@ -31,7 +33,7 @@ if (!id) {
 const inputProps = opt('props') ? JSON.parse(opt('props')) : {};
 console.log('Compilation du projet…');
 const serveUrl = await bundle({entryPoint: path.join(root, 'src/index.ts'), onProgress: () => undefined});
-const composition = await selectComposition({serveUrl, id, inputProps, chromiumOptions: {gl: 'angle'}, logLevel: 'error'});
+const composition = await selectComposition({serveUrl, id, inputProps, chromiumOptions: {gl: GL}, logLevel: 'error'});
 const props = {...composition.props, ...inputProps};
 const fps = composition.fps;
 
@@ -54,7 +56,7 @@ for (const f of fs.readdirSync(out)) if (/^f-\d+\.png$/.test(f)) fs.rmSync(path.
 const t0 = Date.now();
 for (const f of frames) {
   const frame = Math.max(0, Math.min(composition.durationInFrames - 1, f.frame));
-  await renderStill({composition, serveUrl, frame, inputProps: props, output: path.join(out, `f-${frame}.png`), chromiumOptions: {gl: 'angle'}, logLevel: 'error'});
+  await renderStill({composition, serveUrl, frame, inputProps: props, output: path.join(out, `f-${frame}.png`), chromiumOptions: {gl: GL}, logLevel: 'error'});
   console.log(`  image ${frame} (${(frame / fps).toFixed(1)} s)${f.label ? ` · ${f.label}` : ''}`);
 }
 console.log(`${frames.length} images en ${((Date.now() - t0) / 1000).toFixed(0)} s → ${path.relative(root, out)}`);

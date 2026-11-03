@@ -8,5 +8,5 @@ const countries = source.features.map((f) => ({
     .map((polygon) => polygon.map((ring) => ring.map(([x, y]) => [Number(x.toFixed(3)), Number(y.toFixed(3))]))),
 }));
 fs.mkdirSync('src/videos/paris-v3', {recursive: true});
-fs.writeFileSync('src/videos/paris-v3/land.json', JSON.stringify(countries));
+fs.writeFileSync('src/assets/data/world-land.json', JSON.stringify(countries));
 console.log(`${countries.length} pays préparés pour la V3`);

@@ -63,10 +63,25 @@ Un nouvel objet générique va dans `src/assets/`. Une animation numérique comm
 dans `src/core/animation.ts`. Un élément de rendu commun va dans `src/shared/`.
 Ces modules n'importent aucun scénario de vidéo.
 
-Les anciennes variantes Paris conservent quelques dépendances entre vidéos : le kit
-historique de `heat`, la tour Eiffel de `paris-v2`, les contours de `paris-v3`.
-La commande de copie conserve ces imports. Pour une nouvelle scène indépendante,
-préférer les objets de `src/assets/` et les outils de `src/shared/`.
+Depuis 1.12, les éléments empruntés d'une vidéo à l'autre vivent hors des dossiers vidéo :
+
+| Élément | Emplacement |
+| --- | --- |
+| Kit instancié (bâtiments, fenêtres, piétons, arbres, feu), ex-`heat/kit` | `src/shared/three/instanced.tsx` (`heat/kit` le réexporte et garde `HeatEnv`) |
+| Tour Eiffel stylisée, ex-`paris-v2` | `src/assets/EiffelLowPoly.tsx` |
+| Contours des terres, ex-`paris-v3/land.json` | `src/assets/data/world-land.json` |
+| Quartier de Paris, ex-`paris-polar-v2/ParisDistrict` | `src/shared/three/ParisDistrict.tsx` |
+| Personnage articulé, ex-`bus-cold` | `src/shared/characters/ArticulatedPerson.tsx` |
+| Personnage expressif `Actor`, ex-`internet-off` | `src/shared/characters/Actor.tsx` |
+| Four géant, ex-`marc-four` | `src/shared/sets/Oven.tsx` |
+| Liste de plans `SHOTS` / `CUTS` | `src/shared/three/shots.ts` |
+| Projection 3D → écran, bulles de dialogue | `src/shared/three/projection.ts`, `src/shared/ui/SpeechBubble.tsx` |
+
+**Règle d'imports.** Une vidéo n'importe pas le dossier d'une autre vidéo, sauf une version
+ou un épisode de la même histoire : `cafe-cold-v2` → `cafe-cold`, `paris-polar-v2` → `paris-polar`,
+`marc-salaire-2` → `marc-salaire`, `marc-salaire-3` → `marc-salaire-2`, `marc-geant-court` → `marc-geant`,
+`paris-v2` → le cadre `whatif`. Tout le reste passe par `src/assets/` ou `src/shared/`.
+Vérification : `grep -rn "from '\.\./[a-z0-9-]*/" src/videos` ne liste que ces cas.
 
 Les anciens chemins sont dans [path-migration.json](path-migration.json).
 Une sauvegarde de l'état avant réorganisation est conservée localement sous

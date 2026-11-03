@@ -12,10 +12,10 @@ import {Bicycle} from '../../assets/city/Mobility';
 import {StreetLamp} from '../../assets/city/Street';
 import {CameraRig} from '../../shared/three/common';
 import {rng, smooth} from '../../core/animation';
-import {ArticulatedPerson} from '../bus-cold/BusCold';
+import {ArticulatedPerson} from '../../shared/characters/ArticulatedPerson';
 import {Marc} from '../../shared/characters/Marc';
 import originalTimeline from './timing.json';
-import {ParisDistrict, DistrictTraffic, DistrictCrowd} from '../paris-polar-v2/ParisDistrict';
+import {ParisDistrict, DistrictTraffic, DistrictCrowd} from '../../shared/three/ParisDistrict';
 
 type PolarTimeline={duration:number;ambience:string;beats:{id:string;start:number;end:number;duration:number;audio:string;caption:string}[]};
 export const createParisPolar=(timeline:PolarTimeline,variant:'original'|'marc'='original',dense=false)=>{

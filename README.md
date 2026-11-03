@@ -4,7 +4,8 @@ Vidéos TikTok/Shorts « Et si… ? » en 1080×1920, style low-poly à faces pl
 off générée localement (XTTS) et ambiance sonore procédurale. Un dossier par vidéo, une
 bibliothèque 3D commune, des scripts classés par usage.
 
-> Branche de travail : **`1.11`** (pilote éditorial, voir [docs/versions/1.11.md](docs/versions/1.11.md)).
+> Branche de travail : **`1.12`** (base consolidée, voir [docs/versions/1.12.md](docs/versions/1.12.md)) ;
+> pilote éditorial dans [1.11](docs/versions/1.11.md).
 > Voir [l'état des versions](#versions) et [la feuille de route](AMELIORATIONS.md).
 
 ## Sommaire
@@ -216,17 +217,29 @@ un nouvel asset ajouté au registre apparaît automatiquement dans le catalogue.
 
 | Branche | Contenu |
 | --- | --- |
-| `main` / `1.03-test1` | Structure initiale (même commit `0f8cb9b`) |
+| `main` | Structure initiale (`0f8cb9b`) ; `1.03-test1`, identique, a été supprimée en 1.12 |
 | `1.01` | Nature V2, Gravité, objets extérieurs et intérieurs |
 | `1.02` | Réorganisation `videos/` · `assets/` · `core/` · `shared/`, catalogue, XTTS multi-profils, 24 objets ville |
 | `1.03-test2` | 1.02 + corrections de l'audit + chaîne audio-first, cafe/bus/polar, `CityBase`, `InternetOffV1` |
 | `htmlallasset` | Éditeur de ville HTML, caméra réalisateur, vérification des cadrages |
 | `1.10` | Série Marc (géant, mini, soif, four, congel, salaire 1-3, deux lunes), finition visuelle 2.01, dossier `review/1.10` (MP4 + mesures) |
-| **`1.11`** | Pilote éditorial `MarcGeantCourt` (45 s), sous-titres synchronisés, politique d'habillage, rapport éditorial, mesure du mix, fichiers de publication |
+| `1.11` | Pilote éditorial `MarcGeantCourt` (45 s), sous-titres synchronisés, politique d'habillage, rapport éditorial, mesure du mix, fichiers de publication |
 
-Détails : [1.11](docs/versions/1.11.md) · [2.01](docs/versions/2.01.md) · [1.03-test2](docs/versions/1.03-test2.md).
+| **`1.12`** | Base consolidée : plus de dépendances entre vidéos, plans et personnages partagés, validateur audio, sources des affirmations, bulles ancrées, Whisper GPU, banc de mesure, CI GitHub Actions |
+
+Détails : [1.12](docs/versions/1.12.md) · [1.11](docs/versions/1.11.md) · [2.01](docs/versions/2.01.md) · [1.03-test2](docs/versions/1.03-test2.md).
 
 ## Améliorations
+
+Faites dans `1.12` (feuille de route historique P0 → P4, détails dans [docs/versions/1.12.md](docs/versions/1.12.md)) :
+
+- Clone neuf validé ; branche `1.03-test1` supprimée.
+- Dépendances entre vidéos déplacées vers `src/assets/` et `src/shared/` (règle d'imports dans [docs/structure.md](docs/structure.md)) ;
+  `Actor`, personnage articulé, four, kit instancié et `shots.ts` partagés. Non-régression : `npm run compare:stills` (écart 0 sur 40 images).
+- Anciennes commandes `render:*` / `still:*` via `video.mjs` ; validateur : WAV présents et dans leurs créneaux.
+- Bulles de dialogue ancrées sur les têtes (`projectToScreen`, `SpeechBubble`).
+- Affirmations « verify » sourcées ; licence XTTS et consentement : [docs/legal/voix-et-licences.md](docs/legal/voix-et-licences.md).
+- `npm run benchmark`, Whisper sur GPU, `npm run venv:check`, CI `.github/workflows/ci.yml`.
 
 Faites dans `1.11` (suite à la review de `1.10`, détails dans [docs/versions/1.11.md](docs/versions/1.11.md)) :
 

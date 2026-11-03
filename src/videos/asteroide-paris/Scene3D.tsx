@@ -8,6 +8,7 @@ import {CityBase} from '../../assets/city/CityBase';
 import {CameraRig, Stars, useGlowTexture} from '../../shared/three/common';
 import {EarthGlobe, hotspotVector, lonLatUV} from '../../shared/three/EarthGlobe';
 import {Marc} from '../../shared/characters/Marc';
+import {cutsOf, shotAt as shotAtOf, type Shot as ShotOf} from '../../shared/three/shots';
 
 type V3 = [number, number, number];
 type View = {pos: V3; target: V3; fov: number; shake?: number};
@@ -64,7 +65,7 @@ const orbit = (n: number, s: number, u: number): V3 => {
 const SPACE = {from: 7, to: 11};
 
 // ---------- Camera: one shot per beat ----------
-type Shot = {from: number; view: (t: number, k: number) => View};
+type Shot = ShotOf<View>;
 
 export const SHOTS: Shot[] = [
   // Hook: the whole avenue, the tower, and a bright dot already in the sky.
@@ -107,14 +108,9 @@ export const SHOTS: Shot[] = [
     return {pos: [0, 1.6, z + 5.2], target: [0.4, 4.2, z - 30], fov: 58, shake: 0.35 + 0.5 * k};
   }},
 ];
-export const CUTS = SHOTS.slice(1).map((s) => s.from);
+export const CUTS = cutsOf(SHOTS);
 
-const shotAt = (t: number): View => {
-  let i = SHOTS.length - 1;
-  while (i > 0 && t < SHOTS[i].from) i--;
-  const end = i + 1 < SHOTS.length ? SHOTS[i + 1].from : 40;
-  return SHOTS[i].view(t, smooth(SHOTS[i].from, end, t));
-};
+const shotAt = (t: number): View => shotAtOf(SHOTS, t, 40);
 
 const shaken = (v: View, t: number): View => {
   const s = v.shake ?? 0;

@@ -6,6 +6,7 @@ import {Block, seeded} from '../../assets/kit';
 import {Car} from '../../assets/Car';
 import {Bookshelf, FloorLamp, PottedPlant, Rug, Sofa, Television, TvStand, WallClock} from '../../assets/interior';
 import {Marc} from '../../shared/characters/Marc';
+import {cutsOf, shotAt as shotAtOf, type Shot as ShotOf} from '../../shared/three/shots';
 
 type V3 = [number, number, number];
 const V = (x: number, y: number, z: number) => new THREE.Vector3(x, y, z);
@@ -201,7 +202,7 @@ const Rig: React.FC<{pos: THREE.Vector3; target: THREE.Vector3; fov: number}> = 
 };
 
 type View = {pos: THREE.Vector3; target: THREE.Vector3; fov: number};
-type Shot = {from: number; view: (t: number, k: number) => View};
+type Shot = ShotOf<View>;
 export const SHOTS: Shot[] = [
   // Hook: Marc stares at his phone.
   {from: 0, view: (t, k) => ({pos: V(mix(0.4, 0.3, k), 1.62, mix(-1.3, -1.0, k)), target: V(0.05, 1.45, 0.3), fov: 50})},
@@ -230,14 +231,9 @@ export const SHOTS: Shot[] = [
   // Midnight: the door.
   {from: 64.6, view: (t, k) => ({pos: V(mix(-0.7, -1.0, k), 1.6, mix(-0.7, -0.5, k)), target: V(-3, 1.1, 0.2), fov: 50})},
 ];
-export const CUTS = SHOTS.slice(1).map((s) => s.from);
+export const CUTS = cutsOf(SHOTS);
 
-const shotAt = (t: number): View => {
-  let i = SHOTS.length - 1;
-  while (i > 0 && t < SHOTS[i].from) i--;
-  const end = i + 1 < SHOTS.length ? SHOTS[i + 1].from : DURATION;
-  return SHOTS[i].view(t, smooth(SHOTS[i].from, end, t));
-};
+const shotAt = (t: number): View => shotAtOf(SHOTS, t, DURATION);
 
 // ---------- Scene ----------
 export const Scene3D: React.FC<{t: number}> = ({t}) => {

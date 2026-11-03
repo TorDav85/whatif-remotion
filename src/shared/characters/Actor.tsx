@@ -1,5 +1,5 @@
 import React from 'react';
-import {CharacterBlock as Block, CharacterHead} from '../../shared/characters/CharacterParts';
+import {CharacterBlock as Block, CharacterHead} from './CharacterParts';
 
 export type Look = {shirt: string; pants: string; skin: string; hair: string; shoes?: string; hairStyle?: 'court' | 'long' | 'chauve'};
 

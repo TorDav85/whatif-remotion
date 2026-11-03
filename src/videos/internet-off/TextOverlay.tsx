@@ -1,5 +1,8 @@
 import React from 'react';
 import {smooth} from '../../core/animation';
+import {SPEAKERS, shotAt} from './Scene3D';
+import {projectToScreen} from '../../shared/three/projection';
+import {SpeechBubble} from '../../shared/ui/SpeechBubble';
 
 const SERIF = 'Georgia, "Times New Roman", serif';
 const GOLD = '#F6E05E';
@@ -28,11 +31,12 @@ const MICRO_CTA = {start: 38, end: 40, text: 'Double tap si tu as déjà ressent
 const EASTER_EGG = {start: 15, end: 16.5, text: '3 téléphones cachés dans la vidéo.\nLe premier qui donne les 3 timestamps\nen commentaire est épinglé. 📌'};
 const LOOP_CLOSE = {start: 75.3, end: 79.8, text: 'Alors... c\'était combien\nton temps d\'écran ?\nDis-le moi en commentaire.'};
 
-const DIALOGUES: {start: number; end: number; text: string; x: number; y: number}[] = [
-  {start: 41.0, end: 44.7, text: 'Tu t\'appelles comment ?', x: 330, y: 620},
-  {start: 42.4, end: 44.8, text: 'Tu viens d\'où ?', x: 760, y: 760},
-  {start: 45.6, end: 49.7, text: 'Tu fais quoi dans la vie ?', x: 540, y: 600},
-  {start: 50.6, end: 54.7, text: 'T\'es heureux ?', x: 560, y: 640},
+/** Each line is said by a character in the scene: the bubble follows that head on screen. */
+const DIALOGUES: {start: number; end: number; text: string; who: keyof typeof SPEAKERS}[] = [
+  {start: 41.0, end: 44.7, text: "Tu t'appelles comment ?", who: 'benchLeft'},
+  {start: 42.4, end: 44.8, text: "Tu viens d'où ?", who: 'benchRight'},
+  {start: 45.6, end: 49.7, text: 'Tu fais quoi dans la vie ?', who: 'fireMarc'},
+  {start: 50.6, end: 54.7, text: "T'es heureux ?", who: 'laughLeft'},
 ];
 
 const fadeAlpha = (start: number, end: number, t: number, fadeIn = 0.4, fadeOut = 0.4) =>
@@ -136,22 +140,13 @@ export const TextOverlay: React.FC<{t: number}> = ({t}) => (
       );
     })()}
 
-    {/* Dialogue bubbles */}
+    {/* Dialogue bubbles, anchored on the speaker's head (3D → screen) */}
     {DIALOGUES.map((d, i) => {
       const a = fadeAlpha(d.start, d.end, t, 0.3, 0.4);
       if (a <= 0) return null;
-      return (
-        <div key={`d${i}`} style={{
-          position: 'absolute', left: d.x - 120, top: d.y,
-          background: 'rgba(255,255,255,0.92)', borderRadius: 16, padding: '10px 18px',
-          fontFamily: SERIF, fontSize: 20, color: '#1A202C',
-          opacity: a, transform: `translateY(${(1 - a) * 10}px)`,
-          boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
-          maxWidth: 280,
-        }}>
-          « {d.text} »
-        </div>
-      );
+      const head = projectToScreen(shotAt(t), SPEAKERS[d.who], 1080, 1920);
+      if (!head.visible) return null;
+      return <SpeechBubble key={`d${i}`} anchor={head} text={d.text} alpha={a} />;
     })}
   </>
 );

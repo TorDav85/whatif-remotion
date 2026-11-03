@@ -1,5 +1,30 @@
 # Améliorations à effectuer — feuille de route
 
+## `1.12` (03/11/2026) : feuille de route historique traitée
+
+| Point (audit 1.03-test2) | État | Où |
+| --- | --- | --- |
+| P0 — clone neuf, `1.03-test1` | Fait : chaîne complète verte, branche supprimée | docs/versions/1.12.md |
+| P1.4 — dépendances croisées | Fait (sauf versions d'une même histoire, par règle) | docs/structure.md |
+| P1.5 — commandes historiques | Fait : via `video.mjs` | package.json |
+| P1.6 — validateur audio | Fait : WAV présents, durée ≤ créneau, pas de chevauchement | `npm run validate` |
+| P1.7 — reproductibilité | Fait : `npm run compare:stills` | écart 0 sur 40 images |
+| P2.8 — affirmations « verify » | Fait : 12 sources ou calculs | JSON des scénarios |
+| P2.10 — licence XTTS | Documenté : **usage commercial non couvert** | docs/legal/voix-et-licences.md |
+| P3.11 — mesures | Fait : référence du 03/11/2026 | docs/benchmarks/ |
+| P4.13 — CI | Fait : GitHub Actions | .github/workflows/ci.yml |
+| P4.14 — protéger `main` | Reste à appliquer dans les réglages GitHub | docs/versions/1.12.md |
+| 15 — `Actor`, `SHOTS`/`CUTS` partagés | Fait | src/shared/ |
+| 16 — `internet-off` au catalogue | Non fait : sa narration fixe passe par le validateur, pas par `video.mjs` | — |
+| 17 — bulles ancrées | Fait | InternetOffV1 |
+| 18 — cadrage du plan à 72 s | Non revu dans 1.12 | — |
+| 19 — Whisper GPU | Fait | scripts/audio/whisper_device.py |
+| 20 — `.venv` déplacé | Fait : `npm run venv:check` | scripts/project/venv-check.mjs |
+
+Priorité suivante : celles de 1.11 ci-dessous (publier le pilote, mesurer la rétention), puis le choix
+d'une voix compatible avec la monétisation.
+
+
 ## État actuel : `1.11` (03/11/2026)
 
 La priorité n'est plus d'ajouter du détail 3D mais d'améliorer la **rétention** : accroche immédiate,

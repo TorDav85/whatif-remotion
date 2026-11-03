@@ -321,7 +321,7 @@
       },
       "sub": "L'AIR S'ÉCHAPPE VERS LE HAUT",
       "caption": "L'air, lui aussi, s'envole. Il emporte nappes, ballons et pique-niqueurs.",
-      "verify": true
+      "source": "Physique : sans gravité, le gradient de pression hydrostatique (dp/dz = −ρg) n'est plus compensé ; l'air part vers le haut avec une accélération initiale ≈ g, d'où des vents violents."
     },
     {
       "t": 25,
@@ -346,7 +346,7 @@
       },
       "sub": "HAUTEUR EXAGÉRÉE ×200 SUR LE GLOBE",
       "caption": "Vu de l'espace, Paris crache un geyser d'air plus haut que les avions de ligne.",
-      "verify": true
+      "source": "Calcul : à ≈ g pendant 60 s, ½·9,8·60² ≈ 17 km, au-dessus de l'altitude de croisière (≈ 10–12 km) ; ordre de grandeur, l'accélération baisse avec la pression."
     },
     {
       "t": 41.2,

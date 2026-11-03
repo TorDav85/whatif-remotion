@@ -324,7 +324,7 @@
       "sub": "LES CENTRALES S'ARRÊTENT, FAUTE DE PERSONNEL",
       "caption": "Sans personne aux commandes, le réseau électrique lâche.",
       "right": "year",
-      "verify": true
+      "source": "Centrales à arrêt automatique sans surveillance, réseau hors service en quelques heures à quelques jours. Ordre de grandeur d'après A. Weisman, The World Without Us (2007) et le documentaire Life After People (History, 2008) ; durées réelles très variables."
     },
     {
       "t": 12,
@@ -361,7 +361,7 @@
       "sub": "LA PLUIE S'INFILTRE PARTOUT",
       "caption": "Sans entretien, l'eau s'infiltre et les toits s'effondrent.",
       "right": "year",
-      "verify": true
+      "source": "Toitures sans entretien : effondrement en quelques années à quelques décennies selon les matériaux. Ordre de grandeur d'après A. Weisman, The World Without Us (2007) et le documentaire Life After People (History, 2008) ; durées réelles très variables."
     },
     {
       "t": 29,
@@ -374,7 +374,7 @@
       "sub": "L'ACIER ROUILLE SANS PEINTURE",
       "caption": "Rongé par la rouille, le pont finit dans la Seine.",
       "right": "year",
-      "verify": true
+      "source": "Ponts métalliques non repeints : chute en un à quelques siècles. Ordre de grandeur d'après A. Weisman, The World Without Us (2007) et le documentaire Life After People (History, 2008) ; durées réelles très variables."
     },
     {
       "t": 35,
@@ -387,7 +387,7 @@
       "sub": "LA TOUR A PERDU SON SOMMET",
       "caption": "Trois siècles plus tard, Paris est redevenu une forêt.",
       "right": "year",
-      "verify": true
+      "source": "Tour Eiffel et grands ouvrages métalliques : ruine estimée entre 100 et 300 ans. Ordre de grandeur d'après A. Weisman, The World Without Us (2007) et le documentaire Life After People (History, 2008) ; durées réelles très variables."
     }
   ]
 }
