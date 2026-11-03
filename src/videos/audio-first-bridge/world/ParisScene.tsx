@@ -1,3 +1,4 @@
+import {Surroundings201} from '../../../releases/v2-01/Surroundings';
 import React from 'react';
 import {Block, Ball} from '../../../assets/kit';
 import {CameraRig} from '../../../shared/three/common';
@@ -26,6 +27,7 @@ export const ParisScene: React.FC<{timeline: CompiledTimeline; time: number}> = 
         {[-0.9, 0.5, 1.9].map((y) => <Block key={y} p={[side * 11.46, 2.5 + y, z]} s={[0.03, 0.75, 2.9]} c="#668b91" />)}
       </group>)}
     </group>)}
+    <Surroundings201 exclude={{minX: -55, maxX: 55, minZ: -50, maxZ: 50}} />
     <Bridge weakening={weakening} collapse={collapse} />
     {/* A deterministic ring of spray appears only after debris reaches the river. */}
     {collapse > 0.45 && Array.from({length: 18}, (_, i) => {

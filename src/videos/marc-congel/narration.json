@@ -1,0 +1,117 @@
+{
+  "duration": 85,
+  "beats": [
+    {
+      "id": "hook",
+      "slot": [
+        0.2,
+        4.6
+      ],
+      "text": "Et si Marc était enfermé dans un congélateur... de plus en plus froid ?"
+    },
+    {
+      "id": "intro",
+      "slot": [
+        5.0,
+        10.4
+      ],
+      "text": "Julien a encore frappé. Il enferme Marc dans un congélateur géant, réglé à quatre degrés."
+    },
+    {
+      "id": "m0",
+      "slot": [
+        10.8,
+        16.0
+      ],
+      "text": "Quatre degrés : comme dans un frigo. Marc se frotte les bras. Ça va encore."
+    },
+    {
+      "id": "rule",
+      "slot": [
+        16.4,
+        20.6
+      ],
+      "text": "Mais chaque minute, il fait quarante degrés de moins."
+    },
+    {
+      "id": "m1",
+      "slot": [
+        21.0,
+        27.6
+      ],
+      "text": "Après une minute : moins trente-six degrés. Un hiver en Sibérie. Marc grelotte de partout."
+    },
+    {
+      "id": "choc",
+      "slot": [
+        27.9,
+        31.4
+      ],
+      "text": "Julien boit un chocolat chaud."
+    },
+    {
+      "id": "m2",
+      "slot": [
+        32.0,
+        38.0
+      ],
+      "text": "Deux minutes : moins soixante-seize degrés. Ses cheveux gèlent, et un glaçon lui pend au nez."
+    },
+    {
+      "id": "m3",
+      "slot": [
+        39.0,
+        45.4
+      ],
+      "text": "Trois minutes : moins cent seize degrés. Plus froid qu'une nuit sur Mars. Marc est tout blanc."
+    },
+    {
+      "id": "m4",
+      "slot": [
+        46.4,
+        53.0
+      ],
+      "text": "Quatre minutes : moins cent cinquante-six degrés. Il ne bouge plus. Seuls ses yeux clignent encore."
+    },
+    {
+      "id": "selfie",
+      "slot": [
+        53.4,
+        56.8
+      ],
+      "text": "Julien, lui, se prend en photo."
+    },
+    {
+      "id": "m5",
+      "slot": [
+        57.6,
+        63.6
+      ],
+      "text": "Cinq minutes : moins cent quatre-vingt-seize degrés. La température de l'azote liquide."
+    },
+    {
+      "id": "ice",
+      "slot": [
+        64.2,
+        68.6
+      ],
+      "text": "Marc est devenu un glaçon géant."
+    },
+    {
+      "id": "thaw",
+      "slot": [
+        69.4,
+        74.6
+      ],
+      "text": "Julien ouvre la porte... et sort son sèche-cheveux."
+    },
+    {
+      "id": "cta",
+      "slot": [
+        77.4,
+        82.0
+      ],
+      "text": "Abonne-toi. La prochaine fois, Julien a acheté un micro-ondes."
+    }
+  ]
+}

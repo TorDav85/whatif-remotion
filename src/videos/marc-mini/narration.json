@@ -1,0 +1,19 @@
+{
+  "duration": 85,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 3.4], "text": "Et si Marc rétrécissait de moitié... chaque minute ?"},
+    {"id": "intro", "slot": [3.7, 6.1], "text": "Minute zéro : un mètre quatre-vingts."},
+    {"id": "m1", "slot": [7.2, 11.7], "text": "Minute un : quatre-vingt-dix centimètres. La taille d'un enfant de trois ans."},
+    {"id": "m2", "slot": [13.1, 17.7], "text": "Minute deux : quarante-cinq centimètres. Un pigeon le fixe droit dans les yeux."},
+    {"id": "m3", "slot": [19.1, 24.6], "text": "Minute trois : vingt-deux centimètres. Le trottoir devient une falaise."},
+    {"id": "law", "slot": [25.4, 32.8], "text": "Sa taille est divisée par deux, son poids par huit... mais sa force, seulement par quatre."},
+    {"id": "m5", "slot": [34.1, 39.7], "seed": 22206, "text": "Minute cinq : à peine cinq centimètres. Une pièce d'un euro lui sert de bouclier."},
+    {"id": "m7", "slot": [41.0, 46.9], "text": "Minute sept : un centimètre et demi. Une fourmi est aussi grosse qu'un chien."},
+    {"id": "m10", "slot": [48.0, 53.6], "text": "Minute dix : moins de deux millimètres. Chaque grain de sable est un rocher."},
+    {"id": "m13", "slot": [55.0, 60.7], "text": "Minute treize : deux dixièmes de millimètre. Un cheveu ? Un tronc d'arbre."},
+    {"id": "m20", "slot": [62.0, 67.7], "seed": 22110, "text": "Minute vingt : moins de deux microns. Une bactérie est aussi grande que lui."},
+    {"id": "m23", "slot": [69.0, 74.7], "text": "Minute vingt-trois : deux cents nanomètres. Plus petit que la lumière : il ne voit plus rien."},
+    {"id": "atom", "slot": [75.6, 80.3], "text": "Minute trente-trois : Marc a la taille d'un atome."},
+    {"id": "cta", "slot": [80.8, 84.4], "text": "Abonne-toi pour la prochaine expérience."}
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-mini/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Marc rétrécissait de moitié... chaque minute ?",
+      "start": 0.2,
+      "duration": 2.9778,
+      "end": 3.1778,
+      "speed": 1.0,
+      "seed": 22000,
+      "audio": "marc-mini/hook.wav",
+      "sha256": "584f37466e2a2ad4f80e5a069620bae851be32af1e7cb89231ac0ca664194283"
+    },
+    {
+      "id": "intro",
+      "text": "Minute zéro : un mètre quatre-vingts.",
+      "start": 3.7,
+      "duration": 2.3311,
+      "end": 6.0311,
+      "speed": 1.0,
+      "seed": 22001,
+      "audio": "marc-mini/intro.wav",
+      "sha256": "f3febec247f5436e63d724251ea8528ff9cc8db64f545198f8a4fdccf7488182"
+    },
+    {
+      "id": "m1",
+      "text": "Minute un : quatre-vingt-dix centimètres. La taille d'un enfant de trois ans.",
+      "start": 7.2,
+      "duration": 4.5074,
+      "end": 11.7074,
+      "speed": 1.0925,
+      "seed": 22002,
+      "audio": "marc-mini/m1.wav",
+      "sha256": "2509356c32b3fe5ccee78f7d8ab0eb8c6a564316c87bd1d57808168ab3ad3217"
+    },
+    {
+      "id": "m2",
+      "text": "Minute deux : quarante-cinq centimètres. Un pigeon le fixe droit dans les yeux.",
+      "start": 13.1,
+      "duration": 4.6155,
+      "end": 17.7155,
+      "speed": 1.0663,
+      "seed": 22003,
+      "audio": "marc-mini/m2.wav",
+      "sha256": "e0769e3bbd52e02625d127487fc0bf3202391176aafe51332e90e3bf26cbae20"
+    },
+    {
+      "id": "m3",
+      "text": "Minute trois : vingt-deux centimètres. Le trottoir devient une falaise.",
+      "start": 19.1,
+      "duration": 4.359,
+      "end": 23.459,
+      "speed": 1.0,
+      "seed": 22004,
+      "audio": "marc-mini/m3.wav",
+      "sha256": "72b9a7954d7239cfeb6b03df4d37bc89185484cc5afc8dd4318d6c1d76cef15e"
+    },
+    {
+      "id": "law",
+      "text": "Sa taille est divisée par deux, son poids par huit... mais sa force, seulement par quatre.",
+      "start": 25.4,
+      "duration": 6.0881,
+      "end": 31.4881,
+      "speed": 1.0,
+      "seed": 22005,
+      "audio": "marc-mini/law.wav",
+      "sha256": "eb5b2aa4fbec15a0db6d4b02b2b651aa321b4a0fa334cbcc0aa796efb806e6da"
+    },
+    {
+      "id": "m5",
+      "text": "Minute cinq : à peine cinq centimètres. Une pièce d'un euro lui sert de bouclier.",
+      "start": 34.1,
+      "duration": 5.6087,
+      "end": 39.7087,
+      "speed": 1.0568,
+      "seed": 22206,
+      "audio": "marc-mini/m5.wav",
+      "sha256": "140a8c8ef33b63dcfed68cd04fcb9027aa922d01e02ab6829baa1fceb6f085d9"
+    },
+    {
+      "id": "m7",
+      "text": "Minute sept : un centimètre et demi. Une fourmi est aussi grosse qu'un chien.",
+      "start": 41.0,
+      "duration": 5.189,
+      "end": 46.189,
+      "speed": 1.0,
+      "seed": 22007,
+      "audio": "marc-mini/m7.wav",
+      "sha256": "d7ebc777eae8906b450626f1cffbb80a0ec802b29046c852b26a970b97f91938"
+    },
+    {
+      "id": "m10",
+      "text": "Minute dix : moins de deux millimètres. Chaque grain de sable est un rocher.",
+      "start": 48.0,
+      "duration": 5.5526,
+      "end": 53.5526,
+      "speed": 1.0,
+      "seed": 22008,
+      "audio": "marc-mini/m10.wav",
+      "sha256": "36cce30cfe0dd39c289ae5d14d25e24f8d7ab9b0a789eeb8ff67ab83a71a73df"
+    },
+    {
+      "id": "m13",
+      "text": "Minute treize : deux dixièmes de millimètre. Un cheveu ? Un tronc d'arbre.",
+      "start": 55.0,
+      "duration": 5.6657,
+      "end": 60.6657,
+      "speed": 1.0,
+      "seed": 22009,
+      "audio": "marc-mini/m13.wav",
+      "sha256": "5b206bf8457859c2e9d82009d0a404eea2eb344406446b8103f3a8f9b5e1bdb2"
+    },
+    {
+      "id": "m20",
+      "text": "Minute vingt : moins de deux microns. Une bactérie est aussi grande que lui.",
+      "start": 62.0,
+      "duration": 4.4068,
+      "end": 66.4068,
+      "speed": 1.0,
+      "seed": 22110,
+      "audio": "marc-mini/m20.wav",
+      "sha256": "946e16d8c9fc86bacfd9efb5efa9e0eae37989820889f35dc01162eb81b2c83f"
+    },
+    {
+      "id": "m23",
+      "text": "Minute vingt-trois : deux cents nanomètres. Plus petit que la lumière : il ne voit plus rien.",
+      "start": 69.0,
+      "duration": 5.716,
+      "end": 74.716,
+      "speed": 1.0699,
+      "seed": 22011,
+      "audio": "marc-mini/m23.wav",
+      "sha256": "a984f8f670411b579c37a5fb23175e57cb978118058b9017eecaa2187315ab44"
+    },
+    {
+      "id": "atom",
+      "text": "Minute trente-trois : Marc a la taille d'un atome.",
+      "start": 75.6,
+      "duration": 3.1554,
+      "end": 78.7554,
+      "speed": 1.0,
+      "seed": 22012,
+      "audio": "marc-mini/atom.wav",
+      "sha256": "cfe20d8e899bb40327398d9cf1e88107dcb274f1f71db74b747dfc3a631a8cf4"
+    },
+    {
+      "id": "cta",
+      "text": "Abonne-toi pour la prochaine expérience.",
+      "start": 80.8,
+      "duration": 1.8045,
+      "end": 82.6045,
+      "speed": 1.0,
+      "seed": 22013,
+      "audio": "marc-mini/cta.wav",
+      "sha256": "3a86772c83286697fa50495c3443415aeef21f7ab6fcd508a9656ffe88518ba5"
+    }
+  ]
+}

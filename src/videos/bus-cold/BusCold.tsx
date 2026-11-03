@@ -1,8 +1,10 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useMemo} from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
 import * as THREE from 'three';
 import {Block, Ball, Cyl} from '../../assets/kit';
+import {CharacterBlock, CharacterHead, CHARACTER_BOX} from '../../shared/characters/CharacterParts';
 import {Bus} from '../../assets/Car';
 import {BusShelter, StreetLamp} from '../../assets/city/Street';
 import {CameraRig} from '../../shared/three/common';
@@ -24,7 +26,7 @@ const local=(point:V3,origin:V3,yaw:number):V3=>{
 
 const Bone:React.FC<{a:V3;b:V3;color:string;width?:number}>=({a,b,color,width=.13})=>{
   const aa=new THREE.Vector3(...a),bb=new THREE.Vector3(...b),d=bb.clone().sub(aa);
-  return <mesh position={aa.add(bb).multiplyScalar(.5)} quaternion={new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),d.clone().normalize())} scale={[width,d.length(),width]}><boxGeometry/><meshStandardMaterial color={color} roughness={.85}/></mesh>;
+  return <mesh position={aa.add(bb).multiplyScalar(.5)} quaternion={new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),d.clone().normalize())} scale={[width,d.length(),width]} geometry={CHARACTER_BOX}><meshStandardMaterial color={color} roughness={.85}/></mesh>;
 };
 
 const Sign:React.FC<{text:string;p:V3;w:number;h:number;bg?:string;ink?:string;size?:number}>=({text,p,w,h,bg=TEAL,ink=CREAM,size=80})=>{
@@ -75,26 +77,17 @@ const Actor:React.FC<{kind:'maya'|'elder'|'driver';t:number;sit?:boolean;walk?:n
     {[-1,1].map(s=>{
       const step=Math.sin(t*6.5+s*Math.PI/2)*walk;
       const h:V3=[s*.13,hip,0],k:V3=sit?[s*.13,hip,-.36]:[s*.13,lerp(.49,.32,stumble),-step*.13],f:V3=sit?[s*.13,.10,-.38]:[s*.13,.07+Math.max(0,step)*.06,-step*.28];
-      return <group key={s}><Bone a={h} b={k} color="#35454e" width={.17}/><Bone a={k} b={f} color="#35454e" width={.15}/><Block p={[f[0],f[1]-.015,f[2]-.045]} s={[.19,.11,.29]} c={elder?'#54413c':'#28383f'}/></group>;
+      return <group key={s}><Bone a={h} b={k} color="#35454e" width={.17}/><Bone a={k} b={f} color="#35454e" width={.15}/><CharacterBlock p={[f[0],f[1]-.015,f[2]-.045]} s={[.19,.11,.29]} c={elder?'#54413c':'#28383f'}/></group>;
     })}
-    <Block p={[0,hip+.31,0]} s={[.47,.62,.29]} c={cloth}/>
-    <Block p={[0,hip+.31,-.153]} s={[lerp(.20,.025,coat),.5,.012]} c={maya?'#e7d9ba':'#c9bdac'}/>
-    {[-.12,.12].map(x=><Block key={x} p={[x,hip+.46,-.16]} s={[.09,.19,.025]} r={[0,0,x*2]} c={maya?'#294f5b':elder?'#625b6f':'#263d52'}/>)}
-    {[-.15,.15].map(x=><Block key={x} p={[x,hip+.16,-.158]} s={[.12,.018,.016]} c="#b2b1a2"/>)}
+    <CharacterBlock p={[0,hip+.31,0]} s={[.47,.62,.29]} c={cloth}/>
+    <CharacterBlock p={[0,hip+.31,-.153]} s={[lerp(.20,.025,coat),.5,.012]} c={maya?'#e7d9ba':'#c9bdac'}/>
+    {[-.12,.12].map(x=><CharacterBlock key={x} p={[x,hip+.46,-.16]} s={[.09,.19,.025]} r={[0,0,x*2]} c={maya?'#294f5b':elder?'#625b6f':'#263d52'}/>)}
+    {[-.15,.15].map(x=><CharacterBlock key={x} p={[x,hip+.16,-.158]} s={[.12,.018,.016]} c="#b2b1a2"/>)}
     {[.15,.30,.45].map(y=><Ball key={y} p={[.025,hip+y,-.165]} rad={.012} c="#d4b67b"/>)}
-    <Block p={[0,hip+.67,0]} s={[.15,.14,.15]} c={skin}/>
+    <CharacterBlock p={[0,hip+.67,0]} s={[.15,.14,.15]} c={skin}/>
     <group position={[0,hip+.83,-stumble*.07]} rotation={[elder?.08:0,0,stumble*.08]}>
-      <Block p={[0,.015,0]} s={[.29,.33,.28]} c={skin}/>
-      <Block p={[0,-.01,-.17]} s={[.065,.075,.065]} c={maya?'#9e684a':'#cc9b7b'}/>
-      {[-1,1].map(s=><group key={s}>
-        <Block p={[s*.075,.065,-.146]} s={[.050,.041,.012]} c="#f5e8cf"/>
-        <Block p={[s*.075,.065,-.155]} s={[.025,.032,.008]} c="#24373a"/>
-        <Block p={[s*.075,.12,-.15]} s={[.065,.014,.012]} r={[0,0,s*(happy?-.12:stumble?.25:.02)]} c={elder?'#a9a39a':'#372e29'}/>
-        <Ball p={[s*.15,0,0]} rad={.038} c={skin}/>
-      </group>)}
-      <Block p={[0,-.067,-.145]} s={[.07,.014,.01]} c="#855a4b"/>
-      {happy&&[-1,1].map(s=><Block key={s} p={[s*.035,-.057,-.146]} s={[.012,.025,.01]} c="#855a4b"/>)}
-      {maya?<><Block p={[0,.19,.02]} s={[.31,.085,.29]} c="#352c29"/><Block p={[0,.08,.12]} s={[.31,.22,.08]} c="#352c29"/><Ball p={[0,.23,.17]} rad={.115} c="#352c29"/></>:elder?<><Block p={[0,.19,.01]} s={[.32,.075,.29]} c="#8b7962"/><Block p={[0,.15,-.13]} s={[.34,.025,.15]} c="#6f604f"/>{[-1,1].map(s=><Block key={s} p={[s*.145,.06,.02]} s={[.025,.15,.19]} c="#b7b2a9"/>)}</>:<Block p={[0,.19,.01]} s={[.31,.09,.29]} c="#393b37"/>}
+      <group position={[0,.015,0]}><CharacterHead skin={skin} hair={maya?'#352c29':elder?'#b7b2a9':'#393b37'} hairStyle={maya?'chignon':elder?'chauve':'court'} smile={happy?0.8:0} worried={stumble} elderly={elder}/></group>
+      {elder&&<><CharacterBlock p={[0,.19,.01]} s={[.32,.075,.29]} c="#8b7962"/><CharacterBlock p={[0,.15,-.13]} s={[.34,.025,.15]} c="#6f604f"/></>}
     </group>
     {arm(-1,leftHand)}{arm(1,rightHand)}
     {maya&&scarf>0&&<group position={[0,hip,0]}><NeckScarf amount={scarf} t={t}/></group>}
@@ -144,6 +137,7 @@ const BusClose:React.FC<{t:number;open:number;frost:number}>=({t,open,frost})=>{
 
 const Environment:React.FC<{t:number;cold:number;ice:number}>=({t,cold,ice})=><>
   <color attach="background" args={[tint('#d6ddd2','#acbfcd',cold)]}/>
+  <Surroundings201 snow={ice * .5} exclude={{minX: -45, maxX: 45, minZ: -16, maxZ: 16}} />
   <fog attach="fog" args={[tint('#d6ddd2','#acbfcd',cold),24,65]}/>
   <hemisphereLight args={[tint('#fff2cf','#dcefff',cold),'#687b7c',1.8]}/>
   <directionalLight position={[-4,9,6]} color={tint('#ffdfad','#e2f1ff',cold)} intensity={2.1}/>

@@ -1,9 +1,11 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useMemo} from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
 import * as THREE from 'three';
 import {Block, Ball, Cyl} from '../../assets/kit';
 import {Person} from '../../assets/Person';
+import {CharacterBlock, CharacterHead} from '../../shared/characters/CharacterParts';
 import {CafeTerrace} from '../../assets/city/CityLife';
 import {Planter} from '../../assets/city/Park';
 import {CameraRig} from '../../shared/three/common';
@@ -93,44 +95,33 @@ const Marc: React.FC<{t:number;stand?:number;inside?:boolean}> = ({t,stand=0,ins
   const hold=inside?1:0;
   return <group position={[shiver,0,0]} rotation={[0,Math.sin(t*1.2)*0.025*(1-cold),0]}>
     {[-1,1].map(s=><group key={s} position={[s*0.13,hip,0]} rotation={[mix(Math.PI/2,0,stand),0,0]}>
-      <Block p={[0,-0.20,0]} s={[0.18,0.42,0.20]} c="#40515b"/>
+      <CharacterBlock p={[0,-0.20,0]} s={[0.18,0.42,0.20]} c="#40515b"/>
       <group position={[0,-0.40,0]} rotation={[-mix(Math.PI/2,0,stand),0,0]}>
-        <Block p={[0,-0.20,0]} s={[0.16,0.42,0.18]} c="#40515b"/>
-        <Block p={[0,-0.40,-0.055]} s={[0.18,0.11,0.31]} c="#644536"/>
+        <CharacterBlock p={[0,-0.20,0]} s={[0.16,0.42,0.18]} c="#40515b"/>
+        <CharacterBlock p={[0,-0.40,-0.055]} s={[0.18,0.11,0.31]} c="#644536"/>
       </group>
     </group>)}
     <group position={[0,hip,0]}>
-      <Block p={[0,0.32,0]} s={[0.49,0.64,0.29]} c={torsoColor}/>
-      {jacket>0.4&&[-0.11,0.11].map(x=><Block key={x} p={[x,0.47,-0.155]} s={[0.1,0.24,0.025]} r={[0,0,x*2]} c="#294a52"/>)}
-      <Block p={[0,0.68,0]} s={[0.16,0.18,0.15]} c="#e6ae84"/>
+      <CharacterBlock p={[0,0.32,0]} s={[0.49,0.64,0.29]} c={torsoColor}/>
+      {jacket>0.4&&[-0.11,0.11].map(x=><CharacterBlock key={x} p={[x,0.47,-0.155]} s={[0.1,0.24,0.025]} r={[0,0,x*2]} c="#294a52"/>)}
+      <CharacterBlock p={[0,0.68,0]} s={[0.16,0.18,0.15]} c="#e6ae84"/>
       <group position={[0,0.82+chill*0.015,0]} rotation={[cold*0.10,inside?-0.10:0,0]}>
-        <Block p={[0,0.04,0]} s={[0.30,0.34,0.29]} c="#efbd96"/>
-        <Block p={[0,0.235,0.015]} s={[0.32,0.10,0.30]} c="#583e30"/>
-        <Block p={[-0.12,0.16,0]} s={[0.065,0.14,0.28]} c="#583e30"/>
-        <Block p={[0,-0.005,-0.168]} s={[0.07,0.07,0.065]} c="#d99570"/>
-        {[-1,1].map(s=><group key={s}>
-          <Block p={[s*0.081,0.078,-0.151]} s={[0.041,0.046,0.016]} c="#2a3431"/>
-          <Block p={[s*0.081,0.091,-0.161]} s={[0.011,0.012,0.005]} c="#fff5e4"/>
-          <Block p={[s*0.081,0.14,-0.152]} s={[0.065,0.015,0.015]} r={[0,0,s*(inside?-0.12:cold?0.2:-0.12)]} c="#583e30"/>
-          <Ball p={[s*0.16,0.015,0]} rad={0.044} c="#e6ae84"/>
-        </group>)}
-        <Block p={[0,-0.067,-0.153]} s={[inside?0.08:0.06,0.014,0.012]} c="#985b48"/>
-        {inside&&[-1,1].map(s=><Block key={s} p={[s*0.04,-0.055,-0.154]} s={[0.015,0.03,0.012]} c="#985b48"/>)}
+        <group position={[0,.04,0]}><CharacterHead skin="#efbd96" hair="#583e30" smile={inside?0.8:0} worried={inside?0:cold} /></group>
         {hasHat&&<group position={[0,0.16,0]}><Hat/></group>}
       </group>
       {[-1,1].map(s=><group key={s} position={[s*0.29,0.56+chill*0.035,0]} rotation={[inside?1.1:order&&s===-1?2.0:chill*0.35,0,s*(inside?-0.45:chill*-0.35)]}>
-        <Block p={[0,-0.17,0]} s={[0.15,mix(0.23,0.37,Math.max(chill,jacket)),0.16]} c={torsoColor}/>
+        <CharacterBlock p={[0,-0.17,0]} s={[0.15,mix(0.23,0.37,Math.max(chill,jacket)),0.16]} c={torsoColor}/>
         <group position={[0,-0.31,0]} rotation={[(inside?1.0:chill*1.1),0,0]}>
-          <Block p={[0,-0.12,0]} s={[0.13,0.24,0.14]} c={jacket>0.5?torsoColor:'#efbd96'}/>
+          <CharacterBlock p={[0,-0.12,0]} s={[0.13,0.24,0.14]} c={jacket>0.5?torsoColor:'#efbd96'}/>
           <Ball p={[0,-0.27,0]} rad={0.083} c="#efbd96" s={[0.8,1,0.85]}/>
         </group>
       </group>)}
       {cold>0&&!inside&&<group position={[0,0.65,0]}><Scarf t={t}/></group>}
       {blanket>0&&<group scale={[1,blanket,1]}>
-        <Block p={[0,0.19,-0.19]} s={[0.66,0.59,0.075]} c="#d7b67e"/>
-        <Block p={[0,-0.14,-0.29]} s={[0.66,0.12,0.5]} c="#d7b67e"/>
-        {[-0.24,-0.12,0,0.12,0.24].map(x=><Block key={x} p={[x,0.19,-0.232]} s={[0.027,0.59,0.009]} c="#f4dba8"/>)}
-        {[0.0,0.16,0.32].map(y=><Block key={y} p={[0,y,-0.239]} s={[0.67,0.018,0.009]} c="#ad8254"/>)}
+        <CharacterBlock p={[0,0.19,-0.19]} s={[0.66,0.59,0.075]} c="#d7b67e"/>
+        <CharacterBlock p={[0,-0.14,-0.29]} s={[0.66,0.12,0.5]} c="#d7b67e"/>
+        {[-0.24,-0.12,0,0.12,0.24].map(x=><CharacterBlock key={x} p={[x,0.19,-0.232]} s={[0.027,0.59,0.009]} c="#f4dba8"/>)}
+        {[0.0,0.16,0.32].map(y=><CharacterBlock key={y} p={[0,y,-0.239]} s={[0.67,0.018,0.009]} c="#ad8254"/>)}
       </group>}
       {hold>0&&<Mug p={[0,0.42,-0.53]} t={t}/>}
     </group>
@@ -221,6 +212,7 @@ const Scene: React.FC<{t:number}> = ({t}) => {
   const offer=prog('offer',t,0.8,0.5);
   return <>
     <color attach="background" args={[color('#f6dfb9','#b2c8d2',cold)]}/>
+    <Surroundings201 snow={cold * .35} exclude={{minX: -43, maxX: 43, minZ: -35, maxZ: 35}} />
     <fog attach="fog" args={[color('#f6dfb9','#b2c8d2',cold),18,45]}/>
     <CameraRig position={cam} target={target} fov={fov}/>
     <hemisphereLight args={[color('#fff1cd','#d9efff',cold),'#7c8277',1.8]}/>

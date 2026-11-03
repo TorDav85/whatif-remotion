@@ -1,3 +1,4 @@
+import {MapMaterial201} from '../../releases/v2-01/MapMaterial';
 import React, {useMemo} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
@@ -65,7 +66,7 @@ export const Country: React.FC<{from: number}> = ({from}) => {
     <CameraRig position={[0, -2.2 * k, distance]} target={[0, -2.2 * k, 0]} fov={42} />
     <mesh position={[0, 0, -0.05]}><planeGeometry args={[200, 160]} /><meshBasicMaterial color="#102e42" /></mesh>
     {shapes.map((s) => <group key={s.id}>
-      <mesh geometry={s.geometry}><meshBasicMaterial color={s.france ? '#5a8169' : ['#263f3d', '#2c4742', '#314b42', '#253e3a'][s.tone]} /></mesh>
+      <mesh geometry={s.geometry}><MapMaterial201 color={s.france ? '#5a8169' : ['#263f3d', '#2c4742', '#314b42', '#253e3a'][s.tone]} /></mesh>
       <lineLoop geometry={s.edge}><lineBasicMaterial color={s.france ? '#d8bd83' : '#72918c'} transparent opacity={s.france ? 0.95 : 0.35} /></lineLoop>
     </group>)}
     {/* Quelques axes convergent vers Paris ; ils restent secondaires à la géographie. */}

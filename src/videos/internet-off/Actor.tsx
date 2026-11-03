@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block} from '../../assets/kit';
+import {CharacterBlock as Block, CharacterHead} from '../../shared/characters/CharacterParts';
 
 export type Look = {shirt: string; pants: string; skin: string; hair: string; shoes?: string; hairStyle?: 'court' | 'long' | 'chauve'};
 
@@ -47,8 +47,11 @@ export const Actor: React.FC<ActorProps> = ({
 
   const leg = (side: number, s: number) => (
     <group key={side} position={[side * 0.1, hip, 0]} rotation={[legPitch + s, 0, side * legRoll]}>
-      <Block p={[0, -0.42, 0]} s={[0.15, 0.84, 0.17]} c={look.pants} />
-      <Block p={[0, -0.86, -0.05]} s={[0.16, 0.1, 0.27]} c={shoes} />
+      <Block p={[0, -0.21, 0]} s={[0.17, 0.42, 0.2]} c={look.pants} />
+      <group position={[0, -0.42, 0]} rotation={[sit ? -Math.PI / 2 : 0, 0, 0]}>
+        <Block p={[0, -0.2, 0]} s={[0.145, 0.4, 0.17]} c={look.pants} />
+        <Block p={[0, -0.425, -0.05]} s={[0.18, 0.11, 0.29]} c={shoes} />
+      </group>
     </group>
   );
 
@@ -76,21 +79,7 @@ export const Actor: React.FC<ActorProps> = ({
         {arm(-1, pitchL, armL[1])}
         {arm(1, pitchR, armR[1])}
         <group position={[0, 0.8, 0]} rotation={[headPitch, headYaw, 0]}>
-          <Block p={[0, 0, 0]} s={[0.25, 0.27, 0.25]} c={look.skin} e={glow > 0 ? '#5a9ae0' : undefined} ei={glow * 0.55} />
-          {[-1, 1].map((s) => (
-            <React.Fragment key={s}>
-              <Block p={[s * 0.055, 0.025, -0.127]} s={[0.04, laugh > 0.3 ? 0.015 : 0.045, 0.01]} c="#20160f" />
-              <Block p={[s * 0.058, 0.075 + grin * 0.01, -0.127]} s={[0.06, 0.016, 0.01]} c={look.hair} />
-              {grin > 0.3 && <Block p={[s * 0.085, -0.035, -0.126]} s={[0.04, 0.025, 0.008]} c="#e3907f" o={grin * 0.7} />}
-            </React.Fragment>
-          ))}
-          <Block p={[0, -0.065 + grin * 0.005, -0.127]} s={[0.07 + grin * 0.04, 0.016 + laugh * 0.04, 0.01]} c={MOUTH} />
-          {grin > 0.3 && [-1, 1].map((s) => (
-            <Block key={`c${s}`} p={[s * (0.05 + grin * 0.012), -0.055, -0.127]} s={[0.018, 0.018, 0.01]} c={MOUTH} />
-          ))}
-          {look.hairStyle !== 'chauve' && <Block p={[0, 0.15, 0.01]} s={[0.27, 0.07, 0.27]} c={look.hair} />}
-          {look.hairStyle !== 'chauve' && <Block p={[0, 0.06, 0.11]} s={[0.262, 0.16, 0.06]} c={look.hair} />}
-          {look.hairStyle === 'long' && <Block p={[0, -0.08, 0.11]} s={[0.28, 0.4, 0.08]} c={look.hair} />}
+          <group scale={0.85}><CharacterHead skin={look.skin} hair={look.hair} hairStyle={look.hairStyle} smile={smile} glow={glow} /></group>
         </group>
       </group>
     </group>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expert assets What if"
+  short_description: "Assets 3D détaillés et déterministes pour Remotion"
+  default_prompt: "Utilise $whatif-asset-expert pour améliorer cet asset 3D et vérifier son rendu dans la scène."

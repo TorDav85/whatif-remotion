@@ -1,0 +1,18 @@
+{
+  "duration": 84,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 4.6], "text": "Et si Marc voyait une deuxième lune apparaître dans le ciel ?"},
+    {"id": "intro", "slot": [5.0, 10.4], "text": "Minuit. Marc sort les poubelles. Il lève les yeux... et compte deux lunes."},
+    {"id": "julien", "slot": [10.8, 14.8], "text": "Julien, lui, pense que Marc a trop bu."},
+    {"id": "rule", "slot": [15.2, 21.0], "text": "Même taille que la nôtre. Même distance : trois cent quatre-vingt-quatre mille kilomètres."},
+    {"id": "light", "slot": [21.4, 27.4], "text": "Première conséquence : la nuit est deux fois plus claire. Marc lit son journal sans lumière.", "seed": 26202},
+    {"id": "dogs", "slot": [27.8, 31.8], "text": "Tous les chiens du quartier hurlent... aux deux lunes."},
+    {"id": "tide", "slot": [32.4, 39.4], "text": "Le lendemain, la mer monte deux fois plus haut. À Saint-Malo, la marée atteint vingt-six mètres."},
+    {"id": "eclipse", "slot": [40.0, 46.4], "text": "Jour trois. Les deux lunes passent devant le Soleil. Deux éclipses... le même jour.", "seed": 26101},
+    {"id": "pull", "slot": [47.0, 53.2], "text": "Mais deux lunes si proches s'attirent. Chaque nuit, elles se rapprochent un peu plus."},
+    {"id": "crash", "slot": [54.0, 59.4], "text": "Jour vingt. Elles se frôlent... et la deuxième lune se brise en mille morceaux."},
+    {"id": "rings", "slot": [60.2, 66.4], "text": "Les débris s'étalent autour de la Terre. Le ciel a maintenant des anneaux, comme Saturne."},
+    {"id": "punch", "slot": [67.2, 71.6], "text": "Julien lève les yeux. Bon... Marc n'avait pas trop bu.", "seed": 26101},
+    {"id": "cta", "slot": [74.4, 79.0], "text": "Abonne-toi. Et toi : deux lunes, ou des anneaux ?"}
+  ]
+}

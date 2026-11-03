@@ -1,0 +1,114 @@
+{
+  "duration": 79,
+  "beats": [
+    {
+      "id": "recap",
+      "slot": [
+        0.2,
+        4.6
+      ],
+      "text": "Marc touche dix mille euros par mois. Envoyés par un inconnu : Orion.",
+      "seed": 31393
+    },
+    {
+      "id": "open",
+      "slot": [
+        5.0,
+        10.2
+      ],
+      "text": "À minuit, on sonne. Marc ouvre la porte... Personne. Juste une enveloppe noire.",
+      "seed": 31004
+    },
+    {
+      "id": "card",
+      "slot": [
+        10.5,
+        15.8
+      ],
+      "text": "Dedans, une carte : Orion, niveau un. Et un mot : descendez."
+    },
+    {
+      "id": "car",
+      "slot": [
+        16.1,
+        21.6
+      ],
+      "text": "En bas, la voiture noire. La portière s'ouvre toute seule. Marc monte."
+    },
+    {
+      "id": "drive",
+      "slot": [
+        22.0,
+        28.4
+      ],
+      "text": "Le chauffeur ne dit pas un mot. Lunettes de soleil, en pleine nuit. Ils traversent toute la ville."
+    },
+    {
+      "id": "tower",
+      "slot": [
+        28.8,
+        34.4
+      ],
+      "text": "Une tour de bureaux, vide. Dans l'ascenseur, un seul bouton : moins douze."
+    },
+    {
+      "id": "lift",
+      "slot": [
+        34.8,
+        40.0
+      ],
+      "text": "Marc appuie. Les portes se ferment. Ça descend... longtemps."
+    },
+    {
+      "id": "room",
+      "slot": [
+        40.6,
+        46.6
+      ],
+      "text": "Les portes s'ouvrent sur une salle immense. Des centaines d'écrans. Et sur chaque écran... Marc.",
+      "seed": 31295
+    },
+    {
+      "id": "watch",
+      "slot": [
+        47.0,
+        53.0
+      ],
+      "text": "Marc qui boit. Marc dans un four. Marc congelé. Depuis un an, quelqu'un le filme."
+    },
+    {
+      "id": "law",
+      "slot": [
+        53.4,
+        59.6
+      ],
+      "text": "Au passage : en France, filmer quelqu'un chez lui sans son accord, c'est jusqu'à un an de prison.",
+      "seed": 31003
+    },
+    {
+      "id": "chair",
+      "slot": [
+        60.2,
+        65.8
+      ],
+      "text": "Au fond de la salle, un grand fauteuil se retourne... lentement."
+    },
+    {
+      "id": "voice",
+      "slot": [
+        66.2,
+        70.6
+      ],
+      "text": "Bonsoir, Marc. Ça faisait longtemps."
+    },
+    {
+      "id": "cta",
+      "slot": [
+        71.2,
+        77.0
+      ],
+      "text": "Qui se cache derrière Orion ? Écris ton idée en commentaire. Réponse dans la partie trois.",
+      "seed": 31003
+    }
+  ]
+}

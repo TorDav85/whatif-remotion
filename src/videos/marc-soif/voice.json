@@ -1,0 +1,160 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-soif/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Marc ne buvait plus une goutte d'eau... pendant une semaine ?",
+      "start": 0.2,
+      "duration": 3.8152,
+      "end": 4.0152,
+      "speed": 1.1363,
+      "seed": 22000,
+      "audio": "marc-soif/hook.wav",
+      "sha256": "5e0bc5c9ebe02ea9e47b519f2f201a5923ec6b23bca0e5d08d0d128d04711cb9"
+    },
+    {
+      "id": "j1",
+      "text": "Premier jour. Marc repousse son verre d'eau. Rien de grave... pour l'instant.",
+      "start": 4.4,
+      "duration": 4.6004,
+      "end": 9.0004,
+      "speed": 1.277,
+      "seed": 22001,
+      "audio": "marc-soif/j1.wav",
+      "sha256": "bf096072782b76280335a8f50f2daa5d5bf2abdb5ba56d41021269897b51e105"
+    },
+    {
+      "id": "body",
+      "text": "Son corps est fait à soixante pour cent d'eau. Il en perd deux litres et demi par jour.",
+      "start": 9.4,
+      "duration": 3.9928,
+      "end": 13.3927,
+      "speed": 1.0,
+      "seed": 22002,
+      "audio": "marc-soif/body.wav",
+      "sha256": "0812268aaf59ecd80e2d393f229bded1776a0640ca80fa9d5d8bfd6f92249822"
+    },
+    {
+      "id": "loss",
+      "text": "En respirant, en transpirant... et aux toilettes.",
+      "start": 15.6,
+      "duration": 3.4255,
+      "end": 19.0255,
+      "speed": 1.0,
+      "seed": 22003,
+      "audio": "marc-soif/loss.wav",
+      "sha256": "2d4b0f4d36f5cd55fe90a9222811fd4b24a5992f1a4d20c689a4ed80f70b262e"
+    },
+    {
+      "id": "j2",
+      "text": "Jour deux. La soif devient obsédante. Ses reins passent en mode économie.",
+      "start": 20.6,
+      "duration": 4.5862,
+      "end": 25.1863,
+      "speed": 1.0,
+      "seed": 22004,
+      "audio": "marc-soif/j2.wav",
+      "sha256": "71e2ab0a71de464a7d93dd9e0ef084eb2f41224c3e59cc0be45ee9d0eb82ac38"
+    },
+    {
+      "id": "blood",
+      "text": "Son urine devient foncée. Son sang s'épaissit, et son cœur pompe plus fort.",
+      "start": 26.2,
+      "duration": 5.4108,
+      "end": 31.6107,
+      "speed": 1.1382,
+      "seed": 22005,
+      "audio": "marc-soif/blood.wav",
+      "sha256": "eb2e9dc32e9da37b9b4ee7b554221cc58bfdb3bf78bbd17eee6eb4c466815ca4"
+    },
+    {
+      "id": "j3",
+      "text": "Jour trois. Son cerveau se rétracte légèrement. Maux de tête, vertiges.",
+      "start": 32.6,
+      "duration": 5.2065,
+      "end": 37.8065,
+      "speed": 1.05,
+      "seed": 22006,
+      "audio": "marc-soif/j3.wav",
+      "sha256": "aad6adda6c1ec18fdf79458f2dd2b999d2e55896feee8027597791af5cff4a43"
+    },
+    {
+      "id": "skin",
+      "text": "Ses lèvres se fendillent. Sa peau ne se remet plus en place quand on la pince.",
+      "start": 38.2,
+      "duration": 4.0461,
+      "end": 42.2461,
+      "speed": 1.0,
+      "seed": 22007,
+      "audio": "marc-soif/skin.wav",
+      "sha256": "de534b010e582ce58727ddda0d643a6bbd19299941be470d7065b23aac754cbf"
+    },
+    {
+      "id": "j4",
+      "text": "Jour quatre. Ses reins lâchent. Les déchets s'accumulent dans son sang.",
+      "start": 44.6,
+      "duration": 4.2589,
+      "end": 48.8589,
+      "speed": 1.0,
+      "seed": 22008,
+      "audio": "marc-soif/j4.wav",
+      "sha256": "6e3a74db327eaa671e3482734529e9d619af74499e4ecefae30dc0a3c4e96ee2"
+    },
+    {
+      "id": "heart",
+      "text": "Son cœur s'emballe, sa tension chute.",
+      "start": 50.2,
+      "duration": 2.6081,
+      "end": 52.8081,
+      "speed": 1.0,
+      "seed": 22009,
+      "audio": "marc-soif/heart.wav",
+      "sha256": "4d766509227609882f95356c2e49d9c6ba0d9e04eb83426f526af3887e99a6f5"
+    },
+    {
+      "id": "j5",
+      "text": "Jour cinq. Marc est confus. Il ne transpire plus, et sa température grimpe.",
+      "start": 55.4,
+      "duration": 5.3388,
+      "end": 60.7388,
+      "speed": 1.0,
+      "seed": 22010,
+      "audio": "marc-soif/j5.wav",
+      "sha256": "14cd2b20a56931128a46314f790c6e67893e4c3847c838b9579429d3166a2dba"
+    },
+    {
+      "id": "stop",
+      "text": "Et pour la plupart des humains... c'est là que tout s'arrête.",
+      "start": 61.8,
+      "duration": 2.8458,
+      "end": 64.6458,
+      "speed": 1.0,
+      "seed": 22011,
+      "audio": "marc-soif/stop.wav",
+      "sha256": "f6e6d8c781bfc808bada3ec37ba0654a909b0207df819d3c68585202626d755c"
+    },
+    {
+      "id": "fact",
+      "text": "On survit des semaines sans manger, mais seulement trois à cinq jours sans eau.",
+      "start": 67.4,
+      "duration": 5.2711,
+      "end": 72.6711,
+      "speed": 1.0,
+      "seed": 22012,
+      "audio": "marc-soif/fact.wav",
+      "sha256": "baf4ffa0e3e9e215b698beb43ba342d7f577a63aa0dbc03d745c276b3ef528f8"
+    },
+    {
+      "id": "cta",
+      "text": "Alors Marc, rends-nous service : va boire un verre d'eau. Et toi aussi.",
+      "start": 74.4,
+      "duration": 5.2093,
+      "end": 79.6093,
+      "speed": 1.0914,
+      "seed": 22013,
+      "audio": "marc-soif/cta.wav",
+      "sha256": "82b11915ebabf63f4aac0fad885b12046bda4ad1046e50b80159b5f8360531bd"
+    }
+  ]
+}

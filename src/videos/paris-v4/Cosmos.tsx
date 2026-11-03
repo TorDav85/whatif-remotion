@@ -1,3 +1,4 @@
+import {MapMaterial201} from '../../releases/v2-01/MapMaterial';
 import React, {useMemo} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
@@ -65,9 +66,9 @@ export const Country: React.FC<{from: number}> = ({from}) => {
   return <>
     <color attach="background" args={['#081824']} />
     <CameraRig position={[0, -2.2 * k, distance]} target={[0, -2.2 * k, 0]} fov={42} />
-    <mesh position={[0, 0, -0.05]}><planeGeometry args={[200, 160]} /><FoamWater t={t} xy density={0.55} /></mesh>
+    <mesh position={[0, 0, -0.05]}><planeGeometry args={[200, 160]} /><MapMaterial201 water time={t} color="#31586a" fallback={<FoamWater t={t} xy density={0.55} />} /></mesh>
     {shapes.map((s) => <group key={s.id}>
-      <mesh geometry={s.geometry}><meshBasicMaterial color={s.france ? '#93c759' : ['#d4ca8e', '#c2c57c', '#b6c47c', '#e0d49a'][s.tone]} /></mesh>
+      <mesh geometry={s.geometry}><MapMaterial201 color={s.france ? '#93c759' : ['#d4ca8e', '#c2c57c', '#b6c47c', '#e0d49a'][s.tone]} /></mesh>
       <lineLoop geometry={s.edge}><lineBasicMaterial color={s.france ? '#335747' : '#718366'} transparent opacity={s.france ? 1 : 0.6} /></lineLoop>
     </group>)}
     {/* Quelques axes convergent vers Paris ; ils restent secondaires à la géographie. */}

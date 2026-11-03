@@ -1,3 +1,6 @@
+import {RoadMaterial201} from '../../releases/v2-01/MapMaterial';
+import {useRelease201} from '../../releases/v2-01/context';
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useLayoutEffect, useMemo} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
@@ -41,6 +44,7 @@ const FarPlane: React.FC = () => {
 export const City: React.FC<{from: number}> = ({from}) => {
   const t = from + useCurrentFrame() / P.fps;
   const cam = cameraAt(t);
+  const release201 = useRelease201();
   const pull = smooth(P.effects.pullFrom, P.effects.absorbTo, t);
   const urban = smooth(P.effects.cityFrom, P.effects.cityTo, t);
   const hero = heroAt(t);
@@ -114,6 +118,7 @@ export const City: React.FC<{from: number}> = ({from}) => {
     <CameraRig position={[cam.x, cam.y, cam.z]} target={[cam.tx, cam.ty, cam.tz]} fov={55} />
     <FarPlane />
     <color attach="background" args={[skyTop]} />
+    <Surroundings201 opacity={1 - urban} exclude={{minX: -900, maxX: 900, minZ: -1200, maxZ: 350}} />
     {t < P.shots[0].to && <group scale={8}><SkyDome top={skyTop} bottom={skyBottom} /></group>}
     <Snowfall t={t} />
     <fog attach="fog" args={[skyBottom, 150 + cam.y * 1.2, 1150 + cam.y * 3]} />
@@ -123,10 +128,10 @@ export const City: React.FC<{from: number}> = ({from}) => {
     <mesh rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[5000, 5000]} /><meshStandardMaterial color="#a3b1b8" /></mesh>
     <mesh position={[0, 0.015, -80]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[700, 1000]} /><meshStandardMaterial color="#8c9ca5" /></mesh>
     <mesh geometry={river} position={[0, 0.04, 0]} rotation={[-Math.PI / 2, 0, 0]}><ColdWater t={t} /></mesh>
-    {[-1, 1].flatMap((s) => Array.from({length: P.city.blocks + 1}, (_, i) => <mesh key={`${s}:${i}`} position={[s * (30 + i * 34), 0.08, -100]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[9, 1000]} /><WetRoad /></mesh>))}
+    {[-1, 1].flatMap((s) => Array.from({length: P.city.blocks + 1}, (_, i) => <mesh key={`${s}:${i}`} position={[s * (30 + i * 34), 0.08, -100]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[9, 1000]} /><RoadMaterial201 opacity={1 - urban * 0.96} fallback={<WetRoad />} /></mesh>))}
     {Array.from({length: 27}, (_, i) => <group key={i}>
-      <mesh position={[-178, 0.065, 317 - i * 34]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[310, 9]} /><WetRoad /></mesh>
-      <mesh position={[178, 0.065, 317 - i * 34]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[310, 9]} /><WetRoad /></mesh>
+      <mesh position={[-178, 0.065, 317 - i * 34]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[310, 9]} /><RoadMaterial201 opacity={1 - urban * 0.96} fallback={<WetRoad />} /></mesh>
+      <mesh position={[178, 0.065, 317 - i * 34]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[310, 9]} /><RoadMaterial201 opacity={1 - urban * 0.96} fallback={<WetRoad />} /></mesh>
     </group>)}
     {/* Marquages des deux avenues principales et passages piétons. */}
     <Inst count={240} geo={CUBE} update={(i, d, c) => {

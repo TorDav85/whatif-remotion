@@ -1,9 +1,12 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import * as THREE from 'three';
 import {useGlowTexture} from '../../shared/three/common';
 import {SkyDome} from '../../shared/three/SkyDome';
 import {rng, smooth} from '../../core/animation';
 import {gradeColor, gradeNum, timeAtTemp} from './curve';
+import {useRelease201} from '../../releases/v2-01/context';
+import {Person as DetailedPerson} from '../../assets/Person';
 
 // ---------- Géométries partagées ----------
 export const BOX = new THREE.BoxGeometry(1, 1, 1).translate(0, 0.5, 0);
@@ -118,6 +121,7 @@ export const HeatEnv: React.FC<{c: number; sunDir?: [number, number, number]; fo
   return (
     <>
       <SkyDome top={top} bottom={bottom} />
+      <Surroundings201 temperature={c} ruin={smooth(850, 1100, c)} exclude={{minX: -500, maxX: 500, minZ: -500, maxZ: 500}} />
       <fog attach="fog" args={[fog, far * 0.12, far]} />
       <hemisphereLight color={top.clone().lerp(C('#ffffff'), 0.35)} groundColor={C('#8a7060').lerp(C('#ff3a10'), smooth(500, 1100, c))} intensity={1.55} />
       <directionalLight color={light} intensity={1.7 - smooth(300, 800, c) * 0.6} position={[sp.x, Math.max(sp.y, 60), sp.z]} />
@@ -163,39 +167,11 @@ export const Person: React.FC<{w: Walker; t: number; pace?: number; slump?: numb
   pos,
   rot,
 }) => {
-  const sw = Math.sin((t * w.speed * 6.5 + w.phase) * pace) * 0.65 * pace;
-  const bob = Math.abs(Math.cos((t * w.speed * 6.5 + w.phase) * pace)) * 0.06 * pace;
-  const col = (h: string) => heatColor(new THREE.Color(), C(h), c, 0.6);
-  const mat = (h: string) => <meshStandardMaterial color={col(h)} flatShading />;
-  return (
-    <group position={[pos[0], pos[1] + bob, pos[2]]} rotation={[0, rot, 0]} scale={w.h}>
-      {[-1, 1].map((s) => (
-        <group key={`l${s}`} position={[s * 0.13, 0.82, 0]} rotation={[s * sw, 0, 0]}>
-          <mesh position={[0, -0.41, 0]} scale={[0.2, 0.82, 0.22]} geometry={CUBE}>
-            {mat(w.pants)}
-          </mesh>
-        </group>
-      ))}
-      <group rotation={[slump, 0, 0]} position={[0, 0.82, 0]}>
-        <mesh position={[0, 0.36, 0]} scale={[0.52, 0.72, 0.3]} geometry={CUBE}>
-          {mat(w.shirt)}
-        </mesh>
-        {[-1, 1].map((s) => (
-          <group key={`a${s}`} position={[s * 0.34, 0.68, 0]} rotation={[-s * sw * 0.8, 0, 0]}>
-            <mesh position={[0, -0.32, 0]} scale={[0.16, 0.64, 0.18]} geometry={CUBE}>
-              {mat(w.shirt)}
-            </mesh>
-          </group>
-        ))}
-        <mesh position={[0, 0.98, 0]} scale={[0.44, 0.44, 0.44]} geometry={CUBE}>
-          {mat(w.skin)}
-        </mesh>
-        <mesh position={[0, 1.2, -0.02]} scale={[0.46, 0.12, 0.47]} geometry={CUBE}>
-          {mat(w.hair)}
-        </mesh>
-      </group>
-    </group>
-  );
+  const color = (h: string) => heatColor(new THREE.Color(), C(h), c, 0.6).getStyle();
+  return <group position={pos} rotation={[0, rot, 0]} scale={w.h}>
+    <DetailedPerson shirt={color(w.shirt)} pants={color(w.pants)} skin={color(w.skin)} hair={color(w.hair)}
+      bend={slump} pose={pace > 0 ? 'marche' : 'debout'} phase={(t * w.speed * 6.5 + w.phase) * pace} />
+  </group>;
 };
 
 // ---------- Arbres : feuillage qui roussit puis disparaît, branches nues ----------
@@ -357,7 +333,9 @@ export const Windows: React.FC<{list: Win[]; c: number; t: number; sink?: number
   const lit = C('#ffb347');
   const hot = C('#ff5a1a');
   const hole = C('#2a0a04');
+  const release201 = useRelease201();
   return (
+    <>
     <Inst
       count={list.length}
       geo={PANE}
@@ -377,6 +355,18 @@ export const Windows: React.FC<{list: Win[]; c: number; t: number; sink?: number
         else col.copy(hole).lerp(hot, 0.45 * flick);
       }}
     />
+    {release201 && <Inst count={list.length * 2} geo={CUBE} update={(i, d, col) => {
+      const w = list[Math.floor(i / 2)], horizontal = i % 2 === 1;
+      const melt = sink * (0.4 + w.b.k * 0.6);
+      const y = w.y - melt * w.b.h * 0.6;
+      const topY = w.b.h * (1 - melt * 0.35) - melt * w.b.h * 0.6;
+      if (y + 0.7 > topY || c > w.burstC + 80) return hide(d);
+      d.position.set(w.x + Math.sin(w.ry) * 0.035, y, w.z + Math.cos(w.ry) * 0.035);
+      d.rotation.y = w.ry;
+      d.scale.set(horizontal ? 1 : 0.045, horizontal ? 0.045 : 1.25, 0.035);
+      heatColor(col, C('#c6c9bf'), c, 0.65);
+    }} />}
+    </>
   );
 };
 

@@ -1,3 +1,4 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
@@ -300,6 +301,7 @@ export const Paris: React.FC<{from: number}> = ({from}) => {
         fov={60}
       />
       <SkyDome top={top} bottom={bottom} />
+      <Surroundings201 groundY={4} vegetation={trees} ruin={collapse} />
       <points geometry={stars}>
         <pointsMaterial color="#ffffff" size={2} sizeAttenuation={false} transparent opacity={w('stars')} fog={false} depthWrite={false} />
       </points>

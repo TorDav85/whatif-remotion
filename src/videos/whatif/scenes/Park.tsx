@@ -1,4 +1,7 @@
 import {SkyDome} from '../../../shared/three/SkyDome';
+import {Person} from '../../../assets/Person';
+import {useRelease201} from '../../../releases/v2-01/context';
+import {Surroundings201} from '../../../releases/v2-01/Surroundings';
 import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
@@ -74,6 +77,7 @@ const Grass: React.FC<{t: number; pull: number; suck: number}> = ({t, pull, suck
 };
 
 export const Park: React.FC<{from: number}> = ({from}) => {
+  const release201 = useRelease201();
   const frame = useCurrentFrame();
   const t = from + frame / FPS;
   const st = holeStateAt(t);
@@ -134,6 +138,7 @@ export const Park: React.FC<{from: number}> = ({from}) => {
         target={[0, HOLE_Y - 0.1, HOLE_Z]}
         fov={62}
       />
+      <Surroundings201 park />
       <SkyDome top={top} bottom={bottom} />
       <fog attach="fog" args={[bottom, 70, 420]} />
       <hemisphereLight color={top} groundColor="#3b5a2a" intensity={1.1} />
@@ -183,6 +188,8 @@ export const Park: React.FC<{from: number}> = ({from}) => {
         const q = new THREE.Quaternion().setFromAxisAngle(axis, k * 1.45);
         return (
           <group key={i} position={[p.x * (1 - k), k * HOLE_Y, p.z + dz * k]} quaternion={q} scale={p.h}>
+            {release201 ? <Person shirt={p.c} pants="#2c3a55" height={0.7} hairStyle={i % 3 === 1 ? 'long' : 'court'}
+              skin={['#e8b894','#a8704a','#6e4630'][i%3]} pose={k > 0.05 ? 'bras-leves' : 'debout'} /> : <>
             <mesh position={[0, 0.15, 0]}>
               <boxGeometry args={[0.3, 0.3, 0.2]} />
               <meshStandardMaterial color="#2c3a55" flatShading />
@@ -195,6 +202,7 @@ export const Park: React.FC<{from: number}> = ({from}) => {
               <sphereGeometry args={[0.14, 8, 6]} />
               <meshStandardMaterial color="#e8b894" flatShading />
             </mesh>
+            </>}
           </group>
         );
       })}

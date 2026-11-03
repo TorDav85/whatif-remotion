@@ -1,3 +1,4 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useLayoutEffect, useMemo} from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
@@ -227,6 +228,7 @@ const Scene:React.FC<{t:number}>=({t})=>{
   const traffic=p('traffic',t,.1,1.2);
   return <>
     <color attach="background" args={[tint('#e1ddc7','#c6d9e5',cold)]}/>
+    <Surroundings201 snow={snow} exclude={{minX: -300, maxX: 300, minZ: -330, maxZ: 120}} />
     <fog attach="fog" args={[tint('#e1ddc7','#c6d9e5',cold),fogNear,fogFar]}/>
     <CameraRig position={camera} target={target} fov={fov}/>
     <hemisphereLight args={[tint('#fff0c9','#e2f3ff',cold),'#667b80',1.8]}/>

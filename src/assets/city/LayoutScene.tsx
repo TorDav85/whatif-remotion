@@ -1,6 +1,7 @@
 import React, {useMemo} from 'react';
 import * as THREE from 'three';
 import {SkyDome} from '../../shared/three/SkyDome';
+import {UrbanBackdrop} from '../../shared/three/UrbanBackdrop';
 import {CityLayoutItems, type CityLayout} from './registry';
 
 export const SKY = {
@@ -21,7 +22,7 @@ export const CityEnvironment: React.FC<{night?: boolean; fogFar?: number}> = ({n
       <directionalLight color={s.sun} intensity={s.sunI} position={[60, 80, 40]} />
       <ambientLight intensity={s.amb} />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.02, 0]}>
-        <planeGeometry args={[2000, 2000]} />
+        <planeGeometry args={[100000, 100000]} />
         <meshStandardMaterial color={s.ground} roughness={0.95} />
       </mesh>
     </>
@@ -41,11 +42,19 @@ export const layoutBounds = (layout: CityLayout) => {
 };
 
 /** A saved layout, ready to drop in any Remotion composition (add your own CameraRig). */
+export const LayoutSurroundings: React.FC<{layout: CityLayout}> = ({layout}) => {
+  const bounds = layoutBounds(layout);
+  return <UrbanBackdrop seed={42} cx={bounds.cx} cz={bounds.cz} radius={Math.max(2400, bounds.size * 4)} parcels={2200}
+    river={false} exclude={{minX: bounds.cx - bounds.size / 2 - 50, maxX: bounds.cx + bounds.size / 2 + 50,
+      minZ: bounds.cz - bounds.size / 2 - 50, maxZ: bounds.cz + bounds.size / 2 + 50}} />;
+};
+
 export const LayoutScene: React.FC<{layout: CityLayout; lit?: number; children?: React.ReactNode}> = ({layout, lit, children}) => {
   const night = (lit ?? (layout.sky === 'nuit' ? 1 : 0)) > 0.5;
   return (
     <>
       <CityEnvironment night={night} />
+      <LayoutSurroundings layout={layout} />
       <CityLayoutItems layout={layout} lit={lit ?? (night ? 1 : 0)} />
       {children}
     </>

@@ -3,7 +3,7 @@ import {Canvas, useFrame, useThree, type ThreeEvent} from '@react-three/fiber';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 import {ASSET_BY_TYPE, type CityLayout, type LayoutItem} from '../assets/city/registry';
-import {CityEnvironment} from '../assets/city/LayoutScene';
+import {CityEnvironment, LayoutSurroundings} from '../assets/city/LayoutScene';
 import {sampleShots, shotsDuration, trajectory, viewAt, type Shot, type View} from '../assets/city/camera';
 
 export type ShotIssue = {shot: number; when: string; message: string};
@@ -354,7 +354,7 @@ const Scene = forwardRef<ViewportApi, ViewportProps>((p, ref) => {
     <>
       <Controls ref={controls} />
       <CityEnvironment night={p.night} fogFar={900} />
-      {!p.night && <gridHelper args={[800, 160, '#7d766a', '#837c6f']} position={[0, -0.01, 0]} />}
+      <LayoutSurroundings layout={p.layout} />
       <mesh
         rotation={[-Math.PI / 2, 0, 0]}
         position={[0, 0, 0]}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ghostwriter What if"
+  short_description: "Narrations françaises et répliques calées sur le TTS"
+  default_prompt: "Utilise $whatif-ghostwriter pour retravailler la narration de cette vidéo en respectant ses plans et créneaux."

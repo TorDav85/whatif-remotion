@@ -1,6 +1,8 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
+import {CROWD_BODY, CROWD_HEAD} from '../../shared/characters/CharacterParts';
 import {CameraRig, sampleColor, useGlowTexture} from '../../shared/three/common';
 import {SkyDome} from '../../shared/three/SkyDome';
 import {rng, sampleNum, smooth} from '../../core/animation';
@@ -71,7 +73,7 @@ const Inst: React.FC<{count: number; geo: THREE.BufferGeometry; update: Upd; bas
   const fade = opacity !== undefined ? {transparent: true, opacity, depthWrite: false} : {};
   return (
     <instancedMesh ref={ref} args={[geo, undefined, count] as any} frustumCulled={false} visible={opacity === undefined || opacity > 0.003}>
-      {basic ? <meshBasicMaterial side={side} {...fade} /> : <meshStandardMaterial flatShading side={side} {...fade} />}
+      {basic ? <meshBasicMaterial side={side} {...fade} vertexColors={!!geo.getAttribute('color')} /> : <meshStandardMaterial flatShading side={side} {...fade} vertexColors={!!geo.getAttribute('color')} />}
     </instancedMesh>
   );
 };
@@ -287,6 +289,7 @@ export const City: React.FC<{from: number; shot: keyof typeof G.cams}> = ({from,
       <group position={[cx, cy, cz]}>
         <SkyDome top={top} bottom={bottom} />
       </group>
+      <Surroundings201 groundY={4} drift={[-floatAt(tau, 0, 0, 0).south, floatAt(tau, 0, 0, 0).up, 0]} />
       <fog attach="fog" args={[bottom, 90 + cy * 0.5, 560 + cy * 1.1]} />
       <hemisphereLight color={top} groundColor="#4a4a3a" intensity={1.05} />
       <directionalLight color="#fff2dc" intensity={1.9} position={[sunDir.x * 200, sunDir.y * 200, sunDir.z * 200]} />
@@ -510,7 +513,7 @@ export const City: React.FC<{from: number; shot: keyof typeof G.cams}> = ({from,
         <Inst
           key={part}
           count={people.length}
-          geo={BOX}
+          geo={part === 0 ? CROWD_BODY : CROWD_HEAD}
           update={(i, d, c) => {
             const p = people[i];
             const w = walk(p);
@@ -529,7 +532,7 @@ export const City: React.FC<{from: number; shot: keyof typeof G.cams}> = ({from,
               c.copy(p.col);
             } else {
               const tilt = f.rot;
-              d.position.set(w.x - f.south - Math.sin(tilt) * bodyH, y + Math.cos(tilt) * bodyH + 0.15, w.z);
+              d.position.set(w.x - f.south - Math.sin(tilt) * bodyH, y + Math.cos(tilt) * bodyH - 0.01, w.z);
               d.scale.setScalar(0.3);
               c.copy(p.skin);
             }

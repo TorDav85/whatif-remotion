@@ -1,6 +1,8 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
+import {CROWD_BODY, CROWD_HEAD} from '../../shared/characters/CharacterParts';
 import {CameraRig, sampleColor, useGlowTexture} from '../../shared/three/common';
 import {SkyDome} from '../../shared/three/SkyDome';
 import {rng, smooth} from '../../core/animation';
@@ -78,7 +80,7 @@ const Inst: React.FC<{count: number; geo: THREE.BufferGeometry; update: Upd; bas
   const fade = opacity !== undefined ? {transparent: true, opacity, depthWrite: false} : {};
   return (
     <instancedMesh ref={ref} args={[geo, undefined, count] as any} frustumCulled={false} visible={opacity === undefined || opacity > 0.003}>
-      {basic ? <meshBasicMaterial side={side} {...fade} /> : <meshStandardMaterial flatShading side={side} {...fade} />}
+      {basic ? <meshBasicMaterial side={side} {...fade} vertexColors={!!geo.getAttribute('color')} /> : <meshStandardMaterial flatShading side={side} {...fade} vertexColors={!!geo.getAttribute('color')} />}
     </instancedMesh>
   );
 };
@@ -461,6 +463,7 @@ export const Paris: React.FC<{from: number}> = ({from}) => {
         fov={60}
       />
       <SkyDome top={top.clone().lerp(C('#c9d6ff'), flash * 0.6)} bottom={bottom.clone().lerp(C('#e6ecff'), flash * 0.6)} />
+      <Surroundings201 groundY={4} vegetation={trees} ruin={collapse} />
       <points geometry={stars}>
         <pointsMaterial color="#ffffff" size={2} sizeAttenuation={false} transparent opacity={w('stars')} fog={false} depthWrite={false} />
       </points>
@@ -766,7 +769,7 @@ export const Paris: React.FC<{from: number}> = ({from}) => {
       {/* piétons : ils se baladent, puis s'évaporent tous en moins d'une seconde */}
       <Inst
         count={people.length}
-        geo={BOX}
+        geo={CROWD_BODY}
         update={(i, d, c) => {
           const p = walkerAt(people[i]);
           if (!p) return void d.scale.set(0, 0, 0);
@@ -778,7 +781,7 @@ export const Paris: React.FC<{from: number}> = ({from}) => {
       />
       <Inst
         count={people.length}
-        geo={BOX}
+        geo={CROWD_HEAD}
         update={(i, d, c) => {
           const p = walkerAt(people[i]);
           if (!p) return void d.scale.set(0, 0, 0);

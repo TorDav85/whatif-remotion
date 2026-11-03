@@ -1,9 +1,10 @@
 import React from 'react';
 import {Ball, Block, Cyl, Mat, PAL} from '../kit';
 import type {ColorProps, LightProps} from './primitives';
+import {DetailBlocks, type DetailBlock} from '../details';
 
-export type BenchProps = ColorProps & {width?: number; backrest?: boolean};
-export const Bench: React.FC<BenchProps> = ({color = '#8b6041', width = 1.9, backrest = true}) => (
+export type BenchProps = ColorProps & {width?: number; backrest?: boolean; details?: boolean};
+export const Bench: React.FC<BenchProps> = ({color = '#8b6041', width = 1.9, backrest = true, details = true}) => (
   <group>
     {[-1, 1].map((side) => <group key={side}>
       <Block p={[side * width * 0.36, 0.22, 0]} s={[0.11, 0.44, 0.58]} c={PAL.iron} metal />
@@ -11,6 +12,13 @@ export const Bench: React.FC<BenchProps> = ({color = '#8b6041', width = 1.9, bac
       {backrest && <Block p={[side * width * 0.36, 0.65, 0.23]} s={[0.07, 0.6, 0.07]} c={PAL.iron} />}
     </group>)}
     {[-0.21, -0.07, 0.07, 0.21].map((z) => <Block key={z} p={[0, 0.45, z]} s={[width, 0.06, 0.12]} c={color} />)}
+    {details && <>
+      {[-1, 1].map((side) => <Block key={side} p={[side * width * 0.36, 0.07, 0]} s={[0.26, 0.08, 0.65]} c={PAL.iron} metal />)}
+      <DetailBlocks color={PAL.chrome} metal blocks={[-1, 1].flatMap((side) => [
+        ...[-0.21, -0.07, 0.07, 0.21].map((z): DetailBlock => ({p: [side * width * 0.36, 0.483, z], s: [0.028, 0.012, 0.028]})),
+        ...(backrest ? [0.67, 0.85].map((y): DetailBlock => ({p: [side * width * 0.36, y, 0.228], s: [0.028, 0.028, 0.012]})) : []),
+      ])} />
+    </>}
     {backrest && [0.67, 0.85].map((y) => <Block key={y} p={[0, y, 0.26]} s={[width, 0.14, 0.055]} c={color} />)}
   </group>
 );

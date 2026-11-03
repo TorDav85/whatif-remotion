@@ -1,3 +1,4 @@
+import {useRelease201} from '../../releases/v2-01/context';
 import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import * as THREE from 'three';
 import {BOX_UP, PAL, seeded} from '../kit';
@@ -7,6 +8,7 @@ import {Person, PEOPLE_PRESETS} from '../Person';
 import {Barge, TourBoat} from '../Boat';
 import {EiffelTower} from '../EiffelTower';
 import {SkyDome} from '../../shared/three/SkyDome';
+import {UrbanBackdrop} from '../../shared/three/UrbanBackdrop';
 import {useGlowTexture} from '../../shared/three/common';
 import {Bench, StreetLamp, Bollard, TrashBin, BusShelter, BicycleRack} from './Street';
 import {Tree, Planter} from './Park';
@@ -155,16 +157,6 @@ const planBackground = (seed: number, lit: number): Box[] => {
       z -= w;
     }
   }
-  // Rooftop sea around the district.
-  for (let i = 0; i < 260; i++) {
-    const x = (r() > 0.5 ? 1 : -1) * (48 + r() * 160);
-    const z = 80 - r() * 420;
-    const w = 12 + r() * 18;
-    const d = 12 + r() * 18;
-    const h = 14 + r() * 12;
-    out.push({p: [x, 0, z], s: [w, h, d], c: STONES[Math.floor(r() * STONES.length)]});
-    out.push({p: [x, h, z], s: [w * 0.85, 3, d * 0.85], c: r() > 0.3 ? PAL.zinc : PAL.slate});
-  }
   return out;
 };
 
@@ -303,7 +295,7 @@ const Static: React.FC<{seed: number; lit: number; eiffel: boolean; seine: boole
     const furniture = useMemo(() => planFurniture(seed), [seed]);
     return (
       <>
-        <Flat p={[0, -0.01, -100]} s={[900, 900]} c={ground} />
+        <Flat p={[0, -0.01, -100]} s={[100000, 100000]} c={ground} />
         <Roads />
         {buildings.map((b, i) => (
           <group key={i} position={[b.x, 0, b.z]} rotation={[0, b.ry, 0]}>
@@ -311,6 +303,8 @@ const Static: React.FC<{seed: number; lit: number; eiffel: boolean; seine: boole
           </group>
         ))}
         <Boxes items={background} />
+        <UrbanBackdrop seed={seed} radius={2400} parcels={2200} cz={-100}
+          exclude={{minX: -64, maxX: 64, minZ: -340, maxZ: 110}} />
         <Furniture items={furniture} lit={lit} focus={focus} />
         {eiffel && (
           <group position={[0, 0, -360]}>
@@ -394,6 +388,7 @@ export const CityBase: React.FC<CityBaseProps> = ({
     });
   }, [seed]);
 
+  const release201 = useRelease201();
   const signal = (c: number): 'red' | 'amber' | 'green' => {
     const p = (time + c * 0.37 + 100) % 14;
     return p < 7 ? 'green' : p < 8.5 ? 'amber' : 'red';
@@ -402,6 +397,7 @@ export const CityBase: React.FC<CityBaseProps> = ({
   return (
     <>
       <SkyDome top={top} bottom={bottom} />
+      {release201 && <directionalLight color="#d8e5f0" intensity={night ? 0.08 : 0.22} position={[-35, 24, -60]} />}
       <fog attach="fog" args={[bottom, 70, fogFar]} />
       <hemisphereLight color={top} groundColor="#8a7e6a" intensity={night ? 0.45 : 1.15} />
       <directionalLight color={night ? '#7a8cc8' : '#fff1d8'} intensity={night ? 0.25 : 1.55} position={[60, 80, 40]} />

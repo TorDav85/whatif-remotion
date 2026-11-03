@@ -1,5 +1,6 @@
 import React, {useMemo} from 'react';
 import {Block, MANSARD, Mat, PAL, PRISM, seeded} from './kit';
+import {DetailBlocks, type DetailBlock} from './details';
 
 export type BuildingProps = {
   /** largeur de façade (m) */
@@ -15,6 +16,8 @@ export type BuildingProps = {
   lit?: number;
   /** graine : change la répartition des fenêtres allumées et des cheminées */
   seed?: number;
+  /** Menuiseries, balustres et reliefs ; désactiver pour les plans très larges. */
+  details?: boolean;
 };
 
 const FLOOR_H = 3.1;
@@ -33,6 +36,7 @@ export const Building: React.FC<BuildingProps> = ({
   awning = '#a8322b',
   lit = 0,
   seed = 1,
+  details = true,
 }) => {
   const cols = Math.max(2, Math.floor(width / 2.6));
   const wallH = GROUND_H + floors * FLOOR_H;
@@ -45,6 +49,37 @@ export const Building: React.FC<BuildingProps> = ({
     };
   }, [seed, floors, cols]);
   const colX = (c: number) => -width / 2 + ((c + 0.5) * width) / cols;
+
+  const balconyFloors = [1, floors - 1].filter((f, i, a) => f > 0 && a.indexOf(f) === i);
+  const detail = useMemo(() => {
+    const frames: DetailBlock[] = [];
+    const iron: DetailBlock[] = [];
+    const stonework: DetailBlock[] = [];
+    if (!details) return {frames, iron, stonework};
+    for (let f = 0; f < floors; f++) {
+      for (let c = 0; c < cols; c++) {
+        const x = -width / 2 + ((c + 0.5) * width) / cols;
+        const y = GROUND_H + f * FLOOR_H + 1.55;
+        frames.push({p: [x, y, front - 0.135], s: [0.055, 1.9, 0.045]},
+          {p: [x, y + 0.25, front - 0.135], s: [1, 0.055, 0.045]});
+        stonework.push({p: [x, y - 1.13, front - 0.18], s: [1.5, 0.14, 0.32]});
+      }
+      stonework.push({p: [0, GROUND_H + f * FLOOR_H, front - 0.1], s: [width, 0.09, 0.2]});
+    }
+    for (const f of [1, floors - 1].filter((f, i, a) => f > 0 && a.indexOf(f) === i)) {
+      const y = GROUND_H + f * FLOOR_H + 0.45;
+      const count = Math.max(2, Math.ceil((width - 0.5) / 0.25));
+      for (let i = 0; i <= count; i++) {
+        iron.push({p: [-width / 2 + 0.25 + i * (width - 0.5) / count, y + 0.51, front - 0.88], s: [0.035, 0.85, 0.04]});
+      }
+      iron.push({p: [0, y + 0.15, front - 0.88], s: [width - 0.4, 0.045, 0.06]});
+      for (const side of [-1, 1]) {
+        iron.push({p: [side * (width / 2 - 0.23), y + 0.95, front - 0.47], s: [0.05, 0.06, 0.88]});
+        for (const z of [0.2, 0.5, 0.78]) iron.push({p: [side * (width / 2 - 0.23), y + 0.51, front - z], s: [0.035, 0.85, 0.035]});
+      }
+    }
+    return {frames, iron, stonework};
+  }, [details, width, floors, cols, front]);
 
   return (
     <group>
@@ -69,7 +104,7 @@ export const Building: React.FC<BuildingProps> = ({
           const y = GROUND_H + f * FLOOR_H + 1.55;
           const on = r.lit[f * cols + c] < lit;
           return (
-            <group key={`${f}${c}`} position={[colX(c), y, front - 0.04]}>
+            <group key={`${f}:${c}`} position={[colX(c), y, front - 0.04]}>
               <Block p={[0, 0, 0]} s={[1.25, 2.15, 0.08]} c={PAL.frame} />
               <Block p={[0, 0, -0.03]} s={[1.0, 1.9, 0.06]} c={on ? PAL.glassLit : PAL.glass} e={PAL.glassLit} ei={on ? 1.1 : 0} />
               <Block p={[0, 1.2, -0.07]} s={[1.4, 0.16, 0.14]} c={stone} />
@@ -78,16 +113,25 @@ export const Building: React.FC<BuildingProps> = ({
         }),
       )}
       {/* balcons filants (2e et dernier étage) : dalle + garde-corps en fonte */}
-      {[1, floors - 1].filter((f, i, a) => f > 0 && a.indexOf(f) === i).map((f) => {
+      {balconyFloors.map((f) => {
         const y = GROUND_H + f * FLOOR_H + 0.45;
         return (
           <group key={f}>
             <Block p={[0, y, front - 0.45]} s={[width - 0.4, 0.16, 0.9]} c={stone} />
-            <Block p={[0, y + 0.5, front - 0.88]} s={[width - 0.4, 0.85, 0.04]} c={PAL.iron} o={0.85} />
+            {!details && <Block p={[0, y + 0.5, front - 0.88]} s={[width - 0.4, 0.85, 0.04]} c={PAL.iron} o={0.85} />}
             <Block p={[0, y + 0.95, front - 0.88]} s={[width - 0.4, 0.06, 0.08]} c={PAL.iron} />
           </group>
         );
       })}
+      <DetailBlocks blocks={detail.frames} color={PAL.frame} />
+      <DetailBlocks blocks={detail.iron} color={PAL.iron} metal />
+      <DetailBlocks blocks={detail.stonework} color={stone} />
+      {details && <>
+        <Block p={[colX(Math.floor(cols / 2)), 1.9, front - 0.19]} s={[0.06, 3.6, 0.06]} c={PAL.stoneDark} />
+        {[-0.16, 0.16].map((x) => <Block key={x} p={[colX(Math.floor(cols / 2)) + x, 1.55, front - 0.24]} s={[0.045, 0.28, 0.06]} c={PAL.chrome} metal />)}
+        <Block p={[0, wallH - 0.6, front - 0.15]} s={[width + 0.1, 0.12, 0.3]} c={PAL.stoneDark} />
+        {awning && <Block p={[0, GROUND_H - 0.95, front - 1.72]} s={[width - 1, 0.2, 0.08]} c={awning} />}
+      </>}
       {/* corniche */}
       <Block p={[0, wallH - 0.25, front - 0.25]} s={[width + 0.2, 0.5, 0.5]} c={stone} />
       {/* toit mansardé + lucarnes */}

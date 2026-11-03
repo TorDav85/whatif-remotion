@@ -1,0 +1,149 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-salaire-3/ambience.wav",
+  "beats": [
+    {
+      "id": "recap",
+      "text": "Partie trois. Marc va enfin découvrir qui le paie depuis un an.",
+      "start": 0.2,
+      "duration": 4.2725,
+      "end": 4.4725,
+      "speed": 1.0,
+      "seed": 22000,
+      "audio": "marc-salaire-3/recap.wav",
+      "sha256": "55536eacd3af2d23acfff7fef3e615f4d2f9559561fdbda60fc72892a8f7a781"
+    },
+    {
+      "id": "reveal",
+      "text": "Le fauteuil se retourne... et c'est Julien. En costume noir.",
+      "start": 5.2,
+      "duration": 4.4778,
+      "end": 9.6778,
+      "speed": 1.0,
+      "seed": 22001,
+      "audio": "marc-salaire-3/reveal.wav",
+      "sha256": "033c38be5a7caccc9eb8c5dc03c9d41e1f903f2232df11d7811b083a109aa37c"
+    },
+    {
+      "id": "who",
+      "text": "Oui. Julien. Celui du four. Et du congélateur.",
+      "start": 10.4,
+      "duration": 4.4119,
+      "end": 14.8119,
+      "speed": 1.0639,
+      "seed": 22002,
+      "audio": "marc-salaire-3/who.wav",
+      "sha256": "42675f4fe845ae182a81670e057085b6df1b37a47fa64892c339281723c8ee2f"
+    },
+    {
+      "id": "loto",
+      "text": "Il y a un an, Julien a gagné à la loterie. Et il s'est senti... un tout petit peu coupable.",
+      "start": 15.2,
+      "duration": 5.8596,
+      "end": 21.0596,
+      "speed": 1.0,
+      "seed": 31004,
+      "audio": "marc-salaire-3/loto.wav",
+      "sha256": "a3632ea92fd81d18323a06c32fd745d1919f17fe8a66962552954865b3fade49"
+    },
+    {
+      "id": "pay",
+      "text": "Alors chaque mois, il a versé dix mille euros à Marc. Pour se faire pardonner.",
+      "start": 21.8,
+      "duration": 4.9197,
+      "end": 26.7198,
+      "speed": 1.0,
+      "seed": 22004,
+      "audio": "marc-salaire-3/pay.wav",
+      "sha256": "904d2b0fe283f8d7b103475c4fcbb5355b7cdbb196643f34c9e733ea1c0d11a4"
+    },
+    {
+      "id": "labels",
+      "text": "Préparation ? Il préparait une surprise. Entraînement terminé ? Il a pris des cours de cuisine.",
+      "start": 28.0,
+      "duration": 5.966,
+      "end": 33.966,
+      "speed": 1.0,
+      "seed": 31006,
+      "audio": "marc-salaire-3/labels.wav",
+      "sha256": "93304a73a91675bdc153739a7c750b06042b590c09e782eaff07feaf76637fa2"
+    },
+    {
+      "id": "screens",
+      "text": "Et tous ces écrans ? Ce sont les vidéos de Marc. Celles que tu regardes en ce moment.",
+      "start": 35.0,
+      "duration": 5.6045,
+      "end": 40.6045,
+      "speed": 1.0146,
+      "seed": 22006,
+      "audio": "marc-salaire-3/screens.wav",
+      "sha256": "b8e7dc13ff8985e9e0836447775db75a1e82d7d480681ad490e7e52aa73c61d4"
+    },
+    {
+      "id": "mission",
+      "text": "Marc demande enfin : et ma mission, alors ?",
+      "start": 41.0,
+      "duration": 2.4526,
+      "end": 43.4526,
+      "speed": 1.0,
+      "seed": 31007,
+      "audio": "marc-salaire-3/mission.wav",
+      "sha256": "53393513c819f0bef0a53fa334b5022a94d9c43503db4afea82ae65b3d697be0"
+    },
+    {
+      "id": "pizza",
+      "text": "Julien sourit, et ouvre un rideau. Derrière : un énorme four à pizza.",
+      "start": 46.8,
+      "duration": 5.613,
+      "end": 52.413,
+      "speed": 1.0149,
+      "seed": 22008,
+      "audio": "marc-salaire-3/pizza.wav",
+      "sha256": "cf348ffdbfe79e1c378a8f97a703e97f32885799178f061253380dbc60d950b5"
+    },
+    {
+      "id": "joke",
+      "text": "Ce soir, on mange une pizza. Tu rentres dedans pour vérifier la cuisson ?",
+      "start": 52.8,
+      "duration": 4.2263,
+      "end": 57.0263,
+      "speed": 1.0,
+      "seed": 31004,
+      "audio": "marc-salaire-3/joke.wav",
+      "sha256": "85c61285d9bd1dc1e48dc7fbc0c0bfbf10b065e8d16b29fe46da72af2f536922"
+    },
+    {
+      "id": "run",
+      "text": "Marc n'a jamais couru aussi vite.",
+      "start": 58.6,
+      "duration": 1.642,
+      "end": 60.242,
+      "speed": 1.0,
+      "seed": 22010,
+      "audio": "marc-salaire-3/run.wav",
+      "sha256": "51f02ef9d81c5d9d41ad6e6e5644b4b577360496d638bbdfa3f78d02f141ea27"
+    },
+    {
+      "id": "moral",
+      "text": "Moralité : si un ami te verse dix mille euros par mois... vérifie d'abord qu'il n'a pas de four.",
+      "start": 63.6,
+      "duration": 5.6681,
+      "end": 69.2681,
+      "speed": 1.0,
+      "seed": 31296,
+      "audio": "marc-salaire-3/moral.wav",
+      "sha256": "9baa4cb1de58418378845daf40ae4eeed60637bc59da2132808918a1f32f99b2"
+    },
+    {
+      "id": "cta",
+      "text": "Abonne-toi. Et dis en commentaire ce que Marc doit vivre la prochaine fois.",
+      "start": 70.4,
+      "duration": 4.9545,
+      "end": 75.3545,
+      "speed": 1.0,
+      "seed": 22012,
+      "audio": "marc-salaire-3/cta.wav",
+      "sha256": "2618b25677fe6f8095ba6f023af219beb21cbc71bad4fb7ba8d0257dec9a898e"
+    }
+  ]
+}

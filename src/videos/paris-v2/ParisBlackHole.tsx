@@ -1,3 +1,4 @@
+import {Surroundings201} from '../../releases/v2-01/Surroundings';
 import React, {useMemo} from 'react';
 import {useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
@@ -7,6 +8,7 @@ import {useScenario} from '../whatif/Scenario';
 import {rng, smooth} from '../../core/animation';
 import {Bld, BOX, CUBE, ICO, Inst, makeWindows, Windows} from '../heat/kit';
 import P from './scenario.json';
+import {Person} from '../../assets/Person';
 
 const ROOF = new THREE.CylinderGeometry(0.55, Math.SQRT1_2, 1, 4).rotateY(Math.PI / 4).translate(0, 0.5, 0);
 const BLADE = new THREE.ConeGeometry(0.06, 0.65, 3).translate(0, 0.325, 0);
@@ -94,6 +96,7 @@ export const ParisBlackHole: React.FC = () => {
   return (
     <>
       <CameraRig position={[0, P.camera.height, P.camera.startZ - (P.hole.startDistanceM - st.r)]} target={[0, P.camera.targetY, -95]} fov={P.camera.fov} />
+      <Surroundings201 opacity={1 - suction} exclude={{minX: -240, maxX: 240, minZ: -400, maxZ: 180}} />
       <SkyDome top={top} bottom={bottom} />
       <fog attach="fog" args={[bottom, 160, 550]} />
       <hemisphereLight color={top.clone().lerp(new THREE.Color('#ffffff'), 0.4)} groundColor="#606344" intensity={1.8} />
@@ -155,9 +158,7 @@ export const ParisBlackHole: React.FC = () => {
       {people.map((p, i) => {
         const k = smooth(23 + p.phase * 3, 35 + p.phase * 3, t);
         return <group key={i} position={move(p.x, 0, p.z, k * 0.92)} quaternion={tilt(p.x, p.z, k * 1.3)} scale={1 - k * 0.75}>
-          <mesh position={[0, 0.8, 0]}><boxGeometry args={[0.45, 0.7, 0.3]} /><meshStandardMaterial color={p.color} /></mesh>
-          <mesh position={[0, 1.4, 0]}><sphereGeometry args={[0.2, 8, 6]} /><meshStandardMaterial color="#d6aa83" /></mesh>
-          {[-0.13, 0.13].map((x) => <mesh key={x} position={[x, 0.24, 0]}><boxGeometry args={[0.17, 0.5, 0.22]} /><meshStandardMaterial color="#334355" /></mesh>)}
+          <Person shirt={p.color} pants="#334355" pose="marche" phase={t*6+i} height={0.85} />
         </group>;
       })}
 

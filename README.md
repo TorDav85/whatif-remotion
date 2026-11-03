@@ -240,3 +240,38 @@ Prochaines étapes prioritaires (liste complète et critères dans [AMELIORATION
 3. Ancrer les bulles de dialogue sur les têtes (projection 3D → écran) au lieu de positions fixes.
 4. Intégration continue : `npm ci` → `validate` → `typecheck` → `test:project` → stills.
 5. Vérifier la licence XTTS (CPML) et le consentement des voix avant toute publication monétisée.
+
+
+## Assets détaillés et skills
+
+La planche **Bibliotheque → AssetsDetails** présente cinq gros plans : voiture,
+bus, façade, pavillon et mobilier. `details={false}` coupe les ajouts sur `Car`,
+`Bus`, `Building`, `House` et `Bench` ; ce réglage est aussi exposé dans l'éditeur
+pour ces objets. Les formes et matériaux restent procéduraux, sans téléchargement.
+
+```powershell
+node scripts/check/stills.mjs AssetsDetails --frames 60,180,300,420,540 --out out/assets-details
+```
+
+Deux skills sont versionnés dans le projet, avec découverte automatique activée :
+
+- [Ghostwriter](.claude/skills/whatif-ghostwriter/SKILL.md) : narration française,
+  rythme, promesse du hook et respect des créneaux vocaux.
+- [Expert assets](.claude/skills/whatif-asset-expert/SKILL.md) : objets 3D, niveaux de
+  détail, registre de l'éditeur et validation par rendu.
+
+Ils sont aussi installés dans le dossier personnel des skills Codex sur cette
+machine. Invocation : `$whatif-ghostwriter` ou `$whatif-asset-expert`.
+
+
+La composition **Bibliotheque → Personnages** présente les personnages retravaillés.
+Le [guide personnages et décors](docs/characters-and-world.md) décrit les modèles
+communs, les foules et la continuité du fond lors des reculs de caméra.
+
+
+## Version 2.01
+
+Les vingt films de la [version 2.01](docs/versions/2.01.md) sont disponibles dans
+**Videos-2-01**. Cadrages et mouvements de caméra conservés.
+`npm run stills:2.01` prépare les images de contrôle ; `npm run render:2.01`
+exporte les MP4 dans `out/2.01/`, avec reprise et contrôle du décodage.

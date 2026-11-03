@@ -73,9 +73,9 @@ const ground: AssetDef[] = [
 
 const buildings: AssetDef[] = [
   {type: 'haussmann', label: 'Immeuble haussmannien', category: 'Bâtiments', lit: true, render: (p) => <Building {...p} />,
-    defaults: {width: 14, depth: 12, floors: 5, stone: PAL.cream, roof: PAL.zinc, awning: '#a8322b', seed: 1},
+    defaults: {width: 14, depth: 12, floors: 5, stone: PAL.cream, roof: PAL.zinc, awning: '#a8322b', seed: 1, details: true},
     params: [num('width', 'Largeur', 4, 40, 0.5), num('depth', 'Profondeur', 0.6, 30, 0.5), num('floors', 'Étages', 1, 9), color('stone', 'Pierre'),
-      color('roof', 'Toit'), color('awning', 'Store'), num('seed', 'Variante', 1, 999)]},
+      color('roof', 'Toit'), color('awning', 'Store'), num('seed', 'Variante', 1, 999), bool('details', 'Détails de façade')]},
   {type: 'shop', label: 'Magasin', category: 'Bâtiments', lit: true, render: (p) => <Shop {...p} />,
     defaults: {kind: 'boulangerie', width: 8, depth: 9, floors: 2, stone: PAL.cream, display: true},
     params: [sel('kind', 'Enseigne', Object.keys(SHOP_KINDS)), num('width', 'Largeur', 4, 20, 0.5), num('depth', 'Profondeur', 4, 16, 0.5),
@@ -88,9 +88,9 @@ const buildings: AssetDef[] = [
     defaults: {width: 30, depth: 12, floors: 8},
     params: [num('width', 'Largeur', 10, 80, 1), num('depth', 'Profondeur', 8, 24, 0.5), num('floors', 'Étages', 2, 20), color('color', 'Béton'), color('accent', 'Garde-corps')]},
   {type: 'house', label: 'Maison (pavillon)', category: 'Bâtiments', lit: true, render: (p) => <House {...p} />,
-    defaults: {width: 9, depth: 7, floors: 2, walls: '#efe3c8', roof: PAL.terracotta, shutters: '#3f6b8a', garden: true},
+    defaults: {width: 9, depth: 7, floors: 2, walls: '#efe3c8', roof: PAL.terracotta, shutters: '#3f6b8a', garden: true, details: true},
     params: [num('width', 'Largeur', 5, 20, 0.5), num('depth', 'Profondeur', 4, 16, 0.5), sel('floors', 'Niveaux', [1, 2]), color('walls', 'Murs'),
-      color('roof', 'Toit'), color('shutters', 'Volets'), bool('garden', 'Jardin')]},
+      color('roof', 'Toit'), color('shutters', 'Volets'), bool('garden', 'Jardin'), bool('details', 'Détails de menuiserie')]},
   {type: 'building-a', label: 'Immeuble briques', category: 'Bâtiments', render: (p) => <BuildingA {...p} />, defaults: {height: 15},
     params: [num('height', 'Hauteur', 5, 40, 1), C()]},
   {type: 'building-b', label: 'Tour moderne', category: 'Bâtiments', render: (p) => <BuildingB {...p} />, defaults: {height: 40},
@@ -109,9 +109,9 @@ const monuments: AssetDef[] = [
 
 const CAR_COLORS = '#b8322a';
 const vehicles: AssetDef[] = [
-  {type: 'car', label: 'Voiture', category: 'Véhicules', lit: true, render: ({lit, ...p}) => <Car {...p} lights={lit} />, defaults: {color: CAR_COLORS, variant: 'berline'},
-    params: [C(), sel('variant', 'Modèle', ['berline', 'citadine', 'taxi', 'utilitaire'])]},
-  {type: 'bus', label: 'Bus parisien', category: 'Véhicules', lit: true, render: ({lit, ...p}) => <Bus {...p} lights={lit} />, params: [C()]},
+  {type: 'car', label: 'Voiture', category: 'Véhicules', lit: true, render: ({lit, ...p}) => <Car {...p} lights={lit} />, defaults: {color: CAR_COLORS, variant: 'berline', details: true},
+    params: [C(), sel('variant', 'Modèle', ['berline', 'citadine', 'taxi', 'utilitaire']), bool('details', 'Détails de carrosserie')]},
+  {type: 'bus', label: 'Bus parisien', category: 'Véhicules', lit: true, render: ({lit, ...p}) => <Bus {...p} lights={lit} />, defaults: {details: true}, params: [C(), bool('details', 'Portes et vitrages')]},
   {type: 'car-red', label: 'Voiture rouge (héros)', category: 'Véhicules', render: () => <CarRed />},
   {type: 'car-blue', label: 'Voiture bleue', category: 'Véhicules', render: () => <CarBlue />},
   {type: 'bus-city', label: 'Bus (simple)', category: 'Véhicules', render: (p) => <BusCity {...p} />, params: [C()]},
@@ -138,7 +138,7 @@ const nature: AssetDef[] = [
 ];
 
 const furniture: AssetDef[] = [
-  {type: 'bench', label: 'Banc', category: 'Mobilier urbain', render: (p) => <Bench {...p} />, params: [C(), num('width', 'Largeur', 0.8, 4, 0.1), bool('backrest', 'Dossier')]},
+  {type: 'bench', label: 'Banc', category: 'Mobilier urbain', render: (p) => <Bench {...p} />, defaults: {details: true}, params: [C(), num('width', 'Largeur', 0.8, 4, 0.1), bool('backrest', 'Dossier'), bool('details', 'Fixations et piétements')]},
   {type: 'bench-wood', label: 'Banc bois simple', category: 'Mobilier urbain', render: () => <WoodBench />},
   {type: 'street-lamp', label: 'Lampadaire parisien', category: 'Mobilier urbain', lit: true, render: (p) => <StreetLamp {...p} />, params: [C(), num('height', 'Hauteur', 2, 8, 0.1)]},
   {type: 'lamppost', label: 'Lampadaire simple', category: 'Mobilier urbain', lit: true, render: ({lit, ...p}) => <Lamppost {...p} on={lit} />, params: [num('height', 'Hauteur', 2, 8, 0.1)]},

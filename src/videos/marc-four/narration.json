@@ -1,0 +1,121 @@
+{
+  "duration": 84,
+  "beats": [
+    {
+      "id": "hook",
+      "slot": [
+        0.2,
+        4.6
+      ],
+      "text": "Et si un ami enfermait Marc dans un four... de plus en plus chaud ?"
+    },
+    {
+      "id": "intro",
+      "slot": [
+        5.0,
+        10.4
+      ],
+      "text": "Voici Julien. Il pousse Marc dans un four géant, et règle la température à trente-huit degrés.",
+      "seed": 31296
+    },
+    {
+      "id": "m0",
+      "slot": [
+        10.8,
+        16.0
+      ],
+      "text": "Trente-huit degrés : pour Marc, c'est juste un bain tiède. Il trouve ça plutôt sympa."
+    },
+    {
+      "id": "rule",
+      "slot": [
+        16.4,
+        20.6
+      ],
+      "text": "Mais chaque minute, la température double."
+    },
+    {
+      "id": "m1",
+      "slot": [
+        21.0,
+        27.6
+      ],
+      "text": "Après une minute : soixante-seize degrés. Marc transpire à grosses gouttes et tape sur la vitre."
+    },
+    {
+      "id": "wave",
+      "slot": [
+        27.9,
+        31.4
+      ],
+      "text": "Julien lui fait coucou."
+    },
+    {
+      "id": "m2",
+      "slot": [
+        32.0,
+        38.0
+      ],
+      "text": "Deux minutes : cent cinquante-deux degrés. Sa sueur s'évapore d'un coup. Marc fume comme une théière.",
+      "seed": 31099
+    },
+    {
+      "id": "m3",
+      "slot": [
+        39.0,
+        45.4
+      ],
+      "text": "Minute trois : trois cent quatre degrés. Son tee-shirt prend feu tout seul, et ses sourcils partent en fumée."
+    },
+    {
+      "id": "m4",
+      "slot": [
+        46.4,
+        53.0
+      ],
+      "text": "Minute quatre : six cent huit degrés. Marc est noir comme une tartine oubliée. Seuls ses yeux clignent encore."
+    },
+    {
+      "id": "pop",
+      "slot": [
+        53.4,
+        56.8
+      ],
+      "text": "Julien, lui, mange du pop-corn."
+    },
+    {
+      "id": "m5",
+      "slot": [
+        57.6,
+        63.6
+      ],
+      "text": "Cinq minutes : mille deux cent seize degrés. Plus chaud que de la lave. Marc s'effrite...",
+      "seed": 31002
+    },
+    {
+      "id": "dust",
+      "slot": [
+        64.2,
+        68.6
+      ],
+      "text": "... et il ne reste qu'un petit tas de poussière."
+    },
+    {
+      "id": "open",
+      "slot": [
+        69.4,
+        74.0
+      ],
+      "text": "Julien ouvre la porte pour vérifier... et éternue.",
+      "seed": 31004
+    },
+    {
+      "id": "cta",
+      "slot": [
+        75.0,
+        80.4
+      ],
+      "text": "Abonne-toi... avant que Julien ne préchauffe le four pour toi."
+    }
+  ]
+}
