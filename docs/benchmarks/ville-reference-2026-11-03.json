@@ -1,0 +1,67 @@
+{
+  "note": "Ville de référence : visite avec et sans simplification des quartiers lointains, 300 images à partir du milieu (rue-marc puis place-centrale), deux passages en ordre inverse.",
+  "runs": [
+    {
+      "meta": {
+        "date": "2026-11-03T16:18:08.236Z",
+        "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "cores": 12,
+        "ramGb": 23.9,
+        "framesPerComposition": 300,
+        "concurrency": 2,
+        "gl": "angle"
+      },
+      "results": [
+        {
+          "id": "VilleReferenceVisiteSansLOD",
+          "frames": 300,
+          "seconds": 36.4,
+          "msPerFrame": 121,
+          "estimatedFullRenderMin": 2.7,
+          "peakNodeMb": 716,
+          "peakSystemDeltaMb": 2577
+        },
+        {
+          "id": "VilleReferenceVisite",
+          "frames": 300,
+          "seconds": 26.9,
+          "msPerFrame": 90,
+          "estimatedFullRenderMin": 2,
+          "peakNodeMb": 291,
+          "peakSystemDeltaMb": 2415
+        }
+      ]
+    },
+    {
+      "meta": {
+        "date": "2026-11-03T16:19:33.426Z",
+        "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "cores": 12,
+        "ramGb": 23.9,
+        "framesPerComposition": 300,
+        "concurrency": 2,
+        "gl": "angle"
+      },
+      "results": [
+        {
+          "id": "VilleReferenceVisite",
+          "frames": 300,
+          "seconds": 27.8,
+          "msPerFrame": 93,
+          "estimatedFullRenderMin": 2.1,
+          "peakNodeMb": 714,
+          "peakSystemDeltaMb": 2378
+        },
+        {
+          "id": "VilleReferenceVisiteSansLOD",
+          "frames": 300,
+          "seconds": 36,
+          "msPerFrame": 120,
+          "estimatedFullRenderMin": 2.7,
+          "peakNodeMb": 283,
+          "peakSystemDeltaMb": 2663
+        }
+      ]
+    }
+  ]
+}

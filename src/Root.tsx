@@ -9,6 +9,8 @@ import {INTERIOR_FRAMES, InteriorShowcase} from './assets/interior/InteriorShowc
 import {CITY_FRAMES, CityShowcase} from './assets/city/CityShowcase';
 import {CITY_PREVIEW_FRAMES, CityBasePreview} from './assets/city/CityBasePreview';
 import {CITY_LAYOUT_FRAMES, CityLayoutPreview, calculateCityLayoutMetadata} from './assets/city/CityLayoutPreview';
+import {CityTour, tourFrames} from './assets/city/reference/CityTour';
+import {REFERENCE_DEMO_FRAMES, ReferenceDemo} from './assets/city/reference/ReferenceDemo';
 import {AudioFirstBridge} from './videos/audio-first-bridge/AudioFirstBridge';
 import compiledAudioFirst from './videos/audio-first-bridge/compiled-timeline.json';
 import {readTimeline, timelineMetadata} from './videos/audio-first-bridge/timeline/runtime.mjs';
@@ -84,6 +86,9 @@ export const Root: React.FC = () => (
       <Composition id="Personnages" component={CharactersPreview} durationInFrames={CHARACTERS_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="AssetsDetails" component={AssetDetailsShowcase} durationInFrames={ASSET_DETAILS_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} defaultProps={{details: true}} />
       <Composition id="CityLayoutPreview" component={CityLayoutPreview} durationInFrames={CITY_LAYOUT_FRAMES} fps={30} width={1080} height={1920} defaultProps={{layout: 'ma-ville'}} calculateMetadata={calculateCityLayoutMetadata} />
+      <Composition id="VilleReferenceVisite" component={CityTour} durationInFrames={tourFrames(30)} fps={30} width={1080} height={1920} defaultProps={{lod: true}} />
+      <Composition id="VilleReferenceVisiteSansLOD" component={CityTour} durationInFrames={tourFrames(30)} fps={30} width={1080} height={1920} defaultProps={{lod: false}} />
+      <Composition id="VilleReferenceDemo" component={ReferenceDemo} durationInFrames={REFERENCE_DEMO_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="CityBasePreview"component={CityBasePreview} durationInFrames={CITY_PREVIEW_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="AssetsVille"component={CityShowcase} durationInFrames={CITY_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
       <Composition id="Assets" component={Showcase} durationInFrames={SHOWCASE_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />

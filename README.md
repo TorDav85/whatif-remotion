@@ -236,6 +236,18 @@ de caméra (14 mouvements, vérification et recadrage automatique du cadrage) et
 
 ![Collection Ville & extérieur 1.02](docs/previews/assets-ville-1.02.png)
 
+**Ville de référence de la série** ([guide](docs/ville-reference.md)). Une seule ville figée pour tous les épisodes,
+`public/city-layouts/ville-reference.json` (graine 286, 1 451 objets, jamais régénérée par épisode), et trois lieux
+pilotes séparés du monde : `appartement-marc` (intérieur dans `haussmann-894`, fenêtres sur la place), `rue-marc`,
+`place-centrale`. Chaque lieu a sa zone, ses points de placement et d'interaction et 4 cadrages 9:16 (`Shot`).
+Un épisode nomme un lieu, place ses personnages et garde ses variantes (nuit, pluie, neige, dégâts, objets
+modifiés ou ajoutés) ; les quartiers lointains sont simplifiés automatiquement.
+
+```powershell
+npm run city:freeze -- --check                    # le JSON figé = la régénération
+npm run stills -- VilleReferenceVisite --frames 105,195,285,375,465,563,675,780,870,968,1095,1215,1305
+```
+
 ## 11. Skills du projet
 
 Versionnés dans `.claude/skills/` (découverts automatiquement par Claude Code ; fiches `agents/openai.yaml`

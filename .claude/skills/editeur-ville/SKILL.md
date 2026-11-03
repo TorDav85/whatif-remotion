@@ -48,3 +48,9 @@ const layout = useCityLayout('ma-ville');            // charge public/city-layou
 <LayoutScene layout={layout}>…personnages…</LayoutScene>  // + votre CameraRig ou sampleShots(layout.camera.shots, t)
 ```
 Contrôle : `npm run stills -- CityLayoutPreview --shots`.
+
+## Ville de référence de la série
+Pour un épisode de la série, ne pas générer de ville : nommer un lieu de la ville figée
+(`appartement-marc`, `rue-marc`, `place-centrale`) avec `useEpisodeSet` / `ReferenceScene` /
+`placeShots` de `src/assets/city/reference/` (guide : `docs/ville-reference.md`). Ne jamais enregistrer
+`ville-reference` depuis l'éditeur ni modifier son JSON : `npm run city:freeze -- --check` et les tests le refusent.

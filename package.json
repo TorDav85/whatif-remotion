@@ -15,6 +15,7 @@
     "voice:cafe:v2": "node scripts/audio/python.mjs scripts/audio/cafe-cold.py --voice morpheus --version v2",
     "render:cafe:v2": "node scripts/export/cafe-cold.mjs --v2",
     "city": "node scripts/project/city-editor.mjs",
+    "city:freeze": "node scripts/project/freeze-city.mjs",
     "stills": "node scripts/check/stills.mjs",
     "test:city": "node scripts/check/run-ts-tests.mjs",
     "test": "npm run typecheck && npm run test:city && npm run test:project && npm run validate",
