@@ -6,7 +6,7 @@ import {ASSET_BY_TYPE} from '../src/assets/city/registry';
 import {REFERENCE_WORLD, generateReferenceWorld, worldItem} from '../src/assets/city/reference/world';
 import {PLACES, PLACE_IDS} from '../src/assets/city/reference/places';
 import {REFERENCE_SHOTS} from '../src/assets/city/reference/shots';
-import {applyVariants, getPlace, interaction, placeShots, resolveEpisodeSet, splitDetail, spot} from '../src/assets/city/reference/episode';
+import {applyVariants, environmentFor, getPlace, interaction, placeShots, resolveEpisodeSet, splitDetail, spot} from '../src/assets/city/reference/episode';
 import {buildingAt, buildingBoxes, inZone} from '../src/assets/city/reference/checks';
 
 const FILE = 'public/city-layouts/ville-reference.json';
@@ -135,6 +135,11 @@ test('variantes : nouveau monde, source jamais modifiée, ids invalides refusés
   const b = v.items.find((i) => i.id === 'haussmann-894')!;
   assert.ok(Number(b.props.floors) <= 7);
   assert.throws(() => applyVariants(REFERENCE_WORLD, {changes: [{id: 'nope'}]}), /objet « nope » absent/);
+  const towers = applyVariants(REFERENCE_WORLD, {damage: [{center: [0, -250], radius: 100, level: 1}]}).items.filter((i) => i.type === 'tower');
+  assert.ok(towers.some((i) => Number(i.props.height) < Number(worldItem(i.id).props.height)), 'tours écrêtées');
+  const env = environmentFor({weather: 'pluie', sky: {top: '#776655', fogFar: 300}});
+  assert.equal(env.palette.top, '#776655');
+  assert.equal(env.fogFar, 300);
   assert.throws(() => applyVariants(REFERENCE_WORLD, {add: [{...worldItem('car-332')}]}), /existe déjà/);
   assert.deepEqual(applyVariants(REFERENCE_WORLD, {damage: [{center: [0, 0], radius: 40, level: 0.7}]}),
     applyVariants(REFERENCE_WORLD, {damage: [{center: [0, 0], radius: 40, level: 0.7}]}), 'dégâts reproductibles');

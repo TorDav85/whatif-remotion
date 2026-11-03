@@ -11,6 +11,8 @@ import {CITY_PREVIEW_FRAMES, CityBasePreview} from './assets/city/CityBasePrevie
 import {CITY_LAYOUT_FRAMES, CityLayoutPreview, calculateCityLayoutMetadata} from './assets/city/CityLayoutPreview';
 import {CityTour, tourFrames} from './assets/city/reference/CityTour';
 import {REFERENCE_DEMO_FRAMES, ReferenceDemo} from './assets/city/reference/ReferenceDemo';
+import {BombeNucleaireVille} from './videos/bombe-nucleaire-ville/BombeNucleaireVille';
+import bombeVilleTiming from './videos/bombe-nucleaire-ville/timing.json';
 import {AudioFirstBridge} from './videos/audio-first-bridge/AudioFirstBridge';
 import compiledAudioFirst from './videos/audio-first-bridge/compiled-timeline.json';
 import {readTimeline, timelineMetadata} from './videos/audio-first-bridge/timeline/runtime.mjs';
@@ -59,6 +61,7 @@ export const Root: React.FC = () => (
         {...timelineMetadata(audioFirst)} calculateMetadata={({props}) => timelineMetadata(props.timeline)} />
     </Folder>
     <Folder name="Videos">
+      <Composition id="BombeNucleaireVille" component={BombeNucleaireVille} durationInFrames={Math.round(bombeVilleTiming.duration * bombeVilleTiming.fps)} fps={bombeVilleTiming.fps} width={bombeVilleTiming.width} height={bombeVilleTiming.height} />
       <Composition id="MarcSalaire2" component={MarcSalaire2} durationInFrames={Math.round(marcSalaire2Timing.duration * marcSalaire2Timing.fps)} fps={marcSalaire2Timing.fps} width={marcSalaire2Timing.width} height={marcSalaire2Timing.height} />
       <Composition id="Couverture" component={Cover} durationInFrames={1} fps={30} width={1080} height={1920} defaultProps={{slug: 'marc-geant', t: 46, title: 'Et si Marc devenait géant ?'}} />
       <Composition id="MarcGeantCourt" component={MarcGeantCourt} durationInFrames={Math.round(marcGeantCourtTiming.duration * marcGeantCourtTiming.fps)} fps={marcGeantCourtTiming.fps} width={marcGeantCourtTiming.width} height={marcGeantCourtTiming.height} />
