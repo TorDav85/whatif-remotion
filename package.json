@@ -52,6 +52,7 @@
     "render": "node scripts/project/video.mjs render whatif",
     "still": "node scripts/project/video.mjs still whatif",
     "ambience": "node scripts/audio/ambience-whatif.mjs",
+    "sfx": "node scripts/audio/sfx/render.mjs",
     "voice": "node scripts/audio/voice-piper.mjs",
     "voice:prepare": "node scripts/audio/python.mjs scripts/audio/xtts/prepare.py",
     "voice:add": "node scripts/audio/python.mjs scripts/audio/xtts/profiles.py add",

@@ -127,6 +127,9 @@ npm run audio:levels -- marc-deux-lunes                       # niveaux des rép
   l'espace disque, puis `CUDA_VISIBLE_DEVICES=-1` force le CPU. Whisper utilise le GPU via les DLL de PyTorch.
 - Les références vocales (`voice-samples/`) ne sont jamais versionnées ; les pistes des vidéos Marc
   (`public/marc-*`) le sont, celles des anciennes bases se reconstruisent.
+- Bruitages : 38 effets synthétisés en code, sans fichier sous licence ni navigateur (`npm run sfx -- --list`,
+  feuille `{duration, cues: [{t, sfx}]}` → WAV). Transitions `whip`, `zoom`, `flash` sur la scène 3D avec
+  leurs sons : [docs/transitions-et-effets-sonores.md](docs/transitions-et-effets-sonores.md), démo **Transitions**.
 
 ## 5. Vérifier et rendre
 

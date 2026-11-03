@@ -11,6 +11,7 @@ import {CITY_PREVIEW_FRAMES, CityBasePreview} from './assets/city/CityBasePrevie
 import {CITY_LAYOUT_FRAMES, CityLayoutPreview, calculateCityLayoutMetadata} from './assets/city/CityLayoutPreview';
 import {CityTour, tourFrames} from './assets/city/reference/CityTour';
 import {REFERENCE_DEMO_FRAMES, ReferenceDemo} from './assets/city/reference/ReferenceDemo';
+import {TRANSITIONS_FRAMES, TransitionsShowcase} from './assets/TransitionsShowcase';
 import {BombeNucleaireVille} from './videos/bombe-nucleaire-ville/BombeNucleaireVille';
 import bombeVilleTiming from './videos/bombe-nucleaire-ville/timing.json';
 import {AudioFirstBridge} from './videos/audio-first-bridge/AudioFirstBridge';
@@ -91,6 +92,7 @@ export const Root: React.FC = () => (
       <Composition id="CityLayoutPreview" component={CityLayoutPreview} durationInFrames={CITY_LAYOUT_FRAMES} fps={30} width={1080} height={1920} defaultProps={{layout: 'ma-ville'}} calculateMetadata={calculateCityLayoutMetadata} />
       <Composition id="VilleReferenceVisite" component={CityTour} durationInFrames={tourFrames(30)} fps={30} width={1080} height={1920} defaultProps={{lod: true}} />
       <Composition id="VilleReferenceVisiteSansLOD" component={CityTour} durationInFrames={tourFrames(30)} fps={30} width={1080} height={1920} defaultProps={{lod: false}} />
+      <Composition id="Transitions" component={TransitionsShowcase} durationInFrames={TRANSITIONS_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="VilleReferenceDemo" component={ReferenceDemo} durationInFrames={REFERENCE_DEMO_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="CityBasePreview"component={CityBasePreview} durationInFrames={CITY_PREVIEW_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="AssetsVille"component={CityShowcase} durationInFrames={CITY_FRAMES} fps={SHOWCASE_FPS} width={1080} height={1920} />
