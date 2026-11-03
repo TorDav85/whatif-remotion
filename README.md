@@ -4,8 +4,8 @@ Vidéos TikTok/Shorts « Et si… ? » en 1080×1920, style low-poly à faces pl
 off générée localement (XTTS) et ambiance sonore procédurale. Un dossier par vidéo, une
 bibliothèque 3D commune, des scripts classés par usage.
 
-> Branche de travail : **`1.03-test2`**. Voir [l'état des versions](#versions) et
-> [la feuille de route](AMELIORATIONS.md).
+> Branche de travail : **`1.11`** (pilote éditorial, voir [docs/versions/1.11.md](docs/versions/1.11.md)).
+> Voir [l'état des versions](#versions) et [la feuille de route](AMELIORATIONS.md).
 
 ## Sommaire
 
@@ -219,11 +219,26 @@ un nouvel asset ajouté au registre apparaît automatiquement dans le catalogue.
 | `main` / `1.03-test1` | Structure initiale (même commit `0f8cb9b`) |
 | `1.01` | Nature V2, Gravité, objets extérieurs et intérieurs |
 | `1.02` | Réorganisation `videos/` · `assets/` · `core/` · `shared/`, catalogue, XTTS multi-profils, 24 objets ville |
-| **`1.03-test2`** | 1.02 + corrections de l'audit + chaîne audio-first, cafe/bus/polar, `CityBase`, `InternetOffV1` |
+| `1.03-test2` | 1.02 + corrections de l'audit + chaîne audio-first, cafe/bus/polar, `CityBase`, `InternetOffV1` |
+| `htmlallasset` | Éditeur de ville HTML, caméra réalisateur, vérification des cadrages |
+| `1.10` | Série Marc (géant, mini, soif, four, congel, salaire 1-3, deux lunes), finition visuelle 2.01, dossier `review/1.10` (MP4 + mesures) |
+| **`1.11`** | Pilote éditorial `MarcGeantCourt` (45 s), sous-titres synchronisés, politique d'habillage, rapport éditorial, mesure du mix, fichiers de publication |
 
-Détails : [docs/versions/1.03-test2.md](docs/versions/1.03-test2.md).
+Détails : [1.11](docs/versions/1.11.md) · [2.01](docs/versions/2.01.md) · [1.03-test2](docs/versions/1.03-test2.md).
 
 ## Améliorations
+
+Faites dans `1.11` (suite à la review de `1.10`, détails dans [docs/versions/1.11.md](docs/versions/1.11.md)) :
+
+- Pilote `MarcGeantCourt` : 45 s montées à partir des plans de `MarcGeant`, accroche sur le problème,
+  une seule question finale (au lieu de CTA à l'écran 94 % du temps), fondus réservés aux changements d'échelle.
+- `src/shared/captions/CaptionTrack.tsx` : sous-titres en petits groupes calés sur la voix
+  (`npm run captions -- <slug>`, timings Whisper mot à mot, texte du script).
+- `src/shared/ui/OverlayPolicy.ts` (modes `story` / `science` / `climax` / `end`), `PlatformSafeArea.ts`, `transitions.ts`.
+- `npm run editorial` : rapport des sous-titres trop longs, CTA, chevauchements, plans longs, chiffres non sourcés,
+  audio manquant, état de publication (`out/editorial-report.md`).
+- `npm run audio:levels -- <slug> [mp4]` : niveaux des répliques, atténuation de l'ambiance sous la voix, mix final.
+- `src/videos/<slug>/publication.json` : variante d'accroche et de montage, métriques séparées YouTube Shorts / TikTok.
 
 Faites dans `1.03-test2` :
 
@@ -235,11 +250,10 @@ Faites dans `1.03-test2` :
 
 Prochaines étapes prioritaires (liste complète et critères dans [AMELIORATIONS.md](AMELIORATIONS.md)) :
 
-1. Remonter `Actor` et le système de plans (`SHOTS`/`CUTS`) dans `src/shared/` pour les réutiliser.
-2. Ajouter `internet-off` au catalogue pour qu'il profite de `npm run video` et du validateur.
-3. Ancrer les bulles de dialogue sur les têtes (projection 3D → écran) au lieu de positions fixes.
-4. Intégration continue : `npm ci` → `validate` → `typecheck` → `test:project` → stills.
-5. Vérifier la licence XTTS (CPML) et le consentement des voix avant toute publication monétisée.
+1. Publier `MarcGeantCourt` et `MarcGeant`, remplir leur `publication.json` et lire les courbes de rétention.
+2. Selon les résultats, appliquer les règles du pilote (sous-titres, une question, habillage par mode) aux autres épisodes.
+3. Tester les deux autres accroches (danger annoncé, question scientifique) sur le même concept.
+4. Vérifier la licence XTTS (CPML) et le consentement des voix avant toute publication monétisée.
 
 
 ## Assets détaillés et skills

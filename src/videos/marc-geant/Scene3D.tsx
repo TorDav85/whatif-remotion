@@ -274,8 +274,13 @@ const MarcModel: React.FC<{t: number; phase: number; walk: number; worried: numb
   <Marc t={phase} walk={walk} cold={worried} rightHand={hand} />
 );
 
-export const Scene3D: React.FC<{t: number}> = ({t}) => {
-  const view = shotAt(t);
+/**
+ * `clearStreet` moves the minute-5 street camera from the parking lane to the roadway, so no
+ * parked car fills the foreground (used by the 1.11 short cut; the original film is unchanged).
+ */
+export const Scene3D: React.FC<{t: number; clearStreet?: boolean}> = ({t, clearStreet}) => {
+  const base = shotAt(t);
+  const view = clearStreet && t >= 33 && t < CITY_END ? {...base, pos: base.pos.clone().setX(1.2).setY(1.9)} : base;
   const H = heightAt(t);
   const tex = useParisTextures();
   const glow = useGlowTexture();

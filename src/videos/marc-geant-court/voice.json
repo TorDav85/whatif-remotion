@@ -1,0 +1,105 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-geant-court/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Marc double de taille chaque minute. Son corps ne suit pas.",
+      "start": 0.1,
+      "duration": 3.5036,
+      "end": 3.6036,
+      "speed": 1.0,
+      "seed": 27000,
+      "audio": "marc-geant-court/hook.wav",
+      "sha256": "ce9d915f4d466117d58e95f818f4082ac10fa9f8909aaf3b94a238d0aad86f07"
+    },
+    {
+      "id": "problem",
+      "text": "Minute trois : quatorze mètres. Ses genoux commencent déjà à céder.",
+      "start": 4.6,
+      "duration": 4.5889,
+      "end": 9.1889,
+      "speed": 1.0,
+      "seed": 27001,
+      "audio": "marc-geant-court/problem.wav",
+      "sha256": "3fcd8f00735f294fed07b025d5f12ecefd35375264059bc0b617ef9ac5db0a8f"
+    },
+    {
+      "id": "law",
+      "text": "Le problème : sa taille double, mais son poids est multiplié par huit. Ses os, seulement par quatre.",
+      "start": 10.2,
+      "duration": 7.1095,
+      "end": 17.3095,
+      "speed": 1.0859,
+      "seed": 27002,
+      "audio": "marc-geant-court/law.wav",
+      "sha256": "f1889ff28ea045bef60e3e128d2838484b53e4e55beb80d531e1213304028428"
+    },
+    {
+      "id": "stomp",
+      "text": "À soixante mètres, chaque pas est un petit séisme.",
+      "start": 17.8,
+      "duration": 3.7967,
+      "end": 21.5967,
+      "speed": 1.0,
+      "seed": 27003,
+      "audio": "marc-geant-court/stomp.wav",
+      "sha256": "861502fa21626bac8069a7e38239fd9381d0e86c343adf33ae4bebcd5e13eefa"
+    },
+    {
+      "id": "eiffel",
+      "text": "Minute huit : la tour Eiffel lui arrive à la poitrine.",
+      "start": 23.2,
+      "duration": 2.881,
+      "end": 26.081,
+      "speed": 1.0,
+      "seed": 27004,
+      "audio": "marc-geant-court/eiffel.wav",
+      "sha256": "549b1b5b6e5874d793229a2cf1d5c4f91bd58e98cfc25f4f2d54a092479bf0fb"
+    },
+    {
+      "id": "plane",
+      "text": "Minute treize : il frôle les avions. L'air devient rare.",
+      "start": 28.8,
+      "duration": 4.1365,
+      "end": 32.9365,
+      "speed": 1.0,
+      "seed": 27005,
+      "audio": "marc-geant-court/plane.wav",
+      "sha256": "0e33a3506ef8f630d148df5a3aba9c3cfed8879f3e16f4bee8a5c93c63242e7f"
+    },
+    {
+      "id": "earth",
+      "text": "Minute vingt-trois : il est plus grand que la Terre.",
+      "start": 34.2,
+      "duration": 2.6088,
+      "end": 36.8088,
+      "speed": 1.0,
+      "seed": 27006,
+      "audio": "marc-geant-court/earth.wav",
+      "sha256": "1e228b6b461d130940736e2b7d5860ec70c82893272dc356993976ff829bac49"
+    },
+    {
+      "id": "moon",
+      "text": "Et la Lune ? Une bille dans sa main.",
+      "start": 39.1,
+      "duration": 2.3219,
+      "end": 41.4219,
+      "speed": 1.0,
+      "seed": 27007,
+      "audio": "marc-geant-court/moon.wav",
+      "sha256": "daef102ee12c87762239109be2c6957c3a5d007c4e0ad82b1d5c5d2a181ff623"
+    },
+    {
+      "id": "end",
+      "text": "Tu l'arrêterais à quelle minute ?",
+      "start": 42.0,
+      "duration": 1.1005,
+      "end": 43.1005,
+      "speed": 1.0,
+      "seed": 27008,
+      "audio": "marc-geant-court/end.wav",
+      "sha256": "a522de29e4d45788e68a47a78c092dc49fbd06719c5d6ae71f126cb5463e9e94"
+    }
+  ]
+}

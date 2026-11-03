@@ -44,6 +44,8 @@ import {MarcSalaire3} from './videos/marc-salaire-3/MarcSalaire3';
 import marcSalaire3Timing from './videos/marc-salaire-3/timing.json';
 import {MarcDeuxLunes} from './videos/marc-deux-lunes/MarcDeuxLunes';
 import marcDeuxLunesTiming from './videos/marc-deux-lunes/timing.json';
+import {MarcGeantCourt} from './videos/marc-geant-court/MarcGeantCourt';
+import marcGeantCourtTiming from './videos/marc-geant-court/timing.json';
 
 const audioFirst = readTimeline(compiledAudioFirst);
 
@@ -55,6 +57,7 @@ export const Root: React.FC = () => (
     </Folder>
     <Folder name="Videos">
       <Composition id="MarcSalaire2" component={MarcSalaire2} durationInFrames={Math.round(marcSalaire2Timing.duration * marcSalaire2Timing.fps)} fps={marcSalaire2Timing.fps} width={marcSalaire2Timing.width} height={marcSalaire2Timing.height} />
+      <Composition id="MarcGeantCourt" component={MarcGeantCourt} durationInFrames={Math.round(marcGeantCourtTiming.duration * marcGeantCourtTiming.fps)} fps={marcGeantCourtTiming.fps} width={marcGeantCourtTiming.width} height={marcGeantCourtTiming.height} />
       <Composition id="MarcDeuxLunes" component={MarcDeuxLunes} durationInFrames={Math.round(marcDeuxLunesTiming.duration * marcDeuxLunesTiming.fps)} fps={marcDeuxLunesTiming.fps} width={marcDeuxLunesTiming.width} height={marcDeuxLunesTiming.height} />
       <Composition id="MarcSalaire3" component={MarcSalaire3} durationInFrames={Math.round(marcSalaire3Timing.duration * marcSalaire3Timing.fps)} fps={marcSalaire3Timing.fps} width={marcSalaire3Timing.width} height={marcSalaire3Timing.height} />
       <Composition id="MarcSalaire" component={MarcSalaire} durationInFrames={Math.round(marcSalaireTiming.duration * marcSalaireTiming.fps)} fps={marcSalaireTiming.fps} width={marcSalaireTiming.width} height={marcSalaireTiming.height} />

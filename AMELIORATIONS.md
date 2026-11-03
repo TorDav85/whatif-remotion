@@ -1,5 +1,44 @@
 # Améliorations à effectuer — feuille de route
 
+## État actuel : `1.11` (03/11/2026)
+
+La priorité n'est plus d'ajouter du détail 3D mais d'améliorer la **rétention** : accroche immédiate,
+moins de textes concurrents, une histoire qui avance par problèmes et conséquences. Point de départ :
+la review de la branche `1.10` (rétention, sous-titres, CTA, transitions, mix, mesure des publications).
+
+### Fait dans 1.11
+
+| Recommandation de la review | Réponse dans 1.11 | Vérification |
+| --- | --- | --- |
+| CTA presque continus (`marc-geant`) | Pilote `MarcGeantCourt` : une seule question finale, lue par la voix | `npm run editorial` : 7 % de la durée contre 94 % pour `marc-geant` |
+| Sous-titres en bloc | `CaptionTrack` + `npm run captions` : groupes de 6 mots / 32 caractères max., calés sur la voix | Rapport éditorial, planche du pilote |
+| Histoire par énumération | Narration du pilote en problème → conséquence → escalade (corps qui ne suit pas, loi carré-cube, séisme, air rare) | Lecture du `narration.json` |
+| Fondus noirs à chaque coupe | `transitions.ts` : coupe franche par défaut, fondu seulement aux 2 changements d'échelle | `editorial.json` du pilote |
+| Mix à volumes fixes | `npm run audio:levels` : écart entre répliques, atténuation sous la voix, LUFS et crête du MP4 | `out/audio-levels/<slug>.json` |
+| Couches empilées | `OverlayPolicy` : modes `story` / `science` / `climax` / `end` | Code du pilote |
+| Mesurer le bon problème | `publication.json` par vidéo, métriques par plateforme (jamais fusionnées) | Rapport éditorial (« Non publiée ») |
+| README et feuille de route mélangeant les versions | README et ce document recentrés sur 1.11 ; la suite de ce fichier est l'historique de 1.03-test2 | — |
+
+### Prochaines étapes (dans l'ordre)
+
+1. Publier `MarcGeantCourt` (et l'original pour comparaison), remplir `publication.json`, noter les points de décrochage.
+   Vérification : courbe de rétention lue, au moins une hypothèse du tableau de la review confirmée ou écartée.
+2. Tester les deux autres accroches (danger annoncé, question scientifique) sur le même concept, une variable à la fois.
+3. Si le pilote tient, appliquer ses règles (CaptionTrack, une question, habillage par mode) aux autres épisodes Marc,
+   un par un, en gardant les originaux.
+4. Ajouter les champs `source` manquants signalés par `npm run editorial`.
+5. Vérifier la licence XTTS (CPML) et le consentement des voix avant toute publication monétisée.
+
+### Limites connues
+
+- Le GPU (GTX 1660 Ti, 6 Go) refuse parfois de charger XTTS quand Windows manque de mémoire virtuelle :
+  `CUDA_VISIBLE_DEVICES=-1` force le calcul sur le processeur (plus lent, même voix).
+- Les transcriptions Whisper confondent certains homophones (« ses os » / « ses eaux ») : contrôle à l'oreille conseillé.
+
+---
+
+## Historique : audit de 1.03-test2
+
 Audit du dépôt `whatif-remotion` réalisé le 28/10/2026 (revue statique, sans exécution
 locale). Ce document compare toutes les versions et liste les améliorations restantes,
 par ordre de priorité, avec pour chacune un critère de vérification.
