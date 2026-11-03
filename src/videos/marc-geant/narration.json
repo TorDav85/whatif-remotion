@@ -1,0 +1,19 @@
+{
+  "duration": 83,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 3.4], "text": "Et si Marc doublait de taille... chaque minute ?"},
+    {"id": "intro", "slot": [3.7, 6.1], "text": "Minute zéro : un mètre quatre-vingts."},
+    {"id": "m1", "slot": [7.2, 11.7], "text": "Minute un : trois mètres soixante. Il voit par-dessus les bus."},
+    {"id": "m2", "slot": [13.1, 17.7], "text": "Minute deux : sept mètres. Tout le monde sort son téléphone."},
+    {"id": "m3", "slot": [19.1, 24.6], "text": "Minute trois : quatorze mètres. Mais il y a un problème."},
+    {"id": "law", "slot": [25.4, 32.8], "text": "Sa taille double. Son poids, lui, est multiplié par huit. Ses os, seulement par quatre."},
+    {"id": "m5", "slot": [34.1, 39.7], "text": "Minute cinq : soixante mètres. Chaque pas fait trembler Paris."},
+    {"id": "m8", "slot": [41.0, 46.9], "text": "Minute huit : quatre cent soixante mètres. La tour Eiffel lui arrive à la poitrine."},
+    {"id": "m10", "slot": [48.0, 53.6], "text": "Minute dix : presque deux kilomètres. Paris ressemble à une maquette."},
+    {"id": "m13", "slot": [55.0, 60.7], "text": "Minute treize : quinze kilomètres. Les avions lui frôlent le torse."},
+    {"id": "m20", "slot": [62.0, 67.7], "text": "Minute vingt : deux mille kilomètres. Plus une goutte d'air autour de sa tête."},
+    {"id": "m23", "slot": [69.0, 74.7], "text": "Minute vingt-trois : quinze mille kilomètres. Il est plus grand que la Terre."},
+    {"id": "moon", "slot": [75.4, 78.9], "seed": 83113, "text": "Minute vingt-huit : la Lune ? Une bille dans sa main."},
+    {"id": "cta", "slot": [79.2, 82.8], "seed": 83217, "text": "Et toi, tu partirais à quelle minute ? Dis-le en commentaire."}
+  ]
+}

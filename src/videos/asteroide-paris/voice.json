@@ -1,0 +1,116 @@
+{
+  "voice": "morpheus",
+  "ambience": "asteroide-paris/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si un astéroïde tombait sur Paris... maintenant ?",
+      "start": 0.2,
+      "duration": 2.802,
+      "end": 3.002,
+      "speed": 1.0588,
+      "seed": 21000,
+      "audio": "asteroide-paris/hook.wav",
+      "sha256": "057c82d948a38bed449aedaeb6aeedd1fd00420f773a132ee5b0afcaddd50c34"
+    },
+    {
+      "id": "marc",
+      "text": "Lui, c'est Marc. Il ne le sait pas encore.",
+      "start": 3.3,
+      "duration": 2.1175,
+      "end": 5.4175,
+      "speed": 1.0,
+      "seed": 21001,
+      "audio": "asteroide-paris/marc.wav",
+      "sha256": "4d8095df0a235c79216d1937571dc54fd2baee1960528d2b3aca42433128e64d"
+    },
+    {
+      "id": "size",
+      "text": "Cent mètres de roche. Vingt kilomètres par seconde.",
+      "start": 7.0,
+      "duration": 3.2818,
+      "end": 10.2818,
+      "speed": 1.0,
+      "seed": 21002,
+      "audio": "asteroide-paris/size.wav",
+      "sha256": "e5ce5ef205399a84ed2a453025b51554b42916c8f8a2ef7887eb843fb354a8bd"
+    },
+    {
+      "id": "sky",
+      "text": "Dans le ciel, une deuxième étoile s'allume. En plein jour.",
+      "start": 11.0,
+      "duration": 3.4095,
+      "end": 14.4095,
+      "speed": 1.1833,
+      "seed": 40311,
+      "audio": "asteroide-paris/sky.wav",
+      "sha256": "94dba136c2d122416cd9442ccd00d2b459952b5cbb84aa8b53efeccd479794e3"
+    },
+    {
+      "id": "phones",
+      "text": "Tous les téléphones sonnent en même temps.",
+      "start": 14.8,
+      "duration": 1.5247,
+      "end": 16.3247,
+      "speed": 1.0,
+      "seed": 21004,
+      "audio": "asteroide-paris/phones.wav",
+      "sha256": "a903589d71036965cc32a3fd13b2157d35bb30939506ff531ed87cb9d702ddfd"
+    },
+    {
+      "id": "ten",
+      "text": "Marc a dix secondes. Et toi, tu ferais quoi ?",
+      "start": 18.5,
+      "duration": 3.5158,
+      "end": 22.0158,
+      "speed": 1.0524,
+      "seed": 40511,
+      "audio": "asteroide-paris/ten.wav",
+      "sha256": "7454c314cdbad3df215020908c6e3ec7ba4f05c764ccc29f56101d7863460db6"
+    },
+    {
+      "id": "count",
+      "text": "Trois. Deux. Un.",
+      "start": 22.3,
+      "duration": 2.3006,
+      "end": 24.6006,
+      "speed": 1.0,
+      "seed": 21006,
+      "audio": "asteroide-paris/count.wav",
+      "sha256": "fae8217572477c980d1b5df0ea9830dfb53d723895e01994ea9452ec5b90d1f2"
+    },
+    {
+      "id": "flash",
+      "text": "Un flash. Plus fort que le soleil.",
+      "start": 25.7,
+      "duration": 2.4456,
+      "end": 28.1456,
+      "speed": 1.0,
+      "seed": 21007,
+      "audio": "asteroide-paris/flash.wav",
+      "sha256": "0f07db440f91c8c3ae6659b2a14ac5431e697ec7740a667f19b82f2993c6e271"
+    },
+    {
+      "id": "wave",
+      "text": "Puis l'onde de choc. Même la tour Eiffel plie.",
+      "start": 29.2,
+      "duration": 3.7953,
+      "end": 32.9953,
+      "speed": 1.0,
+      "seed": 21008,
+      "audio": "asteroide-paris/wave.wav",
+      "sha256": "76018288bd3725bc649f3125169a05d144ac2f5270a8a5e7c1f74166afe9c91f"
+    },
+    {
+      "id": "cta",
+      "text": "Est-ce que Marc s'en sort ? Abonne-toi pour la partie deux.",
+      "start": 33.4,
+      "duration": 2.6235,
+      "end": 36.0235,
+      "speed": 1.0,
+      "seed": 21009,
+      "audio": "asteroide-paris/cta.wav",
+      "sha256": "523fd8861c9220b92939dc61c0218364c9601ca614f5118931b9f0c5fa952008"
+    }
+  ]
+}

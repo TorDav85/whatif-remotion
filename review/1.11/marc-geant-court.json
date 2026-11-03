@@ -1,0 +1,19 @@
+{
+  "slug": "marc-geant-court",
+  "voiceLufs": [
+    -16.0,
+    -16.0,
+    -16.2,
+    -15.9,
+    -16.2,
+    -15.9,
+    -16.1,
+    -16.4,
+    -16.1
+  ],
+  "voiceSpreadLu": 0.5,
+  "ambienceDuckDb": 4.8,
+  "voiceMeanLufs": -16.1,
+  "mixLufs": -16.9,
+  "mixPeakDb": -2.2
+}

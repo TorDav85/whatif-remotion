@@ -1,0 +1,369 @@
+{
+  "version": "2.01",
+  "packageVersion": "2.1.0",
+  "date": "2026-11-01",
+  "cameraPolicy": "conserver les cadrages et mouvements actuels",
+  "videos": [
+    {
+      "slug": "marc-geant",
+      "sourceId": "MarcGeant",
+      "title": "Marc double de taille",
+      "config": "src/videos/marc-geant/timing.json",
+      "frame": 1290,
+      "id": "MarcGeant-V201",
+      "duration": 83,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "bibliothèque urbaine détaillée"
+      ]
+    },
+    {
+      "slug": "marc-mini",
+      "sourceId": "MarcMini",
+      "title": "Marc rétrécit",
+      "config": "src/videos/marc-mini/timing.json",
+      "frame": 900,
+      "id": "MarcMini-V201",
+      "duration": 85,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "bibliothèque urbaine détaillée"
+      ]
+    },
+    {
+      "slug": "asteroide-paris",
+      "sourceId": "AsteroideParis",
+      "title": "Astéroïde sur Paris",
+      "config": "src/videos/asteroide-paris/timing.json",
+      "frame": 420,
+      "id": "AsteroideParis-V201",
+      "duration": 40,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "bibliothèque urbaine détaillée"
+      ]
+    },
+    {
+      "slug": "internet-off",
+      "sourceId": "InternetOffV1",
+      "title": "Internet disparaît",
+      "config": "src/videos/internet-off/timing.json",
+      "frame": 1440,
+      "id": "InternetOffV1-V201",
+      "duration": 85,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "bibliothèque urbaine détaillée"
+      ]
+    },
+    {
+      "slug": "paris-polar-v2",
+      "sourceId": "ParisPolarV2",
+      "title": "Paris polaire — Marc",
+      "config": "src/videos/paris-polar-v2/timing.json",
+      "frame": 450,
+      "id": "ParisPolarV2-V201",
+      "duration": 61.166666666666664,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "paris-polar",
+      "sourceId": "ParisPolar",
+      "title": "Paris polaire — famille",
+      "config": "src/videos/paris-polar/timing.json",
+      "frame": 450,
+      "id": "ParisPolar-V201",
+      "duration": 65.9,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "bus-cold",
+      "sourceId": "BusCold",
+      "title": "Le prochain bus",
+      "config": "src/videos/bus-cold/timing.json",
+      "frame": 600,
+      "id": "BusCold-V201",
+      "duration": 67.03333333333333,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur"
+      ]
+    },
+    {
+      "slug": "cafe-cold",
+      "sourceId": "CafeCold",
+      "title": "La place au soleil",
+      "config": "src/videos/cafe-cold/timing.json",
+      "frame": 450,
+      "id": "CafeCold-V201",
+      "duration": 58.56666666666667,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur"
+      ]
+    },
+    {
+      "slug": "cafe-cold-v2",
+      "sourceId": "CafeColdV2",
+      "title": "La place au soleil — Morpheus",
+      "config": "src/videos/cafe-cold-v2/timing.json",
+      "frame": 450,
+      "id": "CafeColdV2-V201",
+      "duration": 63.0,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur"
+      ]
+    },
+    {
+      "slug": "nature-v2",
+      "sourceId": "NatureReprendV2",
+      "title": "Humanité disparue — V2 (branche 1.01)",
+      "config": "src/videos/nature-v2/nature.json",
+      "frame": 600,
+      "ambience": "scripts/audio/ambience-nature.mjs",
+      "id": "NatureReprendV2-V201",
+      "duration": 50,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur"
+      ]
+    },
+    {
+      "slug": "gravity",
+      "sourceId": "Gravite",
+      "title": "Gravité coupée à Paris (branche 1.01)",
+      "config": "src/videos/gravity/gravity.json",
+      "frame": 900,
+      "ambience": "scripts/audio/ambience-gravity.mjs",
+      "id": "Gravite-V201",
+      "duration": 55,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur"
+      ]
+    },
+    {
+      "slug": "whatif",
+      "sourceId": "WhatIf",
+      "title": "Trou noir — original avec XTTS",
+      "config": "src/videos/whatif/timeline.json",
+      "frame": 300,
+      "ambience": "scripts/audio/ambience-whatif.mjs",
+      "id": "WhatIf-V201",
+      "duration": 46,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages articulés",
+        "horizon végétal",
+        "finitions de contraste et de couleur"
+      ]
+    },
+    {
+      "slug": "nature",
+      "sourceId": "NatureReprend",
+      "title": "Humanité disparue — V1",
+      "config": "src/videos/nature/nature.json",
+      "frame": 600,
+      "ambience": "scripts/audio/ambience-nature.mjs",
+      "id": "NatureReprend-V201",
+      "duration": 46,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur"
+      ]
+    },
+    {
+      "slug": "heat",
+      "sourceId": "Chaleur",
+      "title": "Température +10 °C par minute",
+      "config": "src/videos/heat/timeline.json",
+      "frame": 1200,
+      "ambience": "scripts/audio/ambience-heat.mjs",
+      "id": "Chaleur-V201",
+      "duration": 75,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "paris-v2",
+      "sourceId": "WhatIfParisV2",
+      "title": "Trou noir à Paris — V2",
+      "config": "src/videos/paris-v2/scenario.json",
+      "frame": 600,
+      "ambience": "scripts/audio/ambience-whatif.mjs",
+      "id": "WhatIfParisV2-V201",
+      "duration": 46,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "paris-v3",
+      "sourceId": "WhatIfParisV3",
+      "title": "Paris → galaxie — V3",
+      "config": "src/videos/paris-v3/scenario.json",
+      "frame": 660,
+      "ambience": "scripts/audio/ambience-paris.mjs",
+      "id": "WhatIfParisV3-V201",
+      "duration": 64,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "paris-v4",
+      "sourceId": "WhatIfParisV4",
+      "title": "Paris cartoon et système solaire — V4",
+      "config": "src/videos/paris-v4/scenario.json",
+      "frame": 120,
+      "ambience": "scripts/audio/ambience-paris.mjs",
+      "id": "WhatIfParisV4-V201",
+      "duration": 76,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "paris-v6",
+      "sourceId": "WhatIfParisV6",
+      "title": "Paris hivernal — V6",
+      "config": "src/videos/paris-v6/scenario.json",
+      "frame": 90,
+      "ambience": "scripts/audio/ambience-paris.mjs",
+      "id": "WhatIfParisV6-V201",
+      "duration": 76,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "paris-tiktok",
+      "sourceId": "WhatIfParisTikTok",
+      "title": "Paris TikTok — 70 secondes",
+      "config": "src/videos/paris-tiktok/scenario.json",
+      "frame": 90,
+      "ambience": "scripts/audio/ambience-paris.mjs",
+      "id": "WhatIfParisTikTok-V201",
+      "duration": 70,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "personnages harmonisés",
+        "décor prolongé selon la scène",
+        "finitions de contraste et de couleur",
+        "menuiseries et façades en relief"
+      ]
+    },
+    {
+      "slug": "audio-first-bridge",
+      "sourceId": "AudioFirstBridge",
+      "title": "Le pont — AudioFirst",
+      "config": "src/videos/audio-first-bridge/compiled-timeline.json",
+      "frame": 120,
+      "id": "AudioFirstBridge-V201",
+      "duration": 11.297333333333333,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "improvements": [
+        "quais prolongés",
+        "finitions de contraste et de couleur"
+      ]
+    }
+  ]
+}

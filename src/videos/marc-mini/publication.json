@@ -1,0 +1,46 @@
+{
+  "slug": "marc-mini",
+  "title": "Et si Marc rétrécissait ?",
+  "composition": "MarcMini",
+  "source": "out/marc-mini/marc-mini-85s.mp4",
+  "coverTime": 45,
+  "description": "Chaque minute, Marc perd la moitié de sa taille. Jusqu'où peut-il descendre ?",
+  "hashtags": "#etsi #whatif #science #minuscule",
+  "hookVariant": null,
+  "editVariant": "original",
+  "durationSeconds": 85,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": []
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Paris, six minutes",
+  "beats": [
+    {"id":"hook","text":"Et si Paris perdait dix degrés chaque minute ?","caption":"−10 °C chaque minute ?","pause":0.15},
+    {"id":"normal","text":"Au Trocadéro, Léa pose devant la tour Eiffel.","caption":"Une photo à Paris.","pause":0.15},
+    {"id":"basket","text":"À côté, leur vélo porte un panier rouge.","caption":"","pause":0.35},
+    {"id":"chill","text":"Une minute plus tard, dix degrés. Léa remonte son col.","caption":"","pause":0.15},
+    {"id":"wind","text":"À zéro, le vent se lève. La photo est terminée.","caption":"Le vent se lève.","pause":0.15},
+    {"id":"snow","text":"À moins dix, la neige tombe. Le sol se couvre de glace.","caption":"","pause":0.15},
+    {"id":"bike","text":"La roue glisse. Son père abandonne le vélo. Ils avancent à pied.","caption":"Ils avancent à pied.","pause":0.25},
+    {"id":"traffic","text":"À moins vingt, les voitures s'immobilisent. Les passants fuient vers le métro.","caption":"Paris se bloque.","pause":0.15},
+    {"id":"rescue","text":"Léa manque une marche. Son père la retient et la porte dans l'escalier.","caption":"","pause":0.25},
+    {"id":"deep","text":"Six minutes après la photo, moins quarante.","caption":"6 MINUTES · −40 °C","pause":0.2},
+    {"id":"return","text":"On retrouve le même point de vue.","caption":"","pause":0.15},
+    {"id":"silence","text":"Les fontaines se taisent. La place a disparu sous le blanc.","caption":"","pause":0.15},
+    {"id":"basketend","text":"Seul le panier rouge du vélo dépasse encore.","caption":"","pause":0.15},
+    {"id":"tower","text":"Derrière, la tour Eiffel s'efface dans la tempête.","caption":"","pause":0.3},
+    {"id":"cta","text":"Si cette vidéo t'a plu, mets un pouce bleu, abonne-toi et propose ta prochaine idée de vidéo en commentaire.","caption":"J’aime · Abonne-toi · Propose ton idée de vidéo","pause":0}
+  ]
+}

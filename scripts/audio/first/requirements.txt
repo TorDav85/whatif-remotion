@@ -1,0 +1,4 @@
+# Additional prototype transcription/word-timing dependency (XTTS installed separately).
+faster-whisper==1.2.1
+# PyAV 19 removed the metadata_errors parameter used by faster-whisper 1.2.1.
+av==16.0.1

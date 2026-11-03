@@ -1,0 +1,15 @@
+{
+  "duration": 40,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 3.0], "text": "Et si un astéroïde tombait sur Paris... maintenant ?"},
+    {"id": "marc", "slot": [3.3, 6.6], "text": "Lui, c'est Marc. Il ne le sait pas encore."},
+    {"id": "size", "slot": [7.0, 10.7], "text": "Cent mètres de roche. Vingt kilomètres par seconde."},
+    {"id": "sky", "slot": [11.0, 14.4], "seed": 40311, "text": "Dans le ciel, une deuxième étoile s'allume. En plein jour."},
+    {"id": "phones", "slot": [14.8, 18.2], "text": "Tous les téléphones sonnent en même temps."},
+    {"id": "ten", "slot": [18.5, 22.0], "seed": 40511, "text": "Marc a dix secondes. Et toi, tu ferais quoi ?"},
+    {"id": "count", "slot": [22.3, 24.8], "text": "Trois. Deux. Un."},
+    {"id": "flash", "slot": [25.7, 28.9], "text": "Un flash. Plus fort que le soleil."},
+    {"id": "wave", "slot": [29.2, 33.0], "text": "Puis l'onde de choc. Même la tour Eiffel plie."},
+    {"id": "cta", "slot": [33.4, 37.4], "text": "Est-ce que Marc s'en sort ? Abonne-toi pour la partie deux."}
+  ]
+}

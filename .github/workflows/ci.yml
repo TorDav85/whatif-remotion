@@ -1,0 +1,62 @@
+# Vérifications à chaque push et Pull Request : installation propre, validation des scénarios,
+# typage, tests, rapport éditorial, puis images clés de deux vidéos (sans GPU : WebGL logiciel).
+name: ci
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false # les MP4 de review/ ne servent pas aux tests
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer
+        run: npm ci
+
+      - name: Valider les scénarios
+        run: npm run validate
+
+      - name: Typage
+        run: npm run typecheck
+
+      - name: Tests caméra, ville et release
+        run: npm run test:city
+
+      - name: Test projet
+        run: npm run test:project
+
+      - name: Rapport éditorial
+        run: npm run editorial
+
+      - name: Images clés
+        env:
+          REMOTION_GL: swangle
+        run: |
+          npx remotion browser ensure
+          npm run stills -- MarcGeantCourt --frames 60,330,700,1050,1290
+          npm run stills -- MarcDeuxLunes --frames 100,500,1050,1500,2000
+
+      - name: Publier les planches et le rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: controles-${{ github.sha }}
+          path: |
+            out/stills/*/planche.png
+            out/editorial-report.md
+          if-no-files-found: ignore

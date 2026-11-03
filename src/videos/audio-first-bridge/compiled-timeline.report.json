@@ -1,0 +1,219 @@
+{
+  "status": "validated",
+  "alignmentMethod": "timestamped transcription + strict normalized text comparison; not forced alignment",
+  "warnings": [
+    "Les timestamps restent des estimations ; contrôler les mots déclencheurs dans le rapport et à l’écoute."
+  ],
+  "audio": [
+    {
+      "id": "metal",
+      "audioStart": 0.0,
+      "audioDuration": 3.1473333333333335,
+      "leadingSilence": 0.0,
+      "trailingSilence": 0.6873333333333336
+    },
+    {
+      "id": "bridge",
+      "audioStart": 3.5973333333333337,
+      "audioDuration": 2.4966666666666666,
+      "leadingSilence": 0.0,
+      "trailingSilence": 0.5966666666666667
+    }
+  ],
+  "anchors": [
+    {
+      "eventId": "metal-weakening",
+      "id": "metal-anchor",
+      "text": "se fragilise",
+      "beatId": "metal",
+      "occurrence": 1,
+      "edge": "end",
+      "matchCount": 1,
+      "resolvedAt": 2.46,
+      "wordStart": 1.62,
+      "wordEnd": 2.46,
+      "references": [
+        {
+          "beatId": "metal",
+          "wordIndex": 4
+        },
+        {
+          "beatId": "metal",
+          "wordIndex": 5
+        }
+      ],
+      "eventStart": 2.56,
+      "eventEnd": 4.16
+    },
+    {
+      "eventId": "camera-prepare",
+      "id": "camera-anchor",
+      "text": "céder",
+      "beatId": "bridge",
+      "occurrence": 1,
+      "edge": "start",
+      "matchCount": 1,
+      "resolvedAt": 4.997333333333334,
+      "wordStart": 4.997333333333334,
+      "wordEnd": 5.497333333333334,
+      "references": [
+        {
+          "beatId": "bridge",
+          "wordIndex": 5
+        }
+      ],
+      "eventStart": 3.8973333333333335,
+      "eventEnd": 4.997333333333334
+    },
+    {
+      "eventId": "bridge-collapse",
+      "id": "collapse-anchor",
+      "text": "céder",
+      "beatId": "bridge",
+      "occurrence": 1,
+      "edge": "end",
+      "matchCount": 1,
+      "resolvedAt": 5.497333333333334,
+      "wordStart": 4.997333333333334,
+      "wordEnd": 5.497333333333334,
+      "references": [
+        {
+          "beatId": "bridge",
+          "wordIndex": 5
+        }
+      ],
+      "eventStart": 5.697333333333334,
+      "eventEnd": 8.297333333333334
+    },
+    {
+      "eventId": "metal-title",
+      "id": "title-anchor",
+      "text": "fragilise",
+      "beatId": "metal",
+      "edge": "start",
+      "occurrence": 1,
+      "matchCount": 1,
+      "resolvedAt": 1.82,
+      "wordStart": 1.82,
+      "wordEnd": 2.46,
+      "references": [
+        {
+          "beatId": "metal",
+          "wordIndex": 5
+        }
+      ],
+      "eventStart": 1.9200000000000002,
+      "eventEnd": 3.72
+    },
+    {
+      "eventId": "conclusion",
+      "id": "conclusion-anchor",
+      "text": "céder",
+      "beatId": "bridge",
+      "edge": "end",
+      "occurrence": 1,
+      "matchCount": 1,
+      "resolvedAt": 5.497333333333334,
+      "wordStart": 4.997333333333334,
+      "wordEnd": 5.497333333333334,
+      "references": [
+        {
+          "beatId": "bridge",
+          "wordIndex": 5
+        }
+      ],
+      "eventStart": 8.397333333333334,
+      "eventEnd": 10.697333333333333
+    }
+  ],
+  "duration": 11.297333333333333,
+  "usefulEnd": 10.697333333333333,
+  "endPadding": 0.6,
+  "voice": {
+    "preset": "Ana Florence"
+  },
+  "media": {
+    "metal": {
+      "audioFile": "audio-first/bridge-demo/metal.wav",
+      "audioDuration": 3.1473333333333335,
+      "audioSha256": "948fd8ec3046e694420b89356794a4f43e9e1f8e52a73c43829ef035fd169642"
+    },
+    "bridge": {
+      "audioFile": "audio-first/bridge-demo/bridge.wav",
+      "audioDuration": 2.4966666666666666,
+      "audioSha256": "20c322255a4dc08f99387445495d1643ec5c97d5f5498917890b43fc7ebf0cc7"
+    }
+  },
+  "transcriptions": {
+    "metal": {
+      "observedText": "Sans entretien, le métal se fragilise.",
+      "words": [
+        {
+          "text": "Sans",
+          "start": 0.0,
+          "end": 0.14
+        },
+        {
+          "text": "entretien,",
+          "start": 0.14,
+          "end": 0.68
+        },
+        {
+          "text": "le",
+          "start": 1.08,
+          "end": 1.3
+        },
+        {
+          "text": "métal",
+          "start": 1.3,
+          "end": 1.62
+        },
+        {
+          "text": "se",
+          "start": 1.62,
+          "end": 1.82
+        },
+        {
+          "text": "fragilise.",
+          "start": 1.82,
+          "end": 2.46
+        }
+      ]
+    },
+    "bridge": {
+      "observedText": "Puis le pont finit par céder.",
+      "words": [
+        {
+          "text": "Puis",
+          "start": 0.0,
+          "end": 0.16
+        },
+        {
+          "text": "le",
+          "start": 0.16,
+          "end": 0.46
+        },
+        {
+          "text": "pont",
+          "start": 0.46,
+          "end": 0.76
+        },
+        {
+          "text": "finit",
+          "start": 0.76,
+          "end": 1.22
+        },
+        {
+          "text": "par",
+          "start": 1.22,
+          "end": 1.4
+        },
+        {
+          "text": "céder.",
+          "start": 1.4,
+          "end": 1.9
+        }
+      ]
+    }
+  }
+}

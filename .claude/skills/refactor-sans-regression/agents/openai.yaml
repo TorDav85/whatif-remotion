@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactor sans régression"
+  short_description: "Code partagé déplacé, images identiques au pixel"
+  default_prompt: "Utilise $refactor-sans-regression pour sortir ce composant du dossier vidéo et prouver que rien ne change."

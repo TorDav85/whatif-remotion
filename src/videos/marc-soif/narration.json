@@ -1,0 +1,19 @@
+{
+  "duration": 81,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 4.0], "text": "Et si Marc ne buvait plus une goutte d'eau... pendant une semaine ?"},
+    {"id": "j1", "slot": [4.4, 9.0], "text": "Premier jour. Marc repousse son verre d'eau. Rien de grave... pour l'instant."},
+    {"id": "body", "slot": [9.4, 15.2], "text": "Son corps est fait à soixante pour cent d'eau. Il en perd deux litres et demi par jour."},
+    {"id": "loss", "slot": [15.6, 19.6], "text": "En respirant, en transpirant... et aux toilettes."},
+    {"id": "j2", "slot": [20.6, 25.8], "text": "Jour deux. La soif devient obsédante. Ses reins passent en mode économie."},
+    {"id": "blood", "slot": [26.2, 31.6], "text": "Son urine devient foncée. Son sang s'épaissit, et son cœur pompe plus fort."},
+    {"id": "j3", "slot": [32.6, 37.8], "text": "Jour trois. Son cerveau se rétracte légèrement. Maux de tête, vertiges."},
+    {"id": "skin", "slot": [38.2, 43.6], "text": "Ses lèvres se fendillent. Sa peau ne se remet plus en place quand on la pince."},
+    {"id": "j4", "slot": [44.6, 49.8], "text": "Jour quatre. Ses reins lâchent. Les déchets s'accumulent dans son sang."},
+    {"id": "heart", "slot": [50.2, 54.4], "text": "Son cœur s'emballe, sa tension chute."},
+    {"id": "j5", "slot": [55.4, 61.0], "text": "Jour cinq. Marc est confus. Il ne transpire plus, et sa température grimpe."},
+    {"id": "stop", "slot": [61.8, 66.6], "text": "Et pour la plupart des humains... c'est là que tout s'arrête."},
+    {"id": "fact", "slot": [67.4, 73.4], "text": "On survit des semaines sans manger, mais seulement trois à cinq jours sans eau."},
+    {"id": "cta", "slot": [74.4, 79.6], "text": "Alors Marc, rends-nous service : va boire un verre d'eau. Et toi aussi."}
+  ]
+}

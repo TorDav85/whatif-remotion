@@ -1,0 +1,46 @@
+{
+  "slug": "marc-soif",
+  "title": "Et si Marc ne buvait plus d'eau ?",
+  "composition": "MarcSoif",
+  "source": "out/marc-soif/marc-soif-81s.mp4",
+  "coverTime": 30,
+  "description": "Une semaine sans une goutte d'eau : voilà ce qui arrive au corps de Marc, jour après jour.",
+  "hashtags": "#etsi #whatif #science #corpshumain",
+  "hookVariant": null,
+  "editVariant": "original",
+  "durationSeconds": 81,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": []
+}

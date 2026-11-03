@@ -1,0 +1,46 @@
+{
+  "slug": "asteroide-paris",
+  "title": "Et si un astéroïde tombait sur Paris ?",
+  "composition": "AsteroideParis",
+  "source": "out/asteroide-paris/asteroide-paris-40s.mp4",
+  "coverTime": 20,
+  "description": "Et si un astéroïde tombait sur Paris… maintenant ?",
+  "hashtags": "#etsi #whatif #espace #paris",
+  "hookVariant": null,
+  "editVariant": "original",
+  "durationSeconds": 40,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": []
+}

@@ -1,0 +1,160 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-congel/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Marc était enfermé dans un congélateur... de plus en plus froid ?",
+      "start": 0.2,
+      "duration": 4.3971,
+      "end": 4.5971,
+      "speed": 1.1818,
+      "seed": 22000,
+      "audio": "marc-congel/hook.wav",
+      "sha256": "4764c5d0e28459cda27269cfa2a20992e0d8ea27c10d144752dc753c60f21a73"
+    },
+    {
+      "id": "intro",
+      "text": "Julien a encore frappé. Il enferme Marc dans un congélateur géant, réglé à quatre degrés.",
+      "start": 5.0,
+      "duration": 5.4121,
+      "end": 10.4121,
+      "speed": 1.0334,
+      "seed": 22001,
+      "audio": "marc-congel/intro.wav",
+      "sha256": "70cbe8a4ccd0d9dc3e7209c836fa2999298b99c44dc8d6296412598081efa5f6"
+    },
+    {
+      "id": "m0",
+      "text": "Quatre degrés : comme dans un frigo. Marc se frotte les bras. Ça va encore.",
+      "start": 10.8,
+      "duration": 5.2173,
+      "end": 16.0173,
+      "speed": 1.07,
+      "seed": 22002,
+      "audio": "marc-congel/m0.wav",
+      "sha256": "bf1c9c8be219b49f4f4d5140486e21d90f084bdb1b50f91862611a282f20cda6"
+    },
+    {
+      "id": "rule",
+      "text": "Mais chaque minute, il fait quarante degrés de moins.",
+      "start": 16.4,
+      "duration": 2.719,
+      "end": 19.119,
+      "speed": 1.0,
+      "seed": 22003,
+      "audio": "marc-congel/rule.wav",
+      "sha256": "1217f769793843b3aa29ada415c77d600fbdb89305e0e6954040e93578b61281"
+    },
+    {
+      "id": "m1",
+      "text": "Après une minute : moins trente-six degrés. Un hiver en Sibérie. Marc grelotte de partout.",
+      "start": 21.0,
+      "duration": 6.1448,
+      "end": 27.1448,
+      "speed": 1.0,
+      "seed": 22004,
+      "audio": "marc-congel/m1.wav",
+      "sha256": "b6d0eb74c8f281221a1867147ab920a550e2b020876b4101e52f8ac568a607b4"
+    },
+    {
+      "id": "choc",
+      "text": "Julien boit un chocolat chaud.",
+      "start": 27.9,
+      "duration": 2.1755,
+      "end": 30.0755,
+      "speed": 1.0,
+      "seed": 22005,
+      "audio": "marc-congel/choc.wav",
+      "sha256": "17825d4bfaeff5a640a32bbc7e716da3f77c6c067acc5425cac8a969a9759f98"
+    },
+    {
+      "id": "m2",
+      "text": "Deux minutes : moins soixante-seize degrés. Ses cheveux gèlent, et un glaçon lui pend au nez.",
+      "start": 32.0,
+      "duration": 6.0056,
+      "end": 38.0056,
+      "speed": 1.0381,
+      "seed": 22006,
+      "audio": "marc-congel/m2.wav",
+      "sha256": "10998c8353556e340684333d22507ddb2221ce0054287618b4b1084fce978eb8"
+    },
+    {
+      "id": "m3",
+      "text": "Trois minutes : moins cent seize degrés. Plus froid qu'une nuit sur Mars. Marc est tout blanc.",
+      "start": 39.0,
+      "duration": 6.418,
+      "end": 45.418,
+      "speed": 1.0305,
+      "seed": 22007,
+      "audio": "marc-congel/m3.wav",
+      "sha256": "510efff197061429d6cb91724ad113dc59d0553eea4e0f4c688180f054cb5226"
+    },
+    {
+      "id": "m4",
+      "text": "Quatre minutes : moins cent cinquante-six degrés. Il ne bouge plus. Seuls ses yeux clignent encore.",
+      "start": 46.4,
+      "duration": 6.2195,
+      "end": 52.6195,
+      "speed": 1.0,
+      "seed": 22008,
+      "audio": "marc-congel/m4.wav",
+      "sha256": "5f5f64201f0b392068d8d0070f6e72e8833853913ab9eb9eb722eb6794dea1b6"
+    },
+    {
+      "id": "selfie",
+      "text": "Julien, lui, se prend en photo.",
+      "start": 53.4,
+      "duration": 1.4356,
+      "end": 54.8356,
+      "speed": 1.0,
+      "seed": 22009,
+      "audio": "marc-congel/selfie.wav",
+      "sha256": "9c3f45d1c3a8168eff61ca66f5bbf2256968d3ea01f2abba6a9304cbd0400df4"
+    },
+    {
+      "id": "m5",
+      "text": "Cinq minutes : moins cent quatre-vingt-seize degrés. La température de l'azote liquide.",
+      "start": 57.6,
+      "duration": 5.2952,
+      "end": 62.8952,
+      "speed": 1.0,
+      "seed": 22010,
+      "audio": "marc-congel/m5.wav",
+      "sha256": "f1a5173173e1286de83368c8cdf8664500e24e1daac30dddb278fba93a8350ac"
+    },
+    {
+      "id": "ice",
+      "text": "Marc est devenu un glaçon géant.",
+      "start": 64.2,
+      "duration": 4.1458,
+      "end": 68.3458,
+      "speed": 1.0,
+      "seed": 22011,
+      "audio": "marc-congel/ice.wav",
+      "sha256": "efa666a6d5c2ef7ec05d4c1e99645fbc8f3aa38f5db27960edfa1e6f47e93bad"
+    },
+    {
+      "id": "thaw",
+      "text": "Julien ouvre la porte... et sort son sèche-cheveux.",
+      "start": 69.4,
+      "duration": 2.932,
+      "end": 72.332,
+      "speed": 1.0,
+      "seed": 22012,
+      "audio": "marc-congel/thaw.wav",
+      "sha256": "c4d192cfa51cc7063c49c5d94e7ec54ddd0aaa53f483e5def056e306bf3768e6"
+    },
+    {
+      "id": "cta",
+      "text": "Abonne-toi. La prochaine fois, Julien a acheté un micro-ondes.",
+      "start": 77.4,
+      "duration": 4.4018,
+      "end": 81.8018,
+      "speed": 1.0,
+      "seed": 22013,
+      "audio": "marc-congel/cta.wav",
+      "sha256": "11cddeb7fe6a8b57ef5bbd2a9cf04799ddb1b73c952fcc949e62edbbe2808cf1"
+    }
+  ]
+}

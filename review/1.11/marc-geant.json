@@ -1,0 +1,24 @@
+{
+  "slug": "marc-geant",
+  "voiceLufs": [
+    -16.0,
+    -18.2,
+    -16.9,
+    -15.9,
+    -16.4,
+    -16.6,
+    -16.9,
+    -16.2,
+    -16.7,
+    -15.8,
+    -16.2,
+    -16.5,
+    -15.9,
+    -15.2
+  ],
+  "voiceSpreadLu": 3.0,
+  "ambienceDuckDb": 2.9,
+  "voiceMeanLufs": -16.4,
+  "mixLufs": -17.0,
+  "mixPeakDb": -1.4
+}

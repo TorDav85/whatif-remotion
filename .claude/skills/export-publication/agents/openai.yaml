@@ -1,0 +1,4 @@
+interface:
+  display_name: "Export de publication"
+  short_description: "MP4, couverture et texte nommés « Et si … ? »"
+  default_prompt: "Utilise $export-publication pour préparer le dossier de publication de cette vidéo."

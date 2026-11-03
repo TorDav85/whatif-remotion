@@ -1,0 +1,149 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-salaire-2/ambience.wav",
+  "beats": [
+    {
+      "id": "recap",
+      "text": "Marc touche dix mille euros par mois. Envoyés par un inconnu : Orion.",
+      "start": 0.2,
+      "duration": 4.4103,
+      "end": 4.6103,
+      "speed": 1.0494,
+      "seed": 31393,
+      "audio": "marc-salaire-2/recap.wav",
+      "sha256": "bc84f6fbdbcad4fe19a5a7d7c393254ce6878701b5f4bc55d4a33fa3b733b3a8"
+    },
+    {
+      "id": "open",
+      "text": "À minuit, on sonne. Marc ouvre la porte... Personne. Juste une enveloppe noire.",
+      "start": 5.0,
+      "duration": 5.2142,
+      "end": 10.2142,
+      "speed": 1.1918,
+      "seed": 31004,
+      "audio": "marc-salaire-2/open.wav",
+      "sha256": "f9ad364ac0c78cacdb7c60242f88d5cf32eb3e4018167cad1d7cb9694c5916e3"
+    },
+    {
+      "id": "card",
+      "text": "Dedans, une carte : Orion, niveau un. Et un mot : descendez.",
+      "start": 10.5,
+      "duration": 5.3087,
+      "end": 15.8087,
+      "speed": 1.2481,
+      "seed": 22002,
+      "audio": "marc-salaire-2/card.wav",
+      "sha256": "d23c82c5082d1eb46f09dd34f888a53ccde6df5bc88ad4787710d305f1337cca"
+    },
+    {
+      "id": "car",
+      "text": "En bas, la voiture noire. La portière s'ouvre toute seule. Marc monte.",
+      "start": 16.1,
+      "duration": 5.4516,
+      "end": 21.5516,
+      "speed": 1.0,
+      "seed": 22003,
+      "audio": "marc-salaire-2/car.wav",
+      "sha256": "03625e8e23814e60fe9fe860ff7e12a385ae6b72d9cf2a9ba9559061870f2a78"
+    },
+    {
+      "id": "drive",
+      "text": "Le chauffeur ne dit pas un mot. Lunettes de soleil, en pleine nuit. Ils traversent toute la ville.",
+      "start": 22.0,
+      "duration": 6.216,
+      "end": 28.216,
+      "speed": 1.0,
+      "seed": 22004,
+      "audio": "marc-salaire-2/drive.wav",
+      "sha256": "b2f273b0882a47d501dabb88131d02058ec414d94b8ad6d6b1644363465d534f"
+    },
+    {
+      "id": "tower",
+      "text": "Une tour de bureaux, vide. Dans l'ascenseur, un seul bouton : moins douze.",
+      "start": 28.8,
+      "duration": 5.6151,
+      "end": 34.4151,
+      "speed": 1.2035,
+      "seed": 22005,
+      "audio": "marc-salaire-2/tower.wav",
+      "sha256": "39c95d346dd43dc0c766c5db891d3ee430746f6b483d1f76ddb8a9126ad09b06"
+    },
+    {
+      "id": "lift",
+      "text": "Marc appuie. Les portes se ferment. Ça descend... longtemps.",
+      "start": 34.8,
+      "duration": 4.765,
+      "end": 39.565,
+      "speed": 1.0,
+      "seed": 22006,
+      "audio": "marc-salaire-2/lift.wav",
+      "sha256": "3f0b9f9fc1c5d7b3c2e9a5c7dc0edd46540a1b4bdde66fe1b23e53680231e4c7"
+    },
+    {
+      "id": "room",
+      "text": "Les portes s'ouvrent sur une salle immense. Des centaines d'écrans. Et sur chaque écran... Marc.",
+      "start": 40.6,
+      "duration": 6.0092,
+      "end": 46.6092,
+      "speed": 1.0892,
+      "seed": 31295,
+      "audio": "marc-salaire-2/room.wav",
+      "sha256": "02a1c6b7c8acaea03a731287d22bea31895931a9ab8adc5d441c6a421fdad34e"
+    },
+    {
+      "id": "watch",
+      "text": "Marc qui boit. Marc dans un four. Marc congelé. Depuis un an, quelqu'un le filme.",
+      "start": 47.0,
+      "duration": 6.0065,
+      "end": 53.0065,
+      "speed": 1.1308,
+      "seed": 22008,
+      "audio": "marc-salaire-2/watch.wav",
+      "sha256": "cc990e93444a15f79bb1717c4dcf67b8d9326ce695719086a9486de03f01508f"
+    },
+    {
+      "id": "law",
+      "text": "Au passage : en France, filmer quelqu'un chez lui sans son accord, c'est jusqu'à un an de prison.",
+      "start": 53.4,
+      "duration": 6.2094,
+      "end": 59.6094,
+      "speed": 1.0331,
+      "seed": 31003,
+      "audio": "marc-salaire-2/law.wav",
+      "sha256": "c0f7401ea174c2714471265191d54793b4c84b504d0cc6f1bed680b04c239f38"
+    },
+    {
+      "id": "chair",
+      "text": "Au fond de la salle, un grand fauteuil se retourne... lentement.",
+      "start": 60.2,
+      "duration": 4.2762,
+      "end": 64.4762,
+      "speed": 1.0,
+      "seed": 22010,
+      "audio": "marc-salaire-2/chair.wav",
+      "sha256": "f89b1f70a06f5854d8f090812dd77033f1ce5e42b7a7670328c9b6460db58469"
+    },
+    {
+      "id": "voice",
+      "text": "Bonsoir, Marc. Ça faisait longtemps.",
+      "start": 66.2,
+      "duration": 2.2704,
+      "end": 68.4704,
+      "speed": 1.0,
+      "seed": 22011,
+      "audio": "marc-salaire-2/voice.wav",
+      "sha256": "ef7148fb87f04202d2d044c022d6c1669d39fc95b1ec802bfb8068a7d660e57b"
+    },
+    {
+      "id": "cta",
+      "text": "Qui se cache derrière Orion ? Écris ton idée en commentaire. Réponse dans la partie trois.",
+      "start": 71.2,
+      "duration": 5.2606,
+      "end": 76.4606,
+      "speed": 1.0,
+      "seed": 31003,
+      "audio": "marc-salaire-2/cta.wav",
+      "sha256": "50a9841cb19ce6e574f4dc6e8dfec18c1c380664723ecfd34ba78e32156f128d"
+    }
+  ]
+}

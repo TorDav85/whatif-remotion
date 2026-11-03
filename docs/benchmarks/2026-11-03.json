@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "date": "2026-11-03T13:32:22.874Z",
+    "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+    "cores": 12,
+    "ramGb": 23.9,
+    "framesPerComposition": 60,
+    "concurrency": 2,
+    "gl": "angle"
+  },
+  "results": [
+    {
+      "id": "MarcGeant",
+      "frames": 60,
+      "seconds": 12.9,
+      "msPerFrame": 215,
+      "estimatedFullRenderMin": 8.9,
+      "peakNodeMb": 762,
+      "peakSystemDeltaMb": 1401
+    },
+    {
+      "id": "MarcMini",
+      "frames": 60,
+      "seconds": 7.3,
+      "msPerFrame": 122,
+      "estimatedFullRenderMin": 5.2,
+      "peakNodeMb": 308,
+      "peakSystemDeltaMb": 1479
+    },
+    {
+      "id": "MarcDeuxLunes",
+      "frames": 60,
+      "seconds": 12.3,
+      "msPerFrame": 206,
+      "estimatedFullRenderMin": 8.6,
+      "peakNodeMb": 307,
+      "peakSystemDeltaMb": 2434
+    },
+    {
+      "id": "MarcGeantCourt",
+      "frames": 60,
+      "seconds": 15.6,
+      "msPerFrame": 260,
+      "estimatedFullRenderMin": 5.8,
+      "peakNodeMb": 294,
+      "peakSystemDeltaMb": 2801
+    },
+    {
+      "id": "InternetOffV1",
+      "frames": 60,
+      "seconds": 6.4,
+      "msPerFrame": 107,
+      "estimatedFullRenderMin": 4.6,
+      "peakNodeMb": 280,
+      "peakSystemDeltaMb": 708
+    },
+    {
+      "id": "AsteroideParis",
+      "frames": 60,
+      "seconds": 17.3,
+      "msPerFrame": 289,
+      "estimatedFullRenderMin": 5.8,
+      "peakNodeMb": 296,
+      "peakSystemDeltaMb": 2067
+    },
+    {
+      "id": "Chaleur",
+      "frames": 60,
+      "seconds": 7.3,
+      "msPerFrame": 122,
+      "estimatedFullRenderMin": 4.6,
+      "peakNodeMb": 296,
+      "peakSystemDeltaMb": 1140
+    },
+    {
+      "id": "WhatIfParisV6",
+      "frames": 60,
+      "seconds": 5.3,
+      "msPerFrame": 88,
+      "estimatedFullRenderMin": 3.3,
+      "peakNodeMb": 297,
+      "peakSystemDeltaMb": 939
+    }
+  ]
+}

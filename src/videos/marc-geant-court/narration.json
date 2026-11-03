@@ -1,0 +1,14 @@
+{
+  "duration": 45,
+  "beats": [
+    {"id": "hook", "slot": [0.1, 4.35], "text": "Marc double de taille chaque minute. Son corps ne suit pas."},
+    {"id": "problem", "slot": [4.6, 9.8], "text": "Minute trois : quatorze mètres. Ses genoux commencent déjà à céder.", "source": "Hauteur : 1,80 m × 2³ = 14,4 m (règle de la vidéo)"},
+    {"id": "law", "slot": [10.2, 17.3], "text": "Le problème : sa taille double, mais son poids est multiplié par huit. Ses os, seulement par quatre.", "source": "Loi carré-cube (Galilée, 1638) : masse ∝ L³, section des os ∝ L²"},
+    {"id": "stomp", "slot": [17.8, 22.6], "text": "À soixante mètres, chaque pas est un petit séisme.", "source": "1,80 m × 2⁵ = 57,6 m ; « séisme » est une image, pas une magnitude calculée"},
+    {"id": "eiffel", "slot": [23.2, 28.2], "text": "Minute huit : la tour Eiffel lui arrive à la poitrine."},
+    {"id": "plane", "slot": [28.8, 33.6], "text": "Minute treize : il frôle les avions. L'air devient rare."},
+    {"id": "earth", "slot": [34.2, 38.8], "text": "Minute vingt-trois : il est plus grand que la Terre."},
+    {"id": "moon", "slot": [39.1, 41.7], "text": "Et la Lune ? Une bille dans sa main."},
+    {"id": "end", "slot": [42.0, 44.6], "text": "Tu l'arrêterais à quelle minute ?"}
+  ]
+}

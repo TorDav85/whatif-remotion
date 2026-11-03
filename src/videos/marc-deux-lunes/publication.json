@@ -1,0 +1,46 @@
+{
+  "slug": "marc-deux-lunes",
+  "title": "Et si Marc voyait une deuxième lune ?",
+  "composition": "MarcDeuxLunes",
+  "source": "out/marc-deux-lunes/marc-deux-lunes-84s.mp4",
+  "coverTime": 9.5,
+  "description": "Même taille, même distance que la nôtre. Marées, éclipses, collision… et des anneaux.",
+  "hashtags": "#etsi #whatif #espace #lune #science",
+  "hookVariant": null,
+  "editVariant": "original",
+  "durationSeconds": 84,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": []
+}

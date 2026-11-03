@@ -1,0 +1,172 @@
+{
+  "repository": "https://github.com/TorDav85/whatif-remotion",
+  "branch": "1.01",
+  "commit": "063acae3fa699534c9909ed5f28981eff827cecc",
+  "files": [
+    {
+      "path": "README.md",
+      "gitBlobSha": "1eb19b71a78955de0e8e5e82f8374ef1d74aa1d8",
+      "localPath": "docs/versions/branch-1.01.md"
+    },
+    {
+      "path": "scripts/make-gravity-ambience.mjs",
+      "gitBlobSha": "33949a3dec05395bc157141b8c68cbb83799b3b8",
+      "localPath": "scripts/audio/ambience-gravity.mjs"
+    },
+    {
+      "path": "scripts/make-nature-ambience.mjs",
+      "gitBlobSha": "c30a0411e97026ce98f73704d98a699a53abef6e",
+      "localPath": "scripts/audio/ambience-nature.mjs"
+    },
+    {
+      "path": "src/assets/Boat.tsx",
+      "gitBlobSha": "05d47b426ad948868b83d9620fbe2d6e48febf5f",
+      "localPath": "src/assets/Boat.tsx"
+    },
+    {
+      "path": "src/assets/Building.tsx",
+      "gitBlobSha": "ddc91cd38c5d20d6916f83dd3650da0ea29debd6",
+      "localPath": "src/assets/Building.tsx"
+    },
+    {
+      "path": "src/assets/Car.tsx",
+      "gitBlobSha": "42e8fa1f97285d612b3538baf6b7eec8138a27ca",
+      "localPath": "src/assets/Car.tsx"
+    },
+    {
+      "path": "src/assets/EiffelTower.tsx",
+      "gitBlobSha": "4fbd202e0d608a8d3d60d60025863cc99e96ed76",
+      "localPath": "src/assets/EiffelTower.tsx"
+    },
+    {
+      "path": "src/assets/House.tsx",
+      "gitBlobSha": "39c7c0549e47dfefb25d9ccd42c0205103574cd5",
+      "localPath": "src/assets/House.tsx"
+    },
+    {
+      "path": "src/assets/index.ts",
+      "gitBlobSha": "50d525615ac0c5a01328fbc466c1763a11abd2fc",
+      "localPath": "src/assets/index.ts"
+    },
+    {
+      "path": "src/assets/kit.tsx",
+      "gitBlobSha": "00ddc5d7a6a439f97aa436af07c32501f9023737",
+      "localPath": "src/assets/kit.tsx"
+    },
+    {
+      "path": "src/assets/Person.tsx",
+      "gitBlobSha": "1c7712e9f4bca4536ba98aac64b9ad09f6aaed6e",
+      "localPath": "src/assets/Person.tsx"
+    },
+    {
+      "path": "src/assets/Showcase.tsx",
+      "gitBlobSha": "46d57144b84a43f4773b77a8946cec0158bb1eee",
+      "localPath": "src/assets/Showcase.tsx"
+    },
+    {
+      "path": "src/gravity/City.tsx",
+      "gitBlobSha": "bb68d42425967d5271364c8d45f63076dbfa48b2",
+      "localPath": "src/videos/gravity/City.tsx"
+    },
+    {
+      "path": "src/gravity/Globe.tsx",
+      "gitBlobSha": "2d0e43d00e81a1bcd91266c522b8cd966ba0b9a0",
+      "localPath": "src/videos/gravity/Globe.tsx"
+    },
+    {
+      "path": "src/gravity/gravity.json",
+      "gitBlobSha": "6d7b05a872f63e5758a8df96c6d03c6b7bc0862d",
+      "localPath": "src/videos/gravity/gravity.json"
+    },
+    {
+      "path": "src/gravity/Gravity.tsx",
+      "gitBlobSha": "c028986ef41d6413d814a5b18e1b1a8dd812a01d",
+      "localPath": "src/videos/gravity/Gravity.tsx"
+    },
+    {
+      "path": "src/gravity/GravityUi.tsx",
+      "gitBlobSha": "45d56ef4fffae73b02f18675dd4a80b58253d839",
+      "localPath": "src/videos/gravity/GravityUi.tsx"
+    },
+    {
+      "path": "src/gravity/time.ts",
+      "gitBlobSha": "68de6af6fd387bf2759b6a79006c5cdf440fd894",
+      "localPath": "src/videos/gravity/time.ts"
+    },
+    {
+      "path": "src/nature2/nature.json",
+      "gitBlobSha": "60ed29a49358d993121f6aaa67976c0897d408b1",
+      "localPath": "src/videos/nature-v2/nature.json"
+    },
+    {
+      "path": "src/nature2/Nature.tsx",
+      "gitBlobSha": "88512afb32e2521c14eafc621921fd5b02fbdd5c",
+      "localPath": "src/videos/nature-v2/Nature.tsx"
+    },
+    {
+      "path": "src/nature2/NatureUi.tsx",
+      "gitBlobSha": "75e5129d388e97e922d7c8b3ae763df1735c8d10",
+      "localPath": "src/videos/nature-v2/NatureUi.tsx"
+    },
+    {
+      "path": "src/nature2/Paris.tsx",
+      "gitBlobSha": "154b79574579d0e5f1ac6331643f52e2c8d38d57",
+      "localPath": "src/videos/nature-v2/Paris.tsx"
+    },
+    {
+      "path": "src/nature2/time.ts",
+      "gitBlobSha": "58bf4bcc93f2e26937083abfc9504d4ef891fcd2",
+      "localPath": "src/videos/nature-v2/time.ts"
+    },
+    {
+      "path": "src/scenes/Earth.tsx",
+      "gitBlobSha": "70fab051ccd5bb88e2bd97b01300dc1323dc5718",
+      "localPath": "src/videos/whatif/scenes/Earth.tsx"
+    },
+    {
+      "path": "src/assets/interior/Bathroom.tsx",
+      "gitBlobSha": "5dc63e469e404674980dd18ef25186620b3842bf",
+      "localPath": "src/assets/interior/Bathroom.tsx"
+    },
+    {
+      "path": "src/assets/interior/Bedroom.tsx",
+      "gitBlobSha": "7a9fe0e29f793c0be0ec72c74c21aa80a7d61549",
+      "localPath": "src/assets/interior/Bedroom.tsx"
+    },
+    {
+      "path": "src/assets/interior/Decor.tsx",
+      "gitBlobSha": "05f0c6f2067628c898f826f6ec765911371de213",
+      "localPath": "src/assets/interior/Decor.tsx"
+    },
+    {
+      "path": "src/assets/interior/index.ts",
+      "gitBlobSha": "b54bbb278ac70688fbddc526537fcfde96050414",
+      "localPath": "src/assets/interior/index.ts"
+    },
+    {
+      "path": "src/assets/interior/InteriorShowcase.tsx",
+      "gitBlobSha": "b562206d47f18e4ffa93c2e368b0a49f40b6849b",
+      "localPath": "src/assets/interior/InteriorShowcase.tsx"
+    },
+    {
+      "path": "src/assets/interior/Kitchen.tsx",
+      "gitBlobSha": "fee92b928283aea73c67398d5ded281acf202bba",
+      "localPath": "src/assets/interior/Kitchen.tsx"
+    },
+    {
+      "path": "src/assets/interior/Living.tsx",
+      "gitBlobSha": "663448da232b6a5d8e8cb97f426b0273ed4271ed",
+      "localPath": "src/assets/interior/Living.tsx"
+    },
+    {
+      "path": "src/assets/interior/Office.tsx",
+      "gitBlobSha": "19c86a1345bc1d30312111240d225457851ea341",
+      "localPath": "src/assets/interior/Office.tsx"
+    }
+  ],
+  "adaptations": [
+    "Imports ajustés à la nouvelle arborescence",
+    "EarthGlobe extrait dans src/shared/three/EarthGlobe.tsx",
+    "Générateurs audio rendus configurables"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "duration": 79,
+  "beats": [
+    {
+      "id": "recap",
+      "slot": [
+        0.2,
+        4.8
+      ],
+      "text": "Partie trois. Marc va enfin découvrir qui le paie depuis un an."
+    },
+    {
+      "id": "reveal",
+      "slot": [
+        5.2,
+        10.0
+      ],
+      "text": "Le fauteuil se retourne... et c'est Julien. En costume noir."
+    },
+    {
+      "id": "who",
+      "slot": [
+        10.4,
+        14.8
+      ],
+      "text": "Oui. Julien. Celui du four. Et du congélateur."
+    },
+    {
+      "id": "loto",
+      "slot": [
+        15.2,
+        21.4
+      ],
+      "text": "Il y a un an, Julien a gagné à la loterie. Et il s'est senti... un tout petit peu coupable.",
+      "seed": 31004
+    },
+    {
+      "id": "pay",
+      "slot": [
+        21.8,
+        27.6
+      ],
+      "text": "Alors chaque mois, il a versé dix mille euros à Marc. Pour se faire pardonner."
+    },
+    {
+      "id": "labels",
+      "slot": [
+        28.0,
+        34.6
+      ],
+      "text": "Préparation ? Il préparait une surprise. Entraînement terminé ? Il a pris des cours de cuisine.",
+      "seed": 31006
+    },
+    {
+      "id": "screens",
+      "slot": [
+        35.0,
+        40.6
+      ],
+      "text": "Et tous ces écrans ? Ce sont les vidéos de Marc. Celles que tu regardes en ce moment."
+    },
+    {
+      "id": "mission",
+      "slot": [
+        41.0,
+        46.4
+      ],
+      "text": "Marc demande enfin : et ma mission, alors ?",
+      "seed": 31007
+    },
+    {
+      "id": "pizza",
+      "slot": [
+        46.8,
+        52.4
+      ],
+      "text": "Julien sourit, et ouvre un rideau. Derrière : un énorme four à pizza."
+    },
+    {
+      "id": "joke",
+      "slot": [
+        52.8,
+        58.0
+      ],
+      "text": "Ce soir, on mange une pizza. Tu rentres dedans pour vérifier la cuisson ?",
+      "seed": 31004
+    },
+    {
+      "id": "run",
+      "slot": [
+        58.6,
+        63.0
+      ],
+      "text": "Marc n'a jamais couru aussi vite."
+    },
+    {
+      "id": "moral",
+      "slot": [
+        63.6,
+        69.6
+      ],
+      "text": "Moralité : si un ami te verse dix mille euros par mois... vérifie d'abord qu'il n'a pas de four.",
+      "seed": 31296
+    },
+    {
+      "id": "cta",
+      "slot": [
+        70.4,
+        76.0
+      ],
+      "text": "Abonne-toi. Et dis en commentaire ce que Marc doit vivre la prochaine fois."
+    }
+  ]
+}

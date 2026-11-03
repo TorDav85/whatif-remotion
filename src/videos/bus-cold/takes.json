@@ -1,0 +1,80 @@
+{
+  "hook": {
+    "seed": 6100
+  },
+  "ice": {
+    "seed": 8106,
+    "spokenText": "Moins dix, sur la chaussée encore mouillée, le gel commence à s'étendre."
+  },
+  "cane": {
+    "seed": 9509,
+    "spokenText": "Derrière elle, une canne dérape !",
+    "settings": {
+      "temperature": 0.65
+    }
+  },
+  "grip": {
+    "seed": 10610,
+    "spokenText": "Le vieil homme s’agrippe au banc. Entre lui et le bus, le trottoir brille.",
+    "settings": {
+      "temperature": 0.55,
+      "repetition_penalty": 3.0,
+      "split_sentences": true
+    }
+  },
+  "choice": {
+    "seed": 10611,
+    "spokenText": "Maya regarde les sièges à l’intérieur. Puis fait demi tour.",
+    "settings": {
+      "temperature": 0.55,
+      "repetition_penalty": 3.0,
+      "split_sentences": true
+    }
+  },
+  "help": {
+    "reviewedAudio": ".cache/bus-cold/help-reviewed.wav",
+    "reviewedSha256": "a26a6057ba92d1a9af38f8adad3d69042e745d424989b559e3a947e1db200004",
+    "selectedPhrases": [
+      {
+        "seed": 13612,
+        "spoken": "Maya lui offre son bras.",
+        "settings": {
+          "temperature": 0.5,
+          "repetition_penalty": 2.0
+        },
+        "start": 0,
+        "end": null,
+        "pad": 0.25,
+        "selectedEnd": 1.2787083333333333,
+        "sourceAudioSha256": "e137acd016b26da583551cced8646043d917c4043bd8617bcd3179a692c067a0"
+      },
+      {
+        "seed": 9512,
+        "signatureText": "Elle lui tend le bras. Ensemble, ils avancent à petits pas.",
+        "spoken": "Elle lui tend le bras, ensemble, ils avancent à petits pas.",
+        "settings": {
+          "temperature": 0.65
+        },
+        "start": 0.74,
+        "end": 3.45,
+        "pad": 0.1,
+        "selectedEnd": 3.45,
+        "sourceAudioSha256": "8edf5f85ee838be35274ebf2ef62234de547b6cc3111c9a60848e4392d71d7cd"
+      }
+    ]
+  },
+  "driver": {
+    "seed": 9513,
+    "spokenText": "Le conducteur attend.",
+    "settings": {
+      "temperature": 0.65
+    }
+  },
+  "shared": {
+    "seed": 9517,
+    "spokenText": "Sur la banquette, ils partagent maintenant la même écharpe.",
+    "settings": {
+      "temperature": 0.65
+    }
+  }
+}

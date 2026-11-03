@@ -1,0 +1,46 @@
+{
+  "slug": "marc-congel",
+  "title": "Et si Marc était enfermé dans un congélateur ?",
+  "composition": "MarcCongel",
+  "source": "out/marc-congel/marc-congel-85s.mp4",
+  "coverTime": 58,
+  "description": "Quarante degrés de moins chaque minute. Jusqu'où Marc tiendra-t-il ?",
+  "hashtags": "#etsi #whatif #science #froid",
+  "hookVariant": null,
+  "editVariant": "original",
+  "durationSeconds": 85,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": []
+}

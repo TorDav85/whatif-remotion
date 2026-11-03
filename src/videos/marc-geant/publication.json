@@ -1,0 +1,46 @@
+{
+  "slug": "marc-geant",
+  "title": "Et si Marc devenait géant ?",
+  "composition": "MarcGeant",
+  "source": "out/marc-geant/marc-geant-83s.mp4",
+  "coverTime": 46,
+  "description": "Chaque minute, Marc double de taille. Jusqu'où avant que son corps ne lâche ?",
+  "hashtags": "#etsi #whatif #science #paris #geant",
+  "hookVariant": null,
+  "editVariant": "original",
+  "durationSeconds": 83,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": []
+}

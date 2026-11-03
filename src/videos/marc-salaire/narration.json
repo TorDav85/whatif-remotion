@@ -1,0 +1,18 @@
+{
+  "duration": 79,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 4.2], "text": "Marc touche dix mille euros par mois... pour un travail qu'il n'a jamais fait."},
+    {"id": "m1", "slot": [4.6, 10.4], "text": "Tout commence un lundi. Dix mille euros arrivent sur son compte. Expéditeur : Orion."},
+    {"id": "call", "slot": [10.8, 15.6], "text": "Marc n'a jamais entendu parler d'Orion. Il appelle. Personne ne répond."},
+    {"id": "m2", "slot": [16.0, 21.4], "text": "Le mois suivant, encore dix mille euros. Avec un libellé bizarre : préparation."},
+    {"id": "spend", "slot": [21.8, 27.6], "text": "Alors Marc fait ce que tout le monde ferait : il démissionne, et il s'achète une télé géante."},
+    {"id": "m6", "slot": [28.0, 33.8], "text": "Mois six. Soixante mille euros. Le libellé change : entraînement terminé."},
+    {"id": "car", "slot": [34.2, 39.8], "text": "Et chaque soir, une voiture noire se gare en bas de chez lui. Moteur allumé."},
+    {"id": "law", "slot": [40.2, 46.6], "text": "Petit rappel : en France, garder un virement reçu par erreur, c'est risqué. La banque peut tout reprendre."},
+    {"id": "m12", "slot": [47.0, 52.6], "text": "Mois douze. Cent vingt mille euros. Et ce soir-là, un message s'affiche."},
+    {"id": "msg", "slot": [53.2, 58.0], "text": "Votre première mission commence ce soir."},
+    {"id": "msg2", "slot": [58.6, 64.0], "text": "Une voiture vous attend en bas. Ne prenez rien. Venez seul."},
+    {"id": "door", "slot": [64.6, 69.4], "text": "À minuit pile... on sonne à la porte."},
+    {"id": "cta", "slot": [70.4, 76.4], "text": "Toi, à sa place, tu ouvres ou pas ? Dis-le en commentaire. La suite, dans la partie deux."}
+  ]
+}

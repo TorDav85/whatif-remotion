@@ -1,0 +1,160 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-geant/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Marc doublait de taille... chaque minute ?",
+      "start": 0.2,
+      "duration": 3.1378,
+      "end": 3.3378,
+      "speed": 1.0,
+      "seed": 21000,
+      "audio": "marc-geant/hook.wav",
+      "sha256": "0cd9794d717bd7e281783f0dc026659e7fe7b6210dbf1eec9db3a86200bef613"
+    },
+    {
+      "id": "intro",
+      "text": "Minute zéro : un mètre quatre-vingts.",
+      "start": 3.7,
+      "duration": 2.1446,
+      "end": 5.8446,
+      "speed": 1.0,
+      "seed": 21001,
+      "audio": "marc-geant/intro.wav",
+      "sha256": "668c5f37d4132d7d59bc13faa1457a7a474ea476a120269c472550b41207c07f"
+    },
+    {
+      "id": "m1",
+      "text": "Minute un : trois mètres soixante. Il voit par-dessus les bus.",
+      "start": 7.2,
+      "duration": 4.2136,
+      "end": 11.4136,
+      "speed": 1.0,
+      "seed": 21002,
+      "audio": "marc-geant/m1.wav",
+      "sha256": "cbe28e15f44a2ae69c217c18729815b46f3cb0d354a979e28b7c844e94725931"
+    },
+    {
+      "id": "m2",
+      "text": "Minute deux : sept mètres. Tout le monde sort son téléphone.",
+      "start": 13.1,
+      "duration": 3.6455,
+      "end": 16.7455,
+      "speed": 1.0,
+      "seed": 21003,
+      "audio": "marc-geant/m2.wav",
+      "sha256": "7315a2f15278c02d9b8a086a3b504411b68439c6395fc93b28e7ecb993c7cab6"
+    },
+    {
+      "id": "m3",
+      "text": "Minute trois : quatorze mètres. Mais il y a un problème.",
+      "start": 19.1,
+      "duration": 3.8097,
+      "end": 22.9097,
+      "speed": 1.0,
+      "seed": 21004,
+      "audio": "marc-geant/m3.wav",
+      "sha256": "a98eba5e5ec02f1a56a578947f8df818648ed1ae3c3c9309d45d127e08fa4764"
+    },
+    {
+      "id": "law",
+      "text": "Sa taille double. Son poids, lui, est multiplié par huit. Ses os, seulement par quatre.",
+      "start": 25.4,
+      "duration": 6.1649,
+      "end": 31.5649,
+      "speed": 1.0,
+      "seed": 21005,
+      "audio": "marc-geant/law.wav",
+      "sha256": "df96a8f74b419ba551b45151642edc675cc282b7bb5cff776fc05a254743164c"
+    },
+    {
+      "id": "m5",
+      "text": "Minute cinq : soixante mètres. Chaque pas fait trembler Paris.",
+      "start": 34.1,
+      "duration": 5.3756,
+      "end": 39.4756,
+      "speed": 1.0,
+      "seed": 21006,
+      "audio": "marc-geant/m5.wav",
+      "sha256": "40a50c712e8cf7ea68600cee444add0861d0c9059b3868658f80a49985d3f89a"
+    },
+    {
+      "id": "m8",
+      "text": "Minute huit : quatre cent soixante mètres. La tour Eiffel lui arrive à la poitrine.",
+      "start": 41.0,
+      "duration": 5.3743,
+      "end": 46.3743,
+      "speed": 1.0,
+      "seed": 21007,
+      "audio": "marc-geant/m8.wav",
+      "sha256": "a44e304722eea53cca8bf27edb2d1c267fdd16f5bcee989221243a5cad22548d"
+    },
+    {
+      "id": "m10",
+      "text": "Minute dix : presque deux kilomètres. Paris ressemble à une maquette.",
+      "start": 48.0,
+      "duration": 5.0063,
+      "end": 53.0063,
+      "speed": 1.0,
+      "seed": 21008,
+      "audio": "marc-geant/m10.wav",
+      "sha256": "fe6f1d7220499140df5b37022e3f7de2d7481805eb0124b6e908ded5b8dbbe4b"
+    },
+    {
+      "id": "m13",
+      "text": "Minute treize : quinze kilomètres. Les avions lui frôlent le torse.",
+      "start": 55.0,
+      "duration": 4.2734,
+      "end": 59.2734,
+      "speed": 1.0,
+      "seed": 21009,
+      "audio": "marc-geant/m13.wav",
+      "sha256": "1274c7577bfcfac2fcf9570e6bc023759b5df9f58a150bd0aee61ced490aaa55"
+    },
+    {
+      "id": "m20",
+      "text": "Minute vingt : deux mille kilomètres. Plus une goutte d'air autour de sa tête.",
+      "start": 62.0,
+      "duration": 4.7707,
+      "end": 66.7707,
+      "speed": 1.0,
+      "seed": 21010,
+      "audio": "marc-geant/m20.wav",
+      "sha256": "1d20268e0ff58c5ca4be08bcc2cfc9ca6b58594fa6540109fcdb47bfee4c3100"
+    },
+    {
+      "id": "m23",
+      "text": "Minute vingt-trois : quinze mille kilomètres. Il est plus grand que la Terre.",
+      "start": 69.0,
+      "duration": 4.5762,
+      "end": 73.5762,
+      "speed": 1.0,
+      "seed": 21011,
+      "audio": "marc-geant/m23.wav",
+      "sha256": "21a3aff61c0938a34efa47c3227192b10dc944cfee2c65530dde9308cbda4368"
+    },
+    {
+      "id": "moon",
+      "text": "Minute vingt-huit : la Lune ? Une bille dans sa main.",
+      "start": 75.4,
+      "duration": 3.5068,
+      "end": 78.9068,
+      "speed": 1.1072,
+      "seed": 83113,
+      "audio": "marc-geant/moon.wav",
+      "sha256": "e45523e4a5ed325c174813f33ee5186d47e004a96a7d7590efc88ce1772c4206"
+    },
+    {
+      "id": "cta",
+      "text": "Et toi, tu partirais à quelle minute ? Dis-le en commentaire.",
+      "start": 79.2,
+      "duration": 3.6168,
+      "end": 82.8168,
+      "speed": 1.1211,
+      "seed": 83217,
+      "audio": "marc-geant/cta.wav",
+      "sha256": "e3a873c20d9ddde62cca10ac1884c2b3bd02779fa6923e4f6df608f44703e089"
+    }
+  ]
+}

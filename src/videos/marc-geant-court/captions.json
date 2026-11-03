@@ -1,0 +1,754 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.1,
+   "end": 1.2,
+   "text": "Marc double de taille",
+   "beat": "hook"
+  },
+  {
+   "start": 1.2,
+   "end": 1.74,
+   "text": "chaque minute.",
+   "beat": "hook"
+  },
+  {
+   "start": 2.36,
+   "end": 3.58,
+   "text": "Son corps ne suit pas.",
+   "beat": "hook"
+  },
+  {
+   "start": 4.6,
+   "end": 5.83,
+   "text": "Minute trois :",
+   "beat": "problem"
+  },
+  {
+   "start": 5.83,
+   "end": 7.06,
+   "text": "quatorze mètres.",
+   "beat": "problem"
+  },
+  {
+   "start": 7.06,
+   "end": 8.6,
+   "text": "Ses genoux commencent déjà",
+   "beat": "problem"
+  },
+  {
+   "start": 8.6,
+   "end": 9.16,
+   "text": "à céder.",
+   "beat": "problem"
+  },
+  {
+   "start": 10.2,
+   "end": 11.36,
+   "text": "Le problème :",
+   "beat": "law"
+  },
+  {
+   "start": 11.36,
+   "end": 12.2,
+   "text": "sa taille double,",
+   "beat": "law"
+  },
+  {
+   "start": 12.56,
+   "end": 13.76,
+   "text": "mais son poids est",
+   "beat": "law"
+  },
+  {
+   "start": 13.76,
+   "end": 15.48,
+   "text": "multiplié par huit.",
+   "beat": "law"
+  },
+  {
+   "start": 15.48,
+   "end": 16.16,
+   "text": "Ses os,",
+   "beat": "law"
+  },
+  {
+   "start": 16.16,
+   "end": 17.18,
+   "text": "seulement par quatre.",
+   "beat": "law"
+  },
+  {
+   "start": 17.8,
+   "end": 19.24,
+   "text": "À soixante mètres,",
+   "beat": "stomp"
+  },
+  {
+   "start": 19.24,
+   "end": 21.0,
+   "text": "chaque pas est un petit",
+   "beat": "stomp"
+  },
+  {
+   "start": 21.0,
+   "end": 21.48,
+   "text": "séisme.",
+   "beat": "stomp"
+  },
+  {
+   "start": 23.2,
+   "end": 24.54,
+   "text": "Minute huit :",
+   "beat": "eiffel"
+  },
+  {
+   "start": 24.54,
+   "end": 25.4,
+   "text": "la tour Eiffel lui arrive",
+   "beat": "eiffel"
+  },
+  {
+   "start": 25.4,
+   "end": 25.94,
+   "text": "à la poitrine.",
+   "beat": "eiffel"
+  },
+  {
+   "start": 28.8,
+   "end": 30.02,
+   "text": "Minute treize :",
+   "beat": "plane"
+  },
+  {
+   "start": 30.02,
+   "end": 31.34,
+   "text": "il frôle les avions.",
+   "beat": "plane"
+  },
+  {
+   "start": 31.34,
+   "end": 32.84,
+   "text": "L'air devient rare.",
+   "beat": "plane"
+  },
+  {
+   "start": 34.2,
+   "end": 35.5,
+   "text": "Minute vingt-trois :",
+   "beat": "earth"
+  },
+  {
+   "start": 35.5,
+   "end": 36.32,
+   "text": "il est plus grand que",
+   "beat": "earth"
+  },
+  {
+   "start": 36.32,
+   "end": 36.66,
+   "text": "la Terre.",
+   "beat": "earth"
+  },
+  {
+   "start": 39.1,
+   "end": 40.4,
+   "text": "Et la Lune ?",
+   "beat": "moon"
+  },
+  {
+   "start": 40.4,
+   "end": 41.4,
+   "text": "Une bille dans sa main.",
+   "beat": "moon"
+  },
+  {
+   "start": 42.0,
+   "end": 42.68,
+   "text": "Tu l'arrêterais à quelle",
+   "beat": "end"
+  },
+  {
+   "start": 42.68,
+   "end": 43.08,
+   "text": "minute ?",
+   "beat": "end"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "Marc",
+   "start": 0.1,
+   "end": 0.3
+  },
+  {
+   "beat": "hook",
+   "text": "double",
+   "start": 0.3,
+   "end": 0.72
+  },
+  {
+   "beat": "hook",
+   "text": "de",
+   "start": 0.72,
+   "end": 0.92
+  },
+  {
+   "beat": "hook",
+   "text": "taille",
+   "start": 0.92,
+   "end": 1.2
+  },
+  {
+   "beat": "hook",
+   "text": "chaque",
+   "start": 1.2,
+   "end": 1.38
+  },
+  {
+   "beat": "hook",
+   "text": "minute.",
+   "start": 1.38,
+   "end": 1.74
+  },
+  {
+   "beat": "hook",
+   "text": "Son",
+   "start": 2.36,
+   "end": 2.8
+  },
+  {
+   "beat": "hook",
+   "text": "corps",
+   "start": 2.8,
+   "end": 3.02
+  },
+  {
+   "beat": "hook",
+   "text": "ne",
+   "start": 3.02,
+   "end": 3.16
+  },
+  {
+   "beat": "hook",
+   "text": "suit",
+   "start": 3.16,
+   "end": 3.38
+  },
+  {
+   "beat": "hook",
+   "text": "pas.",
+   "start": 3.38,
+   "end": 3.58
+  },
+  {
+   "beat": "problem",
+   "text": "Minute",
+   "start": 4.6,
+   "end": 5.01
+  },
+  {
+   "beat": "problem",
+   "text": "trois",
+   "start": 5.01,
+   "end": 5.42
+  },
+  {
+   "beat": "problem",
+   "text": ":",
+   "start": 5.42,
+   "end": 5.83
+  },
+  {
+   "beat": "problem",
+   "text": "quatorze",
+   "start": 5.83,
+   "end": 6.24
+  },
+  {
+   "beat": "problem",
+   "text": "mètres.",
+   "start": 6.24,
+   "end": 7.06
+  },
+  {
+   "beat": "problem",
+   "text": "Ses",
+   "start": 7.06,
+   "end": 7.62
+  },
+  {
+   "beat": "problem",
+   "text": "genoux",
+   "start": 7.62,
+   "end": 7.96
+  },
+  {
+   "beat": "problem",
+   "text": "commencent",
+   "start": 7.96,
+   "end": 8.36
+  },
+  {
+   "beat": "problem",
+   "text": "déjà",
+   "start": 8.36,
+   "end": 8.6
+  },
+  {
+   "beat": "problem",
+   "text": "à",
+   "start": 8.6,
+   "end": 8.8
+  },
+  {
+   "beat": "problem",
+   "text": "céder.",
+   "start": 8.8,
+   "end": 9.16
+  },
+  {
+   "beat": "law",
+   "text": "Le",
+   "start": 10.2,
+   "end": 10.26
+  },
+  {
+   "beat": "law",
+   "text": "problème",
+   "start": 10.26,
+   "end": 10.62
+  },
+  {
+   "beat": "law",
+   "text": ":",
+   "start": 10.62,
+   "end": 11.36
+  },
+  {
+   "beat": "law",
+   "text": "sa",
+   "start": 11.36,
+   "end": 11.66
+  },
+  {
+   "beat": "law",
+   "text": "taille",
+   "start": 11.66,
+   "end": 11.92
+  },
+  {
+   "beat": "law",
+   "text": "double,",
+   "start": 11.92,
+   "end": 12.2
+  },
+  {
+   "beat": "law",
+   "text": "mais",
+   "start": 12.56,
+   "end": 13.12
+  },
+  {
+   "beat": "law",
+   "text": "son",
+   "start": 13.12,
+   "end": 13.28
+  },
+  {
+   "beat": "law",
+   "text": "poids",
+   "start": 13.28,
+   "end": 13.6
+  },
+  {
+   "beat": "law",
+   "text": "est",
+   "start": 13.6,
+   "end": 13.76
+  },
+  {
+   "beat": "law",
+   "text": "multiplié",
+   "start": 13.76,
+   "end": 14.34
+  },
+  {
+   "beat": "law",
+   "text": "par",
+   "start": 14.34,
+   "end": 14.58
+  },
+  {
+   "beat": "law",
+   "text": "huit.",
+   "start": 14.58,
+   "end": 15.48
+  },
+  {
+   "beat": "law",
+   "text": "Ses",
+   "start": 15.48,
+   "end": 15.76
+  },
+  {
+   "beat": "law",
+   "text": "os,",
+   "start": 15.76,
+   "end": 16.16
+  },
+  {
+   "beat": "law",
+   "text": "seulement",
+   "start": 16.16,
+   "end": 16.56
+  },
+  {
+   "beat": "law",
+   "text": "par",
+   "start": 16.56,
+   "end": 16.9
+  },
+  {
+   "beat": "law",
+   "text": "quatre.",
+   "start": 16.9,
+   "end": 17.18
+  },
+  {
+   "beat": "stomp",
+   "text": "À",
+   "start": 17.8,
+   "end": 17.86
+  },
+  {
+   "beat": "stomp",
+   "text": "soixante",
+   "start": 17.86,
+   "end": 18.22
+  },
+  {
+   "beat": "stomp",
+   "text": "mètres,",
+   "start": 18.22,
+   "end": 19.24
+  },
+  {
+   "beat": "stomp",
+   "text": "chaque",
+   "start": 19.24,
+   "end": 19.62
+  },
+  {
+   "beat": "stomp",
+   "text": "pas",
+   "start": 19.62,
+   "end": 19.98
+  },
+  {
+   "beat": "stomp",
+   "text": "est",
+   "start": 19.98,
+   "end": 20.68
+  },
+  {
+   "beat": "stomp",
+   "text": "un",
+   "start": 20.68,
+   "end": 20.82
+  },
+  {
+   "beat": "stomp",
+   "text": "petit",
+   "start": 20.82,
+   "end": 21.0
+  },
+  {
+   "beat": "stomp",
+   "text": "séisme.",
+   "start": 21.0,
+   "end": 21.48
+  },
+  {
+   "beat": "eiffel",
+   "text": "Minute",
+   "start": 23.2,
+   "end": 23.647
+  },
+  {
+   "beat": "eiffel",
+   "text": "huit",
+   "start": 23.647,
+   "end": 24.093
+  },
+  {
+   "beat": "eiffel",
+   "text": ":",
+   "start": 24.093,
+   "end": 24.54
+  },
+  {
+   "beat": "eiffel",
+   "text": "la",
+   "start": 24.54,
+   "end": 24.64
+  },
+  {
+   "beat": "eiffel",
+   "text": "tour",
+   "start": 24.64,
+   "end": 24.78
+  },
+  {
+   "beat": "eiffel",
+   "text": "Eiffel",
+   "start": 24.78,
+   "end": 25.12
+  },
+  {
+   "beat": "eiffel",
+   "text": "lui",
+   "start": 25.12,
+   "end": 25.22
+  },
+  {
+   "beat": "eiffel",
+   "text": "arrive",
+   "start": 25.22,
+   "end": 25.4
+  },
+  {
+   "beat": "eiffel",
+   "text": "à",
+   "start": 25.4,
+   "end": 25.5
+  },
+  {
+   "beat": "eiffel",
+   "text": "la",
+   "start": 25.5,
+   "end": 25.56
+  },
+  {
+   "beat": "eiffel",
+   "text": "poitrine.",
+   "start": 25.56,
+   "end": 25.94
+  },
+  {
+   "beat": "plane",
+   "text": "Minute",
+   "start": 28.8,
+   "end": 29.207
+  },
+  {
+   "beat": "plane",
+   "text": "treize",
+   "start": 29.207,
+   "end": 29.613
+  },
+  {
+   "beat": "plane",
+   "text": ":",
+   "start": 29.613,
+   "end": 30.02
+  },
+  {
+   "beat": "plane",
+   "text": "il",
+   "start": 30.02,
+   "end": 30.46
+  },
+  {
+   "beat": "plane",
+   "text": "frôle",
+   "start": 30.46,
+   "end": 30.76
+  },
+  {
+   "beat": "plane",
+   "text": "les",
+   "start": 30.76,
+   "end": 30.92
+  },
+  {
+   "beat": "plane",
+   "text": "avions.",
+   "start": 30.92,
+   "end": 31.34
+  },
+  {
+   "beat": "plane",
+   "text": "L'air",
+   "start": 31.34,
+   "end": 32.3
+  },
+  {
+   "beat": "plane",
+   "text": "devient",
+   "start": 32.3,
+   "end": 32.54
+  },
+  {
+   "beat": "plane",
+   "text": "rare.",
+   "start": 32.54,
+   "end": 32.84
+  },
+  {
+   "beat": "earth",
+   "text": "Minute",
+   "start": 34.2,
+   "end": 34.34
+  },
+  {
+   "beat": "earth",
+   "text": "vingt-trois",
+   "start": 34.34,
+   "end": 34.92
+  },
+  {
+   "beat": "earth",
+   "text": ":",
+   "start": 34.92,
+   "end": 35.5
+  },
+  {
+   "beat": "earth",
+   "text": "il",
+   "start": 35.5,
+   "end": 35.78
+  },
+  {
+   "beat": "earth",
+   "text": "est",
+   "start": 35.78,
+   "end": 35.86
+  },
+  {
+   "beat": "earth",
+   "text": "plus",
+   "start": 35.86,
+   "end": 36.0
+  },
+  {
+   "beat": "earth",
+   "text": "grand",
+   "start": 36.0,
+   "end": 36.2
+  },
+  {
+   "beat": "earth",
+   "text": "que",
+   "start": 36.2,
+   "end": 36.32
+  },
+  {
+   "beat": "earth",
+   "text": "la",
+   "start": 36.32,
+   "end": 36.44
+  },
+  {
+   "beat": "earth",
+   "text": "Terre.",
+   "start": 36.44,
+   "end": 36.66
+  },
+  {
+   "beat": "moon",
+   "text": "Et",
+   "start": 39.1,
+   "end": 39.16
+  },
+  {
+   "beat": "moon",
+   "text": "la",
+   "start": 39.16,
+   "end": 39.28
+  },
+  {
+   "beat": "moon",
+   "text": "Lune",
+   "start": 39.28,
+   "end": 39.66
+  },
+  {
+   "beat": "moon",
+   "text": "?",
+   "start": 39.66,
+   "end": 40.4
+  },
+  {
+   "beat": "moon",
+   "text": "Une",
+   "start": 40.4,
+   "end": 40.58
+  },
+  {
+   "beat": "moon",
+   "text": "bille",
+   "start": 40.58,
+   "end": 40.94
+  },
+  {
+   "beat": "moon",
+   "text": "dans",
+   "start": 40.94,
+   "end": 41.04
+  },
+  {
+   "beat": "moon",
+   "text": "sa",
+   "start": 41.04,
+   "end": 41.22
+  },
+  {
+   "beat": "moon",
+   "text": "main.",
+   "start": 41.22,
+   "end": 41.4
+  },
+  {
+   "beat": "end",
+   "text": "Tu",
+   "start": 42.0,
+   "end": 42.08
+  },
+  {
+   "beat": "end",
+   "text": "l'arrêterais",
+   "start": 42.08,
+   "end": 42.5
+  },
+  {
+   "beat": "end",
+   "text": "à",
+   "start": 42.5,
+   "end": 42.56
+  },
+  {
+   "beat": "end",
+   "text": "quelle",
+   "start": 42.56,
+   "end": 42.68
+  },
+  {
+   "beat": "end",
+   "text": "minute",
+   "start": 42.68,
+   "end": 42.92
+  },
+  {
+   "beat": "end",
+   "text": "?",
+   "start": 42.92,
+   "end": 43.08
+  }
+ ]
+}

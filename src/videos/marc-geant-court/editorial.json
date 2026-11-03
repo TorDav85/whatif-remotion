@@ -1,0 +1,21 @@
+{
+  "source": "marc-geant",
+  "duration": 45,
+  "note": "Montage court du pilote 1.11 : mêmes plans que MarcGeant, nouvelle narration orientée problème. Mirrored in scripts/audio/marc-geant-court.py.",
+  "edit": [
+    {"at": 0.0, "src": 5.6, "dur": 4.4, "cut": "cut", "label": "Accroche : il grandit dans le plan"},
+    {"at": 4.4, "src": 19.0, "dur": 5.6, "cut": "cut", "label": "Problème : visage inquiet, 14 m"},
+    {"at": 10.0, "src": 25.2, "dur": 7.6, "cut": "cut", "label": "Loi carré-cube"},
+    {"at": 17.6, "src": 34.4, "dur": 5.2, "cut": "cut", "label": "Chaque pas est un séisme"},
+    {"at": 22.8, "src": 41.2, "dur": 5.6, "cut": "dip", "label": "Changement d'échelle : la tour Eiffel"},
+    {"at": 28.4, "src": 54.6, "dur": 5.4, "cut": "cut", "label": "Les avions"},
+    {"at": 33.8, "src": 69.0, "dur": 5.2, "cut": "dip", "label": "Changement d'échelle : plus grand que la Terre"},
+    {"at": 39.0, "src": 76.4, "dur": 2.8, "cut": "cut", "label": "La Lune dans sa main"},
+    {"at": 41.8, "src": 79.0, "dur": 3.2, "cut": "cut", "label": "Question de fin"}
+  ],
+  "modes": [[0, "story"], [10.0, "science"], [17.6, "story"], [33.8, "climax"], [41.8, "end"]],
+  "cta": [[41.8, 45.0]],
+  "ctaSpoken": ["end"],
+  "diagrams": [[10.0, 17.6]],
+  "hookVariant": "consequence"
+}

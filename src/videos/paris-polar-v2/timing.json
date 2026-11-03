@@ -1,0 +1,180 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 61.166666666666664,
+  "voice": "morpheus",
+  "voiceReferenceSha256": "5dcf76201bfd8dadb309c35a032a3682a21d3dee98a1b015a315a635c4dfbb69",
+  "pace": 1,
+  "lead": 0.45,
+  "ambience": "paris-polar-v2/ambience.wav",
+  "provisional": false,
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Paris perdait dix degrés chaque minute ?",
+      "caption": "−10 °C chaque minute ?",
+      "pause": 0.15,
+      "start": 0.45,
+      "duration": 2.7460833333333334,
+      "end": 3.19608,
+      "audio": "paris-polar-v2/hook.wav",
+      "sha256": "2e06153b05b873323419ec19600df51e9704e2d8b0d513fc81ef30d5e6a22d7c"
+    },
+    {
+      "id": "normal",
+      "text": "Au Trocadéro, Marc prend une photo devant la tour Eiffel.",
+      "caption": "Marc à Paris.",
+      "pause": 0.15,
+      "start": 3.34608,
+      "duration": 3.5370416666666666,
+      "end": 6.88312,
+      "audio": "paris-polar-v2/normal.wav",
+      "sha256": "5413740e345bc8b5abcfe5e02239cf58ff87dd2a83fb576c5c1b4025ba989105"
+    },
+    {
+      "id": "intro",
+      "text": "Une simple promenade.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 7.03313,
+      "duration": 1.299125,
+      "end": 8.33225,
+      "audio": "paris-polar-v2/intro.wav",
+      "sha256": "7cc50bf6910864c32da88a462bb41d6bbf863f2ee2369f78a2afc06addab0d4f"
+    },
+    {
+      "id": "cta",
+      "text": "Laisse un like, abonne-toi et propose ta prochaine idée de vidéo en commentaire.",
+      "caption": "",
+      "pause": 0.2,
+      "startAt": 10,
+      "start": 10,
+      "duration": 5.07325,
+      "end": 15.07325,
+      "audio": "paris-polar-v2/cta.wav",
+      "sha256": "ff335b0de6bd2aa84209d9ef38f428c523bc4bfe517f25ba9291011f97d4ed7e"
+    },
+    {
+      "id": "chill",
+      "text": "Une minute plus tard, dix degrés. Marc remonte son col.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 15.27325,
+      "duration": 4.20175,
+      "end": 19.475,
+      "audio": "paris-polar-v2/chill.wav",
+      "sha256": "3a45f8b4391f393bc99161c15159312360b14038c28eeb42575d4268a0003ff4"
+    },
+    {
+      "id": "wind",
+      "text": "À zéro, le vent se lève. La photo est terminée.",
+      "caption": "Le vent se lève.",
+      "pause": 0.15,
+      "start": 19.625,
+      "duration": 4.480125,
+      "end": 24.10513,
+      "audio": "paris-polar-v2/wind.wav",
+      "sha256": "786188152e584911ea68592238acd1a77de220ecafe1d670d40de5cc419a71cb"
+    },
+    {
+      "id": "snow",
+      "text": "À moins dix, la neige tombe. Le sol se couvre de glace.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 24.25512,
+      "duration": 4.606166666666667,
+      "end": 28.86129,
+      "audio": "paris-polar-v2/snow.wav",
+      "sha256": "ef68a73ed0b3691b8157944f938901d92f76de7a1b51ae2207e7f1863e94768f"
+    },
+    {
+      "id": "slip",
+      "text": "Marc glisse sur les pavés. Il se rattrape à la balustrade.",
+      "caption": "Le sol devient une patinoire.",
+      "pause": 0.2,
+      "start": 29.01129,
+      "duration": 5.142541666666666,
+      "end": 34.15383,
+      "audio": "paris-polar-v2/slip.wav",
+      "sha256": "5e51679e3bbab7ff6bedd752c7db09602c4b69fa98c3217b8c70b8552a46ca07"
+    },
+    {
+      "id": "traffic",
+      "text": "À moins vingt, les voitures s'immobilisent. Les passants fuient vers le métro.",
+      "caption": "Paris se bloque.",
+      "pause": 0.15,
+      "start": 34.35383,
+      "duration": 4.529708333333334,
+      "end": 38.88354,
+      "audio": "paris-polar-v2/traffic.wav",
+      "sha256": "c4681ee371aab9ce54b2febaede5a11413334995fffacd6c1d69f14f9476e876"
+    },
+    {
+      "id": "escape",
+      "text": "Marc atteint le métro et descend les marches couvertes de neige.",
+      "caption": "Marc se réfugie sous terre.",
+      "pause": 0.2,
+      "start": 39.03354,
+      "duration": 4.475083333333333,
+      "end": 43.50862,
+      "audio": "paris-polar-v2/escape.wav",
+      "sha256": "595e57f25ae81de9136cfeaad91ada0debf1e0a5febb157c0e61f0993ee3b2fe"
+    },
+    {
+      "id": "deep",
+      "text": "Six minutes après sa photo, moins quarante.",
+      "caption": "6 MINUTES · −40 °C",
+      "pause": 0.2,
+      "start": 43.70862,
+      "duration": 2.626875,
+      "end": 46.3355,
+      "audio": "paris-polar-v2/deep.wav",
+      "sha256": "ee6c9fed38ab3286a2ee5bcc3af34bc7d9724cb34909b09f62325fe797185803"
+    },
+    {
+      "id": "return",
+      "text": "On retrouve le même point de vue.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 46.5355,
+      "duration": 1.714875,
+      "end": 48.25037,
+      "audio": "paris-polar-v2/return.wav",
+      "sha256": "bfe06d6487e1d9284e09b8f0b7a6e086d63ce579d8a74975e4f4fb085d9ba023"
+    },
+    {
+      "id": "silence",
+      "text": "Les fontaines se taisent. La place a disparu sous le blanc.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 48.40037,
+      "duration": 3.1711666666666667,
+      "end": 51.57154,
+      "audio": "paris-polar-v2/silence.wav",
+      "sha256": "243a5cb222e0ee313bb0dc37bafc85f1fc9ecd71cc01b57ca197537cca2d2018"
+    },
+    {
+      "id": "buried",
+      "text": "La neige a englouti les marches et la balustrade.",
+      "caption": "",
+      "pause": 0.15,
+      "start": 51.72154,
+      "duration": 3.383166666666667,
+      "end": 55.10471,
+      "audio": "paris-polar-v2/buried.wav",
+      "sha256": "2aa0f94584f55b8bc58cd305ed21d4db3bb6db80a4d54fc99d37966488d0bfbc"
+    },
+    {
+      "id": "tower",
+      "text": "Derrière, la tour Eiffel s'efface dans la tempête.",
+      "caption": "",
+      "pause": 0.3,
+      "start": 55.25471,
+      "duration": 2.5860416666666666,
+      "end": 57.84075,
+      "audio": "paris-polar-v2/tower.wav",
+      "sha256": "2a543fcc4e43aab4a1a4d4f1d7eccfe636e8e1e1f6af1059f74382b6817022f8"
+    }
+  ]
+}

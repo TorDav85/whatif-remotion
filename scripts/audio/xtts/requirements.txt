@@ -1,0 +1,5 @@
+# Install CUDA torch/torchaudio separately; see README.
+coqui-tts==0.28.0
+torch==2.6.0
+torchaudio==2.6.0
+imageio-ffmpeg==0.6.0

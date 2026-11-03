@@ -1,0 +1,295 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 64,
+  "handle": "@ton_compte",
+  "audio": {
+    "music": "ambience-paris-v3-rework.wav",
+    "voice": false,
+    "voiceDir": "voice-paris-v3-rework"
+  },
+  "hole": {
+    "massKg": 5.972E+24,
+    "startDistanceM": 100,
+    "appearsAt": 0.7,
+    "slowFactor": 4000000,
+    "personKg": 75,
+    "height": 12,
+    "z": -24
+  },
+  "hero": {
+    "x": -28,
+    "z": -1,
+    "driveUntil": 2.2,
+    "absorbFrom": 2.4,
+    "absorbTo": 7.6,
+    "impactAt": 7.6
+  },
+  "city": {
+    "cars": 140,
+    "people": 44,
+    "blocks": 8,
+    "rows": 26,
+    "streetPitch": 34,
+    "seed": 304
+  },
+  "camera": [
+    {
+      "t": 0,
+      "x": -18,
+      "y": 33,
+      "z": 66,
+      "tx": -16,
+      "ty": 8,
+      "tz": -40
+    },
+    {
+      "t": 3,
+      "x": -10,
+      "y": 29,
+      "z": 52,
+      "tx": -12,
+      "ty": 9,
+      "tz": -30
+    },
+    {
+      "t": 7.6,
+      "x": 2,
+      "y": 26,
+      "z": 44,
+      "tx": 0,
+      "ty": 12,
+      "tz": -24
+    },
+    {
+      "t": 12,
+      "x": 9,
+      "y": 35,
+      "z": 76,
+      "tx": 0,
+      "ty": 10,
+      "tz": -58
+    },
+    {
+      "t": 20,
+      "x": 18,
+      "y": 52,
+      "z": 108,
+      "tx": 0,
+      "ty": 10,
+      "tz": -70
+    },
+    {
+      "t": 25,
+      "x": 55,
+      "y": 140,
+      "z": 205,
+      "tx": 0,
+      "ty": 8,
+      "tz": -65
+    },
+    {
+      "t": 29,
+      "x": 80,
+      "y": 450,
+      "z": 270,
+      "tx": 0,
+      "ty": 0,
+      "tz": -80
+    },
+    {
+      "t": 34,
+      "x": 0,
+      "y": 2200,
+      "z": -24,
+      "tx": 0,
+      "ty": 0,
+      "tz": -24
+    }
+  ],
+  "shots": [
+    {
+      "id": "city",
+      "from": 0,
+      "to": 34,
+      "label": "PARIS",
+      "detail": "CHAMP-DE-MARS",
+      "chapter": "LE POINT DE DÉPART"
+    },
+    {
+      "id": "country",
+      "from": 33,
+      "to": 43,
+      "label": "FRANCE",
+      "detail": "LE POINT DORÉ, C'EST TOUJOURS PARIS",
+      "chapter": "GARDE LE POINT EN VUE"
+    },
+    {
+      "id": "earth",
+      "from": 42,
+      "to": 52,
+      "label": "LA TERRE",
+      "detail": "TU ÉTAIS JUSTE ICI",
+      "chapter": "CHANGE D'ÉCHELLE"
+    },
+    {
+      "id": "galaxy",
+      "from": 51,
+      "to": 64,
+      "label": "LA VOIE LACTÉE",
+      "detail": "REPÈRE DORÉ · SYSTÈME SOLAIRE",
+      "chapter": "ENCORE PLUS LOIN"
+    }
+  ],
+  "effects": {
+    "pullFrom": 3,
+    "absorbFrom": 10,
+    "absorbTo": 23,
+    "cityFrom": 21,
+    "cityTo": 33
+  },
+  "timing": {
+    "grassFrom": 5,
+    "grassTo": 18,
+    "treesFrom": 11,
+    "treesTo": 22,
+    "peopleFrom": 12,
+    "peopleTo": 22,
+    "benchesFrom": 10,
+    "benchesTo": 20,
+    "towerFrom": 20,
+    "towerTo": 30,
+    "beaconFrom": 25,
+    "beaconTo": 29
+  },
+  "zoom": {
+    "countryDuration": 9,
+    "planetDuration": 9,
+    "galaxyDuration": 11
+  },
+  "geography": {
+    "parisLon": 2.3522,
+    "parisLat": 48.8566
+  },
+  "sky": [
+    {
+      "t": 0,
+      "top": "#4b85c3",
+      "bottom": "#e2eaf0"
+    },
+    {
+      "t": 9,
+      "top": "#57748c",
+      "bottom": "#e5c999"
+    },
+    {
+      "t": 20,
+      "top": "#29243b",
+      "bottom": "#f2a064"
+    },
+    {
+      "t": 29,
+      "top": "#090e21",
+      "bottom": "#38495e"
+    },
+    {
+      "t": 34,
+      "top": "#050a17",
+      "bottom": "#15253a"
+    }
+  ],
+  "outro": {
+    "t": 61,
+    "title": "Tout est parti d'un point.",
+    "text": "Et toi, tu l'aurais vu venir ?",
+    "note": "FICTION VISUELLE · ÉCHELLES ET ABSORPTION STYLISÉES"
+  },
+  "beats": [
+    {
+      "t": 0,
+      "end": 2.5,
+      "title": "Cette voiture va {disparaître}."
+    },
+    {
+      "t": 2.5,
+      "end": 5,
+      "caption": "Regarde la {voiture rouge}."
+    },
+    {
+      "t": 5,
+      "end": 7.6,
+      "caption": "Elle ne touchera {plus la route}."
+    },
+    {
+      "t": 7.6,
+      "end": 9.6,
+      "caption": "Et là… {plus rien}."
+    },
+    {
+      "t": 9.6,
+      "end": 12.5,
+      "caption": "Un point minuscule. La {masse de la Terre}."
+    },
+    {
+      "t": 12.5,
+      "end": 16,
+      "caption": "Les bancs. Les arbres. {Tout se soulève}."
+    },
+    {
+      "t": 16,
+      "end": 19.5,
+      "caption": "Ça tourne. Ça se rapproche. Puis {ça disparaît}."
+    },
+    {
+      "t": 19.5,
+      "end": 23,
+      "caption": "Et la {tour Eiffel} ?"
+    },
+    {
+      "t": 23,
+      "end": 27,
+      "caption": "Mais ce n'est que {le début}."
+    },
+    {
+      "t": 27,
+      "end": 30.5,
+      "caption": "Tu vois encore {le point} ?"
+    },
+    {
+      "t": 30.5,
+      "end": 34,
+      "caption": "Tout le parc tient {juste là}."
+    },
+    {
+      "t": 34,
+      "end": 38,
+      "caption": "Tu vois toujours {Paris} ?"
+    },
+    {
+      "t": 38,
+      "end": 42,
+      "caption": "On n'a {pas fini de reculer}."
+    },
+    {
+      "t": 42,
+      "end": 46.5,
+      "caption": "Ce point est sur {notre planète}."
+    },
+    {
+      "t": 46.5,
+      "end": 51,
+      "caption": "Tu étais là. Sur ce {point lumineux}."
+    },
+    {
+      "t": 51,
+      "end": 55.5,
+      "caption": "Et si on reculait {encore} ?"
+    },
+    {
+      "t": 55.5,
+      "end": 61,
+      "caption": "{La Voie lactée}. Et notre système solaire, en doré."
+    }
+  ]
+}

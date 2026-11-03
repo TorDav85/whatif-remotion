@@ -1,0 +1,105 @@
+{
+  "voice": "morpheus",
+  "ambience": "internet-off/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Internet disparaissait... maintenant ?",
+      "start": 0.3,
+      "duration": 2.6062,
+      "end": 2.9062,
+      "speed": 1.0072,
+      "seed": 21000,
+      "audio": "internet-off/hook.wav",
+      "sha256": "b906dfe4dd0a96f3a7cdde92db7933e649488360cbeac3358737ed797095db53"
+    },
+    {
+      "id": "seed",
+      "text": "Regarde ton temps d'écran. Garde ce chiffre en tête.",
+      "start": 3.0,
+      "duration": 2.8755,
+      "end": 5.8755,
+      "speed": 1.0,
+      "seed": 21111,
+      "audio": "internet-off/seed.wav",
+      "sha256": "4bf384de0a1ad55575cea9451b6925fcfae2656ffa825c542fe6cf42feaf678f"
+    },
+    {
+      "id": "glitch",
+      "text": "Un par un, les écrans s'éteignent.",
+      "start": 9.4,
+      "duration": 2.1743,
+      "end": 11.5743,
+      "speed": 1.0,
+      "seed": 21002,
+      "audio": "internet-off/glitch.wav",
+      "sha256": "a6799d11aac9ebca4cf684dbca3aeaead6e1caa27ed6efe79e4ba2118b59cc27"
+    },
+    {
+      "id": "alone",
+      "text": "Seuls. Pour la première fois depuis vingt ans.",
+      "start": 16.0,
+      "duration": 2.7871,
+      "end": 18.7871,
+      "speed": 1.0,
+      "seed": 21003,
+      "audio": "internet-off/alone.wav",
+      "sha256": "b6d1f569b8d1737edd378bc6979825f85631dcb09d918a7317ea5c199e141057"
+    },
+    {
+      "id": "doors",
+      "text": "Puis les portes s'ouvrent. Et quelque chose d'étrange se produit.",
+      "start": 26.5,
+      "duration": 4.5784,
+      "end": 31.0784,
+      "speed": 1.0,
+      "seed": 21004,
+      "audio": "internet-off/doors.wav",
+      "sha256": "2ee375e257550f6e942e92c3406d562462f5076c8fdb9dff46a5adbf7f2f0b29"
+    },
+    {
+      "id": "questions",
+      "text": "On se pose enfin les vraies questions.",
+      "start": 41.0,
+      "duration": 1.2659,
+      "end": 42.2659,
+      "speed": 1.0,
+      "seed": 21005,
+      "audio": "internet-off/questions.wav",
+      "sha256": "9ec2ef7d72948e27a972ae601edeedb246c6dd6b6f94232536e5f9e1e77cfbf3"
+    },
+    {
+      "id": "found",
+      "text": "Sans Google... on s'est retrouvés.",
+      "start": 56.0,
+      "duration": 1.9365,
+      "end": 57.9365,
+      "speed": 1.0,
+      "seed": 21006,
+      "audio": "internet-off/found.wav",
+      "sha256": "74f723dc35a2a58c902df1a93c8184550cd5d28c7bc027c35d7d6fb4da31eba1"
+    },
+    {
+      "id": "back",
+      "text": "Et si ça revenait... tu ferais quoi différemment ?",
+      "start": 70.8,
+      "duration": 2.5356,
+      "end": 73.3356,
+      "speed": 1.0,
+      "seed": 21007,
+      "audio": "internet-off/back.wav",
+      "sha256": "0601ce97fbce2c781665d448727bf3eba6d67feff954af5fa8b6e8585204e4a6"
+    },
+    {
+      "id": "loop",
+      "text": "Alors, c'était combien, ton temps d'écran ? Dis-le en commentaire.",
+      "start": 75.2,
+      "duration": 4.089,
+      "end": 79.289,
+      "speed": 1.0,
+      "seed": 21008,
+      "audio": "internet-off/loop.wav",
+      "sha256": "43eaf3ab6016e0d60ef845b6a9e8a1247bfb97b7798a86373653095ac8831c08"
+    }
+  ]
+}

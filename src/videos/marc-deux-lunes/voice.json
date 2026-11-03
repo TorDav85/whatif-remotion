@@ -1,0 +1,149 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-deux-lunes/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si Marc voyait une deuxième lune apparaître dans le ciel ?",
+      "start": 0.2,
+      "duration": 4.4146,
+      "end": 4.6146,
+      "speed": 1.0195,
+      "seed": 26000,
+      "audio": "marc-deux-lunes/hook.wav",
+      "sha256": "9755a20744d679a0c90b14821afa50b382cf903b3e8b969de312a2b6ef159a67"
+    },
+    {
+      "id": "intro",
+      "text": "Minuit. Marc sort les poubelles. Il lève les yeux... et compte deux lunes.",
+      "start": 5.0,
+      "duration": 5.3924,
+      "end": 10.3924,
+      "speed": 1.0013,
+      "seed": 26001,
+      "audio": "marc-deux-lunes/intro.wav",
+      "sha256": "85e70c8fea2ac1ce8b5081865cc165cb94acc645560b23afaf30fd747f99379b"
+    },
+    {
+      "id": "julien",
+      "text": "Julien, lui, pense que Marc a trop bu.",
+      "start": 10.8,
+      "duration": 2.7341,
+      "end": 13.5341,
+      "speed": 1.0,
+      "seed": 26002,
+      "audio": "marc-deux-lunes/julien.wav",
+      "sha256": "a2283d01d89337e0345048dfe4c509572f9d58bf708081ff19479699d73b6179"
+    },
+    {
+      "id": "rule",
+      "text": "Même taille que la nôtre. Même distance : trois cent quatre-vingt-quatre mille kilomètres.",
+      "start": 15.2,
+      "duration": 5.8128,
+      "end": 21.0128,
+      "speed": 1.0084,
+      "seed": 26003,
+      "audio": "marc-deux-lunes/rule.wav",
+      "sha256": "597d1877fe2416853b8012f6d17721eb4ae0a8b4cc74efc0f73d2b172934bfdd"
+    },
+    {
+      "id": "light",
+      "text": "Première conséquence : la nuit est deux fois plus claire. Marc lit son journal sans lumière.",
+      "start": 21.4,
+      "duration": 5.6377,
+      "end": 27.0377,
+      "speed": 1.0,
+      "seed": 26202,
+      "audio": "marc-deux-lunes/light.wav",
+      "sha256": "539683538f28738e42b95058aad1eff663760be1f2c0922ac44c27148b33ef29"
+    },
+    {
+      "id": "dogs",
+      "text": "Tous les chiens du quartier hurlent... aux deux lunes.",
+      "start": 27.8,
+      "duration": 2.4566,
+      "end": 30.2566,
+      "speed": 1.0,
+      "seed": 26005,
+      "audio": "marc-deux-lunes/dogs.wav",
+      "sha256": "48c55bcdbefc54a975d10b489b0fea2f47dc708a0c080467de62d64b3238f664"
+    },
+    {
+      "id": "tide",
+      "text": "Le lendemain, la mer monte deux fois plus haut. À Saint-Malo, la marée atteint vingt-six mètres.",
+      "start": 32.4,
+      "duration": 5.6927,
+      "end": 38.0927,
+      "speed": 1.0,
+      "seed": 26006,
+      "audio": "marc-deux-lunes/tide.wav",
+      "sha256": "d31ac17b9c26773bd5070e8935cf31852b81fa80629c1a13487634ed12fb2afd"
+    },
+    {
+      "id": "eclipse",
+      "text": "Jour trois. Les deux lunes passent devant le Soleil. Deux éclipses... le même jour.",
+      "start": 40.0,
+      "duration": 6.1733,
+      "end": 46.1733,
+      "speed": 1.0,
+      "seed": 26101,
+      "audio": "marc-deux-lunes/eclipse.wav",
+      "sha256": "dce382e82cfd414a21fd1cc520c2afd1d7c5f65f8c231e2121f39109e2e86997"
+    },
+    {
+      "id": "pull",
+      "text": "Mais deux lunes si proches s'attirent. Chaque nuit, elles se rapprochent un peu plus.",
+      "start": 47.0,
+      "duration": 4.7762,
+      "end": 51.7762,
+      "speed": 1.0,
+      "seed": 26008,
+      "audio": "marc-deux-lunes/pull.wav",
+      "sha256": "1a90c9471cc35e5334227b42b8596a8934fbfe38733cc036d3caaa90bf935696"
+    },
+    {
+      "id": "crash",
+      "text": "Jour vingt. Elles se frôlent... et la deuxième lune se brise en mille morceaux.",
+      "start": 54.0,
+      "duration": 4.9732,
+      "end": 58.9732,
+      "speed": 1.0,
+      "seed": 26009,
+      "audio": "marc-deux-lunes/crash.wav",
+      "sha256": "eb26190aa353ea3bfaafb39b58f7addc489c210642b0c6f07601d6abaf159ef0"
+    },
+    {
+      "id": "rings",
+      "text": "Les débris s'étalent autour de la Terre. Le ciel a maintenant des anneaux, comme Saturne.",
+      "start": 60.2,
+      "duration": 5.4125,
+      "end": 65.6125,
+      "speed": 1.0,
+      "seed": 26010,
+      "audio": "marc-deux-lunes/rings.wav",
+      "sha256": "9a85d0d4c9e52cbea2004f52df3af4ff81d77dafdbf440a1afbc4d1e2e1ade20"
+    },
+    {
+      "id": "punch",
+      "text": "Julien lève les yeux. Bon... Marc n'avait pas trop bu.",
+      "start": 67.2,
+      "duration": 3.634,
+      "end": 70.834,
+      "speed": 1.0,
+      "seed": 26101,
+      "audio": "marc-deux-lunes/punch.wav",
+      "sha256": "70181a67ea9ec1ac2d25aa73560d5448bfeb67721c5e1d7190154568d863aecc"
+    },
+    {
+      "id": "cta",
+      "text": "Abonne-toi. Et toi : deux lunes, ou des anneaux ?",
+      "start": 74.4,
+      "duration": 4.0005,
+      "end": 78.4005,
+      "speed": 1.0,
+      "seed": 26012,
+      "audio": "marc-deux-lunes/cta.wav",
+      "sha256": "7d399187a6767d6cc9dad3515c6a14c4e1ae86015f354a03c0848218b361b893"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Le prochain bus",
+  "beats": [
+    {"id":"hook","text":"Et si la température baissait de dix degrés chaque minute ?","caption":"−10 °C chaque minute ?","pause":0.2},
+    {"id":"normal","text":"À vingt degrés, Maya attend son bus, son sac jaune sur les genoux.","caption":"Une attente ordinaire.","pause":0.2},
+    {"id":"elder","text":"Un vieil homme approche tranquillement.","caption":"","pause":0.2},
+    {"id":"chill","text":"Une minute plus tard, dix degrés. Elle ferme sa veste.","caption":"","pause":0.15},
+    {"id":"scarf","text":"À zéro, elle enroule son écharpe.","caption":"","pause":0.15},
+    {"id":"arrival","text":"Le bus arrive enfin au bout de la rue.","caption":"Enfin, le bus.","pause":0.2},
+    {"id":"ice","text":"Moins dix. Sur la chaussée encore mouillée, le gel commence à s'étendre.","caption":"","pause":0.15},
+    {"id":"stop","text":"Le conducteur ralentit et s'arrête quelques mètres avant l'abribus.","caption":"Quelques mètres avant l’arrêt.","pause":0.2},
+    {"id":"door","text":"Maya rejoint la porte ouverte.","caption":"","pause":0.15},
+    {"id":"cane","text":"Derrière elle, une canne dérape.","caption":"","pause":0.45},
+    {"id":"grip","text":"Le vieil homme s'agrippe au banc. Entre lui et le bus, le trottoir brille.","caption":"","pause":0.2},
+    {"id":"choice","text":"Maya regarde les sièges à l'intérieur… puis fait demi-tour.","caption":"","pause":0.25},
+    {"id":"help","text":"Maya lui offre son bras. Ensemble, ils avancent à petits pas.","caption":"À petits pas.","pause":0.25},
+    {"id":"driver","text":"Le conducteur attend.","caption":"Il attend.","pause":0.4},
+    {"id":"outside","text":"Dehors, la température continue de tomber.","caption":"","pause":0.2},
+    {"id":"inside","text":"Derrière la vitre embuée, on retrouve le sac jaune, posé entre leurs pieds.","caption":"","pause":0.25},
+    {"id":"still","text":"Le bus n'a pas encore redémarré.","caption":"","pause":0.3},
+    {"id":"shared","text":"Sur la banquette, ils partagent maintenant la même écharpe.","caption":"","pause":0}
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-four/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si un ami enfermait Marc dans un four... de plus en plus chaud ?",
+      "start": 0.2,
+      "duration": 3.8246,
+      "end": 4.0246,
+      "speed": 1.0,
+      "seed": 22000,
+      "audio": "marc-four/hook.wav",
+      "sha256": "4414bc4666ea2b1536a3419fac3f64833190fde9948b4645b32aed6d7c57f46c"
+    },
+    {
+      "id": "intro",
+      "text": "Voici Julien. Il pousse Marc dans un four géant, et règle la température à trente-huit degrés.",
+      "start": 5.0,
+      "duration": 5.4177,
+      "end": 10.4177,
+      "speed": 1.0231,
+      "seed": 31296,
+      "audio": "marc-four/intro.wav",
+      "sha256": "e4e40e2b4c0c441ecffd32af6eb3f4b7541484785586b1b3f832572b2a281d5c"
+    },
+    {
+      "id": "m0",
+      "text": "Trente-huit degrés : pour Marc, c'est juste un bain tiède. Il trouve ça plutôt sympa.",
+      "start": 10.8,
+      "duration": 5.2031,
+      "end": 16.0031,
+      "speed": 1.1669,
+      "seed": 22002,
+      "audio": "marc-four/m0.wav",
+      "sha256": "8c8febb1c75ac18c455d08b5b2c60462999f731e281a93ad6c24e47815b59c5a"
+    },
+    {
+      "id": "rule",
+      "text": "Mais chaque minute, la température double.",
+      "start": 16.4,
+      "duration": 2.4915,
+      "end": 18.8915,
+      "speed": 1.0,
+      "seed": 22003,
+      "audio": "marc-four/rule.wav",
+      "sha256": "2fac6cca6b68b664f59ba83a7774117bdfb82a259719df4aa209fde8dbcfe688"
+    },
+    {
+      "id": "m1",
+      "text": "Après une minute : soixante-seize degrés. Marc transpire à grosses gouttes et tape sur la vitre.",
+      "start": 21.0,
+      "duration": 6.6154,
+      "end": 27.6154,
+      "speed": 1.0482,
+      "seed": 22004,
+      "audio": "marc-four/m1.wav",
+      "sha256": "98da707ce72bc81582c837746a6c8b44eb4df533e3ac7d1a32bbbe42df74f22f"
+    },
+    {
+      "id": "wave",
+      "text": "Julien lui fait coucou.",
+      "start": 27.9,
+      "duration": 1.721,
+      "end": 29.621,
+      "speed": 1.0,
+      "seed": 22005,
+      "audio": "marc-four/wave.wav",
+      "sha256": "04a19540ea4a8af462129b5040ea301173deea50ad607eacb025b26c51412aad"
+    },
+    {
+      "id": "m2",
+      "text": "Deux minutes : cent cinquante-deux degrés. Sa sueur s'évapore d'un coup. Marc fume comme une théière.",
+      "start": 32.0,
+      "duration": 6.014,
+      "end": 38.014,
+      "speed": 1.1504,
+      "seed": 31099,
+      "audio": "marc-four/m2.wav",
+      "sha256": "4a5ac515b211d7fd4595d8277f1fcfceaec91715145bd4a4f2e8f932abde17de"
+    },
+    {
+      "id": "m3",
+      "text": "Minute trois : trois cent quatre degrés. Son tee-shirt prend feu tout seul, et ses sourcils partent en fumée.",
+      "start": 39.0,
+      "duration": 6.4102,
+      "end": 45.4102,
+      "speed": 1.0293,
+      "seed": 22007,
+      "audio": "marc-four/m3.wav",
+      "sha256": "959baa60aa2c6d8ab3ae33a16e39660b6cc56c47c61adfaf6c3097aee8817699"
+    },
+    {
+      "id": "m4",
+      "text": "Minute quatre : six cent huit degrés. Marc est noir comme une tartine oubliée. Seuls ses yeux clignent encore.",
+      "start": 46.4,
+      "duration": 6.6075,
+      "end": 53.0075,
+      "speed": 1.1099,
+      "seed": 22008,
+      "audio": "marc-four/m4.wav",
+      "sha256": "ed5030c35b42477132351eb8ed80eedb7b4d4dcb8eb9b44b718ad9952f86273f"
+    },
+    {
+      "id": "pop",
+      "text": "Julien, lui, mange du pop-corn.",
+      "start": 53.4,
+      "duration": 3.0088,
+      "end": 56.4088,
+      "speed": 1.0,
+      "seed": 22009,
+      "audio": "marc-four/pop.wav",
+      "sha256": "e7165f47bed24edd3b7f4da2d89f5cf897468bce843aea2cf262fd1d2678d266"
+    },
+    {
+      "id": "m5",
+      "text": "Cinq minutes : mille deux cent seize degrés. Plus chaud que de la lave. Marc s'effrite...",
+      "start": 57.6,
+      "duration": 5.6609,
+      "end": 63.2609,
+      "speed": 1.0,
+      "seed": 31002,
+      "audio": "marc-four/m5.wav",
+      "sha256": "dea5a2faca0f61632f325dc125771ababb0878845824f6aa4fe16e942e3f2ddc"
+    },
+    {
+      "id": "dust",
+      "text": "... et il ne reste qu'un petit tas de poussière.",
+      "start": 64.2,
+      "duration": 2.2983,
+      "end": 66.4983,
+      "speed": 1.0,
+      "seed": 22011,
+      "audio": "marc-four/dust.wav",
+      "sha256": "8e4be7ded330edb8774ce063767fb276397df59108cb94fdc96b9f673ab1c08d"
+    },
+    {
+      "id": "open",
+      "text": "Julien ouvre la porte pour vérifier... et éternue.",
+      "start": 69.4,
+      "duration": 3.3157,
+      "end": 72.7157,
+      "speed": 1.0,
+      "seed": 31004,
+      "audio": "marc-four/open.wav",
+      "sha256": "fcf5159e5d8bddea0756ab5b7b340c50945dea1d12ee747c33b356ceb2e51a96"
+    },
+    {
+      "id": "cta",
+      "text": "Abonne-toi... avant que Julien ne préchauffe le four pour toi.",
+      "start": 75.0,
+      "duration": 3.2051,
+      "end": 78.2051,
+      "speed": 1.0,
+      "seed": 22013,
+      "audio": "marc-four/cta.wav",
+      "sha256": "582b3ac0a60f96e700fc33b4300f9171afba55c897c360b7f4cba41f62ede709"
+    }
+  ]
+}
