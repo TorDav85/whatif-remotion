@@ -1,188 +1,245 @@
 # What if… — vidéos verticales Remotion + Three.js
 
-Vidéos TikTok/Shorts « Et si… ? » en 1080×1920, style low-poly à faces plates, avec voix
-off générée localement (XTTS) et ambiance sonore procédurale. Un dossier par vidéo, une
-bibliothèque 3D commune, des scripts classés par usage.
+Vidéos TikTok / YouTube Shorts « Et si… ? » en 1080×1920 : scènes 3D low-poly à faces plates
+rendues avec Remotion et Three.js, voix off générée localement (XTTS), ambiance sonore procédurale.
+Personnage récurrent : **Marc** (avec Julien), dans une série d'épisodes de 40 à 85 s.
 
-> Branche de travail : **`1.12`** (base consolidée, voir [docs/versions/1.12.md](docs/versions/1.12.md)) ;
-> pilote éditorial dans [1.11](docs/versions/1.11.md).
-> Voir [l'état des versions](#versions) et [la feuille de route](AMELIORATIONS.md).
+> Branche de travail : **`1.12`** ([notes](docs/versions/1.12.md)). `main` est protégée : on y fusionne
+> par Pull Request une fois la CI verte. Feuille de route : [AMELIORATIONS.md](AMELIORATIONS.md).
+
+Chaque section renvoie au **skill** du projet qui détaille la méthode (`.claude/skills/`, voir [Skills](#11-skills-du-projet)).
 
 ## Sommaire
 
-1. [Installer](#1-installer)
-2. [Lancer le Studio](#2-lancer-le-studio)
-3. [Créer une vidéo, étape par étape](#3-créer-une-vidéo-étape-par-étape)
-4. [Voix off XTTS](#4-voix-off-xtts)
-5. [Rendre et vérifier](#5-rendre-et-vérifier)
-6. [Les vidéos du dépôt](#6-les-vidéos-du-dépôt)
-7. [Bibliothèque 3D](#7-bibliothèque-3d)
-8. [Où chercher](#8-où-chercher)
-9. [Versions](#versions) · [Améliorations](#améliorations)
+1. [Démarrer](#1-démarrer)
+2. [Les vidéos](#2-les-vidéos)
+3. [Créer un épisode](#3-créer-un-épisode)
+4. [Voix off et son](#4-voix-off-et-son)
+5. [Vérifier et rendre](#5-vérifier-et-rendre)
+6. [Améliorer la rétention](#6-améliorer-la-rétention)
+7. [Faits et sources](#7-faits-et-sources)
+8. [Publier](#8-publier)
+9. [Code partagé](#9-code-partagé)
+10. [Bibliothèque 3D et éditeur de ville](#10-bibliothèque-3d-et-éditeur-de-ville)
+11. [Skills du projet](#11-skills-du-projet)
+12. [Branches, CI et versions](#12-branches-ci-et-versions)
 
-## 1. Installer
+## 1. Démarrer
 
-Prérequis : Node 20+, et pour la voix Python 3.12 + (idéalement) une carte NVIDIA.
+Prérequis : Node 20+ (la CI utilise Node 22), Git LFS pour les MP4 de `review/` ; pour la voix,
+Python 3.12 et idéalement une carte NVIDIA.
 
 ```powershell
 npm install
+npm run dev          # Remotion Studio
 ```
 
-Voix locale (facultatif, une seule fois) — détails dans [docs/voice.md](docs/voice.md) :
+Dossiers du Studio : **Videos** (toutes les compositions, dont la série Marc et `Couverture`),
+**Videos-2-01** (finition visuelle 2.01), **AudioFirst** (`AudioFirstBridge`), **Bibliotheque**
+(`Assets`, `AssetsVille`, `AssetsInterieur`, `AssetsDetails`, `Personnages`, aperçus de ville).
+
+Voix locale (facultatif, une fois) — détails dans [docs/voice.md](docs/voice.md) :
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 .\.venv\Scripts\python.exe -m pip install -r scripts/audio/xtts/requirements.txt
+npm run venv:check   # après un déplacement du dossier : Python de base, paquets, lanceur pip
 ```
 
-Le modèle XTTS v2 (≈ 1,8 Go) est téléchargé au premier usage dans `.cache/`, jamais
-dans le dossier utilisateur. Tous les chemins sont relatifs au projet : le dossier peut
-être déplacé.
+Le modèle XTTS v2 (≈ 1,8 Go) est téléchargé au premier usage dans `.cache/`. Les chemins sont relatifs :
+le dossier peut être déplacé (`venv:check` dit comment réparer `pip` si besoin).
 
-> **Après un déplacement du dossier**, `python.exe` du `.venv` continue de marcher (les
-> scripts npm l'appellent directement), mais `pip.exe` garde l'ancien chemin. Utiliser
-> `.\.venv\Scripts\python.exe -m pip …` au lieu de `pip`.
+## 2. Les vidéos
 
-## 2. Lancer le Studio
+| Composition | Dossier `src/videos/` | Durée | Titre public |
+| --- | --- | --- | --- |
+| `MarcGeant` | `marc-geant/` | 83 s | Et si Marc devenait géant ? |
+| `MarcGeantCourt` | `marc-geant-court/` | 45 s | idem — pilote éditorial 1.11 monté à partir des plans de `MarcGeant` |
+| `MarcMini` | `marc-mini/` | 85 s | Et si Marc rétrécissait ? |
+| `MarcSoif` | `marc-soif/` | 81 s | Et si Marc ne buvait plus d'eau ? |
+| `MarcFour` | `marc-four/` | 84 s | Et si Marc était enfermé dans un four ? |
+| `MarcCongel` | `marc-congel/` | 85 s | Et si Marc était enfermé dans un congélateur ? |
+| `MarcSalaire`, `MarcSalaire2`, `MarcSalaire3` | `marc-salaire*/` | 3 × 79 s | Et si Marc était payé pour ne rien faire ? (parties 2 et 3 sans titre public) |
+| `MarcDeuxLunes` | `marc-deux-lunes/` | 84 s | Et si Marc voyait une deuxième lune ? |
+| `AsteroideParis` | `asteroide-paris/` | 40 s | Et si un astéroïde tombait sur Paris ? |
+| `InternetOffV1` | `internet-off/` | 85 s | Et si Internet disparaissait ? |
+| `CafeCold`, `CafeColdV2`, `BusCold`, `ParisPolar`, `ParisPolarV2` | `cafe-cold*/`, `bus-cold/`, `paris-polar*/` | 66–68 s | « −10 °C par minute » |
+| `AudioFirstBridge` | `audio-first-bridge/` | variable | timeline compilée depuis l'audio aligné |
+| Bases du catalogue (`WhatIf`, `Chaleur`, `NatureReprend[V2]`, `Gravite`, `WhatIfParisV2…V6`, `WhatIfParisTikTok`) | voir [catalog.json](src/videos/catalog.json) | | rendues par `npm run video -- render <slug>` |
 
-```powershell
-npm run dev
-```
+Rendus contrôlés et mesures : `review/1.10/` (tous les MP4) et `review/1.11/` (pilote), en Git LFS.
 
-- **Videos** : toutes les compositions (dont `InternetOffV1`).
-- **AudioFirst** : la chaîne « audio d'abord » (`AudioFirstBridge`).
-- **Bibliotheque** : planches `Assets`, `AssetsInterieur`, `AssetsVille` pour choisir les objets.
+## 3. Créer un épisode
 
-## 3. Créer une vidéo, étape par étape
+Skill [`nouvelle-video-marc`](.claude/skills/nouvelle-video-marc/SKILL.md), avec
+[`whatif-ghostwriter`](.claude/skills/whatif-ghostwriter/SKILL.md) pour le texte et
+[`camera-realisateur`](.claude/skills/camera-realisateur/SKILL.md) pour les plans.
+Modèles : `marc-deux-lunes/` (rue, espace, extérieur) et `marc-congel/` (huis clos).
 
-Le flux suivi pour `InternetOffV1` (« Et si Internet disparaissait… maintenant ? ») sert de modèle.
-
-| Étape | Quoi | Où |
+| Étape | Fichier | Contenu |
 | --- | --- | --- |
-| 1. Format | `fps`, `width`, `height`, `duration` | `src/videos/<slug>/timing.json` |
-| 2. Texte et créneaux | une réplique = `{id, slot: [début, fin], text}` | `src/videos/<slug>/narration.json` |
-| 3. Scène 3D | décor, personnages, **un plan de caméra par beat** (`SHOTS`) | `Scene3D.tsx` |
-| 4. Habillage | HUD, textes, bulles, écran de fin | `Hud.tsx`, `TextOverlay.tsx` |
-| 5. Composition | Canvas 3D + overlays + pistes audio | `<Slug>.tsx`, déclaré dans `src/Root.tsx` |
-| 6. Voix + ambiance | génération XTTS calée sur les créneaux, puis ambiance | `scripts/audio/<slug>.py` |
-| 7. Contrôle | images clés, puis rendu complet | `remotion still`, `npm run render:…` |
+| Format | `timing.json` | `{fps: 30, width: 1080, height: 1920, duration}` |
+| Texte | `narration.json` | `{duration, beats: [{id, slot: [début, fin], text, seed?, source?}]}` |
+| Scène | `Scene3D.tsx` | horloge du récit en constantes, décors, personnages, `SHOTS` via `src/shared/three/shots.ts` |
+| Habillage | `Hud.tsx`, `TextOverlay.tsx` | compteurs, accroche, sous-titres, mention « scénario fictif », fin |
+| Composition | `Marc<Sujet>.tsx` + `src/Root.tsx` | `ThreeCanvas`, calques, pistes audio de `voice.json` |
+| Voix et ambiance | `scripts/audio/marc-<sujet>.py` | prises XTTS calées sur les créneaux, bruitages |
+| Publication | `publication.json` | titre « Et si … ? », source, couverture, métriques |
 
-Règles qui évitent les mauvaises surprises :
+Règles :
 
-- **Tout dépend du temps de la vidéo** (`useCurrentFrame()/fps`) : jamais `Date.now()`,
-  `Math.random()` ni `useFrame`, sinon le rendu change d'une image à l'autre.
-- **Un plan de caméra par moment du récit** : un seul plan large pendant 80 s ne raconte
-  rien. Les coupes sont masquées par un fondu au noir très court (`CUTS`).
-- **Le format est vertical** : le champ horizontal est étroit (≈ 33° à fov 55). Cadrer
-  serré sur l'action, vérifier qu'aucun dos ou objet ne bouche l'avant-plan.
-- **Pas de nappe de bruit continue** dans l'ambiance : préférer des sons ponctuels et de la
-  musique. Mesurer le « fond » de chaque phase (voir étape 5).
-- **Vérifier chaque réplique** par transcription : XTTS remplace parfois un mot.
+- **Tout dépend du temps de la vidéo** (`frame / fps`) : jamais `Date.now()`, `Math.random()` ni `useFrame`.
+- **Écrire pour la rétention** : la première phrase pose la règle et le problème en ≤ 4 s ; ensuite
+  problème → conséquence → escalade, pas une simple énumération ; une seule question à la fin.
+- **Un plan par moment du récit**, coupes franches ; fondu au noir seulement aux vrais changements de
+  temps, de lieu ou d'échelle.
+- **Format vertical** : champ horizontal étroit (≈ 33° à fov 55), sujet entre 25 % et 70 % de la hauteur,
+  rien devant l'objectif (caméra sur la chaussée, pas dans la file de stationnement), textes dans la zone
+  sûre (`src/shared/ui/PlatformSafeArea.ts`).
 
-Copier une base existante plutôt que partir de zéro :
+Copier une ancienne base du catalogue : `npm run video -- copy nature-v2 mon-film`, puis
+`npm run video -- still mon-film` (voir [docs/reuse.md](docs/reuse.md)).
 
-```powershell
-npm run video                              # catalogue des bases
-npm run video -- copy nature-v2 mon-film   # copie indépendante du scénario
-npm run video -- still mon-film
-```
+## 4. Voix off et son
 
-## 4. Voix off XTTS
+Skill [`voix-xtts`](.claude/skills/voix-xtts/SKILL.md).
+
+> **Licence** : les poids XTTS v2 sont sous CPML, usage **non commercial** du modèle **et des WAV produits**.
+> Une chaîne monétisée ou sponsorisée doit changer de voix ; consentement écrit de la personne dont la voix
+> est clonée. Détails et modèle d'accord : [docs/legal/voix-et-licences.md](docs/legal/voix-et-licences.md).
 
 ```powershell
 npm run voice:add -- ma-voix "C:\chemin\enregistrement.mp3"   # 10 s de référence propre
-npm run voice:list
 npm run voice:use -- ma-voix
+npm run voice:marc-deux-lunes                                 # prises + ambiance → public/marc-deux-lunes/, voice.json
+npm run captions -- marc-deux-lunes                           # transcription + sous-titres synchronisés
+npm run audio:levels -- marc-deux-lunes                       # niveaux des répliques et de l'ambiance
 ```
 
-Les références vocales restent dans `voice-samples/` et ne sont **jamais** versionnées.
-Les pistes générées (`public/<slug>/*.wav`) non plus : elles se reconstruisent.
+- Chaque réplique est mise en cache (texte + voix + seed) ; accélération ≤ ×1,3, sinon le script **échoue** :
+  raccourcir le texte.
+- Mot mal prononcé : 4–5 prises avec d'autres `seed`, transcrire, garder la meilleure ; s'il rate partout,
+  reformuler.
+- Cibles : écart ≤ 3 LU entre répliques, ambiance baissée d'au moins 4 dB sous la voix, mix ≈ −16 LUFS,
+  sons ponctuels plutôt qu'une nappe de bruit continue.
+- GPU de 6 Go : si XTTS échoue au chargement (« out of memory » alors que la carte est libre), vérifier
+  l'espace disque, puis `CUDA_VISIBLE_DEVICES=-1` force le CPU. Whisper utilise le GPU via les DLL de PyTorch.
+- Les références vocales (`voice-samples/`) ne sont jamais versionnées ; les pistes des vidéos Marc
+  (`public/marc-*`) le sont, celles des anciennes bases se reconstruisent.
 
-Pour `InternetOffV1` :
+## 5. Vérifier et rendre
+
+Skill [`verification-rendu`](.claude/skills/verification-rendu/SKILL.md).
 
 ```powershell
-npm run voice:internet     # 9 répliques XTTS + ambiance → public/internet-off/ et voice.json
-npm run render:internet    # → out/internet-off/internet-off-v1.mp4
+npm test                                            # typage + tests + projet + validation
+npm run stills -- MarcDeuxLunes --frames 60,500,1050,1500   # planche dans out/stills/<Composition>/
+npm run editorial -- marc-deux-lunes                # sous-titres, CTA, plans, sources, audio → out/editorial-report.md
+npm run render:marc-deux-lunes                      # MP4 dans out/marc-deux-lunes/
+npm run audio:levels -- marc-deux-lunes out/marc-deux-lunes/marc-deux-lunes-84s.mp4
 ```
 
-Le script met chaque réplique en cache (texte + voix + seed), ne régénère que ce qui a
-changé, accélère au plus ×1,3 pour tenir dans le créneau et **échoue** au-delà : raccourcir
-alors le texte ou changer la `seed` de la réplique dans `narration.json`.
+- `npm run validate` contrôle aussi l'audio : chaque WAV existe, tient dans son créneau, ne chevauche pas
+  la réplique suivante.
+- Relire la planche avant tout rendu complet (3 à 9 min par vidéo, référence : [docs/benchmarks/](docs/benchmarks/)) :
+  objectif bouché, tête coupée, texte sur un visage, élément du ciel caché par une façade.
+- Code partagé modifié : `npm run compare:stills -- <dossier-version-précédente> Comp:frame,frame …`,
+  écart attendu 0 (section 9).
+- Sans GPU (CI, portable) : `REMOTION_GL=swangle`.
+- Mesurer avant d'optimiser : `npm run benchmark`.
 
-## 5. Rendre et vérifier
+## 6. Améliorer la rétention
+
+Skill [`montage-retention`](.claude/skills/montage-retention/SKILL.md). Pilote : `MarcGeantCourt`
+([mesures avant / après](docs/versions/1.11.md)) — CTA à l'écran ramenés de 94 % à 7 % du temps,
+sous-titres en groupes synchronisés, écart de volume de 3,0 à 0,5 LU.
+
+| Outil | Rôle |
+| --- | --- |
+| `editorial.json` d'une variante | liste de coupes dans le film d'origine, modes d'habillage, CTA, schémas |
+| `src/shared/captions/CaptionTrack.tsx` | sous-titres ≤ 6 mots / 32 caractères, calés sur la voix |
+| `src/shared/ui/OverlayPolicy.ts` | modes `story` / `science` / `climax` / `end` : un type d'habillage à la fois |
+| `src/shared/ui/transitions.ts` | coupe franche ou fondu (`dip`) |
+| `npm run editorial` | diagnostic chiffré, à comparer avant / après |
+
+Toujours créer une variante, ne jamais modifier l'original ; une version plus courte n'est pas
+« meilleure » tant qu'elle n'a pas été publiée et mesurée.
+
+## 7. Faits et sources
+
+Skill [`verification-faits`](.claude/skills/verification-faits/SKILL.md). Chaque réplique chiffrée porte un
+champ `source` dans `narration.json` : calcul depuis la règle du scénario (`1,80 m × 2³ = 14,4 m`), référence
+primaire, ou ordre de grandeur assumé. Les anciennes bases n'ont plus d'affirmation `"verify": true`
+(`npm run validate` : 0 avertissement). La mention « scénario fictif » reste à l'écran.
+
+## 8. Publier
+
+Skills [`export-publication`](.claude/skills/export-publication/SKILL.md) et
+[`publication-et-stats`](.claude/skills/publication-et-stats/SKILL.md).
 
 ```powershell
-npm run validate        # scénarios : format, chemins, scènes, créneaux, affirmations à vérifier
-npm run typecheck
-npm run test:project    # copie d'une base, compilation, protection des sources
-npm run test:voice      # profils vocaux (Python requis)
-npx remotion still InternetOffV1 out/frame.png --frame=1095
+npm run export:publication -- marc-geant   # ou -- --all ; --force pour remplacer des fichiers de même nom
 ```
 
-Avant un rendu complet, rendre **une image au milieu de chaque plan** et les relire en
-planche : c'est ce qui a révélé les plans bouchés, les têtes coupées et les textes illisibles.
-Exports dans `out/` (non versionné).
+```
+out/publication/marc-geant/
+  Et si Marc devenait géant.mp4
+  Et si Marc devenait géant.jpg      couverture : scène 3D du film + titre, sans sous-titres ni HUD
+  publication.txt                    titre, description, hashtags, mention « voix de synthèse IA »
+```
 
-## 6. Les vidéos du dépôt
+- Titre public au format « Et si [sujet] ? » dans `publication.json` ; le « ? » reste sur la couverture et
+  dans le texte, pas dans les noms de fichiers. Règles communes : `src/core/publication-names.mjs` (testées).
+- Les identifiants techniques ne changent pas ; l'export ne renomme ni ne remplace rien sans `--force`.
+- Après publication, consigner les métriques **par plateforme** (YouTube Shorts et TikTok séparés) dans
+  `publication.json` et noter où les spectateurs décrochent, pour choisir la variante suivante.
 
-| Composition | Dossier | Durée | Remarque |
-| --- | --- | --- | --- |
-| `InternetOffV1` | `src/videos/internet-off/` | 85 s | Nouvelle — voix XTTS, ambiance, 15 plans, HUD et CTA |
-| `AudioFirstBridge` | `src/videos/audio-first-bridge/` | variable | Timeline compilée depuis l'audio aligné |
-| `CafeCold`, `CafeColdV2` | `src/videos/cafe-cold*/` | ≈ 66 s | Images dérivées des durées mesurées de la voix |
-| `BusCold` | `src/videos/bus-cold/` | ≈ 68 s | |
-| `ParisPolar`, `ParisPolarV2` | `src/videos/paris-polar*/` | ≈ 68 s | |
-| `NatureReprendV2`, `Gravite` | `nature-v2/`, `gravity/` | 50 / 55 s | Issues de la branche 1.01 |
-| `WhatIf`, `NatureReprend`, `Chaleur` | `whatif/`, `nature/`, `heat/` | | Bases historiques |
-| `WhatIfParisV2…V6`, `WhatIfParisTikTok` | `paris-*/` | | Variantes Paris |
+## 9. Code partagé
 
-## 7. Bibliothèque 3D
+Skill [`refactor-sans-regression`](.claude/skills/refactor-sans-regression/SKILL.md) ; tableau complet dans
+[docs/structure.md](docs/structure.md#ce-qui-est-partagé).
 
-`src/assets/` — unités en mètres, origine au sol, façade vers −z, faces plates.
+| Besoin | Emplacement |
+| --- | --- |
+| Animations, calculs, noms de publication | `src/core/` |
+| Plans de caméra, projection 3D → écran, kit instancié, ciel, globe | `src/shared/three/` |
+| Personnages (`Marc`, `Actor`, `ArticulatedPerson`) | `src/shared/characters/` |
+| Décors réutilisables (four…) | `src/shared/sets/` |
+| Sous-titres, habillage, zones sûres, bulles de dialogue | `src/shared/captions/`, `src/shared/ui/` |
+| Objets génériques | `src/assets/` |
 
-- Kit commun : `PAL`, `Block`, `Cyl`, `Ball`, `Mat`, `seeded` ([kit.tsx](src/assets/kit.tsx)).
-- Bâtiments haussmanniens, maisons, voitures, bus, bateaux, tour Eiffel, personnages.
-- [Collection Ville 1.02](src/assets/city/README.md) : 24 objets urbains, plus
-  **`CityBase`**, une rue parisienne complète réutilisable (`seed`, `time`, `lit`, `eiffel`, `seine`).
-- Nouveaux dossiers `buildings/`, `vehicles/`, `nature/`, `street/`, `humans/` et la palette
-  [colors.ts](src/assets/colors.ts).
-- 42 objets d'intérieur dans `src/assets/interior/`.
-- Personnage expressif `Actor` (yeux, sourire, rire, tête/bras orientables, téléphone
-  allumé/éteint) dans [internet-off/Actor.tsx](src/videos/internet-off/Actor.tsx) — à
-  remonter dans `src/shared/` pour les prochaines vidéos.
+**Règle d'imports** : une vidéo n'importe pas le dossier d'une autre vidéo, sauf une version ou un épisode
+de la même histoire (`marc-salaire-3` → `marc-salaire-2`, `marc-geant-court` → `marc-geant`…). Un
+déplacement de code se prouve par `npm run compare:stills` (écart 0).
+
+## 10. Bibliothèque 3D et éditeur de ville
+
+Skills [`whatif-asset-expert`](.claude/skills/whatif-asset-expert/SKILL.md) et
+[`editeur-ville`](.claude/skills/editeur-ville/SKILL.md).
+
+`src/assets/` — mètres, origine au sol, façade vers −z, faces plates, animation pilotée par le temps.
+Kit : `PAL`, `Block`, `Cyl`, `Ball`, `Mat`, `seeded` ([kit.tsx](src/assets/kit.tsx)) ; immeubles haussmanniens,
+maisons, véhicules, bateaux, tour Eiffel, mobilier urbain, intérieurs (`src/assets/interior/`), rue complète
+`CityBase` ([collection ville](src/assets/city/README.md)). `details={false}` allège `Car`, `Bus`, `Building`,
+`House` et `Bench`. Personnages et décors : [guide](docs/characters-and-world.md).
+
+```powershell
+npm run city                                     # éditeur → http://127.0.0.1:5199
+npm run stills -- CityLayoutPreview --shots      # une image par plan enregistré
+```
+
+L'éditeur génère un quartier depuis une graine, permet de déplacer et régler chaque objet, de poser des plans
+de caméra (14 mouvements, vérification et recadrage automatique du cadrage) et enregistre dans
+`public/city-layouts/<nom>.json`, filmé à l'identique par `CityLayoutPreview`. Le registre unique
+([registry.tsx](src/assets/city/registry.tsx), 63 objets) garantit le même rendu dans l'éditeur et la vidéo.
 
 ![Collection Ville & extérieur 1.02](docs/previews/assets-ville-1.02.png)
 
-### Éditeur de ville (HTML)
+## 11. Skills du projet
 
-```powershell
-npm run city        # → http://127.0.0.1:5199
-```
-
-- **Générer** un quartier à partir d'une graine : îlots haussmanniens, magasins, îlots modernes, squares, la Seine
-  avec quais, ponts, péniches et bateaux-mouches, tours de bureaux et tour Eiffel à l'horizon.
-- **Caméra réalisateur** (onglet Caméra) : 14 mouvements (vue d'ensemble, orbite, plongée, travelling,
-  travelling latéral, grue, tilt, panoramique, piéton, caméra épaule, contre-plongée, effet Vertigo, révélation,
-  survol), cadrés devant la façade du sujet. « Capturer cette vue », cadre 9:16, trajectoires dans la scène,
-  barre de montage à faire glisser, transitions coupe / fondu noir, tremblé épaule, vitesses, raccord.
-- **Vérifier le cadrage** : 25 rayons dans le cadre 9:16 détectent un premier plan bouché (arbre, voiture,
-  potelet…), une caméra dans un objet ou sous le sol. **Recadrer** décale le plan le long de la façade jusqu'à
-  trouver un passage dégagé (fait automatiquement à l'ajout d'un mouvement).
-- Les plans sont enregistrés avec la ville et filmés tels quels par `CityLayoutPreview` (exemple complet :
-  `public/city-layouts/demo-realisateur.json`, les 14 mouvements).
-
-### Vérifier et tester
-
-```powershell
-npm test                                          # typage + tests + validation des scénarios
-npm run stills -- CityLayoutPreview --shots       # une image par plan + planche dans out/stills/
-```
-
-`tests/*.test.ts` : caméra (continuité, coupes, orbite, fondus, tremblé, 14 mouvements), générateur
-(reproductible, aucun immeuble qui en chevauche un autre, trottoirs, chaussée), catalogue, serveur de l'éditeur.
-
-### Skills Claude du projet
+Versionnés dans `.claude/skills/` (découverts automatiquement par Claude Code ; fiches `agents/openai.yaml`
+pour Codex, invocation `$<nom>`).
 
 | Skill | Pour |
 | --- | --- |
@@ -190,117 +247,33 @@ npm run stills -- CityLayoutPreview --shots       # une image par plan + planche
 | [whatif-ghostwriter](.claude/skills/whatif-ghostwriter/SKILL.md) | narration française calée sur les créneaux, écrite pour la rétention |
 | [camera-realisateur](.claude/skills/camera-realisateur/SKILL.md) | découper et cadrer les plans en 9:16, transitions motivées |
 | [voix-xtts](.claude/skills/voix-xtts/SKILL.md) | voix off XTTS, transcription, niveaux, ambiance, licence |
+| [verification-rendu](.claude/skills/verification-rendu/SKILL.md) | tests, planches, non-régression pixel, rapport éditorial, contrôle du MP4 |
 | [montage-retention](.claude/skills/montage-retention/SKILL.md) | version courte, sous-titres synchronisés, habillage par mode, une seule question |
 | [verification-faits](.claude/skills/verification-faits/SKILL.md) | sourcer ou calculer chaque chiffre avant publication |
-| [verification-rendu](.claude/skills/verification-rendu/SKILL.md) | tests, planches, non-régression pixel, rapport éditorial, contrôle du MP4 |
-| [refactor-sans-regression](.claude/skills/refactor-sans-regression/SKILL.md) | déplacer du code partagé sans changer une image |
-| [export-publication](.claude/skills/export-publication/SKILL.md) | dossier de publication : titre « Et si … ? », MP4 et couverture nommés d'après lui, publication.txt |
+| [export-publication](.claude/skills/export-publication/SKILL.md) | dossier de publication : titre « Et si … ? », MP4 et couverture nommés d'après lui |
 | [publication-et-stats](.claude/skills/publication-et-stats/SKILL.md) | préparer la publication, consigner les métriques, diagnostiquer les décrochages |
+| [refactor-sans-regression](.claude/skills/refactor-sans-regression/SKILL.md) | déplacer du code partagé sans changer une image |
 | [whatif-asset-expert](.claude/skills/whatif-asset-expert/SKILL.md) | assets 3D procéduraux détaillés et déterministes |
 | [editeur-ville](.claude/skills/editeur-ville/SKILL.md) | ajouter un asset, faire évoluer le générateur ou l'éditeur |
 
-Le registre commun ([registry.tsx](src/assets/city/registry.tsx)) garantit le même rendu dans l'éditeur et dans la vidéo :
-un nouvel asset ajouté au registre apparaît automatiquement dans le catalogue.
+## 12. Branches, CI et versions
 
-## 8. Où chercher
-
-| Besoin | Dossier ou guide |
-| --- | --- |
-| Arborescence | [docs/structure.md](docs/structure.md) |
-| Copier une base, reprendre un objet ou un script | [docs/reuse.md](docs/reuse.md) |
-| Scénario d'une vidéo | [src/videos/catalog.json](src/videos/catalog.json) |
-| Animations et calculs communs | `src/core/` |
-| Caméra, ciel, globe, styles | `src/shared/` |
-| Scripts audio, ressources, exports | `scripts/audio/`, `scripts/assets/`, `scripts/export/` |
-| Voix locale XTTS | [docs/voice.md](docs/voice.md) |
-| Historique détaillé | [docs/versions/](docs/versions/) |
-
-## Versions
+**CI** ([ci.yml](.github/workflows/ci.yml)) à chaque push et Pull Request : `npm ci` → `validate` → `typecheck` →
+`test:city` → `test:project` → `editorial` → planches de deux vidéos en WebGL logiciel, publiées en artefact.
+**`main`** : suppression et force-push interdits, fusion par Pull Request avec le contrôle `checks` vert.
 
 | Branche | Contenu |
 | --- | --- |
-| `main` | Structure initiale (`0f8cb9b`) ; `1.03-test1`, identique, a été supprimée en 1.12 |
-| `1.01` | Nature V2, Gravité, objets extérieurs et intérieurs |
-| `1.02` | Réorganisation `videos/` · `assets/` · `core/` · `shared/`, catalogue, XTTS multi-profils, 24 objets ville |
-| `1.03-test2` | 1.02 + corrections de l'audit + chaîne audio-first, cafe/bus/polar, `CityBase`, `InternetOffV1` |
-| `htmlallasset` | Éditeur de ville HTML, caméra réalisateur, vérification des cadrages |
-| `1.10` | Série Marc (géant, mini, soif, four, congel, salaire 1-3, deux lunes), finition visuelle 2.01, dossier `review/1.10` (MP4 + mesures) |
-| `1.11` | Pilote éditorial `MarcGeantCourt` (45 s), sous-titres synchronisés, politique d'habillage, rapport éditorial, mesure du mix, fichiers de publication |
+| `main` | structure initiale (`0f8cb9b`) |
+| `1.01`, `1.02` | Nature V2, Gravité, objets ; réorganisation `videos/` · `assets/` · `core/` · `shared/`, catalogue, XTTS multi-profils |
+| `1.03-test2` | audit, chaîne audio-first, café / bus / polaire, `CityBase`, `InternetOffV1` |
+| `htmlallasset` | éditeur de ville HTML, caméra réalisateur, vérification des cadrages |
+| `1.10` | série Marc, finition visuelle [2.01](docs/versions/2.01.md), `review/1.10` (MP4 et mesures) |
+| `1.11` | pilote éditorial `MarcGeantCourt`, sous-titres synchronisés, habillage par mode, rapport éditorial, mix ([notes](docs/versions/1.11.md)) |
+| **`1.12`** | base consolidée, CI, sources, bulles ancrées, Whisper GPU, banc de mesure, skills, export de publication ([notes](docs/versions/1.12.md)) |
 
-| **`1.12`** | Base consolidée : plus de dépendances entre vidéos, plans et personnages partagés, validateur audio, sources des affirmations, bulles ancrées, Whisper GPU, banc de mesure, CI GitHub Actions |
+Finition 2.01 : `npm run stills:2.01`, `npm run render:2.01` (MP4 dans `out/2.01/`, cadrages conservés).
 
-Détails : [1.12](docs/versions/1.12.md) · [1.11](docs/versions/1.11.md) · [2.01](docs/versions/2.01.md) · [1.03-test2](docs/versions/1.03-test2.md).
-
-## Améliorations
-
-Faites dans `1.12` (feuille de route historique P0 → P4, détails dans [docs/versions/1.12.md](docs/versions/1.12.md)) :
-
-- Clone neuf validé ; branche `1.03-test1` supprimée.
-- Dépendances entre vidéos déplacées vers `src/assets/` et `src/shared/` (règle d'imports dans [docs/structure.md](docs/structure.md)) ;
-  `Actor`, personnage articulé, four, kit instancié et `shots.ts` partagés. Non-régression : `npm run compare:stills` (écart 0 sur 40 images).
-- Anciennes commandes `render:*` / `still:*` via `video.mjs` ; validateur : WAV présents et dans leurs créneaux.
-- Bulles de dialogue ancrées sur les têtes (`projectToScreen`, `SpeechBubble`).
-- Affirmations « verify » sourcées ; licence XTTS et consentement : [docs/legal/voix-et-licences.md](docs/legal/voix-et-licences.md).
-- `npm run benchmark`, Whisper sur GPU, `npm run venv:check`, CI `.github/workflows/ci.yml`.
-
-Faites dans `1.11` (suite à la review de `1.10`, détails dans [docs/versions/1.11.md](docs/versions/1.11.md)) :
-
-- Pilote `MarcGeantCourt` : 45 s montées à partir des plans de `MarcGeant`, accroche sur le problème,
-  une seule question finale (au lieu de CTA à l'écran 94 % du temps), fondus réservés aux changements d'échelle.
-- `src/shared/captions/CaptionTrack.tsx` : sous-titres en petits groupes calés sur la voix
-  (`npm run captions -- <slug>`, timings Whisper mot à mot, texte du script).
-- `src/shared/ui/OverlayPolicy.ts` (modes `story` / `science` / `climax` / `end`), `PlatformSafeArea.ts`, `transitions.ts`.
-- `npm run editorial` : rapport des sous-titres trop longs, CTA, chevauchements, plans longs, chiffres non sourcés,
-  audio manquant, état de publication (`out/editorial-report.md`).
-- `npm run audio:levels -- <slug> [mp4]` : niveaux des répliques, atténuation de l'ambiance sous la voix, mix final.
-- `src/videos/<slug>/publication.json` : variante d'accroche et de montage, métriques séparées YouTube Shorts / TikTok.
-
-Faites dans `1.03-test2` :
-
-- Validation des scénarios avant rendu, cache d'ambiance par empreinte, scènes inconnues en erreur.
-- `InternetOffV1` complète : voix XTTS vérifiée par transcription, ambiance sans souffle continu,
-  mise en scène en 15 plans (foule sur téléphones, poignée de main, banc, feu de camp, carte, nuit).
-- `CityBase` et nouveaux assets réutilisables.
-- Dépôt vérifié après déplacement du dossier (chemins relatifs, modèle XTTS en cache local).
-
-Prochaines étapes prioritaires (liste complète et critères dans [AMELIORATIONS.md](AMELIORATIONS.md)) :
-
-1. Publier `MarcGeantCourt` et `MarcGeant`, remplir leur `publication.json` et lire les courbes de rétention.
-2. Selon les résultats, appliquer les règles du pilote (sous-titres, une question, habillage par mode) aux autres épisodes.
-3. Tester les deux autres accroches (danger annoncé, question scientifique) sur le même concept.
-4. Vérifier la licence XTTS (CPML) et le consentement des voix avant toute publication monétisée.
-
-
-## Assets détaillés et skills
-
-La planche **Bibliotheque → AssetsDetails** présente cinq gros plans : voiture,
-bus, façade, pavillon et mobilier. `details={false}` coupe les ajouts sur `Car`,
-`Bus`, `Building`, `House` et `Bench` ; ce réglage est aussi exposé dans l'éditeur
-pour ces objets. Les formes et matériaux restent procéduraux, sans téléchargement.
-
-```powershell
-node scripts/check/stills.mjs AssetsDetails --frames 60,180,300,420,540 --out out/assets-details
-```
-
-Deux skills sont versionnés dans le projet, avec découverte automatique activée :
-
-- [Ghostwriter](.claude/skills/whatif-ghostwriter/SKILL.md) : narration française,
-  rythme, promesse du hook et respect des créneaux vocaux.
-- [Expert assets](.claude/skills/whatif-asset-expert/SKILL.md) : objets 3D, niveaux de
-  détail, registre de l'éditeur et validation par rendu.
-
-Ils sont aussi installés dans le dossier personnel des skills Codex sur cette
-machine. Invocation : `$whatif-ghostwriter` ou `$whatif-asset-expert`.
-
-
-La composition **Bibliotheque → Personnages** présente les personnages retravaillés.
-Le [guide personnages et décors](docs/characters-and-world.md) décrit les modèles
-communs, les foules et la continuité du fond lors des reculs de caméra.
-
-
-## Version 2.01
-
-Les vingt films de la [version 2.01](docs/versions/2.01.md) sont disponibles dans
-**Videos-2-01**. Cadrages et mouvements de caméra conservés.
-`npm run stills:2.01` prépare les images de contrôle ; `npm run render:2.01`
-exporte les MP4 dans `out/2.01/`, avec reprise et contrôle du décodage.
+**Prochaines étapes** ([détail](AMELIORATIONS.md)) : publier `MarcGeantCourt` et `MarcGeant` et comparer leur
+rétention ; tester les autres accroches ; choisir une voix compatible avec la monétisation ; donner un titre public
+à Salaire 2 et 3.
