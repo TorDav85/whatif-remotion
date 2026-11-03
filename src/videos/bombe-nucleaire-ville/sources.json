@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-03",
+  "scope": "Reconstitution qualitative d'une détonation dans une ville fictive. Temps comprimé ou étiré selon le plan ; distances, puissance et doses non simulées.",
+  "sources": [
+    {
+      "id": "nyc-effects",
+      "publisher": "New York City Department of Health and Mental Hygiene",
+      "title": "Emergencies: Nuclear Incident",
+      "url": "https://www.nyc.gov/site/doh/health/emergency-preparedness/emergencies-radiological-nuclear-incident.page",
+      "supports": ["flash initial avant l'arrivée du souffle à distance", "dégâts structurels et vitres brisées"],
+      "beats": ["flash", "shock"]
+    },
+    {
+      "id": "icrc-effects",
+      "publisher": "Comité international de la Croix-Rouge",
+      "title": "Humanitarian Assistance in Response to the Use of Nuclear Weapons, Information Note No. 3",
+      "publishedAt": "2013-02",
+      "url": "https://www.icrc.org/en/doc/assets/files/2013/4132-3-nuclear-weapons-humanitarian-assistance-2013.pdf",
+      "supports": ["incendies possibles par rayonnement thermique", "conséquences immédiates et durables"],
+      "beats": ["heat"]
+    },
+    {
+      "id": "cdc-nuclear-faq",
+      "publisher": "Centers for Disease Control and Prevention",
+      "title": "Nuclear Blasts: Frequently Asked Questions",
+      "publishedAt": "2024-04-10",
+      "url": "https://www.cdc.gov/radiation-emergencies/about/nuclear-blast-faq.html",
+      "supports": ["chaleur, lumière, pression et rayonnement", "nuage ascendant et retombées", "transport des poussières radioactives par le vent"],
+      "beats": ["cloud", "fallout"]
+    },
+    {
+      "id": "hhs-range",
+      "publisher": "U.S. Department of Health and Human Services, Radiation Emergency Medical Management",
+      "title": "Blast Range and Significant Effects",
+      "url": "https://remm.hhs.gov/blasteffects_range.htm",
+      "supports": ["effets variables avec distance, puissance, relief, altitude et météo", "dispersion des retombées sous le vent"],
+      "beats": ["ruins", "fallout"]
+    },
+    {
+      "id": "cdc-inside",
+      "publisher": "Centers for Disease Control and Prevention",
+      "title": "What to Do: Get Inside",
+      "publishedAt": "2024-04-15",
+      "url": "https://www.cdc.gov/radiation-emergencies/response/get-inside.html",
+      "supports": ["mise à l'abri dans un bâtiment et choix du sous-sol ou du cœur du bâtiment"],
+      "beats": ["shelter"]
+    },
+    {
+      "id": "cdc-preparing",
+      "publisher": "Centers for Disease Control and Prevention",
+      "title": "Preparing for a Radiation Emergency",
+      "publishedAt": "2025-01-31",
+      "url": "https://www.cdc.gov/radiation-emergencies/safety/index.html",
+      "supports": ["rester à l'abri et suivre les consignes des autorités à la radio"],
+      "beats": ["radio"]
+    }
+  ],
+  "fictionAndLimits": [
+    "Julien, les coups à la porte et la fin en suspens sont des éléments de fiction, pas des consignes d'urgence.",
+    "Ville imaginaire ; aucun lieu réel n'est désigné comme cible.",
+    "Marc et son trajet sont fictifs. Il est en périphérie du secteur le plus détruit, pas au point zéro.",
+    "Les plans montrent des étapes explicatives : chaleur et souffle ne se produisent pas comme onze événements indépendants.",
+    "L'onde stylisée, les dégâts et le panache ne donnent ni rayon de danger ni prévision locale.",
+    "Les retombées ne sont pas lumineuses. Leur visualisation aérienne est un schéma qualitatif sans échelle.",
+    "La séquence ne fixe pas de durée réelle d'arrivée des retombées ni de durée sûre avant de sortir.",
+    "La mise à l'abri ne garantit pas la survie ; les consignes officielles dépendent de la situation."
+  ]
+}

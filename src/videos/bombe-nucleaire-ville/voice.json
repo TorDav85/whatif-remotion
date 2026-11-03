@@ -1,0 +1,152 @@
+{
+  "voice": "morpheus",
+  "ambience": "bombe-nucleaire/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Et si une bombe nucléaire tombait sur cette ville ?",
+      "start": 0.25,
+      "duration": 3.3246,
+      "end": 3.5746,
+      "speed": 1.0,
+      "seed": 74003,
+      "audio": "bombe-nucleaire/hook.wav",
+      "sha256": "e40155bd5d40aee69780434a0420e8165849b41899e6c7d87a2f07ba2dc25860",
+      "signature": "281211eaaa7c3b6d230471735c6a283cf26ee1bfaabfb0ff9a9d5eeb70447f15"
+    },
+    {
+      "id": "marc",
+      "text": "Marc part travailler. Il ne voit rien venir.",
+      "start": 4.25,
+      "duration": 2.73,
+      "end": 6.98,
+      "speed": 1.0,
+      "seed": 73001,
+      "audio": "bombe-nucleaire/marc.wav",
+      "sha256": "3b6a125039ffb268e78eed783c4cf0096abec8ca8a7b685b36b80f90756fe37c",
+      "signature": "abe0690335f22d40da4d747782edcc4e58c2c14de0a8ec6b96bebb8f3df66978"
+    },
+    {
+      "id": "flash",
+      "text": "D'abord, un flash. La lumière arrive avant le souffle.",
+      "start": 8.25,
+      "duration": 4.1376,
+      "end": 12.3876,
+      "speed": 1.0,
+      "seed": 73002,
+      "audio": "bombe-nucleaire/flash.wav",
+      "sha256": "1d27ffd8a397dfb0557a4aa65ba4867d39c586dd24d20f8482d74a4e965b7571",
+      "signature": "b99150b7f891d15bb6758e3699569bd785896dcfb409a25dad6bd10b087919a9"
+    },
+    {
+      "id": "heat",
+      "text": "La chaleur peut déclencher des incendies, loin du point d'explosion.",
+      "start": 13.25,
+      "duration": 3.5777,
+      "end": 16.8277,
+      "speed": 1.0,
+      "seed": 73003,
+      "audio": "bombe-nucleaire/heat.wav",
+      "sha256": "f4409449c01eddb0e66f7251da27d8e5fb530e9e3ae0a5496c2064c002a75464",
+      "signature": "963f6631885b470787cc2db822943f435cbb0b3bcad52758861778e299b3b354"
+    },
+    {
+      "id": "shock",
+      "text": "Puis le souffle frappe. Les vitres éclatent. Des murs s'effondrent.",
+      "start": 18.25,
+      "duration": 4.5893,
+      "end": 22.8393,
+      "speed": 1.0,
+      "seed": 74043,
+      "audio": "bombe-nucleaire/shock.wav",
+      "sha256": "c35151145b6bb2aced3b749621a3b6f1e7e4136324169076b37007fb38029fb9",
+      "signature": "2dfec4c6c9fe623b3fe357ae89648b5fa3eeaab0ed59e7f3ec6733fcb2dba10e"
+    },
+    {
+      "id": "cloud",
+      "text": "Le champignon monte. Mais le danger ne s'arrête pas là.",
+      "start": 24.25,
+      "duration": 3.5581,
+      "end": 27.8081,
+      "speed": 1.0,
+      "seed": 74052,
+      "audio": "bombe-nucleaire/cloud.wav",
+      "sha256": "d18c9e7610cc433024b1d6a1acc2ca7a1b9db902863b54c5280701a1d0e9972b",
+      "signature": "3991afe936cf70d449c49569054fd54e6212db749df9f6c07ad3f03a34fd8543"
+    },
+    {
+      "id": "ruins",
+      "text": "Au centre, des rues sont détruites. Plus loin, des bâtiments tiennent.",
+      "start": 29.25,
+      "duration": 4.1983,
+      "end": 33.4483,
+      "speed": 1.0,
+      "seed": 73006,
+      "audio": "bombe-nucleaire/ruins.wav",
+      "sha256": "01a7305014f3dfc651fdd02b70d155d902eea3ee8a1a2fc87035236318d54da2",
+      "signature": "802d29a718921456c89f453de3cd7fbda9307190b0eff6db2bea9719e0f9e354"
+    },
+    {
+      "id": "shelter",
+      "text": "Marc rejoint le sous-sol d'un bâtiment encore solide.",
+      "start": 34.25,
+      "duration": 4.4951,
+      "end": 38.7451,
+      "speed": 1.0,
+      "seed": 73007,
+      "audio": "bombe-nucleaire/shelter.wav",
+      "sha256": "0e0463ee37175f465add121acf426f205b423405ce63d53aa9e34028dd96a8ec",
+      "signature": "c240ccf09d7bd308f92b7eccd6c8ecfc931aa6161228f49335c585dc6e2525fd"
+    },
+    {
+      "id": "fallout",
+      "text": "Dehors, le vent peut emporter des poussières radioactives bien plus loin.",
+      "start": 40.25,
+      "duration": 4.1278,
+      "end": 44.3778,
+      "speed": 1.0,
+      "seed": 73008,
+      "audio": "bombe-nucleaire/fallout.wav",
+      "sha256": "54064dd32c3b9aa5ef4462949d94cb2d13bb04224fece61f3f0c51f0ebbb4cec",
+      "signature": "432851b9ea3bbaf1dcb91101f13b8cb0e9a51bd464571b2f2f2585758286cb84"
+    },
+    {
+      "id": "radio",
+      "text": "Marc reste à l'abri et écoute les consignes à la radio.",
+      "start": 46.25,
+      "duration": 3.3231,
+      "end": 49.5731,
+      "speed": 1.0,
+      "seed": 74090,
+      "audio": "bombe-nucleaire/radio.wav",
+      "sha256": "4b830bed2ec5f94eee8258b6244c899c86dfd901ff0f416100ad2aa4731bf067",
+      "signature": "9dee62089d49e611e0b96692cbf970b8e102f984bd6a67299af42fdd81d3274d"
+    },
+    {
+      "id": "freeze",
+      "text": "Marc se fige.",
+      "start": 52.3,
+      "duration": 0.9855,
+      "end": 53.2855,
+      "speed": 1.0,
+      "seed": 74103,
+      "effect": null,
+      "signature": "f995b987ddd7f2fdcc9550a1df936cb1ac5b24dd65456425738ad7c6959db305",
+      "audio": "bombe-nucleaire/freeze.wav",
+      "sha256": "34c021b7baf14e428f295afd466969504b045b13f660c3c7cf6be4b8e9ae580f"
+    },
+    {
+      "id": "julien",
+      "text": "Marc... c'est Julien. Ouvre-moi.",
+      "start": 55.3,
+      "duration": 2.8689,
+      "end": 58.1689,
+      "speed": 1.0,
+      "seed": 75011,
+      "effect": "highpass=f=150,lowpass=f=2200,aecho=0.8:0.7:38:0.09",
+      "signature": "971c1fe6cc34be40f5c50d123b866fa9beb5a5d4c8b1e4546669acaac5478e22",
+      "audio": "bombe-nucleaire/julien.wav",
+      "sha256": "1f5e46b6130fdfb50f34e4443de7f89e41b7e4687516d155f1a54f2979c9e11d"
+    }
+  ]
+}

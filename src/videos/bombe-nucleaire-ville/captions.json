@@ -1,0 +1,850 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.25,
+   "end": 1.63,
+   "text": "Et si une bombe nucléaire",
+   "beat": "hook"
+  },
+  {
+   "start": 1.63,
+   "end": 3.03,
+   "text": "tombait sur cette ville ?",
+   "beat": "hook"
+  },
+  {
+   "start": 4.25,
+   "end": 5.31,
+   "text": "Marc part travailler.",
+   "beat": "marc"
+  },
+  {
+   "start": 5.99,
+   "end": 6.85,
+   "text": "Il ne voit rien venir.",
+   "beat": "marc"
+  },
+  {
+   "start": 8.25,
+   "end": 9.29,
+   "text": "D'abord,",
+   "beat": "flash"
+  },
+  {
+   "start": 9.29,
+   "end": 9.79,
+   "text": "un flash.",
+   "beat": "flash"
+  },
+  {
+   "start": 10.73,
+   "end": 11.99,
+   "text": "La lumière arrive avant le",
+   "beat": "flash"
+  },
+  {
+   "start": 11.99,
+   "end": 12.35,
+   "text": "souffle.",
+   "beat": "flash"
+  },
+  {
+   "start": 13.25,
+   "end": 14.23,
+   "text": "La chaleur peut déclencher",
+   "beat": "heat"
+  },
+  {
+   "start": 14.23,
+   "end": 15.19,
+   "text": "des incendies,",
+   "beat": "heat"
+  },
+  {
+   "start": 15.23,
+   "end": 16.53,
+   "text": "loin du point d'explosion.",
+   "beat": "heat"
+  },
+  {
+   "start": 18.25,
+   "end": 19.13,
+   "text": "Puis le souffle frappe.",
+   "beat": "shock"
+  },
+  {
+   "start": 19.87,
+   "end": 21.65,
+   "text": "Les vitres éclatent.",
+   "beat": "shock"
+  },
+  {
+   "start": 21.67,
+   "end": 22.81,
+   "text": "Des murs s'effondrent.",
+   "beat": "shock"
+  },
+  {
+   "start": 24.25,
+   "end": 25.15,
+   "text": "Le champignon monte.",
+   "beat": "cloud"
+  },
+  {
+   "start": 25.79,
+   "end": 27.51,
+   "text": "Mais le danger ne s'arrête",
+   "beat": "cloud"
+  },
+  {
+   "start": 27.51,
+   "end": 27.77,
+   "text": "pas là.",
+   "beat": "cloud"
+  },
+  {
+   "start": 29.25,
+   "end": 29.63,
+   "text": "Au centre,",
+   "beat": "ruins"
+  },
+  {
+   "start": 29.63,
+   "end": 30.77,
+   "text": "des rues sont détruites.",
+   "beat": "ruins"
+  },
+  {
+   "start": 31.13,
+   "end": 31.89,
+   "text": "Plus loin,",
+   "beat": "ruins"
+  },
+  {
+   "start": 32.41,
+   "end": 33.41,
+   "text": "des bâtiments tiennent.",
+   "beat": "ruins"
+  },
+  {
+   "start": 34.25,
+   "end": 35.27,
+   "text": "Marc rejoint le sous-sol",
+   "beat": "shelter"
+  },
+  {
+   "start": 35.27,
+   "end": 36.07,
+   "text": "d'un bâtiment encore",
+   "beat": "shelter"
+  },
+  {
+   "start": 36.07,
+   "end": 36.53,
+   "text": "solide.",
+   "beat": "shelter"
+  },
+  {
+   "start": 40.71,
+   "end": 41.11,
+   "text": "Dehors,",
+   "beat": "fallout"
+  },
+  {
+   "start": 41.37,
+   "end": 42.53,
+   "text": "le vent peut emporter des",
+   "beat": "fallout"
+  },
+  {
+   "start": 42.53,
+   "end": 43.79,
+   "text": "poussières radioactives",
+   "beat": "fallout"
+  },
+  {
+   "start": 43.79,
+   "end": 44.35,
+   "text": "bien plus loin.",
+   "beat": "fallout"
+  },
+  {
+   "start": 46.25,
+   "end": 48.21,
+   "text": "Marc reste à l'abri et",
+   "beat": "radio"
+  },
+  {
+   "start": 48.21,
+   "end": 49.25,
+   "text": "écoute les consignes à la",
+   "beat": "radio"
+  },
+  {
+   "start": 49.25,
+   "end": 49.43,
+   "text": "radio.",
+   "beat": "radio"
+  },
+  {
+   "start": 52.3,
+   "end": 53.22,
+   "text": "Marc se fige.",
+   "beat": "freeze"
+  },
+  {
+   "start": 55.3,
+   "end": 55.6,
+   "text": "Marc...",
+   "beat": "julien"
+  },
+  {
+   "start": 55.6,
+   "end": 57.0,
+   "text": "c'est Julien.",
+   "beat": "julien"
+  },
+  {
+   "start": 57.0,
+   "end": 58.14,
+   "text": "Ouvre-moi.",
+   "beat": "julien"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "Et",
+   "start": 0.25,
+   "end": 0.33
+  },
+  {
+   "beat": "hook",
+   "text": "si",
+   "start": 0.33,
+   "end": 0.51
+  },
+  {
+   "beat": "hook",
+   "text": "une",
+   "start": 0.51,
+   "end": 0.67
+  },
+  {
+   "beat": "hook",
+   "text": "bombe",
+   "start": 0.67,
+   "end": 1.07
+  },
+  {
+   "beat": "hook",
+   "text": "nucléaire",
+   "start": 1.07,
+   "end": 1.63
+  },
+  {
+   "beat": "hook",
+   "text": "tombait",
+   "start": 1.63,
+   "end": 1.99
+  },
+  {
+   "beat": "hook",
+   "text": "sur",
+   "start": 1.99,
+   "end": 2.17
+  },
+  {
+   "beat": "hook",
+   "text": "cette",
+   "start": 2.17,
+   "end": 2.35
+  },
+  {
+   "beat": "hook",
+   "text": "ville",
+   "start": 2.35,
+   "end": 2.69
+  },
+  {
+   "beat": "hook",
+   "text": "?",
+   "start": 2.69,
+   "end": 3.03
+  },
+  {
+   "beat": "marc",
+   "text": "Marc",
+   "start": 4.25,
+   "end": 4.55
+  },
+  {
+   "beat": "marc",
+   "text": "part",
+   "start": 4.55,
+   "end": 4.85
+  },
+  {
+   "beat": "marc",
+   "text": "travailler.",
+   "start": 4.85,
+   "end": 5.31
+  },
+  {
+   "beat": "marc",
+   "text": "Il",
+   "start": 5.99,
+   "end": 6.21
+  },
+  {
+   "beat": "marc",
+   "text": "ne",
+   "start": 6.21,
+   "end": 6.33
+  },
+  {
+   "beat": "marc",
+   "text": "voit",
+   "start": 6.33,
+   "end": 6.43
+  },
+  {
+   "beat": "marc",
+   "text": "rien",
+   "start": 6.43,
+   "end": 6.61
+  },
+  {
+   "beat": "marc",
+   "text": "venir.",
+   "start": 6.61,
+   "end": 6.85
+  },
+  {
+   "beat": "flash",
+   "text": "D'abord,",
+   "start": 8.25,
+   "end": 9.29
+  },
+  {
+   "beat": "flash",
+   "text": "un",
+   "start": 9.29,
+   "end": 9.55
+  },
+  {
+   "beat": "flash",
+   "text": "flash.",
+   "start": 9.55,
+   "end": 9.79
+  },
+  {
+   "beat": "flash",
+   "text": "La",
+   "start": 10.73,
+   "end": 10.93
+  },
+  {
+   "beat": "flash",
+   "text": "lumière",
+   "start": 10.93,
+   "end": 11.13
+  },
+  {
+   "beat": "flash",
+   "text": "arrive",
+   "start": 11.13,
+   "end": 11.59
+  },
+  {
+   "beat": "flash",
+   "text": "avant",
+   "start": 11.59,
+   "end": 11.81
+  },
+  {
+   "beat": "flash",
+   "text": "le",
+   "start": 11.81,
+   "end": 11.99
+  },
+  {
+   "beat": "flash",
+   "text": "souffle.",
+   "start": 11.99,
+   "end": 12.35
+  },
+  {
+   "beat": "heat",
+   "text": "La",
+   "start": 13.25,
+   "end": 13.33
+  },
+  {
+   "beat": "heat",
+   "text": "chaleur",
+   "start": 13.33,
+   "end": 13.67
+  },
+  {
+   "beat": "heat",
+   "text": "peut",
+   "start": 13.67,
+   "end": 13.79
+  },
+  {
+   "beat": "heat",
+   "text": "déclencher",
+   "start": 13.79,
+   "end": 14.23
+  },
+  {
+   "beat": "heat",
+   "text": "des",
+   "start": 14.23,
+   "end": 14.35
+  },
+  {
+   "beat": "heat",
+   "text": "incendies,",
+   "start": 14.35,
+   "end": 15.19
+  },
+  {
+   "beat": "heat",
+   "text": "loin",
+   "start": 15.23,
+   "end": 15.81
+  },
+  {
+   "beat": "heat",
+   "text": "du",
+   "start": 15.81,
+   "end": 16.01
+  },
+  {
+   "beat": "heat",
+   "text": "point",
+   "start": 16.01,
+   "end": 16.21
+  },
+  {
+   "beat": "heat",
+   "text": "d'explosion.",
+   "start": 16.21,
+   "end": 16.53
+  },
+  {
+   "beat": "shock",
+   "text": "Puis",
+   "start": 18.25,
+   "end": 18.33
+  },
+  {
+   "beat": "shock",
+   "text": "le",
+   "start": 18.33,
+   "end": 18.43
+  },
+  {
+   "beat": "shock",
+   "text": "souffle",
+   "start": 18.43,
+   "end": 18.71
+  },
+  {
+   "beat": "shock",
+   "text": "frappe.",
+   "start": 18.71,
+   "end": 19.13
+  },
+  {
+   "beat": "shock",
+   "text": "Les",
+   "start": 19.87,
+   "end": 19.99
+  },
+  {
+   "beat": "shock",
+   "text": "vitres",
+   "start": 19.99,
+   "end": 20.33
+  },
+  {
+   "beat": "shock",
+   "text": "éclatent.",
+   "start": 20.33,
+   "end": 21.65
+  },
+  {
+   "beat": "shock",
+   "text": "Des",
+   "start": 21.67,
+   "end": 21.91
+  },
+  {
+   "beat": "shock",
+   "text": "murs",
+   "start": 21.91,
+   "end": 22.15
+  },
+  {
+   "beat": "shock",
+   "text": "s'effondrent.",
+   "start": 22.15,
+   "end": 22.81
+  },
+  {
+   "beat": "cloud",
+   "text": "Le",
+   "start": 24.25,
+   "end": 24.33
+  },
+  {
+   "beat": "cloud",
+   "text": "champignon",
+   "start": 24.33,
+   "end": 24.77
+  },
+  {
+   "beat": "cloud",
+   "text": "monte.",
+   "start": 24.77,
+   "end": 25.15
+  },
+  {
+   "beat": "cloud",
+   "text": "Mais",
+   "start": 25.79,
+   "end": 26.03
+  },
+  {
+   "beat": "cloud",
+   "text": "le",
+   "start": 26.03,
+   "end": 26.13
+  },
+  {
+   "beat": "cloud",
+   "text": "danger",
+   "start": 26.13,
+   "end": 26.47
+  },
+  {
+   "beat": "cloud",
+   "text": "ne",
+   "start": 26.47,
+   "end": 27.17
+  },
+  {
+   "beat": "cloud",
+   "text": "s'arrête",
+   "start": 27.17,
+   "end": 27.51
+  },
+  {
+   "beat": "cloud",
+   "text": "pas",
+   "start": 27.51,
+   "end": 27.65
+  },
+  {
+   "beat": "cloud",
+   "text": "là.",
+   "start": 27.65,
+   "end": 27.77
+  },
+  {
+   "beat": "ruins",
+   "text": "Au",
+   "start": 29.25,
+   "end": 29.33
+  },
+  {
+   "beat": "ruins",
+   "text": "centre,",
+   "start": 29.33,
+   "end": 29.63
+  },
+  {
+   "beat": "ruins",
+   "text": "des",
+   "start": 29.63,
+   "end": 29.91
+  },
+  {
+   "beat": "ruins",
+   "text": "rues",
+   "start": 29.91,
+   "end": 30.07
+  },
+  {
+   "beat": "ruins",
+   "text": "sont",
+   "start": 30.07,
+   "end": 30.23
+  },
+  {
+   "beat": "ruins",
+   "text": "détruites.",
+   "start": 30.23,
+   "end": 30.77
+  },
+  {
+   "beat": "ruins",
+   "text": "Plus",
+   "start": 31.13,
+   "end": 31.61
+  },
+  {
+   "beat": "ruins",
+   "text": "loin,",
+   "start": 31.61,
+   "end": 31.89
+  },
+  {
+   "beat": "ruins",
+   "text": "des",
+   "start": 32.41,
+   "end": 32.59
+  },
+  {
+   "beat": "ruins",
+   "text": "bâtiments",
+   "start": 32.59,
+   "end": 32.95
+  },
+  {
+   "beat": "ruins",
+   "text": "tiennent.",
+   "start": 32.95,
+   "end": 33.41
+  },
+  {
+   "beat": "shelter",
+   "text": "Marc",
+   "start": 34.25,
+   "end": 34.49
+  },
+  {
+   "beat": "shelter",
+   "text": "rejoint",
+   "start": 34.49,
+   "end": 34.87
+  },
+  {
+   "beat": "shelter",
+   "text": "le",
+   "start": 34.87,
+   "end": 35.01
+  },
+  {
+   "beat": "shelter",
+   "text": "sous-sol",
+   "start": 35.01,
+   "end": 35.27
+  },
+  {
+   "beat": "shelter",
+   "text": "d'un",
+   "start": 35.27,
+   "end": 35.53
+  },
+  {
+   "beat": "shelter",
+   "text": "bâtiment",
+   "start": 35.53,
+   "end": 35.87
+  },
+  {
+   "beat": "shelter",
+   "text": "encore",
+   "start": 35.87,
+   "end": 36.07
+  },
+  {
+   "beat": "shelter",
+   "text": "solide.",
+   "start": 36.07,
+   "end": 36.53
+  },
+  {
+   "beat": "fallout",
+   "text": "Dehors,",
+   "start": 40.71,
+   "end": 41.11
+  },
+  {
+   "beat": "fallout",
+   "text": "le",
+   "start": 41.37,
+   "end": 41.55
+  },
+  {
+   "beat": "fallout",
+   "text": "vent",
+   "start": 41.55,
+   "end": 41.71
+  },
+  {
+   "beat": "fallout",
+   "text": "peut",
+   "start": 41.71,
+   "end": 41.87
+  },
+  {
+   "beat": "fallout",
+   "text": "emporter",
+   "start": 41.87,
+   "end": 42.33
+  },
+  {
+   "beat": "fallout",
+   "text": "des",
+   "start": 42.33,
+   "end": 42.53
+  },
+  {
+   "beat": "fallout",
+   "text": "poussières",
+   "start": 42.53,
+   "end": 43.03
+  },
+  {
+   "beat": "fallout",
+   "text": "radioactives",
+   "start": 43.03,
+   "end": 43.79
+  },
+  {
+   "beat": "fallout",
+   "text": "bien",
+   "start": 43.79,
+   "end": 43.97
+  },
+  {
+   "beat": "fallout",
+   "text": "plus",
+   "start": 43.97,
+   "end": 44.15
+  },
+  {
+   "beat": "fallout",
+   "text": "loin.",
+   "start": 44.15,
+   "end": 44.35
+  },
+  {
+   "beat": "radio",
+   "text": "Marc",
+   "start": 46.25,
+   "end": 46.47
+  },
+  {
+   "beat": "radio",
+   "text": "reste",
+   "start": 46.47,
+   "end": 46.79
+  },
+  {
+   "beat": "radio",
+   "text": "à",
+   "start": 46.79,
+   "end": 46.95
+  },
+  {
+   "beat": "radio",
+   "text": "l'abri",
+   "start": 46.95,
+   "end": 47.29
+  },
+  {
+   "beat": "radio",
+   "text": "et",
+   "start": 47.29,
+   "end": 48.21
+  },
+  {
+   "beat": "radio",
+   "text": "écoute",
+   "start": 48.21,
+   "end": 48.51
+  },
+  {
+   "beat": "radio",
+   "text": "les",
+   "start": 48.51,
+   "end": 48.63
+  },
+  {
+   "beat": "radio",
+   "text": "consignes",
+   "start": 48.63,
+   "end": 49.15
+  },
+  {
+   "beat": "radio",
+   "text": "à",
+   "start": 49.15,
+   "end": 49.19
+  },
+  {
+   "beat": "radio",
+   "text": "la",
+   "start": 49.19,
+   "end": 49.25
+  },
+  {
+   "beat": "radio",
+   "text": "radio.",
+   "start": 49.25,
+   "end": 49.43
+  },
+  {
+   "beat": "freeze",
+   "text": "Marc",
+   "start": 52.3,
+   "end": 52.54
+  },
+  {
+   "beat": "freeze",
+   "text": "se",
+   "start": 52.54,
+   "end": 52.76
+  },
+  {
+   "beat": "freeze",
+   "text": "fige.",
+   "start": 52.76,
+   "end": 53.22
+  },
+  {
+   "beat": "julien",
+   "text": "Marc...",
+   "start": 55.3,
+   "end": 55.6
+  },
+  {
+   "beat": "julien",
+   "text": "c'est",
+   "start": 55.6,
+   "end": 56.58
+  },
+  {
+   "beat": "julien",
+   "text": "Julien.",
+   "start": 56.58,
+   "end": 57.0
+  },
+  {
+   "beat": "julien",
+   "text": "Ouvre-moi.",
+   "start": 57.0,
+   "end": 58.14
+  }
+ ]
+}

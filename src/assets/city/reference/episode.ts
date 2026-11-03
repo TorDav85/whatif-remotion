@@ -57,6 +57,8 @@ export type Variants = {
   changes?: ItemChange[];
   /** objects the episode brings into the world (a crater, a giant object…); ids must be new */
   add?: LayoutItem[];
+  /** the episode's own sky (dust, smoke…), over the lighting and weather presets */
+  sky?: Partial<SkyPalette> & {fogNear?: number; fogFar?: number};
 };
 
 const lerpHex = (a: string, b: string, k: number) => {
@@ -81,9 +83,12 @@ const damaged = (it: LayoutItem, k: number): LayoutItem | null => {
   const p = it.props;
   if (BUILDINGS.has(it.type)) {
     const floors = Number(p.floors ?? 5);
-    return {...it, props: {...p, floors: Math.max(it.type === 'shop' ? 0 : 1, Math.round(floors * (1 - 0.75 * k))),
-      stone: lerpHex(String(p.stone ?? '#e8dcc0'), SOOT, k * 0.8), ...(k > 0.3 ? {awning: null, details: false} : {})}};
+    // Near the centre only a storey or two remain, roofs blackened.
+    return {...it, props: {...p, floors: Math.max(it.type === 'shop' ? 0 : 1, Math.round(floors * (1 - 0.95 * k))),
+      stone: lerpHex(String(p.stone ?? '#e8dcc0'), SOOT, k * 0.85), ...(k > 0.3 ? {awning: null, details: false} : {}),
+      ...(k > 0.5 ? {roof: lerpHex(String(p.roof ?? '#6c7a80'), '#2a2522', k)} : {})}};
   }
+  if (it.type === 'tower') return {...it, props: {...p, height: Math.max(12, Number(p.height ?? 90) * (1 - 0.7 * k)), color: lerpHex(String(p.color ?? '#6f8aa8'), SOOT, k * 0.7)}};
   if (it.type === 'car') return {...it, ry: it.ry + (hash01(it.id) - 0.5) * 1.4 * k, props: {...p, color: lerpHex(String(p.color ?? '#b8322a'), SOOT, k)}};
   if (it.type === 'tree') return {...it, props: {...p, height: Number(p.height ?? 5.4) * (1 - 0.55 * k), foliage: lerpHex(String(p.foliage ?? '#608451'), '#6b5a3a', k)}};
   if (FRAGILE.has(it.type) && hash01(it.id) < k * 1.4) return null;
@@ -166,7 +171,8 @@ export const environmentFor = (variants: Variants = {}): Environment => {
       break;
     default:
   }
-  return {night: (variants.lighting ?? 'jour') === 'nuit', lit: base.lit, palette: p, fogNear, fogFar, rain, snow};
+  const {fogNear: skyNear, fogFar: skyFar, ...sky} = variants.sky ?? {};
+  return {night: (variants.lighting ?? 'jour') === 'nuit', lit: base.lit, palette: {...p, ...sky}, fogNear: skyNear ?? fogNear, fogFar: skyFar ?? fogFar, rain, snow};
 };
 
 // ——— Level of detail ———

@@ -42,6 +42,7 @@
     "render:marc-deux-lunes": "remotion render MarcDeuxLunes out/marc-deux-lunes/marc-deux-lunes-84s.mp4 --codec=h264 --concurrency=2",
     "voice:marc-geant-court": "node scripts/audio/python.mjs scripts/audio/marc-geant-court.py --voice morpheus && node scripts/audio/python.mjs scripts/audio/captions.py marc-geant-court",
     "render:marc-geant-court": "remotion render MarcGeantCourt out/marc-geant-court/marc-geant-court-45s.mp4 --codec=h264 --concurrency=2",
+    "render:bombe-nucleaire-ville": "remotion render BombeNucleaireVille out/bombe-nucleaire-ville/bombe-nucleaire-ville-60s.mp4 --codec=h264 --concurrency=2 --audio-codec=aac --audio-bitrate=192k",
     "captions": "node scripts/audio/python.mjs scripts/audio/captions.py",
     "editorial": "node scripts/check/editorial-report.mjs",
     "audio:levels": "node scripts/audio/python.mjs scripts/check/audio-levels.py",
