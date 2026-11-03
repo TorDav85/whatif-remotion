@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {ThreeCanvas} from '@remotion/three';
+import {Layer3D} from '../../core/plans3d';
 import {smooth} from '../../core/animation';
 import {Scene3D, IMPACT, BLACKOUT} from './Scene3D';
 import {TextOverlay} from './TextOverlay';
@@ -18,9 +18,9 @@ export const BombeNucleaireVille: React.FC = () => {
   const dip = Math.max(...[40, 46].map((at) => 0.65 * (1 - Math.min(1, Math.abs(t - at) / 0.14))));
   return (
     <AbsoluteFill style={{background: '#101820'}}>
-      <ThreeCanvas width={width} height={height} linear={false} gl={{antialias: true, logarithmicDepthBuffer: true}}>
+      <Layer3D width={width} height={height} linear={false} gl={{antialias: true, logarithmicDepthBuffer: true}}>
         <Scene3D t={t} />
-      </ThreeCanvas>
+      </Layer3D>
       <AbsoluteFill style={{background: '#fff2d5', opacity: flash, pointerEvents: 'none'}} />
       <AbsoluteFill style={{background: '#0b1118', opacity: dip, pointerEvents: 'none'}} />
       <AbsoluteFill style={{

@@ -119,6 +119,8 @@
     "venv:check": "node scripts/project/venv-check.mjs",
     "benchmark": "node scripts/check/benchmark.mjs",
     "compare:stills": "node scripts/check/compare-stills.mjs",
+    "rendu": "node scripts/export/render.mjs",
+    "plans3d:check": "node scripts/check/plans3d-check.mjs",
     "export:publication": "node scripts/export/publication.mjs"
   },
   "dependencies": {

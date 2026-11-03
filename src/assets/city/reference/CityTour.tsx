@@ -1,27 +1,22 @@
 import React, {useMemo} from 'react';
 import {AbsoluteFill, useCurrentFrame, useVideoConfig} from 'remotion';
-import {ThreeCanvas} from '@remotion/three';
+import {Layer3D} from '../../../core/plans3d';
 import {CameraRig} from '../../../shared/three/common';
 import {SERIF} from '../../../shared/ui/tokens';
 import {smooth} from '../../../core/animation';
-import {sampleShots, shotsDuration, shotStarts} from '../camera';
+import {sampleShots} from '../camera';
 import {resolveEpisodeSet, type EpisodeSet} from './episode';
 import {PlaceMap} from './PlaceMap';
 import {PLACE_IDS, PLACES, type PlaceId} from './places';
+import {TOUR_MAP_SECONDS, TOUR_SHOTS} from './tour';
 import {ReferenceScene} from './ReferenceScene';
-import {REFERENCE_SHOTS} from './shots';
 
-/** Visit of the reference city: the map of places and ids, then every reference framing, place by place. */
-export const TOUR_MAP_SECONDS = 5;
-export const TOUR_SHOTS = PLACE_IDS.flatMap((id) => REFERENCE_SHOTS[id]);
-export const tourFrames = (fps: number) => Math.round((TOUR_MAP_SECONDS + shotsDuration(TOUR_SHOTS)) * fps);
-/** Middle frame of the map and of each framing: the contact sheet of `npm run stills`. */
-export const tourStillFrames = (fps: number) => [
-  Math.round(TOUR_MAP_SECONDS * 0.7 * fps),
-  ...shotStarts(TOUR_SHOTS).map((s, i) => Math.round((TOUR_MAP_SECONDS + s + TOUR_SHOTS[i].duration / 2) * fps)),
-];
+export {TOUR_MAP_SECONDS, TOUR_SHOTS, tourFrames, tourStillFrames} from './tour';
 
-/** `lod: false` draws everything in full (benchmark baseline); `detailRadius` forces a radius, to inspect the far blocks. */
+/**
+ * Visit of the reference city: the map of places and ids, then every reference framing, place by place.
+ * `lod: false` draws everything in full (benchmark baseline); `detailRadius` forces a radius, to inspect the far blocks.
+ */
 export const CityTour: React.FC<{lod?: boolean; detailRadius?: number}> = ({lod = true, detailRadius}) => {
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
@@ -34,10 +29,10 @@ export const CityTour: React.FC<{lod?: boolean; detailRadius?: number}> = ({lod 
   const set = sets[shot.place];
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      <ThreeCanvas width={width} height={height} linear={false} gl={{antialias: true}}>
+      <Layer3D width={width} height={height} linear={false} gl={{antialias: true}}>
         <CameraRig position={view.pos} target={view.target} fov={view.fov} />
         <ReferenceScene set={set} inside={shot.inside} />
-      </ThreeCanvas>
+      </Layer3D>
       <div style={{position: 'absolute', top: 120, left: 60, right: 60, fontFamily: SERIF, color: '#fff', textShadow: '0 2px 10px rgba(0,0,0,0.75)'}}>
         <div style={{fontFamily: 'monospace', fontSize: 44, color: '#F6E05E'}}>{shot.id}</div>
         <div style={{fontSize: 34, marginTop: 10}}>{PLACES[shot.place].label} · {shot.name}</div>
