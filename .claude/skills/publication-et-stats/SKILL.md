@@ -7,6 +7,8 @@ description: Préparer la publication d'une vidéo (export, contrôles légaux, 
 
 ## Avant de publier
 - MP4 contrôlé (skill `verification-rendu`) : 1080×1920, 30 i/s, AAC, crête ≤ −1 dB.
+- Dossier de publication (MP4, couverture, `publication.txt` nommés d'après le titre « Et si … ? ») :
+  skill `export-publication`, `npm run export:publication -- <slug>`.
 - **Voix** : XTTS est sous licence non commerciale (`docs/legal/voix-et-licences.md`). Vidéo monétisée,
   sponsorisée ou sur une chaîne du Programme Partenaire : changer de voix. Accord écrit de la personne
   dont la voix est clonée.

@@ -1,5 +1,11 @@
 {
   "slug": "marc-mini",
+  "title": "Et si Marc rétrécissait ?",
+  "composition": "MarcMini",
+  "source": "out/marc-mini/marc-mini-85s.mp4",
+  "coverTime": 20,
+  "description": "Chaque minute, Marc perd la moitié de sa taille. Jusqu'où peut-il descendre ?",
+  "hashtags": "#etsi #whatif #science #minuscule",
   "hookVariant": null,
   "editVariant": "original",
   "durationSeconds": 85,

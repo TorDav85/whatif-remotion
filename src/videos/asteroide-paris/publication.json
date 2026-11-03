@@ -1,5 +1,11 @@
 {
   "slug": "asteroide-paris",
+  "title": "Et si un astéroïde tombait sur Paris ?",
+  "composition": "AsteroideParis",
+  "source": "out/asteroide-paris/asteroide-paris-40s.mp4",
+  "coverTime": 20,
+  "description": "Et si un astéroïde tombait sur Paris… maintenant ?",
+  "hashtags": "#etsi #whatif #espace #paris",
   "hookVariant": null,
   "editVariant": "original",
   "durationSeconds": 40,

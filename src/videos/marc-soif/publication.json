@@ -1,5 +1,11 @@
 {
   "slug": "marc-soif",
+  "title": "Et si Marc ne buvait plus d'eau ?",
+  "composition": "MarcSoif",
+  "source": "out/marc-soif/marc-soif-81s.mp4",
+  "coverTime": 30,
+  "description": "Une semaine sans une goutte d'eau : voilà ce qui arrive au corps de Marc, jour après jour.",
+  "hashtags": "#etsi #whatif #science #corpshumain",
   "hookVariant": null,
   "editVariant": "original",
   "durationSeconds": 81,

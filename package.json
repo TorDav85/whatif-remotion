@@ -115,7 +115,8 @@
     "render:2.01": "node scripts/export/release-2.01.mjs render",
     "venv:check": "node scripts/project/venv-check.mjs",
     "benchmark": "node scripts/check/benchmark.mjs",
-    "compare:stills": "node scripts/check/compare-stills.mjs"
+    "compare:stills": "node scripts/check/compare-stills.mjs",
+    "export:publication": "node scripts/export/publication.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "^9.8.2",

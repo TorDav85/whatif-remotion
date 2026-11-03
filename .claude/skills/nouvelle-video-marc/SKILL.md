@@ -18,7 +18,7 @@ pas leurs constantes.
 | `Hud.tsx` | compteur(s) en haut à gauche (`SAFE.top`), polices `SERIF` de `src/shared/ui/tokens` |
 | `TextOverlay.tsx` | accroche (0–4,5 s), sous-titres, mots sonores, mention « scénario fictif », carte de fin |
 | `Marc<Sujet>.tsx` | `ThreeCanvas` + calques + `Audio` de l'ambiance et des répliques (`voice.json`) |
-| `publication.json` | variante d'accroche et de montage, métriques par plateforme (skill `publication-et-stats`) |
+| `publication.json` | titre public « Et si … ? », source, instant de couverture, métriques (skills `export-publication`, `publication-et-stats`) |
 
 Personnages : `Marc` (`src/shared/characters/Marc.tsx` : `walk`, `cold`, `smile`, `frost`, mains)
 et Julien = `Person` (`src/assets/Person`, chemise `#3a6fb0`). Décors : `CityBase` (rue, `lit` 0/1 pour
@@ -38,6 +38,7 @@ et corriger (skill `voix-xtts`). Sous-titres synchronisés : `npm run captions -
 ## 4. Enregistrer
 - `src/Root.tsx` : import du composant et de `timing.json`, `<Composition id="Marc<Sujet>" …/>`.
 - `package.json` : `voice:marc-<sujet>` et `render:marc-<sujet>` (sortie `out/marc-<sujet>/marc-<sujet>-<durée>s.mp4`).
+- `src/publication/Cover.tsx` : ajouter la scène à `SCENES` pour la couverture.
 - `npx tsc --noEmit`.
 
 ## 5. Vérifier puis rendre (skill `verification-rendu`)

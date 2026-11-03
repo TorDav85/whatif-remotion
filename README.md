@@ -194,6 +194,7 @@ npm run stills -- CityLayoutPreview --shots       # une image par plan + planche
 | [verification-faits](.claude/skills/verification-faits/SKILL.md) | sourcer ou calculer chaque chiffre avant publication |
 | [verification-rendu](.claude/skills/verification-rendu/SKILL.md) | tests, planches, non-régression pixel, rapport éditorial, contrôle du MP4 |
 | [refactor-sans-regression](.claude/skills/refactor-sans-regression/SKILL.md) | déplacer du code partagé sans changer une image |
+| [export-publication](.claude/skills/export-publication/SKILL.md) | dossier de publication : titre « Et si … ? », MP4 et couverture nommés d'après lui, publication.txt |
 | [publication-et-stats](.claude/skills/publication-et-stats/SKILL.md) | préparer la publication, consigner les métriques, diagnostiquer les décrochages |
 | [whatif-asset-expert](.claude/skills/whatif-asset-expert/SKILL.md) | assets 3D procéduraux détaillés et déterministes |
 | [editeur-ville](.claude/skills/editeur-ville/SKILL.md) | ajouter un asset, faire évoluer le générateur ou l'éditeur |

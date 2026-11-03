@@ -1,5 +1,11 @@
 {
   "slug": "marc-salaire",
+  "title": "Et si Marc était payé pour ne rien faire ?",
+  "composition": "MarcSalaire",
+  "source": "out/marc-salaire/marc-salaire-79s.mp4",
+  "coverTime": 10,
+  "description": "Dix mille euros par mois, pour un travail qu'il n'a jamais fait. Mais qui le paie ?",
+  "hashtags": "#etsi #whatif #mystere #argent",
   "hookVariant": null,
   "editVariant": "original",
   "durationSeconds": 79,

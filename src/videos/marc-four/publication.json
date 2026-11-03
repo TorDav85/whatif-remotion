@@ -1,5 +1,11 @@
 {
   "slug": "marc-four",
+  "title": "Et si Marc était enfermé dans un four ?",
+  "composition": "MarcFour",
+  "source": "out/marc-four/marc-four-84s.mp4",
+  "coverTime": 40,
+  "description": "Julien pousse Marc dans un four géant, et la température double chaque minute.",
+  "hashtags": "#etsi #whatif #science #chaleur",
   "hookVariant": null,
   "editVariant": "original",
   "durationSeconds": 84,

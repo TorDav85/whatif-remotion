@@ -1,5 +1,11 @@
 {
   "slug": "marc-geant-court",
+  "title": "Et si Marc devenait géant ?",
+  "composition": "MarcGeantCourt",
+  "source": "out/marc-geant-court/marc-geant-court-45s.mp4",
+  "coverTime": 25,
+  "description": "Marc double de taille chaque minute. Son corps, lui, ne suit pas.",
+  "hashtags": "#etsi #whatif #science #paris #geant",
   "hookVariant": "consequence",
   "editVariant": "short",
   "durationSeconds": 45,
