@@ -90,17 +90,20 @@ tours) restent toujours complets.
 
 Mesure (`npm run benchmark -- VilleReferenceVisiteSansLOD VilleReferenceVisite --frames 300`, GTX 1660 Ti) :
 
-| Composition (300 images, rue-marc puis place-centrale) | Objets en détail | 1ᵉʳ passage | 2ᵉ passage (ordre inverse) | Mémoire système |
-| --- | --- | --- | --- | --- |
-| `VilleReferenceVisiteSansLOD` (avant : tout en détail) | 1 451 | 121 ms/image | 120 ms/image | +2 577 / +2 663 Mo |
-| `VilleReferenceVisite` (après : lieu + voisinage) | 493 à 694 | 90 ms/image | 93 ms/image | +2 415 / +2 378 Mo |
+| Composition (300 images, rue-marc puis place-centrale) | Objets en détail | 1ᵉʳ passage | 2ᵉ passage (ordre inverse) | 3ᵉ passage (détail de rue-marc élargi) | Mémoire système |
+| --- | --- | --- | --- | --- | --- |
+| `VilleReferenceVisiteSansLOD` (avant : tout en détail) | 1 451 | 121 ms/image | 120 ms/image | 127 ms/image | +2,5 à +2,7 Go |
+| `VilleReferenceVisite` (après : lieu + voisinage) | 610 à 694 | 90 ms/image | 93 ms/image | 93 ms/image | +2,4 Go |
 
 Soit environ −25 % de temps de rendu par image et −200 Mo de mémoire système. Le pic mémoire de Node suit
 la composition rendue en premier (préchauffage) et n'est pas comparable. Résultats bruts :
 [`benchmarks/ville-reference-2026-11-03.json`](benchmarks/ville-reference-2026-11-03.json).
 
-Sur les 12 cadrages de référence, l'image avec simplification est identique au pixel près à l'image tout
-en détail (écart moyen 0) : les objets simplifiés sont cachés ou hors champ. Pour juger leur allure, la
+Sur 12 des 13 images de la visite, l'image avec simplification est identique au pixel près à l'image tout
+en détail (écart moyen 0) : les objets simplifiés sont cachés ou hors champ. Seul `rue-marc/travelling`, qui
+regarde l'axe de la rue sur une centaine de mètres, montre au fond des façades sans balcons (écart moyen
+0,32/255, ramené de 0,73 en étirant le détail de `rue-marc` le long de la rue et en gardant les voitures
+lointaines en boîtes). Pour juger leur allure, la
 visite accepte un rayon forcé :
 
 ```powershell

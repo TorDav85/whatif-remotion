@@ -125,7 +125,9 @@ const street = (): Place => ({
     {id: 'lampadaire', label: 'Lampadaire', pos: [6.5, 0.15, 30.45], item: 'street-lamp-909'},
     {id: 'fleuriste', label: 'Fleuriste', pos: [-2.17, 1.5, 33], item: 'shop-893'},
   ],
-  detailRadius: 70,
+  // The street runs east-west: detail stretched along it, so the far end of a travelling stays complete.
+  detailRadius: 80,
+  detailCenter: [18, 25],
 });
 
 const square = (): Place => ({

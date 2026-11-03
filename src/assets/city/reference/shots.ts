@@ -16,14 +16,14 @@ const shot = (place: PlaceId, key: string, name: string, duration: number, from:
 
 export const REFERENCE_SHOTS: Readonly<Record<PlaceId, readonly ReferenceShot[]>> = Object.freeze({
   'appartement-marc': [
-    shot('appartement-marc', 'salon', 'Salon, vers les fenêtres', 3,
-      v([9.364, 15.4, 38.95], [11.7, 14.75, 33.25], 58), v([9.464, 15.35, 38.5], [11.7, 14.75, 33.25], 58), {inside: true}),
+    shot('appartement-marc', 'salon', 'Salon : canapé et télévision', 3,
+      v([15.864, 15.3, 36.1], [9.868, 14.65, 35.891], 70), v([15.464, 15.3, 36.1], [9.868, 14.65, 35.891], 70), {inside: true}),
     shot('appartement-marc', 'fenetre', 'Par la fenêtre, la place', 3,
       v([12.9, 15.3, 34.6], [2, 6, -8], 55), v([12.6, 15.3, 34.05], [2, 6, -8], 55), {inside: true}),
     shot('appartement-marc', 'facade', 'Les fenêtres de Marc, depuis la place', 3,
       v([5, 9.5, 5], [12.364, 15, 33], 50), v([5.6, 9.5, 7], [12.364, 15, 33], 50)),
     shot('appartement-marc', 'approche', 'Approche de la fenêtre (raccord intérieur)', 3,
-      v([12.364, 16, 6], [12.364, 15.2, 33], 50), v([12.364, 15.6, 18], [12.364, 15.2, 33], 50)),
+      v([12.364, 9, -2], [12.364, 13, 33], 50), v([12.364, 15, 18], [12.364, 15.2, 33], 50)),
   ],
   'rue-marc': [
     shot('rue-marc', 'ensemble', 'Rue de Marc, vue d’ensemble', 3.5,
