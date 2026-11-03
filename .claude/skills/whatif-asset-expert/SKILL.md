@@ -17,6 +17,11 @@ scène cible ; garder les props, exports et transformations attendus par ses cli
 - Réutiliser `PAL`, `Block`, `Mat`, `Cyl`, `Ball` et les géométries de
   `src/assets/kit.tsx` ; vérifier aussi `colors.ts` et `shared.ts` si la famille
   existante les emploie. Le style est low-poly à faces plates.
+- Où ranger : objet générique → `src/assets/` ; décor réutilisable d'une série
+  (four, appartement…) → `src/shared/sets/` ; personnage → `src/shared/characters/`
+  (`Marc`, `Actor`, `ArticulatedPerson`) ; kit instancié de ville → `src/shared/three/instanced.tsx`.
+  Une vidéo n'importe pas le dossier d'une autre vidéo (règle dans `docs/structure.md`) :
+  si un élément sert à deux vidéos, le déplacer d'abord (skill `refactor-sans-regression`).
 - Les assets génériques n'importent pas une vidéo. La scène fournit le temps ou
   les valeurs animées : frame Remotion/fps, jamais `Math.random()`, horloge ou
   boucle `useFrame`. Pour les variations, utiliser une graine stable avec `seeded`.

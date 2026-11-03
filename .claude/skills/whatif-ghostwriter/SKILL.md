@@ -26,6 +26,24 @@ nécessairement toutes les compositions ; vérifier aussi `src/Root.tsx`.
 - Garder la chute dans le sujet. Ajouter un appel à commenter uniquement si le
   format ou la demande s'y prête, avec une question liée au dilemme montré.
 
+## Écrire pour la rétention (leçons de la review 1.10)
+
+- La première phrase pose la règle **et** le problème visible, en 4 s au plus
+  (« Marc double de taille chaque minute. Son corps ne suit pas. »). Trois familles
+  d'accroche à tester une à la fois : conséquence immédiate, danger annoncé,
+  question scientifique ; noter la variante dans `publication.json` (`hookVariant`).
+- Faire avancer par problème → tentative ou conséquence → escalade, pas par simple
+  énumération de paliers : le compteur accompagne l'action, il n'est pas l'histoire.
+- Une seule question de fin, qui prolonge l'histoire ; pas de « abonne-toi /
+  partage / commente » répétés pendant la vidéo (le rapport `npm run editorial`
+  chiffre la part de CTA à l'écran).
+- Phrases courtes, découpables en groupes de 6 mots pour les sous-titres
+  synchronisés (`npm run captions -- <slug>`) ; éviter les mots que XTTS avale
+  (finales muettes, « lampe », « plier ») et les reformuler s'ils ratent.
+- Chaque réplique chiffrée porte un champ `"source"` dans `narration.json` : référence,
+  calcul (ex. `1,80 m × 2³ = 14,4 m`) ou « ordre de grandeur d'après … ». Voir le skill
+  `verification-faits`.
+
 ## Respecter la durée et la physique
 
 Conserver les ids, l'ordre, les créneaux et les références de pistes lors d'une

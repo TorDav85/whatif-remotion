@@ -15,7 +15,11 @@ Code à réutiliser (ne pas réécrire) :
 - `src/assets/city/camera.ts` : `Shot`, `sampleShots(shots, t)` (renvoie aussi `fade` à appliquer en noir
   par-dessus l'image), `viewAt`, `shotStarts`, `trajectory`, `PRESETS` (14 mouvements).
 - `src/shared/three/common.tsx` : `CameraRig` (caméra pilotée par le temps, jamais `useFrame` dans Remotion).
-- Exemple de découpe à la main : `SHOTS` / `CUTS` dans `src/videos/internet-off/Scene3D.tsx`.
+- Découpe à la main dans une vidéo : `src/shared/three/shots.ts` (`Shot`, `shotAt(SHOTS, t, durée)`,
+  `cutsOf(SHOTS)`) ; modèle complet : `SHOTS` de `src/videos/marc-deux-lunes/Scene3D.tsx`.
+- Transitions : `src/shared/ui/transitions.ts` (`Cut {at, kind: 'cut' | 'dip'}`, `dipAt`).
+- Texte qui suit un personnage (bulle, étiquette) : `projectToScreen(vue, point3D, 1080, 1920)` de
+  `src/shared/three/projection.ts`, avec la même vue que la caméra du plan ; `SpeechBubble` pour les dialogues.
 - Ville : `npm run city`, onglet **Caméra** → plans enregistrés dans `public/city-layouts/<nom>.json`,
   filmés par `CityLayoutPreview` (sa durée suit celle des plans).
 
@@ -39,7 +43,12 @@ Code à réutiliser (ne pas réécrire) :
 | Champ / contre-champ | personnages de profil, caméra perpendiculaire | dialogue, poignée de main |
 
 ## Montage
-- Coupe franche par défaut ; `fondu` pour un saut de temps, de lieu, ou la fin d'une séquence.
+- Coupe franche par défaut ; `fondu` (noir) seulement pour un vrai saut de temps, de lieu ou
+  d'échelle (rue → espace). Un fondu sur chaque coupe signale le montage au lieu de servir le récit
+  (`npm run editorial` le relève).
+- Caméra sur la chaussée, pas dans la file de stationnement (x ≈ ±4 m dans `CityBase`) : une voiture
+  garée bouche sinon tout le premier plan. Une moitié de lune ou d'objet du ciel derrière une façade :
+  rapprocher sa direction de l'axe de la rue.
 - Raccord de mouvement : le plan suivant démarre là où le précédent s'arrête (bouton **Raccord**).
 - Alterner large / serré : une vue d'ensemble, puis un plan à hauteur humaine.
 - Mouvement motivé : la caméra suit une action ou révèle une information, sinon plan fixe.

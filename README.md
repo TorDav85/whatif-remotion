@@ -186,16 +186,17 @@ npm run stills -- CityLayoutPreview --shots       # une image par plan + planche
 
 | Skill | Pour |
 | --- | --- |
-| [camera-realisateur](.claude/skills/camera-realisateur/SKILL.md) | découper et cadrer les plans en 9:16 |
-| [verification-rendu](.claude/skills/verification-rendu/SKILL.md) | tests, images clés, son, contrôle du MP4 |
+| [nouvelle-video-marc](.claude/skills/nouvelle-video-marc/SKILL.md) | créer un épisode « Et si Marc… ? » du scénario au MP4 |
+| [whatif-ghostwriter](.claude/skills/whatif-ghostwriter/SKILL.md) | narration française calée sur les créneaux, écrite pour la rétention |
+| [camera-realisateur](.claude/skills/camera-realisateur/SKILL.md) | découper et cadrer les plans en 9:16, transitions motivées |
+| [voix-xtts](.claude/skills/voix-xtts/SKILL.md) | voix off XTTS, transcription, niveaux, ambiance, licence |
+| [montage-retention](.claude/skills/montage-retention/SKILL.md) | version courte, sous-titres synchronisés, habillage par mode, une seule question |
+| [verification-faits](.claude/skills/verification-faits/SKILL.md) | sourcer ou calculer chaque chiffre avant publication |
+| [verification-rendu](.claude/skills/verification-rendu/SKILL.md) | tests, planches, non-régression pixel, rapport éditorial, contrôle du MP4 |
+| [refactor-sans-regression](.claude/skills/refactor-sans-regression/SKILL.md) | déplacer du code partagé sans changer une image |
+| [publication-et-stats](.claude/skills/publication-et-stats/SKILL.md) | préparer la publication, consigner les métriques, diagnostiquer les décrochages |
+| [whatif-asset-expert](.claude/skills/whatif-asset-expert/SKILL.md) | assets 3D procéduraux détaillés et déterministes |
 | [editeur-ville](.claude/skills/editeur-ville/SKILL.md) | ajouter un asset, faire évoluer le générateur ou l'éditeur |
-| [voix-xtts](.claude/skills/voix-xtts/SKILL.md) | voix off XTTS, vérification par transcription, ambiance |
-- **Catalogue** des 85 assets par catégorie, avec aperçu 3D qui tourne : cliquer puis cliquer dans la scène pour poser.
-- **Déplacer** à la souris (clic pour sélectionner, puis glisser), **tourner** (R, Q/E), modifier les réglages
-  (étages, largeur, couleurs, modèle…), dupliquer, supprimer, annuler (Ctrl+Z). Rues et trottoirs sont verrouillés
-  par défaut (bouton **Sol**).
-- **Enregistrer** écrit `public/city-layouts/<nom>.json`. Dans Remotion : composition `CityLayoutPreview`
-  (prop `layout: "<nom>"`), ou dans une vidéo `useCityLayout('<nom>')` + `<LayoutScene layout={…} />`.
 
 Le registre commun ([registry.tsx](src/assets/city/registry.tsx)) garantit le même rendu dans l'éditeur et dans la vidéo :
 un nouvel asset ajouté au registre apparaît automatiquement dans le catalogue.

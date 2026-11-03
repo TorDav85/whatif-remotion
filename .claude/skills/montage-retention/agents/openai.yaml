@@ -1,0 +1,4 @@
+interface:
+  display_name: "Montage rétention"
+  short_description: "Version courte, sous-titres synchronisés, une seule question"
+  default_prompt: "Utilise $montage-retention pour faire une version plus efficace de cette vidéo et mesurer avant/après."

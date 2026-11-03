@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nouvel épisode Marc"
+  short_description: "Épisode « Et si Marc… ? » complet, du scénario au MP4"
+  default_prompt: "Utilise $nouvelle-video-marc pour créer un épisode « Et si Marc… » sur ce sujet."

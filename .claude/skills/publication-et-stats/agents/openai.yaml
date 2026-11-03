@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publication et stats"
+  short_description: "Publication, métriques par plateforme, diagnostic"
+  default_prompt: "Utilise $publication-et-stats pour consigner ces statistiques et proposer la prochaine variante."

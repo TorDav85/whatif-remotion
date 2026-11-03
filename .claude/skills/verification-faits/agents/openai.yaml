@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vérification des faits"
+  short_description: "Chiffres sourcés ou calculés avant publication"
+  default_prompt: "Utilise $verification-faits pour vérifier et sourcer les affirmations de cette vidéo."
