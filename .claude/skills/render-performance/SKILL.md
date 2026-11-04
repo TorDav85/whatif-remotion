@@ -5,8 +5,13 @@ description: Mesurer et accélérer le rendu Remotion/Three.js de ce projet - be
 
 # Performance de rendu
 
-Référence : `docs/benchmarks/render-engine-phase1-2026-11-04.md` (i7-9750H, GTX 1660 Ti, Windows).
-Sur cette machine, `MarcGeantCourt` : angle ×2 ≈ 159 ms/image, vulkan ×2 ≈ 96 ms/image ; ×4 n'aide pas.
+Références : `docs/benchmarks/render-engine-phase1-2026-11-04.md` et `…-phase4-2026-11-04.md`
+(i7-9750H, GTX 1660 Ti, Windows). Ce qu'on sait déjà :
+- ≈ 80 ms/image sont un socle fixe (capture 1080×1920) ; l'encodage x264 pèse peu.
+- Avec angle, concurrence 1 ≈ 2 et 4 est plus lent : le travail limitant est sérialisé dans le GPU de Chrome.
+- `React.memo` sur des objets immobiles de `CityBase` : aucun gain mesuré (essai rejeté).
+- vulkan : 3 à 39 % plus rapide selon la scène, **mais pas équivalent au pixel** (motif de lave de Chaleur,
+  marquages au sol de MarcDeuxLunes) : jamais par défaut, seulement après comparaison des planches.
 
 ## Règles
 - **Un seul changement à la fois**, mesuré avant et après, dans les mêmes conditions (même composition, mêmes
