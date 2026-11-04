@@ -1,0 +1,83 @@
+{
+  "voice": "morpheus",
+  "ambience": "oiseau-haute-tension/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Vingt mille volts sous ses pattes. Et pourtant, cet oiseau ne sent rien.",
+      "start": 0.2,
+      "duration": 4.2803,
+      "end": 4.4803,
+      "speed": 1.0,
+      "seed": 31104,
+      "audio": "oiseau-haute-tension/hook.wav",
+      "sha256": "faf8a72b3ab4029c578c7ced8832a7f0df10c7e69da63e89452dd2162453aca2"
+    },
+    {
+      "id": "flow",
+      "text": "Le courant file dans le câble. Il prend le chemin qui lui résiste le moins.",
+      "start": 6.2,
+      "duration": 3.8116,
+      "end": 10.0116,
+      "speed": 1.0,
+      "seed": 31001,
+      "audio": "oiseau-haute-tension/flow.wav",
+      "sha256": "b777559e3c72982c184820b5693c1e0e3e5db0eb1871acc310b9cf45b2385f70"
+    },
+    {
+      "id": "feet",
+      "text": "Ses deux pattes touchent le même fil, au même potentiel. Aucune différence, aucun courant.",
+      "start": 12.2,
+      "duration": 5.5177,
+      "end": 17.7177,
+      "speed": 1.1234,
+      "seed": 31002,
+      "audio": "oiseau-haute-tension/feet.wav",
+      "sha256": "f23a0443374b4a2c7998ca3cb05ab3da23abc43c6599b04c0f2fa141d4b891ff"
+    },
+    {
+      "id": "contact",
+      "text": "Et si son aile touchait le pylône, relié à la terre ?",
+      "start": 18.4,
+      "duration": 3.5019,
+      "end": 21.9019,
+      "speed": 1.0,
+      "seed": 31203,
+      "audio": "oiseau-haute-tension/contact.wav",
+      "sha256": "a4d7e5d37aef96dc30fe39309977935b3b285280400c2000b379f9992945a6f9"
+    },
+    {
+      "id": "arc",
+      "text": "Onze mille volts d'écart. Le courant traverse son corps. C'est ce qui tue les cigognes et les rapaces.",
+      "start": 24.2,
+      "duration": 6.748,
+      "end": 30.948,
+      "speed": 1.0,
+      "seed": 31004,
+      "audio": "oiseau-haute-tension/arc.wav",
+      "sha256": "5b8b77fec06fa6513c67ac7467b406cdd25893f8458b6cc608f50e924502bef3"
+    },
+    {
+      "id": "rule",
+      "text": "La règle : le courant ne traverse un corps que s'il relie deux potentiels différents. Sur un seul fil, rien ne passe.",
+      "start": 32.4,
+      "duration": 7.2924,
+      "end": 39.6924,
+      "speed": 1.0,
+      "seed": 31005,
+      "audio": "oiseau-haute-tension/rule.wav",
+      "sha256": "1ac1c93a28d56c7d9c4945c073d27dd8481e412c9dbffdbb7b4346b30a86cda7"
+    },
+    {
+      "id": "end",
+      "text": "Et l'écureuil, pourquoi fait-il sauter le courant ?",
+      "start": 41.2,
+      "duration": 2.7443,
+      "end": 43.9443,
+      "speed": 1.0,
+      "seed": 31006,
+      "audio": "oiseau-haute-tension/end.wav",
+      "sha256": "9c95406e9fe95f9a5d7ea30063517e9a6c018087d642ef075cdf9e225edd4cfa"
+    }
+  ]
+}

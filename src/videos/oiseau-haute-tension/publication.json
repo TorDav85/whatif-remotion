@@ -1,0 +1,17 @@
+{
+  "slug": "oiseau-haute-tension",
+  "title": "Et si l'oiseau touchait le pylône ?",
+  "composition": "OiseauHauteTension",
+  "source": "out/oiseau-haute-tension/oiseau-haute-tension-45s.mp4",
+  "coverTime": 22,
+  "description": "20 000 volts sous ses pattes, et il ne sent rien. Tout est une question de différence de potentiel.",
+  "hashtags": "#etsi #whatif #science #electricite #physique",
+  "hookVariant": "paradox",
+  "editVariant": "short",
+  "durationSeconds": 45,
+  "publications": [
+    {"platform": "youtube-shorts", "url": null, "publishedAt": null, "metrics": {}},
+    {"platform": "tiktok", "url": null, "publishedAt": null, "metrics": {}}
+  ],
+  "dropOffs": []
+}

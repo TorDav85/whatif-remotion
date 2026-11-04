@@ -46,6 +46,8 @@
     "captions": "node scripts/audio/python.mjs scripts/audio/captions.py",
     "editorial": "node scripts/check/editorial-report.mjs",
     "audio:levels": "node scripts/audio/python.mjs scripts/check/audio-levels.py",
+    "voice:oiseau-haute-tension": "node scripts/audio/python.mjs scripts/audio/oiseau-haute-tension.py --voice morpheus && node scripts/audio/python.mjs scripts/audio/captions.py oiseau-haute-tension",
+    "render:oiseau-haute-tension": "remotion render OiseauHauteTension out/oiseau-haute-tension/oiseau-haute-tension-45s.mp4 --codec=h264 --concurrency=2 --audio-codec=aac --audio-bitrate=192k",
     "render:internet": "remotion render InternetOffV1 out/internet-off/internet-off-v1.mp4 --codec=h264 --concurrency=2",
     "render:cafe": "remotion render CafeCold out/cafe-cold/la-place-au-soleil.mp4 --codec=h264 --concurrency=2",
     "still:cafe": "remotion still CafeCold out/cafe-cold/preview.png --frame=300",
