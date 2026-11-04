@@ -4,7 +4,9 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-const python = path.join(root, '.venv', process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
+// WHATIF_VENV: another checkout's .venv (a worktree without a junction to the main folder).
+const venv = process.env.WHATIF_VENV ? path.resolve(process.env.WHATIF_VENV) : path.join(root, '.venv');
+const python = path.join(venv, process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
 if (!existsSync(python)) {
   console.error('Créez .venv et installez scripts/audio/xtts/requirements.txt (voir README).');
   process.exit(1);

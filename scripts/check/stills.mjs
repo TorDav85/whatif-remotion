@@ -1,18 +1,15 @@
-// Render a few frames of a composition in one bundle, then assemble a contact sheet.
+// Render a few frames of a composition with the shared session (cached bundle, one browser, one page
+// for all frames), then assemble a contact sheet.
 //   npm run stills -- CityLayoutPreview --shots
 //   npm run stills -- InternetOffV1 --frames 75,840,1890
 //   npm run stills -- InternetOffV1 --count 10 --props '{"x":1}'
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {fileURLToPath} from 'node:url';
-import {bundle} from '@remotion/bundler';
-import {renderStill, selectComposition} from '@remotion/renderer';
+import {openSession, root} from '../project/render-session.mjs';
 import {shotFrames} from './shot-frames.mjs';
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-// WebGL backend: 'angle' locally, REMOTION_GL=swangle on machines without GPU (CI).
-const GL = process.env.REMOTION_GL ?? 'angle';
+// WebGL backend: 'angle' locally, REMOTION_GL=swangle on machines without GPU (CI) (see openSession).
 const args = process.argv.slice(2);
 const id = args.find((a) => !a.startsWith('--'));
 // PowerShell drops the `--` separator, so npm keeps flags like --shots as its own config:
@@ -31,9 +28,8 @@ if (!id) {
 }
 
 const inputProps = opt('props') ? JSON.parse(opt('props')) : {};
-console.log('Compilation du projet…');
-const serveUrl = await bundle({entryPoint: path.join(root, 'src/index.ts'), onProgress: () => undefined});
-const composition = await selectComposition({serveUrl, id, inputProps, chromiumOptions: {gl: GL}, logLevel: 'error'});
+const session = await openSession();
+const composition = await session.select(id, inputProps);
 const props = {...composition.props, ...inputProps};
 const fps = composition.fps;
 
@@ -53,15 +49,22 @@ if (flag('shots')) {
 const out = path.resolve(root, opt('out') ?? path.join('out', 'stills', id));
 fs.mkdirSync(out, {recursive: true});
 for (const f of fs.readdirSync(out)) if (/^f-\d+\.png$/.test(f)) fs.rmSync(path.join(out, f));
-const t0 = Date.now();
-for (const f of frames) {
-  const frame = Math.max(0, Math.min(composition.durationInFrames - 1, f.frame));
-  await renderStill({composition, serveUrl, frame, inputProps: props, output: path.join(out, `f-${frame}.png`), chromiumOptions: {gl: GL}, logLevel: 'error'});
-  console.log(`  image ${frame} (${(frame / fps).toFixed(1)} s)${f.label ? ` · ${f.label}` : ''}`);
+const t0 = performance.now();
+const labels = new Map(frames.map((f) => [Math.max(0, Math.min(composition.durationInFrames - 1, f.frame)), f.label]));
+try {
+  await session.frames(composition, {frames: [...labels.keys()].sort((a, b) => a - b), inputProps: props, imageFormat: 'png', outputDir: null,
+    concurrency: 1, muted: true, onStart: () => undefined, onFrameUpdate: () => undefined,
+    onFrameBuffer: (buf, frame) => {
+      fs.writeFileSync(path.join(out, `f-${frame}.png`), buf);
+      console.log(`  image ${frame} (${(frame / fps).toFixed(1)} s)${labels.get(frame) ? ` · ${labels.get(frame)}` : ''}`);
+    }});
+} finally {
+  await session.close();
 }
-console.log(`${frames.length} images en ${((Date.now() - t0) / 1000).toFixed(0)} s → ${path.relative(root, out)}`);
+console.log(`${labels.size} images en ${((performance.now() - t0) / 1000).toFixed(0)} s → ${path.relative(root, out)}`);
 
-const python = path.join(root, '.venv', process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
+const venv = process.env.WHATIF_VENV ? path.resolve(process.env.WHATIF_VENV) : path.join(root, '.venv');
+const python = path.join(venv, process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
 if (fs.existsSync(python)) {
   const sheet = path.join(out, 'planche.png');
   const r = spawnSync(python, ['-I', path.join(root, 'scripts/check/contact_sheet.py'), out, sheet, String(fps)], {stdio: 'inherit'});

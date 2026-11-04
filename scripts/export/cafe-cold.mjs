@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
-import {bundle} from '@remotion/bundler';
-import {openBrowser, selectComposition, renderStill, renderMedia} from '@remotion/renderer';
+import {selectComposition, renderStill, renderMedia} from '@remotion/renderer';
+import {openSession} from '../project/render-session.mjs';
 
 const root=process.cwd();
 const v2=process.argv.includes('--v2');
@@ -26,9 +26,8 @@ if((v2||bus||polar)&&!preview){
     if(!checked?.match||checked.audioSha256!==hash||beat.sha256!==hash) throw new Error(`Prise vocale à vérifier : ${beat.id}`);
   }
 }
-const serveUrl=await bundle({entryPoint:path.join(root,'src/index.ts'),outDir:path.join(root,`.cache/${slug}/bundle`)});
-const chromiumOptions={gl:'angle'};
-const browser=await openBrowser('chrome',{chromiumOptions});
+// Shared session: compiled project reused when unchanged, public/ linked rather than copied, one browser.
+const {serveUrl,browser,chromiumOptions}=await openSession({gl:'angle'});
 try {
   const composition=await selectComposition({serveUrl,id,puppeteerInstance:browser,chromiumOptions});
   {

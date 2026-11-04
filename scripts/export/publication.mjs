@@ -17,8 +17,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {bundle} from '@remotion/bundler';
-import {renderStill, selectComposition} from '@remotion/renderer';
+import {openSession} from '../project/render-session.mjs';
 import {publicationFiles} from '../../src/core/publication-names.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -45,8 +44,7 @@ const describe = (pub, names) => [
   '',
 ].join('\n');
 
-let serveUrl = null;
-const gl = process.env.REMOTION_GL ?? 'angle';
+let session = null;
 let failed = 0;
 
 for (const slug of slugs) {
@@ -78,11 +76,10 @@ for (const slug of slugs) {
     // Cover.
     if (keep(names.cover)) console.log(`  = ${names.cover} existe déjà (--force pour remplacer)`);
     else {
-      serveUrl ??= await bundle({entryPoint: path.join(root, 'src/index.ts'), onProgress: () => undefined});
+      session ??= await openSession();
       const inputProps = {slug, t: pub.coverTime ?? 0, title: names.title, ...(pub.coverHighlight ? {highlight: pub.coverHighlight} : {})};
-      const composition = await selectComposition({serveUrl, id: 'Couverture', inputProps, chromiumOptions: {gl}, logLevel: 'error'});
-      await renderStill({serveUrl, composition, inputProps, frame: 0, imageFormat: 'jpeg', jpegQuality: 92,
-        output: target(names.cover), chromiumOptions: {gl}, logLevel: 'error'});
+      const composition = await session.select('Couverture', inputProps);
+      await session.still(composition, {inputProps, frame: 0, imageFormat: 'jpeg', jpegQuality: 92, output: target(names.cover)});
       console.log(`  + ${names.cover}  (scène à ${pub.coverTime ?? 0} s)`);
     }
 
@@ -98,4 +95,5 @@ for (const slug of slugs) {
   }
 }
 console.log(failed ? `\n${failed} export(s) en échec.` : '\nDossiers prêts dans out/publication/.');
+await session?.close();
 process.exitCode = failed ? 1 : 0;

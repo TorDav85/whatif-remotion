@@ -3,8 +3,8 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
-import {bundle} from '@remotion/bundler';
-import {getCompositions, openBrowser, renderStill, renderMedia} from '@remotion/renderer';
+import {getCompositions, renderStill, renderMedia} from '@remotion/renderer';
+import {openSession} from '../project/render-session.mjs';
 import {assertCamerasLocked} from './release-camera-lock.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -89,10 +89,8 @@ const fingerprint = sourceFingerprint();
 const statusFile = path.join(output, 'status.json');
 const status = fs.existsSync(statusFile) ? JSON.parse(fs.readFileSync(statusFile, 'utf8')) : {version: '2.01', videos: {}};
 status.sourceFingerprint = fingerprint; status.cameras = cameras;
-const chromiumOptions = {gl: 'angle'};
-console.log('Compilation unique des 20 versions…');
-const serveUrl = await bundle({entryPoint: path.join(root, 'src/index.ts'), outDir: path.join(root, '.cache/release-2.01/bundle'), onProgress: () => undefined});
-const browser = await openBrowser('chrome', {chromiumOptions});
+// Shared session: one compilation for the 20 versions (reused when the sources did not change), one browser.
+const {serveUrl, browser, chromiumOptions} = await openSession({gl: 'angle'});
 const runPython = (script, argv) => {
   const result = spawnSync(python, ['-X', 'utf8', path.join(root, script), ...argv], {cwd: root, stdio: 'inherit'});
   if (result.error) throw result.error;
