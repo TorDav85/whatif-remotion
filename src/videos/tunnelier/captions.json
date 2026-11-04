@@ -1,0 +1,736 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.2,
+   "end": 1.36,
+   "text": "Une machine de cent mètres",
+   "beat": "hook"
+  },
+  {
+   "start": 1.36,
+   "end": 2.18,
+   "text": "creuse sous la ville,",
+   "beat": "hook"
+  },
+  {
+   "start": 2.18,
+   "end": 3.6,
+   "text": "sans que rien ne",
+   "beat": "hook"
+  },
+  {
+   "start": 3.6,
+   "end": 4.0,
+   "text": "s'effondre.",
+   "beat": "hook"
+  },
+  {
+   "start": 6.2,
+   "end": 7.16,
+   "text": "À l'avant,",
+   "beat": "wheel"
+  },
+  {
+   "start": 7.16,
+   "end": 8.92,
+   "text": "une roue géante tourne",
+   "beat": "wheel"
+  },
+  {
+   "start": 8.92,
+   "end": 9.36,
+   "text": "lentement.",
+   "beat": "wheel"
+  },
+  {
+   "start": 9.36,
+   "end": 11.16,
+   "text": "Ses molettes broient la",
+   "beat": "wheel"
+  },
+  {
+   "start": 11.16,
+   "end": 11.52,
+   "text": "roche.",
+   "beat": "wheel"
+  },
+  {
+   "start": 13.0,
+   "end": 14.28,
+   "text": "Derrière la roue,",
+   "beat": "pressure"
+  },
+  {
+   "start": 14.28,
+   "end": 15.46,
+   "text": "la terre broyée reste sous",
+   "beat": "pressure"
+  },
+  {
+   "start": 15.46,
+   "end": 15.92,
+   "text": "pression.",
+   "beat": "pressure"
+  },
+  {
+   "start": 16.24,
+   "end": 17.44,
+   "text": "Elle retient le sol,",
+   "beat": "pressure"
+  },
+  {
+   "start": 17.44,
+   "end": 18.7,
+   "text": "comme un bouchon.",
+   "beat": "pressure"
+  },
+  {
+   "start": 21.2,
+   "end": 23.12,
+   "text": "Une vis sans fin évacue",
+   "beat": "screw"
+  },
+  {
+   "start": 23.12,
+   "end": 23.74,
+   "text": "les déblais vers",
+   "beat": "screw"
+  },
+  {
+   "start": 23.74,
+   "end": 24.48,
+   "text": "l'arrière,",
+   "beat": "screw"
+  },
+  {
+   "start": 24.48,
+   "end": 26.58,
+   "text": "sur un tapis roulant.",
+   "beat": "screw"
+  },
+  {
+   "start": 27.2,
+   "end": 28.82,
+   "text": "Des vérins poussent la",
+   "beat": "thrust"
+  },
+  {
+   "start": 28.82,
+   "end": 30.82,
+   "text": "machine en prenant appui",
+   "beat": "thrust"
+  },
+  {
+   "start": 30.82,
+   "end": 31.8,
+   "text": "sur le tunnel déjà",
+   "beat": "thrust"
+  },
+  {
+   "start": 31.8,
+   "end": 32.42,
+   "text": "construit.",
+   "beat": "thrust"
+  },
+  {
+   "start": 34.0,
+   "end": 35.08,
+   "text": "Puis un bras robotisé",
+   "beat": "ring"
+  },
+  {
+   "start": 35.5,
+   "end": 36.46,
+   "text": "pose un anneau de",
+   "beat": "ring"
+  },
+  {
+   "start": 36.46,
+   "end": 37.42,
+   "text": "voussoirs en béton.",
+   "beat": "ring"
+  },
+  {
+   "start": 37.42,
+   "end": 38.98,
+   "text": "Et on recommence.",
+   "beat": "ring"
+  },
+  {
+   "start": 41.2,
+   "end": 41.89,
+   "text": "Combien de mètres",
+   "beat": "end"
+  },
+  {
+   "start": 41.89,
+   "end": 42.76,
+   "text": "creuse-t-il par jour,",
+   "beat": "end"
+  },
+  {
+   "start": 43.36,
+   "end": 43.94,
+   "text": "à ton avis ?",
+   "beat": "end"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "Une",
+   "start": 0.2,
+   "end": 0.3
+  },
+  {
+   "beat": "hook",
+   "text": "machine",
+   "start": 0.3,
+   "end": 0.66
+  },
+  {
+   "beat": "hook",
+   "text": "de",
+   "start": 0.66,
+   "end": 0.88
+  },
+  {
+   "beat": "hook",
+   "text": "cent",
+   "start": 0.88,
+   "end": 1.08
+  },
+  {
+   "beat": "hook",
+   "text": "mètres",
+   "start": 1.08,
+   "end": 1.36
+  },
+  {
+   "beat": "hook",
+   "text": "creuse",
+   "start": 1.36,
+   "end": 1.7
+  },
+  {
+   "beat": "hook",
+   "text": "sous",
+   "start": 1.7,
+   "end": 1.8
+  },
+  {
+   "beat": "hook",
+   "text": "la",
+   "start": 1.8,
+   "end": 1.92
+  },
+  {
+   "beat": "hook",
+   "text": "ville,",
+   "start": 1.92,
+   "end": 2.18
+  },
+  {
+   "beat": "hook",
+   "text": "sans",
+   "start": 2.18,
+   "end": 3.08
+  },
+  {
+   "beat": "hook",
+   "text": "que",
+   "start": 3.08,
+   "end": 3.24
+  },
+  {
+   "beat": "hook",
+   "text": "rien",
+   "start": 3.24,
+   "end": 3.44
+  },
+  {
+   "beat": "hook",
+   "text": "ne",
+   "start": 3.44,
+   "end": 3.6
+  },
+  {
+   "beat": "hook",
+   "text": "s'effondre.",
+   "start": 3.6,
+   "end": 4.0
+  },
+  {
+   "beat": "wheel",
+   "text": "À",
+   "start": 6.2,
+   "end": 6.28
+  },
+  {
+   "beat": "wheel",
+   "text": "l'avant,",
+   "start": 6.28,
+   "end": 7.16
+  },
+  {
+   "beat": "wheel",
+   "text": "une",
+   "start": 7.16,
+   "end": 7.52
+  },
+  {
+   "beat": "wheel",
+   "text": "roue",
+   "start": 7.52,
+   "end": 7.96
+  },
+  {
+   "beat": "wheel",
+   "text": "géante",
+   "start": 7.96,
+   "end": 8.54
+  },
+  {
+   "beat": "wheel",
+   "text": "tourne",
+   "start": 8.54,
+   "end": 8.92
+  },
+  {
+   "beat": "wheel",
+   "text": "lentement.",
+   "start": 8.92,
+   "end": 9.36
+  },
+  {
+   "beat": "wheel",
+   "text": "Ses",
+   "start": 9.36,
+   "end": 9.927
+  },
+  {
+   "beat": "wheel",
+   "text": "molettes",
+   "start": 9.927,
+   "end": 10.493
+  },
+  {
+   "beat": "wheel",
+   "text": "broient",
+   "start": 10.493,
+   "end": 11.06
+  },
+  {
+   "beat": "wheel",
+   "text": "la",
+   "start": 11.06,
+   "end": 11.16
+  },
+  {
+   "beat": "wheel",
+   "text": "roche.",
+   "start": 11.16,
+   "end": 11.52
+  },
+  {
+   "beat": "pressure",
+   "text": "Derrière",
+   "start": 13.0,
+   "end": 13.24
+  },
+  {
+   "beat": "pressure",
+   "text": "la",
+   "start": 13.24,
+   "end": 13.38
+  },
+  {
+   "beat": "pressure",
+   "text": "roue,",
+   "start": 13.38,
+   "end": 14.28
+  },
+  {
+   "beat": "pressure",
+   "text": "la",
+   "start": 14.28,
+   "end": 14.46
+  },
+  {
+   "beat": "pressure",
+   "text": "terre",
+   "start": 14.46,
+   "end": 14.64
+  },
+  {
+   "beat": "pressure",
+   "text": "broyée",
+   "start": 14.64,
+   "end": 15.0
+  },
+  {
+   "beat": "pressure",
+   "text": "reste",
+   "start": 15.0,
+   "end": 15.24
+  },
+  {
+   "beat": "pressure",
+   "text": "sous",
+   "start": 15.24,
+   "end": 15.46
+  },
+  {
+   "beat": "pressure",
+   "text": "pression.",
+   "start": 15.46,
+   "end": 15.92
+  },
+  {
+   "beat": "pressure",
+   "text": "Elle",
+   "start": 16.24,
+   "end": 16.7
+  },
+  {
+   "beat": "pressure",
+   "text": "retient",
+   "start": 16.7,
+   "end": 17.06
+  },
+  {
+   "beat": "pressure",
+   "text": "le",
+   "start": 17.06,
+   "end": 17.16
+  },
+  {
+   "beat": "pressure",
+   "text": "sol,",
+   "start": 17.16,
+   "end": 17.44
+  },
+  {
+   "beat": "pressure",
+   "text": "comme",
+   "start": 17.44,
+   "end": 18.24
+  },
+  {
+   "beat": "pressure",
+   "text": "un",
+   "start": 18.24,
+   "end": 18.38
+  },
+  {
+   "beat": "pressure",
+   "text": "bouchon.",
+   "start": 18.38,
+   "end": 18.7
+  },
+  {
+   "beat": "screw",
+   "text": "Une",
+   "start": 21.2,
+   "end": 21.32
+  },
+  {
+   "beat": "screw",
+   "text": "vis",
+   "start": 21.32,
+   "end": 21.5
+  },
+  {
+   "beat": "screw",
+   "text": "sans",
+   "start": 21.5,
+   "end": 21.8
+  },
+  {
+   "beat": "screw",
+   "text": "fin",
+   "start": 21.8,
+   "end": 22.12
+  },
+  {
+   "beat": "screw",
+   "text": "évacue",
+   "start": 22.12,
+   "end": 23.12
+  },
+  {
+   "beat": "screw",
+   "text": "les",
+   "start": 23.12,
+   "end": 23.24
+  },
+  {
+   "beat": "screw",
+   "text": "déblais",
+   "start": 23.24,
+   "end": 23.58
+  },
+  {
+   "beat": "screw",
+   "text": "vers",
+   "start": 23.58,
+   "end": 23.74
+  },
+  {
+   "beat": "screw",
+   "text": "l'arrière,",
+   "start": 23.74,
+   "end": 24.48
+  },
+  {
+   "beat": "screw",
+   "text": "sur",
+   "start": 24.48,
+   "end": 24.96
+  },
+  {
+   "beat": "screw",
+   "text": "un",
+   "start": 24.96,
+   "end": 25.14
+  },
+  {
+   "beat": "screw",
+   "text": "tapis",
+   "start": 25.14,
+   "end": 25.54
+  },
+  {
+   "beat": "screw",
+   "text": "roulant.",
+   "start": 25.54,
+   "end": 26.58
+  },
+  {
+   "beat": "thrust",
+   "text": "Des",
+   "start": 27.2,
+   "end": 27.3
+  },
+  {
+   "beat": "thrust",
+   "text": "vérins",
+   "start": 27.3,
+   "end": 27.68
+  },
+  {
+   "beat": "thrust",
+   "text": "poussent",
+   "start": 27.68,
+   "end": 28.7
+  },
+  {
+   "beat": "thrust",
+   "text": "la",
+   "start": 28.7,
+   "end": 28.82
+  },
+  {
+   "beat": "thrust",
+   "text": "machine",
+   "start": 28.82,
+   "end": 29.34
+  },
+  {
+   "beat": "thrust",
+   "text": "en",
+   "start": 29.34,
+   "end": 30.26
+  },
+  {
+   "beat": "thrust",
+   "text": "prenant",
+   "start": 30.26,
+   "end": 30.5
+  },
+  {
+   "beat": "thrust",
+   "text": "appui",
+   "start": 30.5,
+   "end": 30.82
+  },
+  {
+   "beat": "thrust",
+   "text": "sur",
+   "start": 30.82,
+   "end": 31.0
+  },
+  {
+   "beat": "thrust",
+   "text": "le",
+   "start": 31.0,
+   "end": 31.12
+  },
+  {
+   "beat": "thrust",
+   "text": "tunnel",
+   "start": 31.12,
+   "end": 31.38
+  },
+  {
+   "beat": "thrust",
+   "text": "déjà",
+   "start": 31.38,
+   "end": 31.8
+  },
+  {
+   "beat": "thrust",
+   "text": "construit.",
+   "start": 31.8,
+   "end": 32.42
+  },
+  {
+   "beat": "ring",
+   "text": "Puis",
+   "start": 34.0,
+   "end": 34.08
+  },
+  {
+   "beat": "ring",
+   "text": "un",
+   "start": 34.08,
+   "end": 34.28
+  },
+  {
+   "beat": "ring",
+   "text": "bras",
+   "start": 34.28,
+   "end": 34.42
+  },
+  {
+   "beat": "ring",
+   "text": "robotisé",
+   "start": 34.42,
+   "end": 35.08
+  },
+  {
+   "beat": "ring",
+   "text": "pose",
+   "start": 35.5,
+   "end": 35.94
+  },
+  {
+   "beat": "ring",
+   "text": "un",
+   "start": 35.94,
+   "end": 36.12
+  },
+  {
+   "beat": "ring",
+   "text": "anneau",
+   "start": 36.12,
+   "end": 36.38
+  },
+  {
+   "beat": "ring",
+   "text": "de",
+   "start": 36.38,
+   "end": 36.46
+  },
+  {
+   "beat": "ring",
+   "text": "voussoirs",
+   "start": 36.46,
+   "end": 36.94
+  },
+  {
+   "beat": "ring",
+   "text": "en",
+   "start": 36.94,
+   "end": 37.06
+  },
+  {
+   "beat": "ring",
+   "text": "béton.",
+   "start": 37.06,
+   "end": 37.42
+  },
+  {
+   "beat": "ring",
+   "text": "Et",
+   "start": 37.42,
+   "end": 38.24
+  },
+  {
+   "beat": "ring",
+   "text": "on",
+   "start": 38.24,
+   "end": 38.36
+  },
+  {
+   "beat": "ring",
+   "text": "recommence.",
+   "start": 38.36,
+   "end": 38.98
+  },
+  {
+   "beat": "end",
+   "text": "Combien",
+   "start": 41.2,
+   "end": 41.44
+  },
+  {
+   "beat": "end",
+   "text": "de",
+   "start": 41.44,
+   "end": 41.52
+  },
+  {
+   "beat": "end",
+   "text": "mètres",
+   "start": 41.52,
+   "end": 41.89
+  },
+  {
+   "beat": "end",
+   "text": "creuse-t-il",
+   "start": 41.89,
+   "end": 42.26
+  },
+  {
+   "beat": "end",
+   "text": "par",
+   "start": 42.26,
+   "end": 42.42
+  },
+  {
+   "beat": "end",
+   "text": "jour,",
+   "start": 42.42,
+   "end": 42.76
+  },
+  {
+   "beat": "end",
+   "text": "à",
+   "start": 43.36,
+   "end": 43.62
+  },
+  {
+   "beat": "end",
+   "text": "ton",
+   "start": 43.62,
+   "end": 43.72
+  },
+  {
+   "beat": "end",
+   "text": "avis",
+   "start": 43.72,
+   "end": 43.94
+  },
+  {
+   "beat": "end",
+   "text": "?",
+   "start": 43.94,
+   "end": 43.94
+  }
+ ]
+}

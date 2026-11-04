@@ -1,0 +1,12 @@
+{
+  "duration": 45,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 5.6], "text": "Une machine de cent mètres creuse sous la ville, sans que rien ne s'effondre.", "source": "Tunneliers du Grand Paris Express : environ 100 m de long, diamètre ≈ 9,8 m (Société des grands projets)"},
+    {"id": "wheel", "slot": [6.2, 12.4], "text": "À l'avant, une roue géante tourne lentement. Ses molettes broient la roche.", "source": "Roue de coupe équipée de molettes et de couteaux, quelques tours par minute"},
+    {"id": "pressure", "slot": [13.0, 20.6], "text": "Derrière la roue, la terre broyée reste sous pression. Elle retient le sol, comme un bouchon.", "source": "Tunnelier à pression de terre : la chambre d'abattage maintient une pression qui équilibre celle du terrain et de la nappe"},
+    {"id": "screw", "slot": [21.2, 26.6], "text": "Une vis sans fin évacue les déblais vers l'arrière, sur un tapis roulant.", "source": "Vis d'extraction puis convoyeur à bande vers le puits"},
+    {"id": "thrust", "slot": [27.2, 33.4], "text": "Des vérins poussent la machine en prenant appui sur le tunnel déjà construit.", "source": "Vérins de poussée appuyés sur le dernier anneau posé"},
+    {"id": "ring", "slot": [34.0, 40.6], "text": "Puis un bras robotisé pose un anneau de voussoirs en béton. Et on recommence.", "source": "Érecteur : pose des voussoirs préfabriqués, un anneau par cycle d'avancement"},
+    {"id": "end", "slot": [41.2, 44.7], "text": "Combien de mètres creuse-t-il par jour, à ton avis ?", "source": "Réponse : une dizaine de mètres par jour en moyenne (Grand Paris Express)"}
+  ]
+}

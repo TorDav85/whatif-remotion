@@ -3,3 +3,4 @@ export * from './Bird';
 export * from './PowerLine';
 export * from './Airliner';
 export * from './Airfoil';
+export * from './Tbm';

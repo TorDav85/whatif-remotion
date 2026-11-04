@@ -14,6 +14,7 @@ import {Scene3D as MarcSalaire3} from '../videos/marc-salaire-3/Scene3D';
 import {Scene3D as MarcSoif} from '../videos/marc-soif/Scene3D';
 import {Scene3D as OiseauHauteTension} from '../videos/oiseau-haute-tension/Scene3D';
 import {Scene3D as AvionPortance} from '../videos/avion-portance/Scene3D';
+import {Scene3D as Tunnelier} from '../videos/tunnelier/Scene3D';
 import {checkTitle} from '../core/publication-names.mjs';
 import {SAFE} from '../shared/ui/PlatformSafeArea';
 
@@ -34,6 +35,7 @@ const SCENES: Record<string, {Scene: React.FC<{t: number}>; logDepth?: boolean; 
   'marc-soif': {Scene: MarcSoif},
   'oiseau-haute-tension': {Scene: ({t}) => <OiseauHauteTension t={t} frame={Math.round(t * 30)} />, flat: true},
   'avion-portance': {Scene: ({t}) => <AvionPortance t={t} frame={Math.round(t * 30)} />, flat: true},
+  'tunnelier': {Scene: ({t}) => <Tunnelier t={t} frame={Math.round(t * 30)} />, flat: true},
 };
 export const COVER_SLUGS = Object.keys(SCENES);
 

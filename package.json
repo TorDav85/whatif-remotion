@@ -46,6 +46,8 @@
     "captions": "node scripts/audio/python.mjs scripts/audio/captions.py",
     "editorial": "node scripts/check/editorial-report.mjs",
     "audio:levels": "node scripts/audio/python.mjs scripts/check/audio-levels.py",
+    "voice:tunnelier": "node scripts/audio/python.mjs scripts/audio/tunnelier.py --voice morpheus && node scripts/audio/python.mjs scripts/audio/captions.py tunnelier",
+    "render:tunnelier": "remotion render Tunnelier out/tunnelier/tunnelier-45s.mp4 --codec=h264 --concurrency=2 --audio-codec=aac --audio-bitrate=192k",
     "voice:avion-portance": "node scripts/audio/python.mjs scripts/audio/avion-portance.py --voice morpheus && node scripts/audio/python.mjs scripts/audio/captions.py avion-portance",
     "render:avion-portance": "remotion render AvionPortance out/avion-portance/avion-portance-45s.mp4 --codec=h264 --concurrency=2 --audio-codec=aac --audio-bitrate=192k",
     "voice:oiseau-haute-tension": "node scripts/audio/python.mjs scripts/audio/oiseau-haute-tension.py --voice morpheus && node scripts/audio/python.mjs scripts/audio/captions.py oiseau-haute-tension",

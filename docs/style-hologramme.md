@@ -2,7 +2,7 @@
 
 Style d'explication scientifique : fond noir, grille cyan en perspective, objets en fil de fer émissif
 avec un corps translucide « rayons X », courant en impulsions lumineuses, arcs électriques, HUD monospace.
-Vidéos : `src/videos/oiseau-haute-tension/` (`OiseauHauteTension`, 45 s) et `src/videos/avion-portance/` (`AvionPortance`, 45 s).
+Vidéos : `src/videos/oiseau-haute-tension/` (`OiseauHauteTension`, 45 s) `src/videos/avion-portance/` (`AvionPortance`, 45 s) et `src/videos/tunnelier/` (`Tunnelier`, 45 s).
 Planche du kit : composition `HoloKit` (dossier Bibliotheque du Studio).
 
 ## Le kit `src/shared/holo/`
@@ -20,7 +20,8 @@ Planche du kit : composition `HoloKit` (dossier Bibliotheque du Studio).
 Assets du style : `src/assets/holo/` — `Bird` (ailes articulées, `birdWingTip` pour un contact exact),
 `PowerLine` (pylônes treillis, isolateurs, trois conducteurs, `conductorY` pour poser un objet sur un câble),
 `Airliner` (gros-porteur quadriréacteur, origine sous le train principal pour la rotation au décollage),
-`Airfoil` (profil NACA, `streamline` : lignes de courant illustratives, `AirfoilSection`).
+`Airfoil` (profil NACA, `streamline` : lignes de courant illustratives, `AirfoilSection`),
+`Tbm` (tunnelier à pression de terre : roue de coupe, vis, vérins, érecteur, train suiveur ; `TunnelLining` en voussoirs).
 
 ## Nouvelle vidéo dans ce style
 
