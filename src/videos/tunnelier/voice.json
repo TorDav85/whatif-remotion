@@ -1,0 +1,83 @@
+{
+  "voice": "morpheus",
+  "ambience": "tunnelier/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Une machine de cent mètres creuse sous la ville, sans que rien ne s'effondre.",
+      "start": 0.2,
+      "duration": 3.8219,
+      "end": 4.0219,
+      "speed": 1.0,
+      "seed": 33000,
+      "audio": "tunnelier/hook.wav",
+      "sha256": "bc42169e9248ee87d241b13de8c58cbe7a5629208a213ec3592a9e345fe80601"
+    },
+    {
+      "id": "wheel",
+      "text": "À l'avant, une roue géante tourne lentement. Ses molettes broient la roche.",
+      "start": 6.2,
+      "duration": 5.3563,
+      "end": 11.5563,
+      "speed": 1.0,
+      "seed": 33001,
+      "audio": "tunnelier/wheel.wav",
+      "sha256": "a6eb7bb0e371d2a387e920b984cd579b06fc66b6c7773118b71c7a3d0be1d0c2"
+    },
+    {
+      "id": "pressure",
+      "text": "Derrière la roue, la terre broyée reste sous pression. Elle retient le sol, comme un bouchon.",
+      "start": 13.0,
+      "duration": 5.733,
+      "end": 18.733,
+      "speed": 1.0,
+      "seed": 33002,
+      "audio": "tunnelier/pressure.wav",
+      "sha256": "d66a47c26341bcbc1ec9135811bd4c38416f3b39c84268fafc2e48e265eadf53"
+    },
+    {
+      "id": "screw",
+      "text": "Une vis sans fin évacue les déblais vers l'arrière, sur un tapis roulant.",
+      "start": 21.2,
+      "duration": 5.4106,
+      "end": 26.6106,
+      "speed": 1.0652,
+      "seed": 33003,
+      "audio": "tunnelier/screw.wav",
+      "sha256": "aca6f66a7ac42ce304ab8f902fdb2f3d75b64b6f4c7ae57373f2f4026d623c7e"
+    },
+    {
+      "id": "thrust",
+      "text": "Des vérins poussent la machine en prenant appui sur le tunnel déjà construit.",
+      "start": 27.2,
+      "duration": 5.9683,
+      "end": 33.1683,
+      "speed": 1.0,
+      "seed": 33004,
+      "audio": "tunnelier/thrust.wav",
+      "sha256": "7eae7af32b777aae648786387380a39fd1d00b8fa10c7ff90e3078a9f454e435"
+    },
+    {
+      "id": "ring",
+      "text": "Puis un bras robotisé pose un anneau de voussoirs en béton. Et on recommence.",
+      "start": 34.0,
+      "duration": 5.0154,
+      "end": 39.0154,
+      "speed": 1.0,
+      "seed": 33005,
+      "audio": "tunnelier/ring.wav",
+      "sha256": "ab8cffd91ef16083a99059aecdd9278ced0bb5682cd19b343d87a380fbd02fe0"
+    },
+    {
+      "id": "end",
+      "text": "Combien de mètres creuse-t-il par jour, à ton avis ?",
+      "start": 41.2,
+      "duration": 3.5037,
+      "end": 44.7037,
+      "speed": 1.0894,
+      "seed": 33006,
+      "audio": "tunnelier/end.wav",
+      "sha256": "7088d47899f3d681c3fc8cb9b747e06c1da7b426e636fad919e445aab3acdbeb"
+    }
+  ]
+}

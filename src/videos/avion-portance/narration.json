@@ -1,0 +1,12 @@
+{
+  "duration": 45,
+  "beats": [
+    {"id": "hook", "slot": [0.2,5.6], "text": "Cinq cent soixante-quinze tonnes. Et pourtant, cet avion tient dans le ciel.", "source": "Airbus A380-800 : masse maximale au décollage 575 t (fiche Airbus)"},
+    {"id": "weight", "slot": [6.2,12.6], "text": "Son poids le tire vers le bas. Il faut une force égale vers le haut : la portance.", "source": "Vol en palier : portance = poids ; 575 t × 9,81 m/s² ≈ 5,6 MN"},
+    {"id": "wing", "slot": [13.2,21.8], "seed": 32101, "text": "Son aile est bombée et inclinée. Elle pousse l'air vers le bas, et l'air la pousse vers le haut.", "source": "Portance : déviation de l'écoulement vers le bas (3e loi de Newton) et dépression sur l'extrados (NASA Glenn, « What is Lift? »)"},
+    {"id": "speed", "slot": [22.4,28.8], "text": "Tout dépend de la vitesse : deux fois plus vite, quatre fois plus de portance.", "source": "Portance L = ½ ρ v² S C_L : proportionnelle au carré de la vitesse"},
+    {"id": "stall", "slot": [29.4,33.6], "seed": 32202, "text": "Trop lent ? La portance s'effondre : c'est le décrochage.", "source": "Décrochage : au-delà de l'incidence critique, l'écoulement décolle de l'extrados et la portance chute"},
+    {"id": "rule", "slot": [34.2,40.6], "text": "La règle : avec assez de vitesse, chaque mètre carré d'aile porte près de sept cents kilos.", "source": "Charge alaire A380 : 575 000 kg / 845 m² ≈ 680 kg/m²"},
+    {"id": "end", "slot": [41.2,44.7], "text": "Et là-haut, où l'air est trois fois plus léger ?", "source": "Atmosphère standard : ρ ≈ 0,36 kg/m³ à 11 000 m contre 1,225 au sol (≈ 1/3)"}
+  ]
+}

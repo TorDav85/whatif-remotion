@@ -1,0 +1,802 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.2,
+   "end": 1.08,
+   "text": "Vingt mille volts sous ses",
+   "beat": "hook"
+  },
+  {
+   "start": 1.08,
+   "end": 2.18,
+   "text": "pattes.",
+   "beat": "hook"
+  },
+  {
+   "start": 2.18,
+   "end": 2.6,
+   "text": "Et pourtant,",
+   "beat": "hook"
+  },
+  {
+   "start": 3.34,
+   "end": 4.46,
+   "text": "cet oiseau ne sent rien.",
+   "beat": "hook"
+  },
+  {
+   "start": 6.2,
+   "end": 7.14,
+   "text": "Le courant file dans le",
+   "beat": "flow"
+  },
+  {
+   "start": 7.14,
+   "end": 7.58,
+   "text": "câble.",
+   "beat": "flow"
+  },
+  {
+   "start": 7.98,
+   "end": 9.14,
+   "text": "Il prend le chemin qui",
+   "beat": "flow"
+  },
+  {
+   "start": 9.14,
+   "end": 9.98,
+   "text": "lui résiste le moins.",
+   "beat": "flow"
+  },
+  {
+   "start": 12.2,
+   "end": 13.1,
+   "text": "Ses deux pattes touchent",
+   "beat": "feet"
+  },
+  {
+   "start": 13.1,
+   "end": 13.52,
+   "text": "le même fil,",
+   "beat": "feet"
+  },
+  {
+   "start": 14.16,
+   "end": 15.14,
+   "text": "au même potentiel.",
+   "beat": "feet"
+  },
+  {
+   "start": 15.64,
+   "end": 16.4,
+   "text": "Aucune différence,",
+   "beat": "feet"
+  },
+  {
+   "start": 17.16,
+   "end": 17.68,
+   "text": "aucun courant.",
+   "beat": "feet"
+  },
+  {
+   "start": 18.4,
+   "end": 19.44,
+   "text": "Et si son aile touchait",
+   "beat": "contact"
+  },
+  {
+   "start": 19.44,
+   "end": 20.08,
+   "text": "le pylône,",
+   "beat": "contact"
+  },
+  {
+   "start": 20.54,
+   "end": 21.68,
+   "text": "relié à la terre ?",
+   "beat": "contact"
+  },
+  {
+   "start": 24.2,
+   "end": 25.92,
+   "text": "Onze mille volts d'écart.",
+   "beat": "arc"
+  },
+  {
+   "start": 25.92,
+   "end": 27.04,
+   "text": "Le courant traverse son",
+   "beat": "arc"
+  },
+  {
+   "start": 27.04,
+   "end": 27.46,
+   "text": "corps.",
+   "beat": "arc"
+  },
+  {
+   "start": 27.46,
+   "end": 28.86,
+   "text": "C'est ce qui tue les",
+   "beat": "arc"
+  },
+  {
+   "start": 28.86,
+   "end": 30.78,
+   "text": "cigognes et les rapaces.",
+   "beat": "arc"
+  },
+  {
+   "start": 32.4,
+   "end": 33.56,
+   "text": "La règle :",
+   "beat": "rule"
+  },
+  {
+   "start": 33.56,
+   "end": 34.72,
+   "text": "le courant ne traverse un",
+   "beat": "rule"
+  },
+  {
+   "start": 34.72,
+   "end": 35.84,
+   "text": "corps que s'il relie deux",
+   "beat": "rule"
+  },
+  {
+   "start": 35.84,
+   "end": 36.76,
+   "text": "potentiels différents.",
+   "beat": "rule"
+  },
+  {
+   "start": 37.48,
+   "end": 38.28,
+   "text": "Sur un seul fil,",
+   "beat": "rule"
+  },
+  {
+   "start": 38.82,
+   "end": 39.46,
+   "text": "rien ne passe.",
+   "beat": "rule"
+  },
+  {
+   "start": 41.2,
+   "end": 42.44,
+   "text": "Et l'écureuil,",
+   "beat": "end"
+  },
+  {
+   "start": 42.44,
+   "end": 43.66,
+   "text": "pourquoi fait-il sauter le",
+   "beat": "end"
+  },
+  {
+   "start": 43.66,
+   "end": 43.92,
+   "text": "courant ?",
+   "beat": "end"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "Vingt",
+   "start": 0.2,
+   "end": 0.42
+  },
+  {
+   "beat": "hook",
+   "text": "mille",
+   "start": 0.42,
+   "end": 0.64
+  },
+  {
+   "beat": "hook",
+   "text": "volts",
+   "start": 0.64,
+   "end": 0.86
+  },
+  {
+   "beat": "hook",
+   "text": "sous",
+   "start": 0.86,
+   "end": 0.94
+  },
+  {
+   "beat": "hook",
+   "text": "ses",
+   "start": 0.94,
+   "end": 1.08
+  },
+  {
+   "beat": "hook",
+   "text": "pattes.",
+   "start": 1.08,
+   "end": 2.18
+  },
+  {
+   "beat": "hook",
+   "text": "Et",
+   "start": 2.18,
+   "end": 2.28
+  },
+  {
+   "beat": "hook",
+   "text": "pourtant,",
+   "start": 2.28,
+   "end": 2.6
+  },
+  {
+   "beat": "hook",
+   "text": "cet",
+   "start": 3.34,
+   "end": 3.64
+  },
+  {
+   "beat": "hook",
+   "text": "oiseau",
+   "start": 3.64,
+   "end": 3.98
+  },
+  {
+   "beat": "hook",
+   "text": "ne",
+   "start": 3.98,
+   "end": 4.06
+  },
+  {
+   "beat": "hook",
+   "text": "sent",
+   "start": 4.06,
+   "end": 4.2
+  },
+  {
+   "beat": "hook",
+   "text": "rien.",
+   "start": 4.2,
+   "end": 4.46
+  },
+  {
+   "beat": "flow",
+   "text": "Le",
+   "start": 6.2,
+   "end": 6.28
+  },
+  {
+   "beat": "flow",
+   "text": "courant",
+   "start": 6.28,
+   "end": 6.64
+  },
+  {
+   "beat": "flow",
+   "text": "file",
+   "start": 6.64,
+   "end": 6.88
+  },
+  {
+   "beat": "flow",
+   "text": "dans",
+   "start": 6.88,
+   "end": 7.04
+  },
+  {
+   "beat": "flow",
+   "text": "le",
+   "start": 7.04,
+   "end": 7.14
+  },
+  {
+   "beat": "flow",
+   "text": "câble.",
+   "start": 7.14,
+   "end": 7.58
+  },
+  {
+   "beat": "flow",
+   "text": "Il",
+   "start": 7.98,
+   "end": 8.4
+  },
+  {
+   "beat": "flow",
+   "text": "prend",
+   "start": 8.4,
+   "end": 8.62
+  },
+  {
+   "beat": "flow",
+   "text": "le",
+   "start": 8.62,
+   "end": 8.74
+  },
+  {
+   "beat": "flow",
+   "text": "chemin",
+   "start": 8.74,
+   "end": 8.96
+  },
+  {
+   "beat": "flow",
+   "text": "qui",
+   "start": 8.96,
+   "end": 9.14
+  },
+  {
+   "beat": "flow",
+   "text": "lui",
+   "start": 9.14,
+   "end": 9.26
+  },
+  {
+   "beat": "flow",
+   "text": "résiste",
+   "start": 9.26,
+   "end": 9.64
+  },
+  {
+   "beat": "flow",
+   "text": "le",
+   "start": 9.64,
+   "end": 9.78
+  },
+  {
+   "beat": "flow",
+   "text": "moins.",
+   "start": 9.78,
+   "end": 9.98
+  },
+  {
+   "beat": "feet",
+   "text": "Ses",
+   "start": 12.2,
+   "end": 12.32
+  },
+  {
+   "beat": "feet",
+   "text": "deux",
+   "start": 12.32,
+   "end": 12.46
+  },
+  {
+   "beat": "feet",
+   "text": "pattes",
+   "start": 12.46,
+   "end": 12.86
+  },
+  {
+   "beat": "feet",
+   "text": "touchent",
+   "start": 12.86,
+   "end": 13.1
+  },
+  {
+   "beat": "feet",
+   "text": "le",
+   "start": 13.1,
+   "end": 13.12
+  },
+  {
+   "beat": "feet",
+   "text": "même",
+   "start": 13.12,
+   "end": 13.22
+  },
+  {
+   "beat": "feet",
+   "text": "fil,",
+   "start": 13.22,
+   "end": 13.52
+  },
+  {
+   "beat": "feet",
+   "text": "au",
+   "start": 14.16,
+   "end": 14.4
+  },
+  {
+   "beat": "feet",
+   "text": "même",
+   "start": 14.4,
+   "end": 14.5
+  },
+  {
+   "beat": "feet",
+   "text": "potentiel.",
+   "start": 14.5,
+   "end": 15.14
+  },
+  {
+   "beat": "feet",
+   "text": "Aucune",
+   "start": 15.64,
+   "end": 15.94
+  },
+  {
+   "beat": "feet",
+   "text": "différence,",
+   "start": 15.94,
+   "end": 16.4
+  },
+  {
+   "beat": "feet",
+   "text": "aucun",
+   "start": 17.16,
+   "end": 17.36
+  },
+  {
+   "beat": "feet",
+   "text": "courant.",
+   "start": 17.36,
+   "end": 17.68
+  },
+  {
+   "beat": "contact",
+   "text": "Et",
+   "start": 18.4,
+   "end": 18.48
+  },
+  {
+   "beat": "contact",
+   "text": "si",
+   "start": 18.48,
+   "end": 18.62
+  },
+  {
+   "beat": "contact",
+   "text": "son",
+   "start": 18.62,
+   "end": 18.82
+  },
+  {
+   "beat": "contact",
+   "text": "aile",
+   "start": 18.82,
+   "end": 19.06
+  },
+  {
+   "beat": "contact",
+   "text": "touchait",
+   "start": 19.06,
+   "end": 19.44
+  },
+  {
+   "beat": "contact",
+   "text": "le",
+   "start": 19.44,
+   "end": 19.52
+  },
+  {
+   "beat": "contact",
+   "text": "pylône,",
+   "start": 19.52,
+   "end": 20.08
+  },
+  {
+   "beat": "contact",
+   "text": "relié",
+   "start": 20.54,
+   "end": 21.24
+  },
+  {
+   "beat": "contact",
+   "text": "à",
+   "start": 21.24,
+   "end": 21.32
+  },
+  {
+   "beat": "contact",
+   "text": "la",
+   "start": 21.32,
+   "end": 21.42
+  },
+  {
+   "beat": "contact",
+   "text": "terre",
+   "start": 21.42,
+   "end": 21.68
+  },
+  {
+   "beat": "contact",
+   "text": "?",
+   "start": 21.68,
+   "end": 21.68
+  },
+  {
+   "beat": "arc",
+   "text": "Onze",
+   "start": 24.2,
+   "end": 24.42
+  },
+  {
+   "beat": "arc",
+   "text": "mille",
+   "start": 24.42,
+   "end": 24.62
+  },
+  {
+   "beat": "arc",
+   "text": "volts",
+   "start": 24.62,
+   "end": 25.27
+  },
+  {
+   "beat": "arc",
+   "text": "d'écart.",
+   "start": 25.27,
+   "end": 25.92
+  },
+  {
+   "beat": "arc",
+   "text": "Le",
+   "start": 25.92,
+   "end": 26.22
+  },
+  {
+   "beat": "arc",
+   "text": "courant",
+   "start": 26.22,
+   "end": 26.48
+  },
+  {
+   "beat": "arc",
+   "text": "traverse",
+   "start": 26.48,
+   "end": 26.74
+  },
+  {
+   "beat": "arc",
+   "text": "son",
+   "start": 26.74,
+   "end": 27.04
+  },
+  {
+   "beat": "arc",
+   "text": "corps.",
+   "start": 27.04,
+   "end": 27.46
+  },
+  {
+   "beat": "arc",
+   "text": "C'est",
+   "start": 27.46,
+   "end": 28.34
+  },
+  {
+   "beat": "arc",
+   "text": "ce",
+   "start": 28.34,
+   "end": 28.42
+  },
+  {
+   "beat": "arc",
+   "text": "qui",
+   "start": 28.42,
+   "end": 28.56
+  },
+  {
+   "beat": "arc",
+   "text": "tue",
+   "start": 28.56,
+   "end": 28.74
+  },
+  {
+   "beat": "arc",
+   "text": "les",
+   "start": 28.74,
+   "end": 28.86
+  },
+  {
+   "beat": "arc",
+   "text": "cigognes",
+   "start": 28.86,
+   "end": 30.12
+  },
+  {
+   "beat": "arc",
+   "text": "et",
+   "start": 30.12,
+   "end": 30.22
+  },
+  {
+   "beat": "arc",
+   "text": "les",
+   "start": 30.22,
+   "end": 30.34
+  },
+  {
+   "beat": "arc",
+   "text": "rapaces.",
+   "start": 30.34,
+   "end": 30.78
+  },
+  {
+   "beat": "rule",
+   "text": "La",
+   "start": 32.4,
+   "end": 32.5
+  },
+  {
+   "beat": "rule",
+   "text": "règle",
+   "start": 32.5,
+   "end": 32.86
+  },
+  {
+   "beat": "rule",
+   "text": ":",
+   "start": 32.86,
+   "end": 33.56
+  },
+  {
+   "beat": "rule",
+   "text": "le",
+   "start": 33.56,
+   "end": 33.8
+  },
+  {
+   "beat": "rule",
+   "text": "courant",
+   "start": 33.8,
+   "end": 34.1
+  },
+  {
+   "beat": "rule",
+   "text": "ne",
+   "start": 34.1,
+   "end": 34.2
+  },
+  {
+   "beat": "rule",
+   "text": "traverse",
+   "start": 34.2,
+   "end": 34.4
+  },
+  {
+   "beat": "rule",
+   "text": "un",
+   "start": 34.4,
+   "end": 34.72
+  },
+  {
+   "beat": "rule",
+   "text": "corps",
+   "start": 34.72,
+   "end": 35.06
+  },
+  {
+   "beat": "rule",
+   "text": "que",
+   "start": 35.06,
+   "end": 35.22
+  },
+  {
+   "beat": "rule",
+   "text": "s'il",
+   "start": 35.22,
+   "end": 35.46
+  },
+  {
+   "beat": "rule",
+   "text": "relie",
+   "start": 35.46,
+   "end": 35.7
+  },
+  {
+   "beat": "rule",
+   "text": "deux",
+   "start": 35.7,
+   "end": 35.84
+  },
+  {
+   "beat": "rule",
+   "text": "potentiels",
+   "start": 35.84,
+   "end": 36.38
+  },
+  {
+   "beat": "rule",
+   "text": "différents.",
+   "start": 36.38,
+   "end": 36.76
+  },
+  {
+   "beat": "rule",
+   "text": "Sur",
+   "start": 37.48,
+   "end": 37.72
+  },
+  {
+   "beat": "rule",
+   "text": "un",
+   "start": 37.72,
+   "end": 37.84
+  },
+  {
+   "beat": "rule",
+   "text": "seul",
+   "start": 37.84,
+   "end": 37.98
+  },
+  {
+   "beat": "rule",
+   "text": "fil,",
+   "start": 37.98,
+   "end": 38.28
+  },
+  {
+   "beat": "rule",
+   "text": "rien",
+   "start": 38.82,
+   "end": 39.04
+  },
+  {
+   "beat": "rule",
+   "text": "ne",
+   "start": 39.04,
+   "end": 39.22
+  },
+  {
+   "beat": "rule",
+   "text": "passe.",
+   "start": 39.22,
+   "end": 39.46
+  },
+  {
+   "beat": "end",
+   "text": "Et",
+   "start": 41.2,
+   "end": 41.28
+  },
+  {
+   "beat": "end",
+   "text": "l'écureuil,",
+   "start": 41.28,
+   "end": 42.44
+  },
+  {
+   "beat": "end",
+   "text": "pourquoi",
+   "start": 42.44,
+   "end": 42.9
+  },
+  {
+   "beat": "end",
+   "text": "fait-il",
+   "start": 42.9,
+   "end": 43.28
+  },
+  {
+   "beat": "end",
+   "text": "sauter",
+   "start": 43.28,
+   "end": 43.58
+  },
+  {
+   "beat": "end",
+   "text": "le",
+   "start": 43.58,
+   "end": 43.66
+  },
+  {
+   "beat": "end",
+   "text": "courant",
+   "start": 43.66,
+   "end": 43.92
+  },
+  {
+   "beat": "end",
+   "text": "?",
+   "start": 43.92,
+   "end": 43.92
+  }
+ ]
+}

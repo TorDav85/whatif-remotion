@@ -17,11 +17,15 @@ import {Scene3D as MarcSalaire} from '../videos/marc-salaire/Scene3D';
 import {Scene3D as MarcSalaire2} from '../videos/marc-salaire-2/Scene3D';
 import {Scene3D as MarcSalaire3} from '../videos/marc-salaire-3/Scene3D';
 import {Scene3D as MarcSoif} from '../videos/marc-soif/Scene3D';
+import {Scene3D as OiseauHauteTension} from '../videos/oiseau-haute-tension/Scene3D';
+import {Scene3D as AvionPortance} from '../videos/avion-portance/Scene3D';
+import {Scene3D as Tunnelier} from '../videos/tunnelier/Scene3D';
 import {checkTitle} from '../core/publication-names.mjs';
 import {SAFE} from '../shared/ui/PlatformSafeArea';
 
 /** 3D scene of each video (time in seconds of the original film), without captions or HUD. */
-const SCENES: Record<string, {Scene: React.FC<{t: number}>; logDepth?: boolean; shadows?: boolean}> = {
+/** `flat`: no tone mapping (neon colours of the holo style). */
+const SCENES: Record<string, {Scene: React.FC<{t: number}>; logDepth?: boolean; shadows?: boolean; flat?: boolean}> = {
   'bombe-nucleaire': {Scene: BombeNucleaire, shadows: true, logDepth: true},
   'asteroide-paris': {Scene: AsteroideParis},
   'internet-off': {Scene: InternetOff},
@@ -39,6 +43,9 @@ const SCENES: Record<string, {Scene: React.FC<{t: number}>; logDepth?: boolean; 
   'marc-salaire-2': {Scene: MarcSalaire2},
   'marc-salaire-3': {Scene: MarcSalaire3},
   'marc-soif': {Scene: MarcSoif},
+  'oiseau-haute-tension': {Scene: ({t}) => <OiseauHauteTension t={t} frame={Math.round(t * 30)} />, flat: true},
+  'avion-portance': {Scene: ({t}) => <AvionPortance t={t} frame={Math.round(t * 30)} />, flat: true},
+  'tunnelier': {Scene: ({t}) => <Tunnelier t={t} frame={Math.round(t * 30)} />, flat: true},
 };
 export const COVER_SLUGS = Object.keys(SCENES);
 
@@ -61,7 +68,7 @@ export const Cover: React.FC<CoverProps> = ({slug, t, title, highlight = ['Marc'
   const {Scene} = entry;
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      <ThreeCanvas width={width} height={height} linear={false} shadows={!!entry.shadows} gl={{antialias: true, logarithmicDepthBuffer: !!entry.logDepth}}>
+      <ThreeCanvas width={width} height={height} linear={false} flat={!!entry.flat} shadows={!!entry.shadows} gl={{antialias: true, logarithmicDepthBuffer: !!entry.logDepth}}>
         <Scene t={t} />
       </ThreeCanvas>
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,0.45) 62%, rgba(0,0,0,0) 85%)'}} />

@@ -1,0 +1,808 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.2,
+   "end": 0.94,
+   "text": "Cinq cent soixante-quinze",
+   "beat": "hook"
+  },
+  {
+   "start": 0.94,
+   "end": 1.58,
+   "text": "tonnes.",
+   "beat": "hook"
+  },
+  {
+   "start": 2.26,
+   "end": 2.84,
+   "text": "Et pourtant,",
+   "beat": "hook"
+  },
+  {
+   "start": 3.38,
+   "end": 5.02,
+   "text": "cet avion tient dans le",
+   "beat": "hook"
+  },
+  {
+   "start": 5.02,
+   "end": 5.28,
+   "text": "ciel.",
+   "beat": "hook"
+  },
+  {
+   "start": 6.2,
+   "end": 7.1,
+   "text": "Son poids le tire vers",
+   "beat": "weight"
+  },
+  {
+   "start": 7.1,
+   "end": 7.48,
+   "text": "le bas.",
+   "beat": "weight"
+  },
+  {
+   "start": 8.24,
+   "end": 9.28,
+   "text": "Il faut une force égale",
+   "beat": "weight"
+  },
+  {
+   "start": 9.28,
+   "end": 10.233,
+   "text": "vers le haut :",
+   "beat": "weight"
+  },
+  {
+   "start": 10.233,
+   "end": 11.06,
+   "text": "la portance.",
+   "beat": "weight"
+  },
+  {
+   "start": 13.2,
+   "end": 14.9,
+   "text": "Son aile est bombée et",
+   "beat": "wing"
+  },
+  {
+   "start": 14.9,
+   "end": 15.42,
+   "text": "inclinée.",
+   "beat": "wing"
+  },
+  {
+   "start": 15.92,
+   "end": 17.0,
+   "text": "Elle pousse l'air vers le",
+   "beat": "wing"
+  },
+  {
+   "start": 17.0,
+   "end": 17.26,
+   "text": "bas,",
+   "beat": "wing"
+  },
+  {
+   "start": 17.26,
+   "end": 18.58,
+   "text": "et l'air la pousse vers",
+   "beat": "wing"
+  },
+  {
+   "start": 18.58,
+   "end": 18.84,
+   "text": "le haut.",
+   "beat": "wing"
+  },
+  {
+   "start": 22.4,
+   "end": 23.5,
+   "text": "Tout dépend de la vitesse",
+   "beat": "speed"
+  },
+  {
+   "start": 23.5,
+   "end": 24.14,
+   "text": ":",
+   "beat": "speed"
+  },
+  {
+   "start": 24.14,
+   "end": 25.4,
+   "text": "deux fois plus vite,",
+   "beat": "speed"
+  },
+  {
+   "start": 25.88,
+   "end": 27.24,
+   "text": "quatre fois plus de",
+   "beat": "speed"
+  },
+  {
+   "start": 27.24,
+   "end": 27.8,
+   "text": "portance.",
+   "beat": "speed"
+  },
+  {
+   "start": 29.4,
+   "end": 30.42,
+   "text": "Trop lent ?",
+   "beat": "stall"
+  },
+  {
+   "start": 30.42,
+   "end": 31.965,
+   "text": "La portance s'effondre :",
+   "beat": "stall"
+  },
+  {
+   "start": 31.965,
+   "end": 33.1,
+   "text": "c'est le décrochage.",
+   "beat": "stall"
+  },
+  {
+   "start": 34.2,
+   "end": 35.36,
+   "text": "La règle :",
+   "beat": "rule"
+  },
+  {
+   "start": 35.36,
+   "end": 36.36,
+   "text": "avec assez de vitesse,",
+   "beat": "rule"
+  },
+  {
+   "start": 37.12,
+   "end": 38.62,
+   "text": "chaque mètre carré d'aile",
+   "beat": "rule"
+  },
+  {
+   "start": 38.62,
+   "end": 40.24,
+   "text": "porte près de sept cents",
+   "beat": "rule"
+  },
+  {
+   "start": 40.24,
+   "end": 40.54,
+   "text": "kilos.",
+   "beat": "rule"
+  },
+  {
+   "start": 41.2,
+   "end": 42.36,
+   "text": "Et là-haut,",
+   "beat": "end"
+  },
+  {
+   "start": 42.36,
+   "end": 43.12,
+   "text": "où l'air est trois fois",
+   "beat": "end"
+  },
+  {
+   "start": 43.12,
+   "end": 43.54,
+   "text": "plus léger ?",
+   "beat": "end"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "Cinq",
+   "start": 0.2,
+   "end": 0.447
+  },
+  {
+   "beat": "hook",
+   "text": "cent",
+   "start": 0.447,
+   "end": 0.693
+  },
+  {
+   "beat": "hook",
+   "text": "soixante-quinze",
+   "start": 0.693,
+   "end": 0.94
+  },
+  {
+   "beat": "hook",
+   "text": "tonnes.",
+   "start": 0.94,
+   "end": 1.58
+  },
+  {
+   "beat": "hook",
+   "text": "Et",
+   "start": 2.26,
+   "end": 2.5
+  },
+  {
+   "beat": "hook",
+   "text": "pourtant,",
+   "start": 2.5,
+   "end": 2.84
+  },
+  {
+   "beat": "hook",
+   "text": "cet",
+   "start": 3.38,
+   "end": 3.88
+  },
+  {
+   "beat": "hook",
+   "text": "avion",
+   "start": 3.88,
+   "end": 4.32
+  },
+  {
+   "beat": "hook",
+   "text": "tient",
+   "start": 4.32,
+   "end": 4.74
+  },
+  {
+   "beat": "hook",
+   "text": "dans",
+   "start": 4.74,
+   "end": 4.88
+  },
+  {
+   "beat": "hook",
+   "text": "le",
+   "start": 4.88,
+   "end": 5.02
+  },
+  {
+   "beat": "hook",
+   "text": "ciel.",
+   "start": 5.02,
+   "end": 5.28
+  },
+  {
+   "beat": "weight",
+   "text": "Son",
+   "start": 6.2,
+   "end": 6.3
+  },
+  {
+   "beat": "weight",
+   "text": "poids",
+   "start": 6.3,
+   "end": 6.5
+  },
+  {
+   "beat": "weight",
+   "text": "le",
+   "start": 6.5,
+   "end": 6.6
+  },
+  {
+   "beat": "weight",
+   "text": "tire",
+   "start": 6.6,
+   "end": 6.84
+  },
+  {
+   "beat": "weight",
+   "text": "vers",
+   "start": 6.84,
+   "end": 7.1
+  },
+  {
+   "beat": "weight",
+   "text": "le",
+   "start": 7.1,
+   "end": 7.22
+  },
+  {
+   "beat": "weight",
+   "text": "bas.",
+   "start": 7.22,
+   "end": 7.48
+  },
+  {
+   "beat": "weight",
+   "text": "Il",
+   "start": 8.24,
+   "end": 8.3
+  },
+  {
+   "beat": "weight",
+   "text": "faut",
+   "start": 8.3,
+   "end": 8.46
+  },
+  {
+   "beat": "weight",
+   "text": "une",
+   "start": 8.46,
+   "end": 8.62
+  },
+  {
+   "beat": "weight",
+   "text": "force",
+   "start": 8.62,
+   "end": 8.84
+  },
+  {
+   "beat": "weight",
+   "text": "égale",
+   "start": 8.84,
+   "end": 9.28
+  },
+  {
+   "beat": "weight",
+   "text": "vers",
+   "start": 9.28,
+   "end": 9.46
+  },
+  {
+   "beat": "weight",
+   "text": "le",
+   "start": 9.46,
+   "end": 9.62
+  },
+  {
+   "beat": "weight",
+   "text": "haut",
+   "start": 9.62,
+   "end": 9.82
+  },
+  {
+   "beat": "weight",
+   "text": ":",
+   "start": 9.82,
+   "end": 10.233
+  },
+  {
+   "beat": "weight",
+   "text": "la",
+   "start": 10.233,
+   "end": 10.647
+  },
+  {
+   "beat": "weight",
+   "text": "portance.",
+   "start": 10.647,
+   "end": 11.06
+  },
+  {
+   "beat": "wing",
+   "text": "Son",
+   "start": 13.2,
+   "end": 13.38
+  },
+  {
+   "beat": "wing",
+   "text": "aile",
+   "start": 13.38,
+   "end": 13.6
+  },
+  {
+   "beat": "wing",
+   "text": "est",
+   "start": 13.6,
+   "end": 13.7
+  },
+  {
+   "beat": "wing",
+   "text": "bombée",
+   "start": 13.7,
+   "end": 14.78
+  },
+  {
+   "beat": "wing",
+   "text": "et",
+   "start": 14.78,
+   "end": 14.9
+  },
+  {
+   "beat": "wing",
+   "text": "inclinée.",
+   "start": 14.9,
+   "end": 15.42
+  },
+  {
+   "beat": "wing",
+   "text": "Elle",
+   "start": 15.92,
+   "end": 16.22
+  },
+  {
+   "beat": "wing",
+   "text": "pousse",
+   "start": 16.22,
+   "end": 16.54
+  },
+  {
+   "beat": "wing",
+   "text": "l'air",
+   "start": 16.54,
+   "end": 16.72
+  },
+  {
+   "beat": "wing",
+   "text": "vers",
+   "start": 16.72,
+   "end": 16.88
+  },
+  {
+   "beat": "wing",
+   "text": "le",
+   "start": 16.88,
+   "end": 17.0
+  },
+  {
+   "beat": "wing",
+   "text": "bas,",
+   "start": 17.0,
+   "end": 17.26
+  },
+  {
+   "beat": "wing",
+   "text": "et",
+   "start": 17.26,
+   "end": 17.82
+  },
+  {
+   "beat": "wing",
+   "text": "l'air",
+   "start": 17.82,
+   "end": 17.94
+  },
+  {
+   "beat": "wing",
+   "text": "la",
+   "start": 17.94,
+   "end": 18.06
+  },
+  {
+   "beat": "wing",
+   "text": "pousse",
+   "start": 18.06,
+   "end": 18.38
+  },
+  {
+   "beat": "wing",
+   "text": "vers",
+   "start": 18.38,
+   "end": 18.58
+  },
+  {
+   "beat": "wing",
+   "text": "le",
+   "start": 18.58,
+   "end": 18.74
+  },
+  {
+   "beat": "wing",
+   "text": "haut.",
+   "start": 18.74,
+   "end": 18.84
+  },
+  {
+   "beat": "speed",
+   "text": "Tout",
+   "start": 22.4,
+   "end": 22.48
+  },
+  {
+   "beat": "speed",
+   "text": "dépend",
+   "start": 22.48,
+   "end": 22.74
+  },
+  {
+   "beat": "speed",
+   "text": "de",
+   "start": 22.74,
+   "end": 22.96
+  },
+  {
+   "beat": "speed",
+   "text": "la",
+   "start": 22.96,
+   "end": 23.08
+  },
+  {
+   "beat": "speed",
+   "text": "vitesse",
+   "start": 23.08,
+   "end": 23.5
+  },
+  {
+   "beat": "speed",
+   "text": ":",
+   "start": 23.5,
+   "end": 24.14
+  },
+  {
+   "beat": "speed",
+   "text": "deux",
+   "start": 24.14,
+   "end": 24.66
+  },
+  {
+   "beat": "speed",
+   "text": "fois",
+   "start": 24.66,
+   "end": 24.86
+  },
+  {
+   "beat": "speed",
+   "text": "plus",
+   "start": 24.86,
+   "end": 25.04
+  },
+  {
+   "beat": "speed",
+   "text": "vite,",
+   "start": 25.04,
+   "end": 25.4
+  },
+  {
+   "beat": "speed",
+   "text": "quatre",
+   "start": 25.88,
+   "end": 26.24
+  },
+  {
+   "beat": "speed",
+   "text": "fois",
+   "start": 26.24,
+   "end": 26.64
+  },
+  {
+   "beat": "speed",
+   "text": "plus",
+   "start": 26.64,
+   "end": 27.06
+  },
+  {
+   "beat": "speed",
+   "text": "de",
+   "start": 27.06,
+   "end": 27.24
+  },
+  {
+   "beat": "speed",
+   "text": "portance.",
+   "start": 27.24,
+   "end": 27.8
+  },
+  {
+   "beat": "stall",
+   "text": "Trop",
+   "start": 29.4,
+   "end": 29.54
+  },
+  {
+   "beat": "stall",
+   "text": "lent",
+   "start": 29.54,
+   "end": 29.76
+  },
+  {
+   "beat": "stall",
+   "text": "?",
+   "start": 29.76,
+   "end": 30.42
+  },
+  {
+   "beat": "stall",
+   "text": "La",
+   "start": 30.42,
+   "end": 30.66
+  },
+  {
+   "beat": "stall",
+   "text": "portance",
+   "start": 30.66,
+   "end": 31.095
+  },
+  {
+   "beat": "stall",
+   "text": "s'effondre",
+   "start": 31.095,
+   "end": 31.53
+  },
+  {
+   "beat": "stall",
+   "text": ":",
+   "start": 31.53,
+   "end": 31.965
+  },
+  {
+   "beat": "stall",
+   "text": "c'est",
+   "start": 31.965,
+   "end": 32.4
+  },
+  {
+   "beat": "stall",
+   "text": "le",
+   "start": 32.4,
+   "end": 32.48
+  },
+  {
+   "beat": "stall",
+   "text": "décrochage.",
+   "start": 32.48,
+   "end": 33.1
+  },
+  {
+   "beat": "rule",
+   "text": "La",
+   "start": 34.2,
+   "end": 34.32
+  },
+  {
+   "beat": "rule",
+   "text": "règle",
+   "start": 34.32,
+   "end": 34.68
+  },
+  {
+   "beat": "rule",
+   "text": ":",
+   "start": 34.68,
+   "end": 35.36
+  },
+  {
+   "beat": "rule",
+   "text": "avec",
+   "start": 35.36,
+   "end": 35.58
+  },
+  {
+   "beat": "rule",
+   "text": "assez",
+   "start": 35.58,
+   "end": 35.86
+  },
+  {
+   "beat": "rule",
+   "text": "de",
+   "start": 35.86,
+   "end": 35.98
+  },
+  {
+   "beat": "rule",
+   "text": "vitesse,",
+   "start": 35.98,
+   "end": 36.36
+  },
+  {
+   "beat": "rule",
+   "text": "chaque",
+   "start": 37.12,
+   "end": 37.46
+  },
+  {
+   "beat": "rule",
+   "text": "mètre",
+   "start": 37.46,
+   "end": 37.86
+  },
+  {
+   "beat": "rule",
+   "text": "carré",
+   "start": 37.86,
+   "end": 38.28
+  },
+  {
+   "beat": "rule",
+   "text": "d'aile",
+   "start": 38.28,
+   "end": 38.62
+  },
+  {
+   "beat": "rule",
+   "text": "porte",
+   "start": 38.62,
+   "end": 39.4
+  },
+  {
+   "beat": "rule",
+   "text": "près",
+   "start": 39.4,
+   "end": 39.72
+  },
+  {
+   "beat": "rule",
+   "text": "de",
+   "start": 39.72,
+   "end": 39.88
+  },
+  {
+   "beat": "rule",
+   "text": "sept",
+   "start": 39.88,
+   "end": 40.06
+  },
+  {
+   "beat": "rule",
+   "text": "cents",
+   "start": 40.06,
+   "end": 40.24
+  },
+  {
+   "beat": "rule",
+   "text": "kilos.",
+   "start": 40.24,
+   "end": 40.54
+  },
+  {
+   "beat": "end",
+   "text": "Et",
+   "start": 41.2,
+   "end": 41.28
+  },
+  {
+   "beat": "end",
+   "text": "là-haut,",
+   "start": 41.28,
+   "end": 42.36
+  },
+  {
+   "beat": "end",
+   "text": "où",
+   "start": 42.36,
+   "end": 42.48
+  },
+  {
+   "beat": "end",
+   "text": "l'air",
+   "start": 42.48,
+   "end": 42.64
+  },
+  {
+   "beat": "end",
+   "text": "est",
+   "start": 42.64,
+   "end": 42.76
+  },
+  {
+   "beat": "end",
+   "text": "trois",
+   "start": 42.76,
+   "end": 42.96
+  },
+  {
+   "beat": "end",
+   "text": "fois",
+   "start": 42.96,
+   "end": 43.12
+  },
+  {
+   "beat": "end",
+   "text": "plus",
+   "start": 43.12,
+   "end": 43.3
+  },
+  {
+   "beat": "end",
+   "text": "léger",
+   "start": 43.3,
+   "end": 43.54
+  },
+  {
+   "beat": "end",
+   "text": "?",
+   "start": 43.54,
+   "end": 43.54
+  }
+ ]
+}

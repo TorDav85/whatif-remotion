@@ -1,0 +1,31 @@
+{
+  "slug": "tunnelier",
+  "title": "Et si la terre n'était plus retenue ?",
+  "composition": "Tunnelier",
+  "source": "out/tunnelier/tunnelier-45s.mp4",
+  "coverTime": 18.6,
+  "coverHighlight": [
+    "TERRE"
+  ],
+  "description": "Une machine de 100 mètres creuse sous la ville sans que rien ne s’effondre. Voici comment.",
+  "hashtags": "#etsi #whatif #science #tunnelier #ingenierie",
+  "notice": "",
+  "hookVariant": "paradox",
+  "editVariant": "short",
+  "durationSeconds": 45,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {}
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {}
+    }
+  ],
+  "dropOffs": []
+}

@@ -1,0 +1,12 @@
+{
+  "duration": 45,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 5.6], "seed": 31104, "text": "Vingt mille volts sous ses pattes. Et pourtant, cet oiseau ne sent rien.", "source": "Réseau HTA d'Enedis : tension nominale 20 kV entre phases (la plus courante en France)"},
+    {"id": "flow", "slot": [6.2, 11.6], "text": "Le courant file dans le câble. Il prend le chemin qui lui résiste le moins."},
+    {"id": "feet", "slot": [12.2, 17.7], "text": "Ses deux pattes touchent le même fil, au même potentiel. Aucune différence, aucun courant.", "source": "ΔV entre les pattes = R × I : câble almélec 148 mm² (ρ ≈ 3,3e-8 Ω·m), 4 cm, 300 A → ≈ 0,003 V (ordre de grandeur)"},
+    {"id": "contact", "slot": [18.4, 23.2], "seed": 31203, "text": "Et si son aile touchait le pylône, relié à la terre ?"},
+    {"id": "arc", "slot": [24.2, 31.6], "text": "Onze mille volts d'écart. Le courant traverse son corps. C'est ce qui tue les cigognes et les rapaces.", "source": "Phase-terre en 20 kV : 20 000 / √3 ≈ 11 500 V ; électrocution de grands oiseaux sur poteaux HTA : LPO / Enedis, Comité national avifaune"},
+    {"id": "rule", "slot": [32.4, 40.6], "text": "La règle : le courant ne traverse un corps que s'il relie deux potentiels différents. Sur un seul fil, rien ne passe."},
+    {"id": "end", "slot": [41.2, 44.7], "text": "Et l'écureuil, pourquoi fait-il sauter le courant ?", "source": "Les petits animaux qui relient deux conducteurs (ou un conducteur et la terre) sont une cause classique de coupures"}
+  ]
+}
