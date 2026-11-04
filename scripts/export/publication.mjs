@@ -45,8 +45,8 @@ const describe = (pub, names) => [
   '',
   pub.hashtags ?? '',
   '',
-  pub.notice ?? AI_NOTICE,
-  '',
+  // "notice": "" in publication.json leaves the notice out.
+  ...(pub.notice === '' ? [] : [pub.notice ?? AI_NOTICE, '']),
 ].join('\n');
 
 let serveUrl = null;
