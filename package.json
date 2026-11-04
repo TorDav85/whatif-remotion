@@ -125,7 +125,9 @@
   },
   "dependencies": {
     "@react-three/fiber": "^9.8.2",
+    "@remotion/bundler": "4.0.539",
     "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
     "@remotion/three": "4.0.539",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
