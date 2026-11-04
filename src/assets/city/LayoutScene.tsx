@@ -9,15 +9,18 @@ export const SKY = {
   nuit: {top: '#0b0f22', bottom: '#2a2440', sun: '#7a8cc8', sunI: 0.25, hemi: 0.45, amb: 0.12, ground: '#4a463f'},
 };
 
-/** Sky, lights, fog and base ground shared by the editor and the Remotion compositions. */
-export const CityEnvironment: React.FC<{night?: boolean; fogFar?: number}> = ({night = false, fogFar = 900}) => {
-  const s = night ? SKY.nuit : SKY.jour;
+/**
+ * Sky, lights, fog and base ground shared by the editor and the Remotion compositions.
+ * `palette` and `fogNear` let an episode variant (dusk, rain, snow) recolour it; without them, unchanged.
+ */
+export const CityEnvironment: React.FC<{night?: boolean; fogFar?: number; fogNear?: number; palette?: typeof SKY.jour}> = ({night = false, fogFar = 900, fogNear, palette}) => {
+  const s = palette ?? (night ? SKY.nuit : SKY.jour);
   const top = useMemo(() => new THREE.Color(s.top), [s.top]);
   const bottom = useMemo(() => new THREE.Color(s.bottom), [s.bottom]);
   return (
     <>
       <SkyDome top={top} bottom={bottom} />
-      <fog attach="fog" args={[bottom, fogFar * 0.25, fogFar]} />
+      <fog attach="fog" args={[bottom, fogNear ?? fogFar * 0.25, fogFar]} />
       <hemisphereLight color={top} groundColor="#8a7e6a" intensity={s.hemi} />
       <directionalLight color={s.sun} intensity={s.sunI} position={[60, 80, 40]} />
       <ambientLight intensity={s.amb} />
@@ -42,9 +45,9 @@ export const layoutBounds = (layout: CityLayout) => {
 };
 
 /** A saved layout, ready to drop in any Remotion composition (add your own CameraRig). */
-export const LayoutSurroundings: React.FC<{layout: CityLayout}> = ({layout}) => {
+export const LayoutSurroundings: React.FC<{layout: CityLayout; snow?: number}> = ({layout, snow}) => {
   const bounds = layoutBounds(layout);
-  return <UrbanBackdrop seed={42} cx={bounds.cx} cz={bounds.cz} radius={Math.max(2400, bounds.size * 4)} parcels={2200}
+  return <UrbanBackdrop seed={42} cx={bounds.cx} cz={bounds.cz} radius={Math.max(2400, bounds.size * 4)} parcels={2200} snow={snow}
     river={false} exclude={{minX: bounds.cx - bounds.size / 2 - 50, maxX: bounds.cx + bounds.size / 2 + 50,
       minZ: bounds.cz - bounds.size / 2 - 50, maxZ: bounds.cz + bounds.size / 2 + 50}} />;
 };

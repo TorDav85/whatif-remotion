@@ -127,6 +127,9 @@ npm run audio:levels -- marc-deux-lunes                       # niveaux des rép
   l'espace disque, puis `CUDA_VISIBLE_DEVICES=-1` force le CPU. Whisper utilise le GPU via les DLL de PyTorch.
 - Les références vocales (`voice-samples/`) ne sont jamais versionnées ; les pistes des vidéos Marc
   (`public/marc-*`) le sont, celles des anciennes bases se reconstruisent.
+- Bruitages : 38 effets synthétisés en code, sans fichier sous licence ni navigateur (`npm run sfx -- --list`,
+  feuille `{duration, cues: [{t, sfx}]}` → WAV). Transitions `whip`, `zoom`, `flash` sur la scène 3D avec
+  leurs sons : [docs/transitions-et-effets-sonores.md](docs/transitions-et-effets-sonores.md), démo **Transitions**.
 
 ## 5. Vérifier et rendre
 
@@ -235,6 +238,18 @@ de caméra (14 mouvements, vérification et recadrage automatique du cadrage) et
 ([registry.tsx](src/assets/city/registry.tsx), 63 objets) garantit le même rendu dans l'éditeur et la vidéo.
 
 ![Collection Ville & extérieur 1.02](docs/previews/assets-ville-1.02.png)
+
+**Ville de référence de la série** ([guide](docs/ville-reference.md)). Une seule ville figée pour tous les épisodes,
+`public/city-layouts/ville-reference.json` (graine 286, 1 451 objets, jamais régénérée par épisode), et trois lieux
+pilotes séparés du monde : `appartement-marc` (intérieur dans `haussmann-894`, fenêtres sur la place), `rue-marc`,
+`place-centrale`. Chaque lieu a sa zone, ses points de placement et d'interaction et 4 cadrages 9:16 (`Shot`).
+Un épisode nomme un lieu, place ses personnages et garde ses variantes (nuit, pluie, neige, dégâts, objets
+modifiés ou ajoutés) ; les quartiers lointains sont simplifiés automatiquement.
+
+```powershell
+npm run city:freeze -- --check                    # le JSON figé = la régénération
+npm run stills -- VilleReferenceVisite --frames 105,195,285,375,465,563,675,780,870,968,1095,1215,1305
+```
 
 ## 11. Skills du projet
 

@@ -17,7 +17,8 @@ Code à réutiliser (ne pas réécrire) :
 - `src/shared/three/common.tsx` : `CameraRig` (caméra pilotée par le temps, jamais `useFrame` dans Remotion).
 - Découpe à la main dans une vidéo : `src/shared/three/shots.ts` (`Shot`, `shotAt(SHOTS, t, durée)`,
   `cutsOf(SHOTS)`) ; modèle complet : `SHOTS` de `src/videos/marc-deux-lunes/Scene3D.tsx`.
-- Transitions : `src/shared/ui/transitions.ts` (`Cut {at, kind: 'cut' | 'dip'}`, `dipAt`).
+- Transitions : `src/shared/ui/transitions.ts` (`Cut {at, kind: 'cut' | 'dip' | 'whip' | 'zoom' | 'flash'}`, `dipAt`)
+  jouées sur la scène par `<CutFx>`, avec leurs sons (`cutCues`, `npm run sfx`) : `docs/transitions-et-effets-sonores.md`.
 - Texte qui suit un personnage (bulle, étiquette) : `projectToScreen(vue, point3D, 1080, 1920)` de
   `src/shared/three/projection.ts`, avec la même vue que la caméra du plan ; `SpeechBubble` pour les dialogues.
 - Ville : `npm run city`, onglet **Caméra** → plans enregistrés dans `public/city-layouts/<nom>.json`,

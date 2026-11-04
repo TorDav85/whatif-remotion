@@ -15,6 +15,8 @@ test('copy a real base, compile it, keep original audio paths, reject collisions
   const fixture = fs.mkdtempSync(path.join(cache, 'project-test-'));
   try {
     fs.cpSync(path.join(root, 'src'), path.join(fixture, 'src'), {recursive: true});
+    // The reference city's frozen world is imported by src/assets/city/reference/world.ts.
+    fs.cpSync(path.join(root, 'public/city-layouts'), path.join(fixture, 'public/city-layouts'), {recursive: true});
     fs.mkdirSync(path.join(fixture, 'scripts/project'), {recursive: true});
     fs.copyFileSync(path.join(root, 'scripts/project/video.mjs'), path.join(fixture, 'scripts/project/video.mjs'));
     fs.copyFileSync(path.join(root, 'tsconfig.json'), path.join(fixture, 'tsconfig.json'));

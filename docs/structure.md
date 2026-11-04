@@ -75,6 +75,7 @@ Depuis 1.12, les éléments empruntés d'une vidéo à l'autre vivent hors des d
 | Personnage expressif `Actor`, ex-`internet-off` | `src/shared/characters/Actor.tsx` |
 | Four géant, ex-`marc-four` | `src/shared/sets/Oven.tsx` |
 | Liste de plans `SHOTS` / `CUTS` | `src/shared/three/shots.ts` |
+| Ville de référence : monde figé, lieux, cadrages, API épisode ([guide](ville-reference.md)) | `src/assets/city/reference/`, `public/city-layouts/ville-reference.json` |
 | Projection 3D → écran, bulles de dialogue | `src/shared/three/projection.ts`, `src/shared/ui/SpeechBubble.tsx` |
 
 **Règle d'imports.** Une vidéo n'importe pas le dossier d'une autre vidéo, sauf une version

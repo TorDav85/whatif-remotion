@@ -1,0 +1,10 @@
+{
+  "duration": 12,
+  "cues": [
+    {"t": 1.88, "sfx": "whip"},
+    {"t": 3.8, "sfx": "zoom"},
+    {"t": 6, "sfx": "hit"},
+    {"t": 7.9, "sfx": "whoosh", "gain": 0.6},
+    {"t": 11.4, "sfx": "end-chime", "gain": 0.8}
+  ]
+}
