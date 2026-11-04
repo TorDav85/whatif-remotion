@@ -63,7 +63,7 @@
     "render:with-voice": "npm run ambience && npm run voice:xtts && remotion render WhatIf out/whatif-xtts.mp4 --codec=h264",
     "typecheck": "tsc --noEmit",
     "validate": "node scripts/check/validate-scenarios.mjs",
-    "test:project": "node --test scripts/check/project.test.mjs",
+    "test:project": "node --test scripts/check/project.test.mjs scripts/check/render-env.test.mjs",
     "test:voice": "node scripts/audio/python.mjs scripts/check/voice_profiles_test.py",
     "audio:first": "node scripts/audio/python.mjs scripts/audio/first/build.py",
     "audio:first:check": "node scripts/audio/python.mjs scripts/audio/first/check.py",
