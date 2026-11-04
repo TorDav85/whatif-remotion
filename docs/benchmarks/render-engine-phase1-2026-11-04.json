@@ -1,0 +1,525 @@
+{
+  "date": "2026-11-04",
+  "branch": "perf/render-engine",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+    "threads": 12,
+    "ramGb": 23.9,
+    "gpu": [
+      "NVIDIA GeForce GTX 1660 Ti",
+      "Intel UHD Graphics 630"
+    ],
+    "os": "Windows 11 Home 10.0.26200",
+    "node": "v22.14.0",
+    "power": "secteur"
+  },
+  "remotion": "4.0.539",
+  "composition": "MarcGeantCourt",
+  "frames": "675-794 (120)",
+  "command": "REMOTION_GL=<gl> node scripts/check/benchmark.mjs MarcGeantCourt --frames 120 --concurrency <c> --repeat 3",
+  "runs": [
+    {
+      "source": "baseline-unmodified",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 20.6,
+      "msPerFrame": 172,
+      "estimatedFullRenderMin": 3.9,
+      "peakNodeMb": 884,
+      "peakSystemDeltaMb": 2260
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 1,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 20.1,
+      "msPerFrame": 167,
+      "estimatedFullRenderMin": 3.8,
+      "peakNodeMb": 127,
+      "peakSystemDeltaMb": 1573
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 1,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 18.9,
+      "msPerFrame": 157,
+      "estimatedFullRenderMin": 3.5,
+      "peakNodeMb": 114,
+      "peakSystemDeltaMb": 1195
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 1,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 18.6,
+      "msPerFrame": 155,
+      "estimatedFullRenderMin": 3.5,
+      "peakNodeMb": 135,
+      "peakSystemDeltaMb": 1312
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 18.9,
+      "msPerFrame": 158,
+      "estimatedFullRenderMin": 3.5,
+      "peakNodeMb": 117,
+      "peakSystemDeltaMb": 2253
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 19.1,
+      "msPerFrame": 160,
+      "estimatedFullRenderMin": 3.6,
+      "peakNodeMb": 122,
+      "peakSystemDeltaMb": 1871
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 18.9,
+      "msPerFrame": 158,
+      "estimatedFullRenderMin": 3.5,
+      "peakNodeMb": 122,
+      "peakSystemDeltaMb": 1978
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 4,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 22.3,
+      "msPerFrame": 186,
+      "estimatedFullRenderMin": 4.2,
+      "peakNodeMb": 134,
+      "peakSystemDeltaMb": 3782
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 4,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 22.8,
+      "msPerFrame": 190,
+      "estimatedFullRenderMin": 4.3,
+      "peakNodeMb": 136,
+      "peakSystemDeltaMb": 3066
+    },
+    {
+      "source": "matrix-angle",
+      "gl": "angle",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 4,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 22.8,
+      "msPerFrame": 190,
+      "estimatedFullRenderMin": 4.3,
+      "peakNodeMb": 142,
+      "peakSystemDeltaMb": 3090
+    },
+    {
+      "source": "gl-vulkan",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 11.8,
+      "msPerFrame": 98,
+      "estimatedFullRenderMin": 2.2,
+      "peakNodeMb": 134,
+      "peakSystemDeltaMb": 2000
+    },
+    {
+      "source": "gl-vulkan",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 11.5,
+      "msPerFrame": 95,
+      "estimatedFullRenderMin": 2.1,
+      "peakNodeMb": 113,
+      "peakSystemDeltaMb": 2023
+    },
+    {
+      "source": "gl-vulkan",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 11.2,
+      "msPerFrame": 94,
+      "estimatedFullRenderMin": 2.1,
+      "peakNodeMb": 115,
+      "peakSystemDeltaMb": 2059
+    },
+    {
+      "source": "gl-vulkan-c1-c4",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 1,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 14.6,
+      "msPerFrame": 122,
+      "estimatedFullRenderMin": 2.7,
+      "peakNodeMb": 128,
+      "peakSystemDeltaMb": 1397
+    },
+    {
+      "source": "gl-vulkan-c1-c4",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 1,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 14.9,
+      "msPerFrame": 124,
+      "estimatedFullRenderMin": 2.8,
+      "peakNodeMb": 107,
+      "peakSystemDeltaMb": 1354
+    },
+    {
+      "source": "gl-vulkan-c1-c4",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 1,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 14.9,
+      "msPerFrame": 124,
+      "estimatedFullRenderMin": 2.8,
+      "peakNodeMb": 107,
+      "peakSystemDeltaMb": 1331
+    },
+    {
+      "source": "gl-vulkan-c1-c4",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 4,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 11.3,
+      "msPerFrame": 94,
+      "estimatedFullRenderMin": 2.1,
+      "peakNodeMb": 115,
+      "peakSystemDeltaMb": 3199
+    },
+    {
+      "source": "gl-vulkan-c1-c4",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 4,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 11.3,
+      "msPerFrame": 94,
+      "estimatedFullRenderMin": 2.1,
+      "peakNodeMb": 127,
+      "peakSystemDeltaMb": 3246
+    },
+    {
+      "source": "gl-vulkan-c1-c4",
+      "gl": "vulkan",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 4,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 11.3,
+      "msPerFrame": 95,
+      "estimatedFullRenderMin": 2.1,
+      "peakNodeMb": 130,
+      "peakSystemDeltaMb": 3210
+    },
+    {
+      "source": "gl-egl",
+      "gl": "egl",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 64.5,
+      "msPerFrame": 538,
+      "estimatedFullRenderMin": 12.1,
+      "peakNodeMb": 103,
+      "peakSystemDeltaMb": 2117
+    },
+    {
+      "source": "gl-egl",
+      "gl": "egl",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 64.6,
+      "msPerFrame": 538,
+      "estimatedFullRenderMin": 12.1,
+      "peakNodeMb": 106,
+      "peakSystemDeltaMb": 1627
+    },
+    {
+      "source": "gl-egl",
+      "gl": "egl",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 64.7,
+      "msPerFrame": 539,
+      "estimatedFullRenderMin": 12.1,
+      "peakNodeMb": 101,
+      "peakSystemDeltaMb": 1510
+    },
+    {
+      "source": "gl-angle-egl",
+      "gl": "angle-egl",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 63.1,
+      "msPerFrame": 526,
+      "estimatedFullRenderMin": 11.8,
+      "peakNodeMb": 97,
+      "peakSystemDeltaMb": 2120
+    },
+    {
+      "source": "gl-angle-egl",
+      "gl": "angle-egl",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 62,
+      "msPerFrame": 517,
+      "estimatedFullRenderMin": 11.6,
+      "peakNodeMb": 102,
+      "peakSystemDeltaMb": 1578
+    },
+    {
+      "source": "gl-angle-egl",
+      "gl": "angle-egl",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 62.7,
+      "msPerFrame": 523,
+      "estimatedFullRenderMin": 11.8,
+      "peakNodeMb": 102,
+      "peakSystemDeltaMb": 1639
+    },
+    {
+      "source": "gl-swiftshader",
+      "gl": "swiftshader",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 1,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 62.5,
+      "msPerFrame": 521,
+      "estimatedFullRenderMin": 11.7,
+      "peakNodeMb": 116,
+      "peakSystemDeltaMb": 2171
+    },
+    {
+      "source": "gl-swiftshader",
+      "gl": "swiftshader",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 2,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 61.5,
+      "msPerFrame": 513,
+      "estimatedFullRenderMin": 11.5,
+      "peakNodeMb": 101,
+      "peakSystemDeltaMb": 1579
+    },
+    {
+      "source": "gl-swiftshader",
+      "gl": "swiftshader",
+      "id": "MarcGeantCourt",
+      "range": [
+        675,
+        794
+      ],
+      "concurrency": 2,
+      "run": 3,
+      "scale": 1,
+      "frames": 120,
+      "seconds": 62.9,
+      "msPerFrame": 524,
+      "estimatedFullRenderMin": 11.8,
+      "peakNodeMb": 101,
+      "peakSystemDeltaMb": 1579
+    }
+  ]
+}

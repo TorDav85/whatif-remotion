@@ -118,6 +118,7 @@
     "render:2.01": "node scripts/export/release-2.01.mjs render",
     "venv:check": "node scripts/project/venv-check.mjs",
     "benchmark": "node scripts/check/benchmark.mjs",
+    "benchmark:matrix": "remotion benchmark src/index.ts MarcGeantCourt --runs=3 --concurrencies=1,2,4 --frames=675-794 --codec=h264 --muted --log=info",
     "compare:stills": "node scripts/check/compare-stills.mjs",
     "rendu": "node scripts/export/render.mjs",
     "plans3d:check": "node scripts/check/plans3d-check.mjs",
