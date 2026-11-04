@@ -1,0 +1,83 @@
+{
+  "duration": 60,
+  "beats": [
+    {
+      "id": "hook",
+      "seed": 74003,
+      "slot": [0.25, 3.75],
+      "text": "Et si une bombe nucléaire tombait sur cette ville ?",
+      "source": "Prémisse fictive : ville imaginaire, aucune cible réelle, aucune puissance fixée."
+    },
+    {
+      "id": "marc",
+      "slot": [4.25, 7.75],
+      "text": "Marc part travailler. Il ne voit rien venir.",
+      "source": "Personnage et action fictifs ; Marc se trouve en périphérie du secteur le plus détruit."
+    },
+    {
+      "id": "flash",
+      "slot": [8.25, 12.75],
+      "text": "D'abord, un flash. La lumière arrive avant le souffle.",
+      "source": "NYC Health, Nuclear Incident, rubrique Nuclear Explosions : flash initial et délai du souffle à distance. https://www.nyc.gov/site/doh/health/emergency-preparedness/emergencies-radiological-nuclear-incident.page ; durée visuelle étirée, pas un délai calculé."
+    },
+    {
+      "id": "heat",
+      "slot": [13.25, 17.75],
+      "text": "La chaleur peut déclencher des incendies, loin du point d'explosion.",
+      "source": "CICR, Humanitarian Assistance in Response to the Use of Nuclear Weapons, février 2013, p. 1 : rayonnement thermique et inflammation des matériaux. https://www.icrc.org/en/doc/assets/files/2013/4132-3-nuclear-weapons-humanitarian-assistance-2013.pdf ; portée variable, aucun rayon chiffré."
+    },
+    {
+      "id": "shock",
+      "seed": 74043,
+      "slot": [18.25, 23.75],
+      "text": "Puis le souffle frappe. Les vitres éclatent. Des murs s'effondrent.",
+      "source": "NYC Health, Nuclear Incident, rubrique Health Risks and Hazards : dégâts structurels et vitres brisées. https://www.nyc.gov/site/doh/health/emergency-preparedness/emergencies-radiological-nuclear-incident.page ; dégâts choisis pour le scénario, sans simulation de surpression."
+    },
+    {
+      "id": "cloud",
+      "seed": 74052,
+      "slot": [24.25, 28.75],
+      "text": "Le champignon monte. Mais le danger ne s'arrête pas là.",
+      "source": "CDC, Nuclear Blasts: Frequently Asked Questions, What is a nuclear blast : ascension du nuage et formation des retombées. https://www.cdc.gov/radiation-emergencies/about/nuclear-blast-faq.html"
+    },
+    {
+      "id": "ruins",
+      "slot": [29.25, 33.75],
+      "text": "Au centre, des rues sont détruites. Plus loin, des bâtiments tiennent.",
+      "source": "Choix narratif qualitatif ; HHS REMM, Blast Range and Significant Effects : effets décroissants avec la distance, variables avec puissance, altitude, relief et météo. https://remm.hhs.gov/blasteffects_range.htm"
+    },
+    {
+      "id": "shelter",
+      "slot": [34.25, 39.75],
+      "text": "Marc rejoint le sous-sol d'un bâtiment encore solide.",
+      "source": "CDC, What to Do: Get Inside : sous-sol ou cœur d'un bâtiment. https://www.cdc.gov/radiation-emergencies/response/get-inside.html ; le choix narratif d'un bâtiment stable ne garantit pas la survie."
+    },
+    {
+      "id": "fallout",
+      "slot": [40.25, 45.75],
+      "text": "Dehors, le vent peut emporter des poussières radioactives bien plus loin.",
+      "source": "CDC, Nuclear Blasts: Frequently Asked Questions : particules radioactives entraînées par les vents. https://www.cdc.gov/radiation-emergencies/about/nuclear-blast-faq.html ; HHS REMM, dispersion irrégulière sous le vent. https://remm.hhs.gov/blasteffects_range.htm"
+    },
+    {
+      "id": "radio",
+      "seed": 74090,
+      "slot": [46.25, 49.8],
+      "text": "Marc reste à l'abri et écoute les consignes à la radio.",
+      "source": "CDC, Preparing for a Radiation Emergency : rester à l'intérieur et suivre les informations des autorités, notamment à la radio. https://www.cdc.gov/radiation-emergencies/safety/index.html"
+    },
+    {
+      "id": "freeze",
+      "seed": 74103,
+      "slot": [52.3, 54.8],
+      "text": "Marc se fige.",
+      "source": "Action fictive du personnage après trois coups à la porte ; aucune affirmation scientifique."
+    },
+    {
+      "id": "julien",
+      "seed": 75011,
+      "slot": [55.3, 58.2],
+      "text": "Marc... c'est Julien. Ouvre-moi.",
+      "source": "Réplique fictive de Julien derrière la porte de l'abri ; même profil de synthèse, traitement sonore de porte, aucune affirmation scientifique."
+    }
+  ]
+}

@@ -18,6 +18,8 @@ export type BuildingProps = {
   seed?: number;
   /** Menuiseries, balustres et reliefs ; désactiver pour les plans très larges. */
   details?: boolean;
+  /** Lateral projection of the cornice; zero for tightly adjoining façades. */
+  corniceOverhang?: number;
 };
 
 const FLOOR_H = 3.1;
@@ -37,6 +39,7 @@ export const Building: React.FC<BuildingProps> = ({
   lit = 0,
   seed = 1,
   details = true,
+  corniceOverhang = 0.1,
 }) => {
   const cols = Math.max(2, Math.floor(width / 2.6));
   const wallH = GROUND_H + floors * FLOOR_H;
@@ -129,11 +132,11 @@ export const Building: React.FC<BuildingProps> = ({
       {details && <>
         <Block p={[colX(Math.floor(cols / 2)), 1.9, front - 0.19]} s={[0.06, 3.6, 0.06]} c={PAL.stoneDark} />
         {[-0.16, 0.16].map((x) => <Block key={x} p={[colX(Math.floor(cols / 2)) + x, 1.55, front - 0.24]} s={[0.045, 0.28, 0.06]} c={PAL.chrome} metal />)}
-        <Block p={[0, wallH - 0.6, front - 0.15]} s={[width + 0.1, 0.12, 0.3]} c={PAL.stoneDark} />
+        <Block p={[0, wallH - 0.6, front - 0.15]} s={[width + corniceOverhang, 0.12, 0.3]} c={PAL.stoneDark} />
         {awning && <Block p={[0, GROUND_H - 0.95, front - 1.72]} s={[width - 1, 0.2, 0.08]} c={awning} />}
       </>}
       {/* corniche */}
-      <Block p={[0, wallH - 0.25, front - 0.25]} s={[width + 0.2, 0.5, 0.5]} c={stone} />
+      <Block p={[0, wallH - 0.25, front - 0.25]} s={[width + 2 * corniceOverhang, 0.5, 0.5]} c={stone} />
       {/* toit mansardé + lucarnes */}
       <mesh position={[0, wallH, 0]} scale={[width, 4.2, depth]} geometry={MANSARD}>
         <Mat color={roof} />

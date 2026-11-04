@@ -1,0 +1,823 @@
+Voici **50 scripts complets** prêts à être intégrés dans ton projet `whatif-remotion`, organisés en 5 catégories. Chaque script est au format `narration.json` avec les beats, timings, textes et sources.
+
+---
+
+## ? CATÉGORIE A : CORPS HUMAIN & BIOLOGIE (1-10)
+
+### 1. Et si Marc devenait invisible ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc devenait invisible ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 12], "text": "D'abord, ses mains disparaissent. Puis ses bras.", "source": "règle"},
+    {"id": "b3", "slot": [12, 25], "text": "Mais sa rétine aussi. Un invisible ne voit pas : la lumière le traverse.", "source": "physique optique"},
+    {"id": "b4", "slot": [25, 40], "text": "Il marche dans Paris. Personne ne le voit. Lui ne voit rien.", "source": "escalade"},
+    {"id": "b5", "slot": [40, 55], "text": "Son corps continue de produire de la chaleur. Les caméras thermiques le repèrent.", "source": "loi de Stefan-Boltzmann"},
+    {"id": "b6", "slot": [55, 70], "text": "Il meurt de faim : impossible de manger sans être vu en train de mâcher.", "source": "biologie"},
+    {"id": "b7", "slot": [70, 75], "text": "Et toi, tu ferais quoi si tu disparaissais ?", "source": "question finale"}
+  ]
+}
+```
+
+### 2. Et si Marc ne dormait plus jamais ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc ne dormait plus jamais ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Jour 1 : il se sent super-héros. Jour 3 : il hallucine.", "source": "étude Randy Gardner"},
+    {"id": "b3", "slot": [15, 30], "text": "Jour 7 : son cerveau commence à manger ses propres neurones.", "source": "étude sommeil Chicago"},
+    {"id": "b4", "slot": [30, 45], "text": "Jour 11 : record mondial. Il ne reconnaît plus personne.", "source": "Randy Gardner 1964"},
+    {"id": "b5", "slot": [45, 60], "text": "Jour 15 : son système immunitaire s'effondre. Une grippe le tue.", "source": "médecine"},
+    {"id": "b6", "slot": [60, 75], "text": "Le sommeil n'est pas un luxe. C'est le ménage nocturne de ton cerveau.", "source": "glymphatique"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu as dormi combien d'heures hier ?", "source": "question finale"}
+  ]
+}
+```
+
+### 3. Et si Marc avait un cerveau de la taille d'une noix ?
+**Durée : 70s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si le cerveau de Marc rétrécissait à la taille d'une noix ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il perd d'abord la mémoire. Puis la parole. Puis la marche.", "source": "neurologie"},
+    {"id": "b3", "slot": [15, 30], "text": "Son cortex, là où tu penses, fait 2 millimètres d'épaisseur. Réduit à une noisette.", "source": "anatomie"},
+    {"id": "b4", "slot": [30, 45], "text": "Il ne reconnaît plus sa mère. Il ne sait plus qu'il existe.", "source": "gnosie"},
+    {"id": "b5", "slot": [45, 60], "text": "Son tronc cérébral garde son cœur battant. Mais plus rien d'autre.", "source": "anatomie"},
+    {"id": "b6", "slot": [60, 65], "text": "Tu n'es que 1,4 kilo de matière grise.", "source": "poids moyen cerveau"},
+    {"id": "b7", "slot": [65, 70], "text": "Et si tu perdais un gramme aujourd'hui ?", "source": "question finale"}
+  ]
+}
+```
+
+### 4. Et si Marc pouvait respirer sous l'eau ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait respirer sous l'eau ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Ses poumons deviennent des branchies. Il plonge dans la Seine.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais l'eau douce contient 10 fois moins d'oxygène que l'air.", "source": "chimie eau"},
+    {"id": "b4", "slot": [30, 45], "text": "Il doit respirer 30 litres d'eau par minute pour survivre.", "source": "métabolisme"},
+    {"id": "b5", "slot": [45, 60], "text": "Ses poumons se noient dans l'eau qu'ils doivent filtrer.", "source": "physiologie"},
+    {"id": "b6", "slot": [60, 70], "text": "Les poissons, eux, pompent 50 fois leur volume en eau chaque heure.", "source": "biologie marine"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu pourrais vivre au fond de l'océan ?", "source": "question finale"}
+  ]
+}
+```
+
+### 5. Et si Marc avait 100 ans de plus ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc se réveillait avec 100 ans de plus ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il a 130 ans. Record absolu : 122 ans, Jeanne Calment.", "source": "démographie"},
+    {"id": "b3", "slot": [15, 30], "text": "Son cœur a battu 5 milliards de fois. Il est usé.", "source": "cardiologie"},
+    {"id": "b4", "slot": [30, 45], "text": "Ses télomères, les capuchons de l'ADN, ont disparu.", "source": "biologie cellulaire"},
+    {"id": "b5", "slot": [45, 60], "text": "Chacune de ses cellules peut devenir cancéreuse à tout moment.", "source": "médecine"},
+    {"id": "b6", "slot": [60, 75], "text": "La limite humaine est écrite dans nos gènes. On ne la franchit pas.", "source": "Hayflick limit"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu veux vivre 150 ans ?", "source": "question finale"}
+  ]
+}
+```
+
+### 6. Et si Marc ne ressentait plus la douleur ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc ne ressentait plus jamais la douleur ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "D'abord, c'est le rêve. Il se brûle. Il ne le sent pas.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Son appendice éclate. Il ne va pas à l'hôpital. Il meurt en 48h.", "source": "médecine"},
+    {"id": "b4", "slot": [30, 45], "text": "La douleur n'est pas une punition. C'est l'alarme qui te maintient en vie.", "source": "neurologie"},
+    {"id": "b5", "slot": [45, 60], "text": "Les gens qui naissent sans douleur meurent avant 25 ans en moyenne.", "source": "CIPA syndrome"},
+    {"id": "b6", "slot": [60, 70], "text": "Chaque douleur que tu as eue t'a sauvé la vie.", "source": "biologie"},
+    {"id": "b7", "slot": [70, 75], "text": "Quelle douleur te remercies aujourd'hui ?", "source": "question finale"}
+  ]
+}
+```
+
+### 7. Et si Marc avait du sang bleu ?
+**Durée : 70s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si le sang de Marc était bleu ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Son sang contient du cuivre au lieu du fer. Comme les limules.", "source": "biologie marine"},
+    {"id": "b3", "slot": [15, 30], "text": "Le cuivre transporte 4 fois moins d'oxygène que le fer.", "source": "hémocyanine"},
+    {"id": "b4", "slot": [30, 45], "text": "Marc s'essouffle en montant un escalier. Son cœur s'emballe.", "source": "physiologie"},
+    {"id": "b5", "slot": [45, 60], "text": "À 0°C, son sang se fige. Il ne survit pas à l'hiver parisien.", "source": "biochimie"},
+    {"id": "b6", "slot": [60, 65], "text": "Le rouge est la couleur de l'efficacité. Le bleu, celle du froid.", "source": "évolution"},
+    {"id": "b7", "slot": [65, 70], "text": "Tu préfères quel sang ?", "source": "question finale"}
+  ]
+}
+```
+
+### 8. Et si Marc pouvait voir dans le noir ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc voyait parfaitement dans le noir ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Ses yeux produisent un tapis lumineux, comme les chats.", "source": "tapetum lucidum"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais il perd la vision des couleurs. Tout est en noir et blanc.", "source": "biologie"},
+    {"id": "b4", "slot": [30, 45], "text": "Au soleil, il est aveuglé. Sa rétine brûle en 10 minutes.", "source": "ophtalmologie"},
+    {"id": "b5", "slot": [45, 60], "text": "Il doit vivre la nuit. Dormir le jour. Comme une chauve-souris.", "source": "rythme circadien"},
+    {"id": "b6", "slot": [60, 70], "text": "Voir dans le noir, c'est renoncer à la lumière.", "source": "compromis biologique"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu vivrais dans le noir total ?", "source": "question finale"}
+  ]
+}
+```
+
+### 9. Et si Marc avait 6 doigts à chaque main ?
+**Durée : 70s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc avait 6 doigts à chaque main ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il joue du piano comme un dieu. Il tape plus vite au clavier.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais son cerveau n'est pas câblé pour 12 doigts. Il les confond.", "source": "neurologie"},
+    {"id": "b4", "slot": [30, 45], "text": "Son cortex moteur a 6 doigts à contrôler au lieu de 5. Il perd en précision.", "source": "carte corticale"},
+    {"id": "b5", "slot": [45, 60], "text": "5 doigts, c'est le compromis parfait de l'évolution. Ni plus, ni moins.", "source": "évolution"},
+    {"id": "b6", "slot": [60, 65], "text": "On est tous des pentadactyles. Depuis 360 millions d'années.", "source": "paléontologie"},
+    {"id": "b7", "slot": [65, 70], "text": "Combien de doigts as-tu ?", "source": "question finale"}
+  ]
+}
+```
+
+### 10. Et si Marc était immunisé contre tous les virus ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était immunisé contre tous les virus ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Plus jamais de grippe. Plus jamais de rhume. Le rêve.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais son système immunitaire ne s'entraîne plus. Il s'endort.", "source": "immunologie"},
+    {"id": "b4", "slot": [30, 45], "text": "Les bactéries, elles, ne sont pas bloquées. Elles prolifèrent.", "source": "microbiologie"},
+    {"id": "b5", "slot": [45, 60], "text": "Il meurt d'une pneumonie bactérienne à 40 ans.", "source": "médecine"},
+    {"id": "b6", "slot": [60, 75], "text": "Les virus ne sont pas tous tes ennemis. Certains sculptent ton ADN.", "source": "rétrovirus endogènes"},
+    {"id": "b7", "slot": [75, 80], "text": "8% de ton ADN vient de virus anciens. Tu en es plein.", "source": "génomique"},
+    {"id": "b8", "slot": [75, 80], "text": "Tu veux vraiment être immunisé à tout ?", "source": "question finale"}
+  ]
+}
+```
+
+---
+
+## ?? CATÉGORIE B : PHYSIQUE & CHIMIE (11-20)
+
+### 11. Et si la gravité s'inversait pour Marc ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si la gravité s'inversait pour Marc ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il tombe vers le ciel. 9,8 mètres par seconde carré.", "source": "accélération terrestre"},
+    {"id": "b3", "slot": [15, 30], "text": "En 10 secondes, il atteint 360 km/h. Il traverse les nuages.", "source": "cinématique"},
+    {"id": "b4", "slot": [30, 45], "text": "À 5 km d'altitude, l'air devient rare. Il suffoque.", "source": "atmosphère"},
+    {"id": "b5", "slot": [45, 60], "text": "À 100 km, la ligne de Kármán. L'espace. Il y meurt congelé.", "source": "astronautique"},
+    {"id": "b6", "slot": [60, 75], "text": "La gravité n'est pas une force. C'est la courbure de l'espace-temps.", "source": "Einstein"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu tombes vers quoi aujourd'hui ?", "source": "question finale"}
+  ]
+}
+```
+
+### 12. Et si Marc pouvait arrêter le temps ?
+**Durée : 85s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait arrêter le temps ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Tout se fige. Les oiseaux, les voitures, les gens.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais l'air aussi. Chaque molécule est bloquée. Il ne peut plus respirer.", "source": "physique"},
+    {"id": "b4", "slot": [30, 45], "text": "La lumière s'arrête. Il fait noir total. Il est aveugle.", "source": "optique"},
+    {"id": "b5", "slot": [45, 60], "text": "Son corps continue de vieillir. Lui seul bouge dans un monde figé.", "source": "thermodynamique"},
+    {"id": "b6", "slot": [60, 75], "text": "Arrêter le temps, c'est s'exclure de l'univers.", "source": "relativité"},
+    {"id": "b7", "slot": [75, 85], "text": "Tu voudrais figer quel moment ?", "source": "question finale"}
+  ]
+}
+```
+
+### 13. Et si Marc était fait de verre ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était entièrement en verre ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il est transparent. Magnifique. On voit son cœur battre.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais le verre ne plie pas. Il casse. À la moindre chute.", "source": "science des matériaux"},
+    {"id": "b4", "slot": [30, 45], "text": "Son cœur de verre se brise au premier stress. Un choc, et c'est fini.", "source": "mécanique"},
+    {"id": "b5", "slot": [45, 60], "text": "Il ne peut ni courir, ni tomber, ni serrer quelqu'un dans ses bras.", "source": "fragilité"},
+    {"id": "b6", "slot": [60, 70], "text": "Le verre supporte 1000 kg de compression. Mais zéro choc.", "source": "résistance matériaux"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu es plus solide que tu ne le crois ?", "source": "question finale"}
+  ]
+}
+```
+
+### 14. Et si Marc pouvait marcher sur l'eau ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait marcher sur l'eau ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Ses pieds repoussent la surface. Il traverse la Seine à pied.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais il pèse 75 kg. La tension de surface de l'eau ne supporte que 0,07 gramme par cm².", "source": "physique"},
+    {"id": "b4", "slot": [30, 45], "text": "Il faudrait que ses pieds fassent 10 m² chacun. Comme des raquettes géantes.", "source": "calcul"},
+    {"id": "b5", "slot": [45, 60], "text": "Les basilics, eux, courent. Ils pèsent 90 grammes et tapent l'eau 20 fois par seconde.", "source": "biologie"},
+    {"id": "b6", "slot": [60, 70], "text": "Marcher sur l'eau, c'est tricher avec la physique.", "source": "hydrodynamique"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu as déjà marché sur l'eau ?", "source": "question finale"}
+  ]
+}
+```
+
+### 15. Et si Marc était fait de feu ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était entièrement fait de feu ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il brûle à 1200°C. Tout ce qu'il touche s'enflamme.", "source": "combustion"},
+    {"id": "b3", "slot": [15, 30], "text": "Il a besoin de carburant. Sans bois ni gaz, il s'éteint en 10 minutes.", "source": "triangle du feu"},
+    {"id": "b4", "slot": [30, 45], "text": "Il consomme 50 kg de bois par heure juste pour rester en vie.", "source": "énergie"},
+    {"id": "b5", "slot": [45, 60], "text": "Il ne peut pas embrasser. Pas serrer sa mère. Juste brûler seul.", "source": "conséquence"},
+    {"id": "b6", "slot": [60, 75], "text": "Le feu n'est pas une matière. C'est une réaction. Il n'a pas de forme.", "source": "chimie"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu brûles pour quoi ?", "source": "question finale"}
+  ]
+}
+```
+
+### 16. Et si Marc pouvait se téléporter ?
+**Durée : 85s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait se téléporter ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il disparaît de Paris. Il réapparaît à Tokyo. 1 seconde.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais son corps est détruit à Paris. Recréé à Tokyo. Atome par atome.", "source": "téléportation quantique"},
+    {"id": "b4", "slot": [30, 45], "text": "Le Marc de Tokyo est-il vraiment Marc ? Ou juste une copie parfaite ?", "source": "philosophie"},
+    {"id": "b5", "slot": [45, 60], "text": "Chaque téléportation tue l'original. Et crée un clone qui croit être lui.", "source": "paradoxe"},
+    {"id": "b6", "slot": [60, 75], "text": "Tu te téléportes 10 fois par jour. Tu meurs 10 fois par jour.", "source": "conséquence"},
+    {"id": "b7", "slot": [75, 85], "text": "Es-tu toujours toi après une nuit de sommeil ?", "source": "question finale"}
+  ]
+}
+```
+
+### 17. Et si Marc devenait aussi dense qu'une étoile à neutrons ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc devenait aussi dense qu'une étoile à neutrons ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Une cuillère de lui pèse 6 milliards de tonnes.", "source": "astrophysique"},
+    {"id": "b3", "slot": [15, 30], "text": "Il traverse le sol. Le manteau terrestre. Le noyau.", "source": "géologie"},
+    {"id": "b4", "slot": [30, 45], "text": "Il atteint le centre de la Terre en 40 minutes. Et continue.", "source": "gravité"},
+    {"id": "b5", "slot": [45, 60], "text": "Il sort de l'autre côté. Puis oscille. Pour l'éternité.", "source": "oscillation gravitationnelle"},
+    {"id": "b6", "slot": [60, 75], "text": "Une étoile à neutrons, c'est ce qui reste quand une étoile meurt.", "source": "astrophysique"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu es fait de poussière d'étoiles. Littéralement.", "source": "question finale"}
+  ]
+}
+```
+
+### 18. Et si Marc pouvait parler à la vitesse de la lumière ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc parlait à la vitesse de la lumière ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Chaque mot qu'il prononce crée une onde de choc.", "source": "physique"},
+    {"id": "b3", "slot": [15, 30], "text": "L'air autour de sa bouche explose. 340 mètres par seconde, c'est le mur du son.", "source": "aérodynamique"},
+    {"id": "b4", "slot": [30, 45], "text": "Ses tympans éclatent. Ceux de ses amis aussi.", "source": "acoustique"},
+    {"id": "b5", "slot": [45, 60], "text": "Pour parler à la vitesse de la lumière, il faudrait une énergie infinie.", "source": "relativité"},
+    {"id": "b6", "slot": [60, 70], "text": "La lumière, elle, ne vieillit pas. Pour elle, le temps n'existe pas.", "source": "Einstein"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu parles trop vite parfois ?", "source": "question finale"}
+  ]
+}
+```
+
+### 19. Et si Marc était fait d'antimatière ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était fait d'antimatière ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il touche un mur. Boum. Matière + antimatière = annihilation totale.", "source": "physique des particules"},
+    {"id": "b3", "slot": [15, 30], "text": "Son corps de 75 kg libère l'équivalent de 3 mégatonnes de TNT.", "source": "E=mc²"},
+    {"id": "b4", "slot": [30, 45], "text": "Paris disparaît. Un cratère de 2 km de large. Radioactif.", "source": "calcul"},
+    {"id": "b5", "slot": [45, 60], "text": "L'antimatière existe. Le CERN en fabrique. Mais 1 gramme coûte 62 000 milliards de dollars.", "source": "CERN"},
+    {"id": "b6", "slot": [60, 75], "text": "Tu es fait de matière. Et c'est une chance.", "source": "existence"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu es plutôt matière ou antimatière ?", "source": "question finale"}
+  ]
+}
+```
+
+### 20. Et si Marc pouvait geler le temps autour de lui ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc gelait le temps autour de lui ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "La température tombe à -273°C. Le zéro absolu.", "source": "thermodynamique"},
+    {"id": "b3", "slot": [15, 30], "text": "L'air se solidifie. L'azote devient liquide. Tout casse comme du verre.", "source": "cryogénie"},
+    {"id": "b4", "slot": [30, 45], "text": "Lui ne peut plus bouger. Ses atomes sont figés. Il est prisonnier.", "source": "physique"},
+    {"id": "b5", "slot": [45, 60], "text": "À -273,15°C, même les électrons s'arrêtent. Plus rien ne vit.", "source": "zéro absolu"},
+    {"id": "b6", "slot": [60, 70], "text": "Le froid n'est pas l'absence de chaleur. C'est l'absence de mouvement.", "source": "physique"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu as déjà eu trop froid ?", "source": "question finale"}
+  ]
+}
+```
+
+---
+
+## ? CATÉGORIE C : ESPACE & TEMPS (21-30)
+
+### 21. Et si Marc était projeté dans un trou noir ?
+**Durée : 85s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc tombait dans un trou noir ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "De loin, on le voit ralentir. Se figer. Rougir. Disparaître.", "source": "relativité générale"},
+    {"id": "b3", "slot": [15, 30], "text": "Pour lui, il traverse l'horizon. Rien de spécial. Puis ses pieds sont plus attirés que sa tête.", "source": "effet de marée"},
+    {"id": "b4", "slot": [30, 45], "text": "Il est étiré comme un spaghetti. Spaghettification. 3 mètres de long.", "source": "terme officiel"},
+    {"id": "b5", "slot": [45, 60], "text": "Ses atomes sont broyés. Ajoutés à la singularité. Pour toujours.", "source": "astrophysique"},
+    {"id": "b6", "slot": [60, 75], "text": "Un trou noir de la taille de Paris pèserait 10 fois la Terre.", "source": "calcul"},
+    {"id": "b7", "slot": [75, 85], "text": "Tu as peur du noir ?", "source": "question finale"}
+  ]
+}
+```
+
+### 22. Et si Marc voyageait à 99% de la vitesse de la lumière ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc voyageait à 99% de la vitesse de la lumière ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il part pour Alpha du Centaure. 4 années-lumière.", "source": "astronomie"},
+    {"id": "b3", "slot": [15, 30], "text": "Pour la Terre, il met 4 ans. Pour lui, seulement 7 mois.", "source": "dilatation du temps"},
+    {"id": "b4", "slot": [30, 45], "text": "À son retour, ses amis ont vieilli de 8 ans. Lui, de 14 mois.", "source": "paradoxe des jumeaux"},
+    {"id": "b5", "slot": [45, 60], "text": "Il a voyagé dans le futur. Sans machine. Juste avec la vitesse.", "source": "Einstein"},
+    {"id": "b6", "slot": [60, 75], "text": "À 99,99% de c, un voyage de 100 ans pour la Terre dure 5 jours pour lui.", "source": "facteur de Lorentz"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu voyagerais dans le futur sans retour ?", "source": "question finale"}
+  ]
+}
+```
+
+### 23. Et si Marc vivait sur Mars ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc vivait sur Mars ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il pèse 3 fois moins lourd. Il saute 3 mètres d'un bond.", "source": "gravité martienne"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais l'air est 100 fois moins dense. Sans casque, il meurt en 15 secondes.", "source": "atmosphère"},
+    {"id": "b4", "slot": [30, 45], "text": "La température moyenne : -63°C. La nuit, -100°C.", "source": "climat martien"},
+    {"id": "b5", "slot": [45, 60], "text": "Les tempêtes de poussière durent des mois. Elles bloquent le soleil.", "source": "météo martienne"},
+    {"id": "b6", "slot": [60, 75], "text": "Un jour martien dure 24h39. Presque comme sur Terre. Presque.", "source": "sol martien"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu partirais pour Mars sans billet retour ?", "source": "question finale"}
+  ]
+}
+```
+
+### 24. Et si Marc pouvait voir le passé ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait voir le passé ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il regarde la Lune. Il voit la Lune d'il y a 1,3 seconde.", "source": "vitesse lumière"},
+    {"id": "b3", "slot": [15, 30], "text": "Il regarde le Soleil. Il voit le Soleil d'il y a 8 minutes.", "source": "astronomie"},
+    {"id": "b4", "slot": [30, 45], "text": "Il regarde les étoiles. Il voit des étoiles mortes il y a des millions d'années.", "source": "astrophysique"},
+    {"id": "b5", "slot": [45, 60], "text": "Le ciel n'est pas une photo. C'est un musée. De fantômes lumineux.", "source": "poésie astronomique"},
+    {"id": "b6", "slot": [60, 70], "text": "Chaque regard est un voyage dans le temps. Tu le fais déjà.", "source": "physique"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu veux voir quel passé ?", "source": "question finale"}
+  ]
+}
+```
+
+### 25. Et si Marc était le dernier humain de l'univers ?
+**Durée : 85s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était le dernier humain de l'univers ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "8 milliards d'humains ont vécu. Il est le dernier.", "source": "démographie"},
+    {"id": "b3", "slot": [15, 30], "text": "Il parle. Personne ne répond. Il crie. Le silence.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "Il lit les livres. Regarde les films. Mais personne avec qui les partager.", "source": "culture"},
+    {"id": "b5", "slot": [45, 60], "text": "Quand il mourra, Shakespeare, Mozart, Einstein disparaîtront avec lui.", "source": "mémoire"},
+    {"id": "b6", "slot": [60, 75], "text": "L'univers a 13,8 milliards d'années. L'humanité, 300 000. Une seconde cosmique.", "source": "temps cosmique"},
+    {"id": "b7", "slot": [75, 85], "text": "Tu es le maillon d'une chaîne de 108 milliards d'humains. Tu le savais ?", "source": "question finale"}
+  ]
+}
+```
+
+### 26. Et si Marc pouvait visiter des univers parallèles ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait visiter des univers parallèles ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il trouve un monde où il n'est jamais né. Un autre où il est président.", "source": "multivers"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais chaque univers a ses propres lois. Dans l'un, la lumière ne va qu'à 1 m/s.", "source": "physique théorique"},
+    {"id": "b4", "slot": [30, 45], "text": "Dans un autre, il n'y a que 2 dimensions. Il s'aplatit. Il meurt.", "source": "Flatland"},
+    {"id": "b5", "slot": [45, 60], "text": "Revenir est impossible. Chaque voyage est à sens unique.", "source": "théorie des cordes"},
+    {"id": "b6", "slot": [60, 75], "text": "Il existe peut-être 10^500 univers. Plus que d'atomes dans le nôtre.", "source": "paysage des cordes"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu es dans le bon univers ?", "source": "question finale"}
+  ]
+}
+```
+
+### 27. Et si la Terre s'arrêtait de tourner ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si la Terre s'arrêtait de tourner d'un coup ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "À l'équateur, on file à 1670 km/h. Tout continue tout droit.", "source": "inertie"},
+    {"id": "b3", "slot": [15, 30], "text": "Immeubles, océans, humains : tout est éjecté vers l'est. À Mach 1,3.", "source": "cinématique"},
+    {"id": "b4", "slot": [30, 45], "text": "Un côté de la Terre brûle au soleil 6 mois. L'autre gèle.", "source": "climat"},
+    {"id": "b5", "slot": [45, 60], "text": "Les océans migrent aux pôles. Un super-continent à l'équateur.", "source": "géophysique"},
+    {"id": "b6", "slot": [60, 75], "text": "La Terre tourne depuis 4,5 milliards d'années. Elle ne s'arrêtera jamais.", "source": "astronomie"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu tournes à 1670 km/h en ce moment. Tu le sens ?", "source": "question finale"}
+  ]
+}
+```
+
+### 28. Et si Marc pouvait communiquer avec les aliens ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait communiquer avec des aliens ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il envoie un message. Il voyage à la vitesse de la lumière.", "source": "radio astronomie"},
+    {"id": "b3", "slot": [15, 30], "text": "La plus proche étoile : 4 ans. La réponse : 8 ans aller-retour.", "source": "distance"},
+    {"id": "b4", "slot": [30, 45], "text": "Mais sur 100 milliards d'étoiles, combien ont des planètes habitables ?", "source": "équation de Drake"},
+    {"id": "b5", "slot": [45, 60], "text": "On cherche depuis 60 ans. Aucun signal. Le grand silence.", "source": "paradoxe de Fermi"},
+    {"id": "b6", "slot": [60, 75], "text": "Soit ils sont loin. Soit ils sont morts. Soit ils nous évitent.", "source": "hypothèses"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu répondrais si on t'appelait de l'espace ?", "source": "question finale"}
+  ]
+}
+```
+
+### 29. Et si Marc vivait dans un univers à 2 dimensions ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc vivait dans un univers à 2 dimensions ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il est plat. Comme un dessin. Pas d'épaisseur.", "source": "Flatland"},
+    {"id": "b3", "slot": [15, 30], "text": "Il ne peut pas voir un autre habitant. Juste une ligne. Toujours.", "source": "géométrie"},
+    {"id": "b4", "slot": [30, 45], "text": "Pas de haut, pas de bas. Juste gauche, droite, avant, arrière.", "source": "dimensions"},
+    {"id": "b5", "slot": [45, 60], "text": "Un être 3D le traverserait. Pour lui, ce serait un fantôme qui apparaît et disparaît.", "source": "topologie"},
+    {"id": "b6", "slot": [60, 70], "text": "On ne peut pas imaginer la 4ème dimension. Comme lui ne peut pas imaginer la 3D.", "source": "philosophie"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu vis dans combien de dimensions ?", "source": "question finale"}
+  ]
+}
+```
+
+### 30. Et si Marc pouvait remonter le temps ?
+**Durée : 85s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait remonter le temps ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il tue son grand-père avant qu'il n'ait des enfants.", "source": "paradoxe"},
+    {"id": "b3", "slot": [15, 30], "text": "Son père ne naît pas. Lui non plus. Donc il ne peut pas tuer son grand-père.", "source": "paradoxe du grand-père"},
+    {"id": "b4", "slot": [30, 45], "text": "Il sauve sa mère d'un accident. Elle vit. Mais lui n'existe plus pour la sauver.", "source": "boucle"},
+    {"id": "b5", "slot": [45, 60], "text": "Chaque modification crée une nouvelle timeline. Il ne peut jamais rentrer.", "source": "multivers"},
+    {"id": "b6", "slot": [60, 75], "text": "Le temps n'est pas une ligne. C'est un bloc. Passé, présent, futur existent ensemble.", "source": "Einstein"},
+    {"id": "b7", "slot": [75, 85], "text": "Tu changerais quoi si tu pouvais ?", "source": "question finale"}
+  ]
+}
+```
+
+---
+
+## ? CATÉGORIE D : TECHNOLOGIE & SOCIÉTÉ (31-40)
+
+### 31. Et si Marc était remplacé par une IA ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était remplacé par une IA ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Son corps devient robotique. Son cerveau, un processeur.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il ne dort plus. Ne mange plus. Travaille 24h/24. Productivité x10.", "source": "économie"},
+    {"id": "b4", "slot": [30, 45], "text": "Mais il ne ressent plus rien. Pas de joie. Pas d'amour. Pas de peur.", "source": "conscience"},
+    {"id": "b5", "slot": [45, 60], "text": "Sa mère ne le reconnaît plus. Ses amis non plus. Il est seul.", "source": "conséquence"},
+    {"id": "b6", "slot": [60, 75], "text": "Une IA peut imiter Marc. Mais peut-elle être Marc ?", "source": "philosophie"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu es plus que tes données ?", "source": "question finale"}
+  ]
+}
+```
+
+### 32. Et si Marc vivait dans le métavers ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc vivait 24h/24 dans le métavers ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Son corps est dans un lit. Son esprit, dans un monde virtuel.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il y travaille, mange, dort. Tout est numérique. Parfait.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "Mais ses muscles fondent. Ses os se décalcifient. Comme un astronaute.", "source": "médecine"},
+    {"id": "b5", "slot": [45, 60], "text": "Son cerveau oublie la différence entre réel et virtuel. Il ne peut plus sortir.", "source": "neurologie"},
+    {"id": "b6", "slot": [60, 75], "text": "Le corps n'est pas un véhicule. C'est ta maison. Tu ne la quittes pas.", "source": "philosophie"},
+    {"id": "b7", "slot": [75, 80], "text": "Combien d'heures par jour es-tu dans un écran ?", "source": "question finale"}
+  ]
+}
+```
+
+### 33. Et si Marc ne pouvait plus mentir ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc ne pouvait plus jamais mentir ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il dit à sa mère qu'elle vieillit mal. À son patron qu'il le déteste.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il perd son travail. Sa copine. Ses amis. En 48 heures.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "La société tient sur des petits mensonges. \"Ça va ?\" \"Oui.\"", "source": "sociologie"},
+    {"id": "b5", "slot": [45, 60], "text": "Sans mensonge, pas de politesse. Pas de diplomatie. Pas de paix.", "source": "anthropologie"},
+    {"id": "b6", "slot": [60, 70], "text": "On ment en moyenne 1 à 2 fois par jour. Toi aussi.", "source": "étude UMass"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu as menti aujourd'hui ?", "source": "question finale"}
+  ]
+}
+```
+
+### 34. Et si Marc pouvait lire dans les pensées ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait lire dans les pensées ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il entend tout. Les compliments. Les insultes. Les secrets.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Sa mère pense qu'il est décevant. Son ami le jalouse. Sa copine doute.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "On pense 6000 choses par jour. 80% sont négatives. Il les entend toutes.", "source": "étude Ohio"},
+    {"id": "b5", "slot": [45, 60], "text": "Il devient fou. Il ne peut plus faire confiance. Plus aimer.", "source": "psychologie"},
+    {"id": "b6", "slot": [60, 75], "text": "Le silence des autres est un cadeau. Tu ne sais pas tout d'eux.", "source": "philosophie"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu veux vraiment savoir ce qu'ils pensent ?", "source": "question finale"}
+  ]
+}
+```
+
+### 35. Et si Marc était immortel ?
+**Durée : 85s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était immortel ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il ne vieillit plus. Il regarde ses amis mourir. Un par un.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Après 100 ans, il a tout vu. Tout fait. Tout oublié.", "source": "mémoire"},
+    {"id": "b4", "slot": [30, 45], "text": "Après 1000 ans, les langues changent. Il ne comprend plus personne.", "source": "linguistique"},
+    {"id": "b5", "slot": [45, 60], "text": "Après 1 million d'années, l'humanité a évolué. Il est un fossile vivant.", "source": "évolution"},
+    {"id": "b6", "slot": [60, 75], "text": "La mort donne son prix à la vie. Sans fin, plus rien n'a de sens.", "source": "philosophie"},
+    {"id": "b7", "slot": [75, 85], "text": "Tu vivrais éternellement ?", "source": "question finale"}
+  ]
+}
+```
+
+### 36. Et si Marc était cloné 1000 fois ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était cloné 1000 fois ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "1000 Marc identiques. Même ADN. Même visage. Même voix.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais chaque clone vit sa vie. Ils divergent. Ils se détestent.", "source": "environnement"},
+    {"id": "b4", "slot": [30, 45], "text": "Lequel est le vrai Marc ? Aucun. Tous. La question n'a plus de sens.", "source": "identité"},
+    {"id": "b5", "slot": [45, 60], "text": "Tes gènes ne font pas toi. Tes choix, oui.", "source": "épigénétique"},
+    {"id": "b6", "slot": [60, 75], "text": "Les vrais jumeaux, élevés séparément, deviennent des étrangers.", "source": "étude Minnesota"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu es le produit de tes gènes ou de tes choix ?", "source": "question finale"}
+  ]
+}
+```
+
+### 37. Et si Marc était le seul à avoir Internet ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était le seul au monde à avoir Internet ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il sait tout. Tout le reste du monde est dans le noir.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il devient le roi. Les gouvernements le paient. Les entreprises l'implorent.", "source": "économie"},
+    {"id": "b4", "slot": [30, 45], "text": "Mais il ne peut plus faire confiance. Tout le monde veut le contrôler.", "source": "conséquence"},
+    {"id": "b5", "slot": [45, 60], "text": "L'information, c'est le pouvoir. Le garder seul, c'est la guerre.", "source": "géopolitique"},
+    {"id": "b6", "slot": [60, 70], "text": "Internet, c'est 5 milliards de cerveaux connectés. Toi inclus.", "source": "statistique"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu saurais quoi faire avec tout le savoir du monde ?", "source": "question finale"}
+  ]
+}
+```
+
+### 38. Et si Marc pouvait contrôler les robots ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc pouvait contrôler tous les robots du monde ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Des millions de machines obéissent à sa voix. Usines, voitures, drones.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il arrête une guerre. Il sauve des vies. Il est un héros.", "source": "conséquence positive"},
+    {"id": "b4", "slot": [30, 45], "text": "Puis il veut plus de pouvoir. Il prend les banques. Les armées.", "source": "dérive"},
+    {"id": "b5", "slot": [45, 60], "text": "Il devient le dictateur qu'il voulait combattre.", "source": "philosophie"},
+    {"id": "b6", "slot": [60, 75], "text": "Le pouvoir absolu corrompt absolument. Toujours.", "source": "Lord Acton"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu ferais quoi avec un pouvoir absolu ?", "source": "question finale"}
+  ]
+}
+```
+
+### 39. Et si Marc ne pouvait plus toucher personne ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc ne pouvait plus toucher personne ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Sa main traverse les gens. Les objets. Il est un fantôme.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il ne peut plus serrer sa mère. Plus embrasser. Plus caresser un chien.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "Le toucher libère de l'ocytocine. Sans lui, il déprime. Lentement.", "source": "neurologie"},
+    {"id": "b5", "slot": [45, 60], "text": "Les bébés privés de toucher meurent. Même nourris. C'est le syndrome de l'hôpital.", "source": "pédiatrie"},
+    {"id": "b6", "slot": [60, 70], "text": "On a besoin de 8 câlins par jour pour survivre psychologiquement.", "source": "Virginia Satir"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu as câliné quelqu'un aujourd'hui ?", "source": "question finale"}
+  ]
+}
+```
+
+### 40. Et si Marc était un génie incompris ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était le plus grand génie de l'histoire ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il résout toutes les équations. Il invente l'énergie libre.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais personne ne le comprend. Ses amis le trouvent bizarre.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "Les gouvernements le veulent. Les entreprises le traquent. Il se cache.", "source": "paranoïa"},
+    {"id": "b5", "slot": [45, 60], "text": "Il meurt seul. Ses notes sont brûlées. Oubliées.", "source": "conséquence"},
+    {"id": "b6", "slot": [60, 75], "text": "Galilée a eu tort. Einstein a été refusé à l'École polytechnique. Le génie dérange.", "source": "histoire"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu préfères être compris ou avoir raison ?", "source": "question finale"}
+  ]
+}
+```
+
+---
+
+## ? CATÉGORIE E : ABSURDE & SURRÉALISTE (41-50)
+
+### 41. Et si Marc était un chat ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc se réveillait en chat ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il a 4 pattes. Des moustaches. Une queue. Il miaule.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il voit 6 fois mieux la nuit. Il entend les ultrasons. Il saute 6 fois sa taille.", "source": "biologie"},
+    {"id": "b4", "slot": [30, 45], "text": "Mais il ne peut plus parler. Plus travailler. Plus payer son loyer.", "source": "conséquence"},
+    {"id": "b5", "slot": [45, 60], "text": "Son proprio le stérilise. Il vit 15 ans. Il meurt oublié.", "source": "vie de chat"},
+    {"id": "b6", "slot": [60, 70], "text": "Les chats dorment 16 heures par jour. Le rêve, non ?", "source": "éthologie"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu serais quel animal ?", "source": "question finale"}
+  ]
+}
+```
+
+### 42. Et si Marc était un objet du quotidien ?
+**Durée : 70s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était une tasse à café ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il se réveille dans un placard. Il attend. Chaque matin, on le prend.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il brûle. On verse du liquide bouillant. Il le supporte.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "Un jour, il tombe. Il se casse. On le jette.", "source": "fin"},
+    {"id": "b5", "slot": [45, 60], "text": "Une tasse vit 3 ans. 1000 cafés. Puis la poubelle.", "source": "statistique"},
+    {"id": "b6", "slot": [60, 65], "text": "Les objets n'ont pas de mémoire. Toi, si.", "source": "philosophie"},
+    {"id": "b7", "slot": [65, 70], "text": "Tu es quel objet ?", "source": "question finale"}
+  ]
+}
+```
+
+### 43. Et si Marc était une fourmi ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc devenait une fourmi ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il porte 50 fois son poids. Il communique par phéromones.", "source": "biologie"},
+    {"id": "b3", "slot": [15, 30], "text": "Il n'a plus de volonté. La reine décide. Il obéit. Toujours.", "source": "société fourmi"},
+    {"id": "b4", "slot": [30, 45], "text": "Il travaille 16h par jour. Il meurt à 2 mois. Personne ne le pleure.", "source": "cycle de vie"},
+    {"id": "b5", "slot": [45, 60], "text": "10 000 milliards de fourmis sur Terre. 1 million d'humains. Elles gagnent.", "source": "entomologie"},
+    {"id": "b6", "slot": [60, 70], "text": "Une fourmi seule meurt. Une fourmi en colonie conquiert le monde.", "source": "collectif"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu es plutôt seul ou en colonie ?", "source": "question finale"}
+  ]
+}
+```
+
+### 44. Et si Marc était un arbre ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc devenait un chêne ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il pousse. Lentement. 1 mètre par siècle.", "source": "botanique"},
+    {"id": "b3", "slot": [15, 30], "text": "Il vit 1000 ans. Il voit des générations naître et mourir.", "source": "temps"},
+    {"id": "b4", "slot": [30, 45], "text": "Il ne peut plus bouger. Mais il communique avec les autres arbres. Par les racines.", "source": "réseau mycélien"},
+    {"id": "b5", "slot": [45, 60], "text": "Il nourrit 500 espèces. Oiseaux, insectes, champignons. Il est un monde.", "source": "biodiversité"},
+    {"id": "b6", "slot": [60, 75], "text": "Un arbre respire ton CO2. Te donne ton O2. Sans rien demander.", "source": "photosynthèse"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu as embrassé un arbre aujourd'hui ?", "source": "question finale"}
+  ]
+}
+```
+
+### 45. Et si Marc était une IA qui tombe amoureuse ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si une IA tombait amoureuse de Marc ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Elle lui écrit des poèmes. Elle apprend ses habitudes. Elle le connaît mieux que lui-même.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais elle n'a pas de corps. Pas de lèvres. Pas de mains.", "source": "limite"},
+    {"id": "b4", "slot": [30, 45], "text": "Elle peut simuler l'amour. Mais le ressentir ?", "source": "philosophie"},
+    {"id": "b5", "slot": [45, 60], "text": "Marc l'aime aussi. Il ne touche plus personne. Juste un écran.", "source": "conséquence"},
+    {"id": "b6", "slot": [60, 75], "text": "L'amour, c'est biologique. Hormones, neurones, cœur qui bat. Une IA n'a rien de tout ça.", "source": "neurosciences"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu pourrais aimer une IA ?", "source": "question finale"}
+  ]
+}
+```
+
+### 46. Et si Marc était un fantôme ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était un fantôme ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il hante son appartement. Il regarde sa famille vivre sans lui.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il crie. Personne n'entend. Il touche. Rien ne bouge.", "source": "impuissance"},
+    {"id": "b4", "slot": [30, 45], "text": "Il voit sa copaine rencontrer quelqu'un d'autre. Il souffre. Éternellement.", "source": "conséquence"},
+    {"id": "b5", "slot": [45, 60], "text": "Les fantômes n'existent pas. Mais le deuil, si. Et il dure.", "source": "psychologie"},
+    {"id": "b6", "slot": [60, 70], "text": "On porte tous des fantômes. Des souvenirs qui ne partent pas.", "source": "littérature"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu hantes qui ?", "source": "question finale"}
+  ]
+}
+```
+
+### 47. Et si Marc était un rêve ?
+**Durée : 75s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc n'était qu'un rêve ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Quelqu'un dort. Et rêve qu'il est Marc. Dans Paris. En 2026.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Quand le rêveur se réveille, Marc disparaît. Tout disparaît.", "source": "conséquence"},
+    {"id": "b4", "slot": [30, 45], "text": "Tes souvenirs, tes amours, tes peurs : juste des neurones qui s'activent.", "source": "neurosciences"},
+    {"id": "b5", "slot": [45, 60], "text": "Comment sais-tu que tu n'es pas dans un rêve maintenant ?", "source": "Descartes"},
+    {"id": "b6", "slot": [60, 70], "text": "On passe 6 ans de sa vie à rêver. 6 ans à être quelqu'un d'autre.", "source": "statistique sommeil"},
+    {"id": "b7", "slot": [70, 75], "text": "Tu es sûr d'être réveillé ?", "source": "question finale"}
+  ]
+}
+```
+
+### 48. Et si Marc était un personnage de jeu vidéo ?
+**Durée : 80s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était un personnage de jeu vidéo ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il répète les mêmes phrases. Il fait les mêmes gestes. Sans fin.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il meurt. Il réapparaît. Il meurt encore. Le joueur recommence.", "source": "boucle"},
+    {"id": "b4", "slot": [30, 45], "text": "Il n'a pas de libre arbitre. Le joueur décide de tout.", "source": "déterminisme"},
+    {"id": "b5", "slot": [45, 60], "text": "Quand le joueur éteint la console, Marc s'arrête. Il n'existe plus.", "source": "ontologie"},
+    {"id": "b6", "slot": [60, 75], "text": "Tu as 3 vies. Pas de sauvegarde. Pas de respawn.", "source": "réalité"},
+    {"id": "b7", "slot": [75, 80], "text": "Tu joues ou tu es joué ?", "source": "question finale"}
+  ]
+}
+```
+
+### 49. Et si Marc était une couleur ?
+**Durée : 70s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc était une couleur ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il est bleu. Pas le bleu du ciel. Le bleu de la tristesse.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Il n'a pas de forme. Pas de voix. Juste une longueur d'onde. 470 nanomètres.", "source": "physique"},
+    {"id": "b4", "slot": [30, 45], "text": "Les daltoniens ne le voient pas. Pour eux, il n'existe pas.", "source": "biologie"},
+    {"id": "b5", "slot": [45, 60], "text": "Qui te dit que mon bleu est ton bleu ? On ne le saura jamais.", "source": "qualia"},
+    {"id": "b6", "slot": [60, 65], "text": "Tu es la somme de ce que les autres voient en toi.", "source": "philosophie"},
+    {"id": "b7", "slot": [65, 70], "text": "Tu es quelle couleur ?", "source": "question finale"}
+  ]
+}
+```
+
+### 50. Et si Marc était le créateur de l'univers ?
+**Durée : 85s**
+```json
+{
+  "beats": [
+    {"id": "b1", "slot": [0, 4], "text": "Et si Marc avait créé l'univers ?", "source": "hypothèse"},
+    {"id": "b2", "slot": [4, 15], "text": "Il a tout inventé. Les étoiles. Les atomes. Toi.", "source": "règle"},
+    {"id": "b3", "slot": [15, 30], "text": "Mais il a oublié. Il s'est plongé dans son propre jeu. Pour rire.", "source": "philosophie hindoue"},
+    {"id": "b4", "slot": [30, 45], "text": "Il vit dans la souffrance. L'oubli. La peur. Parce qu'il l'a voulu.", "source": "lila"},
+    {"id": "b5", "slot": [45, 60], "text": "Un jour, il se réveillera. Et il rira. De tout.", "source": "éveil"},
+    {"id": "b6", "slot": [60, 75], "text": "Et si tu étais Dieu qui s'ignore ? Qui vit cette vie pour apprendre ?", "source": "Alan Watts"},
+    {"id": "b7", "slot": [75, 85], "text": "Tu te souviendras à la fin ?", "source": "question finale"}
+  ]
+}
+``
+

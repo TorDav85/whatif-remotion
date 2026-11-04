@@ -1,0 +1,15 @@
+{
+  "slug": "bombe-nucleaire",
+  "title": "Et si une bombe nucléaire tombait sur cette ville ?",
+  "composition": "BombeNucleaire",
+  "source": "out/bombe-nucleaire/bombe-nucleaire-60s-v3.mp4",
+  "coverTime": 26.5,
+  "coverHighlight": ["nucléaire"],
+  "description": "Partie 1. Flash, chaleur, souffle et retombées : Marc traverse une ville frappée par une explosion nucléaire et rejoint un abri. Puis quelqu'un frappe à la porte... Une fiction en 3D stylisée. Chronologie condensée, distances et puissance non simulées. Images 3D et voix de synthèse IA. Sources des effets : CDC, HHS REMM, NYC Health et CICR, détaillées dans sources.json.",
+  "hashtags": "#etsi #whatif #science #nucleaire #animation3d",
+  "hookVariant": "consequence",
+  "editVariant": "ville-detaillee-partie-1-v3-stable",
+  "durationSeconds": 60,
+  "publications": [],
+  "dropOffs": []
+}
