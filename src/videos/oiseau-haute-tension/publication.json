@@ -4,14 +4,29 @@
   "composition": "OiseauHauteTension",
   "source": "out/oiseau-haute-tension/oiseau-haute-tension-45s.mp4",
   "coverTime": 22,
+  "coverHighlight": [
+    "L'OISEAU",
+    "PYLÔNE"
+  ],
   "description": "20 000 volts sous ses pattes, et il ne sent rien. Tout est une question de différence de potentiel.",
   "hashtags": "#etsi #whatif #science #electricite #physique",
+  "notice": "Voix de synthèse IA (XTTS) et images générées par ordinateur. Faits sourcés ; le contact de l'aile avec le pylône est une mise en situation.",
   "hookVariant": "paradox",
   "editVariant": "short",
   "durationSeconds": 45,
   "publications": [
-    {"platform": "youtube-shorts", "url": null, "publishedAt": null, "metrics": {}},
-    {"platform": "tiktok", "url": null, "publishedAt": null, "metrics": {}}
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {}
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {}
+    }
   ],
   "dropOffs": []
 }

@@ -45,7 +45,7 @@ const describe = (pub, names) => [
   '',
   pub.hashtags ?? '',
   '',
-  AI_NOTICE,
+  pub.notice ?? AI_NOTICE,
   '',
 ].join('\n');
 
