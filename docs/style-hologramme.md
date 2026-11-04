@@ -2,7 +2,7 @@
 
 Style d'explication scientifique : fond noir, grille cyan en perspective, objets en fil de fer émissif
 avec un corps translucide « rayons X », courant en impulsions lumineuses, arcs électriques, HUD monospace.
-Première vidéo : `src/videos/oiseau-haute-tension/` (composition `OiseauHauteTension`, 45 s).
+Vidéos : `src/videos/oiseau-haute-tension/` (`OiseauHauteTension`, 45 s) et `src/videos/avion-portance/` (`AvionPortance`, 45 s).
 Planche du kit : composition `HoloKit` (dossier Bibliotheque du Studio).
 
 ## Le kit `src/shared/holo/`
@@ -12,13 +12,15 @@ Planche du kit : composition `HoloKit` (dossier Bibliotheque du Studio).
 | `theme.ts` | `HOLO_DEFAULT` (`bg #000308`, `grid #003344`, `primary #00f0ff`, `secondary #00ffa6`, `danger`, `warn`, police), `withTheme({...})` pour recolorer un autre sujet, `neonShadow`. |
 | `geometry.ts` | Fonctions pures testées : `catenary`, `arcPoints` (éclair à graine), `flickerSeed`, `pulseAt`, `ringRadius`, `along`. |
 | `materials.ts` | Matériaux additifs (faux bloom sans post-traitement) : fil de fer, rayons X (fresnel), tube à impulsions, grille qui s'estompe, ondes au sol, halo. |
-| `WireframeScene.tsx` | `WireframeScene` (fond + grille + caméra `CameraRig`), `HoloGrid`, `WireMesh` (arêtes ou triangles + corps translucide), `WireLines`, `PulseRings`. |
+| `WireframeScene.tsx` | `WireframeScene` (fond + grille + caméra `CameraRig`), `HoloGrid`, `WireMesh` (arêtes ou triangles + corps translucide), `WireLines`, `PulseRings`, `VectorArrow` (flèche de force 3D). |
 | `CurrentFlow.tsx` | `PulseTube` (impulsions qui défilent, `head`/`tail` pour un front de courant), `ElectronDots`, `ElectricArc` (nouvelle forme tous les `hold` frames, graine fixe), `Spark`. |
 | `HudOverlay.tsx` | CSS 2D : `Reticle` [ ] (à placer avec `projectToScreen`), `Readout`, `Gauge`, `VersusPanel` (V1 vs V2, ΔV), `ScanLines`, `HudFrame`, `Glitch` + `glitchAt`/`glitchStyle`, `frNumber`, `countUp`, `typed`. |
 | `Subtitles.tsx` | Sous-titres monospace, mêmes données que `CaptionTrack` (`npm run captions -- <slug>`). |
 
 Assets du style : `src/assets/holo/` — `Bird` (ailes articulées, `birdWingTip` pour un contact exact),
-`PowerLine` (pylônes treillis, isolateurs, trois conducteurs, `conductorY` pour poser un objet sur un câble).
+`PowerLine` (pylônes treillis, isolateurs, trois conducteurs, `conductorY` pour poser un objet sur un câble),
+`Airliner` (gros-porteur quadriréacteur, origine sous le train principal pour la rotation au décollage),
+`Airfoil` (profil NACA, `streamline` : lignes de courant illustratives, `AirfoilSection`).
 
 ## Nouvelle vidéo dans ce style
 

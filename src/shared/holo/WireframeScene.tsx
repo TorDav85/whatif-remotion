@@ -106,3 +106,37 @@ export const WireframeScene: React.FC<{
     {children}
   </>
 );
+
+const UP = new THREE.Vector3(0, 1, 0);
+
+/**
+ * Force/velocity arrow: shaft + head, from `from` along `dir` (any length, normalised here), `length` metres.
+ * Head size scales with `head` (metres). Hidden when length ≤ 0.
+ */
+export const VectorArrow: React.FC<{
+  from: V3; dir: V3; length: number; color: string; radius?: number; head?: number; opacity?: number; fill?: number;
+}> = ({from, dir, length, color, radius = 0.05, head = 0.4, opacity = 1, fill = 0.55}) => {
+  const geos = useDispose(
+    useMemo(() => {
+      const shaft = new THREE.CylinderGeometry(1, 1, 1, 10).translate(0, 0.5, 0);
+      const tip = new THREE.ConeGeometry(1, 1, 12).translate(0, 0.5, 0);
+      return {shaft, tip, dispose: () => { shaft.dispose(); tip.dispose(); }};
+    }, []),
+  );
+  if (length <= 0 || opacity <= 0) return null;
+  const d = new THREE.Vector3(...dir).normalize();
+  const q = new THREE.Quaternion().setFromUnitVectors(UP, d);
+  const e = new THREE.Euler().setFromQuaternion(q);
+  const h = Math.min(head, length * 0.45);
+  const shaftLen = length - h;
+  return (
+    <group position={from} rotation={[e.x, e.y, e.z]}>
+      <group scale={[radius, shaftLen, radius]}>
+        <WireMesh geometry={geos.shaft} color={color} fill={fill} opacity={opacity} />
+      </group>
+      <group position={[0, shaftLen, 0]} scale={[h * 0.45, h, h * 0.45]}>
+        <WireMesh geometry={geos.tip} color={color} fill={fill} opacity={opacity} />
+      </group>
+    </group>
+  );
+};

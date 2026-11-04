@@ -1,0 +1,83 @@
+{
+  "voice": "morpheus",
+  "ambience": "avion-portance/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Cinq cent soixante-quinze tonnes. Et pourtant, cet avion tient dans le ciel.",
+      "start": 0.2,
+      "duration": 5.416,
+      "end": 5.616,
+      "speed": 1.0431,
+      "seed": 32000,
+      "audio": "avion-portance/hook.wav",
+      "sha256": "163349f4422c65250c2b054030ecf2e045076e7f472e4fc96f38f5b05e7cbb79"
+    },
+    {
+      "id": "weight",
+      "text": "Son poids le tire vers le bas. Il faut une force égale vers le haut : la portance.",
+      "start": 6.2,
+      "duration": 5.1608,
+      "end": 11.3607,
+      "speed": 1.0,
+      "seed": 32001,
+      "audio": "avion-portance/weight.wav",
+      "sha256": "a87c05f6fc7f27d76e0bf6b0ca7b739a183cdc326a10c0ab6add37785f1e8e11"
+    },
+    {
+      "id": "wing",
+      "text": "Son aile est bombée et inclinée. Elle pousse l'air vers le bas, et l'air la pousse vers le haut.",
+      "start": 13.2,
+      "duration": 5.6671,
+      "end": 18.8671,
+      "speed": 1.0,
+      "seed": 32101,
+      "audio": "avion-portance/wing.wav",
+      "sha256": "c7225145095dd58a0a8636148dc97ada56271e56b9164fa124f770bd80e7615d"
+    },
+    {
+      "id": "speed",
+      "text": "Tout dépend de la vitesse : deux fois plus vite, quatre fois plus de portance.",
+      "start": 22.4,
+      "duration": 5.4913,
+      "end": 27.8913,
+      "speed": 1.0,
+      "seed": 32003,
+      "audio": "avion-portance/speed.wav",
+      "sha256": "a35d25a6adbd745102ba1645736e7c3feb8fb10eb4838c6ffcec60ce5de9684a"
+    },
+    {
+      "id": "stall",
+      "text": "Trop lent ? La portance s'effondre : c'est le décrochage.",
+      "start": 29.4,
+      "duration": 3.8184,
+      "end": 33.2184,
+      "speed": 1.0,
+      "seed": 32202,
+      "audio": "avion-portance/stall.wav",
+      "sha256": "915aee5e35d72b91dbefe82eb6272152acc513628d4ef51cb3be251b1457407d"
+    },
+    {
+      "id": "rule",
+      "text": "La règle : avec assez de vitesse, chaque mètre carré d'aile porte près de sept cents kilos.",
+      "start": 34.2,
+      "duration": 6.4099,
+      "end": 40.6099,
+      "speed": 1.0436,
+      "seed": 32005,
+      "audio": "avion-portance/rule.wav",
+      "sha256": "e6e1782a36d12f5cdd74d4ec68ab7449c225cc96000fb71895c77986a8de3382"
+    },
+    {
+      "id": "end",
+      "text": "Et là-haut, où l'air est trois fois plus léger ?",
+      "start": 41.2,
+      "duration": 2.4285,
+      "end": 43.6285,
+      "speed": 1.0,
+      "seed": 32006,
+      "audio": "avion-portance/end.wav",
+      "sha256": "b6eef2154b7d493ae8b46d75ddf7f2f51ddda5224fd12aad3e68297d2beb5ca0"
+    }
+  ]
+}

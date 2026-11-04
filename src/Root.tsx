@@ -53,6 +53,8 @@ import {Cover} from './publication/Cover';
 import marcGeantCourtTiming from './videos/marc-geant-court/timing.json';
 import {OiseauHauteTension} from './videos/oiseau-haute-tension/OiseauHauteTension';
 import oiseauTiming from './videos/oiseau-haute-tension/timing.json';
+import {AvionPortance} from './videos/avion-portance/AvionPortance';
+import avionTiming from './videos/avion-portance/timing.json';
 import {HOLO_KIT_FRAMES, HoloKitShowcase} from './assets/holo/HoloKitShowcase';
 
 const audioFirst = readTimeline(compiledAudioFirst);
@@ -64,6 +66,7 @@ export const Root: React.FC = () => (
         {...timelineMetadata(audioFirst)} calculateMetadata={({props}) => timelineMetadata(props.timeline)} />
     </Folder>
     <Folder name="Videos">
+      <Composition id="AvionPortance" component={AvionPortance} durationInFrames={Math.round(avionTiming.duration * avionTiming.fps)} fps={avionTiming.fps} width={avionTiming.width} height={avionTiming.height} />
       <Composition id="OiseauHauteTension" component={OiseauHauteTension} durationInFrames={Math.round(oiseauTiming.duration * oiseauTiming.fps)} fps={oiseauTiming.fps} width={oiseauTiming.width} height={oiseauTiming.height} />
       <Composition id="BombeNucleaireVille" component={BombeNucleaireVille} durationInFrames={Math.round(bombeVilleTiming.duration * bombeVilleTiming.fps)} fps={bombeVilleTiming.fps} width={bombeVilleTiming.width} height={bombeVilleTiming.height} />
       <Composition id="MarcSalaire2" component={MarcSalaire2} durationInFrames={Math.round(marcSalaire2Timing.duration * marcSalaire2Timing.fps)} fps={marcSalaire2Timing.fps} width={marcSalaire2Timing.width} height={marcSalaire2Timing.height} />

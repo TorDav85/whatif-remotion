@@ -1,0 +1,19 @@
+{
+  "slug": "avion-portance",
+  "title": "Et si l'avion ralentissait trop ?",
+  "composition": "AvionPortance",
+  "source": "out/avion-portance/avion-portance-45s.mp4",
+  "coverTime": 31.4,
+  "coverHighlight": ["L'AVION", "RALENTISSAIT"],
+  "description": "575 tonnes dans le ciel, sans tomber. Tout est une question de vitesse et d'aile.",
+  "hashtags": "#etsi #whatif #science #avion #physique",
+  "notice": "",
+  "hookVariant": "paradox",
+  "editVariant": "short",
+  "durationSeconds": 45,
+  "publications": [
+    {"platform": "youtube-shorts", "url": null, "publishedAt": null, "metrics": {}},
+    {"platform": "tiktok", "url": null, "publishedAt": null, "metrics": {}}
+  ],
+  "dropOffs": []
+}
