@@ -26,6 +26,8 @@ import {InternetOff} from './videos/internet-off/InternetOff';
 import internetTiming from './videos/internet-off/timing.json';
 import {AsteroideParis} from './videos/asteroide-paris/AsteroideParis';
 import asteroideTiming from './videos/asteroide-paris/timing.json';
+import {BombeNucleaire} from './videos/bombe-nucleaire/BombeNucleaire';
+import bombeTiming from './videos/bombe-nucleaire/timing.json';
 import {MarcGeant} from './videos/marc-geant/MarcGeant';
 import {MarcMini} from './videos/marc-mini/MarcMini';
 import marcMiniTiming from './videos/marc-mini/timing.json';
@@ -44,6 +46,14 @@ import {MarcSalaire3} from './videos/marc-salaire-3/MarcSalaire3';
 import marcSalaire3Timing from './videos/marc-salaire-3/timing.json';
 import {MarcDeuxLunes} from './videos/marc-deux-lunes/MarcDeuxLunes';
 import marcDeuxLunesTiming from './videos/marc-deux-lunes/timing.json';
+import {MarcInvisible} from './videos/marc-invisible/MarcInvisible';
+import marcInvisibleTiming from './videos/marc-invisible/timing.json';
+import {MarcInsomnie} from './videos/marc-insomnie/MarcInsomnie';
+import marcInsomnieTiming from './videos/marc-insomnie/timing.json';
+import {MarcNoix} from './videos/marc-noix/MarcNoix';
+import marcNoixTiming from './videos/marc-noix/timing.json';
+import {MarcBranchies} from './videos/marc-branchies/MarcBranchies';
+import marcBranchiesTiming from './videos/marc-branchies/timing.json';
 import {MarcGeantCourt} from './videos/marc-geant-court/MarcGeantCourt';
 import {Cover} from './publication/Cover';
 import marcGeantCourtTiming from './videos/marc-geant-court/timing.json';
@@ -57,10 +67,15 @@ export const Root: React.FC = () => (
         {...timelineMetadata(audioFirst)} calculateMetadata={({props}) => timelineMetadata(props.timeline)} />
     </Folder>
     <Folder name="Videos">
+      <Composition id="BombeNucleaire" component={BombeNucleaire} durationInFrames={Math.round(bombeTiming.duration * bombeTiming.fps)} fps={bombeTiming.fps} width={bombeTiming.width} height={bombeTiming.height} />
       <Composition id="MarcSalaire2" component={MarcSalaire2} durationInFrames={Math.round(marcSalaire2Timing.duration * marcSalaire2Timing.fps)} fps={marcSalaire2Timing.fps} width={marcSalaire2Timing.width} height={marcSalaire2Timing.height} />
       <Composition id="Couverture" component={Cover} durationInFrames={1} fps={30} width={1080} height={1920} defaultProps={{slug: 'marc-geant', t: 46, title: 'Et si Marc devenait géant ?'}} />
       <Composition id="MarcGeantCourt" component={MarcGeantCourt} durationInFrames={Math.round(marcGeantCourtTiming.duration * marcGeantCourtTiming.fps)} fps={marcGeantCourtTiming.fps} width={marcGeantCourtTiming.width} height={marcGeantCourtTiming.height} />
       <Composition id="MarcDeuxLunes" component={MarcDeuxLunes} durationInFrames={Math.round(marcDeuxLunesTiming.duration * marcDeuxLunesTiming.fps)} fps={marcDeuxLunesTiming.fps} width={marcDeuxLunesTiming.width} height={marcDeuxLunesTiming.height} />
+      <Composition id="MarcInvisible" component={MarcInvisible} durationInFrames={Math.round(marcInvisibleTiming.duration * marcInvisibleTiming.fps)} fps={marcInvisibleTiming.fps} width={marcInvisibleTiming.width} height={marcInvisibleTiming.height} />
+      <Composition id="MarcInsomnie" component={MarcInsomnie} durationInFrames={Math.round(marcInsomnieTiming.duration * marcInsomnieTiming.fps)} fps={marcInsomnieTiming.fps} width={marcInsomnieTiming.width} height={marcInsomnieTiming.height} />
+      <Composition id="MarcNoix" component={MarcNoix} durationInFrames={Math.round(marcNoixTiming.duration * marcNoixTiming.fps)} fps={marcNoixTiming.fps} width={marcNoixTiming.width} height={marcNoixTiming.height} />
+      <Composition id="MarcBranchies" component={MarcBranchies} durationInFrames={Math.round(marcBranchiesTiming.duration * marcBranchiesTiming.fps)} fps={marcBranchiesTiming.fps} width={marcBranchiesTiming.width} height={marcBranchiesTiming.height} />
       <Composition id="MarcSalaire3" component={MarcSalaire3} durationInFrames={Math.round(marcSalaire3Timing.duration * marcSalaire3Timing.fps)} fps={marcSalaire3Timing.fps} width={marcSalaire3Timing.width} height={marcSalaire3Timing.height} />
       <Composition id="MarcSalaire" component={MarcSalaire} durationInFrames={Math.round(marcSalaireTiming.duration * marcSalaireTiming.fps)} fps={marcSalaireTiming.fps} width={marcSalaireTiming.width} height={marcSalaireTiming.height} />
       <Composition id="MarcCongel" component={MarcCongel} durationInFrames={Math.round(marcCongelTiming.duration * marcCongelTiming.fps)} fps={marcCongelTiming.fps} width={marcCongelTiming.width} height={marcCongelTiming.height} />

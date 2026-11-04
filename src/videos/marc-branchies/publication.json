@@ -1,0 +1,50 @@
+{
+  "slug": "marc-branchies",
+  "title": "Et si Marc respirait sous l'eau ?",
+  "composition": "MarcBranchies",
+  "source": "out/marc-branchies/marc-branchies-75s.mp4",
+  "coverTime": 2.0,
+  "description": "Des branchies dans la Seine : trente fois moins d'oxygène, une baignoire toutes les trois minutes… et le froid.",
+  "hashtags": "#etsi #whatif #branchies #seine #science",
+  "hookVariant": "danger annoncé",
+  "editVariant": "original",
+  "durationSeconds": 75,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": [],
+  "coverHighlight": [
+    "Marc",
+    "l'eau"
+  ]
+}

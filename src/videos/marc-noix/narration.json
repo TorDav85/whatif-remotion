@@ -1,0 +1,17 @@
+{
+  "duration": 70,
+  "beats": [
+    {"id": "hook", "seed": 29100, "slot": [0.2, 4.4], "text": "En une nuit, le cerveau de Marc rétrécit. Il tient dans une noix.", "source": "règle fictive"},
+    {"id": "skull", "seed": 29101, "slot": [4.8, 10.6], "text": "Cent fois plus léger. Son crâne, lui, ne change pas : le cerveau flotte au milieu.", "source": "cerveau adulte ≈ 1,3 à 1,4 kg ; 1 350 g ÷ 100 ≈ 13,5 g, ordre de grandeur d'une noix ou d'un cerveau de corneille (≈ 10 g)"},
+    {"id": "neurons", "seed": 29102, "slot": [11.0, 17.4], "text": "Un cerveau humain, c'est quatre-vingt-six milliards de neurones. Le sien en garde moins d'un milliard.", "source": "86 milliards (Azevedo et al., J. Comp. Neurol. 2009) ; à densité égale, 86 ÷ 100 ≈ 0,9 milliard"},
+    {"id": "words", "slot": [17.8, 24.0], "text": "Il cherche ses mots. Il ne reconnaît plus Julien. Il oublie ce qu'il faisait.", "source": "conséquence d'une perte massive de neurones corticaux (langage, reconnaissance des visages, mémoire) ; mise en scène"},
+    {"id": "balance", "seed": 29004, "slot": [24.4, 30.4], "text": "Même la zone qui gère l'équilibre rétrécit. Marc ne tient plus debout.", "source": "le cervelet contient ≈ 80 % des neurones pour ≈ 10 % de la masse (Azevedo 2009) ; il coordonne l'équilibre"},
+    {"id": "crow", "slot": [30.8, 37.4], "text": "Pourtant, une corneille a un cerveau de cette taille. Elle fabrique des outils et reconnaît les visages.", "source": "outils : corneille de Nouvelle-Calédonie ; mémoire des visages humains chez la corneille d'Amérique (Marzluff et al., Animal Behaviour 2010)"},
+    {"id": "dense", "slot": [37.8, 44.0], "text": "Son secret : des neurones minuscules, deux fois plus serrés que ceux d'un singe.", "source": "à masse égale, les cerveaux de corvidés et de perroquets ont environ deux fois plus de neurones que ceux des primates (Olkowicz et al., PNAS 2016)"},
+    {"id": "case", "slot": [44.4, 52.0], "text": "Et à Marseille, en 2007, des médecins ont découvert un homme au cerveau réduit à une fine couche.", "source": "Feuillet, Dufour, Pelletier, The Lancet 370:262, 2007 (hydrocéphalie, manteau cortical très mince)"},
+    {"id": "normal", "slot": [52.4, 58.0], "text": "Il était marié, père de deux enfants, et travaillait dans l'administration.", "source": "même source : 44 ans, marié, deux enfants, fonctionnaire ; QI 75"},
+    {"id": "time", "seed": 29109, "slot": [58.4, 63.6], "text": "Son cerveau avait eu des dizaines d'années pour s'adapter. Marc, une seule nuit.", "source": "hydrocéphalie dès la petite enfance, valve posée à 6 mois (Feuillet 2007)"},
+    {"id": "punch", "slot": [64.0, 66.2], "text": "La taille compte moins que le temps.", "source": "chute"},
+    {"id": "cta", "slot": [66.6, 69.8], "text": "Et toi, tu échangerais ton cerveau contre celui d'une corneille ?", "source": "question finale"}
+  ]
+}

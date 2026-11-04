@@ -1,0 +1,18 @@
+{
+  "duration": 80,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 4.4], "text": "Marc ne dort plus. Jamais. Et son cerveau va le lui faire payer.", "source": "règle fictive"},
+    {"id": "night", "seed": 28101, "slot": [4.8, 10.4], "text": "Première nuit. Trois heures du matin, il range tout l'appartement. Il se sent invincible.", "source": "mise en scène ; l'euphorie passagère après une nuit blanche est décrite (Gujar et al., J. Neurosci. 2011)"},
+    {"id": "day2", "slot": [10.8, 16.4], "text": "Quarante-huit heures. Il oublie ses clés, ses mots, et le prénom de Julien.", "source": "troubles de mémoire et de concentration dès les premiers jours (Randy Gardner, 1964, d'après NPR 2024)"},
+    {"id": "micro", "seed": 28103, "slot": [16.8, 23.4], "text": "Puis son cerveau triche : il s'endort une seconde, les yeux ouverts. Des micro-sommeils.", "source": "micro-sommeils pendant la privation, observés à l'EEG ; l'expérience Gardner a nourri ces études (NPR 2024)"},
+    {"id": "car", "slot": [23.8, 29.0], "text": "À cent dix sur l'autoroute, une seconde, c'est trente mètres sans conducteur.", "source": "110 km/h ÷ 3,6 = 30,6 m/s"},
+    {"id": "halluc", "slot": [29.4, 35.6], "text": "Jour quatre. Il hallucine : le panneau de la rue devient un homme qui le fixe.", "source": "hallucinations visuelles fréquentes après 72 h sans sommeil (Waters et al., Front. Psychiatry 2018) ; le panneau est une mise en scène"},
+    {"id": "record", "slot": [36.0, 43.4], "text": "Jour onze. Il égale le record de Randy Gardner : deux cent soixante-quatre heures sans dormir.", "source": "Randy Gardner, 28 déc. 1963 – 8 janv. 1964, 264 h (NPR, 2024)"},
+    {"id": "gardner", "slot": [43.8, 49.0], "text": "Gardner, lui, s'est arrêté là. Puis il a dormi quatorze heures d'affilée.", "source": "14 h de sommeil à l'hôpital naval après l'expérience (NPR, 2024)"},
+    {"id": "unknown", "slot": [49.4, 57.0], "text": "Au-delà, aucun humain n'a été testé. Chez les rats, la privation totale tue en deux à quatre semaines.", "source": "survie de 11 à 32 jours en privation totale (Rechtschaffen et al., Sleep 1989)"},
+    {"id": "why", "slot": [57.4, 64.4], "text": "Leur température chute, leur corps s'épuise. Et on ne sait toujours pas exactement pourquoi ils meurent.", "source": "chute de température observée ; cause de la mort toujours discutée (Rechtschaffen 1989 ; Everson 1995 ; Bergmann et al. 1996)"},
+    {"id": "clean", "slot": [64.8, 71.2], "text": "Chez la souris, le cerveau fait le ménage en dormant. Privé de sommeil, il ronge ses connexions.", "source": "nettoyage pendant le sommeil (Xie et al., Science 2013, discuté depuis) ; astrocytes qui phagocytent des synapses après privation (Bellesi et al., J. Neurosci. 2017)"},
+    {"id": "punch", "slot": [71.6, 75.4], "text": "Marc n'a pas besoin d'un café. Il a besoin d'un lit.", "source": "chute"},
+    {"id": "cta", "slot": [76.0, 79.6], "text": "Et toi, tu as dormi combien d'heures cette nuit ?", "source": "question finale"}
+  ]
+}

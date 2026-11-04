@@ -51,7 +51,7 @@ jamais dans un nom de fichier. Les identifiants techniques (`MarcGeant`, `marc-g
 3. Rend la couverture 1080×1920 JPG depuis la composition `Couverture` (`src/publication/Cover.tsx`) :
    la scène 3D du film à `coverTime`, sans sous-titres ni HUD, et le titre en capitales façon accroche.
    Une vidéo absente de `SCENES` dans `Cover.tsx` doit y être ajoutée (sa `Scene3D` prend `{t}`).
-4. Écrit `publication.txt` : titre, description, hashtags, mention « voix de synthèse IA, scénario fictif ».
+4. Écrit `publication.txt` : titre, description, hashtags.
 
 ## Ne pas faire
 - Renommer, déplacer ou supprimer des fichiers déjà exportés (y compris d'anciens noms dans le dossier) :

@@ -1,0 +1,1288 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.2,
+   "end": 0.54,
+   "text": "En une nuit,",
+   "beat": "hook"
+  },
+  {
+   "start": 1.12,
+   "end": 1.82,
+   "text": "le cerveau de Marc",
+   "beat": "hook"
+  },
+  {
+   "start": 2.32,
+   "end": 3.02,
+   "text": "rétrécit.",
+   "beat": "hook"
+  },
+  {
+   "start": 3.54,
+   "end": 4.38,
+   "text": "Il tient dans une noix.",
+   "beat": "hook"
+  },
+  {
+   "start": 4.8,
+   "end": 5.66,
+   "text": "Cent fois plus léger.",
+   "beat": "skull"
+  },
+  {
+   "start": 6.24,
+   "end": 6.84,
+   "text": "Son crâne,",
+   "beat": "skull"
+  },
+  {
+   "start": 6.84,
+   "end": 7.02,
+   "text": "lui,",
+   "beat": "skull"
+  },
+  {
+   "start": 7.02,
+   "end": 9.12,
+   "text": "ne change pas :",
+   "beat": "skull"
+  },
+  {
+   "start": 9.12,
+   "end": 10.2,
+   "text": "le cerveau flotte au",
+   "beat": "skull"
+  },
+  {
+   "start": 10.2,
+   "end": 10.38,
+   "text": "milieu.",
+   "beat": "skull"
+  },
+  {
+   "start": 11.0,
+   "end": 11.72,
+   "text": "Un cerveau humain,",
+   "beat": "neurons"
+  },
+  {
+   "start": 11.72,
+   "end": 12.22,
+   "text": "c'est quatre-vingt-six",
+   "beat": "neurons"
+  },
+  {
+   "start": 12.22,
+   "end": 13.84,
+   "text": "milliards de neurones.",
+   "beat": "neurons"
+  },
+  {
+   "start": 13.84,
+   "end": 15.82,
+   "text": "Le sien en garde moins",
+   "beat": "neurons"
+  },
+  {
+   "start": 15.82,
+   "end": 16.44,
+   "text": "d'un milliard.",
+   "beat": "neurons"
+  },
+  {
+   "start": 17.8,
+   "end": 18.58,
+   "text": "Il cherche ses mots.",
+   "beat": "words"
+  },
+  {
+   "start": 19.3,
+   "end": 20.0,
+   "text": "Il ne reconnaît plus",
+   "beat": "words"
+  },
+  {
+   "start": 20.0,
+   "end": 20.42,
+   "text": "Julien.",
+   "beat": "words"
+  },
+  {
+   "start": 21.14,
+   "end": 22.7,
+   "text": "Il oublie ce qu'il",
+   "beat": "words"
+  },
+  {
+   "start": 22.7,
+   "end": 22.96,
+   "text": "faisait.",
+   "beat": "words"
+  },
+  {
+   "start": 24.4,
+   "end": 25.42,
+   "text": "Même la zone qui gère",
+   "beat": "balance"
+  },
+  {
+   "start": 25.42,
+   "end": 26.64,
+   "text": "l'équilibre rétrécit.",
+   "beat": "balance"
+  },
+  {
+   "start": 26.64,
+   "end": 28.3,
+   "text": "Marc ne tient plus debout.",
+   "beat": "balance"
+  },
+  {
+   "start": 30.8,
+   "end": 31.08,
+   "text": "Pourtant,",
+   "beat": "crow"
+  },
+  {
+   "start": 31.52,
+   "end": 33.02,
+   "text": "une corneille a un cerveau",
+   "beat": "crow"
+  },
+  {
+   "start": 33.02,
+   "end": 34.16,
+   "text": "de cette taille.",
+   "beat": "crow"
+  },
+  {
+   "start": 34.18,
+   "end": 35.54,
+   "text": "Elle fabrique des outils",
+   "beat": "crow"
+  },
+  {
+   "start": 35.54,
+   "end": 36.94,
+   "text": "et reconnaît les visages.",
+   "beat": "crow"
+  },
+  {
+   "start": 37.8,
+   "end": 39.18,
+   "text": "Son secret :",
+   "beat": "dense"
+  },
+  {
+   "start": 39.18,
+   "end": 40.44,
+   "text": "des neurones minuscules,",
+   "beat": "dense"
+  },
+  {
+   "start": 41.22,
+   "end": 42.18,
+   "text": "deux fois plus serrés que",
+   "beat": "dense"
+  },
+  {
+   "start": 42.18,
+   "end": 43.04,
+   "text": "ceux d'un singe.",
+   "beat": "dense"
+  },
+  {
+   "start": 44.4,
+   "end": 45.04,
+   "text": "Et à Marseille,",
+   "beat": "case"
+  },
+  {
+   "start": 45.04,
+   "end": 45.74,
+   "text": "en 2007,",
+   "beat": "case"
+  },
+  {
+   "start": 46.18,
+   "end": 47.66,
+   "text": "des médecins ont découvert",
+   "beat": "case"
+  },
+  {
+   "start": 47.66,
+   "end": 49.08,
+   "text": "un homme au cerveau réduit",
+   "beat": "case"
+  },
+  {
+   "start": 49.08,
+   "end": 50.1,
+   "text": "à une fine couche.",
+   "beat": "case"
+  },
+  {
+   "start": 52.4,
+   "end": 53.06,
+   "text": "Il était marié,",
+   "beat": "normal"
+  },
+  {
+   "start": 53.66,
+   "end": 54.46,
+   "text": "père de deux enfants,",
+   "beat": "normal"
+  },
+  {
+   "start": 54.46,
+   "end": 55.72,
+   "text": "et travaillait dans",
+   "beat": "normal"
+  },
+  {
+   "start": 55.72,
+   "end": 56.28,
+   "text": "l'administration.",
+   "beat": "normal"
+  },
+  {
+   "start": 58.4,
+   "end": 59.28,
+   "text": "Son cerveau avait eu des",
+   "beat": "time"
+  },
+  {
+   "start": 59.28,
+   "end": 59.98,
+   "text": "dizaines d'années pour",
+   "beat": "time"
+  },
+  {
+   "start": 59.98,
+   "end": 61.04,
+   "text": "s'adapter.",
+   "beat": "time"
+  },
+  {
+   "start": 61.04,
+   "end": 61.44,
+   "text": "Marc,",
+   "beat": "time"
+  },
+  {
+   "start": 61.84,
+   "end": 62.34,
+   "text": "une seule nuit.",
+   "beat": "time"
+  },
+  {
+   "start": 64.0,
+   "end": 65.0,
+   "text": "La taille compte moins que",
+   "beat": "punch"
+  },
+  {
+   "start": 65.0,
+   "end": 65.38,
+   "text": "le temps.",
+   "beat": "punch"
+  },
+  {
+   "start": 66.6,
+   "end": 66.86,
+   "text": "Et toi,",
+   "beat": "cta"
+  },
+  {
+   "start": 67.6,
+   "end": 68.68,
+   "text": "tu échangerais ton cerveau",
+   "beat": "cta"
+  },
+  {
+   "start": 68.68,
+   "end": 69.34,
+   "text": "contre celui d'une",
+   "beat": "cta"
+  },
+  {
+   "start": 69.34,
+   "end": 69.78,
+   "text": "corneille ?",
+   "beat": "cta"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "En",
+   "start": 0.2,
+   "end": 0.26
+  },
+  {
+   "beat": "hook",
+   "text": "une",
+   "start": 0.26,
+   "end": 0.34
+  },
+  {
+   "beat": "hook",
+   "text": "nuit,",
+   "start": 0.34,
+   "end": 0.54
+  },
+  {
+   "beat": "hook",
+   "text": "le",
+   "start": 1.12,
+   "end": 1.28
+  },
+  {
+   "beat": "hook",
+   "text": "cerveau",
+   "start": 1.28,
+   "end": 1.56
+  },
+  {
+   "beat": "hook",
+   "text": "de",
+   "start": 1.56,
+   "end": 1.6
+  },
+  {
+   "beat": "hook",
+   "text": "Marc",
+   "start": 1.6,
+   "end": 1.82
+  },
+  {
+   "beat": "hook",
+   "text": "rétrécit.",
+   "start": 2.32,
+   "end": 3.02
+  },
+  {
+   "beat": "hook",
+   "text": "Il",
+   "start": 3.54,
+   "end": 3.64
+  },
+  {
+   "beat": "hook",
+   "text": "tient",
+   "start": 3.64,
+   "end": 3.84
+  },
+  {
+   "beat": "hook",
+   "text": "dans",
+   "start": 3.84,
+   "end": 3.96
+  },
+  {
+   "beat": "hook",
+   "text": "une",
+   "start": 3.96,
+   "end": 4.14
+  },
+  {
+   "beat": "hook",
+   "text": "noix.",
+   "start": 4.14,
+   "end": 4.38
+  },
+  {
+   "beat": "skull",
+   "text": "Cent",
+   "start": 4.8,
+   "end": 5.0
+  },
+  {
+   "beat": "skull",
+   "text": "fois",
+   "start": 5.0,
+   "end": 5.2
+  },
+  {
+   "beat": "skull",
+   "text": "plus",
+   "start": 5.2,
+   "end": 5.34
+  },
+  {
+   "beat": "skull",
+   "text": "léger.",
+   "start": 5.34,
+   "end": 5.66
+  },
+  {
+   "beat": "skull",
+   "text": "Son",
+   "start": 6.24,
+   "end": 6.52
+  },
+  {
+   "beat": "skull",
+   "text": "crâne,",
+   "start": 6.52,
+   "end": 6.84
+  },
+  {
+   "beat": "skull",
+   "text": "lui,",
+   "start": 6.84,
+   "end": 7.02
+  },
+  {
+   "beat": "skull",
+   "text": "ne",
+   "start": 7.02,
+   "end": 8.02
+  },
+  {
+   "beat": "skull",
+   "text": "change",
+   "start": 8.02,
+   "end": 8.22
+  },
+  {
+   "beat": "skull",
+   "text": "pas",
+   "start": 8.22,
+   "end": 8.54
+  },
+  {
+   "beat": "skull",
+   "text": ":",
+   "start": 8.54,
+   "end": 9.12
+  },
+  {
+   "beat": "skull",
+   "text": "le",
+   "start": 9.12,
+   "end": 9.3
+  },
+  {
+   "beat": "skull",
+   "text": "cerveau",
+   "start": 9.3,
+   "end": 9.78
+  },
+  {
+   "beat": "skull",
+   "text": "flotte",
+   "start": 9.78,
+   "end": 10.1
+  },
+  {
+   "beat": "skull",
+   "text": "au",
+   "start": 10.1,
+   "end": 10.2
+  },
+  {
+   "beat": "skull",
+   "text": "milieu.",
+   "start": 10.2,
+   "end": 10.38
+  },
+  {
+   "beat": "neurons",
+   "text": "Un",
+   "start": 11.0,
+   "end": 11.1
+  },
+  {
+   "beat": "neurons",
+   "text": "cerveau",
+   "start": 11.1,
+   "end": 11.4
+  },
+  {
+   "beat": "neurons",
+   "text": "humain,",
+   "start": 11.4,
+   "end": 11.72
+  },
+  {
+   "beat": "neurons",
+   "text": "c'est",
+   "start": 11.72,
+   "end": 11.97
+  },
+  {
+   "beat": "neurons",
+   "text": "quatre-vingt-six",
+   "start": 11.97,
+   "end": 12.22
+  },
+  {
+   "beat": "neurons",
+   "text": "milliards",
+   "start": 12.22,
+   "end": 12.62
+  },
+  {
+   "beat": "neurons",
+   "text": "de",
+   "start": 12.62,
+   "end": 12.84
+  },
+  {
+   "beat": "neurons",
+   "text": "neurones.",
+   "start": 12.84,
+   "end": 13.84
+  },
+  {
+   "beat": "neurons",
+   "text": "Le",
+   "start": 13.84,
+   "end": 14.1
+  },
+  {
+   "beat": "neurons",
+   "text": "sien",
+   "start": 14.1,
+   "end": 14.42
+  },
+  {
+   "beat": "neurons",
+   "text": "en",
+   "start": 14.42,
+   "end": 15.32
+  },
+  {
+   "beat": "neurons",
+   "text": "garde",
+   "start": 15.32,
+   "end": 15.52
+  },
+  {
+   "beat": "neurons",
+   "text": "moins",
+   "start": 15.52,
+   "end": 15.82
+  },
+  {
+   "beat": "neurons",
+   "text": "d'un",
+   "start": 15.82,
+   "end": 16.02
+  },
+  {
+   "beat": "neurons",
+   "text": "milliard.",
+   "start": 16.02,
+   "end": 16.44
+  },
+  {
+   "beat": "words",
+   "text": "Il",
+   "start": 17.8,
+   "end": 17.88
+  },
+  {
+   "beat": "words",
+   "text": "cherche",
+   "start": 17.88,
+   "end": 18.08
+  },
+  {
+   "beat": "words",
+   "text": "ses",
+   "start": 18.08,
+   "end": 18.36
+  },
+  {
+   "beat": "words",
+   "text": "mots.",
+   "start": 18.36,
+   "end": 18.58
+  },
+  {
+   "beat": "words",
+   "text": "Il",
+   "start": 19.3,
+   "end": 19.38
+  },
+  {
+   "beat": "words",
+   "text": "ne",
+   "start": 19.38,
+   "end": 19.5
+  },
+  {
+   "beat": "words",
+   "text": "reconnaît",
+   "start": 19.5,
+   "end": 19.88
+  },
+  {
+   "beat": "words",
+   "text": "plus",
+   "start": 19.88,
+   "end": 20.0
+  },
+  {
+   "beat": "words",
+   "text": "Julien.",
+   "start": 20.0,
+   "end": 20.42
+  },
+  {
+   "beat": "words",
+   "text": "Il",
+   "start": 21.14,
+   "end": 21.24
+  },
+  {
+   "beat": "words",
+   "text": "oublie",
+   "start": 21.24,
+   "end": 21.64
+  },
+  {
+   "beat": "words",
+   "text": "ce",
+   "start": 21.64,
+   "end": 22.5
+  },
+  {
+   "beat": "words",
+   "text": "qu'il",
+   "start": 22.5,
+   "end": 22.7
+  },
+  {
+   "beat": "words",
+   "text": "faisait.",
+   "start": 22.7,
+   "end": 22.96
+  },
+  {
+   "beat": "balance",
+   "text": "Même",
+   "start": 24.4,
+   "end": 24.52
+  },
+  {
+   "beat": "balance",
+   "text": "la",
+   "start": 24.52,
+   "end": 24.7
+  },
+  {
+   "beat": "balance",
+   "text": "zone",
+   "start": 24.7,
+   "end": 24.98
+  },
+  {
+   "beat": "balance",
+   "text": "qui",
+   "start": 24.98,
+   "end": 25.16
+  },
+  {
+   "beat": "balance",
+   "text": "gère",
+   "start": 25.16,
+   "end": 25.42
+  },
+  {
+   "beat": "balance",
+   "text": "l'équilibre",
+   "start": 25.42,
+   "end": 25.94
+  },
+  {
+   "beat": "balance",
+   "text": "rétrécit.",
+   "start": 25.94,
+   "end": 26.64
+  },
+  {
+   "beat": "balance",
+   "text": "Marc",
+   "start": 26.64,
+   "end": 27.46
+  },
+  {
+   "beat": "balance",
+   "text": "ne",
+   "start": 27.46,
+   "end": 27.68
+  },
+  {
+   "beat": "balance",
+   "text": "tient",
+   "start": 27.68,
+   "end": 27.84
+  },
+  {
+   "beat": "balance",
+   "text": "plus",
+   "start": 27.84,
+   "end": 28.0
+  },
+  {
+   "beat": "balance",
+   "text": "debout.",
+   "start": 28.0,
+   "end": 28.3
+  },
+  {
+   "beat": "crow",
+   "text": "Pourtant,",
+   "start": 30.8,
+   "end": 31.08
+  },
+  {
+   "beat": "crow",
+   "text": "une",
+   "start": 31.52,
+   "end": 31.98
+  },
+  {
+   "beat": "crow",
+   "text": "corneille",
+   "start": 31.98,
+   "end": 32.2
+  },
+  {
+   "beat": "crow",
+   "text": "a",
+   "start": 32.2,
+   "end": 32.42
+  },
+  {
+   "beat": "crow",
+   "text": "un",
+   "start": 32.42,
+   "end": 32.6
+  },
+  {
+   "beat": "crow",
+   "text": "cerveau",
+   "start": 32.6,
+   "end": 33.02
+  },
+  {
+   "beat": "crow",
+   "text": "de",
+   "start": 33.02,
+   "end": 33.1
+  },
+  {
+   "beat": "crow",
+   "text": "cette",
+   "start": 33.1,
+   "end": 33.3
+  },
+  {
+   "beat": "crow",
+   "text": "taille.",
+   "start": 33.3,
+   "end": 34.16
+  },
+  {
+   "beat": "crow",
+   "text": "Elle",
+   "start": 34.18,
+   "end": 34.6
+  },
+  {
+   "beat": "crow",
+   "text": "fabrique",
+   "start": 34.6,
+   "end": 34.94
+  },
+  {
+   "beat": "crow",
+   "text": "des",
+   "start": 34.94,
+   "end": 35.1
+  },
+  {
+   "beat": "crow",
+   "text": "outils",
+   "start": 35.1,
+   "end": 35.54
+  },
+  {
+   "beat": "crow",
+   "text": "et",
+   "start": 35.54,
+   "end": 35.98
+  },
+  {
+   "beat": "crow",
+   "text": "reconnaît",
+   "start": 35.98,
+   "end": 36.4
+  },
+  {
+   "beat": "crow",
+   "text": "les",
+   "start": 36.4,
+   "end": 36.46
+  },
+  {
+   "beat": "crow",
+   "text": "visages.",
+   "start": 36.46,
+   "end": 36.94
+  },
+  {
+   "beat": "dense",
+   "text": "Son",
+   "start": 37.8,
+   "end": 38.26
+  },
+  {
+   "beat": "dense",
+   "text": "secret",
+   "start": 38.26,
+   "end": 38.72
+  },
+  {
+   "beat": "dense",
+   "text": ":",
+   "start": 38.72,
+   "end": 39.18
+  },
+  {
+   "beat": "dense",
+   "text": "des",
+   "start": 39.18,
+   "end": 39.38
+  },
+  {
+   "beat": "dense",
+   "text": "neurones",
+   "start": 39.38,
+   "end": 39.78
+  },
+  {
+   "beat": "dense",
+   "text": "minuscules,",
+   "start": 39.78,
+   "end": 40.44
+  },
+  {
+   "beat": "dense",
+   "text": "deux",
+   "start": 41.22,
+   "end": 41.48
+  },
+  {
+   "beat": "dense",
+   "text": "fois",
+   "start": 41.48,
+   "end": 41.64
+  },
+  {
+   "beat": "dense",
+   "text": "plus",
+   "start": 41.64,
+   "end": 41.78
+  },
+  {
+   "beat": "dense",
+   "text": "serrés",
+   "start": 41.78,
+   "end": 42.06
+  },
+  {
+   "beat": "dense",
+   "text": "que",
+   "start": 42.06,
+   "end": 42.18
+  },
+  {
+   "beat": "dense",
+   "text": "ceux",
+   "start": 42.18,
+   "end": 42.3
+  },
+  {
+   "beat": "dense",
+   "text": "d'un",
+   "start": 42.3,
+   "end": 42.46
+  },
+  {
+   "beat": "dense",
+   "text": "singe.",
+   "start": 42.46,
+   "end": 43.04
+  },
+  {
+   "beat": "case",
+   "text": "Et",
+   "start": 44.4,
+   "end": 44.48
+  },
+  {
+   "beat": "case",
+   "text": "à",
+   "start": 44.48,
+   "end": 44.6
+  },
+  {
+   "beat": "case",
+   "text": "Marseille,",
+   "start": 44.6,
+   "end": 45.04
+  },
+  {
+   "beat": "case",
+   "text": "en",
+   "start": 45.04,
+   "end": 45.14
+  },
+  {
+   "beat": "case",
+   "text": "2007,",
+   "start": 45.14,
+   "end": 45.74
+  },
+  {
+   "beat": "case",
+   "text": "des",
+   "start": 46.18,
+   "end": 46.74
+  },
+  {
+   "beat": "case",
+   "text": "médecins",
+   "start": 46.74,
+   "end": 47.14
+  },
+  {
+   "beat": "case",
+   "text": "ont",
+   "start": 47.14,
+   "end": 47.22
+  },
+  {
+   "beat": "case",
+   "text": "découvert",
+   "start": 47.22,
+   "end": 47.66
+  },
+  {
+   "beat": "case",
+   "text": "un",
+   "start": 47.66,
+   "end": 47.84
+  },
+  {
+   "beat": "case",
+   "text": "homme",
+   "start": 47.84,
+   "end": 48.06
+  },
+  {
+   "beat": "case",
+   "text": "au",
+   "start": 48.06,
+   "end": 48.2
+  },
+  {
+   "beat": "case",
+   "text": "cerveau",
+   "start": 48.2,
+   "end": 48.58
+  },
+  {
+   "beat": "case",
+   "text": "réduit",
+   "start": 48.58,
+   "end": 49.08
+  },
+  {
+   "beat": "case",
+   "text": "à",
+   "start": 49.08,
+   "end": 49.3
+  },
+  {
+   "beat": "case",
+   "text": "une",
+   "start": 49.3,
+   "end": 49.42
+  },
+  {
+   "beat": "case",
+   "text": "fine",
+   "start": 49.42,
+   "end": 49.64
+  },
+  {
+   "beat": "case",
+   "text": "couche.",
+   "start": 49.64,
+   "end": 50.1
+  },
+  {
+   "beat": "normal",
+   "text": "Il",
+   "start": 52.4,
+   "end": 52.4
+  },
+  {
+   "beat": "normal",
+   "text": "était",
+   "start": 52.4,
+   "end": 52.58
+  },
+  {
+   "beat": "normal",
+   "text": "marié,",
+   "start": 52.58,
+   "end": 53.06
+  },
+  {
+   "beat": "normal",
+   "text": "père",
+   "start": 53.66,
+   "end": 53.8
+  },
+  {
+   "beat": "normal",
+   "text": "de",
+   "start": 53.8,
+   "end": 53.96
+  },
+  {
+   "beat": "normal",
+   "text": "deux",
+   "start": 53.96,
+   "end": 54.12
+  },
+  {
+   "beat": "normal",
+   "text": "enfants,",
+   "start": 54.12,
+   "end": 54.46
+  },
+  {
+   "beat": "normal",
+   "text": "et",
+   "start": 54.46,
+   "end": 55.3
+  },
+  {
+   "beat": "normal",
+   "text": "travaillait",
+   "start": 55.3,
+   "end": 55.66
+  },
+  {
+   "beat": "normal",
+   "text": "dans",
+   "start": 55.66,
+   "end": 55.72
+  },
+  {
+   "beat": "normal",
+   "text": "l'administration.",
+   "start": 55.72,
+   "end": 56.28
+  },
+  {
+   "beat": "time",
+   "text": "Son",
+   "start": 58.4,
+   "end": 58.52
+  },
+  {
+   "beat": "time",
+   "text": "cerveau",
+   "start": 58.52,
+   "end": 58.88
+  },
+  {
+   "beat": "time",
+   "text": "avait",
+   "start": 58.88,
+   "end": 59.04
+  },
+  {
+   "beat": "time",
+   "text": "eu",
+   "start": 59.04,
+   "end": 59.2
+  },
+  {
+   "beat": "time",
+   "text": "des",
+   "start": 59.2,
+   "end": 59.28
+  },
+  {
+   "beat": "time",
+   "text": "dizaines",
+   "start": 59.28,
+   "end": 59.58
+  },
+  {
+   "beat": "time",
+   "text": "d'années",
+   "start": 59.58,
+   "end": 59.86
+  },
+  {
+   "beat": "time",
+   "text": "pour",
+   "start": 59.86,
+   "end": 59.98
+  },
+  {
+   "beat": "time",
+   "text": "s'adapter.",
+   "start": 59.98,
+   "end": 61.04
+  },
+  {
+   "beat": "time",
+   "text": "Marc,",
+   "start": 61.04,
+   "end": 61.44
+  },
+  {
+   "beat": "time",
+   "text": "une",
+   "start": 61.84,
+   "end": 61.94
+  },
+  {
+   "beat": "time",
+   "text": "seule",
+   "start": 61.94,
+   "end": 62.12
+  },
+  {
+   "beat": "time",
+   "text": "nuit.",
+   "start": 62.12,
+   "end": 62.34
+  },
+  {
+   "beat": "punch",
+   "text": "La",
+   "start": 64.0,
+   "end": 64.08
+  },
+  {
+   "beat": "punch",
+   "text": "taille",
+   "start": 64.08,
+   "end": 64.36
+  },
+  {
+   "beat": "punch",
+   "text": "compte",
+   "start": 64.36,
+   "end": 64.6
+  },
+  {
+   "beat": "punch",
+   "text": "moins",
+   "start": 64.6,
+   "end": 64.84
+  },
+  {
+   "beat": "punch",
+   "text": "que",
+   "start": 64.84,
+   "end": 65.0
+  },
+  {
+   "beat": "punch",
+   "text": "le",
+   "start": 65.0,
+   "end": 65.1
+  },
+  {
+   "beat": "punch",
+   "text": "temps.",
+   "start": 65.1,
+   "end": 65.38
+  },
+  {
+   "beat": "cta",
+   "text": "Et",
+   "start": 66.6,
+   "end": 66.68
+  },
+  {
+   "beat": "cta",
+   "text": "toi,",
+   "start": 66.68,
+   "end": 66.86
+  },
+  {
+   "beat": "cta",
+   "text": "tu",
+   "start": 67.6,
+   "end": 67.72
+  },
+  {
+   "beat": "cta",
+   "text": "échangerais",
+   "start": 67.72,
+   "end": 68.16
+  },
+  {
+   "beat": "cta",
+   "text": "ton",
+   "start": 68.16,
+   "end": 68.24
+  },
+  {
+   "beat": "cta",
+   "text": "cerveau",
+   "start": 68.24,
+   "end": 68.68
+  },
+  {
+   "beat": "cta",
+   "text": "contre",
+   "start": 68.68,
+   "end": 68.88
+  },
+  {
+   "beat": "cta",
+   "text": "celui",
+   "start": 68.88,
+   "end": 69.14
+  },
+  {
+   "beat": "cta",
+   "text": "d'une",
+   "start": 69.14,
+   "end": 69.34
+  },
+  {
+   "beat": "cta",
+   "text": "corneille",
+   "start": 69.34,
+   "end": 69.78
+  },
+  {
+   "beat": "cta",
+   "text": "?",
+   "start": 69.78,
+   "end": 69.78
+  }
+ ]
+}

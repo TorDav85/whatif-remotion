@@ -36,16 +36,12 @@ if (!slugs.length) {
   process.exit(2);
 }
 
-const AI_NOTICE = 'Voix et images générées par ordinateur (voix de synthèse IA). Scénario fictif.';
-
 const describe = (pub, names) => [
   names.title,
   '',
   pub.description ?? '',
   '',
   pub.hashtags ?? '',
-  '',
-  AI_NOTICE,
   '',
 ].join('\n');
 

@@ -1,0 +1,17 @@
+{
+  "duration": 75,
+  "beats": [
+    {"id": "hook", "seed": 30100, "slot": [0.2, 4.4], "text": "Marc peut respirer sous l'eau. Et c'est là qu'il va étouffer.", "source": "règle fictive + conséquence (voir oxygen, litres)"},
+    {"id": "plunge", "slot": [4.8, 10.4], "text": "Ses poumons deviennent des branchies. Il saute dans la Seine, du pont des Arts.", "source": "règle fictive ; mise en scène (ne pas reproduire)"},
+    {"id": "oxygen", "slot": [10.8, 17.6], "text": "Premier problème : un litre d'eau contient trente fois moins d'oxygène qu'un litre d'air.", "source": "eau douce à 20 °C saturée : ≈ 9,1 mg/L ; air : 21 % d'O₂ ≈ 250 à 280 mg/L ; rapport ≈ 27 à 30"},
+    {"id": "litres", "seed": 30103, "slot": [18.0, 25.4], "text": "Pour survivre, Marc doit faire passer près de cinquante litres d'eau par minute dans ses branchies.", "source": "besoin au repos ≈ 250 mL O₂/min ≈ 330 mg/min ; 9,1 mg/L × 50 à 80 % extraits (branchies de poisson) → 45 à 73 L/min"},
+    {"id": "bath", "slot": [25.8, 30.6], "text": "Une baignoire pleine toutes les trois minutes.", "source": "baignoire ≈ 150 L ; 150 ÷ 50 = 3 min"},
+    {"id": "heavy", "seed": 30405, "slot": [31.0, 37.4], "text": "Et l'eau est huit cents fois plus lourde que l'air. Rien que respirer le fatigue.", "source": "masse volumique eau 1 000 kg/m³, air 1,2 kg/m³ ; chez le poisson, la ventilation coûterait de l'ordre de 10 % du métabolisme de routine (estimations variables)"},
+    {"id": "swim", "slot": [37.8, 43.4], "text": "S'il nage, il lui faut jusqu'à dix fois plus d'oxygène. Impossible à filtrer.", "source": "repos ≈ 3,5 mL/kg/min (1 MET) ; effort intense ≈ 10 MET"},
+    {"id": "cold", "slot": [43.8, 50.6], "text": "Deuxième problème : ses branchies touchent l'eau froide. Tout son sang y passe, et se refroidit.", "source": "les branchies sont un échangeur de chaleur : le sang y prend la température de l'eau (raison pour laquelle presque tous les poissons ont la température de leur milieu)"},
+    {"id": "hypo", "slot": [51.0, 57.4], "text": "Dans une Seine à quinze degrés, son corps perd sa chaleur, heure après heure.", "source": "survie habituellement estimée de 1 à 6 h dans une eau à 10–16 °C (tables US Coast Guard / RNLI) ; avec des branchies, refroidissement plus rapide (estimation)"},
+    {"id": "fish", "seed": 30209, "slot": [57.8, 64.0], "text": "Voilà pourquoi presque tous les poissons ont le sang froid. Ils sont à la température de l'eau.", "source": "poissons ectothermes, sauf exceptions (thons, requins-taupes, opah)"},
+    {"id": "punch", "slot": [64.4, 69.4], "text": "Des branchies, ça ne suffit pas. Il faudrait à Marc un corps de poisson.", "source": "chute"},
+    {"id": "cta", "seed": 30211, "slot": [70.0, 74.6], "text": "Et toi, tu voudrais vivre sous l'eau, ou tu gardes tes poumons ?", "source": "question finale"}
+  ]
+}

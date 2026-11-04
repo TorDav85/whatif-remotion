@@ -1,0 +1,50 @@
+{
+  "slug": "marc-noix",
+  "title": "Et si le cerveau de Marc tenait dans une noix ?",
+  "composition": "MarcNoix",
+  "source": "out/marc-noix/marc-noix-70s.mp4",
+  "coverTime": 2.2,
+  "description": "Cent fois plus léger, presque plus de neurones… et pourtant une corneille s'en sort très bien.",
+  "hashtags": "#etsi #whatif #cerveau #corneille #science",
+  "hookVariant": "conséquence immédiate",
+  "editVariant": "original",
+  "durationSeconds": 70,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": [],
+  "coverHighlight": [
+    "Marc",
+    "noix"
+  ]
+}

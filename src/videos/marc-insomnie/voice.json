@@ -1,0 +1,149 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-insomnie/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Marc ne dort plus. Jamais. Et son cerveau va le lui faire payer.",
+      "start": 0.2,
+      "duration": 3.8771,
+      "end": 4.0771,
+      "speed": 1.0,
+      "seed": 28000,
+      "audio": "marc-insomnie/hook.wav",
+      "sha256": "3881e3300d3b840f104f7f1e964601a8f1ded24096b7c289b142fe0b43dd283f"
+    },
+    {
+      "id": "night",
+      "text": "Première nuit. Trois heures du matin, il range tout l'appartement. Il se sent invincible.",
+      "start": 4.8,
+      "duration": 4.6718,
+      "end": 9.4718,
+      "speed": 1.0,
+      "seed": 28101,
+      "audio": "marc-insomnie/night.wav",
+      "sha256": "1aa8e5bffed5978320367da859d668a9368a06627d7286e1b7a56b491a657259"
+    },
+    {
+      "id": "day2",
+      "text": "Quarante-huit heures. Il oublie ses clés, ses mots, et le prénom de Julien.",
+      "start": 10.8,
+      "duration": 4.7068,
+      "end": 15.5068,
+      "speed": 1.0,
+      "seed": 28002,
+      "audio": "marc-insomnie/day2.wav",
+      "sha256": "f0d35e14a898cee517ecde97922f803dbc3fb1155ddda168ee46a1792da44580"
+    },
+    {
+      "id": "micro",
+      "text": "Puis son cerveau triche : il s'endort une seconde, les yeux ouverts. Des micro-sommeils.",
+      "start": 16.8,
+      "duration": 6.0271,
+      "end": 22.8271,
+      "speed": 1.0,
+      "seed": 28103,
+      "audio": "marc-insomnie/micro.wav",
+      "sha256": "a286b19defd3f34fc764770f2bab15f99026093222f9c9007e27c2d2b48f0025"
+    },
+    {
+      "id": "car",
+      "text": "À cent dix sur l'autoroute, une seconde, c'est trente mètres sans conducteur.",
+      "start": 23.8,
+      "duration": 4.4607,
+      "end": 28.2607,
+      "speed": 1.0,
+      "seed": 28004,
+      "audio": "marc-insomnie/car.wav",
+      "sha256": "b82b8ebfe4068696e8fb7da752c9423a657ed0d4fd11dc663aaf64edb01e219d"
+    },
+    {
+      "id": "halluc",
+      "text": "Jour quatre. Il hallucine : le panneau de la rue devient un homme qui le fixe.",
+      "start": 29.4,
+      "duration": 4.7757,
+      "end": 34.1757,
+      "speed": 1.0,
+      "seed": 28005,
+      "audio": "marc-insomnie/halluc.wav",
+      "sha256": "7d049f1cb015e0109a4406640e7e5991581e556e4e3bb57cb25455a40920be85"
+    },
+    {
+      "id": "record",
+      "text": "Jour onze. Il égale le record de Randy Gardner : deux cent soixante-quatre heures sans dormir.",
+      "start": 36.0,
+      "duration": 6.9682,
+      "end": 42.9682,
+      "speed": 1.0,
+      "seed": 28006,
+      "audio": "marc-insomnie/record.wav",
+      "sha256": "3fd47bd29f34cbc9250a3cfba839211e83613345016bba53c103d350b27d891b"
+    },
+    {
+      "id": "gardner",
+      "text": "Gardner, lui, s'est arrêté là. Puis il a dormi quatorze heures d'affilée.",
+      "start": 43.8,
+      "duration": 4.5407,
+      "end": 48.3407,
+      "speed": 1.0,
+      "seed": 28007,
+      "audio": "marc-insomnie/gardner.wav",
+      "sha256": "8322fde60c30fe03544bc4768e96d877d7c04d94d89d742193a2bbf077af1cb2"
+    },
+    {
+      "id": "unknown",
+      "text": "Au-delà, aucun humain n'a été testé. Chez les rats, la privation totale tue en deux à quatre semaines.",
+      "start": 49.4,
+      "duration": 6.6633,
+      "end": 56.0633,
+      "speed": 1.0,
+      "seed": 28008,
+      "audio": "marc-insomnie/unknown.wav",
+      "sha256": "9b9a46db91a00b9bca7a64e6208554bea841bf14e52fd3ef531e63ffb476377a"
+    },
+    {
+      "id": "why",
+      "text": "Leur température chute, leur corps s'épuise. Et on ne sait toujours pas exactement pourquoi ils meurent.",
+      "start": 57.4,
+      "duration": 6.0084,
+      "end": 63.4084,
+      "speed": 1.0,
+      "seed": 28009,
+      "audio": "marc-insomnie/why.wav",
+      "sha256": "5104ebc532aaa8b4537146497bd6047cebda09c50caef6ea1389b5413217bd44"
+    },
+    {
+      "id": "clean",
+      "text": "Chez la souris, le cerveau fait le ménage en dormant. Privé de sommeil, il ronge ses connexions.",
+      "start": 64.8,
+      "duration": 5.9125,
+      "end": 70.7125,
+      "speed": 1.0,
+      "seed": 28010,
+      "audio": "marc-insomnie/clean.wav",
+      "sha256": "8357dadd0d463b198fa76d2b25ffebcb971b8f3a11ddb5ac1161aa23a9faf865"
+    },
+    {
+      "id": "punch",
+      "text": "Marc n'a pas besoin d'un café. Il a besoin d'un lit.",
+      "start": 71.6,
+      "duration": 2.9736,
+      "end": 74.5736,
+      "speed": 1.0,
+      "seed": 28011,
+      "audio": "marc-insomnie/punch.wav",
+      "sha256": "7693da1ad2b2873645c0f0ad436c7c9b0a0faf62af2d3f2d7d80b9609d879f57"
+    },
+    {
+      "id": "cta",
+      "text": "Et toi, tu as dormi combien d'heures cette nuit ?",
+      "start": 76.0,
+      "duration": 2.8733,
+      "end": 78.8732,
+      "speed": 1.0,
+      "seed": 28012,
+      "audio": "marc-insomnie/cta.wav",
+      "sha256": "04df3729a6fce079539bda01e4a6a9924d4ca4cd9352eac6b46923ceeea0bdf9"
+    }
+  ]
+}

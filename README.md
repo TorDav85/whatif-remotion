@@ -186,7 +186,7 @@ npm run export:publication -- marc-geant   # ou -- --all ; --force pour remplace
 out/publication/marc-geant/
   Et si Marc devenait géant.mp4
   Et si Marc devenait géant.jpg      couverture : scène 3D du film + titre, sans sous-titres ni HUD
-  publication.txt                    titre, description, hashtags, mention « voix de synthèse IA »
+  publication.txt                    titre, description, hashtags
 ```
 
 - Titre public au format « Et si [sujet] ? » dans `publication.json` ; le « ? » reste sur la couverture et

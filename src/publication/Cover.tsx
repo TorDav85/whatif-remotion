@@ -2,9 +2,14 @@ import React from 'react';
 import {AbsoluteFill, useVideoConfig} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
 import {Scene3D as AsteroideParis} from '../videos/asteroide-paris/Scene3D';
+import {Scene3D as BombeNucleaire} from '../videos/bombe-nucleaire/Scene3D';
 import {Scene3D as InternetOff} from '../videos/internet-off/Scene3D';
 import {Scene3D as MarcCongel} from '../videos/marc-congel/Scene3D';
 import {Scene3D as MarcDeuxLunes} from '../videos/marc-deux-lunes/Scene3D';
+import {Scene3D as MarcBranchies} from '../videos/marc-branchies/Scene3D';
+import {Scene3D as MarcNoix} from '../videos/marc-noix/Scene3D';
+import {Scene3D as MarcInsomnie} from '../videos/marc-insomnie/Scene3D';
+import {Scene3D as MarcInvisible} from '../videos/marc-invisible/Scene3D';
 import {Scene3D as MarcFour} from '../videos/marc-four/Scene3D';
 import {Scene3D as MarcGeant} from '../videos/marc-geant/Scene3D';
 import {Scene3D as MarcMini} from '../videos/marc-mini/Scene3D';
@@ -16,11 +21,16 @@ import {checkTitle} from '../core/publication-names.mjs';
 import {SAFE} from '../shared/ui/PlatformSafeArea';
 
 /** 3D scene of each video (time in seconds of the original film), without captions or HUD. */
-const SCENES: Record<string, {Scene: React.FC<{t: number}>; logDepth?: boolean}> = {
+const SCENES: Record<string, {Scene: React.FC<{t: number}>; logDepth?: boolean; shadows?: boolean}> = {
+  'bombe-nucleaire': {Scene: BombeNucleaire, shadows: true, logDepth: true},
   'asteroide-paris': {Scene: AsteroideParis},
   'internet-off': {Scene: InternetOff},
   'marc-congel': {Scene: MarcCongel},
   'marc-deux-lunes': {Scene: MarcDeuxLunes},
+  'marc-branchies': {Scene: MarcBranchies},
+  'marc-noix': {Scene: (p) => <MarcNoix {...p} cover />},
+  'marc-insomnie': {Scene: MarcInsomnie},
+  'marc-invisible': {Scene: MarcInvisible},
   'marc-four': {Scene: MarcFour},
   'marc-geant': {Scene: (p) => <MarcGeant {...p} clearStreet />, logDepth: true},
   'marc-geant-court': {Scene: (p) => <MarcGeant {...p} clearStreet />, logDepth: true},
@@ -51,7 +61,7 @@ export const Cover: React.FC<CoverProps> = ({slug, t, title, highlight = ['Marc'
   const {Scene} = entry;
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      <ThreeCanvas width={width} height={height} linear={false} gl={{antialias: true, logarithmicDepthBuffer: !!entry.logDepth}}>
+      <ThreeCanvas width={width} height={height} linear={false} shadows={!!entry.shadows} gl={{antialias: true, logarithmicDepthBuffer: !!entry.logDepth}}>
         <Scene t={t} />
       </ThreeCanvas>
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,0.45) 62%, rgba(0,0,0,0) 85%)'}} />

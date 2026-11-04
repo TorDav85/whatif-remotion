@@ -1,0 +1,46 @@
+{
+  "slug": "marc-insomnie",
+  "title": "Et si Marc ne dormait plus jamais ?",
+  "composition": "MarcInsomnie",
+  "source": "out/marc-insomnie/marc-insomnie-80s.mp4",
+  "coverTime": 2.5,
+  "description": "Micro-sommeils, hallucinations, le record de 264 heures… et ce que la science ignore encore.",
+  "hashtags": "#etsi #whatif #sommeil #cerveau #science",
+  "hookVariant": "danger annoncé",
+  "editVariant": "original",
+  "durationSeconds": 80,
+  "publications": [
+    {
+      "platform": "youtube-shorts",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "engagedViews": null,
+        "stayedToWatchPct": null,
+        "averageViewDurationSeconds": null,
+        "averagePercentageViewed": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "subscribersGained": null
+      }
+    },
+    {
+      "platform": "tiktok",
+      "url": null,
+      "publishedAt": null,
+      "metrics": {
+        "views": null,
+        "averageWatchTimeSeconds": null,
+        "watchedFullVideoPct": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "newFollowers": null
+      }
+    }
+  ],
+  "dropOffs": []
+}

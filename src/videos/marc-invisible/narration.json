@@ -1,0 +1,17 @@
+{
+  "duration": 75,
+  "beats": [
+    {"id": "hook", "slot": [0.2, 4.4], "text": "Marc devient invisible. Problème : il devient aussi aveugle.", "source": "règle fictive + conséquence optique (voir retina)"},
+    {"id": "fade", "slot": [4.8, 10.6], "text": "Sept heures du matin. D'abord, ses mains disparaissent. Puis ses bras. Puis tout le reste.", "source": "règle fictive"},
+    {"id": "julien", "slot": [11.0, 15.4], "text": "Julien entre. Une tasse de café flotte toute seule.", "source": "mise en scène"},
+    {"id": "retina", "slot": [15.8, 23.0], "text": "Mais pour voir, il faut que la rétine arrête la lumière. Celle de Marc la laisse passer.", "source": "la vision repose sur l'absorption des photons par les pigments des photorécepteurs (rhodopsine) ; une rétine parfaitement transparente n'absorbe rien"},
+    {"id": "blind", "slot": [23.4, 28.6], "text": "Marc est invisible... et il ne voit plus rien. Le noir complet.", "source": "conséquence de retina ; son cristallin, d'indice égal à l'air, ne formerait pas non plus d'image"},
+    {"id": "street", "slot": [29.0, 35.4], "text": "Il sort quand même. Dans la rue, personne ne l'évite. Un vélo le percute de plein fouet.", "source": "escalade (mise en scène)"},
+    {"id": "heat", "seed": 27306, "slot": [35.8, 42.6], "text": "Mais son corps est toujours à trente-sept degrés. Il rayonne environ cent watts de chaleur.", "source": "Stefan-Boltzmann, rayonnement net : 5,67e-8 × 1,8 m² × (306⁴ − 293⁴) K⁴ ≈ 140 W, ordre de grandeur 100 W ; hypothèse : invisible seulement dans le visible"},
+    {"id": "camera", "slot": [43.0, 48.8], "text": "Une caméra thermique de la police le voit comme en plein jour.", "source": "pic d'émission à 2898 / 306 ≈ 9,5 µm (loi de Wien), bande 8–14 µm des caméras thermiques"},
+    {"id": "food", "seed": 27308, "slot": [49.2, 56.0], "text": "Midi. Marc mange un sandwich. Le pain mâché flotte dans le vide, au milieu de son ventre.", "source": "la nourriture ingérée n'est pas transformée par la règle (argument de H. G. Wells, L'Homme invisible, 1897)"},
+    {"id": "digest", "slot": [56.4, 62.2], "text": "Il reste visible pendant des heures, le temps de la digestion.", "source": "vidange gastrique d'un repas solide : environ 2 à 4 h (ordre de grandeur)"},
+    {"id": "punch", "seed": 27510, "slot": [62.6, 68.8], "text": "Bilan : aveugle, repérable à la chaleur, trahi par son déjeuner. Le pire espion du monde.", "source": "chute"},
+    {"id": "cta", "slot": [70.0, 74.6], "text": "Et toi : tu serais invisible, si ça te rendait aveugle ?", "source": "question finale"}
+  ]
+}

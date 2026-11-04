@@ -1,0 +1,1306 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.2,
+   "end": 1.28,
+   "text": "Marc peut respirer sous",
+   "beat": "hook"
+  },
+  {
+   "start": 1.28,
+   "end": 1.96,
+   "text": "l'eau.",
+   "beat": "hook"
+  },
+  {
+   "start": 1.96,
+   "end": 3.06,
+   "text": "Et c'est là qu'il va",
+   "beat": "hook"
+  },
+  {
+   "start": 3.06,
+   "end": 3.34,
+   "text": "étouffer.",
+   "beat": "hook"
+  },
+  {
+   "start": 4.8,
+   "end": 5.78,
+   "text": "Ses poumons deviennent des",
+   "beat": "plunge"
+  },
+  {
+   "start": 5.78,
+   "end": 6.28,
+   "text": "branchies.",
+   "beat": "plunge"
+  },
+  {
+   "start": 6.28,
+   "end": 7.94,
+   "text": "Il saute dans la Seine,",
+   "beat": "plunge"
+  },
+  {
+   "start": 7.94,
+   "end": 9.08,
+   "text": "du pont des Arts.",
+   "beat": "plunge"
+  },
+  {
+   "start": 10.8,
+   "end": 12.1,
+   "text": "Premier problème :",
+   "beat": "oxygen"
+  },
+  {
+   "start": 12.1,
+   "end": 13.34,
+   "text": "un litre d'eau contient",
+   "beat": "oxygen"
+  },
+  {
+   "start": 13.34,
+   "end": 13.98,
+   "text": "trente fois moins",
+   "beat": "oxygen"
+  },
+  {
+   "start": 13.98,
+   "end": 15.38,
+   "text": "d'oxygène qu'un litre",
+   "beat": "oxygen"
+  },
+  {
+   "start": 15.38,
+   "end": 15.66,
+   "text": "d'air.",
+   "beat": "oxygen"
+  },
+  {
+   "start": 18.0,
+   "end": 19.26,
+   "text": "Pour survivre,",
+   "beat": "litres"
+  },
+  {
+   "start": 19.26,
+   "end": 20.32,
+   "text": "Marc doit faire passer",
+   "beat": "litres"
+  },
+  {
+   "start": 20.32,
+   "end": 21.14,
+   "text": "près de cinquante litres",
+   "beat": "litres"
+  },
+  {
+   "start": 21.14,
+   "end": 23.02,
+   "text": "d'eau par minute dans ses",
+   "beat": "litres"
+  },
+  {
+   "start": 23.02,
+   "end": 23.16,
+   "text": "branchies.",
+   "beat": "litres"
+  },
+  {
+   "start": 25.8,
+   "end": 26.68,
+   "text": "Une baignoire pleine",
+   "beat": "bath"
+  },
+  {
+   "start": 26.68,
+   "end": 27.4,
+   "text": "toutes les trois minutes.",
+   "beat": "bath"
+  },
+  {
+   "start": 31.0,
+   "end": 31.56,
+   "text": "Et l'eau est huit cents",
+   "beat": "heavy"
+  },
+  {
+   "start": 31.56,
+   "end": 32.34,
+   "text": "fois plus lourde que",
+   "beat": "heavy"
+  },
+  {
+   "start": 32.34,
+   "end": 33.34,
+   "text": "l'air.",
+   "beat": "heavy"
+  },
+  {
+   "start": 33.34,
+   "end": 34.36,
+   "text": "Rien que respirer le",
+   "beat": "heavy"
+  },
+  {
+   "start": 34.36,
+   "end": 34.62,
+   "text": "fatigue.",
+   "beat": "heavy"
+  },
+  {
+   "start": 37.8,
+   "end": 38.32,
+   "text": "S'il nage,",
+   "beat": "swim"
+  },
+  {
+   "start": 39.04,
+   "end": 40.56,
+   "text": "il lui faut jusqu'à dix",
+   "beat": "swim"
+  },
+  {
+   "start": 40.56,
+   "end": 41.8,
+   "text": "fois plus d'oxygène.",
+   "beat": "swim"
+  },
+  {
+   "start": 41.8,
+   "end": 43.38,
+   "text": "Impossible à filtrer.",
+   "beat": "swim"
+  },
+  {
+   "start": 43.8,
+   "end": 44.99,
+   "text": "Deuxième problème :",
+   "beat": "cold"
+  },
+  {
+   "start": 44.99,
+   "end": 46.5,
+   "text": "ses branchies touchent",
+   "beat": "cold"
+  },
+  {
+   "start": 46.5,
+   "end": 47.22,
+   "text": "l'eau froide.",
+   "beat": "cold"
+  },
+  {
+   "start": 47.92,
+   "end": 48.98,
+   "text": "Tout son sang y passe,",
+   "beat": "cold"
+  },
+  {
+   "start": 48.98,
+   "end": 50.3,
+   "text": "et se refroidit.",
+   "beat": "cold"
+  },
+  {
+   "start": 51.0,
+   "end": 51.9,
+   "text": "Dans une Seine à quinze",
+   "beat": "hypo"
+  },
+  {
+   "start": 51.9,
+   "end": 53.02,
+   "text": "degrés,",
+   "beat": "hypo"
+  },
+  {
+   "start": 53.02,
+   "end": 54.78,
+   "text": "son corps perd sa chaleur,",
+   "beat": "hypo"
+  },
+  {
+   "start": 55.12,
+   "end": 55.96,
+   "text": "heure après heure.",
+   "beat": "hypo"
+  },
+  {
+   "start": 57.8,
+   "end": 58.48,
+   "text": "Voilà pourquoi presque",
+   "beat": "fish"
+  },
+  {
+   "start": 58.48,
+   "end": 59.8,
+   "text": "tous les poissons ont le",
+   "beat": "fish"
+  },
+  {
+   "start": 59.8,
+   "end": 60.3,
+   "text": "sang froid.",
+   "beat": "fish"
+  },
+  {
+   "start": 60.86,
+   "end": 62.12,
+   "text": "Ils sont à la température",
+   "beat": "fish"
+  },
+  {
+   "start": 62.12,
+   "end": 62.36,
+   "text": "de l'eau.",
+   "beat": "fish"
+  },
+  {
+   "start": 64.4,
+   "end": 64.86,
+   "text": "Des branchies,",
+   "beat": "punch"
+  },
+  {
+   "start": 64.86,
+   "end": 65.48,
+   "text": "ça ne suffit pas.",
+   "beat": "punch"
+  },
+  {
+   "start": 66.18,
+   "end": 67.14,
+   "text": "Il faudrait à Marc un",
+   "beat": "punch"
+  },
+  {
+   "start": 67.14,
+   "end": 67.8,
+   "text": "corps de poisson.",
+   "beat": "punch"
+  },
+  {
+   "start": 70.0,
+   "end": 70.32,
+   "text": "Et toi,",
+   "beat": "cta"
+  },
+  {
+   "start": 71.14,
+   "end": 72.18,
+   "text": "tu voudrais vivre sous",
+   "beat": "cta"
+  },
+  {
+   "start": 72.18,
+   "end": 72.78,
+   "text": "l'eau,",
+   "beat": "cta"
+  },
+  {
+   "start": 72.78,
+   "end": 74.42,
+   "text": "ou tu gardes tes poumons",
+   "beat": "cta"
+  },
+  {
+   "start": 74.42,
+   "end": 74.42,
+   "text": "?",
+   "beat": "cta"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "Marc",
+   "start": 0.2,
+   "end": 0.36
+  },
+  {
+   "beat": "hook",
+   "text": "peut",
+   "start": 0.36,
+   "end": 0.68
+  },
+  {
+   "beat": "hook",
+   "text": "respirer",
+   "start": 0.68,
+   "end": 1.16
+  },
+  {
+   "beat": "hook",
+   "text": "sous",
+   "start": 1.16,
+   "end": 1.28
+  },
+  {
+   "beat": "hook",
+   "text": "l'eau.",
+   "start": 1.28,
+   "end": 1.96
+  },
+  {
+   "beat": "hook",
+   "text": "Et",
+   "start": 1.96,
+   "end": 2.28
+  },
+  {
+   "beat": "hook",
+   "text": "c'est",
+   "start": 2.28,
+   "end": 2.42
+  },
+  {
+   "beat": "hook",
+   "text": "là",
+   "start": 2.42,
+   "end": 2.56
+  },
+  {
+   "beat": "hook",
+   "text": "qu'il",
+   "start": 2.56,
+   "end": 2.94
+  },
+  {
+   "beat": "hook",
+   "text": "va",
+   "start": 2.94,
+   "end": 3.06
+  },
+  {
+   "beat": "hook",
+   "text": "étouffer.",
+   "start": 3.06,
+   "end": 3.34
+  },
+  {
+   "beat": "plunge",
+   "text": "Ses",
+   "start": 4.8,
+   "end": 4.94
+  },
+  {
+   "beat": "plunge",
+   "text": "poumons",
+   "start": 4.94,
+   "end": 5.24
+  },
+  {
+   "beat": "plunge",
+   "text": "deviennent",
+   "start": 5.24,
+   "end": 5.64
+  },
+  {
+   "beat": "plunge",
+   "text": "des",
+   "start": 5.64,
+   "end": 5.78
+  },
+  {
+   "beat": "plunge",
+   "text": "branchies.",
+   "start": 5.78,
+   "end": 6.28
+  },
+  {
+   "beat": "plunge",
+   "text": "Il",
+   "start": 6.28,
+   "end": 6.85
+  },
+  {
+   "beat": "plunge",
+   "text": "saute",
+   "start": 6.85,
+   "end": 7.42
+  },
+  {
+   "beat": "plunge",
+   "text": "dans",
+   "start": 7.42,
+   "end": 7.52
+  },
+  {
+   "beat": "plunge",
+   "text": "la",
+   "start": 7.52,
+   "end": 7.64
+  },
+  {
+   "beat": "plunge",
+   "text": "Seine,",
+   "start": 7.64,
+   "end": 7.94
+  },
+  {
+   "beat": "plunge",
+   "text": "du",
+   "start": 7.94,
+   "end": 8.5
+  },
+  {
+   "beat": "plunge",
+   "text": "pont",
+   "start": 8.5,
+   "end": 8.7
+  },
+  {
+   "beat": "plunge",
+   "text": "des",
+   "start": 8.7,
+   "end": 8.86
+  },
+  {
+   "beat": "plunge",
+   "text": "Arts.",
+   "start": 8.86,
+   "end": 9.08
+  },
+  {
+   "beat": "oxygen",
+   "text": "Premier",
+   "start": 10.8,
+   "end": 11.0
+  },
+  {
+   "beat": "oxygen",
+   "text": "problème",
+   "start": 11.0,
+   "end": 11.38
+  },
+  {
+   "beat": "oxygen",
+   "text": ":",
+   "start": 11.38,
+   "end": 12.1
+  },
+  {
+   "beat": "oxygen",
+   "text": "un",
+   "start": 12.1,
+   "end": 12.46
+  },
+  {
+   "beat": "oxygen",
+   "text": "litre",
+   "start": 12.46,
+   "end": 12.74
+  },
+  {
+   "beat": "oxygen",
+   "text": "d'eau",
+   "start": 12.74,
+   "end": 12.94
+  },
+  {
+   "beat": "oxygen",
+   "text": "contient",
+   "start": 12.94,
+   "end": 13.34
+  },
+  {
+   "beat": "oxygen",
+   "text": "trente",
+   "start": 13.34,
+   "end": 13.66
+  },
+  {
+   "beat": "oxygen",
+   "text": "fois",
+   "start": 13.66,
+   "end": 13.84
+  },
+  {
+   "beat": "oxygen",
+   "text": "moins",
+   "start": 13.84,
+   "end": 13.98
+  },
+  {
+   "beat": "oxygen",
+   "text": "d'oxygène",
+   "start": 13.98,
+   "end": 14.53
+  },
+  {
+   "beat": "oxygen",
+   "text": "qu'un",
+   "start": 14.53,
+   "end": 15.08
+  },
+  {
+   "beat": "oxygen",
+   "text": "litre",
+   "start": 15.08,
+   "end": 15.38
+  },
+  {
+   "beat": "oxygen",
+   "text": "d'air.",
+   "start": 15.38,
+   "end": 15.66
+  },
+  {
+   "beat": "litres",
+   "text": "Pour",
+   "start": 18.0,
+   "end": 18.12
+  },
+  {
+   "beat": "litres",
+   "text": "survivre,",
+   "start": 18.12,
+   "end": 19.26
+  },
+  {
+   "beat": "litres",
+   "text": "Marc",
+   "start": 19.26,
+   "end": 19.6
+  },
+  {
+   "beat": "litres",
+   "text": "doit",
+   "start": 19.6,
+   "end": 19.82
+  },
+  {
+   "beat": "litres",
+   "text": "faire",
+   "start": 19.82,
+   "end": 20.0
+  },
+  {
+   "beat": "litres",
+   "text": "passer",
+   "start": 20.0,
+   "end": 20.32
+  },
+  {
+   "beat": "litres",
+   "text": "près",
+   "start": 20.32,
+   "end": 20.48
+  },
+  {
+   "beat": "litres",
+   "text": "de",
+   "start": 20.48,
+   "end": 20.6
+  },
+  {
+   "beat": "litres",
+   "text": "cinquante",
+   "start": 20.6,
+   "end": 20.82
+  },
+  {
+   "beat": "litres",
+   "text": "litres",
+   "start": 20.82,
+   "end": 21.14
+  },
+  {
+   "beat": "litres",
+   "text": "d'eau",
+   "start": 21.14,
+   "end": 21.42
+  },
+  {
+   "beat": "litres",
+   "text": "par",
+   "start": 21.42,
+   "end": 21.62
+  },
+  {
+   "beat": "litres",
+   "text": "minute",
+   "start": 21.62,
+   "end": 21.94
+  },
+  {
+   "beat": "litres",
+   "text": "dans",
+   "start": 21.94,
+   "end": 22.84
+  },
+  {
+   "beat": "litres",
+   "text": "ses",
+   "start": 22.84,
+   "end": 23.02
+  },
+  {
+   "beat": "litres",
+   "text": "branchies.",
+   "start": 23.02,
+   "end": 23.16
+  },
+  {
+   "beat": "bath",
+   "text": "Une",
+   "start": 25.8,
+   "end": 25.92
+  },
+  {
+   "beat": "bath",
+   "text": "baignoire",
+   "start": 25.92,
+   "end": 26.32
+  },
+  {
+   "beat": "bath",
+   "text": "pleine",
+   "start": 26.32,
+   "end": 26.68
+  },
+  {
+   "beat": "bath",
+   "text": "toutes",
+   "start": 26.68,
+   "end": 26.84
+  },
+  {
+   "beat": "bath",
+   "text": "les",
+   "start": 26.84,
+   "end": 27.04
+  },
+  {
+   "beat": "bath",
+   "text": "trois",
+   "start": 27.04,
+   "end": 27.2
+  },
+  {
+   "beat": "bath",
+   "text": "minutes.",
+   "start": 27.2,
+   "end": 27.4
+  },
+  {
+   "beat": "heavy",
+   "text": "Et",
+   "start": 31.0,
+   "end": 31.08
+  },
+  {
+   "beat": "heavy",
+   "text": "l'eau",
+   "start": 31.08,
+   "end": 31.24
+  },
+  {
+   "beat": "heavy",
+   "text": "est",
+   "start": 31.24,
+   "end": 31.32
+  },
+  {
+   "beat": "heavy",
+   "text": "huit",
+   "start": 31.32,
+   "end": 31.44
+  },
+  {
+   "beat": "heavy",
+   "text": "cents",
+   "start": 31.44,
+   "end": 31.56
+  },
+  {
+   "beat": "heavy",
+   "text": "fois",
+   "start": 31.56,
+   "end": 31.74
+  },
+  {
+   "beat": "heavy",
+   "text": "plus",
+   "start": 31.74,
+   "end": 31.92
+  },
+  {
+   "beat": "heavy",
+   "text": "lourde",
+   "start": 31.92,
+   "end": 32.26
+  },
+  {
+   "beat": "heavy",
+   "text": "que",
+   "start": 32.26,
+   "end": 32.34
+  },
+  {
+   "beat": "heavy",
+   "text": "l'air.",
+   "start": 32.34,
+   "end": 33.34
+  },
+  {
+   "beat": "heavy",
+   "text": "Rien",
+   "start": 33.34,
+   "end": 33.7
+  },
+  {
+   "beat": "heavy",
+   "text": "que",
+   "start": 33.7,
+   "end": 33.82
+  },
+  {
+   "beat": "heavy",
+   "text": "respirer",
+   "start": 33.82,
+   "end": 34.28
+  },
+  {
+   "beat": "heavy",
+   "text": "le",
+   "start": 34.28,
+   "end": 34.36
+  },
+  {
+   "beat": "heavy",
+   "text": "fatigue.",
+   "start": 34.36,
+   "end": 34.62
+  },
+  {
+   "beat": "swim",
+   "text": "S'il",
+   "start": 37.8,
+   "end": 37.96
+  },
+  {
+   "beat": "swim",
+   "text": "nage,",
+   "start": 37.96,
+   "end": 38.32
+  },
+  {
+   "beat": "swim",
+   "text": "il",
+   "start": 39.04,
+   "end": 39.08
+  },
+  {
+   "beat": "swim",
+   "text": "lui",
+   "start": 39.08,
+   "end": 39.2
+  },
+  {
+   "beat": "swim",
+   "text": "faut",
+   "start": 39.2,
+   "end": 39.42
+  },
+  {
+   "beat": "swim",
+   "text": "jusqu'à",
+   "start": 39.42,
+   "end": 39.99
+  },
+  {
+   "beat": "swim",
+   "text": "dix",
+   "start": 39.99,
+   "end": 40.56
+  },
+  {
+   "beat": "swim",
+   "text": "fois",
+   "start": 40.56,
+   "end": 40.68
+  },
+  {
+   "beat": "swim",
+   "text": "plus",
+   "start": 40.68,
+   "end": 40.86
+  },
+  {
+   "beat": "swim",
+   "text": "d'oxygène.",
+   "start": 40.86,
+   "end": 41.8
+  },
+  {
+   "beat": "swim",
+   "text": "Impossible",
+   "start": 41.8,
+   "end": 42.46
+  },
+  {
+   "beat": "swim",
+   "text": "à",
+   "start": 42.46,
+   "end": 43.0
+  },
+  {
+   "beat": "swim",
+   "text": "filtrer.",
+   "start": 43.0,
+   "end": 43.38
+  },
+  {
+   "beat": "cold",
+   "text": "Deuxième",
+   "start": 43.8,
+   "end": 44.06
+  },
+  {
+   "beat": "cold",
+   "text": "problème",
+   "start": 44.06,
+   "end": 44.4
+  },
+  {
+   "beat": "cold",
+   "text": ":",
+   "start": 44.4,
+   "end": 44.99
+  },
+  {
+   "beat": "cold",
+   "text": "ses",
+   "start": 44.99,
+   "end": 45.58
+  },
+  {
+   "beat": "cold",
+   "text": "branchies",
+   "start": 45.58,
+   "end": 46.06
+  },
+  {
+   "beat": "cold",
+   "text": "touchent",
+   "start": 46.06,
+   "end": 46.5
+  },
+  {
+   "beat": "cold",
+   "text": "l'eau",
+   "start": 46.5,
+   "end": 46.66
+  },
+  {
+   "beat": "cold",
+   "text": "froide.",
+   "start": 46.66,
+   "end": 47.22
+  },
+  {
+   "beat": "cold",
+   "text": "Tout",
+   "start": 47.92,
+   "end": 47.98
+  },
+  {
+   "beat": "cold",
+   "text": "son",
+   "start": 47.98,
+   "end": 48.2
+  },
+  {
+   "beat": "cold",
+   "text": "sang",
+   "start": 48.2,
+   "end": 48.42
+  },
+  {
+   "beat": "cold",
+   "text": "y",
+   "start": 48.42,
+   "end": 48.56
+  },
+  {
+   "beat": "cold",
+   "text": "passe,",
+   "start": 48.56,
+   "end": 48.98
+  },
+  {
+   "beat": "cold",
+   "text": "et",
+   "start": 48.98,
+   "end": 49.64
+  },
+  {
+   "beat": "cold",
+   "text": "se",
+   "start": 49.64,
+   "end": 49.8
+  },
+  {
+   "beat": "cold",
+   "text": "refroidit.",
+   "start": 49.8,
+   "end": 50.3
+  },
+  {
+   "beat": "hypo",
+   "text": "Dans",
+   "start": 51.0,
+   "end": 51.1
+  },
+  {
+   "beat": "hypo",
+   "text": "une",
+   "start": 51.1,
+   "end": 51.28
+  },
+  {
+   "beat": "hypo",
+   "text": "Seine",
+   "start": 51.28,
+   "end": 51.54
+  },
+  {
+   "beat": "hypo",
+   "text": "à",
+   "start": 51.54,
+   "end": 51.66
+  },
+  {
+   "beat": "hypo",
+   "text": "quinze",
+   "start": 51.66,
+   "end": 51.9
+  },
+  {
+   "beat": "hypo",
+   "text": "degrés,",
+   "start": 51.9,
+   "end": 53.02
+  },
+  {
+   "beat": "hypo",
+   "text": "son",
+   "start": 53.02,
+   "end": 53.28
+  },
+  {
+   "beat": "hypo",
+   "text": "corps",
+   "start": 53.28,
+   "end": 53.6
+  },
+  {
+   "beat": "hypo",
+   "text": "perd",
+   "start": 53.6,
+   "end": 53.9
+  },
+  {
+   "beat": "hypo",
+   "text": "sa",
+   "start": 53.9,
+   "end": 54.06
+  },
+  {
+   "beat": "hypo",
+   "text": "chaleur,",
+   "start": 54.06,
+   "end": 54.78
+  },
+  {
+   "beat": "hypo",
+   "text": "heure",
+   "start": 55.12,
+   "end": 55.42
+  },
+  {
+   "beat": "hypo",
+   "text": "après",
+   "start": 55.42,
+   "end": 55.66
+  },
+  {
+   "beat": "hypo",
+   "text": "heure.",
+   "start": 55.66,
+   "end": 55.96
+  },
+  {
+   "beat": "fish",
+   "text": "Voilà",
+   "start": 57.8,
+   "end": 57.9
+  },
+  {
+   "beat": "fish",
+   "text": "pourquoi",
+   "start": 57.9,
+   "end": 58.14
+  },
+  {
+   "beat": "fish",
+   "text": "presque",
+   "start": 58.14,
+   "end": 58.48
+  },
+  {
+   "beat": "fish",
+   "text": "tous",
+   "start": 58.48,
+   "end": 58.74
+  },
+  {
+   "beat": "fish",
+   "text": "les",
+   "start": 58.74,
+   "end": 58.88
+  },
+  {
+   "beat": "fish",
+   "text": "poissons",
+   "start": 58.88,
+   "end": 59.36
+  },
+  {
+   "beat": "fish",
+   "text": "ont",
+   "start": 59.36,
+   "end": 59.7
+  },
+  {
+   "beat": "fish",
+   "text": "le",
+   "start": 59.7,
+   "end": 59.8
+  },
+  {
+   "beat": "fish",
+   "text": "sang",
+   "start": 59.8,
+   "end": 59.96
+  },
+  {
+   "beat": "fish",
+   "text": "froid.",
+   "start": 59.96,
+   "end": 60.3
+  },
+  {
+   "beat": "fish",
+   "text": "Ils",
+   "start": 60.86,
+   "end": 61.16
+  },
+  {
+   "beat": "fish",
+   "text": "sont",
+   "start": 61.16,
+   "end": 61.38
+  },
+  {
+   "beat": "fish",
+   "text": "à",
+   "start": 61.38,
+   "end": 61.5
+  },
+  {
+   "beat": "fish",
+   "text": "la",
+   "start": 61.5,
+   "end": 61.56
+  },
+  {
+   "beat": "fish",
+   "text": "température",
+   "start": 61.56,
+   "end": 62.12
+  },
+  {
+   "beat": "fish",
+   "text": "de",
+   "start": 62.12,
+   "end": 62.28
+  },
+  {
+   "beat": "fish",
+   "text": "l'eau.",
+   "start": 62.28,
+   "end": 62.36
+  },
+  {
+   "beat": "punch",
+   "text": "Des",
+   "start": 64.4,
+   "end": 64.63
+  },
+  {
+   "beat": "punch",
+   "text": "branchies,",
+   "start": 64.63,
+   "end": 64.86
+  },
+  {
+   "beat": "punch",
+   "text": "ça",
+   "start": 64.86,
+   "end": 64.9
+  },
+  {
+   "beat": "punch",
+   "text": "ne",
+   "start": 64.9,
+   "end": 64.98
+  },
+  {
+   "beat": "punch",
+   "text": "suffit",
+   "start": 64.98,
+   "end": 65.24
+  },
+  {
+   "beat": "punch",
+   "text": "pas.",
+   "start": 65.24,
+   "end": 65.48
+  },
+  {
+   "beat": "punch",
+   "text": "Il",
+   "start": 66.18,
+   "end": 66.34
+  },
+  {
+   "beat": "punch",
+   "text": "faudrait",
+   "start": 66.34,
+   "end": 66.58
+  },
+  {
+   "beat": "punch",
+   "text": "à",
+   "start": 66.58,
+   "end": 66.76
+  },
+  {
+   "beat": "punch",
+   "text": "Marc",
+   "start": 66.76,
+   "end": 66.94
+  },
+  {
+   "beat": "punch",
+   "text": "un",
+   "start": 66.94,
+   "end": 67.14
+  },
+  {
+   "beat": "punch",
+   "text": "corps",
+   "start": 67.14,
+   "end": 67.26
+  },
+  {
+   "beat": "punch",
+   "text": "de",
+   "start": 67.26,
+   "end": 67.36
+  },
+  {
+   "beat": "punch",
+   "text": "poisson.",
+   "start": 67.36,
+   "end": 67.8
+  },
+  {
+   "beat": "cta",
+   "text": "Et",
+   "start": 70.0,
+   "end": 70.08
+  },
+  {
+   "beat": "cta",
+   "text": "toi,",
+   "start": 70.08,
+   "end": 70.32
+  },
+  {
+   "beat": "cta",
+   "text": "tu",
+   "start": 71.14,
+   "end": 71.28
+  },
+  {
+   "beat": "cta",
+   "text": "voudrais",
+   "start": 71.28,
+   "end": 71.62
+  },
+  {
+   "beat": "cta",
+   "text": "vivre",
+   "start": 71.62,
+   "end": 71.84
+  },
+  {
+   "beat": "cta",
+   "text": "sous",
+   "start": 71.84,
+   "end": 72.18
+  },
+  {
+   "beat": "cta",
+   "text": "l'eau,",
+   "start": 72.18,
+   "end": 72.78
+  },
+  {
+   "beat": "cta",
+   "text": "ou",
+   "start": 72.78,
+   "end": 73.3
+  },
+  {
+   "beat": "cta",
+   "text": "tu",
+   "start": 73.3,
+   "end": 73.46
+  },
+  {
+   "beat": "cta",
+   "text": "gardes",
+   "start": 73.46,
+   "end": 73.9
+  },
+  {
+   "beat": "cta",
+   "text": "tes",
+   "start": 73.9,
+   "end": 74.04
+  },
+  {
+   "beat": "cta",
+   "text": "poumons",
+   "start": 74.04,
+   "end": 74.42
+  },
+  {
+   "beat": "cta",
+   "text": "?",
+   "start": 74.42,
+   "end": 74.42
+  }
+ ]
+}

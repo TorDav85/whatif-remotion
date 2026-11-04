@@ -1,0 +1,1456 @@
+{
+ "source": "voice.json",
+ "method": "faster-whisper-small-word-timestamps",
+ "maxWords": 5,
+ "maxChars": 26,
+ "segments": [
+  {
+   "start": 0.2,
+   "end": 0.88,
+   "text": "Marc ne dort plus.",
+   "beat": "hook"
+  },
+  {
+   "start": 1.62,
+   "end": 1.9,
+   "text": "Jamais.",
+   "beat": "hook"
+  },
+  {
+   "start": 2.64,
+   "end": 3.44,
+   "text": "Et son cerveau va le",
+   "beat": "hook"
+  },
+  {
+   "start": 3.44,
+   "end": 3.98,
+   "text": "lui faire payer.",
+   "beat": "hook"
+  },
+  {
+   "start": 4.8,
+   "end": 5.22,
+   "text": "Première nuit.",
+   "beat": "night"
+  },
+  {
+   "start": 5.84,
+   "end": 6.7,
+   "text": "Trois heures du matin,",
+   "beat": "night"
+  },
+  {
+   "start": 6.78,
+   "end": 7.24,
+   "text": "il range tout",
+   "beat": "night"
+  },
+  {
+   "start": 7.24,
+   "end": 7.93,
+   "text": "l'appartement.",
+   "beat": "night"
+  },
+  {
+   "start": 7.93,
+   "end": 9.12,
+   "text": "Il se sent invincible.",
+   "beat": "night"
+  },
+  {
+   "start": 10.8,
+   "end": 11.46,
+   "text": "Quarante-huit heures.",
+   "beat": "day2"
+  },
+  {
+   "start": 12.32,
+   "end": 13.2,
+   "text": "Il oublie ses clés,",
+   "beat": "day2"
+  },
+  {
+   "start": 13.3,
+   "end": 13.66,
+   "text": "ses mots,",
+   "beat": "day2"
+  },
+  {
+   "start": 13.66,
+   "end": 15.48,
+   "text": "et le prénom de Julien.",
+   "beat": "day2"
+  },
+  {
+   "start": 16.8,
+   "end": 18.46,
+   "text": "Puis son cerveau triche :",
+   "beat": "micro"
+  },
+  {
+   "start": 18.46,
+   "end": 20.28,
+   "text": "il s'endort une seconde,",
+   "beat": "micro"
+  },
+  {
+   "start": 20.34,
+   "end": 21.3,
+   "text": "les yeux ouverts.",
+   "beat": "micro"
+  },
+  {
+   "start": 21.82,
+   "end": 22.72,
+   "text": "Des micro-sommeils.",
+   "beat": "micro"
+  },
+  {
+   "start": 23.8,
+   "end": 24.28,
+   "text": "À cent dix sur",
+   "beat": "car"
+  },
+  {
+   "start": 24.28,
+   "end": 25.32,
+   "text": "l'autoroute,",
+   "beat": "car"
+  },
+  {
+   "start": 25.32,
+   "end": 26.26,
+   "text": "une seconde,",
+   "beat": "car"
+  },
+  {
+   "start": 26.26,
+   "end": 27.7,
+   "text": "c'est trente mètres sans",
+   "beat": "car"
+  },
+  {
+   "start": 27.7,
+   "end": 28.24,
+   "text": "conducteur.",
+   "beat": "car"
+  },
+  {
+   "start": 29.4,
+   "end": 30.38,
+   "text": "Jour quatre.",
+   "beat": "halluc"
+  },
+  {
+   "start": 30.38,
+   "end": 31.7,
+   "text": "Il hallucine :",
+   "beat": "halluc"
+  },
+  {
+   "start": 31.7,
+   "end": 32.82,
+   "text": "le panneau de la rue",
+   "beat": "halluc"
+  },
+  {
+   "start": 32.82,
+   "end": 33.76,
+   "text": "devient un homme qui le",
+   "beat": "halluc"
+  },
+  {
+   "start": 33.76,
+   "end": 34.14,
+   "text": "fixe.",
+   "beat": "halluc"
+  },
+  {
+   "start": 36.0,
+   "end": 37.3,
+   "text": "Jour onze.",
+   "beat": "record"
+  },
+  {
+   "start": 37.3,
+   "end": 38.52,
+   "text": "Il égale le record de",
+   "beat": "record"
+  },
+  {
+   "start": 38.52,
+   "end": 39.88,
+   "text": "Randy Gardner :",
+   "beat": "record"
+  },
+  {
+   "start": 39.88,
+   "end": 41.26,
+   "text": "deux cent soixante-quatre",
+   "beat": "record"
+  },
+  {
+   "start": 41.26,
+   "end": 42.0,
+   "text": "heures sans dormir.",
+   "beat": "record"
+  },
+  {
+   "start": 43.8,
+   "end": 44.18,
+   "text": "Gardner,",
+   "beat": "gardner"
+  },
+  {
+   "start": 44.18,
+   "end": 44.38,
+   "text": "lui,",
+   "beat": "gardner"
+  },
+  {
+   "start": 44.38,
+   "end": 45.18,
+   "text": "s'est arrêté là.",
+   "beat": "gardner"
+  },
+  {
+   "start": 45.84,
+   "end": 47.68,
+   "text": "Puis il a dormi quatorze",
+   "beat": "gardner"
+  },
+  {
+   "start": 47.68,
+   "end": 48.32,
+   "text": "heures d'affilée.",
+   "beat": "gardner"
+  },
+  {
+   "start": 49.4,
+   "end": 50.52,
+   "text": "Au-delà,",
+   "beat": "unknown"
+  },
+  {
+   "start": 50.52,
+   "end": 51.32,
+   "text": "aucun humain n'a été",
+   "beat": "unknown"
+  },
+  {
+   "start": 51.32,
+   "end": 51.86,
+   "text": "testé.",
+   "beat": "unknown"
+  },
+  {
+   "start": 52.54,
+   "end": 53.04,
+   "text": "Chez les rats,",
+   "beat": "unknown"
+  },
+  {
+   "start": 53.9,
+   "end": 55.12,
+   "text": "la privation totale tue en",
+   "beat": "unknown"
+  },
+  {
+   "start": 55.12,
+   "end": 55.94,
+   "text": "deux à quatre semaines.",
+   "beat": "unknown"
+  },
+  {
+   "start": 57.4,
+   "end": 58.52,
+   "text": "Leur température chute,",
+   "beat": "why"
+  },
+  {
+   "start": 59.14,
+   "end": 60.94,
+   "text": "leur corps s'épuise.",
+   "beat": "why"
+  },
+  {
+   "start": 60.94,
+   "end": 61.8,
+   "text": "Et on ne sait toujours",
+   "beat": "why"
+  },
+  {
+   "start": 61.8,
+   "end": 62.9,
+   "text": "pas exactement pourquoi",
+   "beat": "why"
+  },
+  {
+   "start": 62.9,
+   "end": 63.38,
+   "text": "ils meurent.",
+   "beat": "why"
+  },
+  {
+   "start": 64.8,
+   "end": 65.32,
+   "text": "Chez la souris,",
+   "beat": "clean"
+  },
+  {
+   "start": 65.96,
+   "end": 67.12,
+   "text": "le cerveau fait le ménage",
+   "beat": "clean"
+  },
+  {
+   "start": 67.12,
+   "end": 67.64,
+   "text": "en dormant.",
+   "beat": "clean"
+  },
+  {
+   "start": 68.3,
+   "end": 69.26,
+   "text": "Privé de sommeil,",
+   "beat": "clean"
+  },
+  {
+   "start": 69.5,
+   "end": 70.68,
+   "text": "il ronge ses connexions.",
+   "beat": "clean"
+  },
+  {
+   "start": 71.6,
+   "end": 72.52,
+   "text": "Marc n'a pas besoin d'un",
+   "beat": "punch"
+  },
+  {
+   "start": 72.52,
+   "end": 72.82,
+   "text": "café.",
+   "beat": "punch"
+  },
+  {
+   "start": 73.66,
+   "end": 74.54,
+   "text": "Il a besoin d'un lit.",
+   "beat": "punch"
+  },
+  {
+   "start": 76.0,
+   "end": 76.3,
+   "text": "Et toi,",
+   "beat": "cta"
+  },
+  {
+   "start": 77.12,
+   "end": 78.04,
+   "text": "tu as dormi combien",
+   "beat": "cta"
+  },
+  {
+   "start": 78.04,
+   "end": 78.84,
+   "text": "d'heures cette nuit ?",
+   "beat": "cta"
+  }
+ ],
+ "words": [
+  {
+   "beat": "hook",
+   "text": "Marc",
+   "start": 0.2,
+   "end": 0.38
+  },
+  {
+   "beat": "hook",
+   "text": "ne",
+   "start": 0.38,
+   "end": 0.52
+  },
+  {
+   "beat": "hook",
+   "text": "dort",
+   "start": 0.52,
+   "end": 0.64
+  },
+  {
+   "beat": "hook",
+   "text": "plus.",
+   "start": 0.64,
+   "end": 0.88
+  },
+  {
+   "beat": "hook",
+   "text": "Jamais.",
+   "start": 1.62,
+   "end": 1.9
+  },
+  {
+   "beat": "hook",
+   "text": "Et",
+   "start": 2.64,
+   "end": 2.88
+  },
+  {
+   "beat": "hook",
+   "text": "son",
+   "start": 2.88,
+   "end": 2.98
+  },
+  {
+   "beat": "hook",
+   "text": "cerveau",
+   "start": 2.98,
+   "end": 3.36
+  },
+  {
+   "beat": "hook",
+   "text": "va",
+   "start": 3.36,
+   "end": 3.44
+  },
+  {
+   "beat": "hook",
+   "text": "le",
+   "start": 3.44,
+   "end": 3.44
+  },
+  {
+   "beat": "hook",
+   "text": "lui",
+   "start": 3.44,
+   "end": 3.54
+  },
+  {
+   "beat": "hook",
+   "text": "faire",
+   "start": 3.54,
+   "end": 3.78
+  },
+  {
+   "beat": "hook",
+   "text": "payer.",
+   "start": 3.78,
+   "end": 3.98
+  },
+  {
+   "beat": "night",
+   "text": "Première",
+   "start": 4.8,
+   "end": 5.06
+  },
+  {
+   "beat": "night",
+   "text": "nuit.",
+   "start": 5.06,
+   "end": 5.22
+  },
+  {
+   "beat": "night",
+   "text": "Trois",
+   "start": 5.84,
+   "end": 6.22
+  },
+  {
+   "beat": "night",
+   "text": "heures",
+   "start": 6.22,
+   "end": 6.32
+  },
+  {
+   "beat": "night",
+   "text": "du",
+   "start": 6.32,
+   "end": 6.42
+  },
+  {
+   "beat": "night",
+   "text": "matin,",
+   "start": 6.42,
+   "end": 6.7
+  },
+  {
+   "beat": "night",
+   "text": "il",
+   "start": 6.78,
+   "end": 6.84
+  },
+  {
+   "beat": "night",
+   "text": "range",
+   "start": 6.84,
+   "end": 7.06
+  },
+  {
+   "beat": "night",
+   "text": "tout",
+   "start": 7.06,
+   "end": 7.24
+  },
+  {
+   "beat": "night",
+   "text": "l'appartement.",
+   "start": 7.24,
+   "end": 7.93
+  },
+  {
+   "beat": "night",
+   "text": "Il",
+   "start": 7.93,
+   "end": 8.62
+  },
+  {
+   "beat": "night",
+   "text": "se",
+   "start": 8.62,
+   "end": 8.76
+  },
+  {
+   "beat": "night",
+   "text": "sent",
+   "start": 8.76,
+   "end": 8.96
+  },
+  {
+   "beat": "night",
+   "text": "invincible.",
+   "start": 8.96,
+   "end": 9.12
+  },
+  {
+   "beat": "day2",
+   "text": "Quarante-huit",
+   "start": 10.8,
+   "end": 11.08
+  },
+  {
+   "beat": "day2",
+   "text": "heures.",
+   "start": 11.08,
+   "end": 11.46
+  },
+  {
+   "beat": "day2",
+   "text": "Il",
+   "start": 12.32,
+   "end": 12.44
+  },
+  {
+   "beat": "day2",
+   "text": "oublie",
+   "start": 12.44,
+   "end": 12.74
+  },
+  {
+   "beat": "day2",
+   "text": "ses",
+   "start": 12.74,
+   "end": 12.84
+  },
+  {
+   "beat": "day2",
+   "text": "clés,",
+   "start": 12.84,
+   "end": 13.2
+  },
+  {
+   "beat": "day2",
+   "text": "ses",
+   "start": 13.3,
+   "end": 13.4
+  },
+  {
+   "beat": "day2",
+   "text": "mots,",
+   "start": 13.4,
+   "end": 13.66
+  },
+  {
+   "beat": "day2",
+   "text": "et",
+   "start": 13.66,
+   "end": 14.5
+  },
+  {
+   "beat": "day2",
+   "text": "le",
+   "start": 14.5,
+   "end": 14.62
+  },
+  {
+   "beat": "day2",
+   "text": "prénom",
+   "start": 14.62,
+   "end": 14.92
+  },
+  {
+   "beat": "day2",
+   "text": "de",
+   "start": 14.92,
+   "end": 15.08
+  },
+  {
+   "beat": "day2",
+   "text": "Julien.",
+   "start": 15.08,
+   "end": 15.48
+  },
+  {
+   "beat": "micro",
+   "text": "Puis",
+   "start": 16.8,
+   "end": 16.88
+  },
+  {
+   "beat": "micro",
+   "text": "son",
+   "start": 16.88,
+   "end": 17.02
+  },
+  {
+   "beat": "micro",
+   "text": "cerveau",
+   "start": 17.02,
+   "end": 17.38
+  },
+  {
+   "beat": "micro",
+   "text": "triche",
+   "start": 17.38,
+   "end": 17.76
+  },
+  {
+   "beat": "micro",
+   "text": ":",
+   "start": 17.76,
+   "end": 18.46
+  },
+  {
+   "beat": "micro",
+   "text": "il",
+   "start": 18.46,
+   "end": 18.68
+  },
+  {
+   "beat": "micro",
+   "text": "s'endort",
+   "start": 18.68,
+   "end": 19.12
+  },
+  {
+   "beat": "micro",
+   "text": "une",
+   "start": 19.12,
+   "end": 19.24
+  },
+  {
+   "beat": "micro",
+   "text": "seconde,",
+   "start": 19.24,
+   "end": 20.28
+  },
+  {
+   "beat": "micro",
+   "text": "les",
+   "start": 20.34,
+   "end": 20.54
+  },
+  {
+   "beat": "micro",
+   "text": "yeux",
+   "start": 20.54,
+   "end": 20.76
+  },
+  {
+   "beat": "micro",
+   "text": "ouverts.",
+   "start": 20.76,
+   "end": 21.3
+  },
+  {
+   "beat": "micro",
+   "text": "Des",
+   "start": 21.82,
+   "end": 21.92
+  },
+  {
+   "beat": "micro",
+   "text": "micro-sommeils.",
+   "start": 21.92,
+   "end": 22.72
+  },
+  {
+   "beat": "car",
+   "text": "À",
+   "start": 23.8,
+   "end": 23.86
+  },
+  {
+   "beat": "car",
+   "text": "cent",
+   "start": 23.86,
+   "end": 23.96
+  },
+  {
+   "beat": "car",
+   "text": "dix",
+   "start": 23.96,
+   "end": 24.06
+  },
+  {
+   "beat": "car",
+   "text": "sur",
+   "start": 24.06,
+   "end": 24.28
+  },
+  {
+   "beat": "car",
+   "text": "l'autoroute,",
+   "start": 24.28,
+   "end": 25.32
+  },
+  {
+   "beat": "car",
+   "text": "une",
+   "start": 25.32,
+   "end": 25.58
+  },
+  {
+   "beat": "car",
+   "text": "seconde,",
+   "start": 25.58,
+   "end": 26.26
+  },
+  {
+   "beat": "car",
+   "text": "c'est",
+   "start": 26.26,
+   "end": 26.75
+  },
+  {
+   "beat": "car",
+   "text": "trente",
+   "start": 26.75,
+   "end": 27.24
+  },
+  {
+   "beat": "car",
+   "text": "mètres",
+   "start": 27.24,
+   "end": 27.54
+  },
+  {
+   "beat": "car",
+   "text": "sans",
+   "start": 27.54,
+   "end": 27.7
+  },
+  {
+   "beat": "car",
+   "text": "conducteur.",
+   "start": 27.7,
+   "end": 28.24
+  },
+  {
+   "beat": "halluc",
+   "text": "Jour",
+   "start": 29.4,
+   "end": 29.52
+  },
+  {
+   "beat": "halluc",
+   "text": "quatre.",
+   "start": 29.52,
+   "end": 30.38
+  },
+  {
+   "beat": "halluc",
+   "text": "Il",
+   "start": 30.38,
+   "end": 30.76
+  },
+  {
+   "beat": "halluc",
+   "text": "hallucine",
+   "start": 30.76,
+   "end": 31.26
+  },
+  {
+   "beat": "halluc",
+   "text": ":",
+   "start": 31.26,
+   "end": 31.7
+  },
+  {
+   "beat": "halluc",
+   "text": "le",
+   "start": 31.7,
+   "end": 32.08
+  },
+  {
+   "beat": "halluc",
+   "text": "panneau",
+   "start": 32.08,
+   "end": 32.44
+  },
+  {
+   "beat": "halluc",
+   "text": "de",
+   "start": 32.44,
+   "end": 32.5
+  },
+  {
+   "beat": "halluc",
+   "text": "la",
+   "start": 32.5,
+   "end": 32.62
+  },
+  {
+   "beat": "halluc",
+   "text": "rue",
+   "start": 32.62,
+   "end": 32.82
+  },
+  {
+   "beat": "halluc",
+   "text": "devient",
+   "start": 32.82,
+   "end": 33.1
+  },
+  {
+   "beat": "halluc",
+   "text": "un",
+   "start": 33.1,
+   "end": 33.32
+  },
+  {
+   "beat": "halluc",
+   "text": "homme",
+   "start": 33.32,
+   "end": 33.5
+  },
+  {
+   "beat": "halluc",
+   "text": "qui",
+   "start": 33.5,
+   "end": 33.62
+  },
+  {
+   "beat": "halluc",
+   "text": "le",
+   "start": 33.62,
+   "end": 33.76
+  },
+  {
+   "beat": "halluc",
+   "text": "fixe.",
+   "start": 33.76,
+   "end": 34.14
+  },
+  {
+   "beat": "record",
+   "text": "Jour",
+   "start": 36.0,
+   "end": 36.14
+  },
+  {
+   "beat": "record",
+   "text": "onze.",
+   "start": 36.14,
+   "end": 37.3
+  },
+  {
+   "beat": "record",
+   "text": "Il",
+   "start": 37.3,
+   "end": 37.52
+  },
+  {
+   "beat": "record",
+   "text": "égale",
+   "start": 37.52,
+   "end": 37.82
+  },
+  {
+   "beat": "record",
+   "text": "le",
+   "start": 37.82,
+   "end": 37.98
+  },
+  {
+   "beat": "record",
+   "text": "record",
+   "start": 37.98,
+   "end": 38.32
+  },
+  {
+   "beat": "record",
+   "text": "de",
+   "start": 38.32,
+   "end": 38.52
+  },
+  {
+   "beat": "record",
+   "text": "Randy",
+   "start": 38.52,
+   "end": 38.8
+  },
+  {
+   "beat": "record",
+   "text": "Gardner",
+   "start": 38.8,
+   "end": 39.42
+  },
+  {
+   "beat": "record",
+   "text": ":",
+   "start": 39.42,
+   "end": 39.88
+  },
+  {
+   "beat": "record",
+   "text": "deux",
+   "start": 39.88,
+   "end": 40.34
+  },
+  {
+   "beat": "record",
+   "text": "cent",
+   "start": 40.34,
+   "end": 40.8
+  },
+  {
+   "beat": "record",
+   "text": "soixante-quatre",
+   "start": 40.8,
+   "end": 41.26
+  },
+  {
+   "beat": "record",
+   "text": "heures",
+   "start": 41.26,
+   "end": 41.46
+  },
+  {
+   "beat": "record",
+   "text": "sans",
+   "start": 41.46,
+   "end": 41.66
+  },
+  {
+   "beat": "record",
+   "text": "dormir.",
+   "start": 41.66,
+   "end": 42.0
+  },
+  {
+   "beat": "gardner",
+   "text": "Gardner,",
+   "start": 43.8,
+   "end": 44.18
+  },
+  {
+   "beat": "gardner",
+   "text": "lui,",
+   "start": 44.18,
+   "end": 44.38
+  },
+  {
+   "beat": "gardner",
+   "text": "s'est",
+   "start": 44.38,
+   "end": 44.6
+  },
+  {
+   "beat": "gardner",
+   "text": "arrêté",
+   "start": 44.6,
+   "end": 45.0
+  },
+  {
+   "beat": "gardner",
+   "text": "là.",
+   "start": 45.0,
+   "end": 45.18
+  },
+  {
+   "beat": "gardner",
+   "text": "Puis",
+   "start": 45.84,
+   "end": 46.12
+  },
+  {
+   "beat": "gardner",
+   "text": "il",
+   "start": 46.12,
+   "end": 47.0
+  },
+  {
+   "beat": "gardner",
+   "text": "a",
+   "start": 47.0,
+   "end": 47.1
+  },
+  {
+   "beat": "gardner",
+   "text": "dormi",
+   "start": 47.1,
+   "end": 47.38
+  },
+  {
+   "beat": "gardner",
+   "text": "quatorze",
+   "start": 47.38,
+   "end": 47.68
+  },
+  {
+   "beat": "gardner",
+   "text": "heures",
+   "start": 47.68,
+   "end": 47.88
+  },
+  {
+   "beat": "gardner",
+   "text": "d'affilée.",
+   "start": 47.88,
+   "end": 48.32
+  },
+  {
+   "beat": "unknown",
+   "text": "Au-delà,",
+   "start": 49.4,
+   "end": 50.52
+  },
+  {
+   "beat": "unknown",
+   "text": "aucun",
+   "start": 50.52,
+   "end": 50.76
+  },
+  {
+   "beat": "unknown",
+   "text": "humain",
+   "start": 50.76,
+   "end": 51.02
+  },
+  {
+   "beat": "unknown",
+   "text": "n'a",
+   "start": 51.02,
+   "end": 51.14
+  },
+  {
+   "beat": "unknown",
+   "text": "été",
+   "start": 51.14,
+   "end": 51.32
+  },
+  {
+   "beat": "unknown",
+   "text": "testé.",
+   "start": 51.32,
+   "end": 51.86
+  },
+  {
+   "beat": "unknown",
+   "text": "Chez",
+   "start": 52.54,
+   "end": 52.68
+  },
+  {
+   "beat": "unknown",
+   "text": "les",
+   "start": 52.68,
+   "end": 52.84
+  },
+  {
+   "beat": "unknown",
+   "text": "rats,",
+   "start": 52.84,
+   "end": 53.04
+  },
+  {
+   "beat": "unknown",
+   "text": "la",
+   "start": 53.9,
+   "end": 53.98
+  },
+  {
+   "beat": "unknown",
+   "text": "privation",
+   "start": 53.98,
+   "end": 54.42
+  },
+  {
+   "beat": "unknown",
+   "text": "totale",
+   "start": 54.42,
+   "end": 54.82
+  },
+  {
+   "beat": "unknown",
+   "text": "tue",
+   "start": 54.82,
+   "end": 54.97
+  },
+  {
+   "beat": "unknown",
+   "text": "en",
+   "start": 54.97,
+   "end": 55.12
+  },
+  {
+   "beat": "unknown",
+   "text": "deux",
+   "start": 55.12,
+   "end": 55.3
+  },
+  {
+   "beat": "unknown",
+   "text": "à",
+   "start": 55.3,
+   "end": 55.42
+  },
+  {
+   "beat": "unknown",
+   "text": "quatre",
+   "start": 55.42,
+   "end": 55.6
+  },
+  {
+   "beat": "unknown",
+   "text": "semaines.",
+   "start": 55.6,
+   "end": 55.94
+  },
+  {
+   "beat": "why",
+   "text": "Leur",
+   "start": 57.4,
+   "end": 57.52
+  },
+  {
+   "beat": "why",
+   "text": "température",
+   "start": 57.52,
+   "end": 58.1
+  },
+  {
+   "beat": "why",
+   "text": "chute,",
+   "start": 58.1,
+   "end": 58.52
+  },
+  {
+   "beat": "why",
+   "text": "leur",
+   "start": 59.14,
+   "end": 59.44
+  },
+  {
+   "beat": "why",
+   "text": "corps",
+   "start": 59.44,
+   "end": 59.68
+  },
+  {
+   "beat": "why",
+   "text": "s'épuise.",
+   "start": 59.68,
+   "end": 60.94
+  },
+  {
+   "beat": "why",
+   "text": "Et",
+   "start": 60.94,
+   "end": 61.22
+  },
+  {
+   "beat": "why",
+   "text": "on",
+   "start": 61.22,
+   "end": 61.32
+  },
+  {
+   "beat": "why",
+   "text": "ne",
+   "start": 61.32,
+   "end": 61.42
+  },
+  {
+   "beat": "why",
+   "text": "sait",
+   "start": 61.42,
+   "end": 61.56
+  },
+  {
+   "beat": "why",
+   "text": "toujours",
+   "start": 61.56,
+   "end": 61.8
+  },
+  {
+   "beat": "why",
+   "text": "pas",
+   "start": 61.8,
+   "end": 61.98
+  },
+  {
+   "beat": "why",
+   "text": "exactement",
+   "start": 61.98,
+   "end": 62.4
+  },
+  {
+   "beat": "why",
+   "text": "pourquoi",
+   "start": 62.4,
+   "end": 62.9
+  },
+  {
+   "beat": "why",
+   "text": "ils",
+   "start": 62.9,
+   "end": 63.16
+  },
+  {
+   "beat": "why",
+   "text": "meurent.",
+   "start": 63.16,
+   "end": 63.38
+  },
+  {
+   "beat": "clean",
+   "text": "Chez",
+   "start": 64.8,
+   "end": 64.92
+  },
+  {
+   "beat": "clean",
+   "text": "la",
+   "start": 64.92,
+   "end": 65.0
+  },
+  {
+   "beat": "clean",
+   "text": "souris,",
+   "start": 65.0,
+   "end": 65.32
+  },
+  {
+   "beat": "clean",
+   "text": "le",
+   "start": 65.96,
+   "end": 66.18
+  },
+  {
+   "beat": "clean",
+   "text": "cerveau",
+   "start": 66.18,
+   "end": 66.54
+  },
+  {
+   "beat": "clean",
+   "text": "fait",
+   "start": 66.54,
+   "end": 66.66
+  },
+  {
+   "beat": "clean",
+   "text": "le",
+   "start": 66.66,
+   "end": 66.76
+  },
+  {
+   "beat": "clean",
+   "text": "ménage",
+   "start": 66.76,
+   "end": 67.12
+  },
+  {
+   "beat": "clean",
+   "text": "en",
+   "start": 67.12,
+   "end": 67.2
+  },
+  {
+   "beat": "clean",
+   "text": "dormant.",
+   "start": 67.2,
+   "end": 67.64
+  },
+  {
+   "beat": "clean",
+   "text": "Privé",
+   "start": 68.3,
+   "end": 68.64
+  },
+  {
+   "beat": "clean",
+   "text": "de",
+   "start": 68.64,
+   "end": 68.74
+  },
+  {
+   "beat": "clean",
+   "text": "sommeil,",
+   "start": 68.74,
+   "end": 69.26
+  },
+  {
+   "beat": "clean",
+   "text": "il",
+   "start": 69.5,
+   "end": 69.6
+  },
+  {
+   "beat": "clean",
+   "text": "ronge",
+   "start": 69.6,
+   "end": 69.92
+  },
+  {
+   "beat": "clean",
+   "text": "ses",
+   "start": 69.92,
+   "end": 70.12
+  },
+  {
+   "beat": "clean",
+   "text": "connexions.",
+   "start": 70.12,
+   "end": 70.68
+  },
+  {
+   "beat": "punch",
+   "text": "Marc",
+   "start": 71.6,
+   "end": 71.74
+  },
+  {
+   "beat": "punch",
+   "text": "n'a",
+   "start": 71.74,
+   "end": 71.98
+  },
+  {
+   "beat": "punch",
+   "text": "pas",
+   "start": 71.98,
+   "end": 72.1
+  },
+  {
+   "beat": "punch",
+   "text": "besoin",
+   "start": 72.1,
+   "end": 72.36
+  },
+  {
+   "beat": "punch",
+   "text": "d'un",
+   "start": 72.36,
+   "end": 72.52
+  },
+  {
+   "beat": "punch",
+   "text": "café.",
+   "start": 72.52,
+   "end": 72.82
+  },
+  {
+   "beat": "punch",
+   "text": "Il",
+   "start": 73.66,
+   "end": 73.76
+  },
+  {
+   "beat": "punch",
+   "text": "a",
+   "start": 73.76,
+   "end": 73.86
+  },
+  {
+   "beat": "punch",
+   "text": "besoin",
+   "start": 73.86,
+   "end": 74.14
+  },
+  {
+   "beat": "punch",
+   "text": "d'un",
+   "start": 74.14,
+   "end": 74.4
+  },
+  {
+   "beat": "punch",
+   "text": "lit.",
+   "start": 74.4,
+   "end": 74.54
+  },
+  {
+   "beat": "cta",
+   "text": "Et",
+   "start": 76.0,
+   "end": 76.08
+  },
+  {
+   "beat": "cta",
+   "text": "toi,",
+   "start": 76.08,
+   "end": 76.3
+  },
+  {
+   "beat": "cta",
+   "text": "tu",
+   "start": 77.12,
+   "end": 77.28
+  },
+  {
+   "beat": "cta",
+   "text": "as",
+   "start": 77.28,
+   "end": 77.42
+  },
+  {
+   "beat": "cta",
+   "text": "dormi",
+   "start": 77.42,
+   "end": 77.8
+  },
+  {
+   "beat": "cta",
+   "text": "combien",
+   "start": 77.8,
+   "end": 78.04
+  },
+  {
+   "beat": "cta",
+   "text": "d'heures",
+   "start": 78.04,
+   "end": 78.44
+  },
+  {
+   "beat": "cta",
+   "text": "cette",
+   "start": 78.44,
+   "end": 78.6
+  },
+  {
+   "beat": "cta",
+   "text": "nuit",
+   "start": 78.6,
+   "end": 78.84
+  },
+  {
+   "beat": "cta",
+   "text": "?",
+   "start": 78.84,
+   "end": 78.84
+  }
+ ]
+}

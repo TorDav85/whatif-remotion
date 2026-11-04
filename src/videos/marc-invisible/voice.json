@@ -1,0 +1,138 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-invisible/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Marc devient invisible. Problème : il devient aussi aveugle.",
+      "start": 0.2,
+      "duration": 4.216,
+      "end": 4.416,
+      "speed": 1.1727,
+      "seed": 27000,
+      "audio": "marc-invisible/hook.wav",
+      "sha256": "b0980cf48df6fee066df7628a11029e6eb3348490d79934cf95c74c8f0caca4b"
+    },
+    {
+      "id": "fade",
+      "text": "Sept heures du matin. D'abord, ses mains disparaissent. Puis ses bras. Puis tout le reste.",
+      "start": 4.8,
+      "duration": 5.8107,
+      "end": 10.6107,
+      "speed": 1.2694,
+      "seed": 27001,
+      "audio": "marc-invisible/fade.wav",
+      "sha256": "ff56e0cc5e2736f2766f6b9606bb527afd2a88c927487bfea404d412f900e680"
+    },
+    {
+      "id": "julien",
+      "text": "Julien entre. Une tasse de café flotte toute seule.",
+      "start": 11.0,
+      "duration": 4.4093,
+      "end": 15.4093,
+      "speed": 1.2223,
+      "seed": 27002,
+      "audio": "marc-invisible/julien.wav",
+      "sha256": "811774691b0b359a7bf007676405b0488d7fc652be07c9acddba34f1d6977acb"
+    },
+    {
+      "id": "retina",
+      "text": "Mais pour voir, il faut que la rétine arrête la lumière. Celle de Marc la laisse passer.",
+      "start": 15.8,
+      "duration": 6.4428,
+      "end": 22.2428,
+      "speed": 1.0,
+      "seed": 27003,
+      "audio": "marc-invisible/retina.wav",
+      "sha256": "50c01343a16a2ba63d88a44b230c344fcf7b80ed5bda6d96d868440e8ad96b3b"
+    },
+    {
+      "id": "blind",
+      "text": "Marc est invisible... et il ne voit plus rien. Le noir complet.",
+      "start": 23.4,
+      "duration": 4.1513,
+      "end": 27.5513,
+      "speed": 1.0,
+      "seed": 27004,
+      "audio": "marc-invisible/blind.wav",
+      "sha256": "ebe997342bfb6f5855085efb5ddeeb5cc391cdf26dde55352b28527210804fb2"
+    },
+    {
+      "id": "street",
+      "text": "Il sort quand même. Dans la rue, personne ne l'évite. Un vélo le percute de plein fouet.",
+      "start": 29.0,
+      "duration": 5.7302,
+      "end": 34.7302,
+      "speed": 1.0,
+      "seed": 27005,
+      "audio": "marc-invisible/street.wav",
+      "sha256": "21a4a6d649d1130dc6ccb4994d638a22f2913da699fafe3593a9a985c1f41e3e"
+    },
+    {
+      "id": "heat",
+      "text": "Mais son corps est toujours à trente-sept degrés. Il rayonne environ cent watts de chaleur.",
+      "start": 35.8,
+      "duration": 4.2649,
+      "end": 40.0649,
+      "speed": 1.0,
+      "seed": 27306,
+      "audio": "marc-invisible/heat.wav",
+      "sha256": "9634cf1cf218554bb9324794cbb11150dd61d34898c9835e7e3530385ae658e1"
+    },
+    {
+      "id": "camera",
+      "text": "Une caméra thermique de la police le voit comme en plein jour.",
+      "start": 43.0,
+      "duration": 3.445,
+      "end": 46.445,
+      "speed": 1.0,
+      "seed": 27007,
+      "audio": "marc-invisible/camera.wav",
+      "sha256": "f98f4a4c10d0e84034544d9e8a764f970d883d87673f5d2ed77bfad66d6bf36d"
+    },
+    {
+      "id": "food",
+      "text": "Midi. Marc mange un sandwich. Le pain mâché flotte dans le vide, au milieu de son ventre.",
+      "start": 49.2,
+      "duration": 6.806,
+      "end": 56.006,
+      "speed": 1.0317,
+      "seed": 27308,
+      "audio": "marc-invisible/food.wav",
+      "sha256": "232a853a20017c08a9041b6712ea1b4e262250cc31265ac6c374760fb074452c"
+    },
+    {
+      "id": "digest",
+      "text": "Il reste visible pendant des heures, le temps de la digestion.",
+      "start": 56.4,
+      "duration": 4.7159,
+      "end": 61.1159,
+      "speed": 1.0,
+      "seed": 27009,
+      "audio": "marc-invisible/digest.wav",
+      "sha256": "bc63b5adbc4828d62b7377d4f7616330174d78fedde97706c54c2df7cc9dfed1"
+    },
+    {
+      "id": "punch",
+      "text": "Bilan : aveugle, repérable à la chaleur, trahi par son déjeuner. Le pire espion du monde.",
+      "start": 62.6,
+      "duration": 6.2078,
+      "end": 68.8078,
+      "speed": 1.1726,
+      "seed": 27510,
+      "audio": "marc-invisible/punch.wav",
+      "sha256": "6bee7f2251f869199af0eef7abd641f4052a545f19e3a66ce2a6b7f3c7945bff"
+    },
+    {
+      "id": "cta",
+      "text": "Et toi : tu serais invisible, si ça te rendait aveugle ?",
+      "start": 70.0,
+      "duration": 4.3429,
+      "end": 74.3429,
+      "speed": 1.0,
+      "seed": 27011,
+      "audio": "marc-invisible/cta.wav",
+      "sha256": "84bc241660196b1f5492402cebbbc0bf9a10ea0691b9cef60716c944ee2e9329"
+    }
+  ]
+}

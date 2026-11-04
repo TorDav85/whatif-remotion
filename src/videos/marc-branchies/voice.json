@@ -1,0 +1,138 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-branchies/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "Marc peut respirer sous l'eau. Et c'est là qu'il va étouffer.",
+      "start": 0.2,
+      "duration": 3.1703,
+      "end": 3.3703,
+      "speed": 1.0,
+      "seed": 30100,
+      "audio": "marc-branchies/hook.wav",
+      "sha256": "e1d9c6d0862c5f7b8ee629844aa93a9ead3d1e7d22c55c42258fe152cc41de41"
+    },
+    {
+      "id": "plunge",
+      "text": "Ses poumons deviennent des branchies. Il saute dans la Seine, du pont des Arts.",
+      "start": 4.8,
+      "duration": 4.362,
+      "end": 9.162,
+      "speed": 1.0,
+      "seed": 30001,
+      "audio": "marc-branchies/plunge.wav",
+      "sha256": "6ebdcb15b4ab6dba7854129fb5533801951be4200640241e898d0697e7f002b2"
+    },
+    {
+      "id": "oxygen",
+      "text": "Premier problème : un litre d'eau contient trente fois moins d'oxygène qu'un litre d'air.",
+      "start": 10.8,
+      "duration": 4.882,
+      "end": 15.682,
+      "speed": 1.0,
+      "seed": 30002,
+      "audio": "marc-branchies/oxygen.wav",
+      "sha256": "c44eecb0e85d88085ff88ac0c7d892f3105e1de3f9b5d55ff05f27d5b8556821"
+    },
+    {
+      "id": "litres",
+      "text": "Pour survivre, Marc doit faire passer près de cinquante litres d'eau par minute dans ses branchies.",
+      "start": 18.0,
+      "duration": 5.3453,
+      "end": 23.3453,
+      "speed": 1.0,
+      "seed": 30103,
+      "audio": "marc-branchies/litres.wav",
+      "sha256": "5f97f469d1edd0b40cef474343ff53fb8220f36ea6569e839f1c3faef1e357f8"
+    },
+    {
+      "id": "bath",
+      "text": "Une baignoire pleine toutes les trois minutes.",
+      "start": 25.8,
+      "duration": 1.8953,
+      "end": 27.6953,
+      "speed": 1.0,
+      "seed": 30004,
+      "audio": "marc-branchies/bath.wav",
+      "sha256": "d0daf867cc209a1bf00768c24f69bd7c46d0f5714a8f0c729b8bcad02ea29b5c"
+    },
+    {
+      "id": "heavy",
+      "text": "Et l'eau est huit cents fois plus lourde que l'air. Rien que respirer le fatigue.",
+      "start": 31.0,
+      "duration": 3.8944,
+      "end": 34.8944,
+      "speed": 1.0,
+      "seed": 30405,
+      "audio": "marc-branchies/heavy.wav",
+      "sha256": "2e167ea5b8cb65892b3d1d23a92b0288f78fd9e8ac1f5def2a73dc7d6a0252c4"
+    },
+    {
+      "id": "swim",
+      "text": "S'il nage, il lui faut jusqu'à dix fois plus d'oxygène. Impossible à filtrer.",
+      "start": 37.8,
+      "duration": 5.6093,
+      "end": 43.4093,
+      "speed": 1.0936,
+      "seed": 30006,
+      "audio": "marc-branchies/swim.wav",
+      "sha256": "5334cf21156f65f9e98c0fc7d38e50fa7cf7d79c0c1e4a16c98b5d574caf1786"
+    },
+    {
+      "id": "cold",
+      "text": "Deuxième problème : ses branchies touchent l'eau froide. Tout son sang y passe, et se refroidit.",
+      "start": 43.8,
+      "duration": 6.5225,
+      "end": 50.3225,
+      "speed": 1.0,
+      "seed": 30007,
+      "audio": "marc-branchies/cold.wav",
+      "sha256": "c663131a600d7d8971916d0216f4242384cadb0cf3360f36c8c128332b6da0a3"
+    },
+    {
+      "id": "hypo",
+      "text": "Dans une Seine à quinze degrés, son corps perd sa chaleur, heure après heure.",
+      "start": 51.0,
+      "duration": 4.9925,
+      "end": 55.9925,
+      "speed": 1.0,
+      "seed": 30008,
+      "audio": "marc-branchies/hypo.wav",
+      "sha256": "b1975750f0713b81d400704daa391b31aae8c156cd4721a6cdf83553ab9cd1fd"
+    },
+    {
+      "id": "fish",
+      "text": "Voilà pourquoi presque tous les poissons ont le sang froid. Ils sont à la température de l'eau.",
+      "start": 57.8,
+      "duration": 4.5838,
+      "end": 62.3838,
+      "speed": 1.0,
+      "seed": 30209,
+      "audio": "marc-branchies/fish.wav",
+      "sha256": "033183db48613d96bb915b67d8d0f6ff55a35e355e6fc798739932dc7ab1dcdd"
+    },
+    {
+      "id": "punch",
+      "text": "Des branchies, ça ne suffit pas. Il faudrait à Marc un corps de poisson.",
+      "start": 64.4,
+      "duration": 4.243,
+      "end": 68.643,
+      "speed": 1.0,
+      "seed": 30010,
+      "audio": "marc-branchies/punch.wav",
+      "sha256": "6e261a6a693fdbffb20973ab1e4b4d62725d780589746df677ffaa5d9b700045"
+    },
+    {
+      "id": "cta",
+      "text": "Et toi, tu voudrais vivre sous l'eau, ou tu gardes tes poumons ?",
+      "start": 70.0,
+      "duration": 4.5405,
+      "end": 74.5405,
+      "speed": 1.0,
+      "seed": 30211,
+      "audio": "marc-branchies/cta.wav",
+      "sha256": "46443c970b0507a2c8505889890eb6e35ca463cc3cb5a6711a64d7648bbc0f7b"
+    }
+  ]
+}

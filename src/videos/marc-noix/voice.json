@@ -1,0 +1,138 @@
+{
+  "voice": "morpheus",
+  "ambience": "marc-noix/ambience.wav",
+  "beats": [
+    {
+      "id": "hook",
+      "text": "En une nuit, le cerveau de Marc rétrécit. Il tient dans une noix.",
+      "start": 0.2,
+      "duration": 4.2118,
+      "end": 4.4118,
+      "speed": 1.2646,
+      "seed": 29100,
+      "audio": "marc-noix/hook.wav",
+      "sha256": "ed0edc82881354bb645bca898668031763dcb59c31679f9842e574f6e131ea9d"
+    },
+    {
+      "id": "skull",
+      "text": "Cent fois plus léger. Son crâne, lui, ne change pas : le cerveau flotte au milieu.",
+      "start": 4.8,
+      "duration": 5.6748,
+      "end": 10.4748,
+      "speed": 1.0,
+      "seed": 29101,
+      "audio": "marc-noix/skull.wav",
+      "sha256": "c3b460338d29cea34e67d969544fc49fc9d6f89183f4ede675acb0862b80c838"
+    },
+    {
+      "id": "neurons",
+      "text": "Un cerveau humain, c'est quatre-vingt-six milliards de neurones. Le sien en garde moins d'un milliard.",
+      "start": 11.0,
+      "duration": 5.4682,
+      "end": 16.4682,
+      "speed": 1.0,
+      "seed": 29102,
+      "audio": "marc-noix/neurons.wav",
+      "sha256": "3c4b8d3cd81571fdaacc6f1b2d5bc506981d964472b54051514e2ddbfb1730a6"
+    },
+    {
+      "id": "words",
+      "text": "Il cherche ses mots. Il ne reconnaît plus Julien. Il oublie ce qu'il faisait.",
+      "start": 17.8,
+      "duration": 5.2871,
+      "end": 23.0871,
+      "speed": 1.0,
+      "seed": 29003,
+      "audio": "marc-noix/words.wav",
+      "sha256": "8a86c0c0a32b78d8b1933f48ea4f8e073e4bbb33c172d5ba3fa07e924433594c"
+    },
+    {
+      "id": "balance",
+      "text": "Même la zone qui gère l'équilibre rétrécit. Marc ne tient plus debout.",
+      "start": 24.4,
+      "duration": 3.9395,
+      "end": 28.3395,
+      "speed": 1.0,
+      "seed": 29004,
+      "audio": "marc-noix/balance.wav",
+      "sha256": "8d5b98148aa548bc3944a693b1834b796d5f627244ab1fe04692c27e37f011ad"
+    },
+    {
+      "id": "crow",
+      "text": "Pourtant, une corneille a un cerveau de cette taille. Elle fabrique des outils et reconnaît les visages.",
+      "start": 30.8,
+      "duration": 6.1697,
+      "end": 36.9697,
+      "speed": 1.0,
+      "seed": 29005,
+      "audio": "marc-noix/crow.wav",
+      "sha256": "fd1b1f24b67ae757f71691943e662849aace9641208ea56b470fa07a46384dd3"
+    },
+    {
+      "id": "dense",
+      "text": "Son secret : des neurones minuscules, deux fois plus serrés que ceux d'un singe.",
+      "start": 37.8,
+      "duration": 5.2752,
+      "end": 43.0752,
+      "speed": 1.0,
+      "seed": 29006,
+      "audio": "marc-noix/dense.wav",
+      "sha256": "d3edb4c3316071d359cd8fd6e2fb29a74e1c918a2aca6cb069395583de501f21"
+    },
+    {
+      "id": "case",
+      "text": "Et à Marseille, en 2007, des médecins ont découvert un homme au cerveau réduit à une fine couche.",
+      "start": 44.4,
+      "duration": 5.7308,
+      "end": 50.1308,
+      "speed": 1.0,
+      "seed": 29007,
+      "audio": "marc-noix/case.wav",
+      "sha256": "468fddcd30e457bddbaed2cea8b2c1d8ebfe7b368175d8a3a4c8d8600de16a7c"
+    },
+    {
+      "id": "normal",
+      "text": "Il était marié, père de deux enfants, et travaillait dans l'administration.",
+      "start": 52.4,
+      "duration": 3.982,
+      "end": 56.382,
+      "speed": 1.0,
+      "seed": 29008,
+      "audio": "marc-noix/normal.wav",
+      "sha256": "0a70a624ac9725efbbf76c226833262cc53cd594fd811b56c811c377aad2bb37"
+    },
+    {
+      "id": "time",
+      "text": "Son cerveau avait eu des dizaines d'années pour s'adapter. Marc, une seule nuit.",
+      "start": 58.4,
+      "duration": 3.9768,
+      "end": 62.3768,
+      "speed": 1.0,
+      "seed": 29109,
+      "audio": "marc-noix/time.wav",
+      "sha256": "4711c945131fa2a54389a7f9061c9dab3f45583c8066f68888d48d03f812e184"
+    },
+    {
+      "id": "punch",
+      "text": "La taille compte moins que le temps.",
+      "start": 64.0,
+      "duration": 1.4199,
+      "end": 65.4199,
+      "speed": 1.0,
+      "seed": 29010,
+      "audio": "marc-noix/punch.wav",
+      "sha256": "7f5ca66afe0a83e10e06d154f94f540406d802881f9237c0e4725fb28c5c731c"
+    },
+    {
+      "id": "cta",
+      "text": "Et toi, tu échangerais ton cerveau contre celui d'une corneille ?",
+      "start": 66.6,
+      "duration": 3.2013,
+      "end": 69.8013,
+      "speed": 1.1437,
+      "seed": 29011,
+      "audio": "marc-noix/cta.wav",
+      "sha256": "aaa23618506f00a04345a33630481c655368739f5b49988c513b4418d2335220"
+    }
+  ]
+}
